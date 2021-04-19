@@ -1,10 +1,12 @@
 ---
 title: Illustration
 subtitle: Grundlagen der Illustration mit Adobe Illustrator
-tags: [lecture,arrays,1CHELS]
+tags: [media,medt,hwek,med]
 ---
 
 # Adobe Illustrator
+
+--- 
 
 ## 1. Formen, Pathfinder und Ausrichten
 
