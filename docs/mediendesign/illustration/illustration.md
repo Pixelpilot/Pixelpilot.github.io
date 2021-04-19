@@ -6,7 +6,6 @@
 * [Adobe Tutorial - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
 * [Adobe Tutorial - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
-
 ### Anwendungsgebiete
 
 Benutzen der Zeichenwerkzeuge
