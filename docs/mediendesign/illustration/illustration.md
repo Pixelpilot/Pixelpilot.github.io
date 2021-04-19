@@ -12,6 +12,12 @@ This is line 26
 This is line 27
 {% endhighlight %}
 
+{% highlight c linenos %}
+for ( int i = 0; i < 100; i ++ ) {
+  printf ("Hallo Welt");
+}
+{% endhighlight %}
+
 
 ```c linenos
 for ( int i = 0; i < 100; i ++ ) {
