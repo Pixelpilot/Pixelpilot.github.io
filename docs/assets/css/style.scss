@@ -1,6 +1,7 @@
 ---
-exclude: true
+sitemap_exclude: y
 ---
+
 @import "{{ site.theme }}";
 
 body {
