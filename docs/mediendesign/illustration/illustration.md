@@ -6,12 +6,6 @@
 * [Adobe Tutorial - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
 * [Adobe Tutorial - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
-{% highlight ruby linenos %}
-This is line 25
-This is line 26
-This is line 27
-{% endhighlight %}
-
 {% highlight c linenos %}
 for ( int i = 0; i < 100; i ++ ) {
   printf ("Hallo Welt");
@@ -19,7 +13,7 @@ for ( int i = 0; i < 100; i ++ ) {
 {% endhighlight %}
 
 
-```c linenos
+```c
 for ( int i = 0; i < 100; i ++ ) {
   printf ("Hallo Welt");
 }
