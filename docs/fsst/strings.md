@@ -5,3 +5,5 @@
 ```c
 char wort[] = "Hallo";
 ```
+
+{% include footer.html %}
