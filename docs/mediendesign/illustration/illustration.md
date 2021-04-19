@@ -32,8 +32,7 @@ Geometrische komplexe Form zeichnen:
 ## 2. Zeichenwerkzeuge
 
 ### Resourcen
-* https://helpx.adobe.com/at/illustrator/how-to/drawing-tools-basics.html
-
+* [Adobe Tutorial - Zeichenwerkzeuge verwenden](https://helpx.adobe.com/at/illustrator/how-to/drawing-tools-basics.html)
 
 ### Anwendungsgebiete
 
@@ -51,7 +50,7 @@ Benutzen weitere Funktionen
 Organische komplexe Form zeichnen
 * Tier, Gemüse oder Frucht
 * Werkzeug, Kleidungsstück
-* https://www.metmuseum.org/ - Kunstwerk (z.B. Masken) auswählen und Form nachzeichnen
+* <https://www.metmuseum.org/> - Kunstwerk (z.B. Masken) auswählen und Form nachzeichnen
 
 
 
@@ -59,7 +58,7 @@ Organische komplexe Form zeichnen
 ## 3. Farbe und Konturen
 
 ### Resourcen
-* https://helpx.adobe.com/at/illustrator/how-to/color-basics.html
+* [Adobe Tutorial - Farbe und Konturen ändern](https://helpx.adobe.com/at/illustrator/how-to/color-basics.html)
 
 ### Anwendungsgebiete
 
@@ -74,6 +73,7 @@ Organische komplexe Form zeichnen
 Geometrische und organische Formen aus den Übungen 1 und 2
 * Einfärben in verschiedenen Varianten
 * Hintergründe dazugeben
+
 
 ## 4. Typografie
 
