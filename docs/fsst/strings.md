@@ -1,4 +1,4 @@
-# String
+# Strings
 
 [Zur Übersicht](../index.md)
 
