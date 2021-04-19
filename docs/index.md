@@ -3,7 +3,10 @@
 Hier eine Änderung.
 
 
+[Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
+
 [Content](content.md)
+
 [Strings](fsst/strings.md)
 
 You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
