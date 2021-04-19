@@ -13,6 +13,13 @@ for ( int i = 0; i < 100; i ++ ) {
 {% endhighlight %}
 
 
+{% highlight c linenos=table %}
+for ( int i = 0; i < 100; i ++ ) {
+printf ("Hallo Welt");
+}
+{% endhighlight %}
+
+
 ```c
 for ( int i = 0; i < 100; i ++ ) {
   printf ("Hallo Welt");
