@@ -8,6 +8,12 @@
 {% endif %}
 {% endfor %}
 
+## Test weitere Seiten im gleichen Verzeichnis
+{% for pg in site.pages %}
+<div>{{pg.path}} {{page.path}}
+{% endfor %}
+
+
 ```c
 char wort[] = "Hallo";
 ```
