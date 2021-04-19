@@ -1,4 +1,4 @@
-# Arrays
+# Arrays von Strukturen
 
 [Zur Übersicht](../index.md)
 
