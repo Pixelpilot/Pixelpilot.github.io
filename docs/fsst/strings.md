@@ -1,7 +1,3 @@
----
-layout: post
----
-
 # String
 
 [Zur Übersicht](../index.md)
