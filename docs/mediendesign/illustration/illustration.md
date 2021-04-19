@@ -3,10 +3,9 @@
 ## 1. Formen, Pathfinder und Ausrichten
 
 ### Resourcen
-[Adobe - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
-[Adobe - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
+[Adobe Tutorial - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
+[Adobe Tutorial - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
-<https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html>
 
 ### Anwendungsgebiete
 
