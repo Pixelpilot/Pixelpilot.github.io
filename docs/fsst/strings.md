@@ -10,8 +10,12 @@
 
 ## Test weitere Seiten im gleichen Verzeichnis
 {% for pg in site.pages %}
-<div>{{pg.path}} {{page.path}}
+{% if  pg.dir == page.dir %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+{% endif %}
 {% endfor %}
+
+
 
 
 ```c
