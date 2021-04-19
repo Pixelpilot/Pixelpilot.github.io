@@ -1,6 +1,6 @@
 ---
 title: Illustration
-subtitle: Grundlagen der Illustration mit Adobe Illustrator
+description: Grundlagen der Illustration mit Adobe Illustrator
 tags: [media,medt,hwek,med]
 ---
 
