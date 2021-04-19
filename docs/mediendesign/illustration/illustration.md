@@ -6,6 +6,9 @@
 * https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html
 * https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html
 
+[Artwork Basics](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
+
+<https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html>
 
 #### Anwendungsgebiete
 Benutzen der Zeichenwerkzeuge
