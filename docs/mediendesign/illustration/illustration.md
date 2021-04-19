@@ -6,25 +6,6 @@
 * [Adobe Tutorial - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
 * [Adobe Tutorial - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
-{% highlight c linenos %}
-for ( int i = 0; i < 100; i ++ ) {
-  printf ("Hallo Welt");
-}
-{% endhighlight %}
-
-
-{% highlight c linenos=table %}
-for ( int i = 0; i < 100; i ++ ) {
-printf ("Hallo Welt");
-}
-{% endhighlight %}
-
-
-```c
-for ( int i = 0; i < 100; i ++ ) {
-  printf ("Hallo Welt");
-}
-```
 
 ### Anwendungsgebiete
 
