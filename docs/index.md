@@ -4,8 +4,6 @@ Hier eine Änderung.
 
 
 [Content](content.md)
-
-
 [Strings](fsst/strings.md)
 
 You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
