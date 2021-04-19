@@ -1,11 +1,8 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-body {
-  background-color: red;
-}
+//noinspection CssUnknownTarget
+@import "main";
 
 footer {
   display: none !important;
