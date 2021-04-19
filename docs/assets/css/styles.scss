@@ -1,8 +1,11 @@
 ---
 ---
 
-@import "{{site.theme}}";
+@import "{{ site.theme }}";
 
+body {
+  background-color: yellowgreen;
+}
 
 footer {
   display: none !important;
