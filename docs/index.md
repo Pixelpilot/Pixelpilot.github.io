@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-Hier eine Änderung.
+
 
 
 [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
