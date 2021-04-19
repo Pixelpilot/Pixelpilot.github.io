@@ -3,19 +3,19 @@
 ## 1. Formen, Pathfinder und Ausrichten
 
 ### Resourcen
-* [Adobe - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
-* [Adobe - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
+[Adobe - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
+[Adobe - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
 <https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html>
 
 ### Anwendungsgebiete
 
-**Benutzen der Zeichenwerkzeuge**
+Benutzen der Zeichenwerkzeuge
 * Rechteck
 * Ellipse
 * Polygon
 
-**Benutzen weitere Funktionen**
+Benutzen weitere Funktionen
 * Verändern der Eck-Radien
 * Transformieren, Gruppieren, ausrichten
 * Pfadfinder
