@@ -44,6 +44,28 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+
+{% highlight c linenos %}
+for ( int i = 0; i < 100; i ++ ) {
+printf ("Hallo Welt");
+}
+{% endhighlight %}
+
+
+{% highlight c linenos=table %}
+for ( int i = 0; i < 100; i ++ ) {
+printf ("Hallo Welt");
+}
+{% endhighlight %}
+
+
+```c
+for ( int i = 0; i < 100; i ++ ) {
+  printf ("Hallo Welt");
+}
+```
+
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
