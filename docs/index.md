@@ -22,7 +22,15 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endfor %}
 
 
-### Markdown
+### TODO
+
+-[ ] Sitemap als `_includes`-Snippet 
+-[ ] Sitemap in `_layouts` integrieren
+-[ ] Plugin zum Kopieren von Bildern aus dem Zwischenspeicher (*Paste Images into Markdown*)
+-[ ] Markdown Example Page erstellen (auch mit `Kramdown` Anweiseungen)
+-[ ] Check nach Tag gruppieren
+
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 

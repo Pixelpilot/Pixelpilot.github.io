@@ -1,6 +1,8 @@
 # Strings
 
-[Zur Übersicht](../index.md)
+[Zur Übersicht](//index.md)
+
+Test
 
 {% for page in site.pages %}
 {% if page.sitemap_exclude != 'y' %}
