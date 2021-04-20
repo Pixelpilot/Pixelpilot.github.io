@@ -14,7 +14,7 @@ tags: [media,medt,hwek,med]
 * [Adobe Tutorial - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
 * [Adobe Tutorial - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
-[![Adobe Tutorial - Elemente transformieren und bearbeiten](http://images-tv.adobe.com/avp/vr/b758b4c4-2a74-41f4-8e67-e2f2eab83c6a/7c60b91e-5107-40db-bb1b-ab81a3b8a88b/792f507b_960x540.jpg)](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
+[![Adobe Tutorial - Elemente transformieren und bearbeiten](http://images-tv.adobe.com/avp/vr/b758b4c4-2a74-41f4-8e67-e2f2eab83c6a/7c60b91e-5107-40db-bb1b-ab81a3b8a88b/792f507b_960x540.jpg){:height="700px" width="400px"}](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
 
 
 ### Anwendungsgebiete
@@ -42,7 +42,7 @@ Geometrische komplexe Form zeichnen:
 ## 2. Zeichenwerkzeuge
 
 ### Resourcen
-* [Adobe Tutorial - Zeichenwerkzeuge verwenden](https://helpx.adobe.com/at/illustrator/how-to/drawing-tools-basics.html){:height="700px" width="400px"}
+* [Adobe Tutorial - Zeichenwerkzeuge verwenden](https://helpx.adobe.com/at/illustrator/how-to/drawing-tools-basics.html)
 
 ### Anwendungsgebiete
 
