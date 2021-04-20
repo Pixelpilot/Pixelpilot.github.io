@@ -1,6 +1,6 @@
 # Strings
 
-[Zur Übersicht](/index.md)
+[Zur Übersicht](/index)
 
 Test
 
