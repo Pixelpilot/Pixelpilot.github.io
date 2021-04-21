@@ -8,7 +8,14 @@ body {
   // background-color: yellowgreen;
 }
 
+ul.task-list {
+  list-style: none;
+  padding-left: 0;
+}
 
+.task-list-item input {
+  margin-right: 20px;
+}
 
 .page-header {
   background-color: #0082ba;
