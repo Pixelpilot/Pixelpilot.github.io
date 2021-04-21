@@ -9,7 +9,7 @@ body {
 }
 
 
-/*
+
 .page-header {
   background-color: #0082ba;
   background-image: -moz-linear-gradient(160deg, #0082ba -10%, #2e4269 60%, #6d545c 120%);
@@ -20,8 +20,8 @@ body {
 }
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
-  // color: #e9872f !important;  // EL
+  color: rgba(239,125,0,1) !important;  // EL
   // color: rgba(35,145,201,1); // ME
   // color: rgba(102,74,133,1); // IT
-  color: #253B55; // HTL
-}*/
+  // color: #253B55; // HTL
+}
