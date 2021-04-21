@@ -12,7 +12,7 @@ tags: [javascript,medt,hwek,med]
 
 ----
 
-Es ist ein einfaches Formular zu erstellen, mit dessen Hilfe Euro nach Dollar umrechnen kann.
+Es ist ein einfaches Formular zu erstellen, mit dessen Hilfe man Euro nach Dollar umrechnen kann.
 
 ### 1. HTML und CSS
 
