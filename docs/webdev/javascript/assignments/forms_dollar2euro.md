@@ -8,7 +8,7 @@ tags: [javascript,medt,hwek,med]
 
 ## Eingabe und Ausgabe (Übungen – Währungsumrechner )
 
-![Währungsrechner](.//.forms_dollar2euro_images/dollar2euro.png)
+![Währungsrechner](.//.forms_dollar2euro_images//dollar2euro.png)
 
 ----
 
