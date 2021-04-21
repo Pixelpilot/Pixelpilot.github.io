@@ -24,6 +24,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### TODO
 
+[Check collections](https://jekyllrb.com/docs/collections/)
+
 -[ ] test1
 
 - [ ] test2

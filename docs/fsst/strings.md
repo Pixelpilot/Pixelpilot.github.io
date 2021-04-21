@@ -8,7 +8,19 @@
 
 {% endfor %}
 
+### site.collections
+
 {{ site.collections }}
+
+### site.tags.medt
+{{ site.tags.medt }}
+
+
+### site.tags.media
+{{ site.tags.media }}
+
+
+### site.categories.CATEGORY
 
 
 ## Test 
