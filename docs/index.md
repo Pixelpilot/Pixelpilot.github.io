@@ -13,7 +13,7 @@ You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.gith
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Test Eigene Sitemap
+### Test eigene Sitemap
 
 {% for page in site.pages %}
 {% if page.sitemap_exclude != 'y' %}
@@ -27,7 +27,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 -[ ] Sitemap als `_includes`-Snippet 
 -[ ] Sitemap in `_layouts` integrieren
 -[x] Plugin zum Kopieren von Bildern aus dem Zwischenspeicher (*Paste Images into Markdown*)
--[ ] Markdown Example Page erstellen (auch mit `Kramdown` Anweiseungen)
+-[ ] Markdown Example Page erstellen (auch mit `Kramdown` Anweisungen)
 -[ ] Check nach Tag gruppieren
 -[x] Finish my changes
 -[ ] Push my commits to GitHub
@@ -50,7 +50,7 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) - ![Image](src)
 ```
 
 
