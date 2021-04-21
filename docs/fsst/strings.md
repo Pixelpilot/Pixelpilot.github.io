@@ -4,7 +4,7 @@
 
 
 {% for col in site.collections %}
-<div>col</div>
+<div>{{ col }}</div>
 
 {% endfor %}
 Test
