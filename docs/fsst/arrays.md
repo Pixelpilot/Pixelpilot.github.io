@@ -13,6 +13,18 @@ for (int i = 0; i < 100; i ++ ){
 ```
 
 
+-[ ] Todo
+-[x] Erledigt
+
+
+* Test
+* Test
+
+1. Bla
+1. Blu
+1. Ble
+    * Unterpunkt
+
 ```c
 char wort[] = "Hallo";
 ```
