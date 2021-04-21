@@ -3,7 +3,7 @@
 [Zur Übersicht](/index)
 
 
-{% for col ind site.collections %}
+{% for col in site.collections %}
 <div>col</div>
 
 {% endfor %}
