@@ -1,5 +1,5 @@
 ---
-title: Währungsrechncher
+title: Währungsumrechner
 description: Javascript - Formulare - Ein- und Ausgabe
 tags: [javascript,medt,hwek,med]
 ---
