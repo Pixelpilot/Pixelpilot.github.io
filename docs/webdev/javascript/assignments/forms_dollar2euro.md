@@ -43,4 +43,4 @@ Implementiere weitere Erweiterungen:
 * Umschalter **Dollar -> Euro** und **Euro -> Dollar** 
 * Zusätzliche Währungen dazugeben (z.B.: Pfund)
 * Umrechner zwischen Zahlensystemen ...
-![](.forms_dollar2euro_images/decimal2binary.png){:width="480px"}
+![Dezimal nach Binär](.forms_dollar2euro_images/decimal2binary.png){:width="480px"}
