@@ -14,7 +14,7 @@
 
 ### site.tags.medt
 {{ site.tags.medt }}
-
+{{ site.tags.MEDT }}
 
 ### site.tags.media
 {{ site.tags.media }}

@@ -22,21 +22,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endfor %}
 
 
+### site.tags.medt
+{{ site.tags.medt }}
+{{ site.tags.MEDT }}
+
+
 ### TODO
 
 [Check collections](https://jekyllrb.com/docs/collections/)
 
 -[ ] test1
-
-- [ ] test2
-
-
-- [ ]   test3
-    -[ ] test5
-
-
- -[ ] test4
-
+-[ ] test3
 
 -[ ] Sitemap als `_includes`-Snippet 
  
