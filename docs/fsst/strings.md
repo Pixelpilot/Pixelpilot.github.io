@@ -2,6 +2,11 @@
 
 [Zur Übersicht](/index)
 
+
+{% for col ind site.collections %}
+<div>col</div>
+
+{% endfor %}
 Test
 
 {% for page in site.pages %}
