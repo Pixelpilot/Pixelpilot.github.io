@@ -7,8 +7,11 @@
 <div>{{ col }}</div>
 
 {% endfor %}
-Test
 
+{{ site.collections }}
+
+
+## Test 
 {% for page in site.pages %}
 {% if page.sitemap_exclude != 'y' %}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
