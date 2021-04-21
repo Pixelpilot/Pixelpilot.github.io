@@ -31,8 +31,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 [Check collections](https://jekyllrb.com/docs/collections/)
 
--[ ] test1
--[ ] test3
+- [ ] test1
+- [ ] test3
 
 -[ ] Sitemap als `_includes`-Snippet 
  
