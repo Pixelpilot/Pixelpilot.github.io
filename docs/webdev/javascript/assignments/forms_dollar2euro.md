@@ -8,7 +8,7 @@ tags: [javascript,medt,hwek,med]
 
 ## Eingabe und Ausgabe (Übungen – Währungsumrechner )
 
-![Währungsrechner](.//.forms_dollar2euro_images//dollar2euro.png)
+![Währungsrechner](./forms_dollar2euro_images/dollar2euro.png)
 
 ----
 
@@ -43,4 +43,4 @@ Implementiere weitere Erweiterungen:
 * Umschalter **Dollar -> Euro** und **Euro -> Dollar** 
 * Zusätzliche Währungen dazugeben (z.B.: Pfund)
 * Umrechner zwischen Zahlensystemen ...
-![Dezimal nach Binär](.forms_dollar2euro_images/decimal2binary.png){:width="480px"}
+![Dezimal nach Binär](./forms_dollar2euro_images/decimal2binary.png){:width="480px"}
