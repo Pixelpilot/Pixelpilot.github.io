@@ -1,3 +1,7 @@
 theme: jekyll-theme-cayman
 collections:
-  - examples
+  examples:
+    order:
+      - ex2.md
+      - ex1.md
+    output: true
