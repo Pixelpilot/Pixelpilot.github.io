@@ -23,12 +23,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 ### Test Collections
+<ol>
 {% for example in site.examples %}
-<a href="{{ example.url }}">
+<li><a href="{{ example.url }}">
 {{ example.title }} - {{ example.description }}
-</a>
+</a></li>
 {% endfor %}
-
+</ol>
 ### site.tags.medt
 {{ site.categories.fsst }}
 {{ site.categories.test }}
