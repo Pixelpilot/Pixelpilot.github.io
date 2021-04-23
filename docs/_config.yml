@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman
 collections:
-  example:
+  examples:
     order:
       - ex2.md
       - ex1.md
