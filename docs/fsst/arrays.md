@@ -1,3 +1,11 @@
+---
+title: Arrays
+description: Test Arrays
+layout: default
+tags: [media,medt,hwek,med]
+category: fsst
+---
+
 # Arrays
 
 [Zur Übersicht](../index.md)

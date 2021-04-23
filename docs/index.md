@@ -31,8 +31,8 @@ test5
 {% endfor %}
 
 ### site.tags.medt
-{{ site.tags.medt }}
-{{ site.tags.MEDT }}
+{{ site.categories.fsst }}
+{{ site.categories.test }}
 
 
 ### TODO

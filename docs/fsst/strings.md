@@ -1,3 +1,11 @@
+--
+title: Strings
+description: Test String
+layout: default
+tags: [media,medt,hwek,med]
+category: fsst
+---
+
 # Strings
 
 [Zur Übersicht](/index)
