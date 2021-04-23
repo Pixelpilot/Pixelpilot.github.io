@@ -22,6 +22,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endfor %}
 
 
+### Test Collections
+{% for example in site.examples %}
+<h2>
+<a href="{{ example.url }}">
+{{ example.title }} - {{ example.description }}
+</a>
+</h2>
+  <p>{{ example.content | markdownify }}</p>
+{% endfor %}
+
 ### site.tags.medt
 {{ site.tags.medt }}
 {{ site.tags.MEDT }}
