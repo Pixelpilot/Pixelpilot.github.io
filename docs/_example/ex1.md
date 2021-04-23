@@ -6,3 +6,5 @@ tags: [media,medt,hwek,med]
 
 
 # Example 1
+
+https://jekyllrb.com/docs/collections/
