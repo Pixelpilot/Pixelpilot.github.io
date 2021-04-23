@@ -4,4 +4,3 @@ collections:
     order:
       - ex2.md
       - ex1.md
-    output: true
