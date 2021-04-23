@@ -30,9 +30,9 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 </a></li>
 {% endfor %}
 </ol>
-### site.tags.medt
-{{ site.categories.fsst }}
-{{ site.categories.test }}
+### site.categories.architecture
+{{ site.categories.architecture }}
+{{ site.categories.architecture }}
 
 
 ### TODO

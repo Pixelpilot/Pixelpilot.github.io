@@ -3,7 +3,9 @@ title: Example 2
 description: Beispiel 2
 layout: default
 tags: [media,medt,hwek,med]
-category: test
+categories:
+- "architecture"
+- "aws"
 ---
 
 
