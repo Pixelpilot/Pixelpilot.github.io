@@ -23,7 +23,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 ### Test Collections
-test2
+test3
 {% for example in site.examples %}
 <h2>
 <a href="{{ example.url }}">
