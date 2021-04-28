@@ -56,11 +56,11 @@
 ---
 
 ##### Mediendesign mit "WHERE"
-{% for page in site.pages | where: "category","mediendesign" %}
+{% assign category-pages = site.pages | where: "category","mediendesign" %}
+{% for page in category-pages %}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
 {% endfor %}
 
-| where: "author","sharathdt"
 
 
 ##### Mediendesign - Illustration
