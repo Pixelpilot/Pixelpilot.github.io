@@ -18,68 +18,25 @@
 {% assign category = site.pages | group_by: 'category' %}
 {% for group in category %}
 <h3>{{group.name}}</h3>
-{% for item in group.items %}
-<p>{{item.title}}</p>
-{% endfor %}
-{% endfor %}
-
-
-
----
-
-{% assign category = site.pages | group_by: 'category' %}
-{% for group in category %}
-<h3>{{group.name}}</h3>
 {% for page in group.items %}
 {% assign topic_name = page.topic %}
 {% if topic_name != topic_name_old %}
 <h4>{{ topic_name }}</h4>
 {% endif %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
+{% if page.sitemap_exclude != 'y' %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}} {{page.description}}</a></div>
+{% endif %}
 {% assign topic_name_old = page.topic %}
 {% endfor %}
 {% endfor %}
 
----
 
-
-### Test eigene Sitemap
-
-{% for page in site.pages %}
-{% if page.sitemap_exclude != 'y' %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.category}}, {{page.topic}}</div>
-{% endif %}
-{% endfor %}
-
-
-
-
-
-
-
-#### FSST
-{% for page in site.pages %}
-{% if page.category == 'fsst' %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
-{% endif %}
-{% endfor %}
-
-
-#### Mediendesign
-{% for page in site.pages %}
-{% if page.category == 'mediendesign' %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
-{% endif %}
-{% endfor %}
-
----
 
 ##### Mediendesign mit "WHERE"
 {% assign category-pages = site.pages | where: "category","mediendesign" %}
 {% for page in category-pages %}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
 {% endfor %}
-
 
 
 ##### Mediendesign - Illustration
