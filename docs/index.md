@@ -24,12 +24,12 @@ layout: default
 {% endfor %}
 
 
-## Inhaltsverzeichnis
+## Inhaltsverzeichnis 3
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
 <h3>{{category.name}}</h3>
-{% assign topics = site.pages | group_by: 'topic' %}
+{% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 <h4>{{topics.name}}</h4>
 {% endfor %}
