@@ -9,12 +9,9 @@ categorytitles:
 
 # HTL Braunau, HTL Braunau
 
-
-title: {{ title }}
-
 page.title {{ page.title }}
 
-{{ categorytitles }}
+page.categorytitles {{ page.categorytitles }}
 
 ## Inhaltsverzeichnis
 
