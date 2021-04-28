@@ -5,6 +5,10 @@
 
 [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
 
+
+https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html
+
+
 [Content](content.md)
 
 [Strings](fsst/strings.md)
