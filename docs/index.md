@@ -35,6 +35,9 @@
 {% assign topic_name = page.topic %}
 Topic Name: {{ topic_name }}
 Topic Old: {{ topic_name_old }}
+{% if topic_name != topic_name_old %}
+<h4>{{ topic_name }}</h4>
+{% endif %}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
 {% assign topic_name_old = page.topic %}
 {% endfor %}
