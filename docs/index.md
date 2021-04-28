@@ -21,13 +21,16 @@ categories:
 
 # HTL Braunau
 
-## Inhaltsverzeichnis 7
+## Inhaltsverzeichnis 8
 
 - [ ] Überschriften ausblenden, wenn keine Kategorie vergeben ist ...
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
 {% assign category_name = page.categories | where: 'name', category.name %}
+
+
+
 <hr>
 <h3>{{ category.name }} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
