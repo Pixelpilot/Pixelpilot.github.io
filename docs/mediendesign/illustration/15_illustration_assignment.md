@@ -42,3 +42,8 @@ Färbe die Motive stimmig ein. Verwende einfache Farben.
 
 ## Zusatz
 Erweitere die Illustrationen um Hintergrunde oder weiteren grafischen Elementen.
+
+## Abgabe
+Abzugeben sind folgende Dateien:
+- `.ai`-Datei mit den Illustrationen
+- `.png`-Datei mit dem exportierten Bild der Animationen
