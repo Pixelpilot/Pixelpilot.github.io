@@ -27,7 +27,14 @@ layout: default
 ## Inhaltsverzeichnis
 
 {% assign categories = site.pages | group_by: 'category' %}
+{% for category in categories %}
 {% assign topics = site.pages | group_by: 'topic' %}
+{% for topic in topics.items %}
+<div>{{topic.name}}</div>
+{% endfor %}
+{% endfor %}
+
+----
 
 {% for group in categories %}
 <h3>{{group.name}}</h3>
@@ -37,7 +44,7 @@ layout: default
 <h4>{{ topic_name }}</h4>
 {% endif %}
 {% if page.sitemap_exclude != 'y' %}
-<li><a href="{{page.url}}">{{page.description}}</a></li>
+<li><a href="{{page.url}}">{{page.description}}</a> {{ page.name }}</li>
 {% endif %}
 {% assign topic_name_old = page.topic %}
 {% endfor %}
