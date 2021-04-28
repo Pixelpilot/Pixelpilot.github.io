@@ -31,7 +31,7 @@ categories:
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
-{% if topic_name And topic_name != "" And topic_name != nil %}
+{% if topic_name[0].description And topic_name[0].description != "" And topic_name[0].description != nil %}
 <h4>{{ topic_name[0].description }}</h4>
 {% else if topic.name != "" %}
 <h4>{{topic.name}}</h4>
