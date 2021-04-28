@@ -34,14 +34,14 @@
 {% for page in group.items %}
 {% assign topic_name = page.topic %}
 Topic Name: {{ topic_name }}
+Topic Old: {{ topic_name }}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
+{% assign topic_name_old = page.topic %}
 {% endfor %}
 
 
 
 {% endfor %}
-
-
 
 ---
 
