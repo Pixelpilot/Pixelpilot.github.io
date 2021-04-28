@@ -7,7 +7,7 @@ topic: illustration
 ---
 
 # Aufgabe: Formen
-![Beispielhafte Umsetzung](.21_illustration_assignment_images/umsetzung_formen.png)
+![Beispielhafte Umsetzung](./img/umsetzung_formen.png)
 
 _Beispielhafte Umsetzung_
 
