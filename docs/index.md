@@ -5,16 +5,13 @@ layout: default
 categorytitles:
   - name: mediendesign
     description: 'Mediendesign'
-    topics:
-        - illustration
-          description: 'Illustration mit Adobe Illustrator'
   - name: fsst
     description: Fachspezifische Softwaretechnik
 ---
 
 # HTL Braunau, HTL Braunau
 
-1
+2
 
 page.title {{ page.title }}
 
