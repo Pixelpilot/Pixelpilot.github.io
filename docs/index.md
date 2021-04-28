@@ -18,6 +18,29 @@ You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.gith
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+
+### Sitemap automatisch generiert
+{% assign items_grouped = site.pages | group_by: 'category' %}
+{% for group in items_grouped %}
+<h3>{{group.name}}</h3>
+{% for item in group.items %}
+<p>{{item.title}}</p>
+{% endfor %}
+{% endfor %}
+
+
+### Sitemap automatisch generiert mit 3 Levels
+{% assign categories = site.pages | group_by: 'category' %}
+{% for category in categories %}
+<h3>{{category.name}}</h3>
+{% assign topic = category | group_by: 'topic' %}
+{% for item in topic.items %}
+<p>{{topic.title}}</p>
+{% endfor %}
+{% endfor %}
+
+
+
 ### Test eigene Sitemap
 
 {% for page in site.pages %}
@@ -44,13 +67,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ---
 
-{% assign items_grouped = site.pages | group_by: 'category' %}
-{% for group in items_grouped %}
-<h3>{{group.name}}</h3>
-{% for item in group.items %}
-<p>{{item.title}}</p>
-{% endfor %}
-{% endfor %}
+
 
 
 ##### Mediendesign - Illustration
