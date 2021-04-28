@@ -30,6 +30,7 @@ topic_name[0].topics {{ topic_name[0].topics }}
 
 
 
+
 {% assign topic_name = page.categories | where: 'name', 'fsst' %}
 topic_name {{ topic_name }}
 topic_name.description {{ topic_name=>description }}
@@ -47,8 +48,9 @@ topic_name.description {{ topic_name[0].description }}
 <h3>{{category.name}} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
+{% assign topic_name = category_name[0] | where: 'name', topic.name %}
 
-<h4>{{topic.name}}</h4>
+<h4>{{topic.name}} - {{ topic_name[0].description }}</h4>
 
 <ul>
 {% for page in topic.items %}
