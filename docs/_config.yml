@@ -5,3 +5,5 @@ collections:
       - ex2.md
       - ex1.md
     output: true
+  mediendesign:
+    output: true
