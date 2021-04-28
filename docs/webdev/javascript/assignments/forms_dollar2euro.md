@@ -1,7 +1,8 @@
 ---
 title: Währungsumrechner
 description: Javascript - Formulare - Ein- und Ausgabe
-tags: [javascript,medt,hwek,med]
+category: webdev
+topic: javascript
 ---
 
 # Javascript
