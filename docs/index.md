@@ -15,7 +15,7 @@ categories:
 ---
 
 # HTL Braunau, HTL Braunau
-101
+102
 
 page.title {{ page.title }}
 
@@ -27,7 +27,6 @@ page.categorytitles[0] {{ page.categories[0] }}
 {% assign topic_name = page.categories | where: 'name', 'mediendesign' %}
 topic_name[0].description {{ topic_name[0].description }}
 topic_name[0].topics {{ topic_name[0].topics }}
-
 
 
 
@@ -48,7 +47,7 @@ topic_name.description {{ topic_name[0].description }}
 <h3>{{category.name}} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
-{% assign topic_name = category_name[0] | where: 'name', topic.name %}
+{% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
 
 <h4>{{topic.name}} - {{ topic_name[0].description }}</h4>
 
