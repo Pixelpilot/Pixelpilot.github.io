@@ -12,7 +12,6 @@
 ### Sitemap with plugin
 
 
-{% include toc.html html=text %}
 
 
 ### Sitemap automatisch generiert
