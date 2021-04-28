@@ -22,7 +22,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 {% for page in site.pages %}
 {% if page.sitemap_exclude != 'y' %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.category}}, {{page.topic}}</div>
 {% endif %}
 {% endfor %}
 
