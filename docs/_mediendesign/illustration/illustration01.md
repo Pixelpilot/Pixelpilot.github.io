@@ -1,7 +1,7 @@
 ---
 title: Illustration
 description: Part One: Grundlagen der Illustration mit Adobe Illustrator
-tags: [media,medt,hwek,med]
+layout: default
 ---
 
 # Adobe Illustrator
