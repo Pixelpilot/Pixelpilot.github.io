@@ -38,6 +38,17 @@ ul.task-list {
 
 //  Listings mit Zeilennummern
 
-figure.highlight pre table.rouge-table {
-  background-color: red !important;
+figure.highlight {
+
+  margin-left: 0;
+
+  pre {
+    border: none;
+    padding:0;
+  }
+
+  table.rouge-table td.gutter,
+  table.rouge-table td.code {
+    background-color: yellowgreen;
+  }
 }
