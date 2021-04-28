@@ -10,7 +10,7 @@ categorytitles:
 ---
 
 # HTL Braunau, HTL Braunau
-5
+6
 
 page.title {{ page.title }}
 
@@ -26,7 +26,7 @@ topic_name.description {{ topic_name.description }}
 
 {% assign topic_name = page.categorytitles | where: 'name', 'fsst' %}
 topic_name {{ topic_name }}
-topic_name.description {{ topic_name.description }}
+topic_name.description {{ topic_name=>description }}
 
 
 
