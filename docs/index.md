@@ -23,7 +23,7 @@ categories:
 
 # HTL Braunau
 
-## Inhaltsverzeichnis
+## Inhaltsverzeichnis 1
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
