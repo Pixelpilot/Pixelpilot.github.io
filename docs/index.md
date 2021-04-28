@@ -29,8 +29,11 @@ categories:
 {% for category in categories %}
 {% assign category_name = page.categories | where: 'name', category.name %}
 
-{% if {{ category.name }} == "" %}
-Leer
+{% if category.name  == "" %}
+Leer category.name
+{% endif %}
+{% if category_name.name  == "" %}
+Leer category_name.name
 {% endif %}
 <hr>
 <h3>{{ category.name }} - {{ category_name[0].description }}</h3>
