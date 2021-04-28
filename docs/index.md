@@ -41,3 +41,24 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 </a></li>
 {% endfor %}
 </ol>
+
+#### Test Kapitel
+<ol>
+{% assign mediendesign = site.mediendesign | where: 'type', 'chapter' %}
+{% for thema in mediendesign %}
+<li><a href="{{ thema.url }}">
+{{ thema.title }} - {{ thema.description }}
+</a></li>
+{% endfor %}
+</ol>
+
+
+#### Test Section
+<ol>
+{% assign mediendesign = site.mediendesign | where: 'type', 'section' %}
+{% for thema in mediendesign %}
+<li><a href="{{ thema.url }}">
+{{ thema.title }} - {{ thema.description }}
+</a></li>
+{% endfor %}
+</ol>

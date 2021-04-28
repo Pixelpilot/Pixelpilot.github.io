@@ -1,4 +1,5 @@
 ---
+type: chapter
 title: Illustration
 description: Grundlagen der Illustration mit Adobe Illustrator
 layout: default
