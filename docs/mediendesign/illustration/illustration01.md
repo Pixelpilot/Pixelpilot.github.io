@@ -1,6 +1,6 @@
 ---
-title: Illustration
-description: Part One - Grundlagen der Illustration mit Adobe Illustrator
+title: Formen und Elemente
+description: Grundlagen der Illustration mit Adobe Illustrator – Part One
 layout: default
 category: mediendesign
 topic: illustration
