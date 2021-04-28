@@ -22,7 +22,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 {% for page in site.pages %}
 {% if page.sitemap_exclude != 'y' %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
 {% endif %}
 {% endfor %}
 
@@ -56,38 +56,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% for example in site.examples %}
 <li><a href="{{ example.url }}">
 {{ example.title }} - {{ example.description }}
-</a></li>
-{% endfor %}
-</ol>
-
-
-
-### Mediendesign
-<ol>
-{% for example in site.mediendesign %}
-<li><a href="{{ example.url }}">
-{{ example.title }} - {{ example.description }}
-</a></li>
-{% endfor %}
-</ol>
-
-#### Test Kapitel
-<ol>
-{% assign mediendesign = site.mediendesign | where: 'type', 'chapter' %}
-{% for thema in mediendesign %}
-<li><a href="{{ thema.url }}">
-{{ thema.title }} - {{ thema.description }}
-</a></li>
-{% endfor %}
-</ol>
-
-
-#### Test Section
-<ol>
-{% assign mediendesign = site.mediendesign | where: 'type', 'section' %}
-{% for thema in mediendesign %}
-<li><a href="{{ thema.url }}">
-{{ thema.title }} - {{ thema.description }}
 </a></li>
 {% endfor %}
 </ol>
