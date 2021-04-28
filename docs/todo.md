@@ -11,17 +11,17 @@ topic: github
 
 
 
-[Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
+- [ ] [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
 
-[IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
+- [ ] [IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
 
-[Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
+- [ ] [Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
 
-[Filters](https://blog.webjeda.com/jekyll-filters/)
+- [ ] [Filters](https://blog.webjeda.com/jekyll-filters/)
 
-[Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
+- [ ] [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
 
-
+- [ ] [Setting up Tags](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_tags.html)
 
 
 
