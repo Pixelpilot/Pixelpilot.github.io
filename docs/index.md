@@ -6,9 +6,9 @@
 [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
 
 
-(https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
+[IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
 
-(https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
+[Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
 
 [Content](content.md)
 
@@ -43,7 +43,12 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endfor %}
 
 
-
+##### Mediendesign - Illustration
+{% for page in site.pages %}
+{% if page.category == 'mediendesign' and page.topic == 'illustration' %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+{% endif %}
+{% endfor %}
 
 
 ### Test Collections
