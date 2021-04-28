@@ -12,8 +12,6 @@
 ### Sitemap with plugin
 
 
-
-
 ### Sitemap automatisch generiert
 {% assign items_grouped = site.pages | group_by: 'category' %}
 {% for group in items_grouped %}
