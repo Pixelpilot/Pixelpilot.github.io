@@ -28,6 +28,7 @@ layout: default
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
+<h3>{{category.name}}</h3>
 {% assign topics = site.pages | group_by: 'topic' %}
 {% for topic in topics.items %}
 <div>{{topic.name}}</div>
