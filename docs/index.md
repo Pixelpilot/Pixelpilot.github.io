@@ -28,6 +28,25 @@
 
 
 
+---
+
+{% assign items_grouped = site.pages | group_by: 'category' %}
+{% for group in items_grouped %}
+<h3>{{group.name}}</h3>
+
+
+{% for page in group.items %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
+{% endfor %}
+
+
+
+{% endfor %}
+
+
+
+---
+
 
 ### Test eigene Sitemap
 
@@ -36,6 +55,11 @@
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.category}}, {{page.topic}}</div>
 {% endif %}
 {% endfor %}
+
+
+
+
+
 
 
 #### FSST
