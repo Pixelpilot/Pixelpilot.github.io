@@ -73,6 +73,7 @@ Syntax highlighted code block
 ```
 
 
+### Listing mit Zeilennummern
 {% highlight c linenos %}
 for ( int i = 0; i < 100; i ++ ) {
 printf ("Hallo Welt");
@@ -80,13 +81,7 @@ printf ("Hallo Welt");
 {% endhighlight %}
 
 
-{% highlight c linenos=table %}
-for ( int i = 0; i < 100; i ++ ) {
-printf ("Hallo Welt");
-}
-{% endhighlight %}
-
-
+### Listing ohne Zeilennummern
 ```c
 for ( int i = 0; i < 100; i ++ ) {
   printf ("Hallo Welt");

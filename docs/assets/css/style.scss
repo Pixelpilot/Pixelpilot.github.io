@@ -34,3 +34,10 @@ ul.task-list {
   color: #8e7a60;
   font-weight: bold;
 }
+
+
+//  Listings mit Zeilennummern
+
+figure.highlight pre table.rouge-table {
+  background-color: red !important;
+}
