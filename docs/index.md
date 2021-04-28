@@ -3,16 +3,18 @@ title: Inhalte Gesammelt
 description: Christian Hanl, HTL Braunau
 layout: default
 categorytitles:
-  mediendesign: 
+  - mediendesign: 
     description: 'Mediendesign'
     topics:
         - illustration
           description: 'Illustration mit Adobe Illustrator'
-  fsst: 
+  - fsst: 
     description: Fachspezifische Softwaretechnik
 ---
 
 # HTL Braunau, HTL Braunau
+
+1
 
 page.title {{ page.title }}
 
