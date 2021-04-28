@@ -22,6 +22,13 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endfor %}
 
 
+#### FSST
+{% for page in site.pages %}
+{% if page.category == 'fsst' %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+{% endif %}
+{% endfor %}
+
 ### Test Collections
 <ol>
 {% for example in site.examples %}
