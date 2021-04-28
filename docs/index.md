@@ -10,7 +10,7 @@ categories:
         description: Bildbearbeitung mit Photoshop
       - name: illustration
         description: Illustration mit Adobe Illustrator
-  - name: fsst
+  - name: fssta
     description: Fachspezifische Softwaretechnik
   - name: webdev
     description: Webentwicklung
@@ -21,7 +21,7 @@ categories:
 
 # HTL Braunau
 
-## Inhaltsverzeichnis 11
+## Inhaltsverzeichnis 12
 
 - [ ] Überschriften ausblenden, wenn keine Kategorie vergeben ist ...
 
