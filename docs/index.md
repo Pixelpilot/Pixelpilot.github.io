@@ -12,31 +12,14 @@ categories:
         description: Illustration mit Adobe Illustrator
   - name: fsst
     description: Fachspezifische Softwaretechnik
+  - name: webdev
+    description: Webentwicklung
+    topics:
+      - name: javascript
+        description: JavaScript
 ---
 
-# HTL Braunau, HTL Braunau
-102
-
-page.title {{ page.title }}
-
-page.categorytitles {{ page.categories }}
-
-page.categorytitles[0] {{ page.categories[0] }}
-
-
-{% assign topic_name = page.categories | where: 'name', 'mediendesign' %}
-topic_name[0].description {{ topic_name[0].description }}
-topic_name[0].topics {{ topic_name[0].topics }}
-
-
-
-{% assign topic_name = page.categories | where: 'name', 'fsst' %}
-topic_name {{ topic_name }}
-topic_name.description {{ topic_name=>description }}
-
-topic_name.description {{ topic_name[0].description }}
-
-
+# HTL Braunau
 
 ## Inhaltsverzeichnis
 
@@ -48,9 +31,7 @@ topic_name.description {{ topic_name[0].description }}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
-
 <h4>{{topic.name}} - {{ topic_name[0].description }}</h4>
-
 <ul>
 {% for page in topic.items %}
 {% if page.sitemap_exclude != 'y' %}
