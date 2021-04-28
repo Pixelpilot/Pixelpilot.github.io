@@ -11,7 +11,7 @@ categorytitles:
 
 # HTL Braunau, HTL Braunau
 
-2
+3
 
 page.title {{ page.title }}
 
@@ -31,7 +31,7 @@ page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
 <h3>{{category.name}}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
-{% assign topic_name = page.categorytitles | where: 'name', topic.name%}
+{% assign topic_name = page.categorytitles | where: 'name', topic.name %}
 <h4>{{topic.name}} - {{ topic_name }}</h4>
 
 <ul>
