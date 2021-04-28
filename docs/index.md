@@ -15,8 +15,8 @@
 
 
 ### Sitemap automatisch generiert
-{% assign items_grouped = site.pages | group_by: 'category' %}
-{% for group in items_grouped %}
+{% assign category = site.pages | group_by: 'category' %}
+{% for group in category %}
 <h3>{{group.name}}</h3>
 {% for item in group.items %}
 <p>{{item.title}}</p>
@@ -27,8 +27,8 @@
 
 ---
 
-{% assign items_grouped = site.pages | group_by: 'category' %}
-{% for group in items_grouped %}
+{% assign category = site.pages | group_by: 'category' %}
+{% for group in category %}
 <h3>{{group.name}}</h3>
 {% for page in group.items %}
 {% assign topic_name = page.topic %}
