@@ -49,6 +49,10 @@ ul.task-list {
 
   table.rouge-table td.gutter,
   table.rouge-table td.code {
-    background-color: indianred;
+    border: none;
+  }
+
+  table.rouge-table td.code {
+    borde-left: 1px solid;
   }
 }
