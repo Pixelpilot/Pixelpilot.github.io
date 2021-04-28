@@ -2,14 +2,23 @@
 title: Inhalte Gesammelt
 description: Christian Hanl, HTL Braunau
 layout: default
+categorytitles:
+  - mediendesign: Mediendesign
+  - fsst: Fachspezifische Softwaretechnik
 ---
 
 # HTL Braunau, HTL Braunau
+
+
+{{ title }}
+
+{{ categorytitles }}
 
 ## Inhaltsverzeichnis
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
+<hr>
 <h3>{{category.name}}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
