@@ -22,7 +22,7 @@ page.categorytitles[0] {{ page.categorytitles[0] }}
 
 page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
 
-{% assign cat = page.categorytitles | where: 'category', category.name | group_by: 'topic' %}
+
 
 ## Inhaltsverzeichnis
 
