@@ -14,9 +14,6 @@
 [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
 
 
-### Sitemap with plugin
-
-
 ### Sitemap automatisch generiert
 {% assign items_grouped = site.pages | group_by: 'category' %}
 {% for group in items_grouped %}
@@ -34,8 +31,9 @@
 {% for group in items_grouped %}
 <h3>{{group.name}}</h3>
 
-
 {% for page in group.items %}
+{% assign topic_name = page.topic %}
+Topic Name: {{ topic_name }}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
 {% endfor %}
 
