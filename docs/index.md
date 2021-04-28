@@ -21,17 +21,13 @@ categories:
 
 # HTL Braunau
 
-## Inhaltsverzeichnis 2
+## Inhaltsverzeichnis 3
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
 {% assign category_name = page.categories | where: 'name', category.name %}
 <hr>
-{% if category_name And category_name != "" And category_name != nil %}
-<h3>{{ category_name[0].description }}</h3>
-{% elseif category_name[0] And category_name[0] != "" And category_name[0] != nil %}
-<h3>{{ category.name }}</h3>
-{% endif %}
+<h3>{{ category.name }} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
