@@ -31,7 +31,9 @@ categories:
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
+{% if topic.name != '' %}
 <h4>{{topic.name}} - {{ topic_name[0].description }}</h4>
+{% endif %}
 <ul>
 {% for page in topic.items %}
 {% if page.sitemap_exclude != 'y' %}
