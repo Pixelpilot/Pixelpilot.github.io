@@ -21,7 +21,7 @@ page.categorytitles[0] {{ page.categorytitles[0] }}
 
 page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
 
-{% assign cat = page.categorytitles | where: 'category', category.name | group_by: 'topic' %}
+
 
 ## Inhaltsverzeichnis
 
@@ -31,7 +31,9 @@ page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
 <h3>{{category.name}}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
-<h4>{{topic.name}}</h4>
+{% assign topic_name = page.categorytitles | where: 'name', topic.name%}
+<h4>{{topic.name}} - {{ topic_name }}</h4>
+
 <ul>
 {% for page in topic.items %}
 {% if page.sitemap_exclude != 'y' %}
