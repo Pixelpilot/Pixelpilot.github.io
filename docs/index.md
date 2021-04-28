@@ -38,7 +38,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 #### Mediendesign
 {% for page in site.pages %}
 {% if page.category == 'mediendesign' %}
-<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
 {% endif %}
 {% endfor %}
 
