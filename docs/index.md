@@ -4,24 +4,14 @@
 
 
 [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
-
-
 [IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
-
 [Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
-
-[Content](content.md)
-
-[Strings](fsst/strings.md)
-
-You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
 
 
 ### Sitemap with plugin
 
-[Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
+
 {% include toc.html html=content %}
 
 
