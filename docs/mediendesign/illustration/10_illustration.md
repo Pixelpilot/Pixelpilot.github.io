@@ -2,7 +2,7 @@
 title: Formen und Elemente
 description: Grundlagen der Illustration mit Adobe Illustrator – Formen
 layout: default
-category: mediendesign
+category: Mediendesign mit einem längeren Titel
 topic: Illustration mit Adobe Illustrator
 ---
 
