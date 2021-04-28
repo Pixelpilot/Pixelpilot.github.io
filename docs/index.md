@@ -41,7 +41,7 @@ topic_name.description {{ topic_name[0].description }}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = page.categorytitles | where: 'name', topic.name %}
-<h4>{{topic.name}} - {{ topic_name.description }}</h4>
+<h4>{{topic.name}} - {{ topic_name[0].description }}</h4>
 
 <ul>
 {% for page in topic.items %}
