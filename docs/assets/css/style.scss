@@ -42,7 +42,8 @@ ul.task-list {
 
   margin-left: 0;
   margin-right: 0;
-  border: 10px dotted green;
+  border: 1px solid rgb(220, 230, 240);
+  border-radius: 0.3rem;
 
   pre {
     border: none;
@@ -55,6 +56,6 @@ ul.task-list {
   }
 
   table.rouge-table td.code {
-    borde-left: 1px solid;
+    border-left: 1px solid rgb(220, 230, 240);
   }
 }
