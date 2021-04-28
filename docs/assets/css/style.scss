@@ -38,13 +38,13 @@ ul.task-list {
 
 //  Listings mit Zeilennummern
 
-figure.highlight {
+.main-content figure.highlight {
 
   margin-left: 0;
 
   pre {
     border: none;
-    padding:0;
+    padding: 0 !important;
   }
 
   table.rouge-table td.gutter,
