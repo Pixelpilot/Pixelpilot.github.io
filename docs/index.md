@@ -10,7 +10,7 @@ categories:
         description: Bildbearbeitung mit Photoshop
       - name: illustration
         description: Illustration mit Adobe Illustrator
-  - name: fssta
+  - name: fsst
     description: Fachspezifische Softwaretechnik
   - name: webdev
     description: Webentwicklung
@@ -21,15 +21,11 @@ categories:
 
 # HTL Braunau
 
-## Inhaltsverzeichnis 12
-
-- [ ] Überschriften ausblenden, wenn keine Kategorie vergeben ist ...
+## Inhaltsverzeichnis
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
 {% assign category_name = page.categories | where: 'name', category.name %}
-
-
 {% if category_name[0].description  == nil %}
 {% if category.name  != "" %}
 <h3>{{ category.name }}</h3>
@@ -37,9 +33,6 @@ categories:
 {% else %}
 <h3>{{ category_name[0].description }}</h3>
 {% endif %}
-
-
-<h3>{{ category.name }} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
