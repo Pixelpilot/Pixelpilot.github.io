@@ -3,20 +3,47 @@
 
 
 
+
 [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
 
-[Content](content.md)
+[IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
 
-[Strings](fsst/strings.md)
+[Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
 
-You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.github.io/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+[Filters](https://blog.webjeda.com/jekyll-filters/)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
 
-### Test eigene Sitemap
 
-{% for page in site.pages %}
+
+### Sitemap automatisch generiert
+{% assign category = site.pages | group_by: 'category' %}
+{% for group in category %}
+<h3>{{group.name}}</h3>
+{% for page in group.items %}
+{% assign topic_name = page.topic %}
+{% if topic_name != topic_name_old %}
+<h4>{{ topic_name }}</h4>
+{% endif %}
 {% if page.sitemap_exclude != 'y' %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}} {{page.description}}</a></div>
+{% endif %}
+{% assign topic_name_old = page.topic %}
+{% endfor %}
+{% endfor %}
+
+
+
+##### Mediendesign mit "WHERE"
+{% assign category-pages = site.pages | where: "category","mediendesign" %}
+{% for page in category-pages %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
+{% endfor %}
+
+
+##### Mediendesign - Illustration
+{% for page in site.pages %}
+{% if page.category == 'mediendesign' and page.topic == 'illustration' %}
 <div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
 {% endif %}
 {% endfor %}
