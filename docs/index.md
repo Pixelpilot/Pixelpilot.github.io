@@ -10,8 +10,7 @@ categorytitles:
 ---
 
 # HTL Braunau, HTL Braunau
-
-3
+4
 
 page.title {{ page.title }}
 
@@ -19,7 +18,10 @@ page.categorytitles {{ page.categorytitles }}
 
 page.categorytitles[0] {{ page.categorytitles[0] }}
 
-page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
+{% assign topic_name = page.categorytitles | where: 'name', 'mediendesign' %}
+topic_name {{ topic_name }}
+topic_name.description {{ topic_name.description }}
+
 
 
 
