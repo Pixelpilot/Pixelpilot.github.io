@@ -30,11 +30,18 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 ### Sitemap automatisch generiert mit 3 Levels
-{% assign items_grouped = site.pages | group_by: 'topic' %}
+{% assign items_grouped = site.pages | group_by: 'category' %}
 {% for group in items_grouped %}
 <h3>{{group.name}}</h3>
+
+{% assign sorted-posts = site.pages | where: "category", group.name %}
+{% for post in sorted-posts %}
+  <li>{{post.title}}</li>
+{% endfor %}
+
 {% for item in group.items %}
 <p>{{item.title}} <a href="{{item.url}}">{{item.name}}</a>, {{item.category}}, {{item.topic}}</p>
+
 {% endfor %}
 {% endfor %}
 
@@ -66,7 +73,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ---
 
-
+{:toc}
 
 
 ##### Mediendesign - Illustration
