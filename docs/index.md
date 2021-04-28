@@ -28,6 +28,8 @@ topic_name.description {{ topic_name.description }}
 topic_name {{ topic_name }}
 topic_name.description {{ topic_name=>description }}
 
+topic_name.description {{ topic_name[0].description }}
+
 
 
 ## Inhaltsverzeichnis
