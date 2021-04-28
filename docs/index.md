@@ -21,7 +21,7 @@ categories:
 
 # HTL Braunau
 
-## Inhaltsverzeichnis 9
+## Inhaltsverzeichnis 10
 
 - [ ] Überschriften ausblenden, wenn keine Kategorie vergeben ist ...
 
@@ -32,7 +32,7 @@ categories:
 {% if category.name  == "" %}
 Leer category.name
 {% endif %}
-{% if category_name[0].description  == "" %}
+{% if category_name[0].description  == nil %}
 Leer category_name[0].description
 {% endif %}
 
