@@ -1,12 +1,12 @@
 ---
 title: Formen und Elemente
-description: Grundlagen der Illustration mit Adobe Illustrator – Part One
+description: Grundlagen der Illustration mit Adobe Illustrator – Formen
 layout: default
 category: mediendesign
 topic: illustration
 ---
 
-# Adobe Illustrator
+# {{ page.title }}
 
 --- 
 
