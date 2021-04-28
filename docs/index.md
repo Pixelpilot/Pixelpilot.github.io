@@ -34,7 +34,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% for group in items_grouped %}
 <h3>{{group.name}}</h3>
 {% for item in group.items %}
-<p>{{item.title}}</p>
+<p>{{item.title}} <a href="{{item.url}}">{{item.name}}</a>, {{item.category}}, {{item.topic}}</p>
 {% endfor %}
 {% endfor %}
 
