@@ -24,7 +24,7 @@ layout: default
 {% endfor %}
 
 
-## Inhaltsverzeichnis 4
+## Inhaltsverzeichnis 5
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
@@ -32,6 +32,11 @@ layout: default
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 <h4>{{topic.name}}</h4>
+<ol>
+{% for page in topic.items %}
+<li><a href="{{page.url}}">{{page.description}}</a> {{ page.name }}</li>
+{% endfor %}
+</ol>
 {% endfor %}
 {% endfor %}
 
