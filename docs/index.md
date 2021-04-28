@@ -32,7 +32,7 @@ page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = page.categorytitles | where: 'name', topic.name %}
-<h4>{{topic.name}} - {{ topic_name }}</h4>
+<h4>{{topic.name}} - {{ topic_name.description }}</h4>
 
 <ul>
 {% for page in topic.items %}
