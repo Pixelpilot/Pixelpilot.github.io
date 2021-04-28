@@ -42,6 +42,16 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endif %}
 {% endfor %}
 
+---
+
+{% assign items_grouped = site.pages | group_by: 'category' %}
+{% for group in items_grouped %}
+<h3>{{group.name}}</h3>
+{% for item in group.items %}
+<p>{{item.title}}</p>
+{% endfor %}
+{% endfor %}
+
 
 ##### Mediendesign - Illustration
 {% for page in site.pages %}
