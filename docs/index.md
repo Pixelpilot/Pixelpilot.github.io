@@ -22,11 +22,11 @@ categories:
 # HTL Braunau
 
 ## Inhaltsverzeichnis
-
+<div class="sitemap">
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
 {% assign category_name = page.categories | where: 'name', category.name %}
-{% if category_name[0].description  == nil %}
+{% if category_name[0].description == nil %}
 {% if category.name  != "" %}
 <h3>{{ category.name }}</h3>
 {% endif %}
@@ -50,3 +50,4 @@ categories:
 </ul>
 {% endfor %}
 {% endfor %}
+</div>
