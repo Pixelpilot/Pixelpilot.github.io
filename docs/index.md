@@ -30,8 +30,8 @@ layout: default
 {% for category in categories %}
 <h3>{{category.name}}</h3>
 {% assign topics = site.pages | group_by: 'topic' %}
-{% for topic in topics.items %}
-<div>{{topic.name}}</div>
+{% for topic in topics %}
+<h4>{{topics.name}}</h4>
 {% endfor %}
 {% endfor %}
 
