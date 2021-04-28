@@ -1,11 +1,11 @@
 ---
-title: Arrays
+title: Arrays C1
 description: Test Arrays
 layout: default
 category: fsst
 ---
 
-# Arrays
+# Arrays C1
 
 [Zur Übersicht](../index.md)
 
