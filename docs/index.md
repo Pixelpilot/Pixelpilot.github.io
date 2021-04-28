@@ -26,7 +26,7 @@ categories:
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
 {% assign category_name = page.categories | where: 'name', category.name %}
-{% if page.title %}
+{% if page.title != "" %}
 <hr>
 <h3>{{ category.name }} - {{ category_name[0].description }}</h3>
 <% endif %>
