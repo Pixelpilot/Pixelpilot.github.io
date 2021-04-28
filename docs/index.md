@@ -17,7 +17,7 @@ layout: default
 <h4>{{ topic_name }}</h4>
 {% endif %}
 {% if page.sitemap_exclude != 'y' %}
-<li><a href="{{page.url}}">{{page.description}}</a></li>
+<li><a href="{{page.url}}">{{page.description}}</a> {{page.title}}</li>
 {% endif %}
 {% assign topic_name_old = page.topic %}
 {% endfor %}
