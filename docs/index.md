@@ -32,6 +32,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 </ol>
 
 
+
+### Mediendesign
+<ol>
+{% for example in site.examples %}
+<li><a href="{{ example.url }}">
+{{ example.title }} - {{ example.description }}
+</a></li>
+{% endfor %}
+</ol>
+
+
 ### TODO
 
 - [x] [Check collections](https://jekyllrb.com/docs/collections/)
