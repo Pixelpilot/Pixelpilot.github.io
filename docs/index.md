@@ -4,8 +4,13 @@
 
 
 [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
+
 [IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
+
 [Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
+
+[Filters](https://blog.webjeda.com/jekyll-filters/)
+
 [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
 
 
@@ -50,7 +55,12 @@
 
 ---
 
-{:toc}
+##### Mediendesign mit "WHERE"
+{% for page in site.pages | where: "category","mediendesign" %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a>, {{page.topic}}</div>
+{% endfor %}
+
+| where: "author","sharathdt"
 
 
 ##### Mediendesign - Illustration
