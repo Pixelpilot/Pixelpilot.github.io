@@ -29,6 +29,23 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endif %}
 {% endfor %}
 
+
+#### Mediendesign
+{% for page in site.pages %}
+{% if page.category == 'mediendesign' %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+{% endif %}
+{% endfor %}
+
+
+##### Mediendesign - Illustration
+{% for page in site.pages %}
+{% if page.category == 'mediendesign' and page.topic == 'illustration' %}
+<div>{{page.title}}: <a href="{{page.url}}">{{page.name}}</a></div>
+{% endif %}
+{% endfor %}
+
+
 ### Test Collections
 <ol>
 {% for example in site.examples %}
