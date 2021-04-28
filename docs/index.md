@@ -19,6 +19,12 @@ You can use the [editor on GitHub](https://github.com/Pixelpilot/Pixelpilot.gith
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 
+### Sitemap with plugin
+
+[Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
+{% include toc.html html=content %}
+
+
 ### Sitemap automatisch generiert
 {% assign items_grouped = site.pages | group_by: 'category' %}
 {% for group in items_grouped %}
@@ -28,22 +34,6 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 {% endfor %}
 {% endfor %}
 
-
-### Sitemap automatisch generiert mit 3 Levels
-{% assign items_grouped = site.pages | group_by: 'category' %}
-{% for group in items_grouped %}
-<h3>{{group.name}}</h3>
-
-{% assign sorted-posts = site.pages | where: "category", group.name %}
-{% for post in sorted-posts %}
-  <li>{{post.title}}</li>
-{% endfor %}
-
-{% for item in group.items %}
-<p>{{item.title}} <a href="{{item.url}}">{{item.name}}</a>, {{item.category}}, {{item.topic}}</p>
-
-{% endfor %}
-{% endfor %}
 
 
 
