@@ -35,7 +35,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Mediendesign
 <ol>
-{% for example in site.examples %}
+{% for example in site.mediendesign %}
 <li><a href="{{ example.url }}">
 {{ example.title }} - {{ example.description }}
 </a></li>
