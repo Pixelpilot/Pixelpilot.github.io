@@ -2,29 +2,32 @@
 title: Inhalte Gesammelt
 description: Christian Hanl, HTL Braunau
 layout: default
-categorytitles:
+categories:
   - name: mediendesign
-    description: 'Mediendesign'
+    description: Mediendesign
+    topics:
+      - name: bildbearbeitung
+        description: Bildbearbeitung mit Photoshop
   - name: fsst
     description: Fachspezifische Softwaretechnik
 ---
 
 # HTL Braunau, HTL Braunau
-8
+9
 
 page.title {{ page.title }}
 
-page.categorytitles {{ page.categorytitles }}
+page.categorytitles {{ page.categories }}
 
-page.categorytitles[0] {{ page.categorytitles[0] }}
+page.categorytitles[0] {{ page.categories[0] }}
 
 
-{% assign topic_name = page.categorytitles[0] | where: 'name', 'mediendesign' %}
+{% assign topic_name = page.categories[0] | where: 'name', 'mediendesign' %}
 topic_name {{ topic_name }}
 topic_name.description {{ topic_name.description }}
 
 
-{% assign topic_name = page.categorytitles | where: 'name', 'fsst' %}
+{% assign topic_name = page.categories | where: 'name', 'fsst' %}
 topic_name {{ topic_name }}
 topic_name.description {{ topic_name=>description }}
 
@@ -36,7 +39,7 @@ topic_name.description {{ topic_name[0].description }}
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
-{% assign category_name = page.categorytitles | where: 'name', category.name %}
+{% assign category_name = page.categories | where: 'name', category.name %}
 <hr>
 <h3>{{category.name}} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
