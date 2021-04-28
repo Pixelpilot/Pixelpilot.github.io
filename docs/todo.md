@@ -1,4 +1,11 @@
-## Welcome to GitHub Pages
+---
+title: Todo
+description: Zu erledigen
+category: todo
+topic: github
+---
+
+# Todo
 
 
 
@@ -13,6 +20,8 @@
 [Filters](https://blog.webjeda.com/jekyll-filters/)
 
 [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
+
+
 
 
 

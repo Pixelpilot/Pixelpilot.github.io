@@ -32,11 +32,11 @@ layout: default
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 <h4>{{topic.name}}</h4>
-<ol>
+<ul>
 {% for page in topic.items %}
-<li><a href="{{page.url}}">{{page.description}}</a> {{ page.name }}</li>
+<li><a href="{{page.url}}">{{page.description}}</a> {{ page.title }}</li>
 {% endfor %}
-</ol>
+</ul>
 {% endfor %}
 {% endfor %}
 
