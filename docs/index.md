@@ -32,10 +32,11 @@ categories:
 {% if category.name  == "" %}
 Leer category.name
 {% endif %}
-{% if category_name.name  == "" %}
-Leer category_name.name
+{% if category_name[0].description  == "" %}
+Leer category_name[0].description
 {% endif %}
-<hr>
+
+
 <h3>{{ category.name }} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
