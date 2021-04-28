@@ -10,7 +10,7 @@ categorytitles:
 ---
 
 # HTL Braunau, HTL Braunau
-7
+8
 
 page.title {{ page.title }}
 
@@ -36,12 +36,12 @@ topic_name.description {{ topic_name[0].description }}
 
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
+{% assign category_name = page.categorytitles | where: 'name', category.name %}
 <hr>
-<h3>{{category.name}}</h3>
+<h3>{{category.name}} - {{ category_name[0].description }}</h3>
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
-{% assign topic_name = page.categorytitles | where: 'name', topic.name %}
-<h4>{{topic.name}} - {{ topic_name[0].description }}</h4>
+<h4>{{topic.name}}</h4>
 
 <ul>
 {% for page in topic.items %}
