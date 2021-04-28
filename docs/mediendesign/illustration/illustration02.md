@@ -1,5 +1,4 @@
 ---
-type: section
 title: Illustration
 description: Part Two: Grundlagen der Illustration mit Adobe Illustrator
 layout: default
