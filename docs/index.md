@@ -30,12 +30,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 
 ### Sitemap automatisch generiert mit 3 Levels
-{% assign categories = site.pages | group_by: 'category' %}
-{% for category in categories %}
-<h3>{{category.name}}</h3>
-{% assign topic = category | group_by: 'topic' %}
-{% for item in topic.items %}
-<p>{{topic.title}}</p>
+{% assign items_grouped = site.pages | group_by: 'topic' %}
+{% for group in items_grouped %}
+<h3>{{group.name}}</h3>
+{% for item in group.items %}
+<p>{{item.title}}</p>
 {% endfor %}
 {% endfor %}
 
