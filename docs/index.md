@@ -30,29 +30,17 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 </a></li>
 {% endfor %}
 </ol>
-### site.categories.architecture
-{{ site.categories.architecture }}
-{{ site.categories.architecture }}
 
 
 ### TODO
 
-[Check collections](https://jekyllrb.com/docs/collections/)
-
-- [ ] test1
-- [ ] test3
-
+- [x] [Check collections](https://jekyllrb.com/docs/collections/)
 - [ ] Sitemap als `_includes`-Snippet 
- 
 - [ ] Sitemap in `_layouts` integrieren
 - [x] Plugin zum Kopieren von Bildern aus dem Zwischenspeicher (*Paste Images into Markdown*)
 - [ ] Markdown Example Page erstellen (auch mit `Kramdown` Anweisungen)
-- [ ] Check nach Tag gruppieren
-- [x] Finish my changes
-- [ ] Push my commits to GitHub
-- [ ] Open a pull request
+- [x] Check nach Tag gruppieren - Geht für Pages nicht
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
