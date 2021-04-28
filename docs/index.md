@@ -13,6 +13,11 @@ page.title {{ page.title }}
 
 page.categorytitles {{ page.categorytitles }}
 
+page.categorytitles[0] {{ page.categorytitles[0] }}
+
+page.categorytitles['mediendesign'] {{ page.categorytitles['mediendesign'] }}
+
+
 ## Inhaltsverzeichnis
 
 {% assign categories = site.pages | group_by: 'category' %}
