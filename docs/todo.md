@@ -14,6 +14,12 @@ topic: github
 - [ ] [Filters](https://blog.webjeda.com/jekyll-filters/)
 - [ ] [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
 
+### Diverse Inhalte:
+
+Pfeile:
+⟶
+⇨
+⟸
 
 
 ### Sitemap automatisch generiert

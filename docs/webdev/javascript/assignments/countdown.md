@@ -25,7 +25,7 @@ Umsetzen des Umrechners in HTML:
 
 Umsetzen der Funktionalität in JavaScript:
 
-* Im Textfeld links oben kann die Startzeit eingegeben werden
+* Im Textfeld links oben kann die Startzeit eingegeben werden.
 * Bei Klick auf den Button `Start` startet der Countdown. Die verbleibende Zeit wird in einem `<div>` ausgegeben.
 * Bei Klick auf den Button `Stop` wird der Countdown pausiert.
 * Bei Klick auf den Button `Reset` wird der Countdown auf die im Textfeld eingegebene Zeit zurückgesetzt.
