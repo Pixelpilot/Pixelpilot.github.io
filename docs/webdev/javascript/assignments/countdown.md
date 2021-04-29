@@ -9,7 +9,7 @@ topic: javascript
 
 ## Eingabe und Ausgabe (Übungen – Countdown)
 
-![Countdown](img/countdown.png)
+![Countdown](img/intervall_countdown.png)
 ----
 
 Es ist eine einfache Webapp zu erstellen, die einen Countdown realisiert.
