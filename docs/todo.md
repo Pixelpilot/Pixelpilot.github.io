@@ -16,10 +16,14 @@ topic: github
 
 ### Diverse Inhalte:
 
-Pfeile:
-⟶
-⇨
-⟸
+![Pfeile](https://unicode-table.com/de/sets/arrow-symbols/)
+⟵ ⟶
+⟸ ⟹
+☚ ☛
+⇐ ⇒
+⇦ ⇨
+➮ ➜
+
 
 
 ### Sitemap automatisch generiert
