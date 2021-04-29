@@ -11,7 +11,7 @@ topic: javascript
 
 ![Währungsrechner](./img/dollar2euro.png)
 
-----
+
 
 Es ist ein einfaches Formular zu erstellen, mit dessen Hilfe man Euro nach Dollar umrechnen kann.
 
@@ -26,7 +26,7 @@ Umsetzen des Umrechners in HTML, Stylen der Elemente mit CSS:
 	* Klasse		z.B.: .rounded {}
 	* Id			z.B.: #container {}
 
-----
+
 
 ### 2. JavaScript
 
@@ -35,7 +35,7 @@ Umsetzen der Funktionalität in JavaScript:
 * Bei Klick auf den Button **Umrechnen** wird der Dollarwert entsprechend dem akutellen Dollarkurs berechnet und ausgegeben. Definiere den aktuellen Dollarkurs mit einer globalen Variable.
 * Bei Klick auf den Button **Reset** sollen die beiden Formularfelder gelöscht werden.
 
-----
+
 
 ### 3. Erweiterungen
 

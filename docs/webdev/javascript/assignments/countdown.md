@@ -14,14 +14,12 @@ topic: javascript
 
 Es ist eine einfache Webapp zu erstellen, die einen Countdown realisiert.
 
-### 1. HTML und CSS
+### 1. HTML
 
 Umsetzen des Umrechners in HTML:
 * Eingabe mittels Formularfelder und Buttons
 * Ausgabe über ein `<div>`
 
-
-----
 
 ### 2. JavaScript
 
@@ -31,18 +29,15 @@ Umsetzen der Funktionalität in JavaScript:
 * Bei Klick auf den Button `Start` startet der Countdown. Die verbleibende Zeit wird in einem `<div>` ausgegeben.
 * Bei Klick auf den Button `Stop` wird der Countdown pausiert.
 * Bei Klick auf den Button `Reset` wird der Countdown auf die im Textfeld eingegebene Zeit zurückgesetzt.
-* Bei Klick auf die Buttons `+ 10 sec` `+ 1 sec` `- 1 sec` `- 10 sec` soll die Zeit verbleibende Zeit im `<div>` entsprechend angepasst werden.
+* Bei Klick auf die Buttons `+ 10 sec` `+ 1 sec` `- 1 sec` `- 10 sec` soll die verbleibende Zeit im `<div>` entsprechend angepasst werden.
 
 Dokumentation:
 
-* [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout)
-* [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
-* [clearTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout)
-* [clearInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval)
+* [setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout){:target="_blank"}
+* [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval){:target="_blank"}
+* [clearTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout){:target="_blank"}
+* [clearInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval){:target="_blank"}
 
-
-
----
 
 ### 3. CSS
 
@@ -55,7 +50,6 @@ Stylen der Elemente mit CSS:
 	- Id			z.B.: #container {}
 
 
-----
 
 ### 4. Erweiterungen
 
