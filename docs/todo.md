@@ -25,6 +25,7 @@ sitemap_exclude: y
 * ⇐ ⇒
 * ⇦ ⇨
 * ➮ ➜
+* ⇄ ⇆ ⇅ ⇋ ⇌
 
 
 
