@@ -16,13 +16,14 @@ topic: github
 
 ### Diverse Inhalte:
 
-![Pfeile](https://unicode-table.com/de/sets/arrow-symbols/)
-⟵ ⟶
-⟸ ⟹
-☚ ☛
-⇐ ⇒
-⇦ ⇨
-➮ ➜
+[https://unicode-table.com/de/sets/arrow-symbols/](https://unicode-table.com/de/sets/arrow-symbols/)
+
+* ⟵ ⟶
+* ⟸ ⟹
+* ☚ ☛
+* ⇐ ⇒
+* ⇦ ⇨
+* ➮ ➜
 
 
 
