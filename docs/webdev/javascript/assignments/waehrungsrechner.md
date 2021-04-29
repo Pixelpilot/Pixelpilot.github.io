@@ -45,4 +45,4 @@ Implementiere weitere Erweiterungen:
 * Zusätzliche Währungen dazugeben (z.B.: Pfund)
 * Umrechner zwischen Zahlensystemen ...
 
-![Dezimal nach Binär](./forms_dollar2euro_images/decimal2binary.png){:width="480px"}
+![Dezimal nach Binär](./img/decimal2binary.png){:width="480px"}
