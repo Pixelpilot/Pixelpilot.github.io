@@ -1,15 +1,15 @@
 ---
-title: Währungsumrechner
-description: Javascript - Formulare - Ein- und Ausgabe
+title: Countdown
+description: Javascript - Timeout - Ein- und Ausgabe
 category: webdev
 topic: javascript
 ---
 
 # Javascript
 
-## Eingabe und Ausgabe (Übungen – Währungsumrechner )
+## Eingabe und Ausgabe (Übungen – Währungsumrechner)
 
-![Währungsrechner](./forms_dollar2euro_images/dollar2euro.png)
+![Währungsrechner](./img/dollar2euro.png)
 
 ----
 
