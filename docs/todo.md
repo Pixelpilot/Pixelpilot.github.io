@@ -27,7 +27,7 @@ sitemap_exclude: y
 * ➮ ➜
 * ⇄ ⇆ ⇅ ⇋ ⇌
 
-
+### Arrows: ☛ ⇐ ⇒ ⇦ ⇨ ➮ ➜ ⇄ ⇆ ⇅ ⇋ ⇌
 
 ### Sitemap automatisch generiert
 {% assign category = site.pages | group_by: 'category' %}
