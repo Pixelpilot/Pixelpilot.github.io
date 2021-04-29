@@ -3,6 +3,7 @@ title: Todo
 description: Zu erledigen
 category: todo
 topic: github
+sitemap_exclude: y
 ---
 
 # Todo
