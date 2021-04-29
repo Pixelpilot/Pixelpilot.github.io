@@ -1,25 +1,22 @@
 ---
-title: Währungsumrechner
-description: Javascript - Formulare - Ein- und Ausgabe
+title: Countdown
+description: Javascript - Timeout, Interval - Ein- und Ausgabe
 category: webdev
 topic: javascript
 ---
 
 # Javascript
 
-## Eingabe und Ausgabe (Übungen – Währungsumrechner)
+## Eingabe und Ausgabe (Übungen – Countdown)
 
-![Countdown](img/timeout_countdown.png){:width="480px"}
-
-_Beispielhafte Umsetzung_
-
+![Countdown](img/timeout_countdown.png)
 ----
 
 Es ist eine einfache Webapp zu erstellen, die einen Countdown realisiert.
 
 ### 1. HTML und CSS
 
-Umsetzen des Umrechners in HTML, Stylen der Elemente mit CSS:
+Umsetzen des Umrechners in HTML:
 * Eingabe mittels Formularfelder und Buttons
 * Ausgabe über ein `<div>`
 
@@ -31,14 +28,25 @@ Umsetzen des Umrechners in HTML, Stylen der Elemente mit CSS:
 Umsetzen der Funktionalität in JavaScript:
 
 * Im Textfeld links oben kann die Startzeit eingegeben werden
-* Bei Klick auf den Button `Start` startet der Countdown. Die verbleibende Zeit wird in einem `<div>` ausgegeben.aktuellen Dollarkurs mit einer globalen Variable.
-* Bei Klick auf den Button **Reset** sollen die beiden Formularfelder gelöscht werden.
+* Bei Klick auf den Button `Start` startet der Countdown. Die verbleibende Zeit wird in einem `<div>` ausgegeben.
+* Bei Klick auf den Button `Stop` wird der Countdown pausiert.
+* Bei Klick auf den Button `Reset` wird der Countdown auf die im Textfeld eingegebene Zeit zurückgesetzt.
+* Bei Klick auf die Buttons `+ 10 sec` `+ 1 sec` `- 1 sec` `- 10 sec` soll die Zeit verbleibende Zeit im `<div>` entsprechend angepasst werden.
+
+Dokumentation:
+
+* https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout
+* https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval
+* https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout
+* https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval
+
+
 
 ---
 
 ### 3. CSS
 
-Passe das Aussehen per CSS an.
+Stylen der Elemente mit CSS:
 
 * Stylesheets in eigener Datei
 * Einsatz von verschiedenen „CSS-Arten“
@@ -51,8 +59,6 @@ Passe das Aussehen per CSS an.
 
 ### 4. Erweiterungen
 
-Implementiere weitere Erweiterungen:
-* Zusätzliches Formularfeld, um den aktuellen Dollarkurs anpassen zu können
-* Umschalter **Dollar -> Euro** und **Euro -> Dollar** 
-* Zusätzliche Währungen dazugeben (z.B.: Pfund)
-* Umrechner zwischen Zahlensystemen ...
+Implementiere folgende Erweiterungen:
+* Zeige **Zehntelsekunden** im Timer mit an
+* Erweitere den Timer um **Minuten** und **Sekunden**
