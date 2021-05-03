@@ -22,8 +22,9 @@
 
     <br>
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-    {{ page.category }}
-    {{ page.topic }}
+    {% if page.category == nil %}
+    nil
+    {% endif %}
 
     {% if page.topic != "" And page.category != "" %}
     <h2 class="project-tagline">{{ page.category }} – {{ page.topic }}</h2>
@@ -36,9 +37,12 @@
 
     <h1> {{ page.title }} </h1>
 
-    {% if page.hide_toc != 'y' %}
+    {% if page.url != '/' %}
     <h2>Inhalt</h2>
     {% include toc.html html=content h_min=2 h_max=3 %}
+    <% else %>
+    <h2>Inhalt</h2>
+    {% include toc.html html=content h_min=2 h_max=2 %}
     {% endif %}
 
     {{ content }}
