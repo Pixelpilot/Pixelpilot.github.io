@@ -13,7 +13,7 @@ layout: default
 {% assign category_name = page.categories | where: 'name', category.name %}
 {% if category_name[0].description == nil %}
 {% if category.name  != "" %}
-<h3>{{ category.name }}</h3>
+<h3 id="{{ category.name }}">{{ category.name }}</h3>
 {% endif %}
 {% else %}
 <h3 id="{{ category_name[0].description }}">{{ category_name[0].description }}</h3>
