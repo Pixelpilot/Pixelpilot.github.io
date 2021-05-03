@@ -72,7 +72,7 @@ cin.getline ( wort, 40 ); // Maximal 40 Zeichen
 /**
  *	Löscht das Consolen-Fenster nach Drücken einer Taste (C++)
  */
-void waitAndClear(){
+void waitAndClear() {
     cout << "Beliebige Taste drücken, um fortzufahren ...";
     
     cin.ignore(1);    // Enter aus dem Puffer löschen
@@ -86,9 +86,9 @@ void waitAndClear(){
 
 ```c
 /**
-*	Löscht das Consolen-Fenster nach Drücken einer Taste
+*	Löscht das Consolen-Fenster nach Drücken einer Taste (C)
 */
- void waitAndClear(){
+ void waitAndClear() {
 
      printf ("Beliebige Taste drücken, um fortzufahren ...\n");
      
