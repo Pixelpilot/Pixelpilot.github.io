@@ -35,7 +35,7 @@ Geometrische komplexe Form zeichnen:
 * Flugzeug
 * ...
   
-[Aufgabe - Einfache Formen](15_illustration_assignment.md)
+* [Aufgabe - Einfache Formen](15_illustration_assignment.md)
 
 
 
