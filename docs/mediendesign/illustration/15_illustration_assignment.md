@@ -2,8 +2,8 @@
 title: Formen
 description: Grundlagen der Illustration mit Adobe Illustrator – Formen - Aufgabe
 layout: default
-category: mediendesign
-topic: illustration
+category: Mediendesign
+topic: Illustrationen mit Adobe Illustrator
 ---
 
 # Aufgabe: Formen

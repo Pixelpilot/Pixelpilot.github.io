@@ -2,8 +2,8 @@
 title: Zeichenwerkzeuge
 description: Grundlagen der Illustration mit Adobe Illustrator – Part Two
 layout: default
-category: mediendesign
-topic: illustration
+category: Mediendesign
+topic: Illustrationen mit Adobe Illustrator
 ---
 
 # Adobe Illustrator
