@@ -9,11 +9,8 @@ subtopic: Aufgabe - Strukturen und Arrays
 sitemap_exclude: n
 ---
 
-# {{ page.title }}
 
-
-----
-### 1. Übung (Body Mass Index – BMI):
+### 1. Übung (Body Mass Index – BMI)
 Der Body Mass Index wird nach folgender Formel berechnet:
 
 `BMI = M/(L*L)`
@@ -29,13 +26,13 @@ Schreibe:
     
 ----
 
-### 2. Übung (Bewertung des BMI):
+### 2. Übung (Bewertung des BMI)
 Schreibe eine Funktion die ausgibt ob eine Person Unter-, Normal oder Übergewichtig ist. Ein Wert von 18.5−25.0 gilt als Normalgewicht, kleinere Werte bedeuten Untergewicht, größere Übergewicht.
 
 
 ----
 
-### 3. Übung (Geschlecht):
+### 3. Übung (Geschlecht)
 Männer haben in der Regel einen etwas höheren Anteil von Muskelmasse an der Gesamtkörpermasse als Frauen.
 
 Laut Deutscher Gesellschaft für Ernährung ist das Normalgewicht bei Männern im Bereich 20−25 kg/m2, und bei Frauen 19−24 kg/m2 (Quelle: wikipedia)
@@ -44,7 +41,7 @@ Berücksichtige dies bei der Bewertung des BMI.
 
 ----
 
-### 4. Übung (Mehrere Personen):
+### 4. Übung (Mehrere Personen)
 
 Erweitere das Programm so, dass bis zu 5 Personen verwaltet werden können. Verwende dazu ein Array mit `Person`.
 
@@ -65,6 +62,6 @@ Schreibe Funktionen zur
 
 ----
 
-### 5. Übung (Anlegen weiterer Personen):
+### 5. Übung (Anlegen weiterer Personen)
 
 Erweitere das Programm so dass zuerst bis zu 10 Personen (oder auch weniger) eingegeben werden können. 
