@@ -7,7 +7,7 @@ layout: default
 <div class="sitemap">
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
-{% if category.name  != "" %}
+{% if category.name != "" %}
 <h2 id="{{ category.name }}">{{ category.name }}</h2>
 {% endif %}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}

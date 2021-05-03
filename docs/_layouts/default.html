@@ -12,19 +12,21 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
-<body>{{ page.url }}}
+<body>{{ page.url }}
 <header class="page-header" role="banner">
 
-    {% if page.url != '\' %}
+    {% if page.url != '/' %}
     {% include backlink.html %}
     {% endif %}
 
 
     <br>
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    {% if page.category == "" And page.topic == "" %}
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-    <h3 class="project-tagline">{{ page.category }} – {{ page.topic }}</h3>
-
+    {% else %}
+    <h2 class="project-tagline">{{ page.category }} – {{ page.topic }}</h2>
+    {% endif %}
 </header>
 
 <main id="content" class="main-content" role="main">
