@@ -15,8 +15,9 @@
 <body>
 <header class="page-header" role="banner">
 
+    {% if page.url != '\' %}
     {% include backlink.html %}
-    {{ page.url }}
+    {% endif %}
 
 
     <br>
