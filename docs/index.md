@@ -16,7 +16,7 @@ layout: default
 <h3>{{ category.name }}</h3>
 {% endif %}
 {% else %}
-<h3>{{ category_name[0].description }}</h3>
+<h3 id="{{ category_name[0].description }}">{{ category_name[0].description }}</h3>
 {% endif %}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
@@ -24,7 +24,7 @@ layout: default
 {% if topic_name[0].description And topic_name[0].description != "" And topic_name[0].description != nil %}
 <h4>{{ topic_name[0].description }}</h4>
 {% else if topic.name != "" %}
-<h4>{{topic.name}}</h4>
+<h4 id="{{topic.name}}">{{topic.name}}</h4>
 {% endif %}
 <ul>
 {% for page in topic.items %}
