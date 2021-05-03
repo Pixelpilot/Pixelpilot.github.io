@@ -7,6 +7,9 @@ topic: Illustrationen mit Adobe Illustrator
 ---
 
 # {{ page.title }}
+
+[![Adobe Tutorial - Elemente transformieren und bearbeiten](http://images-tv.adobe.com/avp/vr/b758b4c4-2a74-41f4-8e67-e2f2eab83c6a/7c60b91e-5107-40db-bb1b-ab81a3b8a88b/792f507b_960x540.jpg)](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
+
 ![Adobe Tutorial - Elemente transformieren und bearbeiten](http://images-tv.adobe.com/avp/vr/b758b4c4-2a74-41f4-8e67-e2f2eab83c6a/7c60b91e-5107-40db-bb1b-ab81a3b8a88b/792f507b_960x540.jpg){:class="img-responsive"}
 
 --- 

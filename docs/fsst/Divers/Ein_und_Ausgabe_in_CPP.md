@@ -63,3 +63,19 @@ cin.ignore(1); // 1 Zeichen (Enter) aus dem Tastaturpuffer löschen
 cout << "Wort mit Leerzeichen? ";
 cin.getline ( wort, 40 ); // Maximal 40 Zeichen
 ```
+
+## Konsole löschen
+
+```c
+/**
+ *	Löscht das Consolen-Fenster nach Drücken einer Taste
+ */
+void waitAndClear(){
+    cout << "Beliebige Taste drücken, um fortzufahren ...";
+    
+    cin.ignore(1);    // Enter aus dem Puffer löschen
+    cin.clear();      // Eingabe neu initialisieren
+    getchar();        // Auf Tastendruck warten 
+    system("clear");  // Bildschirm löschen
+}
+```
