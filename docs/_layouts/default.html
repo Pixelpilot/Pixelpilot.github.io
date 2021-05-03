@@ -22,6 +22,8 @@
 
     <br>
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    {{ page.category }}
+    {{ page.topic }}
     {% if page.category == "" And page.topic == "" %}
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
     {% else %}
