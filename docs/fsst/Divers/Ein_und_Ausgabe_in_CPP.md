@@ -3,7 +3,7 @@ title: Ein- und Ausgabe in C++
 description: Programmieren in C - Divers
 layout: default
 category: Fachspezifische Softwaretechnik
-topic: Programmieren in C
+topic: Programmieren in C - Divers
 subtopic: Divers
 sitemap_exclude: n
 ---

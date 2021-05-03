@@ -3,7 +3,7 @@ title: Strukturen und Arrays - Übungen - BMI
 description: Programmieren in C - Teil 2
 layout: default
 category: Fachspezifische Softwaretechnik
-topic: Programmieren in C
+topic: Programmieren in C - Teil 2
 subtopic: Aufgabe - Strukturen und Arrays
 sitemap_exclude: n
 ---
