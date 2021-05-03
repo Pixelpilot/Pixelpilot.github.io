@@ -39,7 +39,7 @@
     {% if page.hide_toc != 'y' %}
     <h2>Inhalt</h2>
     {% include toc.html html=content h_min=2 h_max=3 %}
-    <% endif %>
+    {% endif %}
 
     {{ content }}
 
