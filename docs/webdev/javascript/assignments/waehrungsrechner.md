@@ -1,8 +1,9 @@
 ---
 title: Währungsumrechner
 description: Javascript - Formulare - Ein- und Ausgabe
-category: webdev
-topic: javascript
+category: Webentwicklung
+topic: Javascript
+subtopic: Eingabe und Ausgabe
 ---
 
 # Javascript

@@ -1,8 +1,9 @@
 ---
 title: Countdown
 description: Javascript - Timeout, Interval - Ein- und Ausgabe
-category: webdev
-topic: javascript
+category: Webentwicklung
+topic: Javascript
+subtopic: Eingabe und Ausgabe
 ---
 
 # Javascript

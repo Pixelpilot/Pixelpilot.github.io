@@ -9,3 +9,5 @@ sitemap_exclude: y
 ---
 
 # {{ page.title }}
+
+{% include toc.html html=content %}
