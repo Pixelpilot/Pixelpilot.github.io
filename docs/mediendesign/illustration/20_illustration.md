@@ -6,7 +6,6 @@ category: Mediendesign
 topic: Illustrationen mit Adobe Illustrator
 ---
 
-# Adobe Illustrator
 
 --- 
 

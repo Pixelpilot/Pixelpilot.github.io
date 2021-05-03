@@ -1,12 +1,12 @@
 ---
-title: Formen
+title: Aufgabe Formen
 description: Grundlagen der Illustration mit Adobe Illustrator – Formen - Aufgabe
 layout: default
 category: Mediendesign
 topic: Illustrationen mit Adobe Illustrator
 ---
 
-# Aufgabe: Formen
+
 ![Beispielhafte Umsetzung](./img/umsetzung_formen.png)
 
 _Beispielhafte Umsetzung_
