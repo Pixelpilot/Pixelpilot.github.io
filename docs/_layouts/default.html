@@ -19,10 +19,12 @@
     {% include backlink.html %}
     {% endif %}
 
+    {% if page.topic %}
+        <h1>TOPIC!!</h1>
+    {% endif %}
 
-    <br>
     <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-    {% if page.topic != "" And page.category != "" And page.topic != nil And page.category != nil%}
+    {% if page.topic != "" And page.category != "" And page.topic != nil And page.category != nil %}
     <h2 class="project-tagline">{{ page.category }} – {{ page.topic }}</h2>
     {% else %}
     <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
