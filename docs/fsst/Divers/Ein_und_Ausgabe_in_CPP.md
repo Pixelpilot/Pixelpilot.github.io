@@ -5,7 +5,7 @@ layout: default
 category: Fachspezifische Softwaretechnik
 topic: Programmieren in C
 subtopic: Divers
-sitemap_exclude: y
+sitemap_exclude: n
 ---
 
 # {{ page.title }}
