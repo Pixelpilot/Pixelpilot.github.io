@@ -10,16 +10,16 @@ layout: default
 {% assign category_name = page.categories | where: 'name', category.name %}
 {% if category_name[0].description == nil %}
 {% if category.name  != "" %}
-<h3 id="{{ category.name }}">{{ category.name }}</h3>
+<h2 id="{{ category.name }}">{{ category.name }}</h2>
 {% endif %}
 {% else %}
-<h3 id="{{ category_name[0].description }}">{{ category_name[0].description }}</h3>
+<h2 id="{{ category_name[0].description }}">{{ category_name[0].description }}</h2>
 {% endif %}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
 {% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
 {% if topic_name[0].description And topic_name[0].description != "" And topic_name[0].description != nil %}
-<h4>{{ topic_name[0].description }}</h4>
+<h3>{{ topic_name[0].description }}</h3>
 {% else if topic.name != "" %}
 <h4 id="{{topic.name}}">{{topic.name}}</h4>
 {% endif %}
