@@ -66,9 +66,11 @@ cin.getline ( wort, 40 ); // Maximal 40 Zeichen
 
 ## Konsole löschen
 
+### C++
+
 ```c
 /**
- *	Löscht das Consolen-Fenster nach Drücken einer Taste
+ *	Löscht das Consolen-Fenster nach Drücken einer Taste (C++)
  */
 void waitAndClear(){
     cout << "Beliebige Taste drücken, um fortzufahren ...";
@@ -78,4 +80,20 @@ void waitAndClear(){
     getchar();        // Auf Tastendruck warten 
     system("clear");  // Bildschirm löschen
 }
+```
+
+### C
+
+```c
+/**
+*	Löscht das Consolen-Fenster nach Drücken einer Taste
+*/
+ void waitAndClear(){
+
+     printf ("Beliebige Taste drücken, um fortzufahren ...\n");
+     
+     scanf("%*c");      // Tastaturpuffer löschen
+     getchar();	        // Auf Tastendruck warten
+     system("clear");   // Bildschirm löschen
+ }
 ```
