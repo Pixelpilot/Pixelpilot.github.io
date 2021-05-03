@@ -8,6 +8,8 @@ topic: Programmieren in C - Teil 2
 subtopic: Strukturen und Zeiger
 ---
 
+## Zeiger auf Strukturvariablen
+
 Es können Zeiger auf Strukturvariablen definiert werden.
 
 ```c
@@ -31,10 +33,7 @@ p->tag = 10;
 "Pfeilschreibweise" bei **Zeiger auf** Strukturen – Sonst müsste `(*p).tag` geschrieben werden, weil `.` eine höhere Priorität als `*` hat.
 
 Im Speicher kann man sich das folgendermaßen vorstellen:
-
-<img src="fig/image-20201102100600908.png" alt="image-20201102100600908" style="zoom:33%;" />
-
-
+![Strukturen und Zeiger](fig/strukturen_und_zeiger.png)
 
 
 
@@ -50,18 +49,16 @@ Für die Parameterübergaben an Funktionen.
 **Beispiel:**
 
 ```c
-struct Datum
-{
+typedef struct {
   int tag;
   int monat;
   int jahr;
-};
+} Datum;
 ```
 
 
 ```c
-void heute(Datum* d)
-{
+void heute(Datum* d) {
   d->tag = 11;
   d->monat = 11;
   d->jahr = 2011;
@@ -70,8 +67,7 @@ void heute(Datum* d)
 
 
 ```c
-main()
-{
+int main() {
   Datum h;
   heute(&h);
   printf("%02d.%02d.%d\n",h.tag,h.monat,h.jahr);
@@ -84,7 +80,7 @@ main()
 
 ### Übung (Ein- und Ausgabe)
 
-Schreibe eine Funktion `inputDatum` zur Eingabe und eine Funktion `outputDatum` zur Ausgabe eines Datums. Verwende die Struktur `Datum` und übergib die Struktur immer als Zeiger.
+Schreibe eine Funktion `inputDatum()` zur Eingabe und eine Funktion `outputDatum()` zur Ausgabe eines Datums. Verwende die Struktur `Datum` und übergib die Struktur immer als Zeiger.
 
 
 
