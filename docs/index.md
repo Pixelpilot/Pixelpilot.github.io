@@ -7,21 +7,13 @@ layout: default
 <div class="sitemap">
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
-{% assign category_name = page.categories | where: 'name', category.name %}
-{% if category_name[0].description == nil %}
 {% if category.name  != "" %}
 <h2 id="{{ category.name }}">{{ category.name }}</h2>
 {% endif %}
-{% else %}
-<h2 id="{{ category_name[0].description }}">{{ category_name[0].description }}</h2>
-{% endif %}
 {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
 {% for topic in topics %}
-{% assign topic_name = category_name[0].topics | where: 'name', topic.name %}
-{% if topic_name[0].description And topic_name[0].description != "" And topic_name[0].description != nil %}
-<h3>{{ topic_name[0].description }}</h3>
-{% else if topic.name != "" %}
-<h4 id="{{topic.name}}">{{topic.name}}</h4>
+{% if topic.name != "" %}
+<h3 id="{{topic.name}}">{{topic.name}}</h3>
 {% endif %}
 <ul>
 {% for page in topic.items %}
