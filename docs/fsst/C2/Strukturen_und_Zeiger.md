@@ -33,8 +33,10 @@ p->tag = 10;
 "Pfeilschreibweise" bei **Zeiger auf** Strukturen – Sonst müsste `(*p).tag` geschrieben werden, weil `.` eine höhere Priorität als `*` hat.
 
 Im Speicher kann man sich das folgendermaßen vorstellen:
+
 ![Strukturen und Zeiger](fig/strukturen_und_zeiger.png)
 
+![Strukturen und Zeiger](fig/strukturen_zeiger.png)
 
 
 ## Anwendung – Zeiger
@@ -91,22 +93,20 @@ Schreibe eine Funktion `inputDatum()` zur Eingabe und eine Funktion `outputDatum
 In einem Test/Schularbeitenkalender sollen Datum und Bezeichnung des Fachs erfasst werden. Verwende dazu die Struktur:
 
 ```c++
-struct KalenderEintrag
-{
+typedef struct {
   Datum am;
   char bezeichnung[50];  
-};
+} KalenderEintrag;
 ```
 
-Schreibe eine Funktion `inputKalenderEintrag` zur Eingabe und eine Funktion `outputKalenderEintrag` zur Ausgabe eines Kalendereintrags. Übergib die Struktur in beiden Fällen als Zeiger.
+Schreibe eine Funktion `inputKalenderEintrag()` zur Eingabe und eine Funktion `outputKalenderEintrag()` zur Ausgabe eines Kalendereintrags. Übergib die Struktur in beiden Fällen als Zeiger.
 
 Hinweis:
 
 ```c++
-void foo(KalenderEintrag* pKalender) 
-{
+void foo(KalenderEintrag* pKalender) {
   int tag;
-  // beachte die Anwendung von `->` und `.`
+  // beachte die Anwendung von "->" und "."
   tag = pKalender->am.tag;
 }
 ```

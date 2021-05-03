@@ -1,12 +1,9 @@
 ---
-title: Inhalte Gesammelt
-description: Christian Hanl, HTL Braunau
+title: Skripten Christian Hanl
+description: HTL Braunau
 layout: default
 ---
 
-# HTL Braunau
-
-## Inhaltsverzeichnis
 <div class="sitemap">
 {% assign categories = site.pages | group_by: 'category' %}
 {% for category in categories %}
