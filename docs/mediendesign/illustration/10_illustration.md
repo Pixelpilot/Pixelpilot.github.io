@@ -34,6 +34,10 @@ Geometrische komplexe Form zeichnen:
 * Fahrzeug
 * Flugzeug
 * ...
+  
+[Aufgabe - Einfache Formen](15_illustration_assignment.md)
+
+
 
 ## 2. Zeichenwerkzeuge
 
