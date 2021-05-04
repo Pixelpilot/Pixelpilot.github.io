@@ -4,6 +4,7 @@ description: Grundlagen der Illustration mit Adobe Illustrator – Formen - Aufg
 layout: default
 category: Mediendesign
 topic: Illustrationen mit Adobe Illustrator
+type: assignment
 ---
 
 
@@ -11,7 +12,6 @@ topic: Illustrationen mit Adobe Illustrator
 
 _Beispielhafte Umsetzung_
 
---- 
 
 ## Aufgabenstellung
 
