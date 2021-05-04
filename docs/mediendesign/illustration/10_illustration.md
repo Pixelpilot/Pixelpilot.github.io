@@ -87,7 +87,7 @@ Geometrische und organische Formen aus den Übungen 1 und 2
 
 
 
-<% comment %>
+<!--
 ## 4. Typografie
 
 Einfache Drucksorte gestalten
@@ -97,4 +97,4 @@ Einfache Drucksorte gestalten
 ## 5. Logodesign
 
 Foto vereinfachen und einfache Form daraus erstellen
-{% endcomment %}
+-->
