@@ -95,14 +95,14 @@ Geometrische und organische Formen aus den Übungen 1 und 2
 ## Aufgabensammlung
 
 ### Aufgabe 1: Formen und Elemente
-[Aufgabe - Formen und ELemente](11_illustration_forms_assignment.md)
+[Aufgabe 1 - Formen und ELemente](11_illustration_forms_assignment.md)
 
 
 ### Aufgabe 2: Zeichenwerkzeuge
-[Aufgabe - Zeichenwerkzeuge](11_illustration_draw_assignment.md)
+[Aufgabe 2 - Zeichenwerkzeuge](12_illustration_draw_assignment.md)
 
 ### Aufgabe 3: Farben und Konturen
-[Aufgabe - Farben und Konturen](11_illustration_color_assignment.md)
+[Aufgabe 3 - Farben und Konturen](13_illustration_color_assignment.md)
 
 <!--
 ## 4. Typografie
