@@ -3,7 +3,7 @@ title: Aufgabe 1 - Einfache Formen
 description: Grundlagen der Illustration mit Adobe Illustrator – Formen - Aufgabe
 layout: default
 category: Mediendesign
-topic: Illustrationen mit Adobe Illustrator
+topic: Illustration mit Adobe Illustrator
 type: assignment
 ---
 

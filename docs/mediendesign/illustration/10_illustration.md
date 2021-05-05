@@ -1,9 +1,9 @@
 ---
-title: Formen und Elemente
+title: Illustration  mit Adobe Illustrator
 description: Grundlagen der Illustration mit Adobe Illustrator – Übersicht
 
 category: Mediendesign
-topic: Illustrationen mit Adobe Illustrator
+topic: Illustration mit Adobe Illustrator
 
 type: lecture
 

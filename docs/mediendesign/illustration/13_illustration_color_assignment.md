@@ -3,7 +3,7 @@ title: Aufgabe 3 - Farben und Konturen
 description: Grundlagen der Illustration mit Adobe Illustrator – Farben und Konturen - Aufgabe
 layout: default
 category: Mediendesign
-topic: Illustrationen mit Adobe Illustrator
+topic: Illustration mit Adobe Illustrator
 type: assignment
 ---
 
