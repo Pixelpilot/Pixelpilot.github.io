@@ -62,10 +62,11 @@ ul.task-list {
 
 
 // Diverse Anpassungen
-h2:not(.project-tagline) {
+h2:not(.project-tagline):not(.noline) {
   border-top: 2px solid rgb(220, 230, 240);
   padding-top: 1rem;
 }
+
 
 
 a.link_home {
