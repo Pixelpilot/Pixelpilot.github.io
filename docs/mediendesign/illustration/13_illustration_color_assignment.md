@@ -17,7 +17,7 @@ _Beispielhafte Umsetzung_
 ## Aufgabenstellung
 Färbe die Illustrationen [Übung - Formen](11_illustration_forms_assigment.md) oder der [Übung - Zeichnen](12_illustration_draw_assigment.md) stimmig ein:
 
-- Shortcut `g`: Verwende das _Verlaufwerkzeug_ um Licht und Schatten und weitere Effekte zu simulieren
+- Shortcut `g`: Verwende das _Verlaufwerkzeug_ um Licht und Schatten und weitere Effekte zu simulieren.
 - Speichere die Farben im Bediendfeld _Farbfelder_ als einzelen Farbfelder ab, so dass sie einfach wiederverwendet werden können. Achte auf eine vernünftige Benennung der Farbfelder.
 
 ## Zusatz
