@@ -19,7 +19,7 @@ hide_toc: y
 <ul>
 {% for page in topic.items %}
 {% if page.sitemap_exclude != 'y' %}
-<li><a href="{{page.url}}">{{page.description}}</a> {{ page.title }}</li>
+<li><a href="{{page.url}}">{{page.title}}</a></li>
 {% endif %}
 {% endfor %}
 </ul>
