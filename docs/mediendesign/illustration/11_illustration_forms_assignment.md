@@ -4,6 +4,8 @@ description: Grundlagen der Illustration mit Adobe Illustrator – Formen - Aufg
 layout: default
 category: Mediendesign
 topic: Illustration mit Adobe Illustrator
+
+previewimage: img/umsetzung_formen.png
 type: assignment
 ---
 

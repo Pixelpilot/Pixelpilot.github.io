@@ -5,6 +5,7 @@ layout: default
 category: Mediendesign
 topic: Illustration mit Adobe Illustrator
 type: assignment
+previewimage: img/umsetzung_farben_dark.png
 ---
 
  

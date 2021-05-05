@@ -6,7 +6,7 @@ category: Mediendesign
 topic: Illustration mit Adobe Illustrator
 
 type: lecture
-
+previewimage: img/umsetzung_zeichnen.png
 layout: default
 ---
 
