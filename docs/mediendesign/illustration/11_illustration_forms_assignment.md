@@ -1,5 +1,5 @@
 ---
-title: Aufgabe - Einfache Formen
+title: Aufgabe 1 - Einfache Formen
 description: Grundlagen der Illustration mit Adobe Illustrator – Formen - Aufgabe
 layout: default
 category: Mediendesign

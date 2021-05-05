@@ -1,5 +1,5 @@
 ---
-title: Aufgabe - Zeichenwerkzeuge
+title: Aufgabe 2 - Zeichenwerkzeuge
 description: Grundlagen der Illustration mit Adobe Illustrator – Zeichenwerkzeuge - Aufgabe
 layout: default
 category: Mediendesign
