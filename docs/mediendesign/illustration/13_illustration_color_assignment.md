@@ -1,19 +1,20 @@
 ---
-title: Aufgabe - Zeichenwerkzeuge
-description: Grundlagen der Illustration mit Adobe Illustrator – Zeichenwerkzeuge - Aufgabe
+title: Aufgabe - Farben und Konturen
+description: Grundlagen der Illustration mit Adobe Illustrator – Farben und Konturen - Aufgabe
 layout: default
 category: Mediendesign
 topic: Illustrationen mit Adobe Illustrator
 type: assignment
 ---
 
-
-![Beispielhafte Umsetzung](./img/umsetzung_zeichnen.png)
+ 
+![Beispielhafte Umsetzung](./img/umsetzung_farben_single.png)
 
 _Beispielhafte Umsetzung_
 
 
 ## Aufgabenstellung
+Färbe die Illustrationen [Übung - Formen](11_illustration_forms_assigment.md) oder der [Übung - Zeichnen](12_illustration_draw_assigment.md)  
 
 Erstelle eine Illustration, die sich aus mehreren Motiven zusammensetzt. Verwende dazu folgende Werkzeuge: 
 
@@ -26,8 +27,8 @@ Erstelle eine Illustration, die sich aus mehreren Motiven zusammensetzt. Verwend
 
 Verwende auch die _Formmodi_ des _Pfadfinder_, _Ausrichten_ und _Transformieren_.
 
-### 1. Motivwahl
-Wähle die Motive aus. Die Motive sollten organische Formen sein, die sich nicht konstruieren lassen.
+### 1. Erstellen der Szene
+Nimm deine Motive aus der [Übung - Formen](11_illustration_forms_assigment.md) oder der [Übung - Zeichnen](12_illustration_draw_assigment.md) und färbe sie ein.
 
 ### 2. Erstellen der Illustration
 Erstelle die Grafiken und berücksichtige folgende Aspekte:

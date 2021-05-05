@@ -46,4 +46,4 @@ Erweitere die Illustrationen um einen Hintergrund oder weiteren grafischen Eleme
 ## Abgabe
 Abzugeben sind folgende Dateien:
 - `.ai`-Datei mit den Illustrationen
-- `.png`-Datei mit dem exportierten Bild der Animationen
+- `.png`-Datei mit dem exportierten Bild der Illustration

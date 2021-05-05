@@ -68,7 +68,6 @@ Organische komplexe Form zeichnen
 
 
 
-
 ## 3. Farbe und Konturen
 
 ### Resourcen
