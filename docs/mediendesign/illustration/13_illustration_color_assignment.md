@@ -8,40 +8,22 @@ type: assignment
 ---
 
  
-![Beispielhafte Umsetzung](./img/umsetzung_farben_single.png)
+![Beispielhafte Umsetzung](img/umsetzung_farben_bright.png)
 
 _Beispielhafte Umsetzung_
 
 
 ## Aufgabenstellung
-Färbe die Illustrationen [Übung - Formen](11_illustration_forms_assigment.md) oder der [Übung - Zeichnen](12_illustration_draw_assigment.md)  
+Färbe die Illustrationen [Übung - Formen](11_illustration_forms_assigment.md) oder der [Übung - Zeichnen](12_illustration_draw_assigment.md) stimmig ein:
 
-Erstelle eine Illustration, die sich aus mehreren Motiven zusammensetzt. Verwende dazu folgende Werkzeuge: 
-
-- Shortcut `p`: _Zeichenstift-Werkzeug_ um Formen mit Hilfe von Punkte zu erstellen
-- Shortcut `a`: _Direktauswahl-Werkzeug_ um Punkte einer Form zu bearbeiten 
-- Shortcut `n`: _Buntstift-Werkzeug_ um Foren zu zeichnen
-- Shortcut `b`: _Pinsel-Werkzeug_ umd Flächen zu zeichnen
-- Shortcut `shift`+`e`: _Radiergummi_ um Teile einer Form zu löschen
-- _Kurvenzeichner-Werkzeug_ um Formen zu verändern und Punkte hinzuzufügen
-
-Verwende auch die _Formmodi_ des _Pfadfinder_, _Ausrichten_ und _Transformieren_.
-
-### 1. Erstellen der Szene
-Nimm deine Motive aus der [Übung - Formen](11_illustration_forms_assigment.md) oder der [Übung - Zeichnen](12_illustration_draw_assigment.md) und färbe sie ein.
-
-### 2. Erstellen der Illustration
-Erstelle die Grafiken und berücksichtige folgende Aspekte:
-- Bildkomposition (nicht zu viele leere Flächen)
-- Pfade so einfach wie möglich halten (wenige Punkte)
-
-### 3. Einfärben
-Färbe die Motive stimmig ein. Verwende einfache Farben.
+- Shortcut `g`: Verwende das _Verlaufwerkzeug_ um Licht und Schatten und weitere Effekte zu simulieren
+- Speichere die Farben im Bediendfeld _Farbfelder_ als einzelen Farbfelder ab, so dass sie einfach wiederverwendet werden können. Achte auf eine vernünftige Benennung der Farbfelder.
 
 ## Zusatz
-Erweitere die Illustrationen um einen Hintergrund oder weiteren grafischen Elementen.
+Erstelle eine Farbvariante deiner Illustration. Lege dazu eine eigene _Zeichenfläche_ an.
+![Beispielhafte Umsetzung](./img/umsetzung_farben.png)
 
 ## Abgabe
 Abzugeben sind folgende Dateien:
 - `.ai`-Datei mit den Illustrationen
-- `.png`-Datei mit dem exportierten Bild der Illustration
+- `.png`-Datei mit dem exportierten Bild der Illustrationen
