@@ -45,10 +45,10 @@ Dokumentation:
 Stylen der Elemente mit CSS:
 
 * Stylesheets in eigener Datei
-* Einsatz von verschiedenen „CSS-Arten“
-	- Element     	z.B.: h1 { ... }
-	- Klasse		z.B.: .rounded {}
-	- Id			z.B.: #container {}
+* Einsatz von verschiedenen „CSS-Selektoren“
+	- Tag-Selektoren, z.B.: `h1 { ... }`
+	- Klassen-Selektoren, z.B.: `.rounded { ... }`
+	- Id-Selektoren, z.B.: `#container { ... }`
 
 
 

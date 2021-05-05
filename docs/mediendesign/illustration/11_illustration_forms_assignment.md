@@ -41,7 +41,7 @@ Erstelle die Grafiken und berücksichtige folgende Aspekte:
 Färbe die Motive stimmig ein. Verwende einfache Farben.
 
 ## Zusatz
-Erweitere die Illustrationen um Hintergrunde oder weiteren grafischen Elementen.
+Erweitere die Illustrationen um einen Hintergrund oder weiteren grafischen Elementen.
 
 ## Abgabe
 Abzugeben sind folgende Dateien:
