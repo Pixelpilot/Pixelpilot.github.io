@@ -39,7 +39,7 @@ Geometrische komplexe Form zeichnen:
 * Flugzeug
 * ...
   
-* [Aufgabe - Einfache Formen](11_illustration_forms_assignment.md)
+* [Aufgabe 1 - Einfache Formen](11_illustration_forms_assignment.md)
 
 
 
@@ -62,7 +62,7 @@ Benutzen weitere Funktionen
 
 ### Aufgabe
 
-[Aufgabe - Formen und ELemente](11_illustration_forms_assignment.md)
+[Aufgabe 2 - Formen und ELemente](11_illustration_forms_assignment.md)
 
 
 Organische komplexe Form zeichnen
@@ -87,6 +87,9 @@ Organische komplexe Form zeichnen
 * Bedienfeld Verlauf
 
 ### Aufgabe
+
+[Aufgabe 3 - Farben und Konturen](13_illustration_color_assignment.md)
+
 Geometrische und organische Formen aus den Übungen 1 und 2
 * Einfärben in verschiedenen Varianten
 * Hintergründe dazugeben
