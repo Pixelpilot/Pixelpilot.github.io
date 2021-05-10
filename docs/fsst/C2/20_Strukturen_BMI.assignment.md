@@ -5,7 +5,7 @@ layout: default
 type: assignment
 category: Fachspezifische Softwaretechnik
 topic: Programmieren in C - Teil 2
-subtopic: Aufgabe - Strukturen und Arrays
+subtopic: Strukturen und Arrays
 sitemap_exclude: n
 ---
 
