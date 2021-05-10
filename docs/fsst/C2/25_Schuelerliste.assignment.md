@@ -1,11 +1,11 @@
 ---
-title: Strukturen und Arrays - Miniprojekt - Schülerliste
+title: Schülerliste
 description: Programmieren in C - Teil 2
 layout: default
 type: assignment
 category: Fachspezifische Softwaretechnik
 topic: Programmieren in C - Teil 2
-subtopic: Miniprojekt - Schülerliste
+subtopic: Projekt Schülerliste
 sitemap_exclude: n
 ---
 
@@ -99,9 +99,9 @@ Aktion:
 ```
 
 
-## 6. Weitere Funktionalität
+## 6. Übung: Weitere Funktionalität
 
-### Suchen
+### (a) Suchen
 
 Suche nach  bestimmten Schüler/innen in der Schülerliste (Suchkriterium Nachname):
 
@@ -123,7 +123,7 @@ KNr:  6 Maria Müller
 ==========================
 ```
 
-### Löschen
+### (b) Löschen
 
 Löschen eines/r bestimmten Schülers/in. Beachte: Die anderen Schüler/innen in der Liste müssen nach vorne verschoben werden, damit keine Lücke entsteht.
 
@@ -143,7 +143,7 @@ Schüler/in löschen
 Auswahl?
 ```
 
-### Durchblättern der Schülerliste
+### (c) Durchblättern der Schülerliste
 
 Gib jeweils eine/n Schüler/in aus. Ist die letzte Position erreicht, soll wieder vorne begonnen werden
 
@@ -162,7 +162,7 @@ Steve Jobs
 Aktion: 
 ```
 
-### Sortieren der Liste
+### (d) Sortieren der Liste
 
 Schreibe eine Funktion zum Sortieren der Schülerliste. Verwende dazu den _Bubblesort_-Algorithmus.
 
