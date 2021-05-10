@@ -9,6 +9,9 @@ subtopic: Strukturen und Arrays
 sitemap_exclude: n
 ---
 
+Es soll ein Programm geschrieben werden, mit dem Schülerdaten verwaltet werden können. 
+
+
 ## 1. Übung: Datum
 Definiere einen neuen Datentyp `Datum` mit den Elementen: `jahr`, `monat`, `tag`.
 
@@ -16,7 +19,7 @@ Schreibe eine Funktion Datum `eingabeDatum()` zur Eingabe des Datums.
 
 Schreibe eine Funktion `ausgabeDatum(...)`, die das gesamte Daum ausgibt.
 
----
+
 ## 2. Übung: Schüler
 Definiere einen neuen Datentyp `Schueler` mit folgenden Elementen:
 `vorname`, `nachname`, `geburtsDatum`. Verwende für das Geburtsdatum die unter Übung 1. erstellte Struktur `Datum`.
@@ -28,7 +31,6 @@ Schreibe eine Funktion `ausgabeSchueler(...)`, die alle Daten des Schülers ausg
 **Generell: Code, der in der verhergehnenden Übung geschrieben wurde, darf nicht nochmals geschrieben werden, verwende die fertigen Funktionen.**
 
 
----
 ## 3. Übung: Hinzufügen neuer Schüler
 Gegeben ist folgender Programmausschnitt:
 ```c
@@ -50,7 +52,7 @@ Schreibe eine Funktion `void fuegeHinzu (Schueler liste[], Schueler s)`, die zu 
 
 Achte darauf, dass du Funktionen, die du in den vorhergehenden Übungsaufgaben programmiert hast wieder verwendest.
  
----
+
 ## 4. Übung: Ausgabe der gesamten Liste
 Schreibe eine Funktion void `ausgabeSchuelerListe(Schueler liste[])`, die alle Schüler untereinander ausgibt.
 
@@ -79,7 +81,7 @@ KNr: 7 Linus Thorvald
 ```
 _Ausgeben der gesamten Schülerliste_
 
----
+
 ## 5. Übung: Menü
 Erweitere die Schülerliste um ein Menü mit folgenden Menüpunkten:
 
@@ -168,12 +170,18 @@ Schreibe eine Funktion zum Sortieren der Schülerliste. Verwende dazu den _Bubb
 
 Rufe die Funktion immer auf, wenn ein neuer Eintrag zur Liste hinzukommt, damit die Liste immer sortiert ist.
 
----
+
 ## Zusätzliche Erweiterungen
 
 Finde zusätzliche Funktionalitäten, die für die Klassenliste Sinn machen können.
 
+
 - Funktion zur zufälligen Ermittlung einer/s Schülers/in
+- Absteigend sortiert ausgeben nach Nachname
+- Sortiert nach Geburtsdatum ausgeben
+- Erweiterung um Geschlecht
+  - Nur Mädchen ausgeben
+  - Nur Jungen ausgeben
 - Erweiterung um Adressdaten
   - Postleitzahl
   - Ort
