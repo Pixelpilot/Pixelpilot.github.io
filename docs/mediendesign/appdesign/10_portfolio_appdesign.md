@@ -28,6 +28,8 @@ Sieh dir das Video an und fasse die wichtigsten Inhalte zusammen.
 
 Umfang: ca. 1 Seite A4 
 
-## 2. App-Idee, Rapid Prototyping mit Scribbels
+## 2. App-Idee, Rapid Prototyping mit Scribbles
 
-## 3. App-Design, Rapid Prototyping mit Adobe XD
+## 3. Scribbles, Rapid Prototyping mit Marvel
+
+## 4. App-Design, Rapid Prototyping mit Adobe XD
