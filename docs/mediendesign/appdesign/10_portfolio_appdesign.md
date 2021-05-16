@@ -19,4 +19,4 @@ Er beschreibt darin die __Top 5 Characteristics of Intuitive Apps__ und zeigt vi
 
 Sieh dir das Video an und fasse die wichtigsten Inhalte zusammen.
 
-Umfang: ca. 1 Seite A4
+Umfang: ca. 1 Seite A4 
