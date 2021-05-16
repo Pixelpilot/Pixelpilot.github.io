@@ -9,8 +9,8 @@ subtopic: Strukturen und Arrays
 sitemap_exclude: n
 ---
 
-Es soll ein Programm geschrieben werden, mit dem Schülerdaten verwaltet werden können.
-s
+Es soll ein Programm geschrieben werden, mit dem Schülerdaten verwaltet werden können. 
+
 
 ## 1. Übung: Datum
 Definiere einen neuen Datentyp `Datum` mit den Elementen: `jahr`, `monat`, `tag`.
@@ -51,7 +51,7 @@ int main() {
 Schreibe eine Funktion `void fuegeHinzu (Schueler liste[], Schueler s)`, die zu der Schuelerliste `liste` den Schueler `s` hinzufügt.
 
 Achte darauf, dass du Funktionen, die du in den vorhergehenden Übungsaufgaben programmiert hast wieder verwendest.
-
+ 
 
 ## 4. Übung: Ausgabe der gesamten Liste
 Schreibe eine Funktion void `ausgabeSchuelerListe(Schueler liste[])`, die alle Schüler untereinander ausgibt.
@@ -105,7 +105,7 @@ Aktion:
 
 ### (a) Suchen
 
-Suche nach bestimmten Schüler/innen in der Schülerliste (Suchkriterium Nachname):
+Suche nach  bestimmten Schüler/innen in der Schülerliste (Suchkriterium Nachname):
 
 ```
 ==========================
@@ -123,23 +123,6 @@ KNr:  6 Maria Müller
 --------------------------
 4 Treffer
 ==========================
-```
-
-Verwende die Funktion `char * strstr(char *string, char *needle)`, um einen String in einem anderen String zu suchen.
-Die Funktion liefert `NULL`, wenn des gesuchte String nicht enthalten ist und einen Zeiger auf der Anfang des gesuchten Strings im durchsuchten String:
-
-```c
-char word[] = "Hinterseer";
-char search[] = "ter";
-char *found;
-
-found = strstr ( word, search );
-
-if ( found == NULL ) {
-    printf ("Nicht enthalten.");
-} else {
-    printf ("Enthalten: %s", found );	// Enthalten: terseer
-}
 ```
 
 ### (b) Löschen
