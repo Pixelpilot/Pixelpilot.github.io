@@ -5,7 +5,7 @@ description: Intuitive User Interface Design und Rapid Prototyping
 category: Mediendesign
 topic: Intuitive User Interface Design und Rapid Prototyping
 
-type: lecture
+type: assignment
 previewimage: img/ui_design_apple.png
 layout: default
 ---
