@@ -10,7 +10,7 @@ sitemap_exclude: n
 ---
 
 Es soll ein Programm geschrieben werden, mit dem Schülerdaten verwaltet werden können.
-
+s
 
 ## 1. Übung: Datum
 Definiere einen neuen Datentyp `Datum` mit den Elementen: `jahr`, `monat`, `tag`.
