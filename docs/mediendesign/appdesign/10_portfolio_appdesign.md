@@ -2,7 +2,6 @@
 title: App Design
 description: Intuitive User Interface Design und Rapid Prototyping
 
-
 category: Mediendesign
 topic: Intuitive User Interface Design und Rapid Prototyping
 
