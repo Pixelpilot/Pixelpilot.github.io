@@ -125,6 +125,23 @@ KNr:  6 Maria Müller
 ==========================
 ```
 
+Verwende die Funktion `char * strstr(char *string, char *needle)`, um einen String in einem anderen String zu suchen.
+
+Die Funktion liefert `NULL`, wenn des gesuchte String nicht enthalten ist und einen Zeiger auf der Anfang des gesuchten Strings im durchsuchten String:
+
+```c
+char word[] = "Hinterseer";
+char search[] = "ter";
+char *found;
+
+found = strstr ( word, search );
+
+if ( found == NULL ) {
+    printf ("Nicht enthalten.");
+} else {
+    printf ("Enthalten: %s", found );	// Enthalten: terseer
+}
+```
 ### (b) Löschen
 
 Löschen eines/r bestimmten Schülers/in. Beachte: Die anderen Schüler/innen in der Liste müssen nach vorne verschoben werden, damit keine Lücke entsteht.
