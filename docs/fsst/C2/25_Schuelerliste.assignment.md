@@ -133,7 +133,6 @@ char word[] = "Hinterseer";
 char search[] = "ter";
 char *found;
 
-
 found = strstr ( word, search );
 
 if ( found == NULL ) {
