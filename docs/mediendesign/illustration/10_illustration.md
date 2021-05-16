@@ -62,7 +62,7 @@ Benutzen weitere Funktionen
 
 ### Aufgabe
 
-[Aufgabe 2 - Formen und ELemente](11_illustration_forms_assignment.md)
+[Aufgabe 2 - Formen und ELemente](12_illustration_draw_assignment.md)
 
 
 Organische komplexe Form zeichnen
