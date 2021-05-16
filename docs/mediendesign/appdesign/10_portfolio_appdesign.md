@@ -3,12 +3,14 @@ title: App Design
 description: Intuitive User Interface Design und Rapid Prototyping
 
 category: Mediendesign
-previewimage: img/ui_design_apple.png
+previewimage: img/ui_design_apple.jpg
 topic: App Design
 ---
 
 
 ## Designing Intuitive User Experiences
+
+![esigning Intuitive User Experiences](img/ui_design_apple.jpg)
 
 Mike Stern hat bei der Developer Conference 2014 einen interessanten Vortrag zu _intuitiven Userinterfaces_ gehalten, der sich zwar auf _Apple_ bezieht, aber auch für andere Systeme und Plattformen Gültigkeit hat.
 
