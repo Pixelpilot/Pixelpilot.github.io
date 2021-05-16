@@ -19,6 +19,50 @@
     <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 <body>
-{{ page.title}}
+<header class="page-header" role="banner">
+
+    {% if page.url != '/' %}
+    {% include backlink.html %}
+    {% endif %}
+
+
+
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    {% if page.topic and page.category %}
+    <h2 class="project-tagline">{{ page.category }} – {{ page.topic }}</h2>
+    {% else %}
+    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    {% endif %}
+</header>
+
+<!--
+<div id="debug">
+    page.url {{ page.url }}<br>
+    page.dir {{ page.dir }}<br>
+    site.host {{ site.host }}<br>
+    site.url {{ site.url }}<br>
+    page.previewimage {{ page.previewimage }}<br>
+</div>
+-->
+
+<main id="content" class="main-content" role="main">
+
+    <!--
+    <h1> {{ page.title }} </h1>
+    -->
+    {% if page.url != '/' %}
+    <h2 class="noline">Inhalt</h2>
+    {% include toc.html html=content h_min=2 h_max=3 %}
+    {% else %}
+    <h2 class="noline">Inhalt</h2>
+    {% include toc.html html=content h_min=2 h_max=2 %}
+    {% endif %}
+
+    {{ content }}
+
+    <footer class="site-footer">
+        {% include footer.html %}
+    </footer>
+</main>
 </body>
 </html>
