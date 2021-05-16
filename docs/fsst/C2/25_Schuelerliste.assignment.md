@@ -105,7 +105,7 @@ Aktion:
 
 ### (a) Suchen
 
-Suche nach  bestimmten Schüler/innen in der Schülerliste (Suchkriterium Nachname):
+Suche nach bestimmten Schüler/innen in der Schülerliste (Suchkriterium Nachname):
 
 ```
 ==========================
@@ -128,7 +128,7 @@ KNr:  6 Maria Müller
 Verwende die Funktion `char * strstr(char *string, char *needle)`, um einen String in einem anderen String zu suchen. 
 Die Funktion liefert `NULL`, wenn des gesuchte String nicht enthalten ist und einen Zeiger auf der Anfang des gesuchten Strings im durchsuchten String:
 
-```C
+```c
 char word[] = "Hinterseer";
 char search[] = "ter";
 char *found;
