@@ -14,12 +14,14 @@ layout: default
 
 Finde eine Idee für eine App, die du umsetzen möchtest. Beachte dabei die angegebenen Hinweise.
 
-
 ### 1. Minimal Viable Product
 
-Erstelle eine erste Beschreibung deiner App.
+Beschränke dich auf eine konkrete Aufgabenstellung, die die App lösen soll. Vielleicht gibt es Bereiche, in denen andere Apps nicht optimal funktionieren - konzentrier dich darauf diese Lücken zu schließen. 
+
+Definiere die Features, die für die App unverzichtbar sind (_**M**inimal **V**iable **P**roduct_, _**MVP**_). Zusätzliche Features sollten vorerst entfallen um die App möglichst schnell und günstig umsetzen zu können.
 
 Halte in kurzen Sätzen fest, was deine App ausmacht und welches Problem die App lösen soll.
+
 Gib einen Überblick über die Bestandteile der App. Eine Mindmap eignet sich gut dafür.
 
 ### 2. Zielgruppe
@@ -32,7 +34,11 @@ Definiere die Zielgruppe:
 
 ### 3. Monetarisierung
 
-Überlege dir, wie sich die App einmal finanzieren soll. Welches Modell soll dann später dahinter stecken (Werbung, App-Kauf, Abo-Modell, Sammeln von Benutzerdaten, ...)?
+Überlege dir, wie sich die App einmal finanzieren soll. Welches Modell soll dann später dahinter stecken?
+- Werbung,
+- App-Kauf, 
+- Abo-Modell, 
+- Sammeln von Benutzerdaten, ...
 
 
 ## Zusatz
