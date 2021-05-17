@@ -17,18 +17,22 @@ Finde eine Idee für eine App, die du umsetzen möchtest. Beachte dabei die ange
 
 ### 1. Minimal Viable Product
 
+Erstelle eine erste Beschreibung deiner App.
+
 Halte in kurzen Sätzen fest, was deine App ausmacht und welches Problem die App lösen soll.
 Gib einen Überblick über die Bestandteile der App. Eine Mindmap eignet sich gut dafür.
 
-### 2. Definiere die Zielgruppe
+### 2. Zielgruppe
 
-Wer soll die App verwenden?
-Für welche Endgerät ist die App (Smartphone, Tablett)?
-Für welches Betriebssystem soll die App umgesetzt werden?
+Definiere die Zielgruppe:
+
+- Wer soll die App verwenden?
+- Für welche Endgerät ist die App (Smartphone, Tablett)?
+- Für welches Betriebssystem soll die App umgesetzt werden?
 
 ### 3. Monetarisierung
 
-Wie soll sich die App finanzieren? Welches Modell soll dann später dahinter stecken?
+Überlege dir, wie sich die App einmal finanzieren soll. Welches Modell soll dann später dahinter stecken (Werbung, App-Kauf, Abo-Modell, Sammeln von Benutzerdaten, ...)?
 
 
 ## Zusatz
@@ -44,4 +48,4 @@ Erstelle ein Icon für deine App. Verwende dazu ein Programm deiner Wahl. Halte 
 
 ## Abgabe
 Ergänze das Appdesign-Portfolio:
-- Umfang: ca. 1 Seite A4
+- Umfang: ca. 1-2 Seiten A4
