@@ -6,7 +6,7 @@ category: Mediendesign
 topic: Intuitive User Interface Design und Rapid Prototyping
 
 type: assignment
-previewimage: img/ui_design_scribbles.png
+previewimage: img/ui_design_marvel_scribbles.png
 layout: default
 ---
 
