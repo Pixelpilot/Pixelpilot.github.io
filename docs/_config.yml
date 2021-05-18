@@ -1,7 +1,5 @@
+repository: pixelpilot/pixelpilot.github.io
+# Build settings
 theme: jekyll-theme-cayman
-collections:
-  examples:
-    order:
-      - ex2.md
-      - ex1.md
-    output: true
+plugins:
+  #- jekyll-feed

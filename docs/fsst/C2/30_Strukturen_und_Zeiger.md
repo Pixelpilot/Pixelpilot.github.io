@@ -34,8 +34,6 @@ p->tag = 10;
 
 Im Speicher kann man sich das folgendermaßen vorstellen:
 
-![Strukturen und Zeiger](fig/strukturen_und_zeiger.png)
-
 ![Strukturen und Zeiger](fig/strukturen_zeiger.png)
 
 

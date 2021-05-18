@@ -22,7 +22,7 @@ Definiere die Features, die für die App unverzichtbar sind (_**M**inimal **V**i
 
 Halte in kurzen Sätzen fest, was deine App ausmacht und welches Problem die App lösen soll.
 
-Gib einen Überblick über die Bestandteile der App. Eine Mindmap eignet sich gut dafür.
+Gib einen Überblick über die Bestandteile der App. Eine Mindmap oder ein einfach Objektstrukturplan eignen sich gut dafür.
 
 ### 2. Zielgruppe
 
