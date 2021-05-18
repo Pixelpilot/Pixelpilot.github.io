@@ -69,9 +69,9 @@ Wichtig dabei:
 - Bitte darum die Gedanken laut auszusprechen:  
   _"Hmm. Ich bin also auf der Startseite, aber was soll das komische Icon da rechts in der unteren Ecke ...?"_
 
-- Nimm das Feedback auf und _"verteidige"_ den Enwurf nicht. Mach dir Notizen zum Feedback
+- Nimm das Feedback auf und _"verteidige"_ den Enwurf nicht. Mach dir Notizen zum Feedback.
 
-- Bitte die Klassenkollegin oder den Klassenkollegen um Verbesserungsvorschläge
+- Bitte die Klassenkollegin oder den Klassenkollegen um Verbesserungsvorschläge.
 
 
 ### 4. Zurück an den Start
