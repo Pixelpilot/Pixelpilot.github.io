@@ -24,8 +24,8 @@ Er beschreibt darin die __Top 5 Characteristics of Intuitive Apps__ und zeigt vi
 
 ### Aufgabe 1: Zusammenfassen der Präsentation
 
-| Anforderung        | Umfang           |
-| ------------- |:-------------:|
+| Anforderung | Umfang |
+| :---  |:---|
 | Sieh dir das Video an und fasse die wichtigsten Punkte zur Gestaltung intuitiver Interfaces zusammen.      | ca. 1 Seite A4 |
 
 ## App-Idee

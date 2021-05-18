@@ -1,8 +1,7 @@
 ---
 title: Todo
 description: Zu erledigen
-category: todo
-topic: github
+
 sitemap_exclude: y
 
 categories:
@@ -22,14 +21,33 @@ categories:
       description: JavaScript
 ---
 
+
 # Todo
 
-- [ ] [Setting up Tags](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_tags.html)
-- [ ] [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
-- [ ] [IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
-- [ ] [Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
-- [ ] [Filters](https://blog.webjeda.com/jekyll-filters/)
-- [ ] [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
+- [x] [Setting up Tags](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_tags.html)
+- [x] [Anleitung zum Stylen](https://aregsar.com/blog/2019/how-to-customize-your-github-pages-blog-layout-in-five-minutes/)
+- [x] [IF - Conditions](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_conditional_logic.html)
+- [x] [Pages](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_pages.html)
+- [x] [Filters](https://blog.webjeda.com/jekyll-filters/)
+- [x] [Sitemap with plugin - Github](https://github.com/allejo/jekyll-toc)
+
+### Lokale Installation von Jekyll
+
+#### Installation
+```
+// Terminal
+% jekyll new neues_verzeichnis
+```
+
+
+#### Ausführen und Ausliefern der Seite
+```
+// Terminal
+% cd /Users/hanlch/Dropbox/Job/GitHub\ Pages/docs
+% bundle exec jekyll serve
+```
+
+
 
 ### Diverse Inhalte:
 
