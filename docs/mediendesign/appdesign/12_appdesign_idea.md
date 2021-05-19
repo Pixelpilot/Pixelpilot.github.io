@@ -12,7 +12,7 @@ layout: default
 
 ## Aufgabenstellung
 
-Finde eine Idee für eine App, die du umsetzen möchtest. Beachte dabei die angegebenen Hinweise.
+Finde eine Idee für eine App, die du umsetzen möchtest. Es kann eine App sein, die es in dieser Form noch nicht gibt und die ein bestimmtes Problem löst, oder auch eine App die du bereits nutzt, mit der du aber nicht ganz zufrieden bist. 
 
 ### 1. Minimal Viable Product
 
