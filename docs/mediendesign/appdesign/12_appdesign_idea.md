@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 1 - App Idee
+title: Aufgabe 2 - Enwicklung der App Idee
 description: Intuitive User Interface Design und Rapid Prototyping
 
 category: Mediendesign
@@ -22,9 +22,15 @@ Definiere die Features, die für die App unverzichtbar sind (_**M**inimal **V**i
 
 Halte in kurzen Sätzen fest, was deine App ausmacht und welches Problem die App lösen soll.
 
-Gib einen Überblick über die Bestandteile der App. Eine Mindmap oder ein einfach Objektstrukturplan eignen sich gut dafür.
+Gib einen Überblick über die Bestandteile der App. Eine Mindmap oder ein einfacher Objektstrukturplan eignen sich gut dafür.
 
-### 2. Zielgruppe
+### 2. Namensfindung
+
+Finde einen Namen für deine App. Der Name sollte kurz sein und sich auf die Funktion der App beziehen. 
+
+Für die Namensfindung können unterschiedliche Kreativitätstechniken (alleine und in der Gruppe) verwendet werden.
+
+### 3. Zielgruppe
 
 Definiere die Zielgruppe:
 
@@ -32,7 +38,7 @@ Definiere die Zielgruppe:
 - Für welche Endgerät ist die App (Smartphone, Tablett)?
 - Für welches Betriebssystem soll die App umgesetzt werden?
 
-### 3. Monetarisierung
+### 4. Monetarisierung
 
 Überlege dir, wie sich die App einmal finanzieren soll. Welches Modell soll dann später dahinter stecken?
 - Werbung,
@@ -54,4 +60,10 @@ Erstelle ein Icon für deine App. Verwende dazu ein Programm deiner Wahl. Halte 
 
 ## Abgabe
 Ergänze das Appdesign-Portfolio:
-- Umfang: ca. 1-2 Seiten A4
+- Inhalt:
+  - Beschreibung der App-Idee, des MVP und der Bestandteile der App
+  - Beschreibung der Zielgruppe
+  - Konzept zur Monetarisierung
+  - Hintergründe zur Namensfindung
+  - Zusatz: Entwicklung App-Icon
+- Umfang: mind. 2 Seiten A4

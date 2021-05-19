@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 2 - Scribbles und Wireframing
+title: Aufgabe 3 - Scribbles und Wireframing
 description: Intuitive User Interface Design und Rapid Prototyping
 
 category: Mediendesign
@@ -64,10 +64,10 @@ Wichtig dabei:
 - Keine Erklärungen, wie die App funktioniert und was die App machen soll.
   
 - Gib konkrete Aufgabenstellungen:  
-  _"Füge jetzt ein neues Kleidungsstück hinzu..."_
+  > _" Füge jetzt ein neues Kleidungsstück hinzu ... "_
   
 - Bitte darum die Gedanken laut auszusprechen:  
-  _"Hmm. Ich bin also auf der Startseite, aber was soll das komische Icon da rechts in der unteren Ecke ...?"_
+  >_" Hmm. Ich bin also auf der Startseite, aber was soll das komische Icon da rechts in der unteren Ecke ... ? "_
 
 - Nimm das Feedback auf und _"verteidige"_ den Enwurf nicht. Mach dir Notizen zum Feedback.
 
@@ -87,6 +87,5 @@ Ergänze das Appdesign-Portfolio:
   - Halte die Entwürfe und die Iterationsschritte fest. 
   - Was hat gut funktioniert, was weniger gut?
   - Wie hast du auf die Probleme reagiert?
-  - Wie sieht die finale Version aus
-  - Link zum Prototyp    
-- Umfang: ca. 2-4 Seiten A4
+  - Wie sieht die finale Version aus?
+- Umfang: mind. 4 Seiten A4

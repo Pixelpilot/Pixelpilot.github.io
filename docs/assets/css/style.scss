@@ -26,7 +26,7 @@ ul.task-list {
                   160deg, #0082ba -10%, #2e4269 60%, #6d545c 120%);
 }
 
-.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6, div.headline {
   // color: rgba(239,125,0,1) !important;  // EL
   // color: rgba(35,145,201,1); // ME
   // color: rgba(102,74,133,1); // IT
@@ -71,4 +71,32 @@ h2:not(.project-tagline):not(.noline) {
 
 a.link_home {
   color: rgba(255,255,255,.7);
+}
+
+.sitemap_topic, .toc {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.3rem;
+  background-color: rgba(220, 230, 240,.5);
+  padding: 2rem;
+}
+
+.sitemap_topic {
+  margin-top: 4rem;
+}
+
+
+.sitemap_topic:before {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid rgb(220, 230, 240);
+  width: calc(100% + 4rem);
+  transform: translateY(-5rem);
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
+div.headline {
+  margin-bottom: 1rem;
+  font-size: 1.65rem;
 }
