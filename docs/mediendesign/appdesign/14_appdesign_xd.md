@@ -68,6 +68,6 @@ Ergänze das Appdesign-Portfolio:
   - Halte die Entwürfe und die Iterationsschritte fest. 
   - Was hat gut funktioniert, was weniger gut?
   - Wie hast du auf die Probleme reagiert?
-  - Wie sieht die finale Version aus
+  - Wie sieht die finale Version aus?
   - Link zum Prototyp    
 - Umfang: mind. 6 Seiten A4

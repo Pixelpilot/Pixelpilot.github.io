@@ -1,5 +1,5 @@
 ---
-title: Schülerliste
+title: Strukturen und Arrays - Projekt Schülerliste
 description: Programmieren in C - Teil 2
 layout: default
 type: assignment
