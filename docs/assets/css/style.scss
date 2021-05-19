@@ -78,22 +78,25 @@ a.link_home {
   margin-bottom: 2rem;
   border-radius: 0.3rem;
   background-color: rgba(220, 230, 240,.5);
-  padding: 2rem;
+  padding: 1.2rem;
 }
 
 .sitemap_topic {
-  margin-top: 4rem;
+  margin-top: 5rem;
+  padding-top: 0;
 }
+
 
 
 .sitemap_topic:before {
   display: inline-block;
   content: "";
   border-top: 2px solid rgb(220, 230, 240);
-  width: calc(100% + 4rem);
-  transform: translateY(-5rem);
-  margin-left: -2rem;
-  margin-right: -2rem;
+  width: calc(100% + 2.4rem);
+  transform: translateY(-3.2rem);
+  margin-left: -1.2rem;
+  margin-right: -1.2rem;
+
 }
 
 div.headline {
