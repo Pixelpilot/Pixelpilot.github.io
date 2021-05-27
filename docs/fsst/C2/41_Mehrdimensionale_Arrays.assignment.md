@@ -51,9 +51,6 @@ Lege ein 2 dimensionales `int` Array an. Definiere Anzahl der Zeilen und Spalten
 - `sum()` – Die Summe über alle Elemente des Arrays bilden.
 
 
-
----
-
 ## 3. Übung: Diverse Funktionen
 
 Schreibe Funktionen für:
