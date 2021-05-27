@@ -59,3 +59,33 @@ Schreibe Funktionen für:
 - Den Index der Zeile mit der größten Zeilensumme zurückgeben.
 - Den Index der Spalte mit der größten Spaltensumme zurückgeben.
 - Die Anzahl der Spalten ermitteln in denen alle Zahlen gleich sind.
+
+
+## 4. Übung: Damenproblem
+
+Beim sogenannten Damenproblem sollen auf einem Schachbrett acht Damen aufgestellt werden so dass diese sich nicht gegenseitig schlagen können. Schreibe ein Programm dass prüft ob eine Lösung für dieses Problem korrekt ist. Das Schachbrett wird durch ein zweidimensionalen Array dargestellt. Eine 1 zeigt an, dass dort eine Dame steht, 0 bedeutet eine leeres Feld.
+
+Aufgaben:
+- Schreibe eine Funktion die in einem gegebenen zweidimensionalen Array prüft ob in jeder Zeile nur ein einziger 1er steht (und sonst lauter 0er).
+- Erweitere für alle Spalten.
+- Berücksichtige auch alle Diagonalen.
+
+ ```c
+int feld[][8] = {
+    {0,0,0,0,0,0,0,1},
+    {0,0,0,1,0,0,0,0},
+    {1,0,0,0,0,0,0,0},
+    {0,0,1,0,0,0,0,0},
+    {0,0,0,0,0,1,0,0},
+    {0,1,0,0,0,0,0,0},
+    {0,0,0,0,0,0,1,0},
+    {0,0,0,0,1,0,0,0}
+};
+ ```
+
+## 5. Übung: Tic Tac Toe
+
+Schreibe ein Programm mit dem 2 Personen Tic Tac Toe spielen können.
+Erweiterungen:  
+- Man kann gegen den Computer spielen.
+- Dabei kann der Computer zufällige Züge wählen oder intelligent sein.
