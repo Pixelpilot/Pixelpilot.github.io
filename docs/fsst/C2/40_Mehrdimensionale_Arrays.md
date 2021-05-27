@@ -13,7 +13,7 @@ Vielfältige Anwendungen:
 - Mathematik (Matrizenrechnung)
 - Spiele (z.B. 4 gewinnt, Dame, Schach, etc.)
 
-2-dimensionales Array
+2-dimensionales Array:
 ```
 int t[2][3];	// 2 Zeilen, 3 Spalten
 ```
@@ -36,15 +36,19 @@ void input( int tabelle[][SPALTEN] );
 
 void main() {
     int tabelle[ZEILEN][SPALTEN];
+    
     input( tabelle );
 }
 
 void input(int tabelle[][SPALTEN]) {
     int z;	// Zeilen
     int s;	// Spalten
-    for( z = 0; z < ZEILEN; z++ )
-    for( s = 0; s < SPALTEN; s++ )
-    scanf( "%d", &tabelle[z][s] );
+    
+    for( z = 0; z < ZEILEN; z++ ) {
+        for( s = 0; s < SPALTEN; s++ ) {
+            scanf( "%d", &tabelle[z][s] );
+        }
+    }
 }
 ```
 
@@ -53,6 +57,7 @@ Außerdem hilft es sehr die Anzahl der Zeilen und Spalten als globale Konstanten
 
 ```
 #define ZEILEN 2
+
 // oder besser in C++
 const int ZEILEN=2;
 ```
@@ -62,7 +67,7 @@ Initialisierung eines mehrdimensionalen Arrays – erster Index darf leer bleibe
 
 ```
 int tabelle[][3] = {
-{ 3, 4, 5 },
-{ 6, 7, 8 }
-};
+        { 3, 4, 5 },
+        { 6, 7, 8 }
+    };
 ```
