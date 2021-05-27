@@ -32,7 +32,7 @@ Scribbles haben den Vorteil, dass sie sehr wenig Zeit in Anspruch nehmen und sch
   - Notiere dir deine Gedanken zu den einzelnen Screens.
 
 #### Inhalte 
-  - Setze die wichtigsten Punkte um, die du für dein _**M**inimal **V**iable **P**roduct benötigt
+  - Setze die wichtigsten Punkte um, die du für dein _**M**inimal **V**iable **P**roduct_ benötigt
   - Starte mit dem Scribble des Screens den du sehen möchtest, wenn du die App zum 100ten Mal öffnest
   - Erstellen **keine** Screens für _Login_, _Registrieren_, _Impressum_, _Einstellungen_ oder ähnliches
 
