@@ -13,7 +13,7 @@ Folgende Aufgaben sollten nach der 2. Klassen ohne Probleme umgesetzt werden kö
 
 ## Arrays
 
-### 1.Temperaturen
+### 1. Übung: Temperaturen
 Es werden Temperatur-Messreihen erfasst. Schreibe ein Programm temp, das es ermöglicht
 diese Temperaturen in einem Array abzuspeichern. Verwende den Datentyp `double`.
 Mit der Eingabe von `100` kann der Benutzer die Eingabe abschließen. Maximal können
@@ -28,7 +28,7 @@ Mit der Eingabe von `100` kann der Benutzer die Eingabe abschließen. Maximal k�
 Teile das Programm sinnvoll in Funktionen auf. Verwende keine globalen Variablen.
 
 
-### 2. Balkendiagramm
+### 2. Übung: Balkendiagramm
 Schreibe ein Programm mit dem horizontale Balkendiagramme ausgegeben werden können.
 Die Länge der Balken sind in einem Array vorgegeben:
 
@@ -53,7 +53,7 @@ Implementiere `zeigeBalken()`.
 
 ## Strings
 
-### 3. Diverse Stringfunktionen
+### 3. Übung: Diverse Stringfunktionen
 Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfinden  und nicht in einen weiteren String kopiert werden!
 
 1. `strcvoc` — Anzahl der Selbstlaute in einem Text zählen.
@@ -69,7 +69,7 @@ auf.
 
 ## Zeiger
 
-### 4. Zwei Arrays verschmelzen
+### 4. Übung: Zwei Arrays verschmelzen
    
 Schreibe eine Funktion `merge()` die als Parameter 3 Arrays (`a1`, `a2`, `a3`) übergeben bekommt. 
 `a1` und `a2` sollen kombiniert in `a3` kopiert werden so dass a3 genau so viele Elemente enthält wie in Summe in a1 und a2 sind. 
@@ -82,7 +82,7 @@ int a2[]={2,4,6,8};
 int a3[9];
 ```
 
-### 5. Wörter aus einem Satz
+### 5. Übung: Wörter aus einem Satz
 Schreibe ein Programm, das einen Satz einliest und jedes Wort in einer eigenen Zeile
 wieder ausgibt. Als Wortbegrenzung dient das Leerzeichen. Verwende nur Zeiger. Berücksichtige,
 dass mehrere Leerzeichen hintereinander und Leerzeichen am Anfang und
@@ -91,5 +91,93 @@ am Ende des Satzes vorkommen können.
 
 ## Strukturen
 
+### 6. Übung: (Body Mass Index – BMI)
+Der Body Mass Index wird nach folgender Formel berechnet:
 
-## Arrays mit Strukturen
+`BMI = M/(L*L)`
+
+wobei `M` die Körpermasse (in Kilogramm) und `L` die Körpergröße (in Metern) angibt.
+
+#### Strukturen und Funktionen
+Schreibe eine Struktur `Person` mit Variablen für Name, Gewicht und Größe sowie Funktionen zur
+    * Eingabe,
+    * Ausgabe und
+    * Berechnung des BMI
+
+Teste die Funktionen durch entsprechende Aufrufe der Funktionen.
+
+#### Erweiterung: Strukturen und Arrays
+Erweitere das Programm so, dass bis zu 5 Personen verwaltet werden können. Verwende dazu ein Array mit `Person`.
+
+Initialisiere das Array mit folgenden Daten:
+```
+"Hans", 78.8, 1.78, 'm'
+"Franz", 88.8, 1.82, 'm'
+"Eva", 52.4, 1.67, 'w'
+"Laura", 64.0, 1.42, 'w'
+"Georg", 58.8, 1.98, 'm'
+```
+
+Schreibe Funktionen zur
+* Ausgabe aller Personen inklusive deren BMI und dem Hinweis Unter-, Normal oder Übergewichtig
+* Berechnung der Durchschnittsgröße
+* Berechnung des Durchschnittsgewicht
+* Berechnung des durchschnittlichen BMI
+
+
+#### Erweiterung: Strukturen und Zeiger
+
+Schreibe eine Funktion, die
+* einen Zeiger auf die größte Person im Array liefert
+* einen Zeiger auf den die Person liefert, die am nähesten beim Durchschnittgewicht liegt
+
+Verwende für diese Funktionen ausschließlich die Zeigerschreibweise. Eckige Klammern sind nicht erlaubt.
+
+
+## Mehrdimensionale Arrays
+
+### 7. Übung: Spalten- und Zeilensumme
+Ergänze folgendes Programm zur Berechnung der Zeilen- und Spaltensummen. 
+Die Ergebnisse sollen in einem eindimensionalen Array abgelegt werden.
+
+```c
+#include <stdio.h>
+#include <conio.h>
+
+#define ZEILEN 3
+#define SPALTEN 4
+
+void getSumZeilen(int arr[][SPALTEN],int sum[]);
+void getSumSpalten(int arr[][SPALTEN],int sum[]);
+
+void main() {
+
+    int a[][SPALTEN]= { {1,2,3,4},
+                        {2,4,6,8},
+                        {1,3,5,7} };
+                        
+    int sum_z[ZEILEN]; // Summe der Zeilen
+    int sum_s[SPALTEN]; // Summe der Spalten
+    
+    getSumZeilen(a,sum_z);
+    getSumSpalten(a,sum_s);
+    
+    for(int i=0;i<ZEILEN;i++)
+        printf("Summe der Zeile %d: %d\n", i, sum_z[i]);
+    
+    for(int i=0;i<SPALTEN;i++)
+        printf("Summe der Spalte %d: %d\n", i, sum_s[i]);
+        
+    getch();
+}
+
+void getSumZeilen(int arr[][SPALTEN],int sum[]) {
+    // ...
+}
+
+void getSumSpalten(int arr[][SPALTEN],int sum[]) {
+    // ...
+```
+
+### 8. Übung
+
