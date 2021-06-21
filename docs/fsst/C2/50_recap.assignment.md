@@ -11,9 +11,9 @@ sitemap_exclude: n
 
 Folgende Aufgaben sollten nach der 2. Klassen ohne Probleme umgesetzt werden können.
 
-## 1. Arrays
+## Arrays
 
-### 1.1 Temperaturen
+### 1.Temperaturen
 Es werden Temperatur-Messreihen erfasst. Schreibe ein Programm temp, das es ermöglicht
 diese Temperaturen in einem Array abzuspeichern. Verwende den Datentyp `double`.
 Mit der Eingabe von `100` kann der Benutzer die Eingabe abschließen. Maximal können
@@ -28,7 +28,7 @@ Mit der Eingabe von `100` kann der Benutzer die Eingabe abschließen. Maximal k�
 Teile das Programm sinnvoll in Funktionen auf. Verwende keine globalen Variablen.
 
 
-### 1.2 Balkendiagramm
+### 2. Balkendiagramm
 Schreibe ein Programm mit dem horizontale Balkendiagramme ausgegeben werden können.
 Die Länge der Balken sind in einem Array vorgegeben:
 
@@ -51,11 +51,10 @@ Ausgabe:
 Implementiere `zeigeBalken()`.
 
 
-## 2. Strings
+## Strings
 
-### 2.1 Diverse String
-Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfinden
-und nicht in einen weiteren String kopiert werden!
+### 3. Diverse Stringfunktionen
+Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfinden  und nicht in einen weiteren String kopiert werden!
 
 1. `strcvoc` — Anzahl der Selbstlaute in einem Text zählen.
 1. `strrchr` — das letzte Vorkommen eines Zeichens suchen.
@@ -68,10 +67,29 @@ rutschen nach rechts.
 1. `strdel` — Zeichen an einer bestimmten Position „löschen“, Zeichen dahinter rücken
 auf.
 
-## 3. Zeiger
+## Zeiger
+
+### 4. Zwei Arrays verschmelzen
+   
+Schreibe eine Funktion `merge()` die als Parameter 3 Arrays (`a1`, `a2`, `a3`) übergeben bekommt. 
+`a1` und `a2` sollen kombiniert in `a3` kopiert werden so dass a3 genau so viele Elemente enthält wie in Summe in a1 und a2 sind. 
+Dabei sollen a1 und a2 aufsteigend sortierte Arrays sein. `a3` soll ebenfalls wieder aufsteigend sortiert sein. 
+
+Nimm als Basis:
+```c
+int a1[]={1,3,5,7,9};
+int a2[]={2,4,6,8};
+int a3[9];
+```
+
+### 5. Wörter aus einem Satz
+Schreibe ein Programm, das einen Satz einliest und jedes Wort in einer eigenen Zeile
+wieder ausgibt. Als Wortbegrenzung dient das Leerzeichen. Verwende nur Zeiger. Berücksichtige,
+dass mehrere Leerzeichen hintereinander und Leerzeichen am Anfang und
+am Ende des Satzes vorkommen können.
 
 
+## Strukturen
 
-## 4. Strukturen
 
-## 5. Arrays mit Strukturen
+## Arrays mit Strukturen
