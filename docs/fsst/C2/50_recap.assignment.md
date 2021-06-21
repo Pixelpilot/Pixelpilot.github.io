@@ -11,9 +11,9 @@ sitemap_exclude: n
 
 Folgende Aufgaben sollten nach der 2. Klassen ohne Probleme umgesetzt werden können.
 
-# 1. Arrays
+## 1. Arrays
 
-## 1.1 Temperaturen
+### 1.1 Temperaturen
 Es werden Temperatur-Messreihen erfasst. Schreibe ein Programm temp, das es ermöglicht
 diese Temperaturen in einem Array abzuspeichern. Verwende den Datentyp `double`.
 Mit der Eingabe von `100` kann der Benutzer die Eingabe abschließen. Maximal können
@@ -28,7 +28,7 @@ Mit der Eingabe von `100` kann der Benutzer die Eingabe abschließen. Maximal k�
 Teile das Programm sinnvoll in Funktionen auf. Verwende keine globalen Variablen.
 
 
-## 1.2 Balkendiagramm
+### 1.2 Balkendiagramm
 Schreibe ein Programm mit dem horizontale Balkendiagramme ausgegeben werden können.
 Die Länge der Balken sind in einem Array vorgegeben:
 
@@ -51,9 +51,9 @@ Ausgabe:
 Implementiere `zeigeBalken()`.
 
 
-# 2. Strings
+## 2. Strings
 
-## 2.1 Diverse String
+### 2.1 Diverse String
 Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfinden
 und nicht in einen weiteren String kopiert werden!
 
@@ -68,10 +68,10 @@ rutschen nach rechts.
 1. `strdel` — Zeichen an einer bestimmten Position „löschen“, Zeichen dahinter rücken
 auf.
 
-# 3. Zeiger
+## 3. Zeiger
 
 
 
-# 3. Strukturen
+## 4. Strukturen
 
-# 4. Arrays mit Strukturen
+## 5. Arrays mit Strukturen
