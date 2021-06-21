@@ -35,11 +35,10 @@ Die Länge der Balken sind in einem Array vorgegeben:
 ```c
 #define ANZ 4
 void zeigeBalken(int balken[], int n);
-void main()
-{
-int balken[]={7,2,6,4};
-zeigeBalken(balken, ANZ);
-...
+void main() {
+    int balken[]={7,2,6,4};
+    zeigeBalken(balken, ANZ);
+    ...
 ```
 
 Ausgabe:
