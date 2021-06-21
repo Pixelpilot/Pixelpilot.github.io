@@ -178,6 +178,3 @@ void getSumZeilen(int arr[][SPALTEN],int sum[]) {
 void getSumSpalten(int arr[][SPALTEN],int sum[]) {
     // ...
 ```
-
-### 8. Übung
-
