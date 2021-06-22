@@ -75,6 +75,8 @@ Schreibe eine Funktion `merge()` die als Parameter 3 Arrays (`a1`, `a2`, `a3`) u
 `a1` und `a2` sollen kombiniert in `a3` kopiert werden so dass a3 genau so viele Elemente enthält wie in Summe in a1 und a2 sind. 
 Dabei sollen a1 und a2 aufsteigend sortierte Arrays sein. `a3` soll ebenfalls wieder aufsteigend sortiert sein. 
 
+Verwende nur Zeiger.
+
 Nimm als Basis:
 ```c
 int a1[]={1,3,5,7,9};
