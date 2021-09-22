@@ -1,5 +1,5 @@
 ---
-title: Javascript und CSS
+title: Javascript und CSS - Simple Game
 description: Javascript - Javascript und CSS
 category: Webentwicklung
 topic: Javascript
@@ -117,7 +117,7 @@ Implementiere Score und Highscore und zeige sie am oberen Spielfeldrand an.
 - Implementiere mehrere Objekte mit denen das Raumschiff kollidieren kann
 - Animationen beim Raumschiff
   - Triebwerke zünden, wenn man sich nach vor bewegt
-  - Anderes Sprite, wenn sich das Raumschiff nach oben/unten bewegt
+  - Andere Sprites, wenn sich das Raumschiff nach oben/unten bewegt
 - Animationen beim Asteroiden
   - Lass den Asteroiden rotieren
   - Asteroid zieht eine Rauchspur hinter sich her

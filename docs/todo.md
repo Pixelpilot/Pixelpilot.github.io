@@ -32,6 +32,11 @@ sitemap_exclude: y
 % bundle exec jekyll serve
 ```
 
+```
+// Browser
+http://127.0.0.1:4000
+```
+
 
 
 ### Diverse Inhalte:

@@ -60,12 +60,9 @@ Falls eine Veränderung gefragt ist soll diese im übergebenen String stattfind
 1. `strrchr` — das letzte Vorkommen eines Zeichens suchen.
 1. `strrotateleft` — Um eine Stelle nach links rotieren
 1. `strrotateright` — Um eine Stelle nach rechts rotieren
-1. `strmix` — mischt 2 alphabetisch sortierte Strings zu einem Dritten, der ebenfalls
-sortiert sein soll.
-1. `strinsert` — Ein Zeichen an einer bestimmten Position einfügen, Zeichen dahinter
-rutschen nach rechts.
-1. `strdel` — Zeichen an einer bestimmten Position „löschen“, Zeichen dahinter rücken
-auf.
+1. `strmix` — mischt 2 alphabetisch sortierte Strings zu einem Dritten, der ebenfalls sortiert sein soll.
+1. `strinsert` — Ein Zeichen an einer bestimmten Position einfügen, Zeichen dahinter rutschen nach rechts.
+1. `strdel` — Zeichen an einer bestimmten Position „löschen“, Zeichen dahinter rücken auf.
 
 ## Zeiger
 
@@ -85,10 +82,8 @@ int a3[9];
 ```
 
 ### 5. Übung: Wörter aus einem Satz
-Schreibe ein Programm, das einen Satz einliest und jedes Wort in einer eigenen Zeile
-wieder ausgibt. Als Wortbegrenzung dient das Leerzeichen. Verwende nur Zeiger. Berücksichtige,
-dass mehrere Leerzeichen hintereinander und Leerzeichen am Anfang und
-am Ende des Satzes vorkommen können.
+Schreibe ein Programm, das einen Satz einliest und jedes Wort in einer eigenen Zeile wieder ausgibt. Als Wortbegrenzung dient das Leerzeichen. Verwende nur Zeiger.
+Berücksichtige, dass mehrere Leerzeichen hintereinander und Leerzeichen am Anfang und am Ende des Satzes vorkommen können.
 
 
 ## Strukturen
