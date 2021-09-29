@@ -47,14 +47,11 @@ Implementiere weitere Erweiterungen:
 * Eingabe von Kommawerten funktionieren mit `.` und `,` (z.B. `29.7` oder `29,7`)
 * Vertauschen von Breite um Höhe mittels zusätzlichem Button (Hochformat`<>`Querformat)  
 * Zusätzliches Formularfeld (`<select>`) mit dem man Presets auswählen kann
-	* A2 Druck (300 dpi) – Querformat
-	* A2 Druck (300 dpi) – Hochformat
-	* A3 Druck (300 dpi) – Querformat
-	* A3 Druck (300 dpi) – Hochformat
-	* A4 Druck (300 dpi) – Querformat
-	* A4 Druck (300 dpi) – Hochformat
-	* HD (1920 x 1080 px, 96 dpi)
-	* 4K (3840 x 2160 px, 96 dpi)
+	* A2 Druck (300 dpi)
+	* A3 Druck (300 dpi)
+	* A4 Druck (300 dpi)
+	* HD Video (1920 x 1080 px, 96 dpi)
+	* 4K Video (3840 x 2160 px, 96 dpi)
 	* Foto (13 x 9 cm, 250 dpi)
 	* Foto (15 x 10 cm, 250 dpi)
 	* Foto (18 x 13 cm, 250 dpi)
