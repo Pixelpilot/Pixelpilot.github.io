@@ -23,9 +23,9 @@ Umsetzen des Umrechners in HTML, Stylen der Elemente mit CSS:
 * Ausgabe über ein Formularfeld, das Attribut `disable="true"` gesetzt hat
 *	Stylesheets in eigener Datei
 *	Einsatz von verschiedenen „CSS-Arten“
-	* Element     	z.B.: h1 { ... } 
-	* Klasse		z.B.: .rounded {}
-	* Id			z.B.: #container {}
+	 * Element – z.B.: `h1 { ... }`
+	 * Klasse – z.B.: `.rounded {}`
+	 * Id – z.B.: `#container {}`
 
 
 
@@ -42,7 +42,7 @@ Umsetzen der Funktionalität in JavaScript:
 
 Implementiere weitere Erweiterungen:
 * Zusätzliches Formularfeld, um den aktuellen Dollarkurs anpassen zu können
-* Umschalter **Dollar -> Euro** und **Euro -> Dollar** 
+* Umschalter **Dollar ⟹ Euro** und **Euro ⟹ Dollar** 
 * Zusätzliche Währungen dazugeben (z.B.: Pfund)
 * Umrechner zwischen Zahlensystemen ...
 
