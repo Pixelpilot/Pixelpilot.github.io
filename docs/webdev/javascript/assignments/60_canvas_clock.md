@@ -17,7 +17,7 @@ sitemap_exclude: y
 ## Canvas2D (Übungen – Canvas 2D Analoge Uhr)
 
 ![Analoge Uhr](img/canvas_clock.png)
-Es ist eine einfache Website zu erstellen, die die aktuelle Uhrzeit in Form einer analogen Uhr anzeigt.
+Es ist eine einfache Website zu erstellen, die die aktuelle Uhrzeit in Form einer analogen Uhr anzeigt. 
 
 ### 1. HTML
 
