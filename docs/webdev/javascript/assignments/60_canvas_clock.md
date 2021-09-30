@@ -8,8 +8,6 @@ topic: Javascript - Teil 2
 type: assignment
 previewimage: img/canvas_clock_preview.png
 layout: default
-
-sitemap_exclude: y
 ---
 
 # Javascript
