@@ -44,7 +44,6 @@ rechts erscheint die Bildgröße umgerechnet in die jeweils andere Einheit.
 ### 3. Erweiterungen
 
 Implementiere weitere Erweiterungen:
-* Eingabe von Kommawerten funktionieren mit `.` und `,` (z.B. `29.7` oder `29,7`)
 * Vertauschen von Breite um Höhe mittels zusätzlichem Button (Hochformat`<>`Querformat)  
 * Zusätzliches Formularfeld (`<select>`) mit dem man Presets auswählen kann
 	* A2 Druck (300 dpi)

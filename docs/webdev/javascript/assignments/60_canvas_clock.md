@@ -6,7 +6,7 @@ category: Webentwicklung
 topic: Javascript - Teil 2
 
 type: assignment
-previewimage: img/canvas_clock_preview.png
+previewimage: img/canvas_clock.png
 layout: default
 ---
 
