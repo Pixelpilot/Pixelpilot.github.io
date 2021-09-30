@@ -39,19 +39,22 @@ Setze die Funktionalität mittels JavaScript um. Achte bei der Programmierung da
 
 
 #### Bewegen der Zeiger
-* Implementieren die  Bewegung der Zeiger. Der Sekundenzeiger soll jede Sekunde weiterspringen, die Minuten- und Stundenzeiger sollen sich kontinuierlich bewegen.
-* Erstelle eine Funktion `clearCanvas()`, die die gesamte Zeichenfläche löscht
-* Damit die Bewegung dargestellt wird muss die Uhr immer wieder neu gezeichnet werden. Verwende die Methode `setInterval()` um jede Sekunde die Uhr neu zu zeichnen:
-    1. Löschen der Canvas
-    2. Zeichnen des Ziffernblattes
-    3. Ermitteln der Systemzeit und Zeichnen der Zeiger
+Implementiere die Bewegung der Zeiger. Der Sekundenzeiger soll jede Sekunde weiterspringen, die Minuten- und Stundenzeiger sollen sich kontinuierlich bewegen.
+
+ Damit die Bewegung dargestellt wird muss die Uhr immer wieder gelöscht und neu gezeichnet werden. Erstelle dazu eine Funktion `clearCanvas()`, die die gesamte Zeichenfläche löscht.
+
+Verwende die Methode `setInterval()` um jede Sekunde die Uhr neu zu zeichnen:
+1. Löschen der Canvas
+2. Zeichnen des Ziffernblattes
+3. Ermitteln der Systemzeit und Zeichnen der Zeiger
 
 ### 4. Erweiterungen
 
 Implementiere weitere Erweiterungen:
-* Das aktuelle Datum (Wochentag, ...) wird dargestellt.
+* Das aktuelle Datum wird dargestellt.
+* Der aktuelle Wochentag wird dargestellt.
 * Die aktuelle Mondphase wird dargestellt.
-* 
+* ...
 
 ### Ressourcen
 
