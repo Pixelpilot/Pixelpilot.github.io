@@ -1,15 +1,12 @@
 ---
-title: Wiederholung HTML und CSS
+title: Aufgabe - Wiederholung HTML und CSS
 description: HTML und CSS - Wiederholung
 category: Webentwicklung
 topic: HTML und CSS
 subtopic: Wiederholung
 ---
 
-# HTML und CSS
-
-## Wiederholung HTML und CSS
-
+## Aufgabenstellung
 
 Es ist eine HTML-Seite zu erstellen und das Design an eine vorgegeben Vorlage anzupassen.
 
@@ -36,10 +33,14 @@ Passe das Aussehen der Seite so an, dass sie der Vorlage entspricht.
 
 ![CSS-Seite](./img/recap_css.png)
 
-Ressourcen:
+## Ressourcen
 
 * [.zip des leeren Projekts](./assets/recap_html_empty.zip){:target="_blank"}
 * [star.png](./assets/star.png){:target="_blank"}
 * [heart.png](./assets/heart.png){:target="_blank"}
 * [search.png](./assets/search.png){:target="_blank"}
 * [tune.png](./assets/tune.png){:target="_blank"}
+
+* [Mozilla.org - HTML Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics){:target="_blank"}
+* [Mozilla.org - CSS Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics){:target="_blank"}
+* [Mozilla.org  - CSS Selectors](https://developer.mozilla.org/de/docs/Web/CSS/CSS_Selectors){:target="_blank"}

@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 2 - Bildergalerie
+title: Aufgabe 2 - Document Object Model - Bildergalerie
 description: Javascript - Document Object Model
 
 category: Webentwicklung
@@ -10,9 +10,7 @@ previewimage: img/dom_gallery.png
 layout: default
 ---
 
-# Javascript
-
-## Document Object Model (Übungen – Bildergalerie)
+## Aufgabenstellung
 
 ![Bildergalerie](img/dom_gallery.png)
 Es ist eine einfache Website zu erstellen, die eine vorgegebene Anzahl an Bilder in Form einer Bildergalerie darstellt.
@@ -69,15 +67,34 @@ Passe das Aussehen der Bildergalerie mittels CSS an:
 * Hebe das aktuelle Bild in der Vorschau hervor (Deckkraft oder Rahmen, ...)	
 * Verwende die Bilder `plus.png`,`minus.png`, etc.,  die sich im Ordner `./img` befinden, um das Aussehen der Buttons zur Steuerung der Galerie anzupassen
 
-### 4. Erweiterungen
+### Erweiterungen
 
-Implementiere weitere Erweiterungen:
+Implementiere folgende Erweiterungen:
 * Erweitere die Bildergalerie um die Möglichkeit den Bereich für die Thumbnails ein- und ausblenden zu können.
 * Erweitere die Bildergalerie um die Möglichkeit die Zeit zwischen den Bildwechseln angeben zu können (`<select>` oder als Eingabefeld) 
 * Styling der Buttons ohne Hintergrundbild, nur mittels CSS und CSS-Transitions ([https://www.w3schools.com/css/css3_transitions.asp](https://www.w3schools.com/css/css3_transitions.asp){:target="_blank"})
 * Verwende CSS-Transitions, um unterschiedliche Effekt beim Bildübergang zu implementieren
 
-### Ressourcen
+
+## Abgabe
+
+### Abgabeplattform
+Die Plattform der Abgabe wird im Unterricht besprochen.
+
+#### Abgabe über Teams
+Eine `.zip`-Datei mit allen Dateien und Verzeichnissen. Entpacke die Datei vorher testweise auf deinem Rechner. Der entpackte Inhalt muss vom Browser geöffnet und fehlerfrei dargestellt werden können.
+
+#### Abgabe über Repl.it
+Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blank"} erfolgen.
+
+### Bewertungskriterien
+* Umfang und Komplexität
+* Seitenstruktur (Dateien und Ordner)
+* Sauberkeit des Quelltextes
+* Dokumentation des Quelltextes
+
+
+## Ressourcen
 
 * [.zip des leeren Projekts](./assets/dom_gallery_empty.zip){:target="_blank"}
 * [W3 schools - Document Object Model](https://www.w3schools.com/js/js_htmldom.asp){:target="_blank"}

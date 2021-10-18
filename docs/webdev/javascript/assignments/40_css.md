@@ -1,8 +1,8 @@
 ---
-title: Javascript und CSS - Simple Game
-description: Javascript - Javascript und CSS
+title: Aufgabe 6 - JavaScript und CSS - Simple Game
+description: Javascript - JavaScript und CSS
 category: Webentwicklung
-topic: Javascript
+topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
 ---
 
@@ -10,7 +10,7 @@ subtopic: Eingabe und Ausgabe
 
 Die CSS-Eigenschaften von Elementen im HTML können einfach per JavaScript verändert werden.
 
-### Zugreifen und Verändern von CSS
+### Zugreifen auf Elemente und Verändern von CSS-Eigenschaften
 ```html
 <!-- HTML -->
 <h1 id="headline">Styling mit JavaScript</h1>

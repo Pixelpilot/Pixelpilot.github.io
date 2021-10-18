@@ -1,20 +1,16 @@
 ---
-title: Währungsumrechner
+title: Aufgabe 5 - JavaScript und Formulare - Währungsumrechner
 description: Javascript - Formulare - Ein- und Ausgabe
 category: Webentwicklung
-topic: Javascript
+topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
 ---
 
-# Javascript
-
-## Eingabe und Ausgabe (Übungen – Währungsumrechner)
-
-![Währungsrechner](./img/dollar2euro.png)
-
-
-
+## Aufgabenstellung
 Es ist ein einfaches Formular zu erstellen, mit dessen Hilfe man Euro nach Dollar umrechnen kann.
+![Währungsrechner](./img/dollar2euro.png)
+*Beispielhaft Umsetzung*
+
 
 ### 1. HTML und CSS
 
@@ -33,17 +29,20 @@ Umsetzen des Umrechners in HTML, Stylen der Elemente mit CSS:
 
 Umsetzen der Funktionalität in JavaScript:
 
-* Bei Klick auf den Button **Umrechnen** wird der Dollarwert entsprechend dem akutellen Dollarkurs berechnet und ausgegeben. Definiere den aktuellen Dollarkurs mit einer globalen Variable.
-* Bei Klick auf den Button **Reset** sollen die beiden Formularfelder gelöscht werden.
+* Bei Klick auf den Button `Umrechnen` wird der Dollarwert entsprechend dem akutellen Dollarkurs berechnet und ausgegeben. Definiere den aktuellen Dollarkurs mit einer globalen Variable.
+* Bei Klick auf den Button `Reset` sollen die beiden Formularfelder gelöscht werden.
 
 
 
-### 3. Erweiterungen
+### 3. Zusatz / Erweiterungen
 
-Implementiere weitere Erweiterungen:
+Implementiere weitere Funktionalitäten:
 * Zusätzliches Formularfeld, um den aktuellen Dollarkurs anpassen zu können
-* Umschalter **Dollar ⟹ Euro** und **Euro ⟹ Dollar** 
+* Umschalter `Dollar ⟹ Euro` und `Euro ⟹ Dollar` 
 * Zusätzliche Währungen dazugeben (z.B.: Pfund)
 * Umrechner zwischen Zahlensystemen ...
 
 ![Dezimal nach Binär](./img/decimal2binary.png){:width="480px"}
+
+## Ressourcen
+* [mozilla.org - HTMLFormElement](https://developer.mozilla.org/de/docs/Web/API/HTMLFormElement){:target="_blank"}

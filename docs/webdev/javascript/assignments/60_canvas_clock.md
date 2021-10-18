@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 3 - Canvas2D Analoge Uhr
+title: Aufgabe 3 - Canvas2D - Analoge Uhr
 description: Javascript - Canvas 2D
 
 category: Webentwicklung
@@ -10,9 +10,7 @@ previewimage: img/canvas_clock.png
 layout: default
 ---
 
-# Javascript
-
-## Canvas2D (Übungen – Canvas 2D Analoge Uhr)
+# Aufgabenstellung
 
 ![Analoge Uhr](img/canvas_clock.png)
 Es ist eine einfache Website zu erstellen, die die aktuelle Uhrzeit in Form einer analogen Uhr anzeigt. 
@@ -48,7 +46,7 @@ Verwende die Methode `setInterval()` um jede Sekunde die Uhr neu zu zeichnen:
 2. Zeichnen des Ziffernblattes
 3. Ermitteln der Systemzeit und Zeichnen der Zeiger
 
-### 4. Erweiterungen
+### Erweiterungen
 
 Implementiere weitere Erweiterungen:
 * Das aktuelle Datum wird dargestellt.
@@ -56,7 +54,25 @@ Implementiere weitere Erweiterungen:
 * Die aktuelle Mondphase wird dargestellt.
 * ...
 
-### Ressourcen
+## Abgabe
+
+### Abgabeplattform
+Die Plattform der Abgabe wird im Unterricht besprochen.
+
+#### Abgabe über Teams
+Eine `.zip`-Datei mit allen Dateien und Verzeichnissen. Entpacke die Datei vorher testweise auf deinem Rechner. Der entpackte Inhalt muss vom Browser geöffnet und fehlerfrei dargestellt werden können.
+
+#### Abgabe über Repl.it
+Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blank"} erfolgen.
+
+### Bewertungskriterien
+* Umfang und Komplexität
+* Seitenstruktur (Dateien und Ordner)
+* Sauberkeit des Quelltextes
+* Dokumentation des Quelltextes
+
+
+## Ressourcen
 
 * [.zip des leeren Projekts](./assets/canvas_clock_empty.zip){:target="_blank"}
 * [MDN Web Docs - CanvasRenderingContext2D](https://developer.mozilla.org/de/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}

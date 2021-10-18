@@ -1,19 +1,17 @@
 ---
-title: Countdown
-description: Javascript - Timeout, Interval - Ein- und Ausgabe
+title: Aufgabe 3 - Javascript und Timeout, Interval - Countdown
+description: JavaScript - Timeout, Interval - Ein- und Ausgabe
 category: Webentwicklung
-topic: Javascript
+topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
 ---
 
-# Javascript
-
-## Eingabe und Ausgabe (Übungen – Countdown)
+## Aufgabenstellung
+Es ist eine einfache Webapp zu erstellen, die einen Countdown realisiert.
 
 ![Countdown](img/intervall_countdown.png)
+*Beispielhaft Umsetzung*
 
-
-Es ist eine einfache Webapp zu erstellen, die einen Countdown realisiert.
 
 ### 1. HTML
 
@@ -52,8 +50,31 @@ Stylen der Elemente mit CSS:
 
 
 
-### 4. Erweiterungen
+### 4. Zusatz / Erweiterungen
 
 Implementiere folgende Erweiterungen:
 * Zeige **Zehntelsekunden** im Timer mit an
 * Erweitere den Timer um **Minuten** und **Sekunden**
+
+## Abgabe
+
+### Abgabeplattform
+Die Plattform der Abgabe wird im Unterricht besprochen.
+
+#### Abgabe über Teams
+Eine `.zip`-Datei mit allen Dateien und Verzeichnissen. Entpacke die Datei vorher testweise auf deinem Rechner. Der entpackte Inhalt muss vom Browser geöffnet und fehlerfrei dargestellt werden können.
+
+#### Abgabe über Repl.it
+Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blank"} erfolgen.
+
+### Bewertungskriterien
+* Umfang und Komplexität
+* Seitenstruktur (Dateien und Ordner)
+* Sauberkeit des Quelltextes
+* Dokumentation des Quelltextes
+
+## Ressourcen
+* [mozilla.org - setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout){:target="_blank"}
+* [mozilla.org - setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval){:target="_blank"}
+* [mozilla.org - clearTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout){:target="_blank"}
+* [mozilla.org - clearInterval()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearInterval){:target="_blank"}
