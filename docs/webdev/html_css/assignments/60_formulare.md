@@ -27,7 +27,7 @@ werden.
 Die Seite ist mit CSS ansprechend zu gestalten.
 
 ![Beispielhafte Umsetzung](img/forms.png)
-*Beispielhafte Umsetzung (Design und Inhalt kann gerne adaptiert werden)*
+*Beispielhafte Umsetzung (Design und Inhalt können gerne adaptiert werden)*
 
 ### 3. Zusatz
 Adaptiere das Design mithilfe von [Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries){:target="_blank"} so, dass es auch auf mobilen Endgeräten wie z.B. Smartphones gut dargestellt wird.
