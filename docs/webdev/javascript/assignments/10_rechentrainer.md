@@ -19,6 +19,14 @@ Es ist eine einfache Webapp zu erstellen, mit der die Grundrechnungsarten traini
 
 * Gib im Anschluss die Anzahl der richtig beantworteten Aufgaben mit Hilfe des Befehls `alert()` aus.
 
+* Verwende die Funktionen `Math.random()` (Zufallszahl generieren) und `Math.floor()` (Abrunden), um eine Zufallszahl zu generieren.
+
+```javascript
+// JavaScript
+var zahl;
+zahl = Math.random() * 10; // Math.random() liefert eine Kommazahl zwischen 0 - 1
+zahl = Math.floor( zahl ) + 1; // Math.floor() rundet eine Kommazahl ab
+```
 * Verwende die Funktion `parseInt()`, um die Eingaben des Benutzers in Zahlen umzuwandeln.
 
 ```javascript
@@ -52,5 +60,7 @@ alert ( zahl + 2 ); // Ausgabe: 125
 * [mozilla.org - prompt()](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt){:target="_blank"}
 * [mozilla.org - confirm()](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm){:target="_blank"}
 * [mozilla.org - parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt){:target="_blank"}
+* [mozilla.org - Math.random()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/random){:target="_blank"}
+* [mozilla.org - Math.floor()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/floor){:target="_blank"}
 * [mozilla.org - Document.write()](https://developer.mozilla.org/en-US/docs/Web/API/Document/write){:target="_blank"}
 * [mozilla.org - Document.writeln()](https://developer.mozilla.org/en-US/docs/Web/API/Document/writeln){:target="_blank"}
