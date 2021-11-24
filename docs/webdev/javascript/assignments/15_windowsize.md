@@ -9,6 +9,8 @@ subtopic: Eingabe und Ausgabe
 ## Aufgabenstellung
 Es ist eine einfache Webapp zu erstellen, mit der Informationen, wie zum Beispiel die aktuelle Auflösung des Browserfensters, angezeigt werden können.
 
+![Beispielhafte Umsetzung](img/js_browser_info.png)
+*Die Informationen über den Browser sollen in einem `<div>`-Element angezeigt werden.*
 
 ### 1. Framework
 
@@ -38,17 +40,35 @@ function getDimensions() {
 <body onload="getDimensions()">
 ```
 
-* Erweitere die Funtionalität der App so, dass bei einer Größenänderung des Browserfensters die neuen Abmessungen in der Konsole ausgegeben werden.
+* Erweitere die Funktionalität der App so, dass bei einer Größenänderung des Browserfensters die neuen Abmessungen in der Konsole ausgegeben werden.
 
 ### 3. Ausgeben im HTML-Dokument
-* Erstelle im html-Dokument ein `<div>`, in dem die Informationen dargestellt werden sollen. Passe das   Aussehen des `<div>`-Elements so an, dass es in etwa der Abbildung entspricht. Schreibe die Abmessungen des Browserfensters in das `<div>`-Element.
+* Erstelle im html-Dokument ein `<div id="info">`, in dem die Informationen dargestellt werden sollen. Passe das Aussehen des `<div>`-Elements so an, dass es in etwa der Abbildung entspricht. Schreibe die Abmessungen des Browserfensters in das `<div>`-Element.
 
+```html
+<!-- HTML -->
+<div id="info">Lorem ipsum</div>
+```
 
+```javascript
+// JavaScript
+
+// Referenz auf das gewünschte Objekt herstellen
+var divInfo = document.getElementById ("info");
+
+// Lesend auf den Inhalt zugreifen
+var inhalt = divInfo.innerHTML; // inhalt enthält jetzt "Lorem ipsum"
+
+// Schreibend auf den Inhalt zugreifen
+divInfo.innerHTML = "Neuer Inhalt"; // <div id="info"> enthält jetzt "Neuer Inhalt"
+```
 ### 4. Zusatz / Erweiterungen
-* Erstelle ein weiteres `<div>`-Element, in dem eine "History" der erstellten Spezies auflistet.
-* Erstellen ein Formular, mit dem man weitere Teilstrings hinzufügen kann.
+* Ermittel die Position des Browserfensters und gib diese Information im `<div id="info">` aus
+* Ermittle die Position und die Abmessungen des `<div>`-Elements und gib dessen Größe im `<div id="info">` aus
+* Zeige die aktuell gedrückte Taste an, solange der Benutzer sie gedrückt hält
+* __Schwierig:__ Ändere die Hintergrundfarbe des `<div id="info">`, wenn sich die Maus über dem `<div id="info">` befindet 
 
 ## Ressourcen
 
-* [W3 schools - JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp){:target="_blank"}
-* [mozilla.org - Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array){:target="_blank"}
+* [W3 schools - HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp){:target="_blank"}
+* [W3 schools - The HTML DOM Element Object](https://www.w3schools.com/jsref/dom_obj_all.asp){:target="_blank"}
