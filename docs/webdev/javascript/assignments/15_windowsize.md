@@ -65,7 +65,7 @@ divInfo.innerHTML = "Neuer Inhalt"; // <div id="info"> enthält jetzt "Neuer Inh
 ### 4. Zusatz / Erweiterungen
 * Ermittel die Position des Browserfensters und gib diese Information im `<div id="info">` aus
 * Ermittle die Position und die Abmessungen des `<div>`-Elements und gib dessen Größe im `<div id="info">` aus
-* Zeige die aktuell gedrückte Taste an, solange der Benutzer sie gedrückt hält
+* __Schwierig:__ Zeige die aktuell gedrückte Taste an, solange der Benutzer sie gedrückt hält
 * __Schwierig:__ Ändere die Hintergrundfarbe des `<div id="info">`, wenn sich die Maus über dem `<div id="info">` befindet 
 
 ## Ressourcen
