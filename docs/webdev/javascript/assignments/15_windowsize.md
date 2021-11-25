@@ -63,10 +63,10 @@ var inhalt = divInfo.innerHTML; // inhalt enthält jetzt "Lorem ipsum"
 divInfo.innerHTML = "Neuer Inhalt"; // <div id="info"> enthält jetzt "Neuer Inhalt"
 ```
 ### 4. Zusatz / Erweiterungen
-* Ermittel die Position des Browserfensters und gib diese Information im `<div id="info">` aus
 * Ermittle die Position und die Abmessungen des `<div>`-Elements und gib dessen Größe im `<div id="info">` aus
-* __Schwierig:__ Zeige die aktuell gedrückte Taste an, solange der Benutzer sie gedrückt hält
-* __Schwierig:__ Ändere die Hintergrundfarbe des `<div id="info">`, wenn sich die Maus über dem `<div id="info">` befindet 
+* Zeige das aktuelle Datum im Format `Wochentag, dd.mm.yyyy` an.
+* Zeige die aktuelle Uhrzeit im Format `hh:mm:ss` an
+* Zeige die Mausposition an.
 
 ## Ressourcen
 
