@@ -68,6 +68,9 @@ divInfo.innerHTML = "Neuer Inhalt"; // <div id="info"> enthält jetzt "Neuer Inh
 * Zeige die aktuelle Uhrzeit im Format `hh:mm:ss` an
 * Zeige die Mausposition an.
 
+![Beispielhafte Umsetzung](img/js_infowindow.png)
+*Erweiterte Ausgabe.*
+
 ## Ressourcen
 
 * [W3 schools - HTML DOM Events](https://www.w3schools.com/jsref/dom_obj_event.asp){:target="_blank"}
