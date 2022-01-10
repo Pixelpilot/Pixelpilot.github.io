@@ -59,12 +59,18 @@ function generateSpecies() {
 
 ### 4. Zusatz / Erweiterungen
 * Erstelle ein weiteres `<div>`-Element, in dem eine "History" der erstellten Spezies auflistet.
+* Erstellen einen Button `CLEAR HISTORY`, der die "History" der erstellen Species wieder löscht
+* Gib die Anzahl der Species an, die ingesamt erstellte wurde
+* Gib die Anzahl der möglichen Kombinationen an – sie ergibt sich aus den Längen der einzelnen Array und kann über die Eigenschaft `.length` abgefragt werden.
+* Schwierig: Erstelle in der "History" neben jedem Eintrag einen Button `REMOVE`. Beim Klick auf diesen Button soll nur dieser eine Eintrag gelöscht werden.
 
-* Erstellen ein Formular, mit dem man weitere Teilstrings hinzufügen kann.
-
-
+![Umsetzung mit Erweiterungen](img/js_arrays_ext.png)
+*Umsetzung mit Erweiterungen*
 ## Ressourcen
 
+
+https://www.w3schools.com/js/js_arrays.asp
+* [W3 schools - JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp){:target="_blank"}
 * [W3 schools - JavaScript Events](https://www.w3schools.com/js/js_events.asp){:target="_blank"}
 * [W3 schools - The Window Object](https://www.w3schools.com/jsref/obj_window.asp){:target="_blank"}
 * [mozilla.org - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events){:target="_blank"}

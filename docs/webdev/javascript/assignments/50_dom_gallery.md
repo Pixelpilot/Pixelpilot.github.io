@@ -23,6 +23,8 @@ Setze die Bildergalerie in HTML zu um, dass ein großes Bild sowie die sechs Thu
 
 Verwende entsprechende `<div>`-Elemente als Container, um dann später einfacher mittels JavaScript auf die einzelnen Element zugreifen zu können.
 
+Die einzelnen Thumbnails und das große Bild kommen nicht ins HTML, sondern werden später per JavaScript hinzugefügt.
+
 ### 2. JavaScript
 
 Setze die Funktionalität mittels JavaScript um. Die Namen der Bilder sowie die Namen der Thumbnails sind bereits in globalen Arrays angegeben:
@@ -41,6 +43,9 @@ var gThumbs = new Array ("./pics/thumb_01.jpg",
 		"./pics/thumb_05.jpg", 
 		"./pics/thumb_06.jpg");
 ```
+
+#### Hinzufügen der Thumbnails und des großen Bildes
+Beim Laden der Seiten sollen die Thumbnails automatisch erzeugt und dargestellt werden.
 
 #### Funktionalität der Thumbnails 
 Bei Klick auf eines der Thumbnails soll sich das große Bild in der Detailansicht austauschen.
