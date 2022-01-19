@@ -10,22 +10,27 @@ previewimage: img/canvas_particle.png
 layout: default
 ---
 
-# Aufgabenstellung
+## Aufgabenstellung
 
 Es ist eine einfache Website zu erstellen, die das Benutzerverhalten eines Besuchers aufzeichnet.
 
 ![Beispielhafte Umsetzung](img/js_cookies_data.png)
 
-### 1. HTML
+> **ACHTUNG: Chrome erlaubt keine lokalen Daten**
+>
+> Workaround:
+>
+> * chrome: `--enable-file-cookies`
+> * repl: Open in new Tab (Icon rechts oben)
+
+### 1. Framework
 
 Erstelle alle notwendigen HTML-Element, wie in der Abbildung dargestellt.
 
 
-### 2. JavaScript
-
 Setze die Funktionalität mittels JavaScript um. Achte bei der Programmierung darauf, die Funktionalität soweit möglich zu gliedern und in Funktionen auszulagern.
 
-#### Personalisierung
+### 2. Personalisierung
 Es soll erkannt werden, ob ein Benutzer schon einmal auf der Seite war oder neu auf der Seite ist.
 
 ![Beispielhafte Umsetzung](img/js_cookies_first.png)
@@ -37,19 +42,26 @@ Auf der Website kann der Benutzer seinen Namen über ein Textfeld eingeben. Der 
 
 Hat ein Besucher seinen Namen eingegeben und besucht die Website ein weiteres Mal, soll er mit seinem Namen begrüßt werden (z.B. `Hallo Max!`).
 
-#### Löschen von Cookies
+### 3. Löschen von Cookies
 Bei Klick auf den Button `Cookies löschen` sollen alle Cookies gelöscht werden, in dem deren `expires`-Wert auf einen Zeitpunkt in der Vergangenheit gesetzt wird.
 
-#### Aufzeichnung weiterer Informationen
+### 4. Aufzeichnung weiterer Informationen
 
 Zeichne weitere Informationen mit Hilfe von Cookies auf. Alle aufgezeichneten Informationen sollen beim Laden der Seite in einem `<div id="debug">...</div>` ausgegeben werden.
 
-* Anzahl der Besuche
-* Zeit, die seit dem letzten Besuch vergangen ist
-* Gesamte Zeit, die der Besucher auf der Website gebraucht hat
+1. Anzahl der Besuche
+2. Zeit, die seit dem letzten Besuch vergangen ist
+3. Gesamte Zeit, die der Besucher auf der Website gebraucht hat
 
+### 5. Zusatz/Erweiterungen Aufzeichnung von Produkt
+
+Zeichne weitere Informationen über das Benutzerverhalten auf. Simuliere dazu einen einfachen Shop mit einigen Produkten.
+
+* Wie oft hat der Benutzer auf ein Produkt geklickt
+* Wie oft hat der Benutzer die Maus über ein Produkt bewegt
+
+![Beispielhafte Umsetzung zur Erfassung von Shopping-Daten](img/js_cookies_shop.png)
 
 ## Ressourcen
-
 
 * [MDN Web Docs - Document.cookie](https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie)
