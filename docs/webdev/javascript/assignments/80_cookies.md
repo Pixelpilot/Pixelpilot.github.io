@@ -35,12 +35,12 @@ Es soll erkannt werden, ob ein Benutzer schon einmal auf der Seite war oder neu 
 
 ![Beispielhafte Umsetzung](img/js_cookies_first.png)
 
-Ist der Benutzer das erste Mal auf der Seite, soll er mit `Neu hier? Trag doch gleich deinen
+1. Ist der Benutzer das erste Mal auf der Seite, soll er mit `Neu hier? Trag doch gleich deinen
 Namen ein!` begrüßt werden.
 
-Auf der Website kann der Benutzer seinen Namen über ein Textfeld eingeben. Der Name soll anschließend in einem Cookie abgespeichert werden.
+2. Auf der Website kann der Benutzer seinen Namen über ein Textfeld eingeben. Der Name soll anschließend in einem Cookie abgespeichert werden.
 
-Hat ein Besucher seinen Namen eingegeben und besucht die Website ein weiteres Mal, soll er mit seinem Namen begrüßt werden (z.B. `Hallo Max!`).
+3. Hat ein Besucher seinen Namen eingegeben und besucht die Website ein weiteres Mal, soll er mit seinem Namen begrüßt werden (z.B. `Hallo Max!`).
 
 ### 3. Löschen von Cookies
 Bei Klick auf den Button `Cookies löschen` sollen alle Cookies gelöscht werden, in dem deren `expires`-Wert auf einen Zeitpunkt in der Vergangenheit gesetzt wird.
