@@ -8,6 +8,8 @@ topic: Javascript - Teil 2
 type: assignment
 previewimage: img/canvas_particle.png
 layout: default
+
+sitemap_exclude: y
 ---
 
 # Aufgabenstellung
