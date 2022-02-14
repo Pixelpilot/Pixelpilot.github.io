@@ -19,16 +19,19 @@ Das `<canvas>`-Element stellt eine Zeichenfläche (_Leinwand_) zur Verfügung, a
 
 
 ### 1. Projekt anlegen
-Erstelle ein Projekt entsprechend der Vorlage in der Datei [canvas_draw.zip](./assets/canvas_draw.zip){:target="_blank"}.
+Erstelle ein Projekt entsprechend der Vorlage in der Datei [canvas_draw_empty.zip](./assets/canvas_draw_empty.zip){:target="_blank"}.
 
 ### 2. Erste Schritte
 Sieh dir den Quelltext des Programms an und versuche die Befehle nachzuvollziehen.
 
+Erstelle weitere grafische Primitive und andere Formen. Experimentiere mit den Transformationen und den Eigenschaften der Objekte (Farben, Linien, etc.).
+
+### 3. Japanische Flagge
 Erweitere das Programm um eine Funktion `drawJapaneseFlag()`, die die japanische Flagge auf das `<canvas>`-Objekt zeichnet.
 
 ![Beispielhafte Umsetzung](./img/canvas_flag.png)
 
-### 3. Schneemann
+### 4. Schneemann
 
 Zeiche einen Schneemann, der aus mehreren Teilen besteht. Zeichne Element, wie zum Beispiel die Knöpfe mit Hilfe einer Schleife.
 ```javascript
@@ -65,11 +68,6 @@ Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blan
 * Dokumentation des Quelltextes
 
 
-## Ressourcen
-
-* [.zip des leeren Projekts](./assets/canvas_clock_empty.zip){:target="_blank"}
-* [MDN Web Docs - CanvasRenderingContext2D](https://developer.mozilla.org/de/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}
-* 
 ## Allgemeines und Quelltextbeispiele
 
 ### Das Canvas-Element ### 
@@ -224,3 +222,12 @@ lContext.fillRect ( 25, 25, 100, 50 );      // Rechteck schräg zeichnen
 // Gespeicherte Transformationen auf den Stand von vor context.save() wiedeherstellen
 context.restore();
 ```
+
+
+
+## Weitere Ressourcen
+
+* [.zip des leeren Projekts](./assets/canvas_draw_empty.zip){:target="_blank"}
+* [MDN Web Docs - CanvasRenderingContext2D](https://developer.mozilla.org/de/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}
+* [Opera Canvas Tutorial](https://dev.opera.com/articles/html5-canvas-basics/){:target="_blank"}
+* [Breakout Game Tutorial](https://billmill.org/static/canvastutorial/bricks.html){:target="_blank"}
