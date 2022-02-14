@@ -13,6 +13,7 @@ layout: default
 # Aufgabenstellung
 
 ![Beispielhafte Umsetzung](img/canvas_snowman.png)
+
 Es ist eine einfache Website zu erstellen, die eine Winterlandschaft mit Hilfe einer Canvas2D zeichnet. 
 
 Das `<canvas>`-Element stellt eine Zeichenfläche (_Leinwand_) zur Verfügung, auf die mittels JavaScript dynamische Bitmap-Grafiken gezeichnet werden können.
