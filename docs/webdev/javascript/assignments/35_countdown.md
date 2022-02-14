@@ -56,6 +56,8 @@ Implementiere folgende Erweiterungen:
 * Zeige **Zehntelsekunden** im Timer mit an
 * Erweitere den Timer um **Minuten** und **Sekunden**
 
+![Beispielhafte Erweiterung](img/interval_countdown_extended.png)
+
 ## Abgabe
 
 ### Abgabeplattform

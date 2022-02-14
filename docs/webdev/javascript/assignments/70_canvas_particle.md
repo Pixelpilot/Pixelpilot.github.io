@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 4 - Canvas2D - Partikelsystem
+title: Aufgabe 6 - Canvas2D - Partikelsystem
 description: Javascript - Canvas 2D
 
 category: Webentwicklung
