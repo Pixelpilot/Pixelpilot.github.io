@@ -34,7 +34,7 @@ Erweitere das Programm um eine Funktion `drawJapaneseFlag()`, die die japanische
 
 ### 4. Schneemann
 
-Zeiche einen Schneemann, der aus mehreren Teilen besteht. Zeichne Element, wie zum Beispiel die Knöpfe mit Hilfe einer Schleife.
+Zeiche einen Schneemann, der aus mehreren Teilen besteht. Zeichne sich wiederholende Elemente, wie zum Beispiel die Knöpfe, mit Hilfe einer Schleife.
 ```javascript
 /* JavaScript */
 
