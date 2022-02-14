@@ -10,7 +10,7 @@ previewimage: img/canvas_snowman.png
 layout: default
 ---
 
-# Aufgabenstellung
+## Aufgabenstellung
 
 ![Beispielhafte Umsetzung](img/canvas_snowman.png)
 
@@ -52,9 +52,9 @@ Implementiere weitere Grafiken wie zum Beispiel:
 * Implementiere Verläufe
 * ...
 
-### Abgabe
+## Abgabe
 
-#### Abgabeplattform
+### Abgabeplattform
 Die Plattform der Abgabe wird im Unterricht besprochen.
 
 #### Abgabe über Teams
@@ -63,15 +63,15 @@ Eine `.zip`-Datei mit allen Dateien und Verzeichnissen. Entpacke die Datei vorhe
 #### Abgabe über Repl.it
 Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blank"} erfolgen.
 
-#### Bewertungskriterien
+### Bewertungskriterien
 * Umfang und Komplexität
 * Sauberkeit des Quelltextes
 * Dokumentation des Quelltextes
 
 
-### Allgemeines und Quelltextbeispiele
+## Allgemeines und Quelltextbeispiele
 
-#### Das Canvas-Element ### 
+### Das Canvas-Element ### 
 
 Das `<canvas>`-Element stellt eine Zeichenfläche (_Leinwand_) zur Verfügung, auf die mittels JavaScript dynamische Bitmap-Grafiken gezeichnet werden können.
 ```html
@@ -146,6 +146,7 @@ context.fillStyle = "hsl(120, 100%, 75%)";     // hellgrüen
 ```
 
 __Löschen des Canvas__
+
 Um Teilbereiche oder die gesamte Zeichenfläche zu löschen kann der Befehl `clearRect()` verwendet werden:
 ```javascript
 /* JavaScript */
@@ -157,7 +158,7 @@ lContext.clearRect( 10, 10, 50, 50 );	// x, y, Breite,  Hoehe
 lContext.clearRect( 0, 0, context.canvas.width, context.canvas.height );
 ```
 
-#### Das Koordinatensystem und die Transformationsmatrix ### 
+### Das Koordinatensystem und die Transformationsmatrix ### 
 
 Das Koordinatensystem für das `<canvas>`-Objekt kann man sich als Gitternetz vorstellen. Dieses Gitternetz liegt unsichtbar über dem Bitmap und wird durch die _Transformationsmatrix_ abgebildet.
 
@@ -226,7 +227,7 @@ context.restore();
 
 
 
-### Weitere Ressourcen
+## Weitere Ressourcen
 
 * [.zip des leeren Projekts](./assets/canvas_draw_empty.zip){:target="_blank"}
 * [MDN Web Docs - CanvasRenderingContext2D](https://developer.mozilla.org/de/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}
