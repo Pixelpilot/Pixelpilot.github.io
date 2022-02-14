@@ -19,7 +19,7 @@ Das `<canvas>`-Element stellt eine Zeichenfläche (_Leinwand_) zur Verfügung, a
 
 
 ### 1. Projekt anlegen
-Erstelle ein Projekt entsprechend der Vorlage in der Datei [canvas_drqw.zip](./assets/canvas_drqw.zip){:target="_blank"}.
+Erstelle ein Projekt entsprechend der Vorlage in der Datei [canvas_draw.zip](./assets/canvas_draw.zip){:target="_blank"}.
 
 ### 2. Erste Schritte
 Sieh dir den Quelltext des Programms an und versuche die Befehle nachzuvollziehen.
