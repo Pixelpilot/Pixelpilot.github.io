@@ -48,11 +48,29 @@ Es werden die Bindestriche weggelassen und stattdessen die Anfangsbuchstaben dan
 ```
 backgroundColor
 ```
+### Setzen von Styles mittels Klasse
+Um das Aussehen von der Funktionalität trennen zu können, empfiehlt es sich Klassen in `CSS` zu definieren und diese per `JavaScript` zu setzen bzw. wieder zu nehmen.
 
+```css
+/* CSS */
+.active {
+	color: red;
+}
+```
+
+```JavaScript
+// JavaScript
+
+// Klasse setzen
+ele.classList.add ("active");
+
+// Klasse wegnehmen
+ele.classList.remove ("active");
 
 ## Aufgabe 1 - Überschrift anpassen
 ![Aufgabe Überschrift anpassen](./img/js_css_headline.png)
 
+### Setzen von Styles
 Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 
 - Durch Klick auf den Button `Farbe ändern` sollt sich die Schriftfarbe auf rot ändern
@@ -63,7 +81,13 @@ Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 	- Lege eine Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
 	- Verändere weitere Attribute der Überschrift
 
+### Erweiterungen Styles
+- Lege eine Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
+- Verändere weitere Attribute der Überschrift
+- Erstelle die Buttons `Klasse setzen` und `Klasse wegnehmen`. Bei Klick auf diese Buttons soll dass Aussehen der Überschrift per `classList` verändert werden:
 
+		- `Klasse setzen` – die Überschrift soll unterstrichen werden
+- `Klasse wegnehmen` – die Überschrift soll wieder "normal" aussehen
 
 ## Aufgabe 2 - Tastatursteuerung
 ![Aufgabe Tastatursteuerung](./img/js_css_keyboard.png)
@@ -122,3 +146,8 @@ Implementiere Score und Highscore und zeige sie am oberen Spielfeldrand an.
   - Lass den Asteroiden rotieren
   - Asteroid zieht eine Rauchspur hinter sich her
 - ...
+
+
+## Ressourcen
+* [W3 schools - JavaScript HTML DOM - Changing CSS](https://www.w3schools.com/js/js_htmldom_css.asp){:target="_blank"}
+* [developer.mozilla.org - classList: Add and Remove Classes](https://developer.mozilla.org/de/docs/Web/API/Element/classList){:target="_blank"}
