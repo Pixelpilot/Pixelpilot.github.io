@@ -17,7 +17,7 @@ Es ist eine einfache Website zu erstellen, die die aktuelle Uhrzeit in Form eine
 
 ### 1. HTML
 
-Erstelle ein Projekt entsprechend der Vorlage in der Datei [canvas_clock_emtpy.zip](./assets/canvas_clock_emtpy.zip){:target="_blank"}.
+Erstelle ein Projekt entsprechend der Vorlage in der Datei [canvas_clock_emtpy.zip](assets/canvas_clock_empty.zip){:target="_blank"}.
 
 
 ### 2. JavaScript
@@ -39,7 +39,7 @@ Setze die Funktionalität mittels JavaScript um. Achte bei der Programmierung da
 #### Bewegen der Zeiger
 Implementiere die Bewegung der Zeiger. Der Sekundenzeiger soll jede Sekunde weiterspringen, die Minuten- und Stundenzeiger sollen sich kontinuierlich bewegen.
 
- Damit die Bewegung dargestellt wird muss die Uhr immer wieder gelöscht und neu gezeichnet werden. Erstelle dazu eine Funktion `clearCanvas()`, die die gesamte Zeichenfläche löscht.
+ Damit die Bewegung dargestellt wird, muss die Uhr immer wieder gelöscht und neu gezeichnet werden. Erstelle dazu eine Funktion `clearCanvas()`, die die gesamte Zeichenfläche löscht.
 
 Verwende die Methode `setInterval()` um jede Sekunde die Uhr neu zu zeichnen:
 1. Löschen der Canvas
@@ -53,6 +53,9 @@ Implementiere weitere Erweiterungen:
 * Der aktuelle Wochentag wird dargestellt.
 * Die aktuelle Mondphase wird dargestellt.
 * ...
+
+
+![Beispielhafte Erweiterung](img/canvas_clock_extended.png)
 
 ## Abgabe
 

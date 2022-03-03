@@ -6,7 +6,7 @@ category: Webentwicklung
 topic: Javascript - Teil 2
 
 type: assignment
-previewimage: img/canvas_snowman.png
+previewimage: img/canvas_flag.png
 layout: default
 ---
 
@@ -80,7 +80,7 @@ Das `<canvas>`-Element stellt eine Zeichenfläche (_Leinwand_) zur Verfügung, a
     Fallback content, in case the browser does not support Canvas.
 </canvas>
 ```
-Ein `<canvas>`-Element ist fur sich alleine leer und muss per JavaScript gefüllt werden. Um einfach auf das Objekt zugreifen zu können, wurde die id myCanvas vergeben.
+Ein `<canvas>`-Element ist für sich alleine leer und muss per JavaScript gefüllt werden. Um einfach auf das Objekt zugreifen zu können, wurde die id `"myCanvas"` vergeben.
 
 __Rendering Context__
 
@@ -88,8 +88,8 @@ Um auf ein `<canvas>`-Objekt zeichnen zu können, stellt das Objekt eine Schnitt
 
 ```javascript
 /* JavaScript */
-var canv = document.getElementById('myCanvas');
-var context = canv.getContext('2d');
+var canv = document.getElementById("myCanvas");
+var context = canv.getContext("2d");
 ```
 
 __Einfache Formen zeichnen__
