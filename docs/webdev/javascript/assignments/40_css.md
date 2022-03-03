@@ -86,8 +86,8 @@ Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 - Lege eine Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
 - Verändere weitere Attribute der Überschrift
 - Erstelle die Buttons `Klasse setzen` und `Klasse wegnehmen`. Bei Klick auf diese Buttons soll dass Aussehen der Überschrift per `classList` verändert werden:
-  * `Klasse setzen` - die Überschrift soll unterstrichen werden
-  * `Klasse wegnehmen`- die Überschrift soll wieder "normal" aussehen
+	- `Klasse setzen` - die Überschrift soll unterstrichen werden
+	- `Klasse wegnehmen`- die Überschrift soll wieder "normal" aussehen
 
 ## Aufgabe 2 - Tastatursteuerung
 ![Aufgabe Tastatursteuerung](./img/js_css_keyboard.png)
