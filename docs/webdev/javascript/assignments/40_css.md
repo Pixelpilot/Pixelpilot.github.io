@@ -66,6 +66,7 @@ ele.classList.add ("active");
 
 // Klasse wegnehmen
 ele.classList.remove ("active");
+```
 
 ## Aufgabe 1 - Überschrift anpassen
 ![Aufgabe Überschrift anpassen](./img/js_css_headline.png)
