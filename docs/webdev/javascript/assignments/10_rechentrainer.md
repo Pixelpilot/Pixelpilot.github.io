@@ -1,9 +1,12 @@
 ---
 title: Aufgabe 1 - Javascript Ein- und Ausgabe - Rechentrainer
 description: JavaScript - Ein- und Ausgabe
+
 category: Webentwicklung
 topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
+
+layout: default
 ---
 
 ## Aufgabenstellung

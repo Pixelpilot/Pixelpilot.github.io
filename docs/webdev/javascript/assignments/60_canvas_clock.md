@@ -32,8 +32,19 @@ Setze die Funktionalität mittels JavaScript um. Achte bei der Programmierung da
 
 #### Darstellen der Uhrzeit über die Zeiger
 * Erstellen eine Funktion `drawClockHands()`, die die Uhrzeiger darstellt
-* Lese die aktuelle Uhrzeit aus. Verwende dazu die [`Date.now()`](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date/now#){:target="_blank"}, um die Uhrzeit auszulesen und die Zeiger entsprechend zu positionieren.
+* Lese die aktuelle Uhrzeit aus. Verwende dazu [`Date()`](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Date){:target="_blank"}, um die Uhrzeit auszulesen und die Zeiger entsprechend zu positionieren.
 * Rufe die Funktion beim Laden der Seite auf.
+
+```javascript
+// aktuelle Zeit ermitteln
+var date = new Date();
+
+var sec = date.getSeconds();
+var min = date.getMinutes();
+var hour = date.getHours();
+
+console.log ( hour + ":" + min + ":" + sec);
+```
 
 
 #### Bewegen der Zeiger

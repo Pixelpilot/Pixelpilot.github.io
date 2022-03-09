@@ -1,5 +1,2 @@
 repository: pixelpilot/pixelpilot.github.io
-# Build settings
 theme: jekyll-theme-cayman
-plugins:
-  #- jekyll-feed

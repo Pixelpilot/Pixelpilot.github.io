@@ -2,9 +2,9 @@
 title: Teambildung und Verhandlung
 description: Programmieren in C - Divers
 layout: default
-category: SOPK
+_category: SOPK
 topic: Teambildung und Verhandlung
-sitemap_exclude: y
+
 ---
 ![](img/baukloetze.png)
 
@@ -19,7 +19,7 @@ sitemap_exclude: y
 1. Karten in 4 Teile zerschneiden
 2. Gruppeneinteilung
 3. Jede Gruppe erhält eine bestimmte Anzahl an Karten
-4. Beratung innerhalb die Gruppe, wie die Verhandlung aussehen soll (_3min_)
+4. Beratung innerhalb der Gruppe, wie die Verhandlung aussehen soll (_3min_)
 5. Verhandlungen, um möglichst viele ganze Karten zu bekommen (_5min_)
 6. Ergebnis, Reflexion
 

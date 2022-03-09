@@ -4,6 +4,7 @@ description: Erstellung eines Formulars mittels HTML und anpassen des Aussehens
 category: Webentwicklung
 topic: HTML und CSS
 subtopic: Formulare
+layout: default
 ---
 
 ## Aufgabenstellung

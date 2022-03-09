@@ -4,6 +4,7 @@ description: Javascript - JavaScript und CSS
 category: Webentwicklung
 topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
+layout: default
 ---
 
 ## Allgemeines
@@ -74,7 +75,7 @@ ele.classList.remove ("active");
 ### Setzen von Styles
 Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 
-- Durch Klick auf den Button `Farbe ändern` sollt sich die Schriftfarbe auf rot ändern
+- Durch Klick auf den Button `Farbe ändern` soll sich die Schriftfarbe auf rot ändern
 - Durch Klick auf den Button `Rahmen setzen` soll ein Rahmen um die Überschrift gesetzt werden (`1px solid black`).
 - Durch Klick auf den Button `Rahmen dicker` soll der Rahmen um `1px` dicker werden.
 - Durch Klick auf den Button `Rahmen dünner` soll der Rahmen um `1px` dünner werden.

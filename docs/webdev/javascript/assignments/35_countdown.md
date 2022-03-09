@@ -4,6 +4,7 @@ description: JavaScript - Timeout, Interval - Ein- und Ausgabe
 category: Webentwicklung
 topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
+layout: default
 ---
 
 ## Aufgabenstellung

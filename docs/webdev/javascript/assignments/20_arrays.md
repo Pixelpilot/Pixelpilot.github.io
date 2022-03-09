@@ -4,10 +4,11 @@ description: Javascript und Events - Informationen auslesen
 category: Webentwicklung
 topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
+layout: default
 ---
 
 ## Aufgabenstellung
-Es ist eine Webanwendung zu erstellen, die aus unterschiedlichen Zeichenketten eine zufäallige Spezies generiert und als HTML in einem `<div>`-Element anzeigt. Überlege dir bevor du loslegst, wie sich die gesamte
+Es ist eine Webanwendung zu erstellen, die aus unterschiedlichen Zeichenketten eine zufällige Spezies generiert und als HTML in einem `<div>`-Element anzeigt. Überlege dir bevor du loslegst, wie sich die gesamte
 Bezeichnung der Spezies zusammensetzt, und wie du die Daten abbilden wirst. Skizziere die Struktur auf
 einem Blatt Papier.
 

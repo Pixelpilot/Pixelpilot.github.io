@@ -4,6 +4,7 @@ description: Erstellen einer HTML-Website zu einem bestimmten Thema
 category: Webentwicklung
 topic: HTML und CSS
 subtopic: Portfolio
+layout: default
 ---
 
 ## Aufgabenstellung

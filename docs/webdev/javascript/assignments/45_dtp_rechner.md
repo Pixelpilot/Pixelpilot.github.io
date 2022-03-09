@@ -1,9 +1,10 @@
----
+0---
 title: Aufgabe 1 - DTP-Einheitenumrechner
 description: Wiederholung Formulare, Ein- und Ausgabe
 category: Webentwicklung
 topic: Javascript - Teil 2
 subtopic: Eingabe und Ausgabe
+layout: default
 ---
 
 ## Aufgabenstellung

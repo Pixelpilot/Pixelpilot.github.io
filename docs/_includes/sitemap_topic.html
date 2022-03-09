@@ -1,11 +1,12 @@
 <div class="sitemap_topic">
     <div class="headline">{{include.topic}}</div>
-    {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
+    {% assign topics = site.pages | where: 'category', page.category | group_by: 'topic' %}
     {% for topic in topics %}
     {% if topic.name == include.topic %}
     <ul>
         {% for page in topic.items %}
         {% if page.sitemap_exclude != 'y' %}
+
             {% if page.url != include.url %}
              <li><a href="{{page.url}}">{{page.title}}</a></li>
             {% else %}

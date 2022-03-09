@@ -4,6 +4,7 @@ description: Javascript und Events - Informationen auslesen
 category: Webentwicklung
 topic: Javascript - Teil 1
 subtopic: Eingabe und Ausgabe
+layout: default
 ---
 
 ## Aufgabenstellung

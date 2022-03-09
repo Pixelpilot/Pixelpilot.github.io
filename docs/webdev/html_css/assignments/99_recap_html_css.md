@@ -4,6 +4,7 @@ description: HTML und CSS - Wiederholung
 category: Webentwicklung
 topic: HTML und CSS
 subtopic: Wiederholung
+layout: default
 ---
 
 ## Aufgabenstellung
