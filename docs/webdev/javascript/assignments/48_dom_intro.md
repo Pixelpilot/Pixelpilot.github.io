@@ -32,13 +32,13 @@ Erstelle ein Projekt entsprechend der Vorlage in der Datei [dom_examples_emtpy.z
   ```console
   > // Konsole
   > Anzahl der div-Elemente auf der Seite: 7
-  > <div> - id: one
-  > <div> - id: two
-  > <div> - id: three
-  > <div> - id: three_one
-  > <div> - id: three_two
-  > <div> - id: three_three
-  > <div> - id: debug
+  > div - id: one
+  > div - id: two
+  > div - id: three
+  > div - id: three_one
+  > div - id: three_two
+  > div - id: three_three
+  > div - id: debug
   ```
   
 #### Aufgabe 2: Auf die children eines Objekts zugreifen
@@ -77,6 +77,8 @@ Erstelle ein Projekt entsprechend der Vorlage in der Datei [dom_examples_emtpy.z
 
 #### Aufgabe 4: Erzeugen der Thumbnails
 * Beim Klick auf den Button `Thumbnails anzeigen!` sollen Thumbnails aller Bilder angezeigt werden, die im globalen Array `imageUrls` definiert sind. Die erstellten Bilder sollen in einem neu erzeugten `<div>` nach dem `<div id="three_three">` mit einer Breite von jeweils `150px` angezeigt werden.
+  ![Thumbnails](img/dom_thumbs.png)
+
 
 #### Aufgabe 5: Verändern von Objekt-Eigenschaften
 * Beim Klick auf den Button `Bild austauschen!` soll das Bild  im `<img id="img">` ausgetauscht werden. Die Pfade zu den Bildern sind bereits im globalen Array `imageUrls` angelegt.
