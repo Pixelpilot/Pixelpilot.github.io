@@ -13,6 +13,7 @@ layout: default
 ## Aufgabenstellung
 
 ![Aufgabenstellung](img/dom_examples.png)
+Das *Document Object Model* stellt den Aufbau einer Website dar.
 Sobald eine Webseite geladen ist, interpretiert der Browser den Quelltext und erstellt das *Document Object Model* der Seite.
 
 Mit JavaScript können wir nun dynamische Webseiten erstellen:
@@ -22,7 +23,7 @@ Mit JavaScript können wir nun dynamische Webseiten erstellen:
 - HTML Elemente löschen oder neue erstellen
 - Auf bestehende Events reagieren oder neue Events erstellen
 
-Erstelle ein Projekt entsprechend der Vorlage in der Datei [dom_gallery_emtpy.zip](./assets/dom_gallery_empty.zip){:target="_blank"}.
+Erstelle ein Projekt entsprechend der Vorlage in der Datei [dom_examples_emtpy.zip](./assets/dom_examples_empty.zip){:target="_blank"}.
 
 ### 1. Zugriff auf HTML Elemente
 
@@ -75,13 +76,12 @@ Erstelle ein Projekt entsprechend der Vorlage in der Datei [dom_gallery_emtpy.zi
   ```
 
 #### Aufgabe 4: Erzeugen der Thumbnails
-* Beim Klick auf den Button `Thumbnails anzeigen!` sollen Thumbnails aller Bilder angezeigt werden, die im globalen Array `imageUrls` definiert sind. Die erstellten Bilder sollen im `<div>` mit der `id="three_three"` mit einer Breite von jeweils `150px` angezeigt werden.
+* Beim Klick auf den Button `Thumbnails anzeigen!` sollen Thumbnails aller Bilder angezeigt werden, die im globalen Array `imageUrls` definiert sind. Die erstellten Bilder sollen in einem neu erzeugten `<div>` nach dem `<div id="three_three">` mit einer Breite von jeweils `150px` angezeigt werden.
 
 #### Aufgabe 5: Verändern von Objekt-Eigenschaften
 * Beim Klick auf den Button `Bild austauschen!` soll das Bild  im `<img id="img">` ausgetauscht werden. Die Pfade zu den Bildern sind bereits im globalen Array `imageUrls` angelegt.
 * Nach Klick auf den Button `Slideshow starten!` soll das Bild  im `<img id="img">` alle 3 Sekunden ausgetauscht werden. Ist das Ende des Arrays erreicht, so soll wieder beim ersten Bild begonnen werden.
 * Nach Klick auf den Button `Slideshow stoppen!` soll der automatische Bildwechsel beendet werden.
-
 
 
 
