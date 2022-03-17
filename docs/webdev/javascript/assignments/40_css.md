@@ -117,10 +117,10 @@ Erweitere die Tastatursteuerung so, dass ein einfaches Spiel entsteht:
 ### a. Spielfläche anlegen
 Lege ein `<div>`-Element an, das das Spielfeld darstellt und passe das Aussehen per CSS an
 
-Verwende globale Variablen, um die Spielfeldabmessungen festzulegen:
+Verwende globale Variablen, um die Spielfeldabmessungen festzulegen. Das Schlüsselwort `const` erzeugt eine Variable, die im Gegensatz zu `var` im Anschluss nicht mehr verändert werden darf.
 ```javascript
-var universWidth = 400;
-var universHeight = 200;
+const universWidth = 400;
+const universHeight = 200;
 ```
 
 ### b. Raumschiff per Tastensteuerung bewegen
