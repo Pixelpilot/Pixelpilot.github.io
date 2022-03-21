@@ -50,7 +50,7 @@ console.log ( hour + ":" + min + ":" + sec);
 #### Bewegen der Zeiger
 Implementiere die Bewegung der Zeiger. Der Sekundenzeiger soll jede Sekunde weiterspringen, die Minuten- und Stundenzeiger sollen sich kontinuierlich bewegen.
 
- Damit die Bewegung dargestellt wird, muss die Uhr immer wieder gelöscht und neu gezeichnet werden. Erstelle dazu eine Funktion `clearCanvas()`, die die gesamte Zeichenfläche löscht.
+ Damit die Bewegung dargestellt wird, muss die Canvas immer wieder gelöscht und neu gezeichnet werden. Verwende dazu den Befehl `void ctx.clearRext(x, y, width, height)` und erstelle eine Funktion `clearCanvas()`, die die gesamte Zeichenfläche löscht. Rufe diese Funktion immer auf, bevor die Uhr neu gezeichnet wird.
 
 Verwende die Methode `setInterval()` um jede Sekunde die Uhr neu zu zeichnen:
 1. Löschen der Canvas
