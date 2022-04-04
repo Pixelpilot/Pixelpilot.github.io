@@ -26,7 +26,7 @@ Es soll ein Grundverständnis für die Entwicklung intuitiver Benutzeroberfläch
 * [Aufgabe 1 - Zusammenfassung Vortrag](11_appdesign_theory.md)
 
 
-## 2. Enwicklung der App Idee
+## 2. Entwicklung der App Idee
 
 ### Ziel
 
