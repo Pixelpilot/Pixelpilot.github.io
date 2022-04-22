@@ -18,7 +18,7 @@ layout: default
 
 Es soll ein Grundverständnis für die Entwicklung intuitiver Benutzeroberflächen geschaffen werden.
 
-### Resourcen
+### Ressourcen
 - [_Top 5 Characteristics of Intuitive Apps_ - Video auf Youtube](https://www.youtube.com/watch?v=PtNJSrymZb8)
 - [_Top 5 Characteristics of Intuitive Apps_ - Video zum Downloaden](https://devstreaming-cdn.apple.com/videos/wwdc/2014/211xxmyz80g30i9/211/211_sd_designing_intuitive_user_experiences.mov?dl=1)
 

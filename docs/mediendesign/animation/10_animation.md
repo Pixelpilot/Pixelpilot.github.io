@@ -1,6 +1,6 @@
 ---
 title: 2D-Animationen
-description: Grundlagen der Animation mit Adobe Animate – Übersicht
+description: Grundlagen der Animation mit Adobe Animate
 
 category: Mediendesign
 topic: Animation mit Adobe Animate
@@ -13,19 +13,22 @@ sitemap_exclude: y
 ---
 
 
-## 1. Grundlagen: Designing Intuitive User Experiences
+## 1. Grundlagen: Twelve basic principles of animation
 
 
 ### Ziel
 
 Es soll ein Grundverständnis für die Erstellung von animierten Grafiken und Charaktären geschaffen werden.
 
-### Resourcen
-- [_Top 5 Characteristics of Intuitive Apps_ - Video auf Youtube](https://www.youtube.com/watch?v=PtNJSrymZb8)
-- [_Top 5 Characteristics of Intuitive Apps_ - Video zum Downloaden](https://devstreaming-cdn.apple.com/videos/wwdc/2014/211xxmyz80g30i9/211/211_sd_designing_intuitive_user_experiences.mov?dl=1)
+### Ressourcen
+
+- [_TThe 12 principles of animation_ - Wikipedia](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
+- [_The illusion of life_ - Video auf Vimeo (Anmeldung erforderlich)](https://vimeo.com/93206523)
+- [_The 12 Principles of Animation (Pixar-ated)_ - Video auf Vimeo](https://vimeo.com/207384652)
+
 
 ### Aufgabe
-* [Aufgabe 1 - Zusammenfassung Vortrag](11_appdesign_theory.md)
+* [Aufgabe 1 - Zusammenfassung Theorie, Anwendungsbeispiele](11_animation_theory.md)
 
 
 ## 2. Entwicklung der App Idee

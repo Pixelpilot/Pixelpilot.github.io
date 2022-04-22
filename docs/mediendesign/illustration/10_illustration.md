@@ -14,7 +14,7 @@ layout: default
 
 ## 1. Formen, Pathfinder und Ausrichten
 
-### Resourcen
+### Ressourcen
 * [Adobe Tutorial - Elemente transformieren und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/edit-artwork-basics.html)
 * [Adobe Tutorial - Formen erstellen und bearbeiten](https://helpx.adobe.com/at/illustrator/how-to/shapes-basics.html)
 
@@ -45,7 +45,7 @@ Geometrische komplexe Form zeichnen:
 
 ## 2. Zeichenwerkzeuge
 
-### Resourcen
+### Ressourcen
 * [Adobe Tutorial - Zeichenwerkzeuge verwenden](https://helpx.adobe.com/at/illustrator/how-to/drawing-tools-basics.html)
 
 ### Anwendungsgebiete
@@ -74,7 +74,7 @@ Organische komplexe Form zeichnen
 
 ## 3. Farbe und Konturen
 
-### Resourcen
+### Ressourcen
 * [Adobe Tutorial - Farbe und Konturen ändern](https://helpx.adobe.com/at/illustrator/how-to/color-basics.html)
 
 ### Anwendungsgebiete
