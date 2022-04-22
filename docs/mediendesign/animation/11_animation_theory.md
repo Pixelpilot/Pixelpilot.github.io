@@ -18,7 +18,7 @@ sitemap_exclude: y
 
 The Illusion of Life: In den frühen 80er-Jahren veröffentlichten Franz Thomas an Ollie Johnson ein Buch, das die verschiedenen Techniken beschreibt, die Disney Animation bei allen Animationen einsetzt und die bis heute ihre Gültigkeit haben:
 
-- [_TThe 12 principles of animation_ - Wikipedia](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
+- [_The 12 principles of animation_ - Wikipedia](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
 - [_The illusion of life_ - Video auf Vimeo (Anmeldung erforderlich)](https://vimeo.com/93206523)
 - [_The 12 Principles of Animation (Pixar-ated)_ - Video auf Vimeo](https://vimeo.com/207384652)
 
