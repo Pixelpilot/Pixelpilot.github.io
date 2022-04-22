@@ -36,4 +36,4 @@ Nimm für jeden dieser Anwendungsfälle zwei Screenshots, und beschreibe die Anw
 Ergänze das Animation-Portfolio:
 - Zusammenfassung der Theorie _12 principles of animation_
 - Praktische Anwendung der _12 principles of animation_
-- Umfang: ca. 1-2 Seiten A4 (Inklusiver der Bilder)
+- Umfang: ca. 1-2 Seiten A4 (Inklusive der Bilder)
