@@ -19,6 +19,23 @@ sitemap_exclude: y
 ### Lokale Installation von Jekyll
 
 #### Installation
+Guide befolgen
+[https://jekyllrb.com/docs/installation/macos/](Jekyll on macOS)
+
+Ruby Installation aktualisieren
+https://blog.codemint.dev/rvm-ruby/
+
+```
+gem install jekyll bundler
+bundle install
+```
+oder (falls keine Rechte)
+```
+sudo gem install jekyll bundler
+```
+
+
+#### Neues Jekyll Seite anlegen
 ```
 // Terminal
 % jekyll new neues_verzeichnis
