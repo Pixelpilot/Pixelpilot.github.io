@@ -81,7 +81,7 @@ $c = $a + $b;
 echo "Die Summe aus $a und $b ist $c";
 ```
 
-Wenn ein Dollarzeichen `$` vorkommt, nimmt der Parser gierig so viele Token wie möglich, um einen gültigen Variablennamen zu bilden. Schließen Sie den Variablennamen in geschweifte Klammern ein, um das Ende des Namens explizit anzugeben.
+Wenn ein Dollarzeichen `$` vorkommt, nimmt der Parser gierig so viele Token wie möglich, um einen gültigen Variablennamen zu bilden. Um das Ende des Variablennamen explizit anzugeben, können geschweifte Klammern verwendet werden.
 ```php
 <?php
 $juice = "apple";
