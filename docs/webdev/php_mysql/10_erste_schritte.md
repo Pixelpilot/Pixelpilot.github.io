@@ -18,7 +18,7 @@ PHP (rekursives Akronym für PHP: Hypertext Preprocessor) ist eine weit verbreit
 
 Eine PHP-Datei endet mit der Extension `.php` und besteht meistens aus mehreren `HTML`- und `PHP`-Bereichen. In einer PHP-Datei können sich beliebig viele HTML- und PHP-Bereiche befinden.
 
-* Der PHP-Code steht zwischen speziellen Anfangs- und Abschluss-Verarbeitungsinstruktionen <?php und ?>. Dieser PHP-Quelltext scheint nicht im HTML-Quelltext auf, der vom Server generiert und and den Client geschickt wird.
+* Der PHP-Code steht zwischen speziellen Anfangs- und Abschluss-Verarbeitungsinstruktionen `&lt;?php ` und `?>`. Dieser PHP-Quelltext scheint nicht im HTML-Quelltext auf, der vom Server generiert und and den Client geschickt wird.
 * Alles, das ausserhalb dieser Verarbeitungsinstruktionen steht, wird in den generierten HTML-Quelltext übernommen. 
 
 ```php
