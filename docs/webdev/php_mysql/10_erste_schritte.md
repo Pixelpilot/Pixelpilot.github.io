@@ -86,7 +86,7 @@ Wenn ein Dollarzeichen `$` vorkommt, nimmt der Parser gierig so viele Token wie 
 <?php
 $juice = "apple";
 
-echo "He drank some $juice juice.".PHP_EOL;
+echo "He drank some $juice juice.";
 
 // Ungültig. "s" ist ein gültiges Zeichen für einen Variablennamen, aber die
 // Variable ist $juice.
