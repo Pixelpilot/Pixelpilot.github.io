@@ -167,6 +167,25 @@ Passe das Aussehen der Tabelle mittels CSS an.
 ![Multiplikationstabelle](img/php_mul_table.png)
 *Beispielhafte Umsetzung der Multiplikationstabelle*
 
+### Begrüßung je nach Tageszeit
+Der Benutzer soll gleich zu Beginn der Seite anhängig von der Tageszeit begrüßt werden.
+
+* *"Guten Morgen Josef!"* zwischen 6 Uhr und Mittag
+* *"Guten Tag Josef!"*		zwischen Mittag und 19 Uhr
+* *"Guten Abend Josef!"*	wenn es nach 19 Uhr ist
+* *"Gute Nacht Josef!"*		von 23 bis 6 Uhr
+
+Verwende dazu die Funktion `date()` um die aktuelle Serverzeit zu ermitteln.
+
+Verwende unterschiedliche Zeitzonen (USA, China, Australien, Europa, ...), um die Funktionalität zu Testen.
+
+[https://www.php.net/manual/de/ - php.net Manual: date](https://www.php.net/manual/de/function.date.php)
+
+
+**Erweiterung:**
+- Zeige je nach Tageszeit unterschiedliche Icons an.
+- Passe das Aussehen (Hintergrund, Schriftfarbe) mit Hilfen von CSS-Klassen (`.day`, `.night`, ...) auf dem `<html>`-Element an.
+
 ## Ressourcen
 * [W3 schools - PHP Tutorial](https://www.w3schools.com/php/default.asp){:target="_blank"}
 
