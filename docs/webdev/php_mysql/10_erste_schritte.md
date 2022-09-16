@@ -10,9 +10,7 @@ layout: default
 ---
 
 
-## Grundlagen
-
-### Funktionsweise von PHP
+## Funktionsweise von PHP
 
 PHP (rekursives Akronym für PHP: Hypertext Preprocessor) ist eine weit verbreitete und für den allgemeinen Gebrauch bestimmte Open Source-Skriptsprache, welche speziell für die Webprogrammierung geeignet ist und in HTML eingebettet werden kann. PHP kann auf alle gängigen Betriebssystemen verwendet werden.
 
@@ -132,7 +130,7 @@ echo sum (6, 8) . '<br>'; // gibt 24 aus
 
 ## Aufgaben
 
-### Parität
+### 1. Parität
 
 Gib die Zahlen von 1 bis 20 untereinander aus und gib neben der jeweiligen Zahl an, ob sie gerade oder ungerade ist:
 ```
@@ -157,7 +155,7 @@ Die Zahl 18 ist gerade
 Die Zahl 19 ist ungerade
 ```
 
-### Multiplikationstabelle
+### 2. Multiplikationstabelle
 
 Erstelle eine Multiplikationstabelle, die die Zahlen von `1` bis `10` mit den Zahlen von `1` bis `20` miteinander multipliziert. 
 
@@ -167,7 +165,7 @@ Passe das Aussehen der Tabelle mittels CSS an.
 ![Multiplikationstabelle](img/php_mul_table.png)
 *Beispielhafte Umsetzung der Multiplikationstabelle*
 
-### Begrüßung je nach Tageszeit
+### 3. Begrüßung je nach Tageszeit
 Der Benutzer soll gleich zu Beginn der Seite anhängig von der Tageszeit begrüßt werden.
 
 * *"Guten Morgen Josef!"* zwischen 6 Uhr und Mittag
