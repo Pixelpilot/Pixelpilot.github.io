@@ -201,7 +201,6 @@ Franz in 2y: $2y$10$I/2Zw.K7iHxJXzW2MX.AvuC06j6aqg8rqLFPZprGvWd97IUGzYBAW
 
 #### Erweiterungen
 * Bereits richtige Eingaben sollen erhalten bleiben.
-
 * Ermögliche mehrere Benutzer. Lege die notwendigen Daten dazu in einem Array ab.
 * Es sollen sprechende Fehlerhinweise direkt über den jeweiligen Formularfeldern angezeigt werden.
 * Passe das Aussehen des Formulars per *CSS* an.
