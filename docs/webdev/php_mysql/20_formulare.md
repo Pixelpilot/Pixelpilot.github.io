@@ -146,7 +146,7 @@ Erstelle ein Kontaktformular, das die einzelnen Felder auf die Syntax hin überp
   - Mindestens ein `.` nach dem `@`
   - Mindestens ein Buchstabe vor jedem `.`
   - Mindestens ein Buchstabe nach jedem `.`
-  - Telefonnummer – nur Zahlen
+* Telefonnummer – nur Zahlen
 
 Wichtige [String-Funktionen](https://www.php.net/manual/de/ref.strings.php){:target="_blank"}:
 * `int strlen ( string $string )`
