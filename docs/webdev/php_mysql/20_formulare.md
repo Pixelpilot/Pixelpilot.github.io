@@ -133,6 +133,7 @@ Auch das Array `$_POST` ist superglobal und assoziativ. Die Daten werden *"unsic
 
 ### 1. Kontaktformular per GET
 
+
 ![](img/php_contact_form.png)
 *Beispielhafte Umsetzung*
 
@@ -141,34 +142,16 @@ Erstelle ein Kontaktformular, das die einzelnen Felder auf die Syntax hin überp
 * Vorname – Mindestens 3 Buchstaben
 * Nachname – Mindestens 3 Buchstaben
 * E-Mail Adresse
-  - Mindestens ein Buchstabe vor dem `@`
-  - Genau ein `@` enthalten
-  - Mindestens ein `.` nach dem `@`
-  - Mindestens ein Buchstabe vor jedem `.`
-  - Mindestens ein Buchstabe nach jedem `.`
 * Telefonnummer – nur Zahlen
 
-Wichtige [String-Funktionen](https://www.php.net/manual/de/ref.strings.php){:target="_blank"}:
-* `int strlen ( string $string )`
+Sind alle Felder richtig ausgefüllt, so soll statt dem Formular eine Erfolgsmeldung angezeigt werden:
+![](img/php_contact_form_finished.png)
 
-* `int strcmp( string $string1, string $string2 )`
-
-* `int strpos ( string $haystack, mixed $needle [, int $offset] )`<br>Mit `strpos()` kann man innerhalb einer Zeichenkette (`$haystack`) das erste Vorkommen eines Zeichens (needle) oder einer Zeichenkette (`$needle`) suchen. Als Rückgabewert der Funktion erhält man die Position des Suchtreffers entspricht, sonst wird false zurückgegeben. Mit dem optionalen Parameter offset bestimmt man die Startposition, ab der gesucht werden soll.
-
-* `string strstr ( string $haystack, string $needle )`<br>
-Mit `strstr()` kann man innerhalb einer Zeichenkette (haystack) das erste Vorkommen eines Strings (needle) suchen. Im Erfolgsfall gibt diese Funktion die Zeichenkette ab der Position des Suchtreffers bis zum Ende zurück, sonst false.
-
-* `$woerter = explode( " ", "Angie Brad");`<br>Zerlegt einen String mit dem angegebenen Trennzeichen in ein Array mit Teilstrings.
-
-* `$wort = implode( " ", "$woerter");`<br>Macht aus einem Array mit Teilstrings einen String.
-
-* `$wort = str_replace( "+", "*", "A+B+C");`<br>Ersetzt im String alle `+` durch `*`.
-
-#### Erweiterungen
+#### Funktionalität
 
 * Bereits richtige Eingaben sollen erhalten bleiben.
 * Es sollen sprechende Fehlerhinweise direkt über den jeweiligen Formularfeldern angezeigt werden.
-* Passe das Aussehen des Formulars per *CSS* an.
+* Erweiterung: Passe das Aussehen des Formulars per *CSS* an.
 
 
 ### 2. Loginformular per POST
@@ -188,18 +171,41 @@ Franz in MD5: 13dd8a4dcb6c8720f0d67396d4d87fab
 
 
 ##### Password Hashing
+
+Um die Sicherheit zu erhöhen, wird beim Passwort-Hashing zusätzlich zum *Hash* ein zufälliges *Salt* (*random salt*) gespeichert. So ergibt sich mit jedem Aufruf ein anderer Hash.
 ```php
 echo "Default-Algorithmus für Passwort-Hashing: " . PASSWORD_DEFAULT . "<br>";
+echo "Franz in " . PASSWORD_DEFAULT . ": " . 
+        password_hash("Franz", PASSWORD_DEFAULT)."<br>";
 echo "Franz in " . PASSWORD_DEFAULT . ": " . 
         password_hash("Franz", PASSWORD_DEFAULT);
 ```
 ergibt
 ```html
 Default-Algorithmus für Passwort-Hashing: 2y
-Franz in 2y: $2y$10$I/2Zw.K7iHxJXzW2MX.AvuC06j6aqg8rqLFPZprGvWd97IUGzYBAW
+Franz in 2y: $2y$10$3ry1mwAwToA7uz3UXu8gUOs10fPLCmf/W3T95dudPZeyr2ZntsRcm
+Franz in 2y: $2y$10$t5kArDQ66XsOS2lPDsS0n.qhewWEFsrzaQgk./elN33QEdFwNnnkO
 ```
 
-#### Erweiterungen
+
+Um das das gehashte Passwort zu überprüfen kann jetzt nicht mehr einfach der generierte *Hash* direkt mit dem (in der Datenbank) gespeicherten *Hash* verglichen werden.
+
+Die Überprüfung erfolgt mit `password_verify()`:
+```php
+// Passwort gerenieren (wird beim Erzeugen des Passworts gemacht)
+$storedHash = password_hash("Franz", PASSWORD_DEFAULT);
+
+// Passwort überprüfen (wird beim Überprüfen des Passworts gemacht)
+if ( password_verify ( "Franz", $storedHash) ) {
+    echo "Passwort ist richtig: " . $storedHash;
+} else {
+    echo "Passwort ist falsch";
+}
+```
+
+
+
+#### Funktionialität
 * Bereits richtige Eingaben sollen erhalten bleiben.
 * Ermögliche mehrere Benutzer. Lege die notwendigen Daten dazu in einem Array ab.
 * Es sollen sprechende Fehlerhinweise direkt über den jeweiligen Formularfeldern angezeigt werden.

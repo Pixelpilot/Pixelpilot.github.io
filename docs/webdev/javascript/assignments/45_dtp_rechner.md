@@ -16,7 +16,7 @@ Es ist ein einfaches Formular zu erstellen, mit dessen Hilfe man Bildgrößen ba
 
 Umsetzen des Umrechners in HTML, Stylen der Elemente mit CSS:
 * Eingabe mittels Formularfelder und Buttons
-* Ausgabe über ein Formularfeld, das Attribut `disable="true"` gesetzt hat
+* Ausgabe über ein Formularfeld, das Attribut `disabled="true"` gesetzt hat
 *	Stylesheets in eigener Datei
 *	Einsatz von verschiedenen „CSS-Arten“
 	* Element – z.B.: `h1 { ... }`
