@@ -47,6 +47,8 @@ sudo gem install jekyll bundler
 // Terminal
 % cd /Users/hanlch/Dropbox/Job/GitHub\ Pages/docs
 % bundle exec jekyll serve
+
+cd /Users/hanlch/Dropbox/Job/GitHub\ Pages/docs; bundle exec jekyll serve;
 ```
 
 ```
