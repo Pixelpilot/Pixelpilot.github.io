@@ -181,7 +181,7 @@ In der Datei `index.php` wird dazu die Session-Variable `$_SESSION["user"]` abge
 ```
 
 ##### Todo:
-* Erstelle in der Datei `login.php` das Formular und schicke die Daten per Post ebenfalls an `login.php`
+* Erstelle in der Datei `login.php` das Formular und schicke die Daten per Post ebenfalls an `login.php`.
 * Überprüfe die Benutzereingabe
   * Passwort und/oder Benutzer falsch: Login-Seite nochmal anzeigen
   * Passwort und Benutzer richtig: Session-Variable `$_SESSION["user"]` auf den Usernamen setzen und auf die `index.php` weiterleiten.
@@ -194,7 +194,7 @@ Ist der Benutzer eingeloggt, so werden die Inhalte angezeigt:
 ![](img/php_session_what.png)
 
 ##### Todo:
-* Lies den GET-Parameter `$_GET["pageid"]` der Menüpunkte aus und lade die entsprechenden Inhalt mittels `include`.
+* Lies den GET-Parameter `$_GET["pageid"]` der Menüpunkte aus und lade die entsprechenden Inhalte mittels `include`.
 * Erweitere die Dateien im Verzeichnis `content/` so, dass die nicht direkt aufgerufen werden können, wenn der Benutzer nicht eingeloggt ist.
 
 <br>
