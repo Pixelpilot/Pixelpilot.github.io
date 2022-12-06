@@ -83,7 +83,7 @@ public static void main(String[] args) {
 Erstelle die grafische Oberfläche wie oben angegeben unter Verwendung des `FlowLayout`–Managers und rufe bei Klick auf die Buttons die entsprechenden Methoden der referenzierten verketteten Liste auf.
 
 
-### Erweiterungen
+## Erweiterungen
 
 Erweitere die Einkaufsliste um zusätzliche Funktionalitäten:
 
