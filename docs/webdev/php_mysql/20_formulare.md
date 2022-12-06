@@ -147,6 +147,7 @@ Erstelle ein Kontaktformular, das die einzelnen Felder auf die Syntax hin überp
 Sind alle Felder richtig ausgefüllt, so soll statt dem Formular eine Erfolgsmeldung angezeigt werden:
 ![](img/php_contact_form_finished.png)
 
+
 #### Funktionalität
 
 * Bereits richtige Eingaben sollen erhalten bleiben.
