@@ -1,19 +1,21 @@
 ---
-title: MySQL und PHP
-description: Implementieren von Datenbanken in MySQL und PHP
+title: PHP und MySQL
+description: Das CRUD Prinzip mit PHP und MySQL
 
 category: Webentwicklung
 topic: Grundlagen von PHP
-subtopic: Implementieren von Datenbanken in MySQL und PHP
+subtopic: Implementieren des CRUD-Prinzips in PHP und MySQL
 
 layout: default
 
 sitemap_exclude: n
 ---
 
-# Speichern und Lesen von Daten in einer Datenbank
+# Implementieren des CRUD-Prinzips in PHP und MySQL
 
-## Die Datenbank MySQL
+## Das MySQL Datenbank-Management-System
+
+MySQL ist ein relationales Datenbank-Management-Systeme (RDBMS), d.h. es verwenden SQL (Structured Query Language), um Daten in tabellarischer Form zu speichern und zu verwalten.
 
 Es gibt eine Vielzahl an unterschiedlichen Datenbanken. MySQL ist eine Open-Source-Datenbank, die häufig mit PHP verwendet wird, um Daten auf Websites zu speichern und abzurufen. MySQL bietet eine Vielzahl von Funktionen zum Erstellen, Anzeigen und Verändern von Datenbanken und Tabellen.
 
@@ -37,7 +39,7 @@ Um mit MySQL zu arbeiten, benötigen man zunächst eine Verbindung zu einer MySQ
 ?>
 ```
 
-## Aufbau einer Datenbank-Tabelle
+### Aufbau einer Datenbank-Tabelle
 
 Eine Datenbank liegt auf einem Datenbank-Server. Auf einem solchen Server können mehrere Datenbanken gehostet werden.
 Eine Datenbank besteht aus einer oder mehrerer Tabellen.
@@ -70,8 +72,9 @@ Die Ausgabe von `DESCRIBE users;` gibt Informationen über die Struktur der `use
 * **Key:** Gibt an, ob diese Spalte ein Schlüssel ist. Ein Schlüssel ist ein Wert, der eindeutig in der Tabelle ist und häufig zum Verknüpfen von Tabellen verwendet wird. Mögliche Werte sind `PRI` für einen Primärschlüssel, `UNI` für einen Einzigartigkeitsschlüssel und `MUL` für einen Indexschlüssel.
 * **Default:** Der Standardwert für diese Spalte. Wenn ein neuer Eintrag in der Tabelle erstellt wird und kein Wert für diese Spalte angegeben wird, wird der Standardwert verwendet.
 * **Extra:** Weitere Informationen über die Spalte. Zum Beispiel auto_increment, wenn der Wert für diese Spalte automatisch inkrementiert wird.
-* 
-## MySQL Statements
+
+
+### MySQL Statements
 
 MySQL-Statements sind Anweisungen, die an eine MySQL-Datenbank gesendet werden, um bestimmte Operationen auszuführen. Es gibt verschiedene Arten von MySQL-Statements, die zur Erstellung, Anzeige, Aktualisierung und Löschung von Daten in einer Datenbank verwendet werden können.
 
@@ -102,6 +105,7 @@ mysqli_query($conn, $sql);
 In diesem Beispiel wird ein neuer Benutzer in der `users`-Tabelle hinzugefügt, anschließend wird der Benutzer abgerufen, aktualisiert und schließlich gelöscht.
 
 ## Das CRUD-Prinzip
+
 **CRUD** steht für **Create**, **Read**, **Update** und **Delete** und ist ein Akronym für die vier Grundoperationen, die auf Datenbanken ausgeführt werden können. Diese Operationen sind:
 
 * Create: Einträge in einer Datenbank hinzufügen
