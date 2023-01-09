@@ -45,6 +45,7 @@ Eine Datenbank besteht aus einer oder mehrerer Tabellen.
 Eine Tabelle in einer MySQL-Datenbank ist eine Struktur, die bestimmte Daten speichert. Eine Tabelle besteht aus Zeilen und Spalten, wobei jede Spalte einen bestimmten Datentyp aufweist und jede Zeile einen Eintrag enthält.
 
 Um eine Tabellenstruktur in MySQL anzuzeigen, können Sie die `DESCRIBE`-Anweisung verwenden. Hier ist ein Beispiel für die Verwendung von `DESCRIBE`, um die Struktur der `users`-Tabelle anzuzeigen:
+
 ```sql
 DESCRIBE users;
 ```
