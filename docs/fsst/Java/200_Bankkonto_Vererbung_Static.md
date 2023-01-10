@@ -20,7 +20,7 @@ Statische Variablen und Methoden in Java sind solche, die direkt auf die Klasse 
 ### Definition statischer Variablen
 Statische Variablen, auch als *Klassenvariablen* bezeichnet, werden mit dem Schlüsselwort `static` vor der Deklaration der Variablen definiert und sind nur einmal für die gesamte Klasse vorhanden. Sie werden geteilt von allen Instanzen der Klasse und über die Instanzen hinaus existieren sie, auch wenn keine Instanz existiert.
 
-```Java
+```java
 public class MyClass {
     public static int staticVariable;
 }
@@ -28,7 +28,7 @@ public class MyClass {
 ### Definition statischer Methoden
 Statische Methoden, auch als *Klassenmethoden* bezeichnet, werden mit dem Schlüsselwort `static` vor der Signatur der Methode definiert. Sie haben keinen Zugriff auf die Instanzvariablen der Klasse und können daher nur auf statischen Variablen und Parametern operieren.
 
-```Java
+```java
 public class MyClass {
     public static void staticMethod() {
         // method body
@@ -38,7 +38,7 @@ public class MyClass {
 
 ### Zugriff auf statische Variablen und Aufruf von statischen Methoden
 In beiden Beispielen, kann die Variable `staticVariable` und die Methode `staticMethod` direkt über den Klassennamen aufgerufen werden, ohne dass eine Instanz der Klasse erstellt werden muss:
-```Java
+```java
 MyClass.staticVariable = 5;
 MyClass.staticMethod();
 ```
@@ -46,7 +46,7 @@ MyClass.staticMethod();
 ### Anwendung anhand einer Klasse Math
 Ein Beispiel, wie man statische Variablen und Methoden verwenden kann, ist eine Klasse `Math` die Methoden und Variablen enthält, die Mathematische Operationen durchführen. Zum Beispiel kann es eine statische Methode `pow` geben, die eine potenzierende Funktion darstellt und die nicht auf eine Instanz der Klasse `Math` zugreifen muss.
 
-```Java
+```java
 public class Math {
     public static double PI = 3.14;
     public static double pow(double base, double exponent) {
@@ -56,7 +56,7 @@ public class Math {
 ```
 
 Es kann dann so verwendet werden:
-```Java
+```java
 double result = Math.pow ( 10, 4 );
 ```
 Statische Variablen und Methoden werden oft verwendet, um Daten und Funktionalität bereitzustellen, die allen Instanzen einer Klasse gemeinsam sind, und die nicht von einer bestimmten Instanz abhängen. Sie sind auch nützlich, um Ressourcen und Informationen zu verwalten, die für die gesamte Klasse gelten.
@@ -133,7 +133,7 @@ Eine statische Methode wird in UML wie folgt dargestellt:
 ## Aufgabe: Counter
 
 ### 1. Klasse Counter
-Erstellen Sie eine Klasse `Counter` mit einer statischen Variablen `count` und einer statischen Methode `increment()`, die den Wert der Variablen um 1 erhöht. 
+Erstellen Sie eine Klas se `Counter` mit einer statischen Variablen `count` und einer statischen Methode `increment()`, die den Wert der Variablen um 1 erhöht. 
 
 Erstellen Sie eine Methode `printCount()`, die den aktuellen Wert der Variablen ausgibt. 
 
