@@ -13,6 +13,48 @@ sitemap_exclude: n
 
 # {{ page.title }}
 
+## Statische Variablen und Methoden
+
+Statische Variablen und Methoden in Java sind solche, die direkt auf die Klasse und nicht auf eine bestimmte Instanz der Klasse zugreifen.
+
+Statische Variablen, auch als Klassenvariablen bezeichnet, werden mit dem Schlüsselwort `static` vor der Deklaration der Variablen definiert und sind nur einmal für die gesamte Klasse vorhanden. Sie werden geteilt von allen Instanzen der Klasse und über die Instanzen hinaus existieren sie, auch wenn keine Instanz existiert.
+
+```Java
+public class MyClass {
+    public static int staticVariable;
+}
+```
+
+Statische Methoden, auch als Klassenmethoden bezeichnet, werden mit dem Schlüsselwort `static` vor der Signatur der Methode definiert. Sie haben keinen Zugriff auf die Instanzvariablen der Klasse und können daher nur auf statischen Variablen und Parametern operieren.
+
+```Java
+public class MyClass {
+    public static void staticMethod() {
+        // method body
+    }
+}
+```
+In beiden Beispielen, kann die Variable `staticVariable` und die Methode `staticMethod` direkt über den Klassennamen aufgerufen werden, ohne dass eine Instanz der Klasse erstellt werden muss:
+```Java
+MyClass.staticVariable = 5;
+MyClass.staticMethod();
+```
+Ein Beispiel, wie man statische Variablen und Methoden verwenden kann, ist eine Klasse `Math` die Methoden und Variablen enthält, die Mathematische Operationen durchführen. Zum Beispiel kann es eine statische Methode `pow` geben, die eine potenzierende Funktion darstellt und die nicht auf eine Instanz der Klasse `Math` zugreifen muss.
+
+```Java
+public class Math {
+    public static double PI = 3.14;
+    public static double pow(double base, double exponent) {
+        return Math.pow(base, exponent);
+    }
+}
+```
+
+Es kann dann so verwendet werden:
+```Java
+double result = Math.pow ( 10, 4 );
+```
+
 ## UML-Diagramm
 UML steht für Unified Modeling Language (einheitliche Modelliersprache). Es ist eine grafische Sprache zur Modellierung von Software- und Systemen. UML kann für Klassendiagramme verwendet werden, die die Klassen, deren Attribute und Methoden sowie deren Beziehungen zueinander darstellen.
 
@@ -115,4 +157,4 @@ Erstellen Sie mehrere Instanzen von `Girokonto` und `Sparbuch` sowie eine Instan
                      |+ _listKonten() : void        |
                      +------------------------------+ 
 ```
-*UML-Diagramm zur Klasse Bank*
+*UML-Diagramm der Klasse Bank*
