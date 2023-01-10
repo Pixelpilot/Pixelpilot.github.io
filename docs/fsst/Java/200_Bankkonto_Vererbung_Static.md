@@ -17,15 +17,16 @@ sitemap_exclude: n
 
 Statische Variablen und Methoden in Java sind solche, die direkt auf die Klasse und nicht auf eine bestimmte Instanz der Klasse zugreifen.
 
-Statische Variablen, auch als Klassenvariablen bezeichnet, werden mit dem Schlüsselwort `static` vor der Deklaration der Variablen definiert und sind nur einmal für die gesamte Klasse vorhanden. Sie werden geteilt von allen Instanzen der Klasse und über die Instanzen hinaus existieren sie, auch wenn keine Instanz existiert.
+### Definition statischer Variablen
+Statische Variablen, auch als *Klassenvariablen* bezeichnet, werden mit dem Schlüsselwort `static` vor der Deklaration der Variablen definiert und sind nur einmal für die gesamte Klasse vorhanden. Sie werden geteilt von allen Instanzen der Klasse und über die Instanzen hinaus existieren sie, auch wenn keine Instanz existiert.
 
 ```Java
 public class MyClass {
     public static int staticVariable;
 }
 ```
-
-Statische Methoden, auch als Klassenmethoden bezeichnet, werden mit dem Schlüsselwort `static` vor der Signatur der Methode definiert. Sie haben keinen Zugriff auf die Instanzvariablen der Klasse und können daher nur auf statischen Variablen und Parametern operieren.
+### Definition statischer Methoden
+Statische Methoden, auch als *Klassenmethoden* bezeichnet, werden mit dem Schlüsselwort `static` vor der Signatur der Methode definiert. Sie haben keinen Zugriff auf die Instanzvariablen der Klasse und können daher nur auf statischen Variablen und Parametern operieren.
 
 ```Java
 public class MyClass {
@@ -34,11 +35,15 @@ public class MyClass {
     }
 }
 ```
+
+### Zugriff auf statische Variablen und Aufruf von statischen Methoden
 In beiden Beispielen, kann die Variable `staticVariable` und die Methode `staticMethod` direkt über den Klassennamen aufgerufen werden, ohne dass eine Instanz der Klasse erstellt werden muss:
 ```Java
 MyClass.staticVariable = 5;
 MyClass.staticMethod();
 ```
+
+### Anwendung anhand einer Klasse Math
 Ein Beispiel, wie man statische Variablen und Methoden verwenden kann, ist eine Klasse `Math` die Methoden und Variablen enthält, die Mathematische Operationen durchführen. Zum Beispiel kann es eine statische Methode `pow` geben, die eine potenzierende Funktion darstellt und die nicht auf eine Instanz der Klasse `Math` zugreifen muss.
 
 ```Java
@@ -54,12 +59,17 @@ Es kann dann so verwendet werden:
 ```Java
 double result = Math.pow ( 10, 4 );
 ```
+Statische Variablen und Methoden werden oft verwendet, um Daten und Funktionalität bereitzustellen, die allen Instanzen einer Klasse gemeinsam sind, und die nicht von einer bestimmten Instanz abhängen. Sie sind auch nützlich, um Ressourcen und Informationen zu verwalten, die für die gesamte Klasse gelten.
 
-## UML-Diagramm
+## UML-Diagramme
+
+### Was ist UML?
 UML steht für Unified Modeling Language (einheitliche Modelliersprache). Es ist eine grafische Sprache zur Modellierung von Software- und Systemen. UML kann für Klassendiagramme verwendet werden, die die Klassen, deren Attribute und Methoden sowie deren Beziehungen zueinander darstellen.
 
 ```
          Person
+   +------------------+
+   |                  |
    +------------------+
    | + name : String  |
    +------------------+
@@ -68,10 +78,31 @@ UML steht für Unified Modeling Language (einheitliche Modelliersprache). Es ist
             |
          Student
    +------------------+
+   |                  |
+   +------------------+
    | + knr : int      |
    +------------------+
 ```
 *Einfache UML-Klassendiagramm. Die Hierarchie wird durch Pfeile angegeben. In diesem Beispiel erbt die Subklasse Student von der Basisklasse Person.*
+
+### Konstruktoren in UML
+In UML-Klassendiagrammen werden Konstruktoren durch Methoden dargestellt, die den gleichen Namen wie die Klasse haben und keinen Rückgabetyp besitzen.
+
+```
+             Auto
+   +----------------------+
+   |                      |
+   +----------------------+
+   | marke : String       |
+   +----------------------+
+   | baujahr : int        |
+   +----------------------+
+   | + Auto()             |
+   +----------------------+
+   | + Auto(String, int)  |
+   +----------------------+
+```
+*Zwei Konstruktoren in einem UML-Klassendiagramm.*
 
 ### Zugriffsmodifikatoren
 
@@ -98,6 +129,23 @@ Eine statische Methode wird in UML wie folgt dargestellt:
 ```
 + _staticMethod() : void
 ```
+
+## Aufgabe: Counter
+
+### 1. Klasse Counter
+Erstellen Sie eine Klasse `Counter` mit einer statischen Variablen `count` und einer statischen Methode `increment()`, die den Wert der Variablen um 1 erhöht. 
+
+Erstellen Sie eine Methode `printCount()`, die den aktuellen Wert der Variablen ausgibt. 
+
+### 2. Anwenden der Klasse Counter
+Erstellen Sie einige Instanzen der Klasse und rufen Sie die `increment()`-Methode auf, um den Zähler zu erhöhen.
+
+Rufen Sie anschließend die `printCount()`-Methode auf, um den aktuellen Wert des Zählers auszugeben.
+
+### 3. UML-Diagramm
+Zeichne das UML-Diagramm für die Klasse Counter.
+
+
 ## Aufgabe: Bankverwaltung
 
 ### 1. Klasse Konto
@@ -105,6 +153,8 @@ Eine statische Methode wird in UML wie folgt dargestellt:
 
 ```
                                  Konto
+                    +------------------------------+ 
+                    |                              |
                     +------------------------------+ 
                     | kontonummer : int            |
                     +------------------------------+ 
