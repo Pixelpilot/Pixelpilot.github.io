@@ -133,7 +133,7 @@ Eine statische Methode wird in UML wie folgt dargestellt:
 ## Aufgabe: Counter
 
 ### 1. Klasse Counter
-Erstellen Sie eine Klas se `Counter` mit einer statischen Variablen `count` und einer statischen Methode `increment()`, die den Wert der Variablen um 1 erhöht. 
+Erstellen Sie eine Klasse `Counter` mit einer statischen Variablen `count` und einer statischen Methode `increment()`, die den Wert der Variablen um 1 erhöht. 
 
 Erstellen Sie eine Methode `printCount()`, die den aktuellen Wert der Variablen ausgibt. 
 
@@ -143,7 +143,7 @@ Erstellen Sie einige Instanzen der Klasse und rufen Sie die `increment()`-Method
 Rufen Sie anschließend die `printCount()`-Methode auf, um den aktuellen Wert des Zählers auszugeben.
 
 ### 3. UML-Diagramm
-Zeichne das UML-Diagramm für die Klasse Counter.
+Zeichne das UML-Diagramm für die Klasse `Counter`.
 
 
 ## Aufgabe: Bankverwaltung
@@ -199,6 +199,8 @@ Erstellen Sie mehrere Instanzen von `Girokonto` und `Sparbuch` sowie eine Instan
 
 ```
                                   Bank 
+                     +------------------------------+
+                     |                              |
                      +------------------------------+
                      | _konten : ArrayList<Konto>   |
                      +------------------------------+
