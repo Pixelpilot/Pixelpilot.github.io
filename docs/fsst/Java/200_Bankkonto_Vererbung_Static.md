@@ -83,7 +83,7 @@ UML steht für Unified Modeling Language (einheitliche Modelliersprache). Es ist
    | + knr : int      |
    +------------------+
 ```
-*Einfache UML-Klassendiagramm. Die Hierarchie wird durch Pfeile angegeben. In diesem Beispiel erbt die Subklasse Student von der Basisklasse Person.*
+*Einfache UML-Klassendiagramm. Die Hierarchie wird durch Pfeile angegeben. In diesem Beispiel erbt die Subklasse Student von der Basisklasse Person. Hinter dem Doppelpunkt stehen der Datentyp bei Variablen bzw. der Rückgabetyp bei Methoden.*
 
 ### Konstruktoren in UML
 In UML-Klassendiagrammen werden Konstruktoren durch Methoden dargestellt, die den gleichen Namen wie die Klasse haben und keinen Rückgabetyp besitzen.
@@ -183,7 +183,7 @@ Zeichne das UML-Diagramm für die Klasse Counter.
         | + _berechneZinsen() |            | + _berechneZinsen() |
         +---------------------+            +---------------------+
 ```
-*UML-Diagramm zu den Klassen Konto, Girokonto und Sparbuch*
+*UML-Diagramm zu den Klassen Konto, Girokonto und Sparbuch.*
 
 ### 2. Klasse Girokonto
 Erstellen Sie eine abgeleitete Klasse `Girokonto` von der Klasse `Konto`. Fügen Sie eine statische Variable `zinsen` hinzu und eine statische Methode `setZinsen(double zinsen)`, die es ermöglicht, die Zinsen für alle Girokonten zu setzen. Implementieren Sie auch eine Methode `berechneZinsen()`, die den Kontostand mit den aktuellen Zinsen erhöht.
