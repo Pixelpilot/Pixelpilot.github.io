@@ -38,6 +38,26 @@ Um mit MySQL zu arbeiten, benötigen man zunächst eine Verbindung zu einer MySQ
   echo "Connection established successfully";
 ?>
 ```
+*Aufbauen der Verbindung in einer PHP Version < 8.1*
+
+```php
+<?php
+  $host = "localhost";
+  $username = "username";
+  $password = "password";
+  $dbname = "database_name";
+
+  try {
+    // Verbindung herstellen
+    $conn = mysqli_connect($host, $username, $password, $dbname);
+    echo "Connection established successfully";
+  } catch ( Exception $e ) {
+    echo "Connection Failed: ", $e->getMessage(), "<br>";
+  }
+?>
+```
+*Aufbauen der Verbindung in einer PHP Version >= 8.1*
+
 
 ### Aufbau einer Datenbank-Tabelle
 
@@ -74,9 +94,9 @@ Die Ausgabe von `DESCRIBE users;` gibt Informationen über die Struktur der `use
 * **Extra:** Weitere Informationen über die Spalte. Zum Beispiel auto_increment, wenn der Wert für diese Spalte automatisch inkrementiert wird.
 
 
-### MySQL Statements
+### SQL-Statements
 
-MySQL-Statements sind Anweisungen, die an eine MySQL-Datenbank gesendet werden, um bestimmte Operationen auszuführen. Es gibt verschiedene Arten von MySQL-Statements, die zur Erstellung, Anzeige, Aktualisierung und Löschung von Daten in einer Datenbank verwendet werden können.
+SQL-Statements sind Anweisungen, die an eine MySQL-Datenbank gesendet werden, um bestimmte Operationen auszuführen. Es gibt verschiedene Arten von MySQL-Statements, die zur Erstellung, Anzeige, Aktualisierung und Löschung von Daten in einer Datenbank verwendet werden können.
 
 MySQL-Statements werden häufig verwendet, um Daten in einer Tabelle einer MySQL-Datenbank zu verarbeiten. Zum Beispiel können Sie mit der `SELECT`-Anweisung Einträge aus einer Tabelle abrufen, mit der INSERT-Anweisung neue Einträge hinzufügen, mit der `UPDATE`-Anweisung bestehende Einträge aktualisieren und mit der `DELETE`-Anweisung Einträge löschen.
 
