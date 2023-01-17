@@ -178,9 +178,9 @@ Zeichne das UML-Diagramm für die Klasse `Counter`.
         +---------------------+            +---------------------+
         | _zinsen : double    |            | _zinsen : double    |
         +---------------------+            +---------------------+
-        | + _setZinsen()      |            | + _setZinsen()      |
+        | + berechneZinsen()  |            | + berechneZinsen()  |
         +---------------------+            +---------------------+
-        | + _berechneZinsen() |            | + _berechneZinsen() |
+        | + _setZinsen()      |            | + _setZinsen()      |
         +---------------------+            +---------------------+
 ```
 *UML-Diagramm zu den Klassen Konto, Girokonto und Sparbuch.*
