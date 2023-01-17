@@ -130,41 +130,26 @@ Eine statische Methode wird in UML wie folgt dargestellt:
 + _staticMethod() : void
 ```
 
-## Aufgabe: Counter
-
-### 1. Klasse Counter
-Erstellen Sie eine Klasse `Counter` mit einer statischen Variablen `count` und einer statischen Methode `increment()`, die den Wert der Variablen um 1 erhöht. 
-
-Erstellen Sie eine Methode `printCount()`, die den aktuellen Wert der Variablen ausgibt. 
-
-### 2. Anwenden der Klasse Counter
-Erstellen Sie einige Instanzen der Klasse und rufen Sie die `increment()`-Methode auf, um den Zähler zu erhöhen.
-
-Rufen Sie anschließend die `printCount()`-Methode auf, um den aktuellen Wert des Zählers auszugeben.
-
-### 3. UML-Diagramm
-Zeichne das UML-Diagramm für die Klasse `Counter`.
-
 
 ## Aufgabe: Bankverwaltung
 
 ### 1. Klasse Konto
- Erstellen Sie eine Klasse `Konto` mit den Eigenschaften `kontonummer`, `kontostand` und `kontoinhaber` (Name des Inhabers des Kontos). Fügen Sie auch Methoden hinzu, um Geld auf das Konto einzuzahlen und abzuheben sowie um den Kontostand abzufragen.
+ Erstellen Sie eine Klasse `Konto` mit den Eigenschaften `kontonummer`, `kontostand` und `kontoinhaber` (Name des Inhabers des Kontos). Diese Informationen sollen im Konstruktor gesetzt werden können. Fügen Sie auch Methoden hinzu, um Geld auf das Konto einzuzahlen und abzuheben sowie um den Kontostand abzufragen.
 
 ```
                                  Konto
                     +------------------------------+ 
                     |                              |
                     +------------------------------+ 
-                    | kontonummer : int            |
+                    | - kontonummer : int          |
                     +------------------------------+ 
-                    | kontostand  : double         |
+                    | - kontostand  : double       |
                     +------------------------------+ 
-                    | kontoinhaber : String        |
+                    | - kontoinhaber : String      |
                     +------------------------------+ 
-                    | + einzahlen() : void         |
+                    | + einzahlen(double) : void   |
                     +------------------------------+ 
-                    | + abheben() : void           |
+                    | + abheben(double) : double   |
                     +------------------------------+ 
                     | + getKontostand() : double   |
                     +------------------------------+ 
@@ -173,15 +158,15 @@ Zeichne das UML-Diagramm für die Klasse `Counter`.
                       /                           \
                      /                             \
                Girokonto                         Sparbuch
-        +---------------------+            +---------------------+
-        |                     |            |                     |
-        +---------------------+            +---------------------+
-        | _zinsen : double    |            | _zinsen : double    |
-        +---------------------+            +---------------------+
-        | + berechneZinsen()  |            | + berechneZinsen()  |
-        +---------------------+            +---------------------+
-        | + _setZinsen()      |            | + _setZinsen()      |
-        +---------------------+            +---------------------+
+  +------------------------------+    +------------------------------+
+  |                              |    |                              |
+  +------------------------------+    +------------------------------+
+  | - _zinsen : double           |    | - _zinsen : double           |
+  +------------------------------+    +------------------------------+
+  | + berechneZinsen() : void    |    | + berechneZinsen() : void    |
+  +------------------------------+    +------------------------------+
+  | + _setZinsen(double) : void  |    | + _setZinsen(double) : void  |
+  +------------------------------+    +------------------------------+
 ```
 *UML-Diagramm zu den Klassen Konto, Girokonto und Sparbuch.*
 
