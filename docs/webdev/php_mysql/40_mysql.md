@@ -240,7 +240,7 @@ Erstellen die Datei `insert.php`, die ein Formular enthält, das es dem Benutzer
 Die Übermittlung der Daten soll mit `POST`erfolgen.
 
 ### 4. Löschen von Einträgen
-Erweitere die PHP-Seite von Aufgabe 3, um dem Benutzer das Löschen von Einträgen zu ermöglichen. Verwende das `DELETE`- Statement, um die Löschungen in der Datenbank durchzuführen.
+Erweitere die PHP-Seite von Aufgabe 2 (Hinzufügen von Einträgen), um dem Benutzer das Löschen von Einträgen zu ermöglichen. Verwende das `DELETE`- Statement, um die Löschungen in der Datenbank durchzuführen.
 
 Füge einen Button `Löschen` neben den einzelnen Einträgen hinzu.
 
@@ -255,10 +255,11 @@ Klickt man auf den Löschen-Button neben einem Eintrag, soll der Eintrag gelösc
 
 
 ### 5. Aktualisieren von Daten
-Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu, um die Aktualisierung. Verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern.
+Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu, um die Aktualisierung. Verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern. Implementiere das Formular zum Ändern der Daten in der Datei `edit.php`.
 
 
 ```php
+// Erweiterung der Tabelle in der index.php
 echo "<input type='submit' name='update' value='Ändern'>";
 ```
 
