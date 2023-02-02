@@ -1,5 +1,5 @@
 ---
-title: Vorbereitung Test - Ausnahmen, Statische Variablen und Methoden, Vererbung und Polymorphismus, Akstrakte Klassen
+title: Ausnahmen, Statische Variablen und Methoden, Vererbung und Polymorphismus, Akstrakte Klassen
 description: Beispiel
 
 category: Fachspezifische Softwaretechnik
