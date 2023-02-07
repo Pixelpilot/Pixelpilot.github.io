@@ -1,6 +1,6 @@
 ---
 title: Aufgabe 1 - Zusammenfassung Theorie, Anwendungsbeispiele
-description: Grundlagen der Animation mit Adobe Animate – Übersicht
+description: Grundlagen der Animation mit Adobe Animate – Theorie
 
 category: Mediendesign
 topic: Animation mit Adobe Animate
@@ -9,7 +9,7 @@ type: assignment
 previewimage: img/ui_design_xd.png
 layout: default
 
-sitemap_exclude: y
+sitemap_exclude: n
 ---
 
 ## Aufgabenstellung
