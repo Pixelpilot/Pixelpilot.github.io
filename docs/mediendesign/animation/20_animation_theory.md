@@ -9,7 +9,6 @@ type: assignment
 previewimage: img/ui_design_xd.png
 layout: default
 
-sitemap_exclude: n
 ---
 
 ## Aufgabenstellung
