@@ -26,6 +26,8 @@ The Illusion of Life: In den frühen 80er-Jahren veröffentlichten Franz Thomas 
 Sieh dir die Videos an und fasse die wichtigsten Punkte kurz zusammen.
 
 ### Praxis
+![img.png](img/theory_short.png)
+*Purl, Copyright: Disney•Pixar, 2019*
 
 Such die einen aktuellen Kurzfilm von _Pixar Animation_ oder einen Klassiker von _Disney_ aus und halte mindestens 3 Techniken aus den _12 Principles of Animation_ fest, die darin Anwendung finden.
 
