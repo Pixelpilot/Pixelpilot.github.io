@@ -59,11 +59,6 @@ echo $_COOKIE["TestCookie"];
 print_r($_COOKIE);
 ```
 
-
-```php
-<form action="http://localhost/willkommen.php" method="get">
-```
-
 ## Serverseitige Datenhaltung - Sessions in PHP
 
 ### Beginnen einer Session

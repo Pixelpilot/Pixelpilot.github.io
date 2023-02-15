@@ -22,7 +22,7 @@ Erstelle eine Illustration, die sich aus mehreren Motiven zusammensetzt. Verwend
 - Shortcut `p`: _Zeichenstift-Werkzeug_ um Formen mit Hilfe von Punkte zu erstellen
 - Shortcut `a`: _Direktauswahl-Werkzeug_ um Punkte einer Form zu bearbeiten 
 - Shortcut `n`: _Buntstift-Werkzeug_ um Foren zu zeichnen
-- Shortcut `b`: _Pinsel-Werkzeug_ umd Flächen zu zeichnen
+- Shortcut `b`: _Pinsel-Werkzeug_ um Flächen zu zeichnen
 - Shortcut `shift`+`e`: _Radiergummi_ um Teile einer Form zu löschen
 - _Kurvenzeichner-Werkzeug_ um Formen zu verändern und Punkte hinzuzufügen
 
