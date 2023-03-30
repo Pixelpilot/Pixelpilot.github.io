@@ -21,11 +21,13 @@ sitemap_exclude: n
 Es soll ein Grundverständnis für die Erstellung von animierten Grafiken und Charaktären geschaffen werden.
 
 ### Ressourcen
+- [The 12 principles of animation_ - Wikipedia](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
+- [The illusion of life_ - Video auf Vimeo (Anmeldung erforderlich)](https://vimeo.com/93206523)
+- [The 12 Principles of Animation (Pixar-ated)_ - Video auf Vimeo](https://vimeo.com/207384652)
 
-- [_The 12 principles of animation_ - Wikipedia](https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation)
-- [_The illusion of life_ - Video auf Vimeo (Anmeldung erforderlich)](https://vimeo.com/93206523)
-- [_The 12 Principles of Animation (Pixar-ated)_ - Video auf Vimeo](https://vimeo.com/207384652)
-
+- [How to Rig a Simple Character | Adobe Animate Tutorial](https://www.youtube.com/watch?v=EetloQGJ2yM)
+- [Animating a Simple Character Rig | Adobe Animate Tutorial](https://www.youtube.com/watch?v=zIorj6p813I)
+- [Modern Rigging in Animate – Adobe Animate](https://www.youtube.com/playlist?list=PLYeXZOOCIwCsWRz47tTaSdL9gCIh5rdXL)
 
 ### Aufgabe
 * [Aufgabe 1 - Zusammenfassung Theorie, Anwendungsbeispiele](20_animation_theory.md)

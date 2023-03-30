@@ -13,10 +13,18 @@ sitemap_exclude: y
 ---
 
 ## Aufgabenstellung
+Erstelle eine einfache Animation, die die wichtigsten Prinzipien der Animation umsetzt:
 
-* Bouncing Ball Animation
+* Anticipation
+* Easing (Slow in and slow out)
+* Squash and Stretch
+* Staging
+* Anticipation
+* ...
 
-* Bouncing Ball Secondary Action
+### Jumping Ball Animation
+
+### Zusatz: Jumping Ball Secondary Action
 
 ## Abgabe
  
