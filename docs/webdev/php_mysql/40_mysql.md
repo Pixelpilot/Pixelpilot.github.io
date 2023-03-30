@@ -268,6 +268,12 @@ Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in ein
 ### 7. Zusatz: Sortierung und Paginierung
 Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
 
+### 8. Zusatz: Asynchrone Abfrabe per AJAX
+Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen durchzuführen, ohne dass die Seite neu geladen werden muss.
+
+Verwende dazu [AJAX](https://www.w3schools.com/php/php_ajax_php.asp) und ändere die Einträge per JavaScript, sobald die Daten vom Server eintreffen.
+
 ## Ressourcen
 * [https://remotemysql.com/ - Free MySQL Hosting Site](https://remotemysql.com/){:target="_blank"}
 * [https://www.php.net/manual/de/ - php.net Manual: SQL Injection](https://www.php.net/manual/de/security.database.sql-injection.php){:target="_blank"}
+* * [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}
