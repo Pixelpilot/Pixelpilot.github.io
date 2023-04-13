@@ -176,7 +176,11 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
 
 * `?cmd=getsingle&offer_id=2450` liefert die Details eines Jobs mit einer bestimmten `offer_id`
 
+
 > **Alle Aufgaben sollen so umgesetzt werden, dass die Seite nicht neu geladen werden muss!**
+
+> **Achtung: Nur in einer Testumgebung:** Sollte es zu einer Fehlermeldung wie `Access to XMLHttpRequest at 'https://jobboerse.htl-braunau.at/htl_job_api.php?cmd=getcpylist' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource` kommen, muss die Chrome-Extension **Moesif Origin & CORS Changer** installiert und aktiviert werden.
+
 
 
 #### 2.1. Unternehmensliste 
