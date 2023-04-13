@@ -30,7 +30,7 @@ Als Format für den Datenaustausch bietet sich das JSON-Format an, da das Encodi
 $conn = mysqli_connect($host, $username, $password, $dbname);
 
 // Benutzer abrufen
-$sql = "SELECT * FROM users;
+$sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);
 
 // Array mit Daten erstellen
@@ -57,7 +57,7 @@ echo json_encode($data);
 ## Schritt 2: JavaScript-Skript mit AJAX-Anfrage und Verarbeitung
 
 ```html
-<!-- index.html -->
+<!-- ajax.html -->
 
 <!DOCTYPE html>
 <html>
@@ -67,7 +67,6 @@ echo json_encode($data);
 </head>
 <body>
     <ul id="users-list"></ul>
-
     <script>
     // XMLHttpRequest-Objekt erstellen
     var xhr = new XMLHttpRequest();
@@ -82,12 +81,16 @@ echo json_encode($data);
         // alles OK?
         if (xhr.readyState == 4 && xhr.status == 200) {
         
+            // Daten speichern
             var data = JSON.parse(xhr.responseText);
             
             var usersList = document.getElementById('users-list');
 
+            // Über die Daten iterieren
             for (var i = 0; i < data.length; i++) {
                 var user = data[i];
+                
+                // Listenelement erzeugen und anzeigen
                 var listItem = document.createElement('li');
                 listItem.innerHTML = user.name + ' (' + user.phone + ')';
                 usersList.appendChild(listItem);
@@ -133,7 +136,7 @@ Ein Statuscode von 200 bedeutet, dass die Anfrage erfolgreich war, während ein 
 
 Erstelle die Dateien `ajax.html` und `data.php`, um die oben angegebenen Beispiele zu implementieren und zu testen.
 
-### 2. Jobbörse - TODO!!!! Aufgaben hinzufügen
+### 2. Jobbörse
 
 Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit dem Backend zur Verwaltung der Firmen und deren Jobs. Die Daten werden im JSON Format zur Verfügung gestellt:
 [https://jobboerse.htl-braunau.at/htl_job_api.php](https://jobboerse.htl-braunau.at/htl_job_api.php){:target="_blank"}
@@ -149,32 +152,66 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
         "size":"771"
     }
     ```
+  
 **Auflistung von Unternehmen**  
 
 * `?cmd=getcpylist` liefert die Liste von Unternehmen (alphabetisch nach Firmenname)
-  * `&count=3` schränkt die Anzahl der Jobs auf eine bestimmte Zahl ein
-  * `&from=3` Offset der Jobs
+  * `&count=3` schränkt die Anzahl der Unternehmen auf eine bestimmte Zahl ein
+  * `&from=3` Offset der Unternehmen
+  * `&maxage=100` zeigt nur Unternehmen an, die Jobs eingetragen haben, die nicht älter als 100 Tage sind
 
 **Detailansicht eines Unternehmens**
 
-* `?cmd=getcpysingle&company_id=292` liefert die Details eines Unternehmens (inklusive Bildpfad für das Logo)
+* `?cmd=getcpysingle&company_id=292` liefert die Details eines Unternehmens einer bestimmten `company_id` (inklusive Bildpfad für das Logo)
 
 **Auslistung der Jobs**
 
 * `?cmd=getlist` liefert eine Liste von Jobs (neuere Jobs zuerst)
   * `&maxage=300` schränkt die Liste der Jobs so ein, dass sie maximal 300 Tage alt sein dürfen
-  * `&company_id=129` die Jobs eines Unternehmens
+  * `&company_id=129` die Jobs eines Unternehmens mit einer bestimmten `company_id`
   * `&count=3` schränkt die Anzahl der Jobs auf eine bestimmte Zahl ein
   * `&from=3` Offset der Jobs
 
-
 **Detailansicht eines Jobs**
 
-* `?cmd=getsingle&offer_id=2450` liefert die Details eines Jobs mit einer bestimmten id
- 
+* `?cmd=getsingle&offer_id=2450` liefert die Details eines Jobs mit einer bestimmten `offer_id`
+
+> **Alle Aufgaben sollen so umgesetzt werden, dass die Seite nicht neu geladen werden muss!**
 
 
+#### 2.1. Unternehmensliste 
 
+Erstelle eine Datei `index.html`, die eine Liste der ersten 10 Unternehmen und deren wichtigsten Daten anzeigt:
+
+* Firmenname
+* Anschrift
+* Anzahl der Jobs
+
+Zeige nur Firmen an, die Jobs haben, die nicht älter als 300 Tage sind.
+
+#### 2.2. Unternehmensliste mit Paginierung
+
+Erweitere Beispiel 2.1 so, dass es einen Button `Weiter` und `Zurück` gibt, mit denen die Unternehmen um jeweils 10 Einträge weiter- und zurück geschalten werden können.
+
+Erweitere die Navigation um eine Anzeige der Seiten:
+
+`Zurück` `1` `2` `3` `4` `Weiter`
+
+#### 2.3. Anzeigen der Informationen eines bestimmten Unternehmens
+
+Erweitere das Beispiel so, dass bei Klick auf ein Unternehmen die Firmendetails inklusive Logo übersichtlich dargestellt werden.
+
+#### 2.4. Anzeigen der Jobs eines bestimmten Unternehmens
+
+Erweitere das Beispiel 2.3. so, dass unterhalb der Firmeninformationen alle Jobs des Unternehmens in Form einer Liste angezeigt werden, die nicht älter als 300 Tage sind.
+
+Erstellen einen Button `Zur Unternehmensliste`, das auf die Darstellung von Beispiel 2.2 (Unternehmensliste) umschaltet.
+
+#### 2.5. Detailansicht eines Jobs
+
+Erweitere das Beispiel 2.4. so, dass bei Klick auf einen Job alle Details inklusive Link zum Job-PDF angezeigt werden.
+
+Erstelle einen Button `Alle Jobs des Unternehmens`, das wieder die Liste aus Aufgabe 2.4 des jeweiligen Unternehmens anzeigt.
 
 
 ## Ressourcen
