@@ -19,9 +19,9 @@ Mit PHP und AJAX können so dynamische Webseiten erstellt werden, die Benutzerer
 
 Im Folgenden finden Sie ein Beispiel für die Verwendung von AJAX mit PHP und JavaScript:
 
-## Schritt 1: Erstellen die Antwort der AJAX Anfrage
+## Schritt 1: Erstellen der Antwort auf die AJAX Anfrage
 
-Als Format für den Datenaustausch bietet sich das JSON-Format an.
+Als Format für den Datenaustausch bietet sich das JSON-Format an, da das Encodieren und das Decodieren sowohl in PHP als auch in JavaScript implementiert sind.
 
 ```php
 // data.php
@@ -42,6 +42,16 @@ while ($row = mysqli_fetch_assoc($result)) {
 // Array als JSON-String zurückgeben
 echo json_encode($data);
 ```
+
+```text
+[{"id":"6","name":"Max","email":"max@max.its","phone":"0664 786 57 23"},
+{"id":"8","name":"Eva","email":"e@hotmail.com","phone":"0650 234 56 89"},
+{"id":"9","name":"Hubert","email":"h@ubert.at","phone":"07722 123 45"},
+{"id":"11","name":"Sabine","email":"sab@ine.de","phone":"07514 22 22 22"},
+{"id":"14","name":"Christian","email":"ch@htl.at","phone":"0610 123 45 67"},
+{"id":"16","name":"Hubert","email":"h@ubert.at","phone":"0650 99 88 77"}]
+```
+*Beispielhafte Ausgabe im JSON-Format*
 
 
 ## Schritt 2: JavaScript-Skript mit AJAX-Anfrage und Verarbeitung
@@ -116,6 +126,56 @@ Die möglichen HTTP-Statuscodes sind in verschiedene Kategorien unterteilt, z. B
 * `5xx` (Server-Fehler).
 
 Ein Statuscode von 200 bedeutet, dass die Anfrage erfolgreich war, während ein Statuscode von 404 darauf hinweist, dass die angeforderte Ressource nicht gefunden wurde.
+
+## Aufgaben
+
+### 1. Erweiterung der Kontaktdatenverwaltung
+
+Erstelle die Dateien `ajax.html` und `data.php`, um die oben angegebenen Beispiele zu implementieren und zu testen.
+
+### 2. Jobbörse - TODO!!!! Aufgaben hinzufügen
+
+Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit dem Backend zur Verwaltung der Firmen und deren Jobs. Die Daten werden im JSON Format zur Verfügung gestellt:
+[https://jobboerse.htl-braunau.at/htl_job_api.php](https://jobboerse.htl-braunau.at/htl_job_api.php){:target="_blank"}
+
+Über den GET-Parameter `cmd` können verschiedene Anfragen gestellt werden.
+
+**Anzahl der Unternehmen**
+
+* `?cmd=getcpysize` liefert die Anzahl der Firmen in der Datenbank
+    ```json
+    {
+        "cmd":"getcpysize",
+        "size":"771"
+    }
+    ```
+**Auflistung von Unternehmen**  
+
+* `?cmd=getcpylist` liefert die Liste von Unternehmen (alphabetisch nach Firmenname)
+  * `&count=3` schränkt die Anzahl der Jobs auf eine bestimmte Zahl ein
+  * `&from=3` Offset der Jobs
+
+**Detailansicht eines Unternehmens**
+
+* `?cmd=getcpysingle&company_id=292` liefert die Details eines Unternehmens (inklusive Bildpfad für das Logo)
+
+**Auslistung der Jobs**
+
+* `?cmd=getlist` liefert eine Liste von Jobs (neuere Jobs zuerst)
+  * `&maxage=300` schränkt die Liste der Jobs so ein, dass sie maximal 300 Tage alt sein dürfen
+  * `&company_id=129` die Jobs eines Unternehmens
+  * `&count=3` schränkt die Anzahl der Jobs auf eine bestimmte Zahl ein
+  * `&from=3` Offset der Jobs
+
+
+**Detailansicht eines Jobs**
+
+* `?cmd=getsingle&offer_id=2450` liefert die Details eines Jobs mit einer bestimmten id
+ 
+
+
+
+
 
 ## Ressourcen
 * [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}
