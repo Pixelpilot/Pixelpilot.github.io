@@ -138,6 +138,10 @@ Erstelle die Dateien `ajax.html` und `data.php`, um die oben angegebenen Beispie
 
 ### 2. Jobbörse
 
+Erstelle eine Webapplikation mit HTML, JavaScript und CSS, die die Jobs der Partner der HTL Braunau anzeigt.
+
+#### API der HTL Jobbörse
+
 Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit dem Backend zur Verwaltung der Firmen und deren Jobs. Die Daten werden im JSON Format zur Verfügung gestellt:
 [https://jobboerse.htl-braunau.at/htl_job_api.php](https://jobboerse.htl-braunau.at/htl_job_api.php){:target="_blank"}
 
@@ -176,6 +180,7 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
 
 * `?cmd=getsingle&offer_id=2450` liefert die Details eines Jobs mit einer bestimmten `offer_id`
 
+#### Allgemeine Hinweise
 
 > **Alle Aufgaben sollen so umgesetzt werden, dass die Seite nicht neu geladen werden muss!**
 
