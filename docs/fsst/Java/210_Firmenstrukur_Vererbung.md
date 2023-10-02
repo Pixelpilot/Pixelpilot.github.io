@@ -13,7 +13,6 @@ sitemap_exclude: n
 
 # {{ page.title }}
 
-Natürlich! Hier ist eine detaillierte Aufgabe, die speziell das Konzept der Vererbung in Java behandelt:
 
 ### Aufgabenstellung
 
