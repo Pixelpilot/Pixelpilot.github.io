@@ -65,11 +65,6 @@ Setze die Teile 1-5 um und teste jeweils in der Klasse `Main`. Implementiere ans
 
 - Nutze die `super`-Schlüsselwort, um auf den Konstruktor der Basisklasse zuzugreifen und um Methoden der Basisklasse aufzurufen.
 - Verwende die `@Override`-Annotation, um Methoden zu überschreiben.
-- Statische Variablen werden mit dem Schlüsselwort `static` deklariert und sind für alle Instanzen der Klasse gemeinsam.
-- Statische Methoden können direkt in statischen Kontexten (andere statische Methoden oder statische Initialisierer) aufgerufen werden, ohne eine Instanz der Klasse zu erstellen.
-- Da die Methode `naechstePersonalNummer()` nur innerhalb der Klasse `Angestellter` verwendet wird, sollte sie als `private` deklariert werden.
-
-Diese Erweiterung stellt sicher, dass jede Personalnummer eindeutig ist und automatisch generiert wird, und demonstriert die Verwendung von statischen Variablen und Methoden in Java.
 
 #### Beispiel für den erwarteten Output
 
@@ -98,6 +93,15 @@ Gehalt: 0.0
 2. In der Klasse `Angestellter`, erstelle eine private statische Variable `letztePersonalNummer`, die mit 0 initialisiert wird.
 3. Erstelle eine private statische Methode `naechstePersonalNummer()`, die `letztePersonalNummer` um 1 erhöht und den neuen Wert zurückgibt.
 4. Ändere den Konstruktor der Klasse `Angestellter`, sodass er die Methode `naechstePersonalNummer()` aufruft, um eine Personalnummer für jeden neuen Angestellten zu generieren.
+
+#### Hinweise zur Umsetzung
+
+- Statische Variablen werden mit dem Schlüsselwort `static` deklariert und sind für alle Instanzen der Klasse gemeinsam.
+- Statische Methoden können direkt in statischen Kontexten (andere statische Methoden oder statische Initialisierer) aufgerufen werden, ohne eine Instanz der Klasse zu erstellen.
+- Da die Methode `naechstePersonalNummer()` nur innerhalb der Klasse `Angestellter` verwendet wird, sollte sie als `private` deklariert werden.
+
+Diese Erweiterung stellt sicher, dass jede Personalnummer eindeutig ist und automatisch generiert wird, und demonstriert die Verwendung von statischen Variablen und Methoden in Java.
+
 
 ### Teil 7: Verwenden eines Interfaces zum Sortieren des Arrays
 1. Sortiere das Array nach dem Gehalt (aufsteigend)
