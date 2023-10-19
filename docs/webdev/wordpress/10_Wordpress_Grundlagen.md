@@ -1,15 +1,19 @@
 ---
-title: Aufgabe 1 - Einrichten Entwicklungsumgebung und Installation
+title: Beta - Erstellen einer Website mit Wordpress
 description: Wordpress – Verwendung eine CMS
 
 category: Webentwicklung
 topic: Wordpress
 subtopic: Installation und Entwicklungsumgebung
 
-sitemap_exclude: y
+sitemap_exclude: n
 
 layout: default
 ---
+
+# Beta - Wordpress
+
+      Achtung! Diese Seite befindet sich gerade in der Erstellung und kann jederzeit geändert werden
 
 ## Content Management Systeme
 
@@ -17,11 +21,10 @@ Ein Content Management System (CMS) ist eine Software, die es ermöglicht, Inhal
 
 Es ist benutzerfreundlich, flexibel und kostenlos, und es gibt tausende von Themen und Plugins, die es ermöglichen, die Funktionalität und das Aussehen der Website anzupassen. Andere bekannte CMS sind Joomla, Typo3, Drupal oder Shopify.
 
-## Wordpress
 
-### 5-Minuten-Installation
+## Die Wordpress 5-Minuten-Installation
 
-1. Herunterladen, und im `htdocs`-Ordner speichern, umbenennen in `wp_dein_name`
+1. Lade Wordpress ([wordpress.org](https://wordpress.org/){:target="_blank"}), und extrahiere den Ordner `wordpress` im `htdocs`-Ordner. Benenne dem Ordner `wp_dein_name` um.
 2. Verzeichnisrechte ändern (**ACHTUNG: Nur während der Entwicklung!!!**)
     ```
     #!/bin/bash
@@ -38,6 +41,14 @@ Es ist benutzerfreundlich, flexibel und kostenlos, und es gibt tausende von Them
     /** in wp-config.php hinzufügen */
     define ('FS_METHOD', 'direct');
     ```
+
+
+> ### Aufgabe: Installation von Wordpress
+>
+> 1. Führe die Installation wie beschrieben aus
+> 2. Erstelle im Wordpress Backend eine zusätzliche Seite und einen zusätzlichen Blogbeitrag
+> 3. 
+
 
 
 ### Exkurs – Abspeichern von Passwörtern in einer Datenbank
@@ -62,15 +73,12 @@ Hier sind die technischen Schritte:
 
 Der Hauptvorteil dieses Verfahrens ist, dass selbst wenn jemand Zugriff auf die Datenbank erhält, er die tatsächlichen Passwörter nicht sieht, sondern nur die Hash-Werte. Das macht es extrem schwierig, die ursprünglichen Passwörter herauszufinden.
 
-> #### **Aufgabe x:**
+
+
+> ### Aufgabe: Hashing
 > 1. Finde Heraus, wo das Passwort in der Datenbank gespeichert ist, und welcher Hashing-Algorithmus von WordPress verwendet wird.
 > 2. Erstelle von einem neugewählten Password einen entsprechenden Hash-Wert und trage ihn in der Datenbank ein.
 > 3. Überprüfe, ob du dich mit den neuen Zugangsdaten einloggen kannst
-
-## Erstellen von Inhalten
-
-### Pages vs. Posts, ...
-
 
 ## Themes
 
@@ -82,15 +90,90 @@ Themes bestimmen das Aussehen einer WordPress-Seite, während der Inhalt unabhä
 
 In Wordpress können mehrere Themes gleichzeitig installiert werden, es kann aber nur immer ein Theme aktiv sein.
 
-> #### **Aufgabe x:**
+> ### Aufgabe: Themes installieren
 > 1. Installiere mehrere Themes und aktiviere sie, um zu sehen, wie sich die Themes auf die Seite auswirken.
 > 2. Passe das Aussehen der Seite mithilfe des `Customizer` an.
-> 3. Installiere das Theme "OnePress"
+> 3. Installiere das Theme **"OnePress"**
+
+
+### Child-Theme erstellen
+
+Child-Themes in WordPress bieten die Möglichkeit, ein Theme anzupassen, ohne den ursprünglichen Code des Eltern-Themes zu ändern. Dadurch bleiben Anpassungen beim Aktualisieren des Eltern-Themes erhalten, was die Wartung und Aktualisierung erleichtert. 
+
+Zudem ermöglicht es eine sicherere und organisierte Art der Theme-Anpassung, da Entwickler und Designer Änderungen und Anpassungen in einer isolierten Umgebung vornehmen können, was dazu beiträgt, das Risiko von Fehlern und Konflikten mit dem Haupttheme zu minimieren.
+
+**Vorteile von Child-Themes:**
+
+- **Aktualisierungssicher:** Anpassungen gehen bei Theme-Updates nicht verloren.
+- **Anpassungsfreundlich:** Ermöglicht individuelle Änderungen ohne Beeinflussung des Hauptthemes.
+- **Fehlerminimierung:** Risiko von Konflikten und Fehlern wird durch isolierte Anpassungen reduziert.
+- **Wiederverwendbarkeit:** Ermöglicht die Wiederverwendung und Freigabe von Anpassungen in verschiedenen Projekten.
+
+#### 1. **Child-Theme-Verzeichnis erstellen:**
+- Im Verzeichnis `wp-content/themes` ein neues Verzeichnis für das Child-Theme anlegen.
+- Das Verzeichnis sollte einen aussagekräftigen Namen haben, z.B. `twentytwentyone-child`, wenn `twentytwentyone` das Eltern-Theme ist.
+
+#### 2. **Stylesheet erstellen: (style.css)**
+- Im Child-Theme-Verzeichnis eine CSS-Datei namens `style.css` erstellen.
+- Folgenden Code in die `style.css` Datei einfügen und entsprechend anpassen:
+
+```css
+/*
+ Theme Name:   Twenty Twenty-One Child
+ Theme URI:    http://example.com/twentytwentyone-child/
+ Description:  Twenty Twenty-One Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentytwentyone
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  twentytwentyone-child
+*/
+```
+
+#### 3. **Funktionsdatei erstellen: (functions.php)**
+- Im Child-Theme-Verzeichnis eine PHP-Datei namens `functions.php` erstellen.
+- Folgenden Code in die `functions.php` Datei einfügen, um das Stylesheet des Eltern-Themes zu laden:
+
+```php
+<?php
+function twentytwentyone_child_styles() {
+    wp_enqueue_style('twentytwentyone-parent-style', get_template_directory_uri() . '/style.css');
+}
+add_action('wp_enqueue_scripts', 'twentytwentyone_child_styles');
+?>
+```
+
+#### 4. **Child-Theme aktivieren:**
+- Im WordPress-Dashboard zu `Design` &rarr; `Themes` gehen.
+- Das neu erstellte Child-Theme finden und auf `Aktivieren` klicken.
+
+#### 5. **Anpassungen vornehmen:**
+- Sie können jetzt Anpassungen am Child-Theme vornehmen, indem Sie zusätzlichen Code zur `functions.php` hinzufügen oder weitere Template-Dateien im Child-Theme-Verzeichnis erstellen und anpassen.
+
+
+
+> ### Aufgabe: Child-Theme installieren und anpassen
+> 1. Folge der Anleitung und erstelle ein Child-Theme des vorher installierten Themes **OnePress**
+> 2. Erstelle ein Vorschau-Bild für das Child-Theme. Das Bild (1200x900 px) sollte das Aussehen und die Ästhetik des Child-Themes repräsentieren. <br>
+     Speicher das Bild im PNG-Format unter dem Namen `screenshot.png` ab und lege es ins Hauptverzeichnis des Child-Themes.
+
+
+## Erstellen von Inhalten
+
+### Pages vs. Posts, ...
 
 
 
 
+## Erweitern um Plugins
 
+### Verwaltung von Medien
+
+### Google Maps
+
+### Suchmaschinenoptimierung
 
 
 
