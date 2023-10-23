@@ -14,8 +14,6 @@ layout: default
 <sup>[99designs.de](https://99designs.de/blog/web-digitales-design/was-ist-webdesign)</sup>
 
 
-
-
 ### 1. Erster Kundenkontakt
 
 Ein Kunde lädt zu einem Pitch ein und schickt nachfolgendes E-Mail an deine Agentur. Bereite Fragen für das erste Treffen vor, damit anschließend folgende Punkte klar sind und ein Konzept, Angebot und ein erstes Design erstellt werden können.
