@@ -53,8 +53,6 @@ Es ist benutzerfreundlich, flexibel und kostenlos, und es gibt tausende von Them
 
 ### Exkurs – Abspeichern von Passwörtern in einer Datenbank
 
-Okay! Lassen wir die Metaphern beiseite und tauchen etwas tiefer in die Technik ein.
-
 Das Hashing von Passwörtern ist ein Prozess, bei dem ein Passwort durch eine Hash-Funktion geleitet wird, um einen Hash-Wert (einen scheinbar zufälligen Satz von Zeichen) zu erzeugen. Der resultierende Hash-Wert hat immer eine feste Länge, unabhängig von der Länge des ursprünglichen Passworts.
 
 Hier sind die technischen Schritte:
