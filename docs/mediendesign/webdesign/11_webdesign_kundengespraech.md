@@ -29,26 +29,20 @@ Ein Kunde lädt zu einem Pitch ein und schickt nachfolgendes E-Mail an deine Age
 #### E-Mail des Kunden
 > **Betreff: Neugestaltung unseres Webauftritts**
 >
-> Sehr geehrte Damen und Herren,<br><br>
-> mein Name ist Max Mustermann, und ich bin der Projektmanager bei ElectroMove, einem führenden Unternehmen im Bereich E-Mobilität. Wir sind auf der Suche nach einer Agentur, die uns hilft, unseren Webauftritt zu überarbeiten, um besser mit unseren diversen Zielgruppen zu kommunizieren und zu interagieren.
+> *Sehr geehrte Damen und Herren,*<br><br>
+> *mein Name ist Max Mustermann, und ich bin der Projektmanager bei ElectroMove, einem führenden Unternehmen im Bereich E-Mobilität. Wir sind auf der Suche nach einer Agentur, die uns hilft, unseren Webauftritt zu überarbeiten, um besser mit unseren diversen Zielgruppen zu kommunizieren und zu interagieren.<br><br>Unsere Website sollte so gestaltet sein, dass sie die Bedürfnisse und Interessen verschiedener Zielgruppen erfüllt - von Endkunden, die nach praktikablen und nachhaltigen Mobilitätslösungen suchen, bis hin zu Geschäftskunden und Partnern, die sich für Investitionen und Partnerschaften im Bereich der E-Mobilität interessieren. Die Webseite sollte eine Plattform sein, die alle erforderlichen Informationen bereitstellt und es den Benutzern ermöglicht, leicht mit uns in Kontakt zu treten, unabhängig davon, ob es sich um potenzielle Kunden, Partner oder Investoren handelt.<br><br>Könnten wir ein Meeting arrangieren, um detailliert zu besprechen, wie wir die Webseite strategisch und kreativ gestalten könnten, um die verschiedenen Zielgruppen effektiv anzusprechen und zu bedienen?<br><br>Vielen Dank für Ihre Zeit, und wir freuen uns darauf, bald von Ihnen zu hören und unsere Ideen und Visionen mit Ihnen zu teilen.*
 >
-> Unsere Website sollte so gestaltet sein, dass sie die Bedürfnisse und Interessen verschiedener Zielgruppen erfüllt - von Endkunden, die nach praktikablen und nachhaltigen Mobilitätslösungen suchen, bis hin zu Geschäftskunden und Partnern, die sich für Investitionen und Partnerschaften im Bereich der E-Mobilität interessieren. Die Webseite sollte eine Plattform sein, die alle erforderlichen Informationen bereitstellt und es den Benutzern ermöglicht, leicht mit uns in Kontakt zu treten, unabhängig davon, ob es sich um potenzielle Kunden, Partner oder Investoren handelt.
+> *Mit freundlichen Grüßen,*
 >
-> Könnten wir ein Meeting arrangieren, um detailliert zu besprechen, wie wir die Webseite strategisch und kreativ gestalten könnten, um die verschiedenen Zielgruppen effektiv anzusprechen und zu bedienen?
->
-> Vielen Dank für Ihre Zeit, und wir freuen uns darauf, bald von Ihnen zu hören und unsere Ideen und Visionen mit Ihnen zu teilen.
->
-> Mit freundlichen Grüßen,
->
-> Max Mustermann  
+> *Max Mustermann  
 > Projektmanager  
 > ElectroMove  
 > [max.mustermann@electromove.com ](mailto:max.mustermann@electromove.com) <br>
-> +43 123 4567890
+> +43 123 4567890*
 
 ### 2. Erstes Treffen mit dem Kunden und Besprechungsprotokoll
 
-Führe anschließend das Gespräch durch und fasse die Ergebnisse in einem Besprechungsprotokoll zusammen:
+Führe das Gespräch anhand der vorbereiteten Fragen durch und fasse die Ergebnisse in einem Besprechungsprotokoll zusammen:
 
 #### Beispielhafte Struktur eines Besprechungsprotokolls
 - Allgemeine Informationen
@@ -101,4 +95,4 @@ Beginne ein Webdesign-Portfolio mit folgenden Inhalten:
 - **Deckblatt**
 - **Besprechungsprotokoll**<br>Inhalt wie angegeben, Umfang ca. 1 Seite A4
 - **Sitemap**<br>in grafisch ansprechender Form
-- **Scribbles**<br>aufbereitete Fotos der Scribbles auf Papier oder Screenshots der Scribbles vom Tablet 
+- **Scribbles**<br>aufbereitete Fotos der Scribbles auf Papier oder Screenshots der Scribbles vom Tablet
