@@ -202,6 +202,33 @@ Inhalte wie beispielsweise eine Über uns-, Kontakt-, oder
 Impressums-Seite einsetzt.
 
 > ### Aufgabe: Verwaltung von Inhalten in WordPress
+>
+> Es soll eine Website über das Maturaprojekt erstellt werden. Die Website besteht aus verschiedenen aktuellen Beiträgen, die den Projektfortschritt dokumentieren sollen sowie aus einigen statischen Seiten, die allgemeine Informationen zum Projekt darstellen.
+> 
+> #### 1. Kategorien für Beitrage erstellen
+> Erstelle für die Beitrage neben der Kategorie Allgemein mindestens zwei weitere Kategorien, in die sich deine
+Neuigkeiten zum Projekt einteilen lassen.
+> 
+> #### 2. Beitrage anlegen und befüllen, Medienverwaltung
+> Erstelle für jede Kategorie mindestens zwei Beiträge und befülle diese mit Inhalten. Füge den Beiträgen ein Beitragsbild sowie weitere Bilder im Inhalt hinzu.
+> Finde heraus, wie der Weiterlesen-Tag funktioniert.
+> 
+> #### 3. Seiten anlegen und befüllen
+> Lege folgende Seiten an und befulle sie mit Inhalten:
+> - News (Auf dieser Seite sollen die Blog-beiträge angezeigt werden)
+> - Projekt (Allgemeine Informationen über das Projekt)
+> - Team (Kurzes Portrait der Teammitglieder
+> - Kontakt { Kontaktdaten und später Informationen zur Anreise (Google Maps)
+> - Impressum { Alle rechtlich vorgeschriebenen Informationen
+> 
+> #### 4. Hauptmenü erstellen
+> Erstelle ein Hauptmenü (Primäres Menu) und füge die erstellen Seiten in der angegebenen Reihenfolge ein.
+> 
+> #### 5. Benutzerverwaltung und Kommentare
+> Erstelle zwei weitere Benutzer. Log dich mit diesen Benutzernamen ein, um zu den Beitragen Kommentare zu
+verfassen.
+> Verwalte die Kommentare mit dem Admin-Benutzer um sie freizuschalten oder zurückweisen.
+ 
 
 ## Erweitern um Plugins
 
