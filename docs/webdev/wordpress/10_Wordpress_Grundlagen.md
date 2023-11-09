@@ -201,12 +201,91 @@ neusten angezeigt werden sollen, während man Seiten für statische
 Inhalte wie beispielsweise eine Über uns-, Kontakt-, oder
 Impressums-Seite einsetzt.
 
+### Bilder in WordPress
+
+In WordPress können auch **Bilder hochgeladen**, und daraufhin als Inhalte. Dies kann entweder direkt über den Editor
+stattfinden, oder separat über den Menüpunkt **Medien**.
+
+Nach dem Upload erzeugt WordPress **automatisch verschiedene
+Auflösungen** des hochgeladenen Bildes, damit bei besonders großen
+Bildern nicht die originale Auflösung geladen werden muss, wenn das Bild
+auf der Webseite in einer kleinere Auflösung dargestellt wird.
+
+Jedes Bild hat einen Namen, welcher standardmäßig dem Dateinamen der
+hochgeladenen Datei ohne Dateiendung entspricht. Außerdem kann Bildern
+eine Beschriftung gegeben werden, die nach dem einfügen unterhalb des
+Bildes angezeigt wird, sowie eine Beschreibung, die beim überfahren mit
+der Maus angezeigt wird, und ein alternative Text, der in Browsern ohne
+Bilder-Unterstützung angezeigt wird.
+
+Beiträgen kann ein spezielles **Beitragsbild** zugewiesen werden,
+welches dann je nach verwendeten Theme an einer speziellen Position auf
+der Webseite dargestellt wird, sofern das verwendete Theme dies
+unterstützt.
+
+### Kommentare zu den Inhalten
+
+Je nach Einstellungen können **Inhalte von den Besuchern kommentiert**
+werden. Ob es Besuchern erlaubt ist, einen **Kommentar zu
+hinterlassen**, kann für jeden Inhalt individuell eingestellt werden.
+Die Standardeinstellung davon kann in den *Diskussions*-Einstellungen
+von WordPress festgelegt werden.
+
+Außerdem lässt sich in den **Einstellungen** unter Anderem auch
+festlegen, ob alle Besucher oder nur registrierte Benutzer einen
+Kommentar hinterlassen dürfen, ob Besucher beim Kommentieren einen Namen
+und eine Email-Adresse hinterlassen müssen, und ob man auf andere
+Kommentare antworten kann, und Antworten daraufhin verschachtelt werden.
+
+WordPress bietet zudem die Option, dass Kommentare nicht sofort
+öffentlich sichtbar sind, sondern **vor der Veröffentlichung von einem
+Administrator überprüft** und freigeschaltet werden müssen.
+
+Wenn ein Besucher nun einen Kommentar hinterlässt, so bekommt dieser
+daraufhin angezeigt, dass sein Kommentar auf die Freischaltung wartet.
+Ein Administrator kann diesen Kommentar daraufhin in der
+**Kommentar-Moderation** überprüfen, und ihn entweder genehmigen oder als
+Spam markieren.
+
+
+### Benutzer und deren Rollen
+
+Wie für ein CMS typisch, können **in WordPress mehrere Benutzer**
+angelegt und verwaltet werden. Ein frisch installiertes WordPress
+enthält nur den Benutzer namens *Admin*, der die umfassenden
+Administrator-Rechte besitzt. Von diesem Benutzer aus können über den
+Admin-Bereich weitere Benutzer hinzugefügt werden. Alle Benutzer müssen
+einen Namen, eine E-Mail-Adresse sowie eine Rolle haben.
+
+Die *Rolle eines Benutzers* legt fest, welche Rechte dieser hat.
+WordPress kennt von Grund auf folgende Benutzerrollen, mit diesen
+Rechten:
+
+-   Ein **Abonnent** kann nur sein eigenes Profil bearbeiten, und
+    Kommentare über seinen Account hinterlassen.
+
+-   Ein **Mitarbeiter** kann eigene Beiträge erstellen und bearbeiten,
+    diese müssen aber vor der Veröffentlichung durch einen Administrator
+    geprüft werden.
+
+-   Ein **Autor** kann eigene Beiträge erstellen, bearbeiten, und diese
+    eigenständig veröffentlichen oder löschen, sowie Bilder hochladen.
+
+-   Ein **Redakteur** kann alle Beiträge und Seiten ansehen, bearbeiten,
+    veröffentlichen oder löschen, Bilder hochladen, Schlagworte
+    verwalten, und Kommentare moderieren.
+
+-   Ein **Administrator** hat uneingeschränkte Rechte, und kann somit
+    Benutzer hinzufügen, alle Einstellungen ändern, das Theme wechseln
+    und Plugins aktivieren.
+
+
 > ### Aufgabe: Verwaltung von Inhalten in WordPress
 >
 > Es soll eine Website über das Maturaprojekt erstellt werden. Die Website besteht aus verschiedenen aktuellen Beiträgen, die den Projektfortschritt dokumentieren sollen sowie aus einigen statischen Seiten, die allgemeine Informationen zum Projekt darstellen.
 > 
 > #### 1. Kategorien für Beitrage erstellen
-> Erstelle für die Beitrage neben der Kategorie Allgemein mindestens zwei weitere Kategorien, in die sich deine
+> Erstelle für die Beitrage neben der Kategorie `Allgemein` mindestens zwei weitere Kategorien, in die sich deine
 Neuigkeiten zum Projekt einteilen lassen.
 > 
 > #### 2. Beitrage anlegen und befüllen, Medienverwaltung
@@ -214,21 +293,21 @@ Neuigkeiten zum Projekt einteilen lassen.
 > Finde heraus, wie der Weiterlesen-Tag funktioniert.
 > 
 > #### 3. Seiten anlegen und befüllen
-> Lege folgende Seiten an und befulle sie mit Inhalten:
-> - News (Auf dieser Seite sollen die Blog-beiträge angezeigt werden)
-> - Projekt (Allgemeine Informationen über das Projekt)
-> - Team (Kurzes Portrait der Teammitglieder
-> - Kontakt { Kontaktdaten und später Informationen zur Anreise (Google Maps)
-> - Impressum { Alle rechtlich vorgeschriebenen Informationen
+> Lege folgende Seiten an und befülle sie mit Inhalten:
+> - **News** - Auf dieser Seite sollen die Blog-beiträge angezeigt werden
+> - **Projekt** - Allgemeine Informationen über das Projekt
+> - **Team** - Kurzes Portrait der Teammitglieder
+> - **Kontakt** - Kontaktdaten und später Informationen zur Anreise (Google Maps)
+> - **Impressum** - Alle rechtlich vorgeschriebenen Informationen
 > 
 > #### 4. Hauptmenü erstellen
-> Erstelle ein Hauptmenü (Primäres Menu) und füge die erstellen Seiten in der angegebenen Reihenfolge ein.
+> Erstelle ein **Hauptmenü** (Primäres Menu) und füge die erstellen Seiten in der angegebenen Reihenfolge ein.
 > 
 > #### 5. Benutzerverwaltung und Kommentare
-> Erstelle zwei weitere Benutzer. Log dich mit diesen Benutzernamen ein, um zu den Beitragen Kommentare zu
-verfassen.
+> Erstelle zwei weitere Benutzer. Log dich mit diesen Benutzernamen ein, um zu den Beitragen Kommentare zu verfassen.
 > Verwalte die Kommentare mit dem Admin-Benutzer um sie freizuschalten oder zurückweisen.
  
+
 
 ## Erweitern um Plugins
 
