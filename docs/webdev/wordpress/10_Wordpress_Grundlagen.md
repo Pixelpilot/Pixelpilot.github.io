@@ -22,6 +22,17 @@ Ein Content Management System (CMS) ist eine Software, die es ermöglicht, Inhal
 Es ist benutzerfreundlich, flexibel und kostenlos, und es gibt tausende von Themen und Plugins, die es ermöglichen, die Funktionalität und das Aussehen der Website anzupassen. Andere bekannte CMS sind Joomla, Typo3, Drupal oder Shopify.
 
 
+## Lokale Entwicklungsumgebung
+Für die Erstellung einer Website bietet es sich an, auf einer lokalen Entwicklungsumgebung zu arbeiten. Das hat
+mehrere Vorteile:
+- Unabhängigkeit von einer funktionierenden Internetverbindung
+- Keine Gefährdung der Live-Umgebung
+- Steigerung der Geschwindigkeit
+-Einfache Verwaltung der Dateien über das Betriebssystem (kein FTP-Client notwendig)
+- Gängige Systeme wie **MAMP** oder **XAMPP** sind sowohl für Linux, Windows und MacOS verfügbar und beinhalten neben
+einem **Webserver**, der **PHP** interpretieren kann, auch einen **MySQL**-Server.
+
+
 ## Die Wordpress 5-Minuten-Installation
 
 1. Lade Wordpress ([wordpress.org](https://wordpress.org/){:target="_blank"}), und extrahiere den Ordner `wordpress` im `htdocs`-Ordner. Benenne dem Ordner `wp_dein_name` um.
@@ -46,8 +57,10 @@ Es ist benutzerfreundlich, flexibel und kostenlos, und es gibt tausende von Them
 > ### Aufgabe: Installation von Wordpress
 >
 > 1. Führe die Installation wie beschrieben aus
-> 2. Erstelle im Wordpress Backend eine zusätzliche Seite und einen zusätzlichen Blogbeitrag
-> 3. 
+> 2. Trage die benötigten Informationen zur WordPress-Installation ein
+>    - Vergib Blogtitel, Benutzername, Passwort und E-Mailadresse
+>    - Arbeitet man auf einer Installation, die bereits online ist, sollte die Option *Suchmaschinen dürfen diese Website indizieren* während der Entwicklung der Website auf jeden Fall deaktiviert werden!
+> 3. Mache die mit dem Benutzerinterface (Backend) von Wordpress vertraut und erstelle eine zusätzliche Seite und einen zusätzlichen Blogbeitrag
 
 
 
@@ -91,7 +104,7 @@ In Wordpress können mehrere Themes gleichzeitig installiert werden, es kann abe
 > ### Aufgabe: Themes installieren
 > 1. Installiere mehrere Themes und aktiviere sie, um zu sehen, wie sich die Themes auf die Seite auswirken.
 > 2. Passe das Aussehen der Seite mithilfe des `Customizer` an.
-> 3. Installiere das Theme **"OnePress"**
+> 3. Installiere das Theme **"OnePress"**.
 
 
 ### Child-Theme erstellen
@@ -137,33 +150,57 @@ Zudem ermöglicht es eine sicherere und organisierte Art der Theme-Anpassung, da
 ```php
 <?php
 function twentytwentyone_child_styles() {
-    wp_enqueue_style('twentytwentyone-parent-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('twentytwentyone-parent-style', 
+            get_template_directory_uri() . '/style.css');
 }
 add_action('wp_enqueue_scripts', 'twentytwentyone_child_styles');
 ?>
 ```
 
-#### 4. **Child-Theme aktivieren:**
+#### 4. **Vorschaudatei erstellen: (screenshot.png)**
+- Im Child-Theme-Verzeichnis ein Vorschau-Bild für das Child-Theme mit dem Dateinamen `screenshot.png` erstellen.
+
+#### 5. **Child-Theme aktivieren:**
 - Im WordPress-Dashboard zu `Design` &rarr; `Themes` gehen.
 - Das neu erstellte Child-Theme finden und auf `Aktivieren` klicken.
 
-#### 5. **Anpassungen vornehmen:**
+#### 6. **Anpassungen vornehmen:**
 - Sie können jetzt Anpassungen am Child-Theme vornehmen, indem Sie zusätzlichen Code zur `functions.php` hinzufügen oder weitere Template-Dateien im Child-Theme-Verzeichnis erstellen und anpassen.
 
 
 
 > ### Aufgabe: Child-Theme installieren und anpassen
-> 1. Folge der Anleitung und erstelle ein Child-Theme des vorher installierten Themes **OnePress**
-> 2. Erstelle ein Vorschau-Bild für das Child-Theme. Das Bild (1200x900 px) sollte das Aussehen und die Ästhetik des Child-Themes repräsentieren. <br>
-     Speicher das Bild im PNG-Format unter dem Namen `screenshot.png` ab und lege es ins Hauptverzeichnis des Child-Themes.
-
+> Folge der Anleitung und erstelle ein Child-Theme des vorher installierten Themes **OnePress**.
+>
+> Erstelle dazu ein Child-Theme-Verzeichnis mit den notwendigen Dateien und verwende aussagekräftige Beschreibungen und Bilder:
+>    - `style.css`
+>    - `functions.php`
+>    - `screenshot.png`
 
 ## Erstellen von Inhalten
 
-### Pages vs. Posts, ...
+### Pages vs. Posts
+WordPress unterstützt standardmäßig zwei grundlegende **Inhalts-Typen**, nämlich **Seiten (Pages)** und **Beiträge (Posts)**. Bei beiden können die Inhalte mit dem integriertem Webeditor namens TinyMCE bearbeitet werden, entweder im visuellem- oder im HTML-Modus.
 
+#### Bearbeitung der Inhalte
+Während man im HTML-Modus am Quelltext des Inhaltes arbeitet, werden im **visuellen Modus** die Inhalte grafisch dargestellt. Der Text kann dabei über verschiedene Buttons formatiert und ausgerichtet, Überschriften können als solche gekennzeichnet, und diverse Darstellungsformen wie Listen oder Zitate können eingesetzt werden.
 
+Ein solcher visueller Editor wird übrigens als sogenannter **WYSIWYG-Editor** bezeichnet, was die englische Abkürzung für *What You See Is What You Get ist*, und auf deutsch übersetzt so viel bedeutet wie *Du bekommst, was du siehst*.
 
+#### Unterschiedliche Verwendung
+
+Der **Unterschied zwischen Seiten und Beiträgen** besteht darin, dass
+Beiträge im Gegensatz zu Seiten in Kategorien und Schlagworte eingeteilt
+werden können, und in zeitlicher Reihenfolge nacheinander archiviert
+werden.
+
+Daher verwendet man Beiträge in der Regel für zeitabhängige Inhalte wie
+Blogbeiträge oder Neuigkeiten, bei denen den Besuchern immer zuerst die
+neusten angezeigt werden sollen, während man Seiten für statische
+Inhalte wie beispielsweise eine Über uns-, Kontakt-, oder
+Impressums-Seite einsetzt.
+
+> ### Aufgabe: Verwaltung von Inhalten in WordPress
 
 ## Erweitern um Plugins
 
