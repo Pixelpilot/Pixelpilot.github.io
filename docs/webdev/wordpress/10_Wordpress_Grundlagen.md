@@ -159,6 +159,7 @@ add_action('wp_enqueue_scripts', 'twentytwentyone_child_styles');
 
 #### 4. **Vorschaudatei erstellen: (screenshot.png)**
 - Im Child-Theme-Verzeichnis ein Vorschau-Bild für das Child-Theme mit dem Dateinamen `screenshot.png` erstellen.
+- WordPress empfiehlt eine Abmessung von `1200 x 900 px`
 
 #### 5. **Child-Theme aktivieren:**
 - Im WordPress-Dashboard zu `Design` &rarr; `Themes` gehen.
