@@ -11,7 +11,7 @@ layout: default
 
 Es soll ein einfacher Blog umgesetzt werden.
 
-![Beispielhafte Umsetzung](./img/portfolio_html.png)
+![Beispielhafte Umsetzung](./img/portfolio_html.jpg)
 *Beispielhafte Umsetzung*
 
 ### 1. Thema

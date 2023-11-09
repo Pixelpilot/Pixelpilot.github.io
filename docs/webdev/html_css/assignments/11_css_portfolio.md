@@ -11,7 +11,7 @@ layout: default
 
 Der bereits erstellte HTML-Blog soll mittels Stylesheets anschaulich dargestellt werden. Der Fantasie sind keine Grenzen gesetzt:
 
-![Beispielhafte Umsetzung](img/portfolio_css.png)
+![Beispielhafte Umsetzung](img/portfolio_css.jpg)
 *Beispielhafte Umsetzung*
 
 ### 1. Einbinden der Dateien

@@ -68,7 +68,6 @@ h2:not(.project-tagline):not(.noline) {
 }
 
 
-
 a.link_home {
   color: rgba(255,255,255,.7);
 }
@@ -85,8 +84,6 @@ a.link_home {
   margin-top: 5rem;
   padding-top: 0;
 }
-
-
 
 .sitemap_topic:before {
   display: inline-block;
@@ -106,4 +103,19 @@ div.headline {
 
 h4 {
   margin-top: 40px;
+}
+
+.main-content blockquote:before{
+  content: '🖋';
+  font-size: 3rem;
+  display: flex;
+}
+
+.main-content blockquote {
+  padding: 1rem;
+  border: 0.1rem solid #dce6f0;
+  border-left: 0.3rem solid #dce6f0;
+  background-color: rgba(220, 230, 240,.25);
+  border-radius: 0.3rem;
+  margin-right: 0;
 }

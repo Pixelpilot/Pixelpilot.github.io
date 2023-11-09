@@ -27,7 +27,7 @@ werden.
 
 Die Seite ist mit CSS ansprechend zu gestalten.
 
-![Beispielhafte Umsetzung](img/forms.png)
+![Beispielhafte Umsetzung](img/forms.jpg)
 *Beispielhafte Umsetzung (Design und Inhalt können gerne adaptiert werden)*
 
 ### 3. Zusatz
