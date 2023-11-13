@@ -1,9 +1,9 @@
 ---
-title: Beta - Erstellen einer Website mit Wordpress
-description: Wordpress – Verwendung eine CMS
+title: Beta - Erstellen einer Website mit WordPress
+description: WordPress – Verwendung eine CMS
 
 category: Webentwicklung
-topic: Wordpress
+topic: WordPress
 subtopic: Installation und Entwicklungsumgebung
 
 sitemap_exclude: n
@@ -11,7 +11,7 @@ sitemap_exclude: n
 layout: default
 ---
 
-# Beta - Wordpress
+# Beta - WordPress
 
       Achtung! Diese Seite befindet sich gerade in der Erstellung und kann jederzeit geändert werden
 
@@ -33,9 +33,9 @@ mehrere Vorteile:
 einem **Webserver**, der **PHP** interpretieren kann, auch einen **MySQL**-Server.
 
 
-## Die Wordpress 5-Minuten-Installation
+## Die WordPress 5-Minuten-Installation
 
-1. Lade Wordpress ([wordpress.org](https://wordpress.org/){:target="_blank"}), und extrahiere den Ordner `wordpress` im `htdocs`-Ordner. Benenne dem Ordner `wp_dein_name` um.
+1. Lade WordPress ([wordpress.org](https://wordpress.org/){:target="_blank"}), und extrahiere den Ordner `wordpress` im `htdocs`-Ordner. Benenne dem Ordner `wp_dein_name` um.
 2. Verzeichnisrechte ändern (**ACHTUNG: Nur während der Entwicklung!!!**)
     ```
     #!/bin/bash
@@ -45,7 +45,7 @@ einem **Webserver**, der **PHP** interpretieren kann, auch einen **MySQL**-Serve
 3. Unter `http://localhost/phpmyadmin` eine Datenbank anlegen
 4. 5-Minuten-Installation starten unter `http://localhost/wp_dein_name/`
    - Datenbankzugangsdaten eingeben
-   - Wordpress-Zugangsdaten vergeben
+   - WordPress-Zugangsdaten vergeben
    - Einloggen
 5. FTP-Modus ändern
     ```
@@ -54,13 +54,13 @@ einem **Webserver**, der **PHP** interpretieren kann, auch einen **MySQL**-Serve
     ```
 
 
-> ### Aufgabe: Installation von Wordpress
+> ### Aufgabe: Installation von WordPress
 >
 > 1. Führe die Installation wie beschrieben aus
 > 2. Trage die benötigten Informationen zur WordPress-Installation ein
 >    - Vergib Blogtitel, Benutzername, Passwort und E-Mailadresse
 >    - Arbeitet man auf einer Installation, die bereits online ist, sollte die Option *Suchmaschinen dürfen diese Website indizieren* während der Entwicklung der Website auf jeden Fall deaktiviert werden!
-> 3. Mache die mit dem Benutzerinterface (Backend) von Wordpress vertraut und erstelle eine zusätzliche Seite und einen zusätzlichen Blogbeitrag
+> 3. Mache die mit dem Benutzerinterface (Backend) von WordPress vertraut und erstelle eine zusätzliche Seite und einen zusätzlichen Blogbeitrag
 
 
 
@@ -99,7 +99,7 @@ Themes bestimmen das Aussehen einer WordPress-Seite, während der Inhalt unabhä
 
 ### Themes installieren
 
-In Wordpress können mehrere Themes gleichzeitig installiert werden, es kann aber nur immer ein Theme aktiv sein.
+In WordPress können mehrere Themes gleichzeitig installiert werden, es kann aber nur immer ein Theme aktiv sein.
 
 > ### Aufgabe: Themes installieren
 > 1. Installiere mehrere Themes und aktiviere sie, um zu sehen, wie sich die Themes auf die Seite auswirken.
@@ -109,7 +109,7 @@ In Wordpress können mehrere Themes gleichzeitig installiert werden, es kann abe
 
 ### Child-Theme erstellen
 
-Child-Themes in WordPress bieten die Möglichkeit, ein Theme anzupassen, ohne den ursprünglichen Code des Eltern-Themes zu ändern. Dadurch bleiben Anpassungen beim Aktualisieren des Eltern-Themes erhalten, was die Wartung und Aktualisierung erleichtert. 
+[Child-Themes](https://developer.wordpress.org/themes/advanced-topics/child-themes/){:target="_blank"} in WordPress bieten die Möglichkeit, ein Theme anzupassen, ohne den ursprünglichen Code des Eltern-Themes zu ändern. Dadurch bleiben Anpassungen beim Aktualisieren des Eltern-Themes erhalten, was die Wartung und Aktualisierung erleichtert. 
 
 Zudem ermöglicht es eine sicherere und organisierte Art der Theme-Anpassung, da Entwickler und Designer Änderungen und Anpassungen in einer isolierten Umgebung vornehmen können, was dazu beiträgt, das Risiko von Fehlern und Konflikten mit dem Haupttheme zu minimieren.
 
@@ -306,25 +306,130 @@ Neuigkeiten zum Projekt einteilen lassen.
 > #### 5. Benutzerverwaltung und Kommentare
 > Erstelle zwei weitere Benutzer. Log dich mit diesen Benutzernamen ein, um zu den Beitragen Kommentare zu verfassen.
 > Verwalte die Kommentare mit dem Admin-Benutzer um sie freizuschalten oder zurückweisen.
- 
 
 
 ## Erweitern um Plugins
 
-### Verwaltung von Medien
+### Das Plugins-System von WordPress
+Das System der Plugins in WordPress ermöglicht es Nutzern, die Funktionalität ihrer Website zu erweitern und anzupassen, ohne direkt im Code der Website arbeiten zu müssen. Plugins sind im Wesentlichen Zusatzmodule, die man zu einer WordPress-Website hinzufügen kann, um spezifische Funktionen oder Features bereitzustellen. Dies kann von einfachen Anpassungen wie Kontaktformularen und SEO-Tools bis hin zu komplexen Funktionen wie E-Commerce-Plattformen oder Sicherheitslösungen reichen.
 
-### Google Maps
+Man installiert ein Plugin über das WordPress-Dashboard, und nach der Aktivierung fügt es die jeweilige Funktionalität zur Website hinzu. Plugins können je nach Bedarf aktiviert, deaktiviert oder gelöscht werden. Sie bieten eine flexible und benutzerfreundliche Möglichkeit, die Leistungsfähigkeit und Vielseitigkeit einer WordPress-Website zu steigern.
 
-### Suchmaschinenoptimierung
+Aktuell (13.11.2023) gibt es ca. 60.000 Plugins im offiziellen [offiziellen WordPress-Plugin-Verzeichnis](https://wordpress.org/plugins/){:target="_blank"}.
+
+### Ausgewählte WordPress Plugins
+Die Auswahl der wichtigsten WordPress-Plugins kann je nach den spezifischen Anforderungen und Zielen deiner Website variieren. Allerdings gibt es einige grundlegende Plugins, die allgemein als essenziell für die meisten WordPress-Seiten angesehen werden:
+
+1. **Yoast SEO oder All in One SEO Pack**: Diese Plugins helfen bei der Suchmaschinenoptimierung (SEO) deiner Website, indem sie Funktionen wie Meta-Tags, Sitemaps und nützliche Tipps zur Verbesserung des Inhalts bieten.
+
+2. **Jetpack**: Ein vielseitiges Plugin, das Funktionen wie Sicherheitsmaßnahmen, Performance-Verbesserungen, Website-Statistiken und Bildoptimierung bietet.
+
+3. **Akismet Anti-Spam**: Dieses Plugin hilft dabei, Spam in Kommentaren und Kontaktformularen zu filtern und zu verhindern.
+
+4. **Wordfence Security oder Sucuri Security**: Diese Plugins bieten Sicherheitsfunktionen wie Firewall-Schutz, Malware-Scan und Sicherheitsüberwachung.
+
+5. **WooCommerce**: Wenn du einen Online-Shop betreiben möchtest, ist WooCommerce das führende E-Commerce-Plugin für WordPress.
+
+6. **WPForms oder Contact Form 7**: Für die Erstellung benutzerfreundlicher Kontaktformulare.
+
+7. **UpdraftPlus oder BackupBuddy**: Diese Plugins bieten Lösungen für die regelmäßige Sicherung deiner Website.
+
+8. **WP Super Cache oder W3 Total Cache**: Diese Plugins verbessern die Geschwindigkeit und Performance deiner Website durch Caching.
+
+9. **Elementor oder Beaver Builder**: Beliebte Page-Builder-Plugins, die ein einfaches Drag-and-Drop-Interface zur Gestaltung von Seiten bieten.
+
+10. **Smush oder EWWW Image Optimizer**: Diese Plugins helfen dabei, die Größe von Bildern zu reduzieren und somit die Ladezeiten der Seite zu verbessern.
+
+Es ist wichtig, nicht zu viele Plugins zu installieren, da dies die Website verlangsamen kann. Wähle Plugins, die spezifisch für die Bedürfnisse und Ziele deiner Website sind.
+
+> ### Aufgabe: Verwaltung von Plugins
+>
+> Die Seite soll um gewisse Funktionalitäten erweitert werden. Suche und test dazu entsprechende Plugins, um diese Funktionalität zu erreichen:
+>
+> #### 1. Sicherung der Website
+> Suche ein Plugin, das es ermöglicht die Website in regelmäßigen Abständen zu sichern. Mithilfe dieses Tools soll es auch einfach möglich sein, die gesamte WordPress-Installation auf einen anderen Server zu transferieren. 
+> 
+> Verwende dieses Plugin, um nach jeder Stunde ein Backup zu erstellen. Speichere anschließend dieses Backup auf einem deiner Speichermedien (OneDrive, ...).
+> 
+> #### 2. Verwaltung von Medien
+> Die Medienverwaltung von WordPress wird sehr schnell unübersichtlich. Suche ein Plugin, das es ermöglicht Medien in verschiedene Kategorien einzuteilen. Lege folgende Kategorien an und sortiere die Bilder richtig ein:
+> - Kontakt (Portraits, \...)
+> - Projekt
+> - News
+> - ...
+> 
+> #### 3. Bildergalerie für Medien
+> Es sollen mehrere Bilder in einer Bildergalerie dargestellt werden. Bei einem
+Klick auf ein Bild soll dieses bildschirmfüllend dargestellt werden. Befinden sich mehrere Bilder auf
+einer Seite, so soll es möglich sein, sich durch die Bilder zu klicken. Vergib Bilduntertitel und stelle sicher, dass diese sauber angezeigt werden.
+> 
+> #### 4. Einbinden von Quelltext
+> Suche ein Plugin, das es ermöglicht Quelltext in Seiten und Blogbeiträgen einzubinden. Teste das Plugin mit
+Quelltext aus den Sprachen:
+> - CSS
+> - HTML
+> - JavaScript
+> - PHP
+> - Java
+>
+> #### 5. Tabellen
+> Suche ein Plugin, das es ermöglicht Tabellen in Seiten und Blogbeiträgen einzubinden. Benutze das Plugin,
+um die Kontaktinformationen auf der Seite Kontakt formatiert darzustellen.
+> 
+> #### 6. Erstellen eines Kontaktformulars
+> Suche ein Plugin, das es ermöglicht Formulare in Seiten
+und Blogbeiträgen einzubinden. Benutze das Plugin, um auf der Seite
+*Kontakt* ein Kontaktformular zu erstellen. Folgende Funktionalität
+sollte gegeben sein:
+> 
+> - Überprüfung der Eingaben (Pflichtfelder ausgefüllt, \...)
+> - Anzeigen einer Bestätigungs-Seite, wenn das Formular abgeschickt wurde
+> - Speichern der abgesendeten Formulardaten in der Datenbank
+> - E-Mail Benachrichtigung an den Benutzer der Website
+> - E-Mail Benachrichtigung an den Administrator der Website
+>
+> #### 7. Suchmaschinenoptimierung
+> Suche ein Plugin, das es ermöglicht die Seite auf Suchmaschinentauglichkeit hin zu optimieren. Passe die Einstellungen und die Inhalte auf der Website entsprechend an.
+
+## Website Transfer auf einen externen Anbieter
+
+Damit die Website von aussen erreicht werden kann soll sie auf einen externen Anbieter transferiert werden.
+
+> ### Aufgabe: Transfer auf einen externen Server
+> 
+> #### 1. Auswahl des Anbieters
+> Suche dir einen Anbieter, der die Anforderungen für das Hosten einer WordPress-Seite erfüllt.
+> 
+> Hier einige beliebte kostenlose Anbieter:
+> - [000Webhost](https://de.000webhost.com/){:target="_blank"}
+> - [InfinityFree](https://www.infinityfree.com/){:target="_blank"}
+> - [Byet.host](https://byet.host/){:target="_blank"}
+> 
+> Viele andere Anbieter, wie z.B. [INONS](https://www.ionos.at/){:target="_blank"} bieten oft einen großzügigen Kündigungszeitraum an.
+> 
+> #### 2. Durchführen des Transfers
+> Transferiere die lokale WordPress-Installation auf den gewählten Server. Verwende dazu eventuell ein Plugin, oder führe den Transfer manuell durch:
+> - Transfer der Dateien mittels FTP-Client
+> - Export der lokalen Datenbank über phpMyAdmin
+> - Import der exportierten Datenbank auf dem Server
+> - Anpassen der relevanten Einträge in der Datenbank
+
+
+## Abgabe
+
+Die Abgabe erfolgt über eine URL der fertigen Website. 
+Die Seite kann auf einem beliebigen Anbieter gehostet werden:
+
+* URL zur Website
+* URL zum Administrations-Interface von Wordpress
+* Benutzername und Passwort eines Administratorzugangs
 
 
 
 ## Ressourcen
-* [mozilla.org - alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert){:target="_blank"}
-* [mozilla.org - prompt()](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt){:target="_blank"}
-* [mozilla.org - confirm()](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm){:target="_blank"}
-* [mozilla.org - parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt){:target="_blank"}
-* [mozilla.org - Math.random()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/random){:target="_blank"}
-* [mozilla.org - Math.floor()](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Math/floor){:target="_blank"}
-* [mozilla.org - Document.write()](https://developer.mozilla.org/en-US/docs/Web/API/Document/write){:target="_blank"}
-* [mozilla.org - Document.writeln()](https://developer.mozilla.org/en-US/docs/Web/API/Document/writeln){:target="_blank"}
+* [wordpress.org - Offizielle Seite](https://wordpress.org/){:target="_blank"}
+* [developer.wordpress.org - Child Themes](https://developer.wordpress.org/themes/advanced-topics/child-themes/){:target="_blank"}
+* [developer.wordpress.org - Tools and Resources](https://developer.wordpress.org/themes/basics/tools-resources/){:target="_blank"}
+* [github.com - Create Block Theme Plugin](https://github.com/WordPress/create-block-theme){:target="_blank"}
+* [www.smashingmagazine.com - WordPress Blog](https://www.smashingmagazine.com/category/wordpress/){:target="_blank"}
+* [yoast.com - Suchmaschinenoptimierung für WordPress](https://yoast.com/wordpress-seo/){:target="_blank"}
