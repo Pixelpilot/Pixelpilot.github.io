@@ -1,5 +1,5 @@
 ---
-title: Beta - Erstellen einer Website mit WordPress
+title: Erstellen einer Website mit WordPress
 description: WordPress – Verwendung eine CMS
 
 category: Webentwicklung
@@ -11,9 +11,9 @@ sitemap_exclude: n
 layout: default
 ---
 
-# Beta - WordPress
+# Erstellen einer Website mit WordPress
 
-      Achtung! Diese Seite befindet sich gerade in der Erstellung und kann jederzeit geändert werden
+Es wird auf die Grundlagen zur Erstellung einer Website mittels WordPress eingegangen.
 
 ## Content Management Systeme
 
