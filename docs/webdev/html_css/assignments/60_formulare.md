@@ -54,5 +54,7 @@ Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blan
 ## Ressourcen
 
 * [w3schools.com - Formulare](https://www.w3schools.com/html/html_forms.asp){:target="_blank"}
+* [Mozilla.org - Das Form-Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form){:target="_blank"}
+* [Mozilla.org - Die Input-Elemente](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input){:target="_blank"}
 * [Mozilla.org - Positionierung mit CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning){:target="_blank"}
 * [Mozilla.org - Beginners Guide to Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries){:target="_blank"}
