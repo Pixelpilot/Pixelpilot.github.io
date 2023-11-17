@@ -20,7 +20,7 @@ Das Formular muss mindestens folgende Felder enthalten:
 * Abschicken Button
 * Zurücksetzen Button
 
-Die Formulardaten sollen per post an `http://services.htl-futurezone.at/checkform/` geschickt  werden. Mit dieser URL kann einfach überprüft werden, ob die Inhalte aller Elemente richtig übergeben
+Die Formulardaten sollen per post an `https://services.htl-futurezone.at/checkform/` geschickt  werden. Mit dieser URL kann einfach überprüft werden, ob die Inhalte aller Elemente richtig übergeben
 werden.
 
 ### 2. Aussehen mit CSS
