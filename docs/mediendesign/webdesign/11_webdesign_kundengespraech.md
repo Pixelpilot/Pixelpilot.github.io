@@ -21,7 +21,7 @@ layout: default
 > #### Aufgabe: Kickoff-Meeting und Besprechungsprotokoll
 > Ein Kunde lädt zu einem Pitch ein und schickt [untenstehendes E-Mail](#e-mail-anfrage-durch-den-kunden) an deine Agentur.
 >
-> Bereite Fragen für das erste Treffen vor, damit anschließend folgende Punkte klar sind und ein Konzept, Angebot und ein erstes Design erstellt werden können.
+> Bereite Fragen für das erste Treffen vor, damit anschließend folgende Punkte klar sind, und ein Konzept, ein Angebot und ein erstes Design erstellt werden können.
 >
 > - Funktionelle Anforderungen
 > - Inhaltliche Anforderungen
@@ -30,7 +30,7 @@ layout: default
 > - Weitere Vorgehensweise
 > - ...
 >
->Führe das Gespräch anhand der vorbereiteten Fragen durch und halte die Ergebnisse in einem [Besprechugsprotokoll](#beispielhafte-struktur-eines-besprechungsprotokolls) schriftlich fest.
+>Führe das Gespräch anhand der vorbereiteten Fragen durch und halte die Ergebnisse in einem [Besprechungsprotokoll](#beispielhafte-struktur-eines-besprechungsprotokolls) schriftlich fest.
 
 #### E-Mail-Anfrage durch den Kunden
 

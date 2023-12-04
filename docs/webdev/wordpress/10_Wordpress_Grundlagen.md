@@ -405,7 +405,7 @@ Damit die Website von aussen erreicht werden kann soll sie auf einen externen An
 > - [InfinityFree](https://www.infinityfree.com/){:target="_blank"}
 > - [Byet.host](https://byet.host/){:target="_blank"}
 > 
-> Viele andere Anbieter, wie z.B. [INONS](https://www.ionos.at/){:target="_blank"} bieten oft einen großzügigen Kündigungszeitraum an.
+> Viele andere Anbieter, wie z.B. [IONOS](https://www.ionos.at/){:target="_blank"} bieten oft einen großzügigen Kündigungszeitraum an.
 > 
 > #### 2. Durchführen des Transfers
 > Transferiere die lokale WordPress-Installation auf den gewählten Server. Verwende dazu eventuell ein Plugin, oder führe den Transfer manuell durch:
