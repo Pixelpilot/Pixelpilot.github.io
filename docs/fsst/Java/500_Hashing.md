@@ -24,7 +24,7 @@ class HashTableEntry {
 }
 ```
 
-```
+```java
 class HashTable {
 private HashTableEntry[] table;
     public HashTable(int M) {
