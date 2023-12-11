@@ -11,7 +11,7 @@ layout: default
 sitemap_exclude: n
 ---
 
-# {{ page.title }}
+# {{ page.title }} 
 
 ## 1. HashTable und HashTableEntry 
 
