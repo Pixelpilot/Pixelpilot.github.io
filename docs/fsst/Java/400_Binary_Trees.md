@@ -130,11 +130,13 @@ Erstelle Methoden, um alle Elemente im Baum auszugeben. Verwende die unterschied
 
 ### 4.2 Level-Order Traversal (iterativ)
 Überlege wie ein Baum in der level-order Reihenfolge ausgegeben werden kann. 
-Hinweis: Verwende  eine Liste als Zwischenspeicher (z.B. ArrayList).
+
+*Hinweis:* Verwende  eine Liste als Zwischenspeicher (z.B. ArrayList).
 
 ### 4.3 Pre-Order Traversal (iterativ)
 Gib einen Baum in pre-order Reihenfolge aus ohne Rekursion zu verwenden. 
-Hinweis: Verwende einen Stack.
+
+*Hinweis:* Verwende einen Stack.
 
 ### 4.4 In-Order Traversal (iterativ)
 Gib einen Baum in in-order Reihenfolge aus ohne Rekursion zu verwenden.
@@ -148,8 +150,7 @@ Erstelle eine Methode `count()`, die die Anzahl der Nodes im Baum (rekursiv/iter
 ### 5.2 Höhe des Baumes (rekursiv/iterativ)
 Erstelle eine Methode `height()`, die die Höhe des Baums (rekursiv/iterativ) ermittelt.
 
-Die Höhe ist maximalen Abstand zwischen der Wurzel und einem Blattknoten. Der leere Baum hat Höhe 0, ein Baum
-mit nur einem Knoten Höhe 1, usw.
+Die Höhe ist maximalen Abstand zwischen der Wurzel und einem Blattknoten. Der leere Baum hat Höhe 0, ein Baum mit nur einem Knoten Höhe 1, usw.
 
 ### 5.3 Ermittle die Tiefe eines Nodes (iterativ)
 Erstelle eine Methode `depth()`, die die Tiefe eines Nodes im Baum (iterativ) ermittelt.
