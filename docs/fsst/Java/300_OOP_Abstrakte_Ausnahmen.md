@@ -3,7 +3,7 @@ title: Ausnahmen, Statische Variablen und Methoden, Vererbung und Polymorphismus
 description: Beispiel
 
 category: Fachspezifische Softwaretechnik
-topic: Programmieren in Java - Testvorbereitung
+topic: Programmieren in Java - Objektorientierte Programmierung
 subtopic: Divers
 
 layout: default

@@ -60,30 +60,56 @@ Teste beide Verfahren für eine Tabellengröße $$ \text{m} = 13 $$ und den Sch
 ## 3. Key Value
 Schreibe ein Programm das mit Hilfe einer Hashtabelle key/value-Paare verwalten kann. Wobei der `key` ein Text und `value` ein ganzzahliger Wert ist. 
 
-Das heißt einem Text wird eine Zahl zugeordnet, z.B.: Land &rarr; Einwohner. `Key` = `String`, `Value` = `int`. Verwende **separate chaining** für die Kollisionsbehandlung.
+Das heißt einem Text wird eine Zahl zugeordnet, z.B.: Land &rarr; Einwohner. `Key` = `String`, `Value` = `int`. Verwende eine Tabellengröße von $$ \text{m} = 7 $$ und **separate chaining** für die Kollisionsbehandlung.
 
 
-Beispielhafte Einträge:
-1. Land &rarr; Einwohnerzahl (z.B. Deutschland &rarr; 83 Millionen)
-1. Gebäude &rarr; Stockwerke (z.B. Eiffelturm &rarr; 3 Stockwerke)
-1. Auto &rarr; PS (z.B. Audi A4 &rarr; 190 PS)
-1. Fluss &rarr; Länge in km (z.B. Rhein &rarr; 1230 km)
-1. Berg &rarr; Höhe in Metern (z.B. Mount Everest &rarr; 8848 m)
-1. Stadt &rarr; Fläche in km² (z.B. Berlin &rarr; 891,8 km²)
-1. Unternehmen &rarr; Mitarbeiterzahl (z.B. Google &rarr; 135000 Mitarbeiter)
-1. Buch &rarr; Seitenzahl (z.B. „Harry Potter und der Stein der Weisen“ &rarr; 223 Seiten)
-1. Film &rarr; Laufzeit in Minuten (z.B. Titanic &rarr; 195 Minuten)
-1. Album &rarr; Anzahl der Lieder (z.B. Thriller von Michael Jackson &rarr; 9 Lieder)
-1. Universität &rarr; Anzahl der Studenten (z.B. Harvard &rarr; 22000 Studenten)
-1. Flugzeug &rarr; Sitzplätze (z.B. Airbus A380 &rarr; 853 Sitzplätze)
-1. Insel &rarr; Bevölkerungsdichte pro km² (z.B. Malta &rarr; 1366 Einwohner/km²)
-1. Ozean &rarr; Tiefe in Metern (z.B. Pazifik &rarr; 10911 m)
-1. Computer &rarr; Speicherkapazität in GB (z.B. MacBook Pro &rarr; 512 GB)
-1. Spiel &rarr; Anzahl der Level (z.B. Super Mario Bros. &rarr; 32 Level)
-1. Gemälde &rarr; Alter in Jahren (z.B. Mona Lisa &rarr; 517 Jahre)
-1. Sportverein &rarr; Anzahl der Mitglieder (z.B. FC Barcelona &rarr; 144000 Mitglieder)
-1. Krankheit &rarr; Inkubationszeit in Tagen (z.B. Masern &rarr; 14 Tage)
-1. Brücke &rarr; Länge in Metern (z.B. Golden Gate Bridge &rarr; 2737 m)
+```java
+/**
+ * Funktion zum Befüllen der Hash-Table mit key-value-Paaren
+ * @param table Hash-Table, die befüllt werden soll
+ */
+public static void feedTable ( HashTable table ){
+    table.put(new HashTableEntry("Indien", 1425000000));
+    table.put(new HashTableEntry("China", 1425000000));
+    table.put(new HashTableEntry("USA", 333000000));
+    table.put(new HashTableEntry("Indonesien", 275000000));
+    table.put(new HashTableEntry("Pakistan", 235000000));
+    table.put(new HashTableEntry("Nigeria", 218000000));
+    table.put(new HashTableEntry("Brasilien", 215000000));
+    table.put(new HashTableEntry("Bangladesch", 171000000));
+    table.put(new HashTableEntry("Russland", 143000000));
+    table.put(new HashTableEntry("Mexiko", 127000000));
+    table.put(new HashTableEntry("Japan", 125000000));
+    table.put(new HashTableEntry("Äthiopien", 123000000));
+    table.put(new HashTableEntry("Philippinen", 115000000));
+    table.put(new HashTableEntry("Ägypten", 111000000));
+    table.put(new HashTableEntry("Kongo (Dem Rep)", 99000000));
+    table.put(new HashTableEntry("Vietnam", 98000000));
+    table.put(new HashTableEntry("Iran", 88000000));
+    table.put(new HashTableEntry("Türkei", 85000000));
+    table.put(new HashTableEntry("Deutschland", 84000000));
+    table.put(new HashTableEntry("Thailand", 71000000));
+    table.put(new HashTableEntry("Frankreich", 67000000));
+    table.put(new HashTableEntry("Vereinigtes Königreich", 67000000));
+    table.put(new HashTableEntry("Tansania", 65000000));
+    table.put(new HashTableEntry("Südafrika", 59000000));
+    table.put(new HashTableEntry("Italien", 58000000));
+    table.put(new HashTableEntry("Myanmar", 54000000));
+    table.put(new HashTableEntry("Kenia", 54000000));
+    table.put(new HashTableEntry("Kolumbien", 51000000));
+    table.put(new HashTableEntry("Südkorea", 51000000));
+}
+```
+
+Erstelle in der Klasse `HashTable` die Methode `print()`, die den Inhalt der Hash-Table ausgibt (pro Index eine Zeile). Teste verschiedene Tabellengrößen.
+
+```
+[ 0] Japan:378000 -| 
+[ 1] Deutschland:357600 -> Vereinigtes Königreich:243600 -> Südafrika:1219100 -| 
+[ 2] null
+[ 3] China:9562900 -> USA:9525100 -> Ägypten:1001500 -> Türkei:785400 -| 
+```
+*Beispielhafte Ausgabe der Methode `print()`*
 
 
 ## 4. Wörter zählen
