@@ -1,2 +1,15 @@
 repository: pixelpilot/pixelpilot.github.io
 theme: jekyll-theme-cayman
+
+categories-order:
+  - Fachspezifische Softwaretechnik
+  - Webentwicklung
+  - Mediendesign
+
+topics-order-Webentwicklung:
+  - HTML und CSS
+  - Javascript Teil 1
+  - Javascript Teil 2
+  - Grundlagen von PHP
+  - WordPress
+

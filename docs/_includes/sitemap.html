@@ -1,10 +1,10 @@
 <div class="sitemap">
-    {% assign categories = site.pages | group_by: 'category' %}
+    {% assign categories = site.pages | group_by: 'category' | sort: 'name'%}
     {% for category in categories %}
     {% if category.name != "" %}
     <h2 id="{{ category.name }}">{{ category.name }}</h2>
     {% endif %}
-    {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' %}
+    {% assign topics = site.pages | where: 'category', category.name | group_by: 'topic' | sort: 'name'%}
     {% for topic in topics %}
     {% if topic.name != "" %}
     <h3 id="{{topic.name}}">{{topic.name}}</h3>
