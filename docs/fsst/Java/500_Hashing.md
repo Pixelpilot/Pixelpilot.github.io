@@ -111,7 +111,7 @@ Erstelle in der Klasse `HashTable` die Methode `print()`, die den Inhalt der Has
 [ 2] null
 [ 3] China:9562900 -> USA:9525100 -> Ägypten:1001500 -> Türkei:785400 -| 
 ```
-*Beispielhafte Ausgabe der Methode `print()`*
+<sup>*Beispielhafte Ausgabe der Methode `print()`*</sup>
 
 Verwende die Methode `get()` der Klasse `HashTable`, um nach bestimmten Schlüsseln zu suchen:
 ```
