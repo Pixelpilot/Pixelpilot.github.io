@@ -53,9 +53,11 @@ private HashTableEntry[] table;
 
 ## 2. Text-Hashing
 
-Implementiere **sum-** und **shiftet-sum-Hashing** für Strings. Überschreibe dazu in der Klasse `HashTableEntry` die Methode `int hashCode()`, die in der Klasse `Object` definiert ist.
+Implementiere **sum-** und **shiftet-sum-Hashing** für Strings. Überschreibe dazu in der Klasse `HashTableEntry` die Methode `int hashCode()`, die in der Klasse `Object` definiert ist. 
 
-Teste beide Verfahren für eine Tabellengröße $$ \text{m} = 13 $$ und den Schlüsseln `"ANDI"`, `"INDA"`, `"SUSI"`, `"OTTO"`.
+Als Schlüssel wird `String key` in der Klasse `HashTableEntry` verwendet, der `value` bleibt vorerst leer oder kann entfernt werden.
+
+Teste beide Verfahren für eine Tabellengröße $$ \text{m} = 13 $$ und den Schlüsseln `"ANDI"`, `"INDA"`, `"SUSI"`, `"OTTO"`. Erstelle in der Klasse `HashTable` die Methode `print()` um die Tabelle auszugeben.
 
 ## 3. Key Value
 Schreibe ein Programm das mit Hilfe einer Hashtabelle key/value-Paare verwalten kann. Wobei der `key` ein Text und `value` ein ganzzahliger Wert ist. 
@@ -111,6 +113,11 @@ Erstelle in der Klasse `HashTable` die Methode `print()`, die den Inhalt der Has
 ```
 *Beispielhafte Ausgabe der Methode `print()`*
 
+Verwende die Methode `get()` der Klasse `HashTable`, um nach bestimmten Schlüsseln zu suchen:
+```
+String[] search = {"Deutschland", "China", "Luxemburg"};
+```
+
 
 ## 4. Wörter zählen
 Ermittle für eine Textdatei:
@@ -120,7 +127,7 @@ Ermittle für eine Textdatei:
 - Die Ausführungszeit
 
 Untersuche zwei Verfahren:
-1. Array mit linearer Suche.
+1. ArrayList mit linearer Suche
 2. Hashing
 
 
@@ -174,7 +181,11 @@ public class ReadWordsFromFile {
                 }
                 // string s contains a word now
                 words++;
-                //System.out.println(s);
+               
+                // TODO: Wörter der ArrayList bzw der HashTable hinzufügen
+                
+                // System.out.println(s);
+                
             }
             System.out.println(words + " words");
             inputFile.close();
