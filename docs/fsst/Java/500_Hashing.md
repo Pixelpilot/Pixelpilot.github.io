@@ -175,16 +175,18 @@ public class ReadWordsFromFile {
             while (inputFile.hasNext()) {
                 s = inputFile.next();
                 s = s.replaceAll("[^\\p{L}]", ""); // Satzzeichen etc. entfernen
-                s = s.trim(); // remove white space
+                s = s.trim(); // Leerzeichen entfernen
                 if (s.length() == 0) {
-                    continue; // ignore empty strings
+                    continue; // Leerstring ignorieren
                 }
-                // string s contains a word now
+                // Im String s ist nun das Wort enthalten
+                // System.out.println(s);
+                
+                // Anzahl der Wörter erhöhen    
                 words++;
                
                 // TODO: Wörter der ArrayList bzw der HashTable hinzufügen
-                
-                // System.out.println(s);
+                // ...
                 
             }
             System.out.println(words + " words");
