@@ -121,7 +121,7 @@ String[] search = {"Deutschland", "China", "Luxemburg"};
 
 ## 4. Wörter zählen
 
-**Anforderung**
+#### Anforderungen
 
 Ermittle für eine Textdatei:
 
@@ -131,15 +131,15 @@ Ermittle für eine Textdatei:
   - das Einlesen und Speichern der Daten
   - das Suchen nach bestimmten Wörtern
 
-Untersuche zwei Verfahren und vergleiche die beiden:
+#### Untersuche zwei Verfahren und vergleiche die beiden
 
-1. Speichern der Wörter in einer **ArrayList** <br>Lineare Suche
-2. Speichern der Wörter in einer **HashTable** <br> Teste unterschiedliche Größen der HashMap<br> ($$M=10$$, $$M=1000$$, $$M=100000$$, $$M=10000000$$)
+1. ** Speichern der Wörter in einer ArrayList** <br>Lineare Suche
+2. ** Speichern der Wörter in einer HashTable** <br> Teste unterschiedliche Größen der HashMap<br> ($$M=10$$, $$M=1000$$, $$M=100000$$, $$M=10000000$$)
 
 Es empfiehlt sich für `M` und die Anzahl der Suchabfragen in einer Konstante zu speichern.
 
 
-**Messen der Laufzeit**
+#### Messen der Laufzeit
 ```java
 long start = System.nanoTime();
 
@@ -151,7 +151,7 @@ System.out.println("Time passed: " + (end - start) / 1000.0 + " µs");
 ```
 
 
-**Lesen von Textdateien**  
+#### Lesen von Textdateien
 Erweitere folgendes Grundgerüst, das ein Textfile einliest und die darin enthaltenen Wörter zählt:
 
 * [Kafka-Das-Urteil.txt (4.027 Wörter)](assets/Kafka-Das-Urteil.txt){:target="_blank"}
@@ -218,11 +218,8 @@ public class Main {
 }
 ```
 
-## 5. Wörter zählen mit Baum
-Implementiere die vorherige Übung mit Hilfe eines Baumes und führe ebenfalls die Laufzeitmessung durch.
 
-
-## 6. Hashing-Experiment
+## 5. Hashing-Experiment
 Schreibe ein Programm, dass herausfindet wie häufig Kollisionen auftreten. Lege dazu ein großes int Array an (200.000 Elemente), fülle dieses mit zufälligen Werten, diese sollen alle unterschiedlich sein und im positiven int Wertebereich ( $$ 0 \le \text{x} \le 2^{31}−1 $$) liegen.
 
 Lege ein zweites Array an mit ebenfalls 200 000 Elementen, dieses ist die Hashtabelle. Berechne für jede Zahl im ersten Array den Index mit der Hashfunktion, addiere an dieser Stelle in der Hashtabelle den Wert eins. Die Zahl in der Hashtabelle sagt aus wie viele Zahlen an dieser Position gespeichert werden müssten. Dies ist $$ \gt 1 $$ wenn eine Kollision auftritt.
@@ -249,24 +246,7 @@ Beispiel:
 
 Experimentiere mit unterschiedlichen Größen der Hashtabelle.
 
-## 7. Hashing gegen binäre Suche
+## 6. Hashing gegen binäre Suche
 
 Vergleiche die Performance (=Laufzeit) der binären Suche und Hashing mittels `HashMap`.
 Verwende das zufällige Array aus Beispiel [Hashing-Experiment](#6-hashing-experiment) als Datenbasis und suche jedes Element aus diesem Array, einmal mit binärer Suche und einmal mit der Hashtabelle.
-
-## 8. Schülerliste
-
-Verwende die Schü̈lerliste in Matliste.txt als Basis. Die Datei wird in ein Array von Objekten eingelesen, ein Objekt pro Schüler. Es sind genau die Matrikelnummern
-9001–9100 in der Datei enthalten (in zufälliger Reihenfolge).
-
-Suche mit Hilfe der angegebenen Suchverfahren jede einzelne Matrikelnummer von 9001 bis 9100. Wiederhole den gesamten Vorgang 1000 mal und messe die  Laufzeit.
-
-- Lineare Suche
-- Binäre Suche (Lege für diese Aufgabe eine sortierte  Kopie des Arrays an)
-- Binärer Suchbaum
-- Hashing — mit separate chaining (Experimentiere mit verschieden großen Hashtabellen)
-- HashMap
-
-Erstelle aus den ermittelten Zeiten eine Vergleichstabelle.
-
-* [Matliste.txt](assets/Matliste.txt){:target="_blank"}
