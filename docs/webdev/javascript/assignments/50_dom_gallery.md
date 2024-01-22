@@ -3,7 +3,7 @@ title: Aufgabe 2 - Document Object Model - Bildergalerie
 description: Javascript - Document Object Model
 
 category: Webentwicklung
-topic: Javascript - Teil 2
+topic: JavaScript - Teil 2
 
 type: assignment
 previewimage: img/dom_gallery.png

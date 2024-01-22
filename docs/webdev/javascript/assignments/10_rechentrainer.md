@@ -1,13 +1,18 @@
 ---
-title: Aufgabe 1 - Javascript Ein- und Ausgabe - Rechentrainer
+title: Aufgabe 1 - JavaScript Ein- und Ausgabe - Rechentrainer
 description: JavaScript - Ein- und Ausgabe
 
 category: Webentwicklung
-topic: Javascript - Teil 1
+topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
 
 layout: default
 ---
+## Allgemeines zu JavaScript
+
+### Variablen in JavaScript
+
+### Funktionen in JavaScript
 
 ## Aufgabenstellung
 Es ist eine einfache Webapp zu erstellen, mit der die Grundrechnungsarten trainiert werden können.

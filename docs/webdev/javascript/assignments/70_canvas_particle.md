@@ -3,7 +3,7 @@ title: Aufgabe 6 - Canvas2D - Partikelsystem
 description: Javascript - Canvas 2D
 
 category: Webentwicklung
-topic: Javascript - Teil 2
+topic: JavaScript - Teil 2
 
 type: assignment
 previewimage: img/canvas_particle.png

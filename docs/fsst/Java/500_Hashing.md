@@ -120,15 +120,23 @@ String[] search = {"Deutschland", "China", "Luxemburg"};
 
 
 ## 4. Wörter zählen
+
+**Anforderung**
+
 Ermittle für eine Textdatei:
 
 - Die Anzahl unterschiedlicher Wörter
 - Das am häufigsten vorkommende Wort 
-- Die Ausführungszeit
+- Die Ausführungszeit für ...
+  - das Einlesen und Speichern der Daten
+  - das Suchen nach bestimmten Wörtern
 
-Untersuche zwei Verfahren:
-1. ArrayList mit linearer Suche
-2. Hashing
+Untersuche zwei Verfahren und vergleiche die beiden:
+
+1. Speichern der Wörter in einer **ArrayList** <br>Lineare Suche
+2. Speichern der Wörter in einer **HashTable** <br> Teste unterschiedliche Größen der HashMap<br> ($$M=10$$, $$M=1000$$, $$M=100000$$, $$M=10000000$$)
+
+Es empfiehlt sich für `M` und die Anzahl der Suchabfragen in einer Konstante zu speichern.
 
 
 **Messen der Laufzeit**
@@ -146,7 +154,7 @@ System.out.println("Time passed: " + (end - start) / 1000.0 + " µs");
 **Lesen von Textdateien**  
 Erweitere folgendes Grundgerüst, das ein Textfile einliest und die darin enthaltenen Wörter zählt:
 
-* [Kafka-Das Urteil.txt (4.027 Wörter)](assets/Kafka-Das Urteil.txt){:target="_blank"}
+* [Kafka-Das-Urteil.txt (4.027 Wörter)](assets/Kafka-Das-Urteil.txt){:target="_blank"}
 * [Goethe-Faust.txt (30.635 Wörter)](assets/Goethe-Faust.txt){:target="_blank"}
 * [Das_Nibelungenlied.txt (95.588 Wörter)](assets/Das-Nibelungenlied.txt){:target="_blank"}
 * [Flaubert-Frau-Bovary.txt (114.852 Wörter)](assets/Flaubert-Frau-Bovary.txt){:target="_blank"}
@@ -157,20 +165,29 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.Scanner;
 
-public class ReadWordsFromFile {
+public class Main {
+
+    public static final int M = 100;
+    public static final int SEARCHES = 10000;
 
     public static void main(String[] args) {
+        // ...
+    }
+    
+    /**
+     * Wörter aus einer Textdatei auslesen und in einer HashTable speichern
+     *
+     * @param filename  Dateiname der Textdatei die eingelesen werden soll
+     * @param table     Hashtabelle, in der die Wörter gespeichert werden sollen
+     * @return          Anzahl der Wörter in der Textdatei
+     */
+    public static int readWordFromFile(String filename, HashTable table) {
+    
         String s;
         int words = 0;
         try {
-
-            // Kafka-Das-Urteil.txt --- 4027 Wörter
-            // Goethe-Faust.txt --- 30653 Wörter
-            // Das Nibelungenlied.txt --- 95588 Wörter
-            // Flaubert-Frau Bovary.txt --- 114852 Wörter
-            // big.txt --- 1086864 Wörter
-            
-            FileReader reader = new FileReader("Kafka-Das-Urteil.txt");
+            // Datei einlesen
+            FileReader reader = new FileReader(filename);
             Scanner inputFile = new Scanner(reader);
             while (inputFile.hasNext()) {
                 s = inputFile.next();
@@ -181,26 +198,28 @@ public class ReadWordsFromFile {
                 }
                 // Im String s ist nun das Wort enthalten
                 // System.out.println(s);
-                
+
                 // Anzahl der Wörter erhöhen    
                 words++;
-               
-                // TODO: Wörter der ArrayList bzw der HashTable hinzufügen
+
+                // TODO: Element in der Liste speichern, oder Anzahl erhöhen wenn schon enthalten
                 // ...
-                
             }
-            System.out.println(words + " words");
+            // System.out.println(words + " words");
             inputFile.close();
+
+            return words;
 
         } catch (FileNotFoundException ex) {
             System.out.println("File not found");
         }
+        return -1;
     }
 }
 ```
 
 ## 5. Wörter zählen mit Baum
-Implementiere [vorherige Übung](#4-wrter-zhlen) mit Hilfe eines Baumes und führe ebenfalls die Laufzeitmessung durch.
+Implementiere die vorherige Übung mit Hilfe eines Baumes und führe ebenfalls die Laufzeitmessung durch.
 
 
 ## 6. Hashing-Experiment

@@ -29,7 +29,7 @@ Setze die Animation mit *Klassischen Tweens* und *Schlüsselbildern* um. Die Ani
 
 
 <iframe src="./html/03-billard-finished.html" style="width:640px; height:480px; border:none; margin: 0 auto;"></iframe>
-*Beispielhafte Umsetzung*
+<sup>Beispielhafte Umsetzung</sup>
 
 
 #### Wichtige Shortcuts

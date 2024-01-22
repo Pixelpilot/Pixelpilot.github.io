@@ -2,7 +2,7 @@
 title: Aufgabe 6 - JavaScript und CSS - Simple Game
 description: Javascript - JavaScript und CSS
 category: Webentwicklung
-topic: Javascript - Teil 1
+topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
 layout: default
 ---

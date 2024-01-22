@@ -3,7 +3,7 @@ title: Aufgabe 3 - Canvas2D - Winterlandschaft
 description: Javascript - Canvas 2D
 
 category: Webentwicklung
-topic: Javascript - Teil 2
+topic: JavaScript - Teil 2
 
 type: assignment
 previewimage: img/canvas_flag.png

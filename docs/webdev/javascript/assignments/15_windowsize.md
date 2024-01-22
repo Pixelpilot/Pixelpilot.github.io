@@ -1,14 +1,16 @@
 ---
-title: Aufgabe 2 - Javascript und Events - Informationen auslesen
-description: Javascript und Events - Informationen auslesen
+title: Aufgabe 2 - JavaScript und Events - Informationen auslesen
+description: JavaScript und Events - Informationen auslesen
 category: Webentwicklung
-topic: Javascript - Teil 1
+topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
 layout: default
 ---
 
+## Allgemeines
+
 ## Aufgabenstellung
-Es ist eine einfache Webapp zu erstellen, mit der Informationen, wie zum Beispiel die aktuelle Auflösung des Browserfensters, angezeigt werden können.
+Es ist eine einfache Web-Applikation zu erstellen, mit der Informationen, wie zum Beispiel die aktuelle Auflösung des Browserfensters, angezeigt werden können.
 
 ![Beispielhafte Umsetzung](img/js_browser_info.png)
 *Die Informationen über den Browser sollen in einem `<div>`-Element angezeigt werden.*

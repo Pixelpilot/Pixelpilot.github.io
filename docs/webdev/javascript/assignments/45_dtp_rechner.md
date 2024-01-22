@@ -2,7 +2,7 @@
 title: Wiederholung - DTP-Einheitenumrechner
 description: Wiederholung Formulare, Ein- und Ausgabe
 category: Webentwicklung
-topic: Javascript - Teil 2
+topic: JavaScript - Teil 2
 subtopic: Eingabe und Ausgabe
 layout: default
 ---

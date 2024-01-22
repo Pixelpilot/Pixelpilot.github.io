@@ -19,7 +19,7 @@ Das bezeichnet man als *stateless (zustandslos)*. Das Gegenteil ist *stateful (z
 ## Lokale Datenhaltung – Cookies in PHP
 So wie in *JavaScript* können Cookies auch über *PHP* gesetzt und gelesen werden.
 
-Ein Cookie besteht aus bis zu 4096 Bytes, die der Server auf dem Client (Webbrowser) lokal speichern lassen kann. Bei jedem Zugriff auf den Webserver werden die Cookies wieder an der Server mitgeschickt. 
+Ein Cookie besteht aus bis zu 4096 Bytes, die der Server auf dem Client (Webbrowser) lokal speichern lassen kann. Bei jedem Zugriff auf den Webserver werden die Cookies wieder an den Server mitgeschickt. 
 
 Dabei werden nur diejenigen Cookie zurückgeschickt die der jeweilige Server gesetzt hat, der Browser sendet die Cookies nie an andere Server.
 

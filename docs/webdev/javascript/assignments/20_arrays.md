@@ -1,8 +1,8 @@
 ---
-title: Aufgabe 3 - Javascript und Arrays, Strings - Species-O-Mat
-description: Javascript und Events - Informationen auslesen
+title: Aufgabe 3 - JavaScript und Arrays, Strings - Species-O-Mat
+description: JavaScript und Events - Informationen auslesen
 category: Webentwicklung
-topic: Javascript - Teil 1
+topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
 layout: default
 ---

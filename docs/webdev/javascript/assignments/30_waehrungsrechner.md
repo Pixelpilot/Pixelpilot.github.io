@@ -1,8 +1,8 @@
 ---
 title: Aufgabe 4 - JavaScript und Formulare - Währungsumrechner
-description: Javascript - Formulare - Ein- und Ausgabe
+description: JavaScript - Formulare - Ein- und Ausgabe
 category: Webentwicklung
-topic: Javascript - Teil 1
+topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
 layout: default
 ---
