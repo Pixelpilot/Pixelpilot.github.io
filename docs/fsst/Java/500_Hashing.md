@@ -133,8 +133,8 @@ Ermittle für eine Textdatei:
 
 #### Untersuche zwei Verfahren und vergleiche die beiden
 
-1. ** Speichern der Wörter in einer ArrayList** <br>Lineare Suche
-2. ** Speichern der Wörter in einer HashTable** <br> Teste unterschiedliche Größen der HashMap<br> ($$M=10$$, $$M=1000$$, $$M=100000$$, $$M=10000000$$)
+1. **Speichern der Wörter in einer ArrayList** <br>Lineare Suche
+2. **Speichern der Wörter in einer HashTable** <br> Teste unterschiedliche Größen der HashMap<br> ($$M=10$$, $$M=1000$$, $$M=100000$$, $$M=10000000$$)
 
 Es empfiehlt sich für `M` und die Anzahl der Suchabfragen in einer Konstante zu speichern.
 
@@ -223,7 +223,6 @@ public class Main {
 Schreibe ein Programm, dass herausfindet wie häufig Kollisionen auftreten. Lege dazu ein großes int Array an (200.000 Elemente), fülle dieses mit zufälligen Werten, diese sollen alle unterschiedlich sein und im positiven int Wertebereich ( $$ 0 \le \text{x} \le 2^{31}−1 $$) liegen.
 
 Lege ein zweites Array an mit ebenfalls 200 000 Elementen, dieses ist die Hashtabelle. Berechne für jede Zahl im ersten Array den Index mit der Hashfunktion, addiere an dieser Stelle in der Hashtabelle den Wert eins. Die Zahl in der Hashtabelle sagt aus wie viele Zahlen an dieser Position gespeichert werden müssten. Dies ist $$ \gt 1 $$ wenn eine Kollision auftritt.
-
 
 Gib aus: Maximale Anzahl von Kollisionen an einer Position und eine Statistik wie viele Positionen leer bleiben, wie viele ein Element enthalten, wie viele zwei, usw.
 
