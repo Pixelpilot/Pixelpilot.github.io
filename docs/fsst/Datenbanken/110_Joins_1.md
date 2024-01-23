@@ -134,7 +134,7 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 
 ### Übungsabfragen
 
-> #### Aufgabe 1: Einfache Abfrage mit `JOIN`
+> #### Aufgabe 1: Burschen und Mädchen
 > `JOIN` können auf gleichen Tabellen (z.B.: `Person JOIN Person`) und auf die Ergebnisse von `SELECT` Abfragen (z.B.: `(SELECT ...) JOIN (SELECT ...)`) angewendet werden.
 > 
 > Diese Aufgabe ist eine Anwendung der zweiten Variante.
