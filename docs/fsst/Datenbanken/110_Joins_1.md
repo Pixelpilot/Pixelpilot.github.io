@@ -16,7 +16,7 @@ sitemap_exclude: n
 ## Aufgabe 2: Notendatenbank
 
 Es ist eine Datenbank für Noten gegeben.
-Die Datenbank wird enthält 3 Tabellen: **Schüler**, **Tests** und **Ergebnisse**.
+Die Datenbank enthält 3 Tabellen: **Schüler**, **Tests** und **Ergebnisse**.
 
 ### Erstellen der Datenbank und befüllen der Tabellen
 ```sql
@@ -135,13 +135,14 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 ### Übungsabfragen
 
 > #### Aufgabe 1: Einfache Abfrage mit `JOIN`
-> `JOIN` können auf gleichen Tabellen: Person `JOIN` Person
-und auf die Ergebnisse von `SELECT` Abfragen: `(SELECT ...) JOIN (SELECT ...)` angewendet
-werden. Diese Aufgabe ist eine Anwendung der zweiten Variante.
+> `JOIN` können auf gleichen Tabellen (z.B.: `Person JOIN Person`) und auf die Ergebnisse von `SELECT` Abfragen (z.B.: `(SELECT ...) JOIN (SELECT ...)`) angewendet werden.
 > 
-> Ermittle in der Schülerdatenbank (Tabelle Students)
-alle Klassen in denen mehr Buben als Mädchen sind.
-> **Anleitung:**
+> Diese Aufgabe ist eine Anwendung der zweiten Variante.
+> 
+> **Aufgabe**<br>
+> Ermittle in der Schülerdatenbank (Tabelle Students) alle Klassen in denen mehr Buben als Mädchen sind.
+> 
+> **Anleitung**<br>
 > 1. Mache zuerst eine Abfrage die Klasse und Zahl der Mädchen pro Klasse ermittelt. Tipp: Verwende
 `COUNT` und `GROUP BY`
 > 2. Dann die gleiche Abfrage für alle Burschen.
@@ -154,3 +155,22 @@ alle Klassen in denen mehr Buben als Mädchen sind.
 > ON ...gleiche Klasse...;
 > ```
 > 4. Verwende eine `WHERE` Bedingung um nur die Zeilen anzuzeigen wo mehr Burschen sind.
+
+> #### Aufgabe 2: Notendatenbankabfragen
+> Erstelle folgende Abfragen in der Notendatenbank:
+> ##### 2.a. Test-Auswertung
+> Von einem Test sind bekannt: Datum, Fach, Klasse.
+> Ermittle:
+> 1. alle Schüler (Namen) die an diesem Test teilgenommen haben,
+> 2.  die Durchschnittsnote,
+> 3.  alle Schüler die besser als der Durchschnitt abgeschnitten haben.
+> 
+> ##### 2.b. Schüler:innen-Auswertung
+> Ermittle für einen konkreten Schüler oder Schülerin (gegeben durch den Namen):
+> 1. alle Tests an denen dieser teilgenommen hat,
+> 2. die Anzahl der Tests, Notendurchschnitt, beste und schlechteste Note für diesen Schüler,
+> 3. die Endnote in jedem Fach (Durchschnitt).
+> 
+> ##### 2.c Notendurchschnitt
+> 1. Gib für alle Tests den Notendurchschnitt für Mädchen und Buben getrennt aus.
+> 2. Ermittle den Schüler mit dem besten Notendurchschnitt
