@@ -28,7 +28,7 @@ Mit der Übermittlung der Informationen per *GET* werden die Formulardaten an di
 Hinter dem `?` am Ende der URL kommen die Variablenname/Variablenwerte-Paare. Werden mehrere Variablen angegeben, so sind diese durch ein `&` voneinander getrennt:<br>
 `http://localhost/willkommen.php?name=Christian&user_id=123`
 
-> Achtung: Die Daten, die an den Server geschickt werden, können in der URL verändert werden!
+**Achtung: Die Daten, die an den Server geschickt werden, können in der URL verändert werden!**
 
 
 ### Das superglobale Array $_GET
@@ -131,7 +131,7 @@ Auch das Array `$_POST` ist superglobal und assoziativ. Die Daten werden *"unsic
 
 ## Aufgaben
 
-### 1. Kontaktformular per GET
+### Aufgabe 1. Kontaktformular per GET
 
 
 ![](img/php_contact_form.png)
@@ -155,7 +155,7 @@ Sind alle Felder richtig ausgefüllt, so soll statt dem Formular eine Erfolgsmel
 * Erweiterung: Passe das Aussehen des Formulars per *CSS* an.
 
 
-### 2. Loginformular per POST
+### Aufgabe 2. Loginformular per POST
 
 Erstelle eine Loginformular, dass den Benutzernamen und das zugehörige Passwort überprüft. Nur wenn Passwort und Benutzer richtig eingegeben werden, sollen geschützte Daten angezeigt werden.
 

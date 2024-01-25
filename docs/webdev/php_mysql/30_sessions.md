@@ -127,11 +127,10 @@ Um einen Wert zu Löschen kann der Befehl `unset()` verwendet werden.
 ?>
 ```
 
-## Aufgaben
+## Aufgabe: Webapplikation mit geschütztem Bereich
 
-### Webapplikation mit geschütztem Bereich
 
-Erstelle eine Webapplikation, deren Inhalte nur angezeigt werden, wenn sich der Benutzer einloggt.
+Erstelle eine Webapplikation mit einem geschützten, deren Inhalte nur angezeigt werden, wenn sich der Benutzer einloggt.
 
 Die Applikation besteht aus mehreren Dateien:
 
@@ -159,7 +158,7 @@ Diese Seite setzt die Session zurück und löscht das entsprechende Cookie.
 
 <br>
 
-#### 1. Aufgabe: Login-Screen
+### Aufgabe 1. Login-Screen
 Beim Starten der Applikation soll automatisch der Login-Screen angezeigt werden:
 ![](img/php_session_loginscreen.png)
 
@@ -175,7 +174,7 @@ In der Datei `index.php` wird dazu die Session-Variable `$_SESSION["user"]` abge
 ?>
 ```
 
-##### Todo:
+#### Todo:
 * Erstelle in der Datei `login.php` das Formular und schicke die Daten per Post ebenfalls an `login.php`.
 * Überprüfe die Benutzereingabe
   * Passwort und/oder Benutzer falsch: Login-Seite nochmal anzeigen
@@ -183,29 +182,29 @@ In der Datei `index.php` wird dazu die Session-Variable `$_SESSION["user"]` abge
 
 <br>
 
-#### 2. Aufgabe: Darstellung der Inhalte
+### Aufgabe 2. Darstellung der Inhalte
 
 Ist der Benutzer eingeloggt, so werden die Inhalte angezeigt:
 ![](img/php_session_what.png)
 
-##### Todo:
+#### Todo:
 * Lies den GET-Parameter `$_GET["pageid"]` der Menüpunkte aus und lade die entsprechenden Inhalte mittels `include`.
 * Erweitere die Dateien im Verzeichnis `content/` so, dass die nicht direkt aufgerufen werden können, wenn der Benutzer nicht eingeloggt ist.
 
 <br>
 
-#### 3. Aufgabe: Logout
+### Aufgabe 3. Logout
 
 Durch Klick auf den Link <u>Logout</u> soll die Session zurückgesetzt und das entsprechende Cookie gelöscht werden.
-##### Todo:
+#### Todo:
 * Setze die Session zurück und lösche das entsprechende Cookie
 * Leite wieder auf die `index.php` weiter. Wenn alles funktioniert, sollte dann erneut die Loginseite angezeigt werden.
 
 <br>
 
-#### Erweiterung: Aufzeichnen des Benutzerverhaltens
+### Erweiterung: Aufzeichnen des Benutzerverhaltens
 
-Zeiche auf, wie sich der Benutzer auf der Seite verhält und speichere diese Informationen in Session-Variablen:
+Zeichne auf, wie sich der Benutzer auf der Seite verhält und speichere diese Informationen in Session-Variablen:
 
 * Welche Inhaltsseite wurde wie oft gesehen?
 * Wie schaut der Browserverlauf aus?

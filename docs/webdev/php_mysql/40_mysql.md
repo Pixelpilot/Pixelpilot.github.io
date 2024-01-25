@@ -98,7 +98,7 @@ Die Ausgabe von `DESCRIBE users;` gibt Informationen über die Struktur der `use
 
 SQL-Statements sind Anweisungen, die an eine MySQL-Datenbank gesendet werden, um bestimmte Operationen auszuführen. Es gibt verschiedene Arten von MySQL-Statements, die zur Erstellung, Anzeige, Aktualisierung und Löschung von Daten in einer Datenbank verwendet werden können.
 
-MySQL-Statements werden häufig verwendet, um Daten in einer Tabelle einer MySQL-Datenbank zu verarbeiten. Zum Beispiel können Sie mit der `SELECT`-Anweisung Einträge aus einer Tabelle abrufen, mit der INSERT-Anweisung neue Einträge hinzufügen, mit der `UPDATE`-Anweisung bestehende Einträge aktualisieren und mit der `DELETE`-Anweisung Einträge löschen.
+MySQL-Statements werden häufig verwendet, um Daten in einer Tabelle einer MySQL-Datenbank zu verarbeiten. Zum Beispiel können Sie mit der `SELECT`-Anweisung Einträge aus einer Tabelle abrufen, mit der `INSERT`-Anweisung neue Einträge hinzufügen, mit der `UPDATE`-Anweisung bestehende Einträge aktualisieren und mit der `DELETE`-Anweisung Einträge löschen.
 
 Hier ist ein Beispiel für die Verwendung von MySQL-Statements, um Daten in einer Tabelle zu verarbeiten:
 

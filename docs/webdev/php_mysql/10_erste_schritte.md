@@ -155,7 +155,7 @@ Die Zahl 18 ist gerade
 Die Zahl 19 ist ungerade
 ```
 
-### 2. Multiplikationstabelle
+### Aufgabe 2. Multiplikationstabelle
 
 Erstelle eine Multiplikationstabelle, die die Zahlen von `1` bis `10` mit den Zahlen von `1` bis `20` miteinander multipliziert. 
 
@@ -165,7 +165,7 @@ Passe das Aussehen der Tabelle mittels CSS an.
 ![Multiplikationstabelle](img/php_mul_table.png)
 *Beispielhafte Umsetzung der Multiplikationstabelle*
 
-### 3. Begrüßung je nach Tageszeit
+### Aufgabe 3. Begrüßung je nach Tageszeit
 Es soll die aktuelle Uhrzeit (vom Server) angezeigt werden. Zusätzlich soll 
 der Benutzer gleich zu Beginn der Seite anhängig von der Tageszeit begrüßt werden.
 
@@ -185,7 +185,7 @@ Verwende unterschiedliche Zeitzonen (USA, China, Australien, Europa, ...), um di
 - Zeige je nach Tageszeit unterschiedliche Icons an
 - Passe das Aussehen (Hintergrund, Schriftfarbe) mit Hilfen von CSS-Klassen (`.day`, `.night`, ...) auf dem `<html>`-Element an.
 
-### 4: Erstelle einen dynamischen Kalender in PHP
+### Aufgabe 4. Dynamischer Kalender in PHP
 
 
 Entwickle ein PHP-Skript, das einen einfachen Kalender für den aktuellen Monat generiert und anzeigt. Der Kalender sollte die Tage des Monats in einer Tabelle darstellen, wobei jede Woche eine neue Zeile bildet. Verwende die Funktion `date()`, um die notwendigen Informationen zu bestimmen:
@@ -199,7 +199,7 @@ Entwickle ein PHP-Skript, das einen einfachen Kalender für den aktuellen Monat 
 - Markiere den aktuellen Tag.
 - Zeige das gesamte Jahr an.
 
-![img/php_calendar.png](img/php_calendar.png)<br>
+![img/php_calendar.png](img/php_calendar.png){: width="250" }<br>
 *Beispielhafte Umsetzung des Kalenders*
 
 
