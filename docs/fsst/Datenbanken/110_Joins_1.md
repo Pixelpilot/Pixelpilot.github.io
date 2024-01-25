@@ -161,9 +161,9 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 > ##### 2.a. Test-Auswertung
 > Von einem Test sind bekannt: Datum, Fach, Klasse.
 > Ermittle:
-> 1. alle Schüler (Namen) die an diesem Test teilgenommen haben,
-> 2.  die Durchschnittsnote,
-> 3.  alle Schüler die besser als der Durchschnitt abgeschnitten haben.
+> 1. alle Schüler (Namen) die an einem bestimmten Test teilgenommen haben,
+> 2. die Durchschnittsnote für alle 'FSST'-Test,
+> 3. alle Schüler die besser als der Durchschnitt abgeschnitten haben.
 > 
 > ##### 2.b. Schüler:innen-Auswertung
 > Ermittle für einen konkreten Schüler oder Schülerin (gegeben durch den Namen):

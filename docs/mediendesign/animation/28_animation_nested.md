@@ -1,6 +1,6 @@
 ---
-title: Aufgabe 2 - Erste Schritte in Adobe Animate
-description: Grundlagen der Animation mit Adobe Animate – Erste Schritte
+title: Aufgabe 3 - Verschachtelte Animationen
+description: Grundlagen der Animation mit Adobe Animate – Verschachtelte Animationen
 
 category: Mediendesign
 topic: Animation mit Adobe Animate
@@ -13,7 +13,7 @@ sitemap_exclude: n
 ---
 
 ## Aufgabenstellung
-Erstelle eine einfache Animation, die einige der wichtigsten Prinzipien der Animation umsetzt:
+Erstelle eine Animation, die aus mehreren Teil-Animationen besteht
 
 * Easing (Slow in and slow out)
 * Squash and Stretch
@@ -56,7 +56,6 @@ Verwende folgende Shortcuts, um effizienter arbeiten zu können:
 
 ## Ressourcen
 * [creativecloud.adobe.com - Training Animate](https://creativecloud.adobe.com/cc/learn/app/animate?locale=de){:target="_blank"}
-* [In Adobe Animate mit Tweens arbeiten](https://creativecloud.adobe.com/cc/learn/animate/web/tweening-animation?locale=de){:target="_blank"}
 
 
 ## Abgabe

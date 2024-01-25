@@ -16,7 +16,7 @@ PHP (rekursives Akronym für PHP: Hypertext Preprocessor) ist eine weit verbreit
 
 Eine PHP-Datei endet mit der Extension `.php` und besteht meistens aus mehreren `HTML`- und `PHP`-Bereichen. In einer PHP-Datei können sich beliebig viele HTML- und PHP-Bereiche befinden.
 
-* Der PHP-Code steht zwischen speziellen Anfangs- und Abschluss-Verarbeitungsinstruktionen `&lt;?php ` und `?>`. Dieser PHP-Quelltext scheint nicht im HTML-Quelltext auf, der vom Server generiert und and den Client geschickt wird.
+* Der PHP-Code steht zwischen speziellen Anfangs- und Abschluss-Verarbeitungsinstruktionen `<?php ` und `?>`. Dieser PHP-Quelltext scheint nicht im HTML-Quelltext auf, der vom Server generiert und and den Client geschickt wird.
 * Alles, das ausserhalb dieser Verarbeitungsinstruktionen steht, wird in den generierten HTML-Quelltext übernommen. 
 
 ```php
@@ -166,7 +166,8 @@ Passe das Aussehen der Tabelle mittels CSS an.
 *Beispielhafte Umsetzung der Multiplikationstabelle*
 
 ### 3. Begrüßung je nach Tageszeit
-Der Benutzer soll gleich zu Beginn der Seite anhängig von der Tageszeit begrüßt werden.
+Es soll die aktuelle Uhrzeit (vom Server) angezeigt werden. Zusätzlich soll 
+der Benutzer gleich zu Beginn der Seite anhängig von der Tageszeit begrüßt werden.
 
 * *"Guten Morgen Josef!"* zwischen 6 Uhr und Mittag
 * *"Guten Tag Josef!"*		zwischen Mittag und 19 Uhr
@@ -181,7 +182,7 @@ Verwende unterschiedliche Zeitzonen (USA, China, Australien, Europa, ...), um di
 
 
 **Erweiterung:**
-- Zeige je nach Tageszeit unterschiedliche Icons an.
+- Zeige je nach Tageszeit unterschiedliche Icons an
 - Passe das Aussehen (Hintergrund, Schriftfarbe) mit Hilfen von CSS-Klassen (`.day`, `.night`, ...) auf dem `<html>`-Element an.
 
 ## Ressourcen
