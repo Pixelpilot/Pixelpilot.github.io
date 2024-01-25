@@ -195,7 +195,13 @@ Entwickle ein PHP-Skript, das einen einfachen Kalender für den aktuellen Monat 
 2. Verwende Schleifen, um die Tage in Form einer Kalendertabelle anzuzeigen.
 3. Jede Woche sollte in einer neuen Zeile beginnen.
 4. Formatiere die Tabelle für eine klare Darstellung.
+
+**Erweiterungen**
+- Zeige das gesamte Jahr an.
+
 ![img/php_calendar_month.png](img/php_calendar_month.png)
+*Beispielhafte Umsetzung des Kalenders*
+
 
 ## Ressourcen
 * [W3 schools - PHP Tutorial](https://www.w3schools.com/php/default.asp){:target="_blank"}
