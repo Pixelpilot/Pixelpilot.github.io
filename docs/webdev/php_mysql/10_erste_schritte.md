@@ -188,6 +188,7 @@ Verwende unterschiedliche Zeitzonen (USA, China, Australien, Europa, ...), um di
 ### 4: Erstelle einen dynamischen Kalender in PHP
 
 **Aufgabenstellung:**
+
 Entwickle ein PHP-Skript, das einen einfachen Kalender für den aktuellen Monat generiert und anzeigt. Der Kalender sollte die Tage des Monats in einer Tabelle darstellen, wobei jede Woche eine neue Zeile bildet. Du solltest PHP-Funktionen nutzen, um das aktuelle Datum zu ermitteln und den ersten Tag des Monats sowie die Anzahl der Tage im Monat zu bestimmen.
 
 **Vorgehensweise:**
