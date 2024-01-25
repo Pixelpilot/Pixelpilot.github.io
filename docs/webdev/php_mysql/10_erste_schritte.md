@@ -185,6 +185,18 @@ Verwende unterschiedliche Zeitzonen (USA, China, Australien, Europa, ...), um di
 - Zeige je nach Tageszeit unterschiedliche Icons an
 - Passe das Aussehen (Hintergrund, Schriftfarbe) mit Hilfen von CSS-Klassen (`.day`, `.night`, ...) auf dem `<html>`-Element an.
 
+### 4: Erstelle einen dynamischen Kalender in PHP
+
+**Aufgabenstellung:**
+Entwickle ein PHP-Skript, das einen einfachen Kalender für den aktuellen Monat generiert und anzeigt. Der Kalender sollte die Tage des Monats in einer Tabelle darstellen, wobei jede Woche eine neue Zeile bildet. Du solltest PHP-Funktionen nutzen, um das aktuelle Datum zu ermitteln und den ersten Tag des Monats sowie die Anzahl der Tage im Monat zu bestimmen.
+
+**Vorgehensweise:**
+1. Ermittle den ersten Tag des aktuellen Monats und die Anzahl der Tage im Monat.
+2. Verwende Schleifen, um die Tage in Form einer Kalendertabelle anzuzeigen.
+3. Jede Woche sollte in einer neuen Zeile beginnen.
+4. Formatiere die Tabelle für eine klare Darstellung.
+![img/php_calendar_month.png](img/php_calendar_month.png)
+
 ## Ressourcen
 * [W3 schools - PHP Tutorial](https://www.w3schools.com/php/default.asp){:target="_blank"}
 
