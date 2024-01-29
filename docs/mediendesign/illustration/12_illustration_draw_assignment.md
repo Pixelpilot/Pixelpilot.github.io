@@ -10,7 +10,7 @@ type: assignment
 ---
 
 
-![Beispielhafte Umsetzung](./img/umsetzung_zeichnen.png)
+![Beispielhafte Umsetzung](img/umsetzung_zeichnen.png)
 
 _Beispielhafte Umsetzung_
 

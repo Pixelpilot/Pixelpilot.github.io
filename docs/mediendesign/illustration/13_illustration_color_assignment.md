@@ -22,7 +22,7 @@ Färbe die Illustrationen [Übung - Formen](11_illustration_forms_assigment.md) 
 
 ## Zusatz
 Erstelle eine Farbvariante deiner Illustration. Lege dazu eine eigene _Zeichenfläche_ an.
-![Beispielhafte Umsetzung](./img/umsetzung_farben.png)
+![Beispielhafte Umsetzung](img/umsetzung_farben.png)
 
 ## Abgabe
 Abzugeben sind folgende Dateien:
