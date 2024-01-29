@@ -62,11 +62,11 @@ Vertex:E Edges: B(2), D(1), C(5)
 
 ### 1.5. Traversieren des Graphen
 
-#### Breath-First und Depth-First
+#### Depth-First und Breath-First
 Implementierte zwei Methoden, die dem Graphen traversieren, und die Namen aller Vertices im Graphen ausgeben:
 
-* Breath-First (Breitensuche) – `traversalBFS(Vertex start)`
 * Depth-First (Tiefensuche) – `traversalDFS(Vertex start)`
+* Breath-First (Breitensuche) – `traversalBFS(Vertex start)`
 
 Testen die Methoden mit unterschiedlichen Ausgangs-Vertices.
 
@@ -74,7 +74,7 @@ Testen die Methoden mit unterschiedlichen Ausgangs-Vertices.
 #### Verbindungen überprüfen
 Implementierte zwei Methoden, die überprüfen, ob eine Verbindung von einem Vertex zu einem anderen Vertex besteht:
 
-* Breath-First (Breitensuche) – `boolean hasPathBFS(Vertex a, Vertex b)`
 * Depth-First (Tiefensuche) – `boolean hasPathDFS(Vertex a, Vertex b)`
+* Breath-First (Breitensuche) – `boolean hasPathBFS(Vertex a, Vertex b)`
 
 Testen die Methoden mit unterschiedlichen Ausgangs- und Ziel-Vertices.
