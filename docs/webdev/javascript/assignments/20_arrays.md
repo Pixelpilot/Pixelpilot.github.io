@@ -7,6 +7,67 @@ subtopic: Eingabe und Ausgabe
 layout: default
 ---
 
+## Arrays in JavaScript
+
+Ein Array ist eine Sammlung von Daten, die in einer einzigen Variablen gespeichert werden können. Jedes Element in einem Array kann einen beliebigen Datentyp haben, einschließlich Strings, Zahlen, Booleans, Objekte und sogar andere Arrays.
+
+### Erstellen eines Arrays
+Arrays können auf verschiedene Arten erstellt werden:
+
+```javascript
+// Literal-Methode
+let myArray = [1, 'zwei', true, 4.5];
+
+// Konstruktor-Methode
+let myArray = new Array(1, 'zwei', true, 4.5);
+```
+
+### Zugriff auf Array-Elemente
+Auf jedes Element eines Arrays wird durch seinen Index zugegriffen, wobei der Index immer mit 0 beginnt.
+
+```javascript
+console.log(myArray[0]); // Gibt 1 aus
+```
+
+### Länge eines Arrays
+Die Länge eines Arrays (Anzahl der Elemente) kann mit der `length`-Eigenschaft ermittelt werden:
+
+```javascript
+console.log(myArray.length); // Gibt die Anzahl der Elemente im Array aus
+```
+
+### Hinzufügen und Entfernen von Elementen
+Arrays in JavaScript sind dynamisch, was bedeutet, dass Elemente hinzugefügt oder entfernt werden können.
+
+```javascript
+// Hinzufügen eines Strings am Ende
+myArray.push('Neues Element');
+
+// Entfernen vom Ende und Zuweisen in eine Variable
+let lastElement = myArray.pop(); 
+
+// Hinzufügen eines Strings am Anfang
+myArray.unshift('Startelement'); 
+
+// Entfernen vom Anfang und Zuweisen in eine Variable
+let firstElement = myArray.shift(); 
+```
+
+### Durchlaufen eines Arrays
+Es gibt verschiedene Methoden, um über die Elemente eines Arrays zu iterieren.
+
+```javascript
+// for-Schleife
+for (let i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}
+
+// forEach-Methode
+myArray.forEach(element => {
+    console.log(element);
+});
+```
+
 ## Aufgabenstellung
 Es ist eine Webanwendung zu erstellen, die aus unterschiedlichen Zeichenketten eine zufällige Spezies generiert und als HTML in einem `<div>`-Element anzeigt. Überlege dir bevor du loslegst, wie sich die gesamte
 Bezeichnung der Spezies zusammensetzt, und wie du die Daten abbilden wirst. Skizziere die Struktur auf

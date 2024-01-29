@@ -19,9 +19,6 @@ Erstelle eine einfache Animation, die einige der wichtigsten Prinzipien der Anim
 * Squash and Stretch
 * Secondary Action
 
-<iframe src="./html/02-jumping_balls.html" style="padding:15px; width:830px; height:510px; border:1px solid #dce6f0; border-radius: 5px; margin: 0 auto;"></iframe>
-<sup>Beispielhafte Umsetzung</sup>
-
 > ### Aufgabe 1: Bouncing Ball Animation
 >Es ist eine Animation zu erstellen, bei der ein optimaler Gummiball nach unten fällt, am Boden aufspringt und wieder bis zur Startposition hochfliegt.
 >
@@ -53,6 +50,9 @@ Verwende folgende Shortcuts, um effizienter arbeiten zu können:
 > #### 2.c Schatten
 > Füge dem Ball einen einfachen Schatten hinzu, um dem Betrachter die Interpretation der Position des Balles zu erleichtern.
 
+### Beispielhafte Umsetzung
+
+<iframe src="./html/02-jumping_balls.html" style="padding:15px; width:830px; height:510px; border:1px solid #dce6f0; border-radius: 5px; margin: 0 auto;"></iframe>
 
 ## Ressourcen
 * [creativecloud.adobe.com - Training Animate](https://creativecloud.adobe.com/cc/learn/app/animate?locale=de){:target="_blank"}
