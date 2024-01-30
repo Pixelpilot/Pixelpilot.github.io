@@ -134,86 +134,48 @@ evenodd ( 10, 13 ); // gibt die Zahlen von 10 bis 13 aus
 * Wenn die erste oder die zweite Zahl negativ ist, soll eine *Error*-Fehlermeldung ausgegeben werden, und die Funktion nicht weiter ausgeführt werden
 
 
-### 2. Zeitmessung in JavaScript
+### Aufgabe 2. Zeitmessung in JavaScript
 
-**Ziel:** Schreibe ein JavaScript-Skript, das die Befehle `console.time()`, `console.timeEnd()` und `console.timeLog()` verwendet, um die Ausführungszeit verschiedener Code-Segmente zu messen und in der Konsole darzustellen.
-
-#### Schritt 1: Grundlagen der Zeitmessung
-1. Öffne die Entwicklertools in deinem Browser und wechsle zur Konsole.
-2. Starte einen Timer mit `console.time('Timer1')`.
-3. Führe eine einfache Aufgabe aus, z.B. das Durchlaufen einer Schleife, die 100.000-mal iteriert.
-4. Beende den Timer mit `console.timeEnd('Timer1')`.
-
-   Beispiel:
-   ```javascript
-   console.time('Timer1');
-   for (let i = 0; i < 100000; i++) {
-       // Einfache Operation
-   }
-   console.timeEnd('Timer1');
-   ```
-
-#### Schritt 2: Verwendung von `timeLog()`
-1. Starte einen neuen Timer namens 'Timer2'.
-2. Führe eine Schleife mit einer größeren Anzahl von Iterationen aus.
-3. Verwende `console.timeLog('Timer2')` in der Mitte der Schleife, um die Zwischenzeit zu überprüfen.
-4. Beende den Timer nach der Schleife.
-
-   Beispiel:
-   ```javascript
-   console.time('Timer2');
-   for (let i = 0; i < 1000000; i++) {
-       if (i === 500000) {
-           console.timeLog('Timer2');
-       }
-   }
-   console.timeEnd('Timer2');
-   ```
-
-#### Schritt 3: Mehrere Timer gleichzeitig
-1. Starte zwei Timer mit unterschiedlichen Namen, z.B. 'Timer3' und 'Timer4'.
-2. Führe zwei unterschiedliche Aufgaben aus (z.B. unterschiedlich komplexe Schleifen).
-3. Beende jeden Timer nach Abschluss seiner Aufgabe.
-
-   Beispiel:
-   ```javascript
-   console.time('Timer3');
-   for (let i = 0; i < 500000; i++) {
-       // Erste Aufgabe
-   }
-   console.timeEnd('Timer3');
-
-   console.time('Timer4');
-   for (let i = 0; i < 100000; i++) {
-       // Zweite, unterschiedliche Aufgabe
-   }
-   console.timeEnd('Timer4');
-   ```
-
-#### Bonus: Vergleich von Ausführungszeiten
-1. Erstelle eine Funktion, die eine Berechnung oder eine Schleife ausführt.
-2. Verwende die Timer, um die Ausführungszeit dieser Funktion bei verschiedenen Eingabegrößen zu messen.
-
-   Beispiel:
-   ```javascript
-   function berechne(n) {
-       let summe = 0;
-       for (let i = 0; i < n; i++) {
-           summe += i;
-       }
-       return summe;
-   }
-
-   console.time('Kleine Berechnung');
-   berechne(10000);
-   console.timeEnd('Kleine Berechnung');
-
-   console.time('Große Berechnung');
-   berechne(1000000);
-   console.timeEnd('Große Berechnung');
-   ```
+Mit den Befehlen `console.time()`, `console.timeEnd()` und `console.timeLog()` können Ausführungszeiten verschiedener Code-Segmente in JavaScript gemessen werden.
 
 
+#### 2.1. Grundlagen der Zeitmessung
+
+Mache dich mit den Befehlen `console.time()`, `console.timeEnd()` und `console.timeLog()` vertraut. Teste dazu die Methoden direkt in der Konsole der Entwickler-Werkzeuge:
+
+* Starte einen bestimmten Timer
+* Nimm Zwischenzeiten 
+* Beende den Timer
+
+#### Schritt 2.2. Messung der Laufzeit
+
+Es soll die Ausführungszeit gemessen werden.
+
+Lege dazu eine Methode `doNonsense(count)`, die eine bestimmte Anzahl an zufälligen Zahlen generiert und für diese die Kreisfläche berechnet.
+
+Messe die Laufzeit direkt in der erstellten Methode und teste mit folgenden Werten für `count`:
+* 1.000
+* 1.000.000
+* 1.000.000.000
+
+
+#### Schritt 2.3. Erweiterungen
+
+* Erweitere die Methode um einen Parameter `step`. Diese Parameter gibt an, nach welcher Anzahl an Durchläufen eine Zwischenzeit genommen werden soll.
+* Rufe die Methode `doNonsense()` mehrfach auf und miss die gesamte Laufzeit.
+```console
+thousand: 0.0029296875 ms
+thousand: 0.138916015625 ms
+thousand: 0.216064453125 ms
+million: 0.0009765625 ms
+million: 6.01806640625 ms
+million: 9.9189453125 ms
+billion: 0.0009765625 ms
+billion: 2527.933837890625 ms
+billion: 5054.5859375 ms
+overall: 5064.886962890625 ms
+```
+*Beispielhafte Ausgabe*
 ## Ressourcen
 * [developer.chrome.com - DevTools](https://developer.chrome.com/docs/devtools?hl=de){:target="_blank"}
 * [mozilla.org - console](https://developer.mozilla.org/en-US/docs/Web/API/console){:target="_blank"}
