@@ -128,6 +128,12 @@ evenodd ( 10, 13 ); // gibt die Zahlen von 10 bis 13 aus
 ```
 <sup>Beispielhafter Aufruf und Ausgabe mit eine Gruppe pro Aufruf</sup>
 
+#### 1.d. Erweiterungen
+
+* Wenn die erste übergebene Zahl kleiner als die zweite Zahl ist, dann soll eine *Warning* ausgegeben werden, aber beide Zahlen vertauscht werden.
+* Wenn die erste oder die zweite Zahl negativ ist, soll eine *Error*-Fehlermeldung ausgegeben werden, und die Funktion nicht weiter ausgeführt werden
+
+
 
 ## Ressourcen
 * [developer.chrome.com - DevTools](https://developer.chrome.com/docs/devtools?hl=de){:target="_blank"}
