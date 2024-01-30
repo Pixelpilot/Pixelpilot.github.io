@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 5 - JavaScript und Timeout, Interval - Countdown
+title: Aufgabe 6 - JavaScript und Timeout, Interval - Countdown
 description: JavaScript - Timeout, Interval - Ein- und Ausgabe
 category: Webentwicklung
 topic: JavaScript - Teil 1

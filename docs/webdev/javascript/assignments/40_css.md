@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 6 - JavaScript und CSS - Simple Game
+title: Aufgabe 7 - JavaScript und CSS - Simple Game
 description: Javascript - JavaScript und CSS
 category: Webentwicklung
 topic: JavaScript - Teil 1

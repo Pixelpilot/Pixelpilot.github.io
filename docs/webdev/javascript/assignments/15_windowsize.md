@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 2 - JavaScript und Events - Informationen auslesen
+title: Aufgabe 3 - JavaScript und Events - Informationen auslesen
 description: JavaScript und Events - Informationen auslesen
 category: Webentwicklung
 topic: JavaScript - Teil 1
