@@ -138,9 +138,11 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 > ##### 1.a. Auflistung aller Ergebnisse
 > Liste alle Ergebnisse auf und gib Schülernamen, Klasse, Fach, Datum sowie die Note aus.
 > 
-> ##### 1.b. Auflistung aller Ergebnisse
-> Liste alle Schüler auf, die in der Klasse `5BHELS` an mindestens einem `FSST`-Tests  teilgenommen haben, und gib Name, Klasse, und Note aus.
-
+> ##### 1.b. Eingeschränkte Aufzählung
+> Liste alle Schüler:innen auf, die in einem `HWE`-Test einen 3er haben. Zeige `Vorname`, `Nachname` und `Klasse`an und vermeide, dass eine Schüler:in mehrfach aufgelistet wird.
+> 
+> ##### 1.c. Fleißige Schüler:innen
+> Ermittel die Anzahl aller Schüler:innen die an mehr als 3 Tests teilgenommen haben.
 
 > #### Aufgabe 2: Burschen und Mädchen
 > `JOIN` können auf gleichen Tabellen (z.B.: `Person JOIN Person`) und auf die Ergebnisse von `SELECT` Abfragen (z.B.: `(SELECT ...) JOIN (SELECT ...)`) angewendet werden.
