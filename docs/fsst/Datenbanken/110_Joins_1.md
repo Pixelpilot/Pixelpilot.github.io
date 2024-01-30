@@ -136,13 +136,17 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 
 > #### Einstieg 1:
 > ##### 1.a. Auflistung aller Ergebnisse
-> Liste alle Ergebnisse auf und gib Schülernamen, `Klasse`, `Fach`, `Datum` sowie die `Note` aus.
+> Liste alle Ergebnisse auf und gib Schülernamen, `Klasse`, `Fach`, `Datum` sowie die `Note  aus.
 > 
 > ##### 1.b. Eingeschränkte Aufzählung
 > Liste alle Schüler:innen auf, die in einem `HWE`-Test einen 3er haben. Zeige `Vorname`, `Nachname` und `Klasse`an und vermeide, dass ein:e Schüler:in mehrfach aufgelistet wird.
 > 
+> Hilfestellung: Mit der Anweisung `GROUP BY` können Datensätze zusammengefasst werden
+> 
 > ##### 1.c. Fleißige Schüler:innen
-> Ermittle die Anzahl aller Schüler:innen die an mehr als 3 Tests teilgenommen haben.
+> Ermittle die Anzahl aller Schüler:innen die an mehr als 3 Tests teilgenommen haben. 
+>
+> Hilfestellung: Verwende dazu ein "Nested Select".
 
 > #### Aufgabe 2: Burschen und Mädchen
 > `JOIN` können auf gleichen Tabellen (z.B.: `Person JOIN Person`) und auf die Ergebnisse von `SELECT` Abfragen (z.B.: `(SELECT ...) JOIN (SELECT ...)`) angewendet werden.
