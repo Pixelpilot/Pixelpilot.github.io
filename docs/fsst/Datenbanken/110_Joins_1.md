@@ -134,9 +134,12 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 
 ### Übungsabfragen
 
-#### Einstieg 1:
-##### 1.a. Auflistung aller Ergebnisse
-Liste alle Ergebnisse auf und gib Schülernamen, Klasse, Fach, Datum sowie die Note aus.
+> #### Einstieg 1:
+> ##### 1.a. Auflistung aller Ergebnisse
+> Liste alle Ergebnisse auf und gib Schülernamen, Klasse, Fach, Datum sowie die Note aus.
+> 
+> ##### 1.b. Auflistung aller Ergebnisse
+> Liste alle Schüler auf, die in der Klasse `5BHELS` an mindestens einem `FSST`-Tests  teilgenommen haben, und gib Name, Klasse, und Note aus.
 
 
 > #### Aufgabe 2: Burschen und Mädchen
