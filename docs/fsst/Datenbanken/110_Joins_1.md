@@ -134,7 +134,12 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 
 ### Übungsabfragen
 
-> #### Aufgabe 1: Burschen und Mädchen
+#### Einstieg 1:
+##### 1.a. Auflistung aller Ergebnisse
+Liste alle Ergebnisse auf und gib Schülernamen, Klasse, Fach, Datum sowie die Note aus.
+
+
+> #### Aufgabe 2: Burschen und Mädchen
 > `JOIN` können auf gleichen Tabellen (z.B.: `Person JOIN Person`) und auf die Ergebnisse von `SELECT` Abfragen (z.B.: `(SELECT ...) JOIN (SELECT ...)`) angewendet werden.
 > 
 > Diese Aufgabe ist eine Anwendung der zweiten Variante.
@@ -156,21 +161,21 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 > ```
 > 4. Verwende eine `WHERE` Bedingung um nur die Zeilen anzuzeigen wo mehr Burschen sind.
 
-> #### Aufgabe 2: Notendatenbankabfragen
+> #### Aufgabe 3: Notendatenbankabfragen
 > Erstelle folgende Abfragen in der Notendatenbank:
-> ##### 2.a. Test-Auswertung
+> ##### 3.a. Test-Auswertung
 > Von einem Test sind bekannt: Datum, Fach, Klasse.
 > Ermittle:
 > 1. alle Schüler (Namen) die an einem bestimmten Test teilgenommen haben,
 > 2. die Durchschnittsnote für alle 'FSST'-Test,
 > 3. alle Schüler die besser als der Durchschnitt abgeschnitten haben.
 > 
-> ##### 2.b. Schüler:innen-Auswertung
+> ##### 3.b. Schüler:innen-Auswertung
 > Ermittle für einen konkreten Schüler oder Schülerin (gegeben durch den Namen):
 > 1. alle Tests an denen dieser teilgenommen hat,
 > 2. die Anzahl der Tests, Notendurchschnitt, beste und schlechteste Note für diesen Schüler,
 > 3. die Endnote in jedem Fach (Durchschnitt).
 > 
-> ##### 2.c Notendurchschnitt
+> ##### 3.c Notendurchschnitt
 > 1. Gib für alle Tests den Notendurchschnitt für Mädchen und Buben getrennt aus.
 > 2. Ermittle den Schüler mit dem besten Notendurchschnitt
