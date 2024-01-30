@@ -128,6 +128,7 @@ function getDimensions() {
 ```
 
 * Erweitere die Funktionalität der App so, dass bei einer Größenänderung des Browserfensters die neuen Abmessungen in der Konsole ausgegeben werden.
+* Erweitere die Funktionalität der App so, dass beim Laden der Seite die aktuelle Uhrzeit und das aktuelle Datum in der Konsole ausgegeben wird.
 
 ### 3. Ausgeben im HTML-Dokument
 * Erstelle im html-Dokument ein `<div id="info">`, in dem die Informationen dargestellt werden sollen. Passe das Aussehen des `<div>`-Elements so an, dass es in etwa der Abbildung entspricht. Schreibe die Abmessungen des Browserfensters in das `<div>`-Element.
