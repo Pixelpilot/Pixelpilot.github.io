@@ -1,6 +1,6 @@
 ---
 title: Aufgabe 6 - JavaScript und Timeout, Interval - Countdown
-description: JavaScript - Timeout, Interval - Ein- und Ausgabe
+description: JavaScript und Timeout, Interval - Ein- und Ausgabe
 category: Webentwicklung
 topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
@@ -11,7 +11,7 @@ layout: default
 Es ist eine einfache Webapp zu erstellen, die einen Countdown realisiert.
 
 ![Countdown](img/intervall_countdown.png)
-*Beispielhaft Umsetzung*
+*Beispielhafte Umsetzung*
 
 
 ### 1. HTML

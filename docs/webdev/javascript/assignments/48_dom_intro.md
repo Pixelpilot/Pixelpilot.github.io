@@ -68,10 +68,10 @@ Erstelle ein Projekt entsprechend der Vorlage in der Datei [dom_examples_emtpy.z
   // JavaScript
 
   // TextNode erzeugen
-  var text = document.createTextNode ("Text der Zeilen ...");
+  let text = document.createTextNode ("Text der Zeilen ...");
 
   // Text dem <div> mit der id="debug" hinzufügen
-  var debug = document.getElementById("debug");
+  let debug = document.getElementById("debug");
   debug.appendChild ( text );
   ```
 

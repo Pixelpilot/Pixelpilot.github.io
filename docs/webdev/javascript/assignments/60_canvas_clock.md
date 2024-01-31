@@ -37,11 +37,11 @@ Setze die Funktionalität mittels JavaScript um. Achte bei der Programmierung da
 
 ```javascript
 // aktuelle Zeit ermitteln
-var date = new Date();
+let date = new Date();
 
-var sec = date.getSeconds();
-var min = date.getMinutes();
-var hour = date.getHours();
+let sec = date.getSeconds();
+let min = date.getMinutes();
+let hour = date.getHours();
 
 console.log ( hour + ":" + min + ":" + sec);
 ```

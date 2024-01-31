@@ -21,14 +21,14 @@ Es soll ein einfaches Partikelsystem erstellt werden.
 ### 1. HTML
 
 ```Javascript
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
 
-var particles = [];
-var numParticles = 100;
+let particles = [];
+let numParticles = 100;
 
 function createParticles() {
-  for (var i = 0; i < numParticles; i++) {
+  for (let i = 0; i < numParticles; i++) {
     particles.push({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
@@ -40,8 +40,8 @@ function createParticles() {
 }
 
 function updateParticles() {
-  for (var i = 0; i < numParticles; i++) {
-    var particle = particles[i];
+  for (let i = 0; i < numParticles; i++) {
+    let particle = particles[i];
     particle.x += particle.vx;
     particle.y += particle.vy;
 
@@ -57,8 +57,8 @@ function updateParticles() {
 function drawParticles() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "white";
-  for (var i = 0; i < numParticles; i++) {
-    var particle = particles[i];
+  for (let i = 0; i < numParticles; i++) {
+    let particle = particles[i];
     ctx.beginPath();
     ctx.arc(particle.x, particle.y, particle.size, 0, 2 * Math.PI);
     ctx.fill();

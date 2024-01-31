@@ -39,7 +39,7 @@ Zeiche einen Schneemann, der aus mehreren Teilen besteht. Zeichne sich wiederhol
 /* JavaScript */
 
 // Zeichen von 4 Knöpfen, die untereinander liegen
-for (var i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
     context.translate(0, 10);
     context.fillRect(-3, -3, 6, 6);
 }
@@ -88,8 +88,8 @@ Um auf ein `<canvas>`-Objekt zeichnen zu können, stellt das Objekt eine Schnitt
 
 ```javascript
 /* JavaScript */
-var canv = document.getElementById("myCanvas");
-var context = canv.getContext("2d");
+let canv = document.getElementById("myCanvas");
+let context = canv.getContext("2d");
 ```
 
 __Einfache Formen zeichnen__

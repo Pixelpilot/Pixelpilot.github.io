@@ -29,14 +29,14 @@ Die einzelnen Thumbnails und das große Bild kommen nicht ins HTML, sondern werd
 
 Setze die Funktionalität mittels JavaScript um. Die Namen der Bilder sowie die Namen der Thumbnails sind bereits in globalen Arrays angegeben:
 ```javascript
-var gImages = new Array ("./pics/img_01.jpg", 
+let gImages = new Array ("./pics/img_01.jpg", 
 		"./pics/img_02.jpg", 
 		"./pics/img_03.jpg", 
 		"./pics/img_04.jpg", 
 		"./pics/img_05.jpg", 
 		"./pics/img_06.jpg");
 
-var gThumbs = new Array ("./pics/thumb_01.jpg", 
+let gThumbs = new Array ("./pics/thumb_01.jpg", 
 		"./pics/thumb_02.jpg", 
 		"./pics/thumb_03.jpg", 
 		"./pics/thumb_04.jpg", 

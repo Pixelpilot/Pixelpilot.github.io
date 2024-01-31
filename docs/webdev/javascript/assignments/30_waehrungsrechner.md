@@ -1,6 +1,6 @@
 ---
 title: Aufgabe 5 - JavaScript und Formulare - Währungsumrechner
-description: JavaScript - Formulare - Ein- und Ausgabe
+description: JavaScript und Formulare - Ein- und Ausgabe
 category: Webentwicklung
 topic: JavaScript - Teil 1
 subtopic: Eingabe und Ausgabe
@@ -10,7 +10,7 @@ layout: default
 ## Aufgabenstellung
 Es ist ein einfaches Formular zu erstellen, mit dessen Hilfe man Euro nach Dollar umrechnen kann.
 ![Währungsrechner](./img/dollar2euro.png)
-*Beispielhaft Umsetzung*
+*Beispielhafte Umsetzung*
 
 
 ### 1. HTML und CSS

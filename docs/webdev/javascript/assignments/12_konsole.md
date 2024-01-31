@@ -131,7 +131,7 @@ evenodd ( 10, 13 ); // gibt die Zahlen von 10 bis 13 aus
 #### 1.d. Erweiterungen
 
 * Wenn die erste übergebene Zahl größer als die zweite Zahl ist, dann soll eine *Warning* ausgegeben werden, aber beide Zahlen vertauscht werden.
-* Wenn die erste oder die zweite Zahl negativ ist, soll eine *Error*-Fehlermeldung ausgegeben werden, und die Funktion nicht weiter ausgeführt werden
+* Wenn die erste oder die zweite Zahl negativ ist, soll eine *Error*-Fehlermeldung ausgegeben werden, und die Funktion nicht weiter ausgeführt werden.
 
 
 ### Aufgabe 2. Zeitmessung in JavaScript

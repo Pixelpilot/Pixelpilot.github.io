@@ -93,7 +93,7 @@ Es ist eine einfache Webapp zu erstellen, mit der die Grundrechnungsarten traini
 
 ```javascript
 // JavaScript
-var zahl;
+let zahl;
 zahl = Math.random() * 10; // Math.random() liefert eine Kommazahl zwischen 0 - 1
 zahl = Math.floor( zahl ) + 1; // Math.floor() rundet eine Kommazahl ab
 ```
@@ -101,7 +101,7 @@ zahl = Math.floor( zahl ) + 1; // Math.floor() rundet eine Kommazahl ab
 
 ```javascript
 // JavaScript
-var zahl;
+let zahl;
 
 // Einlesen eines Strings - Annahme: "123"
 zahl = prompt ("Gib eine Zahl ein ...");

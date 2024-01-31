@@ -19,7 +19,7 @@ Die CSS-Eigenschaften von Elementen im HTML können einfach per JavaScript verä
 ```javascript
 /* JavaScript */
 // 1. Auf die Überschrift zugreifen
-var hl = document.getElementById("headline");
+let hl = document.getElementById("headline");
 
 // 2. Aussehen verändern
 hl.style.color = "blue";
@@ -80,13 +80,13 @@ Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 - Durch Klick auf den Button `Rahmen dicker` soll der Rahmen um `1px` dicker werden.
 - Durch Klick auf den Button `Rahmen dünner` soll der Rahmen um `1px` dünner werden.
 - Erweiterungen:
-	- Lege eine Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
+	- Lege ein Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
 	- Verändere weitere Attribute der Überschrift
 
 ### Erweiterungen Styles
-- Lege eine Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
+- Lege ein Array mit mehreren Farbwerten an und rotiere durch die verschiedenen Farbwerten
 - Verändere weitere Attribute der Überschrift
-- Erstelle die Buttons `Klasse setzen` und `Klasse wegnehmen`. Bei Klick auf diese Buttons soll dass Aussehen der Überschrift per `classList` verändert werden:
+- Erstelle die Buttons `Klasse setzen` und `Klasse wegnehmen`. Bei Klick auf diese Buttons soll das Aussehen der Überschrift per `classList` verändert werden:
 	- `Klasse setzen` - die Überschrift soll unterstrichen werden
 	- `Klasse wegnehmen`- die Überschrift soll wieder "normal" aussehen
 
@@ -96,9 +96,9 @@ Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 Es soll die Position eines Elements mittels CSS-Anpassungen mit JavaScript verändert werden können.
 
 - HTML-Elemente anlegen
-	- Erstellen ein `div`-Element und passe das Aussehen per CSS so an, damit es wie oben abgebildet aussieht. Weise dem `div`-Element das CSS-Attribut `position: relative;` zu
+	- Erstellen ein `div`-Element und passe das Aussehen per CSS so an, damit es wie oben abgebildet aussieht. Weise dem `div`-Element das CSS-Attribut `position: relative;` zu.
 	- Lege die Buttons `w`, `a`, `s` und `d` an.
-- Bei Klick auf die Buttons `w`, `a`, `s` und `d` soll das Objekte in die entsprechende Richtung bewegt werden. Die dafür notwendigen CSS-Attribute sind `top` und `left`.
+- Bei Klick auf die Buttons `w`, `a`, `s` und `d` soll das Objekt in die entsprechende Richtung bewegt werden. Die dafür notwendigen CSS-Attribute sind `top` und `left`.
 - Erweiterungen:
 	- Implementiere die Steuerung per Tastendruck durch das Event `keypress` (Quelltext untenstehend).
 	- Verändere das Aussehen der Buttons `w`, `a`, `s` und `d` so, dass diese mit dunkelgrauem Hintergrund und weißer Schrift dargestellt werden, sobald die entsprechende Taste auf der Tastatur gedrückt ist.
@@ -117,7 +117,7 @@ Erweitere die Tastatursteuerung so, dass ein einfaches Spiel entsteht:
 ### a. Spielfläche anlegen
 Lege ein `<div>`-Element an, das das Spielfeld darstellt und passe das Aussehen per CSS an
 
-Verwende globale Variablen, um die Spielfeldabmessungen festzulegen. Das Schlüsselwort `const` erzeugt eine Variable, die im Gegensatz zu `var` im Anschluss nicht mehr verändert werden darf.
+Verwende globale Variablen, um die Spielfeldabmessungen festzulegen. Das Schlüsselwort `const` erzeugt eine Variable, die im Gegensatz zu `let` im Anschluss nicht mehr verändert werden darf.
 ```javascript
 const universWidth = 400;
 const universHeight = 200;
