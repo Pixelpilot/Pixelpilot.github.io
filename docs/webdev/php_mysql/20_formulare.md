@@ -12,10 +12,37 @@ sitemap_exclude: n
 ---
 
 # Formulare in PHP
-Es gibt 2 Methoden, wie man Formulardaten an den Server übermitteln kann:
-* per **GET**
-* per **POST**
 
+## Erstellung eines HTML-Formulars
+
+Ein HTML-Formular dient als Schnittstelle für die Benutzereingabe. Es kann verschiedene Typen von Eingabeelementen enthalten, wie `input`, `textarea`, `select` etc. Die Attribute `action` und `method` im `<form>`-Tag definieren, wohin und wie die Daten gesendet werden.
+
+```html
+<form action="submit.php" method="post">
+  Name: <input type="text" name="name">
+  Email: <input type="email" name="email">
+  <input type="submit" value="Submit">
+</form>
+```
+## Verarbeitung von Formulardaten in PHP
+
+Wenn der Benutzer das Formular absendet, werden die Daten an das in der `action` angegebene PHP-Skript gesendet. Das `method`-Attribut bestimmt, ob die Daten über `$_GET` oder `$_POST` zugänglich sind.
+
+- **Verwendung von `$_GET`:** Die Daten werden in der URL übertragen. Geeignet für Suchformulare oder wenn die Daten nicht sensibel sind.
+- **Verwendung von `$_POST`:** Die Daten werden im Anfragekörper übertragen. Geeignet für das Übermitteln sensibler Informationen, wie Passwörter.
+
+```php
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Sammeln der Formulardaten
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+
+  // Verarbeiten der Daten hier
+  echo "Name: $name<br>Email: $email";
+}
+?>
+```
 
 ## Formularübermittlung per GET
 ### Übermittlung der Variablen
@@ -23,7 +50,7 @@ Es gibt 2 Methoden, wie man Formulardaten an den Server übermitteln kann:
 <form action="http://localhost/willkommen.php" method="get">
 ```
 Mit der Übermittlung der Informationen per *GET* werden die Formulardaten an die URL angehängt, bevor die Anfrage an der Server geschickt wird:<br>
-`http://http://localhost/willkommen.php?name=Christian`
+`http://localhost/willkommen.php?name=Christian`
 
 Hinter dem `?` am Ende der URL kommen die Variablenname/Variablenwerte-Paare. Werden mehrere Variablen angegeben, so sind diese durch ein `&` voneinander getrennt:<br>
 `http://localhost/willkommen.php?name=Christian&user_id=123`
@@ -56,7 +83,7 @@ Hallo Christian!
 
 Je nach Einstellung des Servers kommt es zu einem Fehler, wenn eine Variable ausgelesen wird, die nicht gesetzt wurde. Daher sollte immer eine Überprüfung mit `isset()` durchgeführt werden.
 
-{% highlight php linenos %}
+```php
 <?php 
     // Überprüfen, ob es das Element im Array gibt
     if ( isset ($_GET[ "nickname" ]) ) {
@@ -78,7 +105,8 @@ Je nach Einstellung des Servers kommt es zu einem Fehler, wenn eine Variable aus
     <input type="submit" value="Per GET abschicken!">
     
 </form>
-{% endhighlight %}
+´´´
+
 *Beispiel eines Formulars mit Überprüfung der Daten*
 
 Die globalen Variable `$_SERVER['PHP_SELF']` enthält den Pfad zur aktuellen Datei.
