@@ -29,7 +29,7 @@ Ein HTML-Formular dient als Schnittstelle für die Benutzereingabe. Es kann vers
 Wenn der Benutzer das Formular absendet, werden die Daten an das in der `action` angegebene PHP-Skript gesendet. Das `method`-Attribut bestimmt, ob die Daten über `$_GET` oder `$_POST` zugänglich sind.
 
 - **Verwendung von `$_GET`:** Die Daten werden in der URL übertragen. Geeignet für Suchformulare oder wenn die Daten nicht sensibel sind.
-- **Verwendung von `$_POST`:** Die Daten werden im Anfragekörper übertragen. Geeignet für das Übermitteln sensibler Informationen, wie Passwörter.
+- **Verwendung von `$_POST`:** Die Daten werden im Anfragekörper (request body) übertragen. Geeignet für das Übermitteln sensibler Informationen, wie Passwörter.
 
 ```php
 <?php
@@ -43,6 +43,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 ```
+
+### Validierung von Formulareingaben
+Die Validierung von Formulareingaben ist ein kritischer Schritt, um sicherzustellen, dass die Daten, die von den Benutzern übermittelt werden, sicher, korrekt und nützlich sind. PHP bietet verschiedene Funktionen und Techniken zur Validierung von Eingaben an, wie zum Beispiel die Funktionen `filter_var()` oder `preg_match()`. 
+
+#### Beispiel: Validierung einer E-Mail-Adresse
+```php
+$email = $_POST['email'];
+if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+  echo "Ungültige E-Mail-Adresse";
+} else {
+  echo "Gültige E-Mail-Adresse";
+}
+```
+Weitere Parameter neben `FILTER_VALIDATE_EMAIL` sind `FILTER_VALIDATE_INT` oder `FILTER_VALIDATE_FLOAT`.
+
+#### Beispiel: Validierung eines Passwort mit regulären Ausdrücken
+```php
+$password = $_POST['password'];
+$pattern = "/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$/";
+if (!preg_match($pattern, $password)) {
+  echo "Das Passwort erfüllt nicht die Anforderungen.";
+} else {
+  echo "Gültiges Passwort.";
+}
+
+```
+Beispiel, um zu überprüfen, ob ein Passwort bestimmte Anforderungen erfüllt (mindestens 8 Zeichen, mindestens ein Großbuchstabe, ein Kleinbuchstabe und eine Zahl)
+
 
 ## Formularübermittlung per GET
 ### Übermittlung der Variablen
@@ -69,12 +97,12 @@ Der `name` des Input-Elements, dessen Inhalt beim Senden übergeben wird, wird a
 ```
 ```php
 <?php
-    // Alle GET Variablen werden in einem Array  $_GET gespeichert
+    // Alle GET Variablen werden in einem Array $_GET gespeichert
     echo 'Hallo ' . $_GET["nickname"] . '!';
 ?>
 ```
 Obiger Quelltext erzeugt die Ausgabe
-```
+```html
 Hallo Christian!
 ```
 
@@ -106,10 +134,11 @@ Je nach Einstellung des Servers kommt es zu einem Fehler, wenn eine Variable aus
     
 </form>
 ```
-
 *Beispiel eines Formulars mit Überprüfung der Daten*
 
-Die globalen Variable `$_SERVER['PHP_SELF']` enthält den Pfad zur aktuellen Datei.
+Die globale Variable `$_SERVER['PHP_SELF']` enthält den Pfad zur aktuellen Datei.
+
+
 
 ## Formularübermittlung per POST
 ### Übermittlung der Variablen
@@ -123,9 +152,9 @@ Auch das Array `$_POST` ist superglobal und assoziativ. Die Daten werden *"unsic
 
 ### Vereinfachtes Beispiel einer Login-Seite
 
-{% highlight php linenos %}
+```php
 <?php
-    // Passwörte kommen üblicherweise aus der Datenbank 
+    // Passwörter kommen üblicherweise aus der Datenbank 
     // und sind verschlüsselt
     $hiddenUser = "admin";
     $hiddenPassword = "12345678";
@@ -155,7 +184,7 @@ Auch das Array `$_POST` ist superglobal und assoziativ. Die Daten werden *"unsic
 <?php
     }
 ?>
-{% endhighlight %}
+```
 
 ## Aufgaben
 
@@ -167,8 +196,8 @@ Auch das Array `$_POST` ist superglobal und assoziativ. Die Daten werden *"unsic
 
 Erstelle ein Kontaktformular, das die einzelnen Felder auf die Syntax hin überprüft:
 
-* Vorname – Mindestens 3 Buchstaben
-* Nachname – Mindestens 3 Buchstaben
+* Vorname – mindestens 3 Buchstaben
+* Nachname – mindestens 3 Buchstaben
 * E-Mail Adresse
 * Telefonnummer – nur Zahlen
 
@@ -217,11 +246,11 @@ Franz in 2y: $2y$10$t5kArDQ66XsOS2lPDsS0n.qhewWEFsrzaQgk./elN33QEdFwNnnkO
 ```
 
 
-Um das das gehashte Passwort zu überprüfen kann jetzt nicht mehr einfach der generierte *Hash* direkt mit dem (in der Datenbank) gespeicherten *Hash* verglichen werden.
+Um das gehashte Passwort zu überprüfen, kann jetzt nicht mehr einfach der generierte *Hash* direkt mit dem (in der Datenbank) gespeicherten *Hash* verglichen werden.
 
 Die Überprüfung erfolgt mit `password_verify()`:
 ```php
-// Passwort gerenieren (wird beim Erzeugen des Passworts gemacht)
+// Passwort generieren (wird beim Erzeugen des Passworts gemacht)
 $storedHash = password_hash("Franz", PASSWORD_DEFAULT);
 
 // Passwort überprüfen (wird beim Überprüfen des Passworts gemacht)
@@ -234,7 +263,7 @@ if ( password_verify ( "Franz", $storedHash) ) {
 
 
 
-#### Funktionialität
+#### Funktionalität
 * Bereits richtige Eingaben sollen erhalten bleiben.
 * Ermögliche mehrere Benutzer. Lege die notwendigen Daten dazu in einem Array ab.
 * Es sollen sprechende Fehlerhinweise direkt über den jeweiligen Formularfeldern angezeigt werden.
