@@ -105,7 +105,7 @@ Je nach Einstellung des Servers kommt es zu einem Fehler, wenn eine Variable aus
     <input type="submit" value="Per GET abschicken!">
     
 </form>
-´´´
+```
 
 *Beispiel eines Formulars mit Überprüfung der Daten*
 
