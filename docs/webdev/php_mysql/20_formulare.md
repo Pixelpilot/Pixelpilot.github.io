@@ -212,9 +212,9 @@ Sind alle Felder richtig ausgefüllt, so soll statt dem Formular eine Erfolgsmel
 * Erweiterung: Passe das Aussehen des Formulars per *CSS* an.
 
 
-### Aufgabe 2. Loginformular per POST
+### Aufgabe 2. Login-Formular per POST
 
-Erstelle eine Loginformular, dass den Benutzernamen und das zugehörige Passwort überprüft. Nur wenn Passwort und Benutzer richtig eingegeben werden, sollen geschützte Daten angezeigt werden.
+Erstelle eine Login-Formular, dass den Benutzernamen und das zugehörige Passwort überprüft. Nur wenn Passwort und Benutzer richtig eingegeben werden, sollen geschützte Daten angezeigt werden.
 
 Verwende [*Passwort-Hashing*](https://www.php.net/manual/de/book.password.php){:target="_blank"} für das Überprüfen des Passworts. Experimentiere mit verschiedenen Hashing-Algorithmen.
 

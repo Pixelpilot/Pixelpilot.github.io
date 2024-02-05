@@ -15,7 +15,7 @@ sitemap_exclude: n
 
 ## 1. Umsetzung des Graphen 
 
-Erstelle die Klassen `HashTableEntry` und `HashTable`.
+Erstelle die Klassen `Vertex`, `Edge` und `Graph`.
 
 ### 1.1 Klasse Vertex
 
