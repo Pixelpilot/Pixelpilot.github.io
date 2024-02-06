@@ -119,7 +119,7 @@ divInfo.innerHTML = "<p>Jetzt stehtwas anderes drinnen ... </p>";
 
 ### Zugriff auf HTML-Elemente
 
-Bevor Sie den Inhalt ändern können, müssen Sie auf die HTML-Elemente zugreifen. Es gibt verschiedene Methoden, um dies zu tun:
+Neben der Funktion `document.getElementById()` gibt es verschiedene Methoden, um auf HTML-Elemente zugreifen zu können:
 
 - `document.getElementById(id)`: Greift auf ein Element zu, das eine spezifische ID hat.
 - `document.getElementsByTagName(name)`: Liefert eine Liste aller Elemente eines bestimmten Tags.
@@ -141,26 +141,40 @@ Nachdem Sie Zugriff auf ein oder mehrere Elemente haben, können Sie deren Inhal
 #### Text eines Elements ändern
 
 ```javascript
-document.getElementById("meinElement").textContent = "Neuer Textinhalt";
+let element = document.getElementById("meinElement");
+element.textContent = "Neuer Textinhalt";
 ```
 
 #### HTML-Inhalt eines Elements ändern
 
 ```javascript
-document.getElementById("meinContainer").innerHTML = "<p>Neuer Absatz</p>";
+let container = document.getElementById("meinContainer");
+container.innerHTML = "<p>Neuer Absatz</p>";
 ```
 
 #### CSS-Stil eines Elements ändern
 
 ```javascript
-document.getElementById("meineID").style.color = "red";
+let element = document.getElementById("meinElement");
+element.style.color = "red";
+element.style.backgroundColor = "black"; // Camel-Cased-Notation
 ```
+*Verändert das Aussehen eines Elements*
+
+Das Verändern der Styles passiert per Inline-Style – die Angaben werden also direkt in das `style`-Attribut geschrieben und habe somit die höchste Spezifität.
+
+Die Schreibweise der Style-Attribute in JavaScript wird als *Camel-Cased* bezeichnet:
+
+* CSS: `background-color: red;` &rarr; JavaScript: `backgroundColor = "red";`
+* CSS: `border-left-width: 2px;` &rarr; JavaScript: `borderLeftWidth = "2px";`
 
 #### Ein Attribut eines Elements ändern
 
 ```javascript
-document.querySelector(".meineKlasse").setAttribute("href", "https://neue.url");
+let element = document.querySelector(".meineKlasse");
+element.setAttribute("href", "https://neue.url");
 ```
+*Verändert das erste Element mit der Klasse `meineKlasse` und setzt das `href`-Attribut auf `https://neue.url`.*
 
 
 ## Aufgabenstellung
