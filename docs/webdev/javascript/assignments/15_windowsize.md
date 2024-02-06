@@ -36,7 +36,7 @@ function sayHello(){
 }
 ```
 
-#### Methode 2: Eventlistener per JavaScript hinzufügen
+#### Methode 2: EventListener per JavaScript hinzufügen
 
 Das Event wird per JavaScript auf ein Element gelegt. Das hat den Vorteil, dass das naträglich – also nicht nur beim Laden der Seite – passieren kann.
 
@@ -93,6 +93,76 @@ document.addEventListener("mousemove", function(event) {
 });
 ```
 
+
+## JavaScript und das Verändern von HTML-Inhalten
+
+### Wie können Webseiten zur Laufzeit verändert werden?
+
+JavaScript ermöglicht es, dynamische Änderungen an der Struktur und dem Aussehen einer Webseite vorzunehmen, ohne die Seite neu laden zu müssen. Dies geschieht durch Manipulation des Document Object Models (DOM). Der Browser bemerkt die Änderungen und stellt sie direkt im Browser-Fenster dar.
+
+Die Vorgehensweise ist dabei immer die gleiche:
+1. Auf ein oder mehrere Elemente zugreifen
+2. Elemente verändern
+
+
+```html
+<div id="info"><p>Dieser Text hier wird ausgetauscht...</p></div>
+```
+```javascript
+// 1. Auf ein Element über dessen Id zugreifen
+let divInfo = document.getElementById("info");
+
+// 2. Element verändern
+divInfo.innerHTML = "<p>Jetzt stehtwas anderes drinnen ... </p>";
+```
+*Die Eigenschaft `innerHTML` verändert den Inhalt zwischen dem öffnenden und schließenden Tag des ausgewählten Objekts*
+
+### Zugriff auf HTML-Elemente
+
+Bevor Sie den Inhalt ändern können, müssen Sie auf die HTML-Elemente zugreifen. Es gibt verschiedene Methoden, um dies zu tun:
+
+- `document.getElementById(id)`: Greift auf ein Element zu, das eine spezifische ID hat.
+- `document.getElementsByTagName(name)`: Liefert eine Liste aller Elemente eines bestimmten Tags.
+- `document.getElementsByClassName(name)`: Liefert eine Liste aller Elemente, die eine bestimmte Klasse haben.
+- `document.querySelector(selector)`: Liefert das erste Element, das einem bestimmten CSS-Selektor entspricht.
+- `document.querySelectorAll(selector)`: Liefert eine Liste aller Elemente, die einem bestimmten CSS-Selektor entsprechen.
+
+### Ändern von Inhalten
+
+Nachdem Sie Zugriff auf ein oder mehrere Elemente haben, können Sie deren Inhalt auf verschiedene Weise ändern:
+
+- `.innerHTML`: Erlaubt das Hinzufügen oder Ändern von HTML-Inhalt. Kann Sicherheitsrisiken bergen, wenn der Inhalt Benutzereingaben enthält.
+- `.textContent`: Ändert den Textinhalt eines Elements. Sicherer als `innerHTML`, da es keinen HTML-Code interpretiert.
+- `.setAttribute(name, value)`: Ändert oder setzt ein Attribut des Elements.
+- `.style.property`: Erlaubt das Ändern von CSS-Eigenschaften.
+
+### Beispiele
+
+#### Text eines Elements ändern
+
+```javascript
+document.getElementById("meinElement").textContent = "Neuer Textinhalt";
+```
+
+#### HTML-Inhalt eines Elements ändern
+
+```javascript
+document.getElementById("meinContainer").innerHTML = "<p>Neuer Absatz</p>";
+```
+
+#### CSS-Stil eines Elements ändern
+
+```javascript
+document.getElementById("meineID").style.color = "red";
+```
+
+#### Ein Attribut eines Elements ändern
+
+```javascript
+document.querySelector(".meineKlasse").setAttribute("href", "https://neue.url");
+```
+
+
 ## Aufgabenstellung
 Es ist eine einfache Web-Applikation zu erstellen, mit der Informationen, wie zum Beispiel die aktuelle Auflösung des Browserfensters, angezeigt werden können.
 
@@ -101,13 +171,13 @@ Es ist eine einfache Web-Applikation zu erstellen, mit der Informationen, wie zu
 
 ### 1. Framework
 
-* Lege die Dateien `screen.css` und `functions.js` an und binde die beiden Dateien in die Datei `index.html` ein.
+* Lege die Dateien `style.css` und `script.js` an und binde die beiden Dateien in die Datei `index.html` ein.
 * Teste, ob die beiden Dateien richtig eingebunden sind, indem du die Hintergrundfarbe des `<body>`-Tags auf
 rot setzt und eine Alertbox aufrufst.
 
 ### 2. Auslesen der Informationen / Verarbeiten von Events
 
-* Schreibe in der Datei `functions.js` eine Funktion `getDimensions()`. Die Funktion ermittelt die aktuellen Abmessungen des Browserfensters mit den Funktionen `window.innerWidth()` und `window.innerHeight()` und gibt das Ergebnis in der Konsole aus.
+* Schreibe in der Datei `script.js` eine Funktion `getDimensions()`. Die Funktion ermittelt die aktuellen Abmessungen des Browserfensters mit den Funktionen `window.innerWidth()` und `window.innerHeight()` und gibt das Ergebnis in der Konsole aus.
 
 ```javascript
 // JavaScript
