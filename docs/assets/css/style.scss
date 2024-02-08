@@ -105,10 +105,16 @@ h4 {
   margin-top: 40px;
 }
 
-.main-content blockquote:before{
+.main-content blockquote:before, .assignment:before{
   content: '🖋';
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
+  margin-right: 20px;
+}
+
+.assignment{
+  display: flex;
+  align-items: flex-start;
 }
 
 .main-content blockquote {

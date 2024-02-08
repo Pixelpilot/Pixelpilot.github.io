@@ -1,5 +1,5 @@
 ---
-title: Datenbanken -  Übungsaufabe JOIN 1
+title: Datenbanken - Notendatenbank - Übungsaufgabe zu JOINS
 description: Aufgabenstellungen zu Datenbankabfragen
 
 category: Fachspezifische Softwaretechnik
@@ -134,9 +134,9 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 
 ### Übungsabfragen
 
-> #### Einstieg 1:
+> #### Aufgabe 1: Einstieg
 > ##### 1.a. Auflistung aller Ergebnisse
-> Liste alle Ergebnisse auf und gib Schülernamen, `Klasse`, `Fach`, `Datum` sowie die `Note  aus.
+> Liste alle Ergebnisse auf und gib Schülernamen, `Klasse`, `Fach`, `Datum` sowie die `Note`  aus.
 > 
 > ##### 1.b. Eingeschränkte Aufzählung
 > Liste alle Schüler:innen auf, die in einem `HWE`-Test einen 3er haben. Zeige `Vorname`, `Nachname` und `Klasse`an und vermeide, dass ein:e Schüler:in mehrfach aufgelistet wird.
@@ -176,7 +176,7 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 > Von einem Test sind bekannt: Datum, Fach, Klasse.
 > Ermittle:
 > 1. alle Schüler (Namen) die an einem bestimmten Test teilgenommen haben,
-> 2. die Durchschnittsnote für alle 'FSST'-Test,
+> 2. die Durchschnittsnote für alle FSST-Tests,
 > 3. alle Schüler die besser als der Durchschnitt abgeschnitten haben.
 > 
 > ##### 3.b. Schüler:innen-Auswertung

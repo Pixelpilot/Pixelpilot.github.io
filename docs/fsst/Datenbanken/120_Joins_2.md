@@ -1,5 +1,5 @@
 ---
-title: Datenbanken -  Übungsaufabe JOIN 2
+title: Datenbanken - Online-Shop - Übungsaufgabe zu JOINS
 description: Aufgabenstellungen zu Datenbankabfragen
 
 category: Fachspezifische Softwaretechnik
@@ -206,7 +206,7 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > Anzahl der Bestellungen und Gesamtmenge der Bestellungen für jeden Kunden, die nach dem 15. Januar 2024 getätigt wurden.
 > 
 > #### Aufgabe 7: Abfrage mit `HAVING`-Klausel
-> Die `HAVING`-Klausel kann verwendet werden, um Gruppen von Daten (`SUM`, `COUNT`, `AVG`, ...) zu filtern. Die `WHERE`-Klausel funktioniert hir nicht. Informiere dich über die `HAVING`-Klausel.
+> Die `HAVING`-Klausel kann verwendet werden, um Gruppen von Daten (`SUM`, `COUNT`, `AVG`, ...) zu filtern. Die `WHERE`-Klausel funktioniert hier nicht. Informiere dich über die `HAVING`-Klausel.
 > 
 > Zeige eine Liste aller Produkte an, die mehr als 3 Mal bestellt wurden.
 
