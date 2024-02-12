@@ -132,6 +132,9 @@ Um einen Wert zu Löschen kann der Befehl `unset()` verwendet werden.
 
 Erstelle eine Webapplikation mit einem geschützten, deren Inhalte nur angezeigt werden, wenn sich der Benutzer einloggt.
 
+Lade dazu das Gründgerüst der Applikation hier:<br>
+[Grundgerüst der Applikation: Sessions-in-PHP.zip](./assets/Sessions-in-PHP.zip)
+
 Die Applikation besteht aus mehreren Dateien:
 
 

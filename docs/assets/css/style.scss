@@ -105,17 +105,19 @@ h4 {
   margin-top: 40px;
 }
 
-.main-content blockquote:before, .assignment:before{
+.main-content blockquote:before {
   content: '🖋';
   font-size: 2rem;
-  display: flex;
   margin-right: 20px;
 }
 
-.assignment{
-  display: flex;
-  align-items: flex-start;
+/*
+.main-content blockquote>h4 {
+  color: red;
+  margin-left: 4rem;
+  margin-top: -2rem !important;
 }
+*/
 
 .main-content blockquote {
   padding: 1rem;
