@@ -1,5 +1,5 @@
 ---
-title: Datenbanken - Notendatenbank - Übungsaufgabe zu JOINS
+title: Aufgabe 2 - Datenbanken Join - Notendatenbank
 description: Aufgabenstellungen zu Datenbankabfragen
 
 category: Fachspezifische Softwaretechnik

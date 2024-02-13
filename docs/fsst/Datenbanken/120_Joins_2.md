@@ -1,5 +1,5 @@
 ---
-title: Datenbanken - Online-Shop - Übungsaufgabe zu JOINS
+title: Aufgabe 3 - Datenbanken Join - Online-Shop
 description: Aufgabenstellungen zu Datenbankabfragen
 
 category: Fachspezifische Softwaretechnik
@@ -18,9 +18,8 @@ sitemap_exclude: n
 Es ist eine Datenbank für ein fiktives Unternehmen gegeben, das Produkte verkauft und Bestellungen bearbeitet.
 Die Datenbank wird enthält 3 Tabellen: **Produkte**, **Kunden** und **Bestellungen**.
 
-
 ### Tabellenstruktur
-
+![](img/sql-join-shop.jpg)
 #### Tabelle: Produkte
 
 - `ProduktID` (Primärschlüssel, Integer)
@@ -41,7 +40,7 @@ Die Datenbank wird enthält 3 Tabellen: **Produkte**, **Kunden** und **Bestellun
 - `Bestelldatum` (Datum)
 - `Menge` (Integer)
 
-### Erstellen der Datenbank und befüllen der Tabellen
+### Erstellen der Datenbank und Befüllen der Tabellen
 ```sql
 /* ==================================== */
 /* Tabellen erstellen                   */
@@ -183,7 +182,7 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
      (34, 4, 5, '2024-02-12', 3);
 ```
 
-### Übungsabfragen
+### Übungsabfragen - Einstieg
 
 > #### Aufgabe 1: Einfache Abfrage mit `JOIN`
 > Liste aller Bestellungen mit Kunden- und Produktnamen.
@@ -196,6 +195,7 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > | 3         | 2024-01-12 | Anna Bauer    | Kopfhörer              | 1     | 150.00  |
 > | 4         | 2024-01-13 | Lukas Weber   | Bluetooth-Lautsprecher | 3     | 200.00  |
 > | 5         | 2024-01-14 | Sophia Schmidt| Smartwatch             | 2     | 350.00  |
+> | ...       | ...        | ...           | ...                    | ...   | ...     |
 > +-----------+------------+---------------+------------------------+-------+---------+
 > ```
 
@@ -209,13 +209,13 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > | Laptop              | 3     | 3600.00            |
 > | Smartwatch          | 8     | 2800.00            |
 > | Tablet              | 3     | 1500.00            |
-> | Drohne              | 2     | 1200.00            |
+> | ...                 | ...   | ...                |
 > | USB-Stick           | 3     | 60.00              |
 > +---------------------+-------+--------------------+
 > ```
 
 > #### Aufgabe 3: Komplexe Abfrage mit `JOIN` und Bedingungen
-> Ermittle Bestellungen eines bestimmten Kunden.
+> Ermittle alle Bestellungen des Kunden mit dem Nachnamen *Mustermann*.
 > ```
 > +----------------+-----------+-------------+--------------+-------+
 > | KundenName     | BestellID | ProduktName | Bestelldatum | Menge |
@@ -258,15 +258,16 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > #### Aufgabe 6: Kombinierte Aggregationsabfrage
 > Anzahl der Bestellungen und Gesamtmenge der Bestellungen für jeden Kunden, die vor dem 11. Februar 2024 getätigt wurden.
 > ```
-> +----------------+-------------------+-------------+
+> +----------------+--------------------+-------------+
 > | KundenName     | AnzahlBestellungen | GesamtMenge |
-> +----------------+-------------------+-------------+
+> +----------------+--------------------+-------------+
 > | Julia Schmitt  | 2                  | 4           |
 > | Max Mustermann | 2                  | 2           |
 > | Liam Fuchs     | 1                  | 1           |
 > | Lena Frank     | 1                  | 1           |
 > | Marie Koch     | 1                  | 2           |
-> +----------------+-------------------+-------------+
+> | ...            | ...                | ...         |
+> +----------------+--------------------+-------------+
 > ```
 
 > #### Aufgabe 7: Abfrage mit `HAVING`-Klausel
@@ -284,7 +285,7 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > +-------------------------+--------------------+
 > ```
 
-### Erweiterte Übungsabfragen
+### Übungsabfragen - Erweitert
 
 > #### Aufgabe 1: Nested Select in WHERE-Klausel
 > Finde alle Kunden, die Produkte über dem Durchschnittspreis aller Produkte gekauft haben.

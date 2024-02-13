@@ -1,5 +1,5 @@
 ---
-title: Datenbanken - Einstieg - Übungsaufgabe zu JOINS
+title: Aufgabe 1 - Datenbanken Join - Einstieg
 description: Aufgabenstellungen zu Datenbankabfragen
 
 category: Fachspezifische Softwaretechnik
@@ -83,99 +83,115 @@ INSERT INTO Sprachkenntnisse (PersonID, FremdspracheID, Niveau) VALUES
 ```
 
 ---
-### Übungsabfragen
+### Übungsabfragen - Einstieg
 
-#### Aufgabe 1: Einstieg
+> #### Aufgabe 1
+> Finde alle Personen, die Englisch sprechen.
+> ```
+> +---------+------------+
+> | Vorname | Nachname   |
+> +---------+------------+
+> | Max     | Mustermann |
+> | Anna    | Müller     |
+> | Tom     | Schmidt    |
+> +---------+------------+
+> ```
 
-1. Finde alle Personen, die Englisch sprechen.
-```
-+---------+------------+
-| Vorname | Nachname   |
-+---------+------------+
-| Max     | Mustermann |
-| Anna    | Müller     |
-| Tom     | Schmidt    |
-+---------+------------+
-```
+> #### Aufgabe 2
+> Zeige die Namen und Geburtsdaten aller Personen an, die mindestens eine Fremdsprache auf fließendem Niveau sprechen.
+> ```
+> +---------+------------+--------------+
+> | Vorname | Nachname   | Geburtsdatum |
+> +---------+------------+--------------+
+> | Max     | Mustermann | 1990-05-15   |
+> | Anna    | Müller     | 1985-09-23   |
+> +---------+------------+--------------+
+> ```
 
-2. Zeige die Namen und Geburtsdaten aller Personen an, die mindestens eine Fremdsprache auf fließendem Niveau sprechen.
-```
-+---------+------------+--------------+
-| Vorname | Nachname   | Geburtsdatum |
-+---------+------------+--------------+
-| Max     | Mustermann | 1990-05-15   |
-| Anna    | Müller     | 1985-09-23   |
-+---------+------------+--------------+
-```
-   
-3. Welche Personen sprechen Chinesisch? Gib ihre Namen und das Niveau ihres Chinesischkenntnisses an.
-```
-+---------+------------+----------+
-| Vorname | Nachname   | Niveau   |
-+---------+------------+----------+
-| Tom     | Schmidt    | Anfänger |
-+---------+------------+----------+
-```
-   
-4. Welche Fremdsprachen werden von mindestens zwei Personen gesprochen?
-```
-+--------------+
-| Fremdsprache |
-+--------------+
-| Englisch     |
-| Spanisch     |
-+--------------+
-```
+> #### Aufgabe 3
+> Welche Personen sprechen Chinesisch? Gib ihre Namen und das Niveau ihres Chinesischkenntnisses an.
+> ```
+> +---------+------------+----------+
+> | Vorname | Nachname   | Niveau   |
+> +---------+------------+----------+
+> | Tom     | Schmidt    | Anfänger |
+> +---------+------------+----------+
+> ```
 
-5. Finde alle Personen, die mindestens eine Fremdsprache sprechen, aber kein Englisch.
-```
-+---------+------------+
-| Vorname | Nachname   |
-+---------+------------+
-| Tom     | Schmidt    |
-+---------+------------+
-```
-#### Aufgabe 2: Erweiterte Übungsabfragen
+> #### Aufgabe 4
+> Welche Fremdsprachen werden von mindestens zwei Personen gesprochen?
+> ```
+> +--------------+
+> | Fremdsprache |
+> +--------------+
+> | Englisch     |
+> | Spanisch     |
+> +--------------+
+> ```
 
-6. Welche Personen sprechen mehr als zwei Fremdsprachen?
-```
-+---------+------------+
-| Vorname | Nachname   |
-+---------+------------+
-| Max     | Mustermann |
-+---------+------------+
-```
-7. Gib alle Fremdsprachen aus, die von mindestens einer Person auf muttersprachlichem Niveau gesprochen werden.
-```
-+--------------+
-| Fremdsprache |
-+--------------+
-| Englisch     |
-+--------------+
-```
-8. Welche Personen haben Kenntnisse in Fremdsprachen, die auf Anfänger- oder fortgeschrittenem Niveau sind?
-```
-+---------+------------+
-| Vorname | Nachname   |
-+---------+------------+
-| Max     | Mustermann |
-| Anna    | Müller     |
-| Tom     | Schmidt    |
-+---------+------------+
-```
-9. Welche Personen haben genau zwei Sprachkenntnisse und sprechen mindestens eine Fremdsprache fließend?
-```
-+---------+------------+
-| Vorname | Nachname   |
-+---------+------------+
-| Max     | Mustermann |
-+---------+------------+
-```
-10. Finde alle Personen, die Französisch auf einem Niveau sprechen, das höher ist als ihr Spanischniveau.
-```
-+---------+------------+
-| Vorname | Nachname   |
-+---------+------------+
-| Max     | Mustermann |
-+---------+------------+
-```
+> #### Aufgabe 5 
+> Finde alle Personen, die mindestens eine Fremdsprache sprechen, aber kein Englisch.
+> ```
+> +---------+------------+
+> | Vorname | Nachname   |
+> +---------+------------+
+> | Tom     | Schmidt    |
+> +---------+------------+
+> ```
+
+
+### Übungsabfragen - Erweitert
+
+> #### Aufgabe 6
+> Welche Personen sprechen mehr als zwei Fremdsprachen?
+> ```
+> +---------+------------+
+> | Vorname | Nachname   |
+> +---------+------------+
+> | Max     | Mustermann |
+> +---------+------------+
+> ```
+
+
+> #### Aufgabe 7
+> Gib alle Fremdsprachen aus, die von mindestens einer Person auf muttersprachlichem Niveau gesprochen werden.
+> ```
+> +--------------+
+> | Fremdsprache |
+> +--------------+
+> | Englisch     |
+> +--------------+
+> ```
+
+
+> #### Aufgabe 8
+> Welche Personen haben Kenntnisse in Fremdsprachen, die auf Anfänger- oder fortgeschrittenem Niveau sind?
+> ```
+> +---------+------------+
+> | Vorname | Nachname   |
+> +---------+------------+
+> | Max     | Mustermann |
+> | Anna    | Müller     |
+> | Tom     | Schmidt    |
+> +---------+------------+
+> ```
+
+> #### Aufgabe 9
+> Welche Personen haben genau zwei Sprachkenntnisse und sprechen mindestens eine Fremdsprache fließend?
+> ```
+> +---------+------------+
+> | Vorname | Nachname   |
+> +---------+------------+
+> | Max     | Mustermann |
+> +---------+------------+
+> ```
+
+> #### Aufgabe 10
+> Finde alle Personen, die Französisch auf einem Niveau sprechen, das höher ist als ihr Spanischniveau.
+> ```
+> +---------+------------+
+> | Vorname | Nachname   |
+> +---------+------------+
+> | Max     | Mustermann |
+> +---------+------------+
+> ```
