@@ -187,45 +187,170 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 
 > #### Aufgabe 1: Einfache Abfrage mit `JOIN`
 > Liste aller Bestellungen mit Kunden- und Produktnamen.
-> 
+> ```
+> +-----------+------------+---------------+------------------------+-------+---------+
+> | BestellID | Datum      | KundenName    | ProduktName            | Menge | Preis   |
+> +-----------+------------+---------------+------------------------+-------+---------+
+> | 1         | 2024-01-10 | Julia Schmitt | Laptop                 | 2     | 1200.00 |
+> | 2         | 2024-01-11 | Max Mustermann| Smartphone             | 1     | 800.00  |
+> | 3         | 2024-01-12 | Anna Bauer    | Kopfhörer              | 1     | 150.00  |
+> | 4         | 2024-01-13 | Lukas Weber   | Bluetooth-Lautsprecher | 3     | 200.00  |
+> | 5         | 2024-01-14 | Sophia Schmidt| Smartwatch             | 2     | 350.00  |
+> +-----------+------------+---------------+------------------------+-------+---------+
+> ```
+
 > #### Aufgabe 2: Aggregationsabfrage mit `GROUP BY`
-> Ermittle den Gesamtverkaufswert pro Produkt.
-> 
+> Ermittle den Gesamtverkaufswert pro Produkt absteigend nach Gesamtverkaufswert
+> ```
+> +---------------------+-------+--------------------+
+> | ProduktName         | Menge | Gesamtverkaufswert |
+> +---------------------+-------+--------------------+
+> | Smartphone          | 6     | 4800.00            |
+> | Laptop              | 3     | 3600.00            |
+> | Smartwatch          | 8     | 2800.00            |
+> | Tablet              | 3     | 1500.00            |
+> | Drohne              | 2     | 1200.00            |
+> | USB-Stick           | 3     | 60.00              |
+> +---------------------+-------+--------------------+
+> ```
+
 > #### Aufgabe 3: Komplexe Abfrage mit `JOIN` und Bedingungen
 > Ermittle Bestellungen eines bestimmten Kunden.
-> 
+> ```
+> +----------------+-----------+-------------+--------------+-------+
+> | KundenName     | BestellID | ProduktName | Bestelldatum | Menge |
+> +----------------+-----------+-------------+--------------+-------+
+> | Max Mustermann | 2         | Smartphone  | 2024-01-11   | 1     |
+> | Max Mustermann | 32        | Kopfhörer   | 2024-02-10   | 1     |
+> +----------------+-----------+-------------+--------------+-------+
+> ```
+ 
 > #### Aufgabe 4: Abfrage mit `LEFT JOIN`
 > Informiere dich über den Unterschied zwischen `INNER JOIN` und `OUTER JOIN`.
 > 
-> Erstelle Liste aller Kunden und ihrer Bestellungen, einschließlich der Kunden, die noch keine Bestellung getätigt haben.
-> 
+> Erstelle Liste aller Kunden und ihrer Bestellungen, einschließlich der Kunden, die noch keine Bestellung getätigt haben. Füge dazu der Kundentabelle einen weiteren Eintrag `Dagobert Duck` hinzu.
+> ```
+> +------------------+-----------+
+> | KundenName       | BestellID |
+> +------------------+-----------+
+> | Julia Schmitt    | 1         |
+> | Julia Schmitt    | 31        |
+> | Max Mustermann   | 2         |
+> | ...              | ...       |
+> | Dagobert Duck    | null      |
+> +------------------+-----------+
+> ```
+
 > #### Aufgabe 5: Abfrage mit Unterabfrage
 > Finde alle Produkte, deren Preis über dem Durchschnittspreis aller Produkte liegt.
-> 
+> ```
+> +----------------------+--------+
+> | ProduktName          | Preis  |
+> +----------------------+--------+
+> | Laptop               | 1200.00|
+> | Smartphone           | 800.00 |
+> | Smartwatch           | 350.00 |
+> | ...                  | ...    |
+> | Tragbarer Projektor  | 300.00 |
+> +----------------------+--------+
+> ```
+ 
 > #### Aufgabe 6: Kombinierte Aggregationsabfrage
-> Anzahl der Bestellungen und Gesamtmenge der Bestellungen für jeden Kunden, die nach dem 15. Januar 2024 getätigt wurden.
-> 
+> Anzahl der Bestellungen und Gesamtmenge der Bestellungen für jeden Kunden, die vor dem 11. Februar 2024 getätigt wurden.
+> ```
+> +----------------+-------------------+-------------+
+> | KundenName     | AnzahlBestellungen | GesamtMenge |
+> +----------------+-------------------+-------------+
+> | Julia Schmitt  | 2                  | 4           |
+> | Max Mustermann | 2                  | 2           |
+> | Liam Fuchs     | 1                  | 1           |
+> | Lena Frank     | 1                  | 1           |
+> | Marie Koch     | 1                  | 2           |
+> +----------------+-------------------+-------------+
+> ```
+
 > #### Aufgabe 7: Abfrage mit `HAVING`-Klausel
 > Die `HAVING`-Klausel kann verwendet werden, um Gruppen von Daten (`SUM`, `COUNT`, `AVG`, ...) zu filtern. Die `WHERE`-Klausel funktioniert hier nicht. Informiere dich über die `HAVING`-Klausel.
 > 
-> Zeige eine Liste aller Produkte an, die mehr als 3 Mal bestellt wurden.
+> Zeige eine Liste aller Produkte an, die mehr als 2 Mal bestellt wurden.
+> ```
+> +-------------------------+--------------------+
+> | ProduktName             | AnzahlBestellungen |
+> +-------------------------+--------------------+
+> | Bluetooth-Lautsprecher  | 3                  |
+> | Kopfhörer               | 3                  |
+> | Smartphone              | 3                  |
+> | Smartwatch              | 3                  |
+> +-------------------------+--------------------+
+> ```
 
 ### Erweiterte Übungsabfragen
 
 > #### Aufgabe 1: Nested Select in WHERE-Klausel
 > Finde alle Kunden, die Produkte über dem Durchschnittspreis aller Produkte gekauft haben.
 > 
+> Mit dem Schlüsselwert `DISTINCT` werden doppelte Werte in einem Abfrageergebnis eliminiert und nur eindeutige Datensätze zurückzugeben.
+> 
+> ```txt
+> +----------------+
+> |   Kundenname   |
+> +----------------+
+> | Julia Schmitt  |
+> | Hannah Hartmann|
+> | Max Mustermann |
+> | ...            |
+> | Leon Krüger    |
+> +----------------+
+> ```
+
 > #### Aufgabe 2: Nested Select in FROM-Klausel
 > Liste die durchschnittliche Bestellmenge pro Produkt auf.
-> 
-> 
+> ```
+> +------------------------+---------------------+
+> | ProduktName            | DurchschnittsMenge  |
+> +------------------------+---------------------+
+> | Action-Kamera          | 1.0000              |
+> | Digitalkamera          | 2.0000              |
+> | Bluetooth-Lautsprecher | 1.6667              |
+> | Drohne                 | 2.0000              |
+> | E-Book-Reader          | 1.0000              |
+> | ...                    |    ...              | 
+> | Wetterstation          | 3.0000              |
+> +------------------------+---------------------+
+> ```
+
 > #### Aufgabe 3: Nested Select mit JOIN
 > Finde alle Kunden, die mehr als der Durchschnitt aller Kunden in Bezug auf die Anzahl der Bestellungen bestellt haben.
-> 
-> 
+> ```
+> +----------------+-------------------------+
+> | Kundenname     | Anzahl der Bestellungen |
+> +----------------+-------------------------+
+> | Julia Schmitt  | 2                       |
+> | Max Mustermann | 2                       |
+> | Anna Bauer     | 2                       |
+> | Lukas Weber    | 2                       |
+> +----------------+-------------------------+
+> ``` 
+
+
 > #### Aufgabe 4: Mehrfache Joins mit Nested Select
 > Liste alle Produkte auf, die nur von Kunden aus einer bestimmten Stadt (z.B. 'Musterstadt') gekauft wurden.
 > 
-> 
+> ```
+> +-------------+------------------------------------+
+> | ProduktName | Adresse                            |
+> +-------------+------------------------------------+
+> | Laptop      | Lindenstraße 12, 12345 Musterstadt |
+> | Smartphone  | Lindenstraße 12, 12345 Musterstadt |
+> +-------------+------------------------------------+
+> ``` 
+
 > #### Aufgabe 5: Kombination von Nested Select und Aggregation
 > Finde die Gesamtanzahl der Bestellungen für Produkte, die teurer als der Durchschnittspreis sind.
+> ```
+> +-----------------------+
+> | Anzahl teure Produkte |
+> +-----------------------+
+> | 15                    |
+> +-----------------------+
+> ```
