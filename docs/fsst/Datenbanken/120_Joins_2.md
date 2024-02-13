@@ -47,19 +47,19 @@ Die Datenbank wird enthält 3 Tabellen: **Produkte**, **Kunden** und **Bestellun
 /* ==================================== */
 
 CREATE TABLE Produkte (
-    ProduktID INT PRIMARY KEY,
+    ProduktID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     ProduktName VARCHAR(100),
     Preis DECIMAL(10, 2)
 );
 
 CREATE TABLE Kunden (
-    KundenID INT PRIMARY KEY,
+    KundenID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     KundenName VARCHAR(100),
     Adresse VARCHAR(200)
 );
 
 CREATE TABLE Bestellungen (
-    BestellID INT PRIMARY KEY,
+    BestellID INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
     KundenID INT,
     ProduktID INT,
     Bestelldatum DATE,
