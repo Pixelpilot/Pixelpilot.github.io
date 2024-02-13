@@ -199,22 +199,8 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > +-----------+------------+---------------+------------------------+-------+---------+
 > ```
 
-> #### Aufgabe 2: Aggregationsabfrage mit `GROUP BY`
-> Ermittle den Gesamtverkaufswert pro Produkt absteigend nach Gesamtverkaufswert
-> ```
-> +---------------------+-------+--------------------+
-> | ProduktName         | Menge | Gesamtverkaufswert |
-> +---------------------+-------+--------------------+
-> | Smartphone          | 6     | 4800.00            |
-> | Laptop              | 3     | 3600.00            |
-> | Smartwatch          | 8     | 2800.00            |
-> | Tablet              | 3     | 1500.00            |
-> | ...                 | ...   | ...                |
-> | USB-Stick           | 3     | 60.00              |
-> +---------------------+-------+--------------------+
-> ```
 
-> #### Aufgabe 3: Komplexe Abfrage mit `JOIN` und Bedingungen
+> #### Aufgabe 2: Komplexe Abfrage mit `JOIN` und Bedingungen
 > Ermittle alle Bestellungen des Kunden mit dem Nachnamen *Mustermann*.
 > ```
 > +----------------+-----------+-------------+--------------+-------+
@@ -225,7 +211,7 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > +----------------+-----------+-------------+--------------+-------+
 > ```
  
-> #### Aufgabe 4: Abfrage mit `LEFT JOIN`
+> #### Aufgabe 3: Abfrage mit `LEFT JOIN`
 > Informiere dich über den Unterschied zwischen `INNER JOIN` und `OUTER JOIN`.
 > 
 > Erstelle Liste aller Kunden und ihrer Bestellungen, einschließlich der Kunden, die noch keine Bestellung getätigt haben. Füge dazu der Kundentabelle einen weiteren Eintrag `Dagobert Duck` hinzu.
@@ -241,21 +227,23 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > +------------------+-----------+
 > ```
 
-> #### Aufgabe 5: Abfrage mit Unterabfrage
-> Finde alle Produkte, deren Preis über dem Durchschnittspreis aller Produkte liegt.
+
+> #### Aufgabe 4: Aggregationsabfrage mit `GROUP BY`
+> Ermittle den Gesamtverkaufswert pro Produkt absteigend nach Gesamtverkaufswert
 > ```
-> +----------------------+--------+
-> | ProduktName          | Preis  |
-> +----------------------+--------+
-> | Laptop               | 1200.00|
-> | Smartphone           | 800.00 |
-> | Smartwatch           | 350.00 |
-> | ...                  | ...    |
-> | Tragbarer Projektor  | 300.00 |
-> +----------------------+--------+
+> +---------------------+-------+--------------------+
+> | ProduktName         | Menge | Gesamtverkaufswert |
+> +---------------------+-------+--------------------+
+> | Smartphone          | 6     | 4800.00            |
+> | Laptop              | 3     | 3600.00            |
+> | Smartwatch          | 8     | 2800.00            |
+> | Tablet              | 3     | 1500.00            |
+> | ...                 | ...   | ...                |
+> | USB-Stick           | 3     | 60.00              |
+> +---------------------+-------+--------------------+
 > ```
  
-> #### Aufgabe 6: Kombinierte Aggregationsabfrage
+> #### Aufgabe 5: Kombinierte Aggregationsabfrage
 > Anzahl der Bestellungen und Gesamtmenge der Bestellungen für jeden Kunden, die vor dem 11. Februar 2024 getätigt wurden.
 > ```
 > +----------------+--------------------+-------------+
@@ -270,7 +258,7 @@ INSERT INTO Bestellungen (BestellID, KundenID, ProduktID, Bestelldatum, Menge) V
 > +----------------+--------------------+-------------+
 > ```
 
-> #### Aufgabe 7: Abfrage mit `HAVING`-Klausel
+> #### Aufgabe 6: Abfrage mit `HAVING`-Klausel
 > Die `HAVING`-Klausel kann verwendet werden, um Gruppen von Daten (`SUM`, `COUNT`, `AVG`, ...) zu filtern. Die `WHERE`-Klausel funktioniert hier nicht. Informiere dich über die `HAVING`-Klausel.
 > 
 > Zeige eine Liste aller Produkte an, die mehr als 2 Mal bestellt wurden.
