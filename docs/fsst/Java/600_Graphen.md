@@ -182,8 +182,6 @@ Dateien:
 * [Download edges.csv](assets/edges.csv){:target="_blank"}
 
 Aufbau der Datei `vertices.csv`:
-
-
 ```
 ID;Name
 1;Braunau
