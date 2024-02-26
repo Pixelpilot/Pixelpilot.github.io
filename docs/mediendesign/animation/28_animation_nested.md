@@ -13,17 +13,32 @@ sitemap_exclude: n
 ---
 
 ## Aufgabenstellung
-Erstelle eine Animation, die aus mehreren Teil-Animationen besteht
 
-* Easing (Slow in and slow out)
-* Squash and Stretch
-* Secondary Action
+Sobald Animationen komplexer werden, müssen Symbole verschachtelt werden.
 
-<iframe src="./html/02-jumping_balls.html" style="padding:15px; width:830px; height:510px; border:1px solid #dce6f0; border-radius: 5px; margin: 0 auto;"></iframe>
-<sup>Beispielhafte Umsetzung</sup>
+Wenn wir zum Beispiel eine Figur darstellen wollen, so kann 
 
-> ### Aufgabe 1: Bouncing Ball Animation
->Es ist eine Animation zu erstellen, bei der ein optimaler Gummiball nach unten fällt, am Boden aufspringt und wieder bis zur Startposition hochfliegt.
+
+Erstelle eine Animation, die aus mehreren Teil-Animationen besteht:
+
+
+* Verschachtelte Symbole (Nested Movieclips)
+* Bewegungs-Tween
+* Pfadanimationen
+
+
+
+<iframe src="./html/02-sun-moon.html" style="padding:15px; width:830px; height:510px; border:1px solid #dce6f0; border-radius: 5px; margin: 0 auto;"></iframe>
+<sup>Beispielhafte Umsetzung</sup> 
+
+> ### Aufgabe 1: Sonne und Mond
+> {: .assignment }
+> Erstelle eine Animation, die aus mehreren Teilanimationen besteht:
+> * Die Sonne geht hinter dem Horizont auf
+>   * Sie Sonnenstrahlen drehen sich um die Sonne
+>   * Die Sonne zwinkert dir zu
+> * Die Umgebung wird heller, wenn die Sonne aufgeht
+> * 
 >
 >Berücksichtige dabei das Prinzip des **Slow in** und **Slow out** (**Ease** in Adobe Animate).
 >

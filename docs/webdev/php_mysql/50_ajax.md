@@ -1,6 +1,6 @@
 ---
-title: AJAX
-description: AJAX - Asynchrone Kommunikation mit dem Server
+title: AJAX mit PHP
+description: Asynchrone Kommunikation mit dem Server
 
 category: Webentwicklung
 topic: Grundlagen von PHP
@@ -11,15 +11,23 @@ layout: default
 sitemap_exclude: n
 ---
 
-# AJAX - Asynchrone Kommunikation mit dem Server
+# AJAX – Asynchrone Kommunikation mit dem Server
 
-AJAX steht für "Asynchronous JavaScript and XML" und bezieht sich auf die Verwendung von JavaScript, um asynchrone HTTP-Anfragen an einen Webserver zu senden und darauf basierende Aktionen auszuführen, ohne dabei die gesamte Webseite neu laden zu müssen.
+
+**AJAX** steht für **"Asynchronous JavaScript and XML"** und bezieht sich auf die Verwendung von JavaScript, um asynchrone HTTP-Anfragen an einen Webserver zu senden und darauf basierende Aktionen auszuführen, **ohne** dabei die gesamte Webseite **neu laden** zu müssen.
 
 Mit PHP und AJAX können so dynamische Webseiten erstellt werden, die Benutzererfahrung verbessert und die Ladezeiten verringert werden.
 
-Im Folgenden finden Sie ein Beispiel für die Verwendung von AJAX mit PHP und JavaScript:
+## Funktionsweise von AJAX mit PHP
 
-## Schritt 1: Erstellen der Antwort auf die AJAX Anfrage
+### Ablauf eines AJAX-Requests
+![php_ajax.png](img/php_ajax.png)
+
+*Ablauf eines AJAX-Requests, [https://netbeans.apache.org/](https://netbeans.apache.org/){:target="_blank"}*
+
+### Webserver: Erstellen der Antwort auf die AJAX Anfrage
+
+Der Webserver stellt die Anbindung an die Daten zur Verfügung (*Data Store*). 
 
 Als Format für den Datenaustausch bietet sich das JSON-Format an, da das Encodieren und das Decodieren sowohl in PHP als auch in JavaScript implementiert sind.
 
@@ -51,10 +59,14 @@ echo json_encode($data);
 {"id":"14","name":"Christian","email":"ch@htl.at","phone":"0610 123 45 67"},
 {"id":"16","name":"Hubert","email":"h@ubert.at","phone":"0650 99 88 77"}]
 ```
-*Beispielhafte Ausgabe im JSON-Format*
+*Die Daten werden im JSON-Format an den Client geschickt.*
 
 
-## Schritt 2: JavaScript-Skript mit AJAX-Anfrage und Verarbeitung
+### Client: AJAX-Anfrage und Verarbeitung
+
+Der Client stellt eine Anfrage (*HTTP Request*) an der Server und gibt eine *Callback*-Funktion an, die automatisch aufgerufen werden soll, wenn die Daten da sind. 
+
+Sobald der Server die Antwort geliefert hat, wird die *Callback*-Funktion aufgerufen. Der Client kann dann basierend auf den Informationen, die der Server geliefert hat, zum Beispiel das DOM verändern:
 
 ```html
 <!-- ajax.html -->
@@ -101,7 +113,9 @@ echo json_encode($data);
 </body>
 </html>
 ```
-### Der `XMLHttpRequest-readyState`
+*Verändern des DOM, sobald die Daten vom Server geladen wurden.*
+
+#### Der `XMLHttpRequest-readyState`
 
 Das XMLHttpRequest-Objekt hat verschiedene Werte für die Eigenschaft "readyState", die den Status der Anfrage darstellen. Jeder Zustand stellt einen bestimmten Zeitpunkt im Lebenszyklus einer AJAX-Anfrage dar. Die möglichen readyState-Werte sind:
 
@@ -117,7 +131,7 @@ Das XMLHttpRequest-Objekt hat verschiedene Werte für die Eigenschaft "readyStat
 
 Man kann den `readyState`-Wert in der Funktion `onreadystatechange()` des XMLHttpRequest-Objekts überprüfen, um auf bestimmte Ereignisse während des Lebenszyklus der Anfrage zu reagieren. Wenn der `readyState 4` erreicht ist, kann man sicher sein, dass die gesamte Antwort empfangen wurde und man die Antwort verarbeiten kann.
 
-### Der `XMLHttpRequest-status`
+#### Der `XMLHttpRequest-status`
 
 Die Eigenschaft `status` des XMLHttpRequest-Objekts enthält den HTTP-Statuscode, der von dem Server als Teil der Antwort auf die Anfrage zurückgegeben wurde. Der HTTP-Statuscode ist eine dreistellige Zahl, die den Status der Anfrage darstellt.
 
@@ -130,17 +144,27 @@ Die möglichen HTTP-Statuscodes sind in verschiedene Kategorien unterteilt, z. B
 
 Ein Statuscode von 200 bedeutet, dass die Anfrage erfolgreich war, während ein Statuscode von 404 darauf hinweist, dass die angeforderte Ressource nicht gefunden wurde.
 
-## Aufgaben
+## Aufgabe 1: Erweiterung der Kontaktdatenverwaltung
+{: .assignment }
 
-### 1. Erweiterung der Kontaktdatenverwaltung
+Verwende dazu die Datenbank, die in der Aufgabe [PHP und MySQL](40_mysql.html), erstellt wurde.
 
-Erstelle die Dateien `ajax.html` und `data.php`, um die oben angegebenen Beispiele zu implementieren und zu testen.
+### 1.1 Darstellung der Inhalte
 
-### 2. Jobbörse
+Erstelle eine neues Verzeichnis mit den Dateien `ajax.html` und `data.php`, um die oben angegebenen Beispiele zu implementieren und zu testen.
+
+### 1.2 Sortierung und Paginierung
+
+Erweitere die Applikation, um Sortierung und Paginierung von Einträgen durchzuführen, ohne dass die Seite neu geladen werden muss.
+
+Hänge dazu die Informationen per `GET`-Parameter an den Request an, um in `data.php` darauf reagieren zu können.
+
+## Aufgabe 2. Jobbörse
+{: .assignment }
 
 Erstelle eine Webapplikation mit HTML, JavaScript und CSS, die die Jobs der Partner der HTL Braunau anzeigt.
 
-#### API der HTL Jobbörse
+### API der HTL Jobbörse
 
 Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit dem Backend zur Verwaltung der Firmen und deren Jobs. Die Daten werden im JSON Format zur Verfügung gestellt:
 [https://jobboerse.htl-braunau.at/htl_job_api.php](https://jobboerse.htl-braunau.at/htl_job_api.php){:target="_blank"}
@@ -157,7 +181,7 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
     }
     ```
   
-**Auflistung von Unternehmen**  
+**Auflistung von Unternehmen**
 
 * `?cmd=getcpylist` liefert die Liste von Unternehmen (alphabetisch nach Firmenname)
   * `&count=3` schränkt die Anzahl der Unternehmen auf eine bestimmte Zahl ein
@@ -180,15 +204,16 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
 
 * `?cmd=getsingle&offer_id=2450` liefert die Details eines Jobs mit einer bestimmten `offer_id`
 
-#### Allgemeine Hinweise
+### Allgemeine Hinweise
 
-> **Alle Aufgaben sollen so umgesetzt werden, dass die Seite nicht neu geladen werden muss!**
+> #### Alle Aufgaben sollen so umgesetzt werden, dass die Seite nicht neu geladen werden muss!
 
-> **Achtung: Nur in einer Testumgebung:** Sollte es zu einer Fehlermeldung wie `Access to XMLHttpRequest at 'https://jobboerse.htl-braunau.at/htl_job_api.php?cmd=getcpylist' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource` kommen, muss die Chrome-Extension **Moesif Origin & CORS Changer** installiert und aktiviert werden.
+> #### Achtung: Nur in einer Testumgebung!
+> Sollte es zu einer Fehlermeldung wie `Access to XMLHttpRequest at 'https://jobboerse.htl-braunau.at/htl_job_api.php?cmd=getcpylist' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource` kommen, muss die Chrome-Extension **Moesif Origin & CORS Changer** installiert und aktiviert werden.
 
 
-
-#### 2.1. Unternehmensliste 
+### 2.1. Unternehmensliste 
+{: .assignment }
 
 Erstelle eine Datei `index.html`, die eine Liste der ersten 10 Unternehmen und deren wichtigsten Daten anzeigt:
 
@@ -198,7 +223,8 @@ Erstelle eine Datei `index.html`, die eine Liste der ersten 10 Unternehmen und d
 
 Zeige nur Firmen an, die Jobs haben, die nicht älter als 300 Tage sind.
 
-#### 2.2. Unternehmensliste mit Paginierung
+### 2.2. Unternehmensliste mit Paginierung
+{: .assignment }
 
 Erweitere Beispiel 2.1 so, dass es einen Button `Weiter` und `Zurück` gibt, mit denen die Unternehmen um jeweils 10 Einträge weiter- und zurück geschalten werden können.
 
@@ -206,18 +232,20 @@ Erweitere die Navigation um eine Anzeige der Seiten:
 
 `Zurück` `1` `2` `3` `4` `Weiter`
 
-#### 2.3. Anzeigen der Informationen eines bestimmten Unternehmens
+### 2.3. Anzeigen der Informationen eines bestimmten Unternehmens
+{: .assignment }
 
 Erweitere das Beispiel so, dass bei Klick auf ein Unternehmen die Firmendetails inklusive Logo übersichtlich dargestellt werden.
 
-#### 2.4. Anzeigen der Jobs eines bestimmten Unternehmens
+### 2.4. Anzeigen der Jobs eines bestimmten Unternehmens
+{: .assignment }
 
 Erweitere das Beispiel 2.3. so, dass unterhalb der Firmeninformationen alle Jobs des Unternehmens in Form einer Liste angezeigt werden, die nicht älter als 300 Tage sind.
 
 Erstellen einen Button `Zur Unternehmensliste`, das auf die Darstellung von Beispiel 2.2 (Unternehmensliste) umschaltet.
 
-#### 2.5. Detailansicht eines Jobs
-
+### 2.5. Detailansicht eines Jobs
+{: .assignment }
 Erweitere das Beispiel 2.4. so, dass bei Klick auf einen Job alle Details inklusive Link zum Job-PDF angezeigt werden.
 
 Erstelle einen Button `Alle Jobs des Unternehmens`, das wieder die Liste aus Aufgabe 2.4 des jeweiligen Unternehmens anzeigt.

@@ -55,37 +55,7 @@ Verwende folgende Shortcuts, um effizienter arbeiten zu können:
 <iframe class="anim" src="./html/01-jumping-balls.html" style="padding:15px; width:830px; height:510px; border:1px solid #dce6f0; border-radius: 5px; margin: 0 auto;" scrolling="no"></iframe>
 
 
-<script>
-/*
-// -moz-transform-scale(0.5);
-// -webkit-transform:scale(0.5);
-const WIDTH = 830;
-const HEIGHT = 510;
 
-window.onresize = function (){
-
-    let w = WIDTH;
-    let h = HEIGHT; 
-    if ( window.innerWidth < 830 ){
-        
-        w = window.innerWidth;
-        h = w * HEIGHT / WIDTH;
-    } 
-        
-    console.log ("w:"  + w + " h:" + h );
-
-    let animations = document.querySelectorAll(".anim");
-    for (let i = 0; i < animations.length; i ++ ) {
-        console.log ( w + "px");
-        //animations[i].style.width = w + "px";
-        animations[i].style.height = h + "px";
-
-    }
-}
-
-*/
-
-</script>
 
 
 ## Ressourcen

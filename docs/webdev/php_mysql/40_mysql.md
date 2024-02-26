@@ -1,5 +1,5 @@
 ---
-title: PHP und MySQL
+title: MySQL mit PHP
 description: Das CRUD Prinzip mit PHP und MySQL
 
 category: Webentwicklung
@@ -218,6 +218,7 @@ Um Einträge aus einer MySQL-Datenbank zu löschen, können wir die `DELETE`-Anw
 Erstellen eine Web-Applikation zur Verwaltung von Kontaktdaten.
 
 ### 1. Anlegen der Tabelle
+{: .assignment }
 
 Installiere ein `XAMPP` oder `MAMP`, um den Rechner als lokalen Webserver verwenden zu können.
 
@@ -231,15 +232,18 @@ Erstelle mittels `phpMyAdmin` einen Tabelle mit dem Namen `user` und folgenden F
 Legen einige Einträge manuell an.
 
 ### 2. Ausgeben aller Einträgen
+{: .assignment }
 Erstelle eine Datei `index.php`, die eine Liste aller Einträge in einer MySQL-Datenbank anzeigt. Verwende das `SELECT`-Statement, um die Einträge aus der Datenbank abzurufen und sie in einer HTML-Tabelle anzuzeigen.
 
 ### 3. Hinzufügen von Einträgen
+{: .assignment }
 
 Erstellen die Datei `insert.php`, die ein Formular enthält, das es dem Benutzer ermöglicht, einen neuen Eintrag in einer MySQL-Datenbank hinzuzufügen. Verwende das `INSERT`-Statement, um den neuen Eintrag in der Datenbank zu speichern.
 
 Die Übermittlung der Daten soll mit `POST`erfolgen.
 
 ### 4. Löschen von Einträgen
+{: .assignment }
 Erweitere die PHP-Seite von Aufgabe 2 (Hinzufügen von Einträgen), um dem Benutzer das Löschen von Einträgen zu ermöglichen. Verwende das `DELETE`- Statement, um die Löschungen in der Datenbank durchzuführen.
 
 Füge einen Button `Löschen` neben den einzelnen Einträgen hinzu.
@@ -255,6 +259,7 @@ Klickt man auf den Löschen-Button neben einem Eintrag, soll der Eintrag gelösc
 
 
 ### 5. Aktualisieren von Daten
+{: .assignment }
 Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu, um die Aktualisierung. Verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern. Implementiere das Formular zum Ändern der Daten in der Datei `edit.php`.
 
 ```php
@@ -263,17 +268,15 @@ echo "<input type='submit' name='update' value='Ändern'>";
 ```
 
 ### 6. Zusatz: Suchfunktionalität
+{: .assignment }
 Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in einer MySQL-Datenbank zu suchen. Verwende das `SELECT`- Statement und die `LIKE`- Klausel, um Einträge abzurufen, die bestimmte Suchkriterien erfüllen.
 
 ### 7. Zusatz: Sortierung und Paginierung
+{: .assignment }
 Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
 
-### 8. Zusatz: Asynchrone Abfrabe per AJAX
-Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen durchzuführen, ohne dass die Seite neu geladen werden muss.
-
-Verwende dazu [AJAX](https://www.w3schools.com/php/php_ajax_php.asp) und ändere die Einträge per JavaScript, sobald die Daten vom Server eintreffen.
 
 ## Ressourcen
 * [https://remotemysql.com/ - Free MySQL Hosting Site](https://remotemysql.com/){:target="_blank"}
 * [https://www.php.net/manual/de/ - php.net Manual: SQL Injection](https://www.php.net/manual/de/security.database.sql-injection.php){:target="_blank"}
-* * [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}
+* [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}

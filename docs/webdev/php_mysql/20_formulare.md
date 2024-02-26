@@ -191,8 +191,8 @@ Auch das Array `$_POST` ist superglobal und assoziativ. Die Daten werden *"unsic
 ### Aufgabe 1. Kontaktformular per GET
 
 
-![](img/php_contact_form.png)
-*Beispielhafte Umsetzung*
+> ![](img/php_contact_form.png)
+> *Beispielhafte Umsetzung*
 
 Erstelle ein Kontaktformular, das die einzelnen Felder auf die Syntax hin überprüft:
 
@@ -202,7 +202,7 @@ Erstelle ein Kontaktformular, das die einzelnen Felder auf die Syntax hin überp
 * Telefonnummer – nur Zahlen
 
 Sind alle Felder richtig ausgefüllt, so soll statt dem Formular eine Erfolgsmeldung angezeigt werden:
-![](img/php_contact_form_finished.png)
+> ![](img/php_contact_form_finished.png)
 
 
 #### Funktionalität

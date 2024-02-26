@@ -10,7 +10,7 @@ layout: default
 
 sitemap_exclude: n
 ---
-# Benutzeridentifikation und Weitergabe von Daten
+# Sessions mit PHP - Benutzeridentifikation und Weitergabe von Daten
 
 Wenn ein Benutzer auf die Website kommt, dann ist jeder Zugriff unabhängig von jedem anderen Zugriff. Die PHP-Applikation weiß nicht, ob 10 verschiedene Benutzer die Webseite abrufen oder ob ein Benutzer die Seite 10 mal lädt.
 
@@ -59,19 +59,28 @@ echo $_COOKIE["TestCookie"];
 print_r($_COOKIE);
 ```
 
-## Serverseitige Datenhaltung - Sessions in PHP
+## Serverseitige Datenhaltung – Sessions in PHP
 
 ### Beginnen einer Session
 
 Mit Hilfe einer Session können unterschiedliche Daten anhängig vom Benutzer auf dem Server gespeichert werden.
 
-Mit dem Befehl [`session_start()`](https://www.php.net/manual/de/function.setcookie.php){:target="_blank"} passiert folgendes ...
-* ... beim ersten Aufruf:
-  * Es wird automatische ein Cookie `PHPSESSID` auf dem Client gesetzt.
-  * Danach können Daten auf dem Server ins Array `$_SESSION` gespeichert werden, die dieser Session-ID zugwiesen werden.
-* ... bei jedem weiteren Aufruf:
-  * Die Session wird anhand des Cookies `PHPSESSID` wieder erkannt.
-  * Es kann auf die entsprechenden Daten Array `$_SESSION` auf dem Server zugegriffen werden.
+Mit dem Befehl [`session_start()`](https://www.php.net/manual/de/function.setcookie.php){:target="_blank"} passiert folgendes  beim ersten Aufruf:
+* Es wird automatische ein Cookie `PHPSESSID` auf dem Client gesetzt.
+* Danach können Daten auf dem Server ins Array `$_SESSION` gespeichert werden, die dieser Session-ID zugwiesen werden.
+
+![php_session_01.png](img/php_session_start.png)
+
+### Fortführen der Session
+
+
+Mit dem Befehl [`session_start()`](https://www.php.net/manual/de/function.setcookie.php){:target="_blank"} passiert folgendes  bei jedem weiteren Aufruf:
+* Die Session wird anhand des Cookies `PHPSESSID` wieder erkannt.
+* Es kann auf die entsprechenden Daten Array `$_SESSION` auf dem Server zugegriffen werden.
+  
+![php_session_02.png](img/php_session_next.png)
+
+### Beispiel: Besuchererfassung
 
 ```php
 <?php
@@ -88,15 +97,16 @@ ergibt beim ersten Aufruf
 ```
 Zum ersten Mal auf der Seite ...
 ```
-Beim jedem weieren Aufruf
+Beim jedem weiteren Aufruf
 ```
 Session-ID: dc863c7ed80085be1553e33ab48765ef
 ```
 
+### Das superglobale Array $_SESSION
 
+#### Werte setzen
 
-
-### Setzen und löschen von Informationen im superglobalen Array $_SESSION
+Um einen neuen Wert zu speichern, muss lediglich ein Wert ins `$_SESSION`-Array zugewiesen werden. Gibt es diesen Eintrag noch nicht, wird ein neuer Eintrag angelegt.
 
 ```php
 <?php
@@ -119,11 +129,29 @@ Session-ID: dc863c7ed80085be1553e33ab48765ef
 </p>
 ```
 
-Um einen Wert zu Löschen kann der Befehl `unset()` verwendet werden. 
+#### Werte löschen
+Um einen Wert zu löschen kann der Befehl `unset()` verwendet werden. 
 ```php
 <?php
   session_start();
   unset($_SESSION['zaehler']);
+?>
+```
+
+#### Session löschen
+Die gesamte Session kann mit den Befehlen `session_unset()` und `session_destroy()` gelöscht werden.
+```php
+<?php
+  session_start();
+  
+  // Alle Inhalte löschen, Session bleibt bestehen
+  session_unset();
+  
+  // Session löschen
+  session_destroy();
+  
+  // Superglobales Array löschen
+  $_SESSION = array();
 ?>
 ```
 
@@ -159,11 +187,14 @@ Diese Seite setzt die Session zurück und löscht das entsprechende Cookie.
 * `content/what.php`, `content/why.php`, `content/where.php`<br>
   In diesen Dateien ist er eigentliche Inhalt enthalten.
 
-<br>
+---
+### Aufgabe 1: Login-Screen
+{: .assignment }
 
-### Aufgabe 1. Login-Screen
 Beim Starten der Applikation soll automatisch der Login-Screen angezeigt werden:
-![](img/php_session_loginscreen.png)
+> ![php_session_login.png](img/php_session_login.png)
+> *Beispielhafte Umsetzung des Login-Screens*
+
 
 In der Datei `index.php` wird dazu die Session-Variable `$_SESSION["user"]` abgefragt. Ist sie gesetzt werden die Inhalte angezeigt, ansonsten auf die Login-Seite weitergeleitet:
 ```php
@@ -183,20 +214,23 @@ In der Datei `index.php` wird dazu die Session-Variable `$_SESSION["user"]` abge
   * Passwort und/oder Benutzer falsch: Login-Seite nochmal anzeigen
   * Passwort und Benutzer richtig: Session-Variable `$_SESSION["user"]` auf den Usernamen setzen und auf die `index.php` weiterleiten.
 
-<br>
-
-### Aufgabe 2. Darstellung der Inhalte
+---
+### Aufgabe 2: Darstellung der Inhalte
+{: .assignment }
 
 Ist der Benutzer eingeloggt, so werden die Inhalte angezeigt:
-![](img/php_session_what.png)
+> ![php_session_app.png](img/php_session_app.png)
+> *Beispielhafte Umsetzung der Darstellung der Inhalte*
+ 
 
 #### Todo:
 * Lies den GET-Parameter `$_GET["pageid"]` der Menüpunkte aus und lade die entsprechenden Inhalte mittels `include`.
 * Erweitere die Dateien im Verzeichnis `content/` so, dass die nicht direkt aufgerufen werden können, wenn der Benutzer nicht eingeloggt ist.
 
-<br>
 
-### Aufgabe 3. Logout
+---
+### Aufgabe 3: Logout
+{: .assignment }
 
 Durch Klick auf den Link <u>Logout</u> soll die Session zurückgesetzt und das entsprechende Cookie gelöscht werden.
 #### Todo:
@@ -205,7 +239,9 @@ Durch Klick auf den Link <u>Logout</u> soll die Session zurückgesetzt und das e
 
 <br>
 
-### Erweiterung: Aufzeichnen des Benutzerverhaltens
+---
+### Zusatzaufgabe: Aufzeichnen des Benutzerverhaltens
+{: .assignment }
 
 Zeichne auf, wie sich der Benutzer auf der Seite verhält und speichere diese Informationen in Session-Variablen:
 
@@ -213,6 +249,10 @@ Zeichne auf, wie sich der Benutzer auf der Seite verhält und speichere diese In
 * Wie schaut der Browserverlauf aus?
 
 Erstelle eine Datei `statistics.php`, die diese Informationen ausgibt. Die Informationen sollen ebenfalls nur angezeigt werden, wenn der Benutzer eingeloggt ist.
+
+> ![php_session_stats.png](img/php_session_stats.png)
+> *Beispielhafte Umsetzung der Statistik*
+
 
 ## Ressourcen
 

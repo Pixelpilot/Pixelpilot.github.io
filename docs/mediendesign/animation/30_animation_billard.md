@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 3 - Erstellen erweiterte Animationen
+title: Aufgabe 4 - Erstellen erweiterte Animationen
 description: Grundlagen der Animation mit Adobe Animate – Billard
 
 category: Mediendesign
@@ -27,10 +27,8 @@ Erstelle eine einfache Animation, die die wichtigsten Prinzipien der Animation u
 
 Setze die Animation mit *Klassischen Tweens* und *Schlüsselbildern* um. Die Animation soll so gestaltet sein, dass sie in einer Schleife abgespielt werden kann.
 
-
-<iframe src="./html/03-billard-finished.html" style="width:640px; height:480px; border:none; margin: 0 auto;"></iframe>
+<iframe src="./html/03-billard-finished-800x480.html" style="padding:15px; width:830px; height:510px; border:1px solid #dce6f0; border-radius: 5px; margin: 0 auto;" scrolling="no"></iframe>
 <sup>Beispielhafte Umsetzung</sup>
-
 
 #### Wichtige Shortcuts
 Verwende folgende Shortcuts, um effizienter arbeiten zu können
