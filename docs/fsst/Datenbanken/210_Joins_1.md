@@ -133,7 +133,8 @@ INSERT INTO Ergebnisse (Schueler_ID, Test_ID, Note)
 ```
 
 ### Übungsabfragen
-{:.MyClass}
+{: .assignment }
+
 > #### Aufgabe 1: Einstieg
 > ##### 1.a. Auflistung aller Ergebnisse
 > Liste alle Ergebnisse auf und gib Schülernamen, `Klasse`, `Fach`, `Datum` sowie die `Note`  aus.
