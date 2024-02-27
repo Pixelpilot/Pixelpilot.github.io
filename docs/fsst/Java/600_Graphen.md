@@ -95,15 +95,15 @@ Das Video beschreibt den Dijkstra Algorithmus zur Bestimmung der kürzesten Dis
 Vertices in einem Graphen.
 
 Sieh dir das Video an und erstelle im Anschluss nach dem gleichen Prinzip die Abstandstabelle
-für den Ausgangspunkt B auf einem Zettel.
+für den Ausgangspunkt `B` auf einem Zettel.
 
 ---
-### 2.2 Implementieren der Abstandtabelle
+### 2.2 Implementieren der Abstandstabelle
 {: .assignment }
 
 Ausgehend von einem bestimmten Vertex in einem Graphen sollen also die kürzesten Abstände zu allen anderen Vertices im Graphen gespeichert werden. 
 
-Um den Pfad vom ausgehenden Vertex zum Zielvertex abzubilden, soll für jeden Eintrag zusätzlich eine Referenz auf den
+Um den Pfad vom ausgehenden Vertex zum Ziel-Vertex abzubilden, soll für jeden Eintrag zusätzlich eine Referenz auf den
 vorangehenden Vertex gespeichert werden.
 ![java_graph_dijkstra_1.png](./img/java_graph_dijkstra_1.png)
 
@@ -113,7 +113,7 @@ Erstelle die Klasse `DijkstraTableEntry`, die einen solchen Eintrag abbilden kan
 Erstelle einen Konstruktor `public DijkstraTableEntry (Vertex destination, double distance)`, der die Instanzvariable entsprechend setzt. Die Referenz zum vorangehenden Vertex soll mit null initialisiert werden.
 
 #### 2.2.b. Klasse `DijkstraTable`
-Erstelle die Klasse `DijkstraTable`, die eine ArrayList von DijkstraTableEntry-Objekten speichern kann. In dieser Klassen werden alle Methoden implementiert, die zur Berechnung der kürzesten Distanz vom Ausgangspunkt zu einem beliebigen Zielpunkt notwendig sind.
+Erstelle die Klasse `DijkstraTable`, die eine ArrayList von `DijkstraTableEntry`-Objekten speichern kann. In dieser Klassen werden alle Methoden implementiert, die zur Berechnung der kürzesten Distanz vom Ausgangspunkt zu einem beliebigen Zielpunkt notwendig sind.
 
 Implementiere in der Klasse den Konstruktor `public DijkstraTable(Vertex v, Graph g)`.
 
@@ -129,15 +129,12 @@ Im Graphen `g` sind alle Vertices gespeichert – diese sollen ebenfalls in der 
 Implementiere folgende Methoden und teste sie ausführlich, indem du im Hauptprogramm die notwendigen Elemente anlegst und die Methoden aufrufst:
 
 #### 2.3.a. Methode `void print()`
-Gibt alle in der Table enthaltenen Tabelleneinträge aus.
+Gibt alle in der Tabelle enthaltenen Tabelleneinträge aus.
 
 #### 2.3.b. Methode `DijkstraTableEntry getEntryFromVertex(Vertex v)`
-Ermittelt aus einem Vertex den zugehörigen Eintrag in der Tabelle.
+Ermittelt aus einem Vertex `v` den zugehörigen Eintrag in der Tabelle.
 
-#### 2.3.c. Methode `Vertex getStart()`
-Ermittelt den Ausgangspunkt der Tabelle. Dieser ist immer der erste Eintrag in der Tabelle und hat den Abstand 0.
-
-#### 2.3.d. Methode `DijkstraTableEntry getNearestEntry(ArrayList<Vertex> unvisited)`
+#### 2.3.c. Methode `DijkstraTableEntry getNearestEntry(ArrayList<Vertex> unvisited)`
 Ermittelt den Vertex in der Tabelle, der den geringsten Abstand zum Ausgangspunkt ausweist.
 
 Dabei sollen nur die Elemente berücksichtigt werden, die in der ArrayList `unvisited` enthalten sind.
@@ -151,6 +148,8 @@ Setze den Algorithmus wie im Video beschrieben um.
 #### 2.4.a. Methode `void calculate()`
 Erstelle eine Methode `void calculate()`, die Tabelle entsprechend erstellt:
 > ![java_graph_dijkstra_3.png](./img/java_graph_dijkstra_3.png)
+
+Die Nachbarn eines bestimmten Vertex sind in der EdgeList gespeichert.
 
 #### 2.4.b. Methode `void printShortestPath(Vertex to)`
 

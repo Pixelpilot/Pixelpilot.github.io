@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 7 - JavaScript und CSS - Simple Game
+title: Aufgabe 8 - JavaScript und CSS - Simple Game
 description: Javascript - JavaScript und CSS
 category: Webentwicklung
 topic: JavaScript - Teil 1
@@ -7,7 +7,7 @@ subtopic: Eingabe und Ausgabe
 layout: default
 ---
 
-## Allgemeines
+## JavaScript und CSS
 
 Die CSS-Eigenschaften von Elementen im HTML können einfach per JavaScript verändert werden.
 
@@ -70,7 +70,10 @@ ele.classList.remove ("active");
 ```
 
 ## Aufgabe 1 - Überschrift anpassen
-![Aufgabe Überschrift anpassen](./img/js_css_headline.png)
+{: .assignment }
+
+> ![Aufgabe Überschrift anpassen](./img/js_css_headline.png)
+> > *Beispielhafte Umsetzung*
 
 ### Setzen von Styles
 Es soll das Aussehen eines `<h1>`-Tags verändert werden.
@@ -91,7 +94,11 @@ Es soll das Aussehen eines `<h1>`-Tags verändert werden.
 	- `Klasse wegnehmen`- die Überschrift soll wieder "normal" aussehen
 
 ## Aufgabe 2 - Tastatursteuerung
-![Aufgabe Tastatursteuerung](./img/js_css_keyboard.png)
+{: .assignment }
+
+> ![Aufgabe Tastatursteuerung](./img/js_css_keyboard.png)
+> *Beispielhafte Umsetzung*
+ 
 
 Es soll die Position eines Elements mittels CSS-Anpassungen mit JavaScript verändert werden können.
 
@@ -111,7 +118,10 @@ document.addEventListener("keypress", function onPress(event) {
 ```
 
 ## Aufgabe 3 - Zusatz: Einfaches Game
-![Game](img/js_css_lostgame.png)
+{: .assignment }
+
+> ![Game](img/js_css_lostgame.png)
+> *Beispielhafte Umsetzung*
 
 Erweitere die Tastatursteuerung so, dass ein einfaches Spiel entsteht:
 ### a. Spielfläche anlegen

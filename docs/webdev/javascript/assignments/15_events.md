@@ -94,15 +94,19 @@ document.addEventListener("mousemove", function(event) {
 ```
 
 ## Aufgabenstellung
+{: .assignment }
+
 Es ist eine einfache Web-Applikation zu erstellen, mit der Informationen, wie zum Beispiel die aktuelle Auflösung des Browserfensters in der Konsole ausgegeben werden können.
 
 ### 1. Framework
+{: .assignment }
 
 * Lege die Dateien `style.css` und `script.js` an und binde die beiden Dateien in die Datei `index.html` ein.
 * Teste, ob die beiden Dateien richtig eingebunden sind, indem du die Hintergrundfarbe des `<body>`-Tags auf
 rot setzt und eine Alertbox aufrufst.
 
 ### 2. Button geklickt
+{: .assignment }
 
 #### Event-Listener als Parameter
 Erstelle in HTML einen Button. Weise dem Button den `click`-Event direkt als Attribut zu.
@@ -122,6 +126,7 @@ Du hast die Maus schon 4 mal über den Button bewegt!
 
 
 ### 3. Auslesen der Informationen / Verarbeiten von Events
+{: .assignment }
 
 Schreibe in der Datei `script.js` eine Funktion `getDimensions()`. Die Funktion ermittelt die aktuellen Abmessungen des Browserfensters mit den Eigenschaften des `window`-Objekts `window.innerWidth` und `window.innerHeight`. Gib das Ergebnis in der Konsole aus.
 

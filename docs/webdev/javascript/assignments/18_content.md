@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 3 Erweiterung - JavaScript und Inhalte - Inhalte auslesen und verändern
+title: Aufgabe 4 - JavaScript und Inhalte - Inhalte auslesen und verändern
 description: JavaScript und Inhalte - Inhalte auslesen und verändern
 category: Webentwicklung
 topic: JavaScript - Teil 1
@@ -90,9 +90,9 @@ element.setAttribute("href", "https://neue.url");
 *Verändert das erste Element mit der Klasse `meineKlasse` und setzt das `href`-Attribut auf `https://neue.url`.*
 
 
-### Aufgabenstellung
-
 ## Aufgabenstellung
+{: .assignment }
+
 Erweitere die Aufgabenstellung aus der vorherigen Aufgabe so, dass die Anzeige der Informationen direkt im Browser-Fenster dargestellt werden.
 
 ![Beispielhafte Umsetzung](img/js_browser_info.png)
@@ -100,9 +100,13 @@ Erweitere die Aufgabenstellung aus der vorherigen Aufgabe so, dass die Anzeige d
 
 
 ### 1. Ausgeben im HTML-Dokument
+{: .assignment }
+
  * Erstelle im html-Dokument ein `<div id="info">`, in dem die Informationen dargestellt werden sollen. Passe das Aussehen des `<div>`-Elements so an, dass es in etwa der Abbildung entspricht. Schreibe die Abmessungen des Browserfensters in das `<div>`-Element.
 
 ### 2. Zusatz / Erweiterungen
+{: .assignment }
+
 * Erweitere die Ausgabe, um folgendes Aussehen zu erzeugen:
 ![Beispielhafte Umsetzung](img/js_infowindow.png)
 *Erweiterte Ausgabe.*

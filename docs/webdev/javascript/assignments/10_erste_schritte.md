@@ -77,6 +77,8 @@ let summe = berechneSumme (9, 12); // Speichert den Wert 21 in der Variable summ
 
 
 ## Aufgabenstellung
+{: .assignment }
+
 Es ist eine einfache Webapp zu erstellen, mit der die Grundrechnungsarten trainiert werden können.
 
 ![Beispielhafte Umsetzung](img/js_rechentrainer.png)
@@ -84,6 +86,7 @@ Es ist eine einfache Webapp zu erstellen, mit der die Grundrechnungsarten traini
 
 
 ### 1. Addition
+{: .assignment }
 
 * Dem Benutzer werden 5 Additionen zur Aufgabe gestellt, die er beantworten muss. Setze das Programm mit Hilfe des Befehls `prompt()` um.
 
@@ -113,13 +116,19 @@ alert ( zahl + 2 ); // Ausgabe: 125
 ```
 
 ### 2. Freie Anzahl der Fragen
+{: .assignment }
+
 * Der Benutzer soll die Anzahl der Fragen selbst bestimmen können.
 
 ### 3. Weitere Grundrechnungsarten
+{: .assignment }
+
 * Es sollen Aufgaben aus den verschiedenen Grundrechenarten zufällig gestellt werden.
 * Gib den Zwischenstand nach jeder Frage aus.
 
 ### 4. Auswahl der Grundrechenarten
+{: .assignment }
+
 * Der Benutzer soll eingeben können, welche Rechenart er trainieren möchte:
   * Addition
   * Subtraktion
@@ -128,6 +137,8 @@ alert ( zahl + 2 ); // Ausgabe: 125
   * Mischung aus dem 4 Grundrechenarten
 
 ### 5. Zusatz / Erweiterungen
+{: .assignment }
+
 * Zeige das Ergebnis des Rechentrainers mit den Befehlen `document.write()` und `document.writeln()` direkt im Browser an.
 * Zeige das Ergebnis in Form eines Balkens an.
 

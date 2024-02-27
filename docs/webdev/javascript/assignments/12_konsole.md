@@ -75,8 +75,12 @@ In der Debugging-Konsole können unterschiedliche Ausgaben gemacht werden. Hier 
 
 
 ## Aufgabenstellung
+{: .assignment }
+
 
 ### Aufgabe 1: Gerade oder Ungerade
+{: .assignment }
+
 #### 1.a. Erstellen von Funktion und Aufruf
 Erstelle eine Funktion `evenodd()`, die die Zahlen von 1 bis 10 in der Konsole ausgibt. Neben den Zahlen soll stehen, ob die Zahl gerade oder ungerade ist. Verwende dazu den Befehl `console.log()`.
 Rufe die Funktion auf, um die Ausgabe zu testen.
@@ -135,6 +139,7 @@ evenodd ( 10, 13 ); // gibt die Zahlen von 10 bis 13 aus
 
 
 ### Aufgabe 2. Zeitmessung in JavaScript
+{: .assignment }
 
 Mit den Befehlen `console.time()`, `console.timeEnd()` und `console.timeLog()` können Ausführungszeiten verschiedener Code-Segmente in JavaScript gemessen werden.
 
@@ -176,6 +181,8 @@ billion: 5054.5859375 ms
 overall: 5064.886962890625 ms
 ```
 *Beispielhafte Ausgabe*
+
+
 ## Ressourcen
 * [developer.chrome.com - DevTools](https://developer.chrome.com/docs/devtools?hl=de){:target="_blank"}
 * [mozilla.org - console](https://developer.mozilla.org/en-US/docs/Web/API/console){:target="_blank"}

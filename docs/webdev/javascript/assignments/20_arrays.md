@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 4 - JavaScript und Arrays, Strings - Species-O-Mat
+title: Aufgabe 5 - JavaScript und Arrays, Strings - Species-O-Mat
 description: JavaScript und Arrays, Strings - Species-O-Mat
 category: Webentwicklung
 topic: JavaScript - Teil 1
@@ -69,6 +69,8 @@ myArray.forEach(element => {
 ```
 
 ## Aufgabenstellung
+{: .assignment }
+
 Es ist eine Webanwendung zu erstellen, die aus unterschiedlichen Zeichenketten eine zufällige Spezies generiert und als HTML in einem `<div>`-Element anzeigt. Überlege dir bevor du loslegst, wie sich die gesamte
 Bezeichnung der Spezies zusammensetzt, und wie du die Daten abbilden wirst. Skizziere die Struktur auf
 einem Blatt Papier.
@@ -77,6 +79,7 @@ einem Blatt Papier.
 *Beispielhafte Umsetzung*
 
 ### 1. Framework
+{: .assignment }
 
 * Lege die Dateien `screen.css` und `functions.js` an und binde die beiden Dateien in die Datei `index.html` ein.
 
@@ -84,6 +87,7 @@ einem Blatt Papier.
 rot setzt und eine Alertbox aufrufst.
 
 ### 2. Auslesen der Informationen / Verarbeiten von Events
+{: .assignment }
 
 * Schreibe in der Datei `functions.js` eine Funktion `generateSpecies()`. In der Funktion   werden die Arrays für die verschiedenen Teilstrings angelegt und initialisiert. 
 
@@ -112,6 +116,7 @@ function generateSpecies() {
 ```
 
 ### 3. Ausgeben im HTML-Dokument
+{: .assignment }
 
 * Erstelle die notwendigen HTML-Elemente und rufe die Funktion auf, sobald den Button `CREATE!` gedrückt
   wurde. Schreibe das zufällig generierte Tier als HTML in das dafür vorgesehene `<div>`.
@@ -120,6 +125,8 @@ function generateSpecies() {
 
 
 ### 4. Zusatz / Erweiterungen
+{: .assignment }
+
 * Erstelle ein weiteres `<div>`-Element, in dem eine "History" der erstellten Spezies auflistet.
 * Erstellen einen Button `CLEAR HISTORY`, der die "History" der erstellen Species wieder löscht
 * Gib die Anzahl der Species an, die ingesamt erstellte wurde
@@ -127,7 +134,7 @@ function generateSpecies() {
 * Schwierig: Erstelle in der "History" neben jedem Eintrag einen Button `REMOVE`. Beim Klick auf diesen Button soll nur dieser eine Eintrag gelöscht werden.
 
 ![Umsetzung mit Erweiterungen](img/js_arrays_ext.png)
-*Umsetzung mit Erweiterungen*
+*Beispielhafte Umsetzung mit Erweiterungen*
 ## Ressourcen
 
 * [W3 schools - JavaScript Arrays](https://www.w3schools.com/js/js_arrays.asp){:target="_blank"}
