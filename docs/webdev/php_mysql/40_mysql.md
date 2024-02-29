@@ -235,6 +235,9 @@ Legen einige Einträge manuell an.
 {: .assignment }
 Erstelle eine Datei `index.php`, die eine Liste aller Einträge in einer MySQL-Datenbank anzeigt. Verwende das `SELECT`-Statement, um die Einträge aus der Datenbank abzurufen und sie in einer HTML-Tabelle anzuzeigen.
 
+> ![](img/php_mysql_1_list.png)
+> <sup>*Beispielhafte Liste als HTML-Tabelle*</sup>
+
 ### 3. Hinzufügen von Einträgen
 {: .assignment }
 
@@ -242,8 +245,15 @@ Erstellen die Datei `insert.php`, die ein Formular enthält, das es dem Benutzer
 
 Die Übermittlung der Daten soll mit `POST`erfolgen.
 
+> ![](img/php_mysql_2_list.png)
+> <sup>*Erweiterung um einen Link*</sup><br><br>
+> ![](img/php_mysql_2_new.png)
+> <sup>*Formular zur Erstellung eines neuen Kontakts*</sup>
+
+
 ### 4. Löschen von Einträgen
 {: .assignment }
+
 Erweitere die PHP-Seite von Aufgabe 2 (Hinzufügen von Einträgen), um dem Benutzer das Löschen von Einträgen zu ermöglichen. Verwende das `DELETE`- Statement, um die Löschungen in der Datenbank durchzuführen.
 
 Füge einen Button `Löschen` neben den einzelnen Einträgen hinzu.
@@ -257,6 +267,8 @@ echo "</form>";
 
 Klickt man auf den Löschen-Button neben einem Eintrag, soll der Eintrag gelöscht werden und die Einträge neu ausgegeben werden. 
 
+> ![](img/php_mysql_3_list.png)
+> <sup>*Löschen-Button in einem Formular*</sup>
 
 ### 5. Aktualisieren von Daten
 {: .assignment }
@@ -266,6 +278,12 @@ Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu, um die Aktual
 // Erweiterung der Tabelle in der index.php
 echo "<input type='submit' name='update' value='Ändern'>";
 ```
+
+> ![](img/php_mysql_4_list.png)
+> <sup>*Ändern-Button in einem Formular*</sup><br><br>
+> ![](img/php_mysql_4_change.png)
+> <sup>*Formular zum Ändern von Benutzerdaten*</sup>
+ 
 
 ### 6. Zusatz: Suchfunktionalität
 {: .assignment }
