@@ -283,19 +283,21 @@ echo "<input type='submit' name='update' value='Ändern'>";
 > <sup>*Ändern-Button in einem Formular*</sup><br><br>
 > ![](img/php_mysql_4_change.png)
 > <sup>*Formular zum Ändern von Benutzerdaten*</sup>
- 
 
-### 6. Zusatz: Suchfunktionalität
-{: .assignment }
-Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in einer MySQL-Datenbank zu suchen. Verwende das `SELECT`- Statement und die `LIKE`- Klausel, um Einträge abzurufen, die bestimmte Suchkriterien erfüllen.
 
-### 7. Zusatz: Sortierung und Paginierung
+
+### 6. Zusatz: Sortierung und Paginierung
 {: .assignment }
 Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
 
-
 > ![](img/php_mysql_5_list.png)
-> <sup>*Beispielhafte Umsetzung der Sortierung*</sup><br><br>
+> <sup>*Beispielhafte Umsetzung der Sortierung*</sup>
+
+### 7. Zusatz: Suchfunktionalität
+{: .assignment }
+Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in einer MySQL-Datenbank zu suchen. Verwende das `SELECT`- Statement und die `LIKE`- Klausel, um Einträge abzurufen, die bestimmte Suchkriterien erfüllen.
+
+
 
 ## Ressourcen
 * [https://remotemysql.com/ - Free MySQL Hosting Site](https://remotemysql.com/){:target="_blank"}
