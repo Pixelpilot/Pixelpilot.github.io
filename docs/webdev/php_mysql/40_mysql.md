@@ -294,7 +294,7 @@ Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in ein
 Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
 
 
-> ![](img/php_mysql_4_list.png)
+> ![](img/php_mysql_5_list.png)
 > <sup>*Beispielhafte Umsetzung der Sortierung*</sup><br><br>
 
 ## Ressourcen
