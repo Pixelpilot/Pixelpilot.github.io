@@ -265,7 +265,7 @@ echo "<input type='submit' name='delete' value='Löschen'>";
 echo "</form>";
 ```
 
-Klickt man auf den Löschen-Button neben einem Eintrag, soll der Eintrag gelöscht werden und die Einträge neu ausgegeben werden. 
+Klickt man auf den `Löschen` -Button neben einem Eintrag, soll der Eintrag gelöscht werden und die Einträge neu ausgegeben werden. 
 
 > ![](img/php_mysql_3_list.png)
 > <sup>*Löschen-Button in einem Formular*</sup>
@@ -293,6 +293,9 @@ Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in ein
 {: .assignment }
 Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
 
+
+> ![](img/php_mysql_4_list.png)
+> <sup>*Beispielhafte Umsetzung der Sortierung*</sup><br><br>
 
 ## Ressourcen
 * [https://remotemysql.com/ - Free MySQL Hosting Site](https://remotemysql.com/){:target="_blank"}
