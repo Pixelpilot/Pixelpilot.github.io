@@ -70,11 +70,12 @@ Erstelle eine Tabelle `todo` für eine Aufgabenliste und füge mittels `INSERT
 > 
 > Erstelle folgende Abfragen:
 > 
-> 1. Alle Offenen Aufgaben auflisten
+> 1. Alle offenen Aufgaben auflisten
 > 2. Aufgabe auf erledigt setzen
 > 3. Aufgabe löschen
 
 > #### Übung 2: Basics
+> {: .assignment }
 > 
 > Erstelle folgende Abfragen:
 > 1. Offene Aufgaben, sortiert nach Priorität (höchste zuerst)
@@ -84,20 +85,24 @@ Erstelle eine Tabelle `todo` für eine Aufgabenliste und füge mittels `INSERT
 
 
 > #### Übung 3: Nested Select
+> {: .assignment }
 > Erstelle folgende Abfragen:
 > 1. Alle Aufgaben die die gleiche Priorität haben wie die Aufgabe mit der `id` 31.
 > 2. Bilde die Tabelle mit den Prioritäten in der Form `-2,-1,0,1,2` und gib nur die positiven aus.
 
 > #### Übung 4: Aggregate functions
+> {: .assignment }
 > Erstelle folgende Abfragen:
 > 1. Anzahl der noch offenen Aufgaben (`COUNT`)
 > 2. Anzahl der offenen Aufgaben nach Priorität (`GROUP BY`)
 > 3. Ausgaben der maximalen, minimalen und durchschnittlichen Priorität (`MIN`, `MAX`, `AVG`)
 
 > #### Übung 5: Pattern matching
+> {: .assignment }
 > Gib alle Aufgaben aus die noch nicht erledigt sind und den Text `Hausübung` enthalten.
 
 > #### Übung 6: Fälligkeitsdatum
+> {: .assignment }
 >Füge mit Hilfe von `ALTER TABLE` eine zusätzliche Spalte für ein Fälligkeitsdatum hinzu ohne die bestehende Tabelle zu löschen. Führe folgende Abfragen durch:
 > 
 > 1. Alle Aufgaben in der Zukunft anzeigen (`CURDATE`)
