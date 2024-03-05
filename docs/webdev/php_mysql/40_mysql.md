@@ -288,7 +288,7 @@ echo "<input type='submit' name='update' value='Ändern'>";
 
 ### 6. Zusatz: Sortierung und Paginierung
 {: .assignment }
-Erweitere die PHP-Seite von Aufgabe 6, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
+Erweitere die PHP-Seite, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
 
 > ![](img/php_mysql_5_list.png)
 > <sup>*Beispielhafte Umsetzung der Sortierung*</sup>

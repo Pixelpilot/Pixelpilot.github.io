@@ -62,7 +62,7 @@ Ist das `return`-Statement vorhanden, so liefert die Methode einen Rückgabewert
 ```javascript
 // Funktion ohne Rückgabewert
 function gibSummeAus (a, b){
-    alert ("Summe" + (a+b))M
+    alert ("Summe" + (a+b));
 }
 
 // Funktion mit Rückgabewert
