@@ -18,7 +18,7 @@ Es sollen in der Gruppe Präsentation zum Thema _Geistiges Eigentum_ erstellt we
 1. **Gruppeneinteilung**<br>Es werden unterschiedlich große Gruppen entsprechend der Seitenanzahl erstellt:
 
    | # | Thema                                | Seitenanzahl |
-       |--------------------------------------|----|----:|
+   |--------------------------------------|----|----:|
    |1| Die Kreativwirtschaft                |14|
    |2| Das Musikbusiness                    |30|
    |3| Das Filmbusiness                     |37|
@@ -27,12 +27,12 @@ Es sollen in der Gruppe Präsentation zum Thema _Geistiges Eigentum_ erstellt we
 2. **Aufteilen der Inhalte**<br>Innerhalb der Gruppe wird der Inhalt aufgeteilt, dass jede/r in etwa den gleichen Umfang zu bearbeiten hat.
 3. **Ausarbeiten der Inhalte**<br>Jede/r arbeitet eine Präsentation zum jeweiligen Inhalt aus. Die .pdf-Dokumente stellen eine Basis dar und **sollen** um folgende Inhalt erweitert werden:
     - **Aktuelle Entwicklungen**, die .pdf-Dokumente sind z.T. nicht mehr ganz aktuell
-    - Beispiele aus der Praxis
+    - **Beispiele aus der Praxis**
     - Zusätzliche interessante, weiterführende Informationen, ...
 4. **Erstellen einer gemeinsamen Präsentation**<br>
    Aus den einzelnen Teilen wir pro Gruppe und eine gemeinsame Präsentation zusammengefasst. Neben den Inhalten ist auch auf das Aussehen zu achten. Die Art der Präsentation ist freigestellt (PowerPoint, Adobe XD, Miro, ...).
 5. **Erstellen eines gemeinsamen Handouts**<br>
-   Zusätzlich zur Präsentation ist eine Zusammenfassung der Inhalte zu erstellen. Es ist zu kennzeichnen, wer welche Inhalte erstellt hat.
+   Zusätzlich zur Präsentation ist **eine** Zusammenfassung der Inhalte für das gesamte Thema zu erstellen. Es ist zu kennzeichnen, wer welche Inhalte erstellt hat.
 6. **Abhalten der Präsentationen**<br>
    Jede Gruppe hält gemeinsam die Präsentation, wobei jede/r seinen/ihren Teil der Folien präsentiert. Ist jemand am Tag der Präsentation nicht anwesend, so wird ein Teammitglied bestimmt, der diesen Teil mit präsentieren soll.
 
@@ -50,9 +50,20 @@ _3. ..._
 
 ## Benotung und Abgabe
 
-Die Abgabe der Präsentation und der Handouts erfolgt per Teams in Form von .pdf-Dokumenten. Eine Abgabe pro Gruppe ist ausreichend. 
+Die Abgabe der Präsentation und der Handouts erfolgt per Teams in Form von .pdf-Dokumenten. Eine Abgabe pro Gruppe ist ausreichend. Auf der ersten Folie der Präsentation, sowie auf dem Deckblatt des Handouts sind zusätzlich folgende Informationen gut ersichtlich anzugeben:
 
-Die Benotung bezieht sich auf die gesamte Präsentation als Gruppenarbeit sowie auf die einzelne Leistungen.
+* Jahrgang, Klasse, Fach
+* Thema
+* Teammitglieder
+
+Die Benotung bezieht sich auf die gesamte Präsentation als Gruppenarbeit sowie auf die einzelne Leistungen:
+
+* Teamnote: Gesamteindruck
+  * Gestaltung der Präsentation
+  * Gestaltung des Handouts
+* Einzelnote: Darstellung des Teilgebiets
+  * Inhalte und Aufbereitung der Präsentation
+  * Inhalte und Aufbereitung des Handouts
 
 ## Inhalte
 - [Die Kreativwirtschaft (.pdf, 14 Seiten)](./assets/01_die-kreativwirtschaft_14.pdf){:target="_blank"}
