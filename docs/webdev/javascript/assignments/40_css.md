@@ -73,7 +73,7 @@ ele.classList.remove ("active");
 {: .assignment }
 
 > ![Aufgabe Überschrift anpassen](./img/js_css_headline.png)
-> > *Beispielhafte Umsetzung*
+> *Beispielhafte Umsetzung*
 
 ### Setzen von Styles
 Es soll das Aussehen eines `<h1>`-Tags verändert werden.
