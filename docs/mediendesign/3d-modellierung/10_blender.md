@@ -96,7 +96,13 @@ type: assignment
 ## Inhalte
 - [Blender Tutorial for Complete Beginners (Youtube)](https://www.youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z){:target="_blank"}
 - [Blender Style Shortcuts  (Google Docs, Blender Guru)](https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit?pli=1){:target="_blank"}
-- [poliigon.com Textures](https://www.poliigon.com/?utm_campaign=donut4&utm_source=youtube&utm_medium=bg){:target="_blank"}
+- [Textures and Materials (poliigon.com)](https://www.poliigon.com/?utm_campaign=donut4&utm_source=youtube&utm_medium=bg){:target="_blank"}
+- [Charactes and Animations (mixamo.com)](https://www.mixamo.com/#/){:target="_blank"}
 - [Blender 3D Beginner Tutorial: Mushrooms in Bottle (Youtube)](https://www.youtube.com/watch?v=kbiMXiUz9cc){:target="_blank"}
-- [Blender 3D Beginner Tutorial: Smooth 3D Living Room(Youtube)](https://www.youtube.com/watch?v=dEGJeVnWZAA){:target="_blank"}
+- [Blender 3D Beginner Tutorial: Smooth 3D Living Room (Youtube)](https://www.youtube.com/watch?v=dEGJeVnWZAA){:target="_blank"}
+- - [Blender 3D Beginner Tutorial: Snowy Winter House (Youtube)](https://www.youtube.com/watch?v=jYXZYKRDj4g){:target="_blank"}
 - [10 Tools Every Blender Noob Should Learn(Youtube)](https://www.youtube.com/watch?v=KfSQh2dFCik){:target="_blank"}
+- [Blender 4.1 Beginner Tutorial - Part 1: Box-Modelling  (YouTube)](https://www.youtube.com/watch?v=98qKfdJRzr0){:target="_blank"}
+- [Blender 4.1 Beginner Tutorial - Part 2: Sword, Box-Modelling, Material (YouTube)](https://www.youtube.com/watch?v=xr1lgLAragg){:target="_blank"}
+- [Blender 4.1 Beginner Tutorial - Part 3: Stone, Lights, Rendering (YouTube)](https://www.youtube.com/watch?v=M3UKL-wLYgk){:target="_blank"}
+  
