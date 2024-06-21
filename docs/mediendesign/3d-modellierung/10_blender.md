@@ -12,12 +12,13 @@ type: assignment
 ## Shortcuts
 
 ### Viewport
-| Shortcut             | Operation                                                                       |
-|----------------------|---------------------------------------------------------------------------------|
-| `MMB` + `Move`       | Rotate Scene                                                                    |
-| `Scroll` _or_  `Cmd`+`MMB`+`Move`       | Zoom In/Out Scene                                                               |
-| `Shift`+`MMB`+`Move` | Pan Scene                                                                       |
-| `Numpad`             | ![img_10.png](img/img_10.png)                                                       |
+
+| Shortcut                          | Operation                     |
+|-----------------------------------|-------------------------------|
+| `MMB` + `Move`                    | Rotate Scene                  |
+| `Scroll` _or_  `Cmd`+`MMB`+`Move` | Zoom In/Out Scene             |
+| `Shift`+`MMB`+`Move`              | Pan Scene                     |
+| `Numpad`                          | ![img_10.png](img/img_10.png) |
 
 
 
@@ -37,6 +38,7 @@ type: assignment
 
 
 ### Divers
+
 | Shortcut             | Operation                                                                          |
 |----------------------|------------------------------------------------------------------------------------|
 | `Shift` + `a`        | Add Object                                                                         |
@@ -52,6 +54,7 @@ type: assignment
 |![img_13.png](img/img_13.png)| Toggle X-Ray (auch hintere Vertices/Lines/Faces auswählen                          |
 
 ## Modifiers
+
 |                             | Shortcut                               | Operation                                                      |
 |-----------------------------|----------------------------------------|----------------------------------------------------------------|
 | ![img_5.png](img/img_5.png)     | `+ Add Modifier`                       | Modifier hinzufügen                                            |
@@ -63,6 +66,7 @@ type: assignment
 
 
 ## Modes
+
 |                         | Shortcut                                              | Operation                                                          |
 |-------------------------|-------------------------------------------------------|--------------------------------------------------------------------|
 | ![img_7.png](img/img_7.png) | `tab`                                                 | Toggle Object / Edit Mode                                          |
@@ -92,7 +96,6 @@ type: assignment
 ## Inhalte
 - [Blender Tutorial for Complete Beginners (Youtube)](https://www.youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z){:target="_blank"}
 - [Blender Style Shortcuts  (Google Docs, Blender Guru)](https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit?pli=1){:target="_blank"}
-- [Blender Industry Compatible Shortcuts, (.pdf, The Treehouse Ninjas)](https://www.dropbox.com/scl/fi/dboz7fuh0f5255n5ocrdl/BlenderKeymap-IndustryCompatible_v2.pdf?rlkey=2yxe23jev9y2qmdg7txrzy8ip&e=1&dl=0){:target="_blank"}
 - [poliigon.com Textures](https://www.poliigon.com/?utm_campaign=donut4&utm_source=youtube&utm_medium=bg){:target="_blank"}
 - [Blender 3D Beginner Tutorial: Mushrooms in Bottle (Youtube)](https://www.youtube.com/watch?v=kbiMXiUz9cc){:target="_blank"}
 - [Blender 3D Beginner Tutorial: Smooth 3D Living Room(Youtube)](https://www.youtube.com/watch?v=dEGJeVnWZAA){:target="_blank"}
