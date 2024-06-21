@@ -93,7 +93,7 @@ type: assignment
 |                         | `Cmd` + `i`                                           | Invert Mask                                                        |
 |                         | ![img_15.png](img/img_15.png) + ![img_14.png](img/img_14.png) | Mesh Filter                                                        |
 
-## Inhalte
+## Ressoures
 
 ### Assets
 - [Blender Style Shortcuts  (Google Docs, Blender Guru)](https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit?pli=1){:target="_blank"}
@@ -125,3 +125,4 @@ type: assignment
 
 - [10 Tools Every Blender Noob Should Learn(Youtube)](https://www.youtube.com/watch?v=KfSQh2dFCik){:target="_blank"}
 - [Blender Physics Simulation Tutorials (YouTube Playlist)](https://www.youtube.com/playlist?list=PLsGl9GczcgBustxQs2JcnSb0Qxnnb7rWC){:target="_blank"}
+- [The Best Way To Create Nature In 3D (YouTube)](https://www.youtube.com/watch?v=7Um3FaXJixg){:target="_blank"}
