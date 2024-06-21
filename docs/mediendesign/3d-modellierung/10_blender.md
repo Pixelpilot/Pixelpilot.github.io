@@ -94,15 +94,34 @@ type: assignment
 |                         | ![img_15.png](img/img_15.png) + ![img_14.png](img/img_14.png) | Mesh Filter                                                        |
 
 ## Inhalte
-- [Blender Tutorial for Complete Beginners (Youtube)](https://www.youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z){:target="_blank"}
+
+### Assets
 - [Blender Style Shortcuts  (Google Docs, Blender Guru)](https://docs.google.com/document/d/1zPBgZAdftWa6WVa7UIFUqW_7EcqOYE0X743RqFuJL3o/edit?pli=1){:target="_blank"}
-- [Textures and Materials (poliigon.com)](https://www.poliigon.com/?utm_campaign=donut4&utm_source=youtube&utm_medium=bg){:target="_blank"}
+- [Textures and Materials (polyhaven.com)](https://polyhaven.com){:target="_blank"}
+- [Textures and Materials (ambientcg.com)](https://ambientcg.com){:target="_blank"}
+- [Textures and Materials (poliigon.com)](https://www.poliigon.com){:target="_blank"}
+- [Textures and Materials (textures.com)](https://www.textures.com){:target="_blank"}
+- [Textures and Materials (3dsky.org)](https://3dsky.org){:target="_blank"}
+
+
 - [Charactes and Animations (mixamo.com)](https://www.mixamo.com/#/){:target="_blank"}
+- [Free 3D-Models (cgtrader.com)](https://www.cgtrader.com/free-3d-models/blender){:target="_blank"}
+- [Free 3D-Models (turbosquid.com)](https://www.turbosquid.com/Search/3D-Models/free/blend    ){:target="_blank"}
+- [Free 3D-Models (free3d.com)](https://free3d.com/3d-models/blender){:target="_blank"}
+
+### Tutorials
+- [Blender Tutorial for Complete Beginners (Youtube Playlist)](https://www.youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z){:target="_blank"}
+
+
 - [Blender 3D Beginner Tutorial: Mushrooms in Bottle (Youtube)](https://www.youtube.com/watch?v=kbiMXiUz9cc){:target="_blank"}
 - [Blender 3D Beginner Tutorial: Smooth 3D Living Room (Youtube)](https://www.youtube.com/watch?v=dEGJeVnWZAA){:target="_blank"}
-- - [Blender 3D Beginner Tutorial: Snowy Winter House (Youtube)](https://www.youtube.com/watch?v=jYXZYKRDj4g){:target="_blank"}
-- [10 Tools Every Blender Noob Should Learn(Youtube)](https://www.youtube.com/watch?v=KfSQh2dFCik){:target="_blank"}
+- [Blender 3D Beginner Tutorial: Snowy Winter House (Youtube)](https://www.youtube.com/watch?v=jYXZYKRDj4g){:target="_blank"}
+
+
 - [Blender 4.1 Beginner Tutorial - Part 1: Box-Modelling  (YouTube)](https://www.youtube.com/watch?v=98qKfdJRzr0){:target="_blank"}
 - [Blender 4.1 Beginner Tutorial - Part 2: Sword, Box-Modelling, Material (YouTube)](https://www.youtube.com/watch?v=xr1lgLAragg){:target="_blank"}
 - [Blender 4.1 Beginner Tutorial - Part 3: Stone, Lights, Rendering (YouTube)](https://www.youtube.com/watch?v=M3UKL-wLYgk){:target="_blank"}
-  
+
+
+- [10 Tools Every Blender Noob Should Learn(Youtube)](https://www.youtube.com/watch?v=KfSQh2dFCik){:target="_blank"}
+- [Blender Physics Simulation Tutorials (YouTube Playlist)](https://www.youtube.com/playlist?list=PLsGl9GczcgBustxQs2JcnSb0Qxnnb7rWC){:target="_blank"}
