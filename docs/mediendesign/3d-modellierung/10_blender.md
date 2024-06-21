@@ -11,7 +11,7 @@ type: assignment
 # 3D-Modellierung mit Blender
 ## Shortcuts
 
-### Viewports
+### Viewport
 | Shortcut             | Operation                                                                       |
 |----------------------|---------------------------------------------------------------------------------|
 | `MMB` + `Move`       | Rotate Scene                                                                    |
