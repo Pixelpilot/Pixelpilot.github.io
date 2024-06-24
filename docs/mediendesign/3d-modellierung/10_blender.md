@@ -41,6 +41,7 @@ type: assignment
 
 | Shortcut                      | Operation                                                                              |
 |-------------------------------|----------------------------------------------------------------------------------------|
+| `Shift` + `c`                 | Viewport Center on Object                                                              |
 | `Shift` + `a`                 | Add Object                                                                             |
 |                               | ![img_2.png](img/img_2.png) <br>Eigenschaften direkt nach dem Erstellen anpassen       |
 |                               |                                                                                        |
@@ -72,6 +73,12 @@ type: assignment
 |                         | Shortcut                                                      | Operation                                                          |
 |-------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
 | ![img_7.png](img/img_7.png) | `tab`                                                         | Toggle Object / Edit Mode                                          |
+|                         | `Cmd` + `2`                                                   | Add Subsurface Divider Modifier                                    |
+|                         | `Cmd` + `j`                                                   | Join                                                               |
+|                         | `Cmd` + `d`                                                   | Duplicate (Create Instance)                                        |
+|                         | `Shift` + `d`                                                 | Duplicate (Create Copy)                                            |
+|                         | `Shift` + `l`                                                 | Select Linked                                                      |
+|                         | `m`                                                   | Move &rarr; New Selection                                          |
 |                         |                                                               |                                                                    |
 | ![img_8.png](img/img_8.png) | `tab`                                                         | Toggle Object / Edit Mode                                          |
 |                         | `1`                                                           | Select Mode Vertex                                                 |
@@ -86,7 +93,7 @@ type: assignment
 |                         | `i`                                                           | Inset                                                              |
 |                         | `h`                                                           | Hide                                                               |
 |                         | `Option` + `h`                                                | Unhide                                                             |
-|                         | `Cmd` + `b`                                                  | Bevel                                                              |
+|                         | `Cmd` + `b`                                                   | Bevel                                                              |
 |                         | `Cmd` + `r`                                                   | Loop cut                                                           |
 |                         | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
 |                         | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
