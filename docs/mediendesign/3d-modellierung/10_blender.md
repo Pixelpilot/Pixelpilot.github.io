@@ -39,19 +39,21 @@ type: assignment
 
 ### Divers
 
-| Shortcut             | Operation                                                                          |
-|----------------------|------------------------------------------------------------------------------------|
-| `Shift` + `a`        | Add Object                                                                         |
-|                      | ![img_2.png](img/img_2.png) <br>Eigenschaften direkt nach dem Erstellen anpassen       |
-| |                                                                                    |
-| `F12`                | Open Render Window                                                                 |
-| |                                                                                    |
-| `Numpad0` &rarr; `n` | Toggle Camera View &rarr; Properties Window                                        |
-|                      | ![img_1.png](img/img_1.png)<br>Toggle *Camera to View* um die Kameraposition zu Ändern |
-| |                                                                                    |
-| `Select Object`+ `RMB` | Open Object Properties                                                             |
-|                        | ![img_4.png](img/img_4.png)                                                            |
-|![img_13.png](img/img_13.png)| Toggle X-Ray (auch hintere Vertices/Lines/Faces auswählen                          |
+| Shortcut                      | Operation                                                                              |
+|-------------------------------|----------------------------------------------------------------------------------------|
+| `Shift` + `a`                 | Add Object                                                                             |
+|                               | ![img_2.png](img/img_2.png) <br>Eigenschaften direkt nach dem Erstellen anpassen       |
+|                               |                                                                                        |
+| `F12`                         | Open Render Window                                                                     |
+|                               |                                                                                        |
+| `Numpad0` &rarr; `n`          | Toggle Camera View &rarr; Properties Window                                            |
+|                               | ![img_1.png](img/img_1.png)<br>Toggle *Camera to View* um die Kameraposition zu Ändern |
+|                               |                                                                                        |
+| `Select Object`+ `RMB`        | Open Object Properties                                                                 |
+|                               | ![img_4.png](img/img_4.png)                                                            |
+| ![img_13.png](img/img_13.png) | Toggle X-Ray (auch hintere Vertices/Lines/Faces auswählen                              |
+| `u`                           | Open UV-Mapping Modal                                                                  |
+| `Cmd` + `a`                   | Open Apply Modal                                                                       |
 
 ## Modifiers
 
@@ -67,30 +69,31 @@ type: assignment
 
 ## Modes
 
-|                         | Shortcut                                              | Operation                                                          |
-|-------------------------|-------------------------------------------------------|--------------------------------------------------------------------|
-| ![img_7.png](img/img_7.png) | `tab`                                                 | Toggle Object / Edit Mode                                          |
-|                         |                                                       |                                                                    |
-| ![img_8.png](img/img_8.png) | `tab`                                                 | Toggle Object / Edit Mode                                          |
-|                         | `1`                                                   | Select Mode Vertex                                                 |
-|                         | `2`                                                   | Select Mode Edge                                                   |
-|                         | `3`                                                   | Select Mode Face                                                   |
+|                         | Shortcut                                                      | Operation                                                          |
+|-------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
+| ![img_7.png](img/img_7.png) | `tab`                                                         | Toggle Object / Edit Mode                                          |
+|                         |                                                               |                                                                    |
+| ![img_8.png](img/img_8.png) | `tab`                                                         | Toggle Object / Edit Mode                                          |
+|                         | `1`                                                           | Select Mode Vertex                                                 |
+|                         | `2`                                                           | Select Mode Edge                                                   |
+|                         | `3`                                                           | Select Mode Face                                                   |
 |                         | ![img_11.png](img/img_11.png) ![img_12.png](img/img_12.png)   | Enable Proportional Editing (Benachbarte Elemente mit einbeziehen) |
-|                         | `Option` + `LMB`                                      | Edge Select                                                        |
-|                         | `Cmd` + `Numpad+`                                     | Edge Select More                                                   |
-|                         | `Cmd` + `Numpad-`                                     | Edge Select Less                                                   |
-|                         |                                                       |                                                                    |
-|                         | `e`                                                   | Extrude                                                            |
-|                         | `i`                                                   | Inset                                                              |
-|                         | `h`                                                   | Hide                                                               |
-|                         | `Option` + `h`                                        | Unhide                                                             |
-|                         | `Cmd` + `r`                                           | Loop cut                                                           |
-|                         | `Cmd` + `r` + `Scroll`                                | Loop cut - Anzahl der Unterteilungen                               |
-|                         | `Cmd` + `r` + `Scroll`                                | Loop cut - Anzahl der Unterteilungen                               |
-|                         |                                                       |                                                                    |
-| ![img_9.png](img/img_9.png) |                                                       | Sculpt Mode                                                        |
-|                         | `m`                                                   | Mask Tool                                                          |
-|                         | `Cmd` + `i`                                           | Invert Mask                                                        |
+|                         | `Option` + `LMB`                                              | Edge Select                                                        |
+|                         | `Cmd` + `Numpad+`                                             | Edge Select More                                                   |
+|                         | `Cmd` + `Numpad-`                                             | Edge Select Less                                                   |
+|                         |                                                               |                                                                    |
+|                         | `e`                                                           | Extrude                                                            |
+|                         | `i`                                                           | Inset                                                              |
+|                         | `h`                                                           | Hide                                                               |
+|                         | `Option` + `h`                                                | Unhide                                                             |
+|                         | `Cmd` + `b`                                                  | Bevel                                                              |
+|                         | `Cmd` + `r`                                                   | Loop cut                                                           |
+|                         | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
+|                         | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
+|                         |                                                               |                                                                    |
+| ![img_9.png](img/img_9.png) |                                                               | Sculpt Mode                                                        |
+|                         | `m`                                                           | Mask Tool                                                          |
+|                         | `Cmd` + `i`                                                   | Invert Mask                                                        |
 |                         | ![img_15.png](img/img_15.png) + ![img_14.png](img/img_14.png) | Mesh Filter                                                        |
 
 ## Ressoures
@@ -108,6 +111,7 @@ type: assignment
 - [Free 3D-Models (cgtrader.com)](https://www.cgtrader.com/free-3d-models/blender){:target="_blank"}
 - [Free 3D-Models (turbosquid.com)](https://www.turbosquid.com/Search/3D-Models/free/blend    ){:target="_blank"}
 - [Free 3D-Models (free3d.com)](https://free3d.com/3d-models/blender){:target="_blank"}
+- [Free 3D-Models (sketchfab.com)](https://sketchfab.com/){:target="_blank"}
 
 ### Tutorials
 - [Blender Tutorial for Complete Beginners (Youtube Playlist)](https://www.youtube.com/playlist?list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z){:target="_blank"}
@@ -126,3 +130,5 @@ type: assignment
 - [10 Tools Every Blender Noob Should Learn(Youtube)](https://www.youtube.com/watch?v=KfSQh2dFCik){:target="_blank"}
 - [Blender Physics Simulation Tutorials (YouTube Playlist)](https://www.youtube.com/playlist?list=PLsGl9GczcgBustxQs2JcnSb0Qxnnb7rWC){:target="_blank"}
 - [The Best Way To Create Nature In 3D (YouTube)](https://www.youtube.com/watch?v=7Um3FaXJixg){:target="_blank"}
+
+- [the Easiest VFX Tutorial Ever. (YouTube)](https://www.youtube.com/watch?v=cNbVl6LCEFI){:target="_blank"}
