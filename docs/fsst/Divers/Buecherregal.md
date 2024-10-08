@@ -22,7 +22,7 @@ Erstelle ein Programm zur Verwaltung eines Bücherregals in Java. Das Prgramm be
     - `numberOfPages` (int): Die Anzahl der Seiten des Buches.
 - Konstruktor:
     - Ein Konstruktor, der alle Eigenschaften als Parameter übernimmt und die Instanzvariablen initialisiert.
-    - Defaultkonstruktor, der die Werte mit `empty`, `nobody`und `0` initialisiert
+    - Defaultkonstruktor, der die Werte mit `empty`, `nobody`und `0` initialisiert.
 - Methoden:
     - `toString()`: Gibt die Informationen des Buches als lesbaren String zurück (Titel, Autor, Seitenzahl).
     - `hasMorePagesThan(Book b)`: Ermittelt, ob das Buch mehr Seiten hat, als das Übergebene und gibt `true`oder `false` zurück.
@@ -36,7 +36,7 @@ Erstelle ein Programm zur Verwaltung eines Bücherregals in Java. Das Prgramm be
     - Ein Konstruktor, der das Array mit einem Größe Wert erstellt.
     - Defaultkonstruktor, der das Array auf die Größe `10` setzt.
 - Methoden:
-    - `addBook(Buch buch)`: Fügt ein Buch zum Bücherregal hinzu (wenn noch Platz im Array ist).
+    - `addBook(Buch buch)`: Fügt ein Buch zum Bücherregal hinzu (wenn noch Platz im Array ist) und gib `true`zurück, wenn es funktioniert hat. Ist das Regal bereits voll, so soll `false`zurückgegeben werden.
     - `removeBook(String title)`: Entfernt ein Buch anhand seines Titels aus dem Regal und verschiebt alle Bücher im Array, um die Lücke zu schließen.
     - `showAllBooks()`: Gibt alle Bücher im Regal aus.
     - `getNumberOfBooks()`: Gibt die Anzahl der Bücher im Regal zurück.
