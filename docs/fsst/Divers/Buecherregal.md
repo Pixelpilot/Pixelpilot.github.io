@@ -33,22 +33,23 @@ Erstelle ein Programm zur Verwaltung eines Bücherregals in Java. Das Prgramm be
     - Ein Array von Büchern (`Book[]`).
     - Ein Zähler für die tatsächliche Anzahl der Bücher im Regal (`numberOfBooks`).
 - Konstruktor:
-    - Ein Konstruktor, der das Array mit einem Größe Wert erstellt.
+    - Ein Konstruktor, der das Array mit einem bestimmten Größe erstellt.
     - Defaultkonstruktor, der das Array auf die Größe `10` setzt.
 - Methoden:
-    - `addBook(Buch buch)`: Fügt ein Buch zum Bücherregal hinzu (wenn noch Platz im Array ist) und gib `true`zurück, wenn es funktioniert hat. Ist das Regal bereits voll, so soll `false`zurückgegeben werden.
+    - `addBook(Buch buch)`: Fügt ein Buch zum Bücherregal hinzu (wenn noch Platz im Array ist) und gib `true`zurück, wenn es funktioniert hat. Ist das Regal bereits voll, so soll `false` zurückgegeben werden.
     - `removeBook(String title)`: Entfernt ein Buch anhand seines Titels aus dem Regal und verschiebt alle Bücher im Array, um die Lücke zu schließen.
     - `showAllBooks()`: Gibt alle Bücher im Regal aus.
     - `getNumberOfBooks()`: Gibt die Anzahl der Bücher im Regal zurück.
     - `getTotalPageCount()`: Gibt die Summe der Seiten aller Bücher im Regal zurück
     - `searchBook(String title)`: Sucht nach einem Buch anhand des Titels sucht und es zurückgibt, wenn es gefunden wird.
+    - **Erweiterung** `resizeBookShelf(int newsize)`: Verändert die Größe des Bücherregals. Bücher, die im neuen Regal nicht mehr Platz haben, sollen einfach gelöscht werden.
 
-### Klasse `Main'
+### Klasse `Main`
 
-- Schreibe ein Programm, das ein Bücherregal mit einer Kapazität von 5 Büchern erstellt.
-- Füge drei beliebige Bücher dem Regal hinzu.
-- Zeige alle Bücher im Array an.
-- Zeige die Summe der Seiten aller Bücher im Regal an.
-- Füge ein viertes Buch hinzu.
-- Erstelle ein weiteres Buch und gib alle Bücher aus, die weniger Seiten haben als dieses.
-- Suche nach einem Buch und gib das Buch aus, wenn es gefunden wurde. Ist es nicht enhtalten, so solle `Book not found` ausgegeben werden.
+1. Schreibe ein Programm, das ein Bücherregal mit einer Kapazität von 5 Büchern erstellt. 
+2. Füge drei beliebige Bücher dem Regal hinzu. 
+3. Zeige alle Bücher im Array an. 
+4. Zeige die Summe der Seiten aller Bücher im Regal an. 
+5. Füge ein viertes Buch hinzu. 
+6. Erstelle ein weiteres Buch und gib alle Bücher aus, die weniger Seiten haben als dieses. 
+7. Suche nach einem Buch und gib das Buch aus, wenn es gefunden wurde. Ist es nicht enthalten, so solle `Book not found` ausgegeben werden.
