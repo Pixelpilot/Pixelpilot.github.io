@@ -1,5 +1,5 @@
 ---
-title: Ausnahmen, Statische Variablen und Methoden, Vererbung und Polymorphismus, Akstrakte Klassen
+title: Ausnahmen, Statische Variablen und Methoden, Vererbung und Polymorphismus, Abstrakte Klassen
 description: Beispiel
 
 category: Fachspezifische Softwaretechnik
@@ -291,37 +291,35 @@ Abstrakte Klassen sind in Java besonders nützlich, wenn man eine Vorlage für e
 
 ## Aufgabe: Tierhierarchie und Zuweisungskompatibilität
 
-**Beschreibung:**
-
 In dieser Aufgabe soll eine Klassenhierarchie für verschiedene Tiere erstellt werden. Die Aufgabe umfasst die Erstellung mehrerer Vererbungsebenen, das Überladen von Methoden sowie die Untersuchung der Zuweisungskompatibilität.
 
 ---
 
-### Vorgaben:
+### Vorgaben
 
-1. **Klasse `Tier` (Basisklasse)**:
+1. **Klasse `Tier` (Basisklasse)**
     - Attribute:
         - `String name` (Name des Tieres)
     - Methoden:
         - Konstruktor: `Tier(String name)` - Initialisiert den Namen.
         - `void lautGeben()` - Gibt einen Standardlaut aus (z. B. `"Ein Tier macht ein Geräusch."`).
 
-2. **Klasse `Säugetier` (abgeleitet von `Tier`)**:
+2. **Klasse `Saeugetier` (abgeleitet von `Tier`)**
     - Zusätzliche Attribute:
         - `int anzahlBeine` (Anzahl der Beine)
     - Methoden:
-        - Konstruktor: `Säugetier(String name, int anzahlBeine)` - Initialisiert den Namen und die Anzahl der Beine.
-        - Überschreibt `lautGeben()` - Gibt aus: `"Ein Säugetier macht einen Laut."`.
+        - Konstruktor: `Saeugetier(String name, int anzahlBeine)` - Initialisiert den Namen und die Anzahl der Beine.
+        - Überschreibt `lautGeben()` - Gibt aus: `"Ein Saeugetier macht einen Laut."`.
         - Überladene Methode `void lautGeben(String spezifischerLaut)` - Gibt den spezifischen Laut aus (z. B. `"Das Tier macht: [spezifischerLaut]"`).
 
-3. **Klasse `Hund` (abgeleitet von `Säugetier`)**:
+3. **Klasse `Hund` (abgeleitet von `Saeugetier`)**
     - Zusätzliche Attribute:
         - `String rasse` (Rasse des Hundes)
     - Methoden:
         - Konstruktor: `Hund(String name, int anzahlBeine, String rasse)` - Initialisiert Name, Anzahl der Beine und die Rasse.
         - Überschreibt `lautGeben()` - Gibt aus: `"Der Hund bellt: Wuff Wuff."`.
 
-4. **Klasse `Katze` (abgeleitet von `Säugetier`)**:
+4. **Klasse `Katze` (abgeleitet von `Saeugetier`)**
     - Zusätzliche Attribute:
         - `boolean hatKrallen` (Gibt an, ob die Katze Krallen hat)
     - Methoden:
@@ -330,30 +328,30 @@ In dieser Aufgabe soll eine Klassenhierarchie für verschiedene Tiere erstellt w
 
 ---
 
-### Aufgabe:
+### Aufgabe
 
 1. Implementiere die Klassen gemäß der Vorgaben.
 2. Erstelle in der `main`-Methode ein Array vom Typ `Tier[]` und füge folgende Objekte hinzu:
     - Ein generisches `Tier`-Objekt.
-    - Ein `Säugetier`-Objekt.
+    - Ein `Saeugetier`-Objekt.
     - Ein `Hund`-Objekt.
     - Eine `Katze`-Objekt.
 3. Durchlaufe das Array und rufe für jedes Objekt die Methode `lautGeben()` auf.
 4. Zeige die Auswirkungen der Zuweisungskompatibilität:
-    - Weise das `Hund`-Objekt einer `Säugetier`- und einer `Tier`-Referenz zu und rufe die Methode `lautGeben()` auf.
-5. Demonstriere das Überladen der Methode `lautGeben` für ein `Säugetier`-Objekt mit spezifischen Lauten (z. B. `"Muuuh"` für ein fiktives Säugetier).
+    - Weise das `Hund`-Objekt einer `Saeugetier`- und einer `Tier`-Referenz zu und rufe die Methode `lautGeben()` auf.
+5. Demonstriere das Überladen der Methode `lautGeben` für ein `Saeugetier`-Objekt mit spezifischen Lauten (z. B. `"Muuuh"` für ein fiktives Saeugetier).
 
 ---
 
-### Beispielausgabe:
+### Beispielausgabe
 ```plaintext
 Ein Tier macht ein Geräusch.
-Ein Säugetier macht einen Laut.
+Ein Saeugetier macht einen Laut.
 Der Hund bellt: Wuff Wuff.
 Die Katze miaut: Miau.
 
 Zuweisungskompatibilität:
-Ein Säugetier macht einen Laut.
+Ein Saeugetier macht einen Laut.
 Ein Tier macht ein Geräusch.
 
 Überladene Lautausgabe:
@@ -362,7 +360,7 @@ Das Tier macht: Muuuh
 
 ---
 
-### Ziel der Aufgabe:
+### Ziel der Aufgabe
 - Verständnis der Vererbung und Mehrfachvererbung.
 - Anwendung des Method Overloading (Überladen) und Method Overriding (Überschreiben).
 - Demonstration der Zuweisungskompatibilität und des Polymorphismus in Java.

@@ -2,7 +2,7 @@
 title: Diplomarbeit
 description: Verfassen der Vorwissenschaftlichen Arbeit
 layout: default
-_category: Divers
+category: Divers
 topic: Teambildung und Verhandlung
 ---
 
