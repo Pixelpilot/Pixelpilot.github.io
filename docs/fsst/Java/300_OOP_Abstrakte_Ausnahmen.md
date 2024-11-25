@@ -288,3 +288,81 @@ public class Rectangle extends Shape {
 }
 ```
 Abstrakte Klassen sind in Java besonders nützlich, wenn man eine Vorlage für eine Gruppe von Klassen schaffen möchte, die gemeinsame Methoden und Eigenschaften haben, aber unterschiedliche Implementationen für bestimmte Methoden haben. Sie können auch verwendet werden, um eine Hierarchie von Klassen zu bauen, bei der bestimmte Methoden erst in tieferen Ebenen der Hierarchie definiert werden.
+
+## Aufgabe: Tierhierarchie und Zuweisungskompatibilität
+
+**Beschreibung:**
+
+In dieser Aufgabe soll eine Klassenhierarchie für verschiedene Tiere erstellt werden. Die Aufgabe umfasst die Erstellung mehrerer Vererbungsebenen, das Überladen von Methoden sowie die Untersuchung der Zuweisungskompatibilität.
+
+---
+
+### Vorgaben:
+
+1. **Klasse `Tier` (Basisklasse)**:
+    - Attribute:
+        - `String name` (Name des Tieres)
+    - Methoden:
+        - Konstruktor: `Tier(String name)` - Initialisiert den Namen.
+        - `void lautGeben()` - Gibt einen Standardlaut aus (z. B. `"Ein Tier macht ein Geräusch."`).
+
+2. **Klasse `Säugetier` (abgeleitet von `Tier`)**:
+    - Zusätzliche Attribute:
+        - `int anzahlBeine` (Anzahl der Beine)
+    - Methoden:
+        - Konstruktor: `Säugetier(String name, int anzahlBeine)` - Initialisiert den Namen und die Anzahl der Beine.
+        - Überschreibt `lautGeben()` - Gibt aus: `"Ein Säugetier macht einen Laut."`.
+        - Überladene Methode `void lautGeben(String spezifischerLaut)` - Gibt den spezifischen Laut aus (z. B. `"Das Tier macht: [spezifischerLaut]"`).
+
+3. **Klasse `Hund` (abgeleitet von `Säugetier`)**:
+    - Zusätzliche Attribute:
+        - `String rasse` (Rasse des Hundes)
+    - Methoden:
+        - Konstruktor: `Hund(String name, int anzahlBeine, String rasse)` - Initialisiert Name, Anzahl der Beine und die Rasse.
+        - Überschreibt `lautGeben()` - Gibt aus: `"Der Hund bellt: Wuff Wuff."`.
+
+4. **Klasse `Katze` (abgeleitet von `Säugetier`)**:
+    - Zusätzliche Attribute:
+        - `boolean hatKrallen` (Gibt an, ob die Katze Krallen hat)
+    - Methoden:
+        - Konstruktor: `Katze(String name, int anzahlBeine, boolean hatKrallen)` - Initialisiert Name, Anzahl der Beine und ob sie Krallen hat.
+        - Überschreibt `lautGeben()` - Gibt aus: `"Die Katze miaut: Miau."`.
+
+---
+
+### Aufgabe:
+
+1. Implementiere die Klassen gemäß der Vorgaben.
+2. Erstelle in der `main`-Methode ein Array vom Typ `Tier[]` und füge folgende Objekte hinzu:
+    - Ein generisches `Tier`-Objekt.
+    - Ein `Säugetier`-Objekt.
+    - Ein `Hund`-Objekt.
+    - Eine `Katze`-Objekt.
+3. Durchlaufe das Array und rufe für jedes Objekt die Methode `lautGeben()` auf.
+4. Zeige die Auswirkungen der Zuweisungskompatibilität:
+    - Weise das `Hund`-Objekt einer `Säugetier`- und einer `Tier`-Referenz zu und rufe die Methode `lautGeben()` auf.
+5. Demonstriere das Überladen der Methode `lautGeben` für ein `Säugetier`-Objekt mit spezifischen Lauten (z. B. `"Muuuh"` für ein fiktives Säugetier).
+
+---
+
+### Beispielausgabe:
+```plaintext
+Ein Tier macht ein Geräusch.
+Ein Säugetier macht einen Laut.
+Der Hund bellt: Wuff Wuff.
+Die Katze miaut: Miau.
+
+Zuweisungskompatibilität:
+Ein Säugetier macht einen Laut.
+Ein Tier macht ein Geräusch.
+
+Überladene Lautausgabe:
+Das Tier macht: Muuuh
+```
+
+---
+
+### Ziel der Aufgabe:
+- Verständnis der Vererbung und Mehrfachvererbung.
+- Anwendung des Method Overloading (Überladen) und Method Overriding (Überschreiben).
+- Demonstration der Zuweisungskompatibilität und des Polymorphismus in Java.
