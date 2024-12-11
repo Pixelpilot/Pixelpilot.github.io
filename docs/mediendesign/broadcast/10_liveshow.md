@@ -12,7 +12,7 @@ sitemap_exclude: n
 ---
 
 
-## Projekt: Live-Show Produktion mit Streaming und Greenscreen
+# Live-Show Produktion mit Streaming und Greenscreen
 
 Es soll eine 15-minütige Live-Show produziert werden, die per Livestream gesendet wird. Dabei soll einen Greenscreen verwendet werden, um kreative Hintergründe einzubinden. Ton und Bild sollten professionell integriert werden. 
 
@@ -144,7 +144,7 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
 
 ## Protokoll und Benotung
 
-### **Abgabe**
+### Abgabe
 
 #### 1. Videodatei
 Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abgzugeben.
@@ -167,9 +167,9 @@ Es ist ein gemeinsames Protokoll für das ganze Projektteam zu erstellen. Jedes 
   * **Reflexion**<br>Was lief gut, was war schwierig?
 
 
-### **Benotungsschema für das Projekt "Live-Show Produktion"**
+### Benotungsschema für das Projekt "Live-Show Produktion"
 
-#### **Gesamtnote: Zusammensetzung**
+#### Gesamtnote: Zusammensetzung
 - **Projektgesamtleistung (50%)**  
   Bewertet wird die Qualität und das Ergebnis der Live-Show, sowie die Zusammenarbeit im Team.
 - **Einzelleistung (50%)**  
@@ -177,9 +177,9 @@ Es ist ein gemeinsames Protokoll für das ganze Projektteam zu erstellen. Jedes 
 
 ---
 
-### **Bewertungskriterien**
+### Bewertungskriterien
 
-#### **1. Projektgesamtleistung (50%)**
+#### 1. Projektgesamtleistung (50%)
 
 | **Kriterium**               | **Bewertungsschlüssel**                                                                                       | **Max. Punkte** |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------|-----------------|
@@ -192,36 +192,19 @@ Es ist ein gemeinsames Protokoll für das ganze Projektteam zu erstellen. Jedes 
 
 ---
 
-#### **2. Einzelleistung (50%)**
+#### 2. Einzelleistung (50%)
 
-##### **Protokoll (30%)**
+##### Protokoll (30%)
 | **Kriterium**               | **Bewertungsschlüssel**                                                                                     | **Max. Punkte** |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|-----------------|
 | **Vollständigkeit**         | Umfasst das Protokoll alle Tätigkeiten und das Setup (z. B. genutzte Technik, Einstellungen, Probleme)?    | 10 Punkte       |
 | **Reflexion**               | Bewertung der eigenen Arbeit: Welche Herausforderungen gab es und wie wurden diese gelöst?                | 10 Punkte       |
 | **Präsentation**            | Ist das Protokoll übersichtlich, klar strukturiert und verständlich formuliert?                           | 10 Punkte       |
 
-##### **Praktische Leistung (20%)**
+##### Praktische Leistung (20%)
 | **Kriterium**               | **Bewertungsschlüssel**                                                                                     | **Max. Punkte** |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|-----------------|
 | **Engagement**              | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                            | 10 Punkte       |
 | **Qualität der Arbeit**     | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 10 Punkte       |
 
 **Gesamt: 50 Punkte**
-
----
-
-### **Hinweis für die Schüler*innen**
-1. **Protokoll-Tipps:**
-    - Beschreibt eure Aufgabe klar (z. B. "Tontechnik: Mikrofonsetup und Mischpultbedienung").
-    - Dokumentiert, welche Technik ihr verwendet habt (Marke, Modell, Einstellungen).
-    - Reflexion: Was lief gut, was war schwierig?
-
-2. **Teamarbeit:**
-    - Gute Zusammenarbeit wird positiv bewertet – helft einander und bleibt kommunikativ.
-
-3. **Praktische Tipps:**
-    - Achtet auf Details in eurer Aufgabe.
-    - Nutzt die Proben, um Fehler zu identifizieren und zu beheben.
-
-Mit dieser Struktur wird die Bewertung transparent und fair für alle Teammitglieder! 😊
