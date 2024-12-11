@@ -41,7 +41,7 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
        - Interviews mit Künstler*innen oder Designer*innen der Gruppe.
 
 
-## **Zeitplan und Ablauf**
+## Zeitplan und Ablauf
 
 5 Termine à 4 Unterrichtseinheiten
 
@@ -70,7 +70,7 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
     - Durchführung und Livestream der Show
     - Nachbereitung: Feedback-Runde und Reflektion
 
-## **Aufgabenverteilung**
+## Aufgabenverteilung
 
 ### 1. Projektleitung und Redaktion
 *1-2 Personen*
@@ -90,8 +90,8 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
 
 **Aufgaben**
 - Vorbereitung und Durchführung der Moderation der Live-Show
-- Schreiben eines Moderationsskripts
-- Interaktion mit Gästen und dem Publikum
+  - Schreiben eines Moderationsskripts
+  - Interaktion mit Gästen und dem Publikum
 
 ### 3. Regie und Live-Regie
 *1-2 Personen*
@@ -140,3 +140,88 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
 - Planung und Umsetzung eines passenden Lichtkonzepts für die Show
 - Einrichtung der Beleuchtung für die Greenscreen-Nutzung (z. B. gleichmäßige Ausleuchtung)
 - Gestaltung und Aufbau eines ansprechenden Sets (z. B. Möbel, Dekoration)
+
+
+## Protokoll und Benotung
+
+### **Abgabe**
+
+#### 1. Videodatei
+Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abgzugeben.
+
+#### 2. Protokoll
+
+Es ist ein gemeinsames Protokoll für das ganze Projektteam zu erstellen. Jedes Projektmitglied erstellt dazu ein Teilprotokoll für die individuelle Aufgabenstellung. Die Projektleiterin oder der Projektleiter fasst alle Teilprotokolle zusammen.
+
+**Inhalte des Teilprotokolls:**
+  * **Titel, Name**<br> z.B.: *Tontechnik, Max Muster: Mikrofonsetup und Mischpultbedienung Überlegungen, Konzept*)
+  * **Beschreibung der tatsächliche Umsetzung**<br>Je nach Aufgabenstellung kann dies sehr unterschiedlich aussehen. Hier ein paar Anhaltspunkte:
+    * Setup
+    * Verwendete Hardware
+    * Verwendete Software
+    * Inhalte
+    * Teilergebnisse
+    * Moderationsnotizen
+    * Ablaufplanung
+    * ...
+  * **Reflexion**<br>Was lief gut, was war schwierig?
+
+
+### **Benotungsschema für das Projekt "Live-Show Produktion"**
+
+#### **Gesamtnote: Zusammensetzung**
+- **Projektgesamtleistung (50%)**  
+  Bewertet wird die Qualität und das Ergebnis der Live-Show, sowie die Zusammenarbeit im Team.
+- **Einzelleistung (50%)**  
+  Bewertet wird die individuelle Leistung basierend auf der dokumentierten Tätigkeit im Protokoll und der beobachteten Mitarbeit während des Projekts.
+
+---
+
+### **Bewertungskriterien**
+
+#### **1. Projektgesamtleistung (50%)**
+
+| **Kriterium**               | **Bewertungsschlüssel**                                                                                       | **Max. Punkte** |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------|-----------------|
+| **Technische Qualität**     | Qualität von Video, Ton, Licht und Greenscreen-Effekten (z. B. klare Tonausgabe, fehlerfreie Bildqualität).  | 20 Punkte       |
+| **Kreativität und Inhalte** | Originalität der Show, Themenwahl, Nutzung des Greenscreens und dramaturgischer Aufbau.                     | 10 Punkte       |
+| **Zusammenarbeit im Team**  | Beobachtete Teamarbeit: Kommunikation, Unterstützung untereinander, Einhaltung von Zeitplänen.              | 10 Punkte       |
+| **Livestream/Umsetzung**    | Fehlerfreier Ablauf der Show und Reaktion auf spontane Herausforderungen.                                   | 10 Punkte       |
+
+**Gesamt: 50 Punkte**
+
+---
+
+#### **2. Einzelleistung (50%)**
+
+##### **Protokoll (30%)**
+| **Kriterium**               | **Bewertungsschlüssel**                                                                                     | **Max. Punkte** |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|-----------------|
+| **Vollständigkeit**         | Umfasst das Protokoll alle Tätigkeiten und das Setup (z. B. genutzte Technik, Einstellungen, Probleme)?    | 10 Punkte       |
+| **Reflexion**               | Bewertung der eigenen Arbeit: Welche Herausforderungen gab es und wie wurden diese gelöst?                | 10 Punkte       |
+| **Präsentation**            | Ist das Protokoll übersichtlich, klar strukturiert und verständlich formuliert?                           | 10 Punkte       |
+
+##### **Praktische Leistung (20%)**
+| **Kriterium**               | **Bewertungsschlüssel**                                                                                     | **Max. Punkte** |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|-----------------|
+| **Engagement**              | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                            | 10 Punkte       |
+| **Qualität der Arbeit**     | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 10 Punkte       |
+
+**Gesamt: 50 Punkte**
+
+---
+
+### **Hinweis für die Schüler*innen**
+1. **Protokoll-Tipps:**
+    - Beschreibt eure Aufgabe klar (z. B. "Tontechnik: Mikrofonsetup und Mischpultbedienung").
+    - Dokumentiert, welche Technik ihr verwendet habt (Marke, Modell, Einstellungen).
+    - Reflexion: Was lief gut, was war schwierig?
+
+2. **Teamarbeit:**
+    - Gute Zusammenarbeit wird positiv bewertet – helft einander und bleibt kommunikativ.
+
+3. **Praktische Tipps:**
+    - Achtet auf Details in eurer Aufgabe.
+    - Nutzt die Proben, um Fehler zu identifizieren und zu beheben.
+
+Mit dieser Struktur wird die Bewertung transparent und fair für alle Teammitglieder! 😊
