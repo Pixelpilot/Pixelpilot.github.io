@@ -1,5 +1,5 @@
 ---
-title: Analyse von Fotos
+title: Technische und gestalterische Bildanalyse
 description: Bildanalyse eines internationalen Fotowettbewerbs
 
 category: Mediendesign
