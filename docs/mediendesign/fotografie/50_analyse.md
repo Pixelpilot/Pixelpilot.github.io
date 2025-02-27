@@ -24,6 +24,7 @@ Suche mindestens 3 Bilder aus den bekanntesten Foto-Awards aus:
 
 1. Sony World Photography Awards - [worldphoto.org](https://www.worldphoto.org/sony-world-photography-awards)
 2. National Geographic Photo Contest - [natgeo.com](https://www.nationalgeographic.com/)
+3. Red Bull Illume  - [redbullillume.com](https://www.redbullillume.com/)
 3. World Press Photo Contest - [worldpressphoto.org](https://www.worldpressphoto.org/)
 4. Wildlife Photographer of the Year - [nhm.ac.uk](https://www.nhm.ac.uk/wpy)
 5. International Photography Awards (IPA) - [photoawards.com](https://www.photoawards.com/)
@@ -51,7 +52,25 @@ Gehe auf folgende Aspekte ein:
 
 ### Analyse der Bildgestaltung
 
-Untersucht die ästhetischen und kompositorischen Elemente:
+Welchen Zweck und welche Funktion hat das Bild deiner Meinung nach?
+- **Was möchte man mit dem Foto erreichen?**
+  - Emotionen wecken 
+  - Eine Geschichte erzählen 
+  - Über Neuigkeiten berichten
+  - ...
+- **Für welches Medium ist das Bild gemacht?**
+  - Ausstellung, Galerie 
+  - Zeitung, Zeitschrift 
+  - Socialmedia, Online-Medien, Web
+  - ...
+- **Welche Funktion hat das Bild?**
+  - Anerkennung ausdrücken
+  - Symbolfoto
+  - Illustration
+  - Kommunikation
+  - ...
+
+Untersucht dazu auch die ästhetischen und kompositorischen Elemente:
 
 - **Bildaufbau:** Wurden die Drittel-Regel (goldener Schnitt) oder andere Gestaltungsregeln angewendet? Wie wirken die Bildproportionen?
 - **Bildebenen**
@@ -59,6 +78,7 @@ Untersucht die ästhetischen und kompositorischen Elemente:
 - **Linien und Formen:** Gibt es Linien oder geometrische Formen, die die Aufmerksamkeit lenken?
 - **Fokuspunkt:** Was ist der zentrale Fokus des Bildes? Wie wurde die Aufmerksamkeit darauf gelenkt?
 - **Emotionale Wirkung:** Welche Gefühle weckt das Bild? Welche Elemente tragen zu dieser Wirkung bei?
+
 
 ## Abgabe
 
