@@ -14,7 +14,7 @@ _DALL·E Sprachmodell, Bild zu den Themen Urheberrecht, Musikbusiness, Kreativbr
 # Ideen sind was wert
 
 ## Aufgabenstellung
-Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Musikbusiness_, Filmbusiness_ und _Kreativwirtschaft_ erstellt werden.
+Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Musikbusiness_, _Filmbusiness_ und _Kreativwirtschaft_ erstellt werden.
 
 ### Ablauf
 
@@ -27,28 +27,35 @@ Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Mus
    |3| Das Filmbusiness                     |37|
    |4| Geistiges Eigentum und Urhbeberrecht |19|
 
-2. **Aufteilen der Inhalte**<br>Innerhalb der Gruppe wird der Inhalt aufgeteilt, dass jede/r in etwa den gleichen Umfang zu bearbeiten hat.
+
+2. **Aufteilen der Inhalte**<br>Innerhalb der Gruppe wird der so Inhalt aufgeteilt, dass jede/r in etwa den gleichen Umfang zu bearbeiten hat.
 
 
 3. **Ausarbeiten und Ergänzen der Inhalte**<br>Jede/r arbeitet eine Präsentation zum jeweiligen Inhalt aus. Die unten angeführten .pdf-Dokumente stellen eine Basis dar und **sollen** um folgende Inhalt erweitert werden:<br><br>
-    - **Aktuelle Entwicklungen**, die unten angeführten [.pdf-Dokumente](#Inhalte)  sind z.T. nicht mehr ganz aktuell, auf neue Entwicklung wird nicht oder nicht ausreichende eingegangen (VPN, Deep Fakes, KI-Tools zum Generieren von Ton, Bild und Video, Streaming, Social Media, etc...)
+    - **Aktuelle Entwicklungen**<br>
+    Die unten angeführten [.pdf-Dokumente](#Inhalte) sind z.T. nicht mehr ganz aktuell, auf neue Entwicklung wird nicht oder nicht ausreichende eingegangen (VPN, Deep-Fakes, KI-Tools zum Generieren von Ton, Bild und Video, Streaming, Social Media, etc...)<br><br>
     - **Beispiele aus der Praxis**<br>
-      Beispielhafte Inhalte (Bilder, Videos, Musik- oder andere Tonstücke, ...) , rechtliche Fälle, relevante Ressourcen sollen ebenfalls enthalten sein. <br>
-      _Zum Beispiel: Ich mache ein Fest für die Klasse und spiele da Musik und zeige Musikvideos her. Muss ich das Abgaben bezahlen? Kann mich das ein Interpret verklagen?_
-    -  **Zusätzliche Inhalte:**<br>Zusätzliche interessante, weiterführende Informationen, etc. sollen ergänzt werden.
+      Beispielhafte Inhalte (Bilder, Videos, Musik- oder andere Tonstücke, ...) , rechtliche Fälle, relevante Ressourcen sollen ebenfalls enthalten sein. <br><br>
+      _Zum Beispiel: Ich mache ein Fest für die Klasse, lasse eine Spotify Playlist laufen und zeige Musikvideos her. Muss ich da Abgaben bezahlen? Kann mich von einem der Interpreten verklagt werden?_<br><br>
+    - **Zusätzliche Inhalte**<br>
+      Aktuelle, interessante, weiterführende Informationen, etc. sollen ergänzt werden.<br><br>
     - **Quellenangaben**<br> Alle verwendeten Quellen sind anzugeben.
 
 
 4. **Erstellen einer gemeinsamen Präsentation**<br>
-   Aus den einzelnen Teilen wir pro Gruppe und eine gemeinsame Präsentation zusammengefasst. <br><br>Neben den Inhalten ist auch auf das Aussehen zu achten. <br><br>Die Art der Präsentation ist freigestellt (PowerPoint, Adobe XD, Miro, ...).<br><br>Die Dauer der Präsentation hängt vom Umfang ab.
+   Aus den einzelnen Teilen der Ausarbeitungen wird pro Gruppe eine gemeinsame Präsentation erstellt. <br><br>
+
+   - Neben den Inhalten ist auch auf das Aussehen zu achten 
+   - Das Tool für die Durchführung der Präsentation ist freigestellt (PowerPoint, Adobe XD, Miro, ...)
+   - Die Dauer der Präsentation hängt vom Umfang ab
 
 
 5. **Erstellen eines gemeinsamen Handouts**<br>
-   Zusätzlich zur Präsentation ist **eine** Zusammenfassung der Inhalte für das gesamte Thema zu erstellen. Es ist zu kennzeichnen, wer welche Inhalte erstellt hat und wer die Präsentation sowie das Handout erstellt hat.
+   Zusätzlich zur Präsentation ist **eine** Zusammenfassung der Inhalte für das gesamte Thema zu erstellen. Es ist zu kennzeichnen, wer welche Inhalte erstellt hat, und wer die Präsentation sowie das Handout erstellt hat.
 
 
 6. **Abhalten der Präsentationen**<br>
-   Jede Gruppe hält gemeinsam die Präsentation, wobei jede/r seinen/ihren Teil der Folien präsentiert. Ist jemand am Tag der Präsentation nicht anwesend, so wird ein Teammitglied bestimmt, der diesen Teil präsentiert.
+   Jede Gruppe hält gemeinsam die Präsentation, wobei jede/r seinen/ihren Teil der Folien präsentiert. Ist jemand am Tag der Präsentation nicht anwesend, so wird ein Teammitglied bestimmt, das diesen Teil präsentiert.
 
 ### Verwendung von KI für die Erstellung der Inhalte
 
