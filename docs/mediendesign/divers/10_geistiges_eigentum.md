@@ -26,7 +26,7 @@ Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Mus
    |2| Das Musikbusiness                    |30|
    |3| Das Filmbusiness                     |37|
    |4| Geistiges Eigentum und Urhbeberrecht |19|
-
+<br>
 
 2. **Aufteilen der Inhalte**<br>Innerhalb der Gruppe wird der so Inhalt aufgeteilt, dass jede/r in etwa den gleichen Umfang zu bearbeiten hat.
 
