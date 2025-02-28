@@ -33,7 +33,7 @@ Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Mus
 
 3. **Ausarbeiten und Ergänzen der Inhalte**<br>Jede/r arbeitet eine Präsentation zum jeweiligen Inhalt aus. Die unten angeführten .pdf-Dokumente stellen eine Basis dar und **sollen** um folgende Inhalt erweitert werden:<br><br>
     - **Aktuelle Entwicklungen**<br>
-    Die unten angeführten [.pdf-Dokumente](#Inhalte) sind z.T. nicht mehr ganz aktuell, auf neue Entwicklung wird nicht oder nicht ausreichende eingegangen (VPN, Deep-Fakes, KI-Tools zum Generieren von Ton, Bild und Video, Streaming, Social Media, etc...)<br><br>
+    Die unten angeführten [.pdf-Dokumente](#inhalte) sind z.T. nicht mehr ganz aktuell, auf neue Entwicklung wird nicht oder nicht ausreichende eingegangen (VPN, Deep-Fakes, KI-Tools zum Generieren von Ton, Bild und Video, Streaming, Social Media, etc...)<br><br>
     - **Beispiele aus der Praxis**<br>
       Beispielhafte Inhalte (Bilder, Videos, Musik- oder andere Tonstücke, ...) , rechtliche Fälle, relevante Ressourcen sollen ebenfalls enthalten sein. <br><br>
       _Zum Beispiel: Ich mache ein Fest für die Klasse, lasse eine Spotify Playlist laufen und zeige Musikvideos her. Muss ich da Abgaben bezahlen? Kann mich von einem der Interpreten verklagt werden?_<br><br>
