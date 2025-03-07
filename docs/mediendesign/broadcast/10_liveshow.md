@@ -147,16 +147,33 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
 ### Abgabe
 
 #### 1. Videodatei
-Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abgzugeben.
+Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abzugeben.
 
 #### 2. Protokoll
 
 Es ist ein gemeinsames Protokoll für das ganze Projektteam zu erstellen. Jedes Projektmitglied erstellt dazu ein Teilprotokoll für die individuelle Aufgabenstellung. Die Projektleiterin oder der Projektleiter fasst alle Teilprotokolle zusammen.
 
+**Zum Beispiel:**
+- Wie wird der Ton aufgezeichnet?
+    - Welche Mikrofone werden verwendet?
+    - Wie werden die Mikrofone verkabelt?
+    - Warum werden die Mikrofone verwendet, und nicht irgendwelche anderen?
+    - Mit Pre-amp? Noise-Gate?
+    - Wie wird auf den Versatz von Ton und Bild reagiert?
+- Wie sind die ATEMs verkabelt?
+- Wie werden die Lichter angesteuert?
+- Wie funktioniert das Keying?
+- ...
+
 **Inhalte des Teilprotokolls:**
-  * **Titel, Name**<br> z.B.: *Tontechnik, Max Muster: Mikrofonsetup und Mischpultbedienung Überlegungen, Konzept*)
+
+Es muss das gesamte Setup auf Basis des Protokoll, auch von Personen, die nicht mit der Hard- und Software vertraut sind, lückenlos umgesetzt werden können. Dazu sind alle Schritte, technischen Details festzuhalten:
+
+
+
+  * **Titel, Name**<br> z.B.: *Tontechnik, Max Muster: Mikrofonsetup und Mischpultbedienung Überlegungen, Konzept*
   * **Beschreibung der tatsächliche Umsetzung**<br>Je nach Aufgabenstellung kann dies sehr unterschiedlich aussehen. Hier ein paar Anhaltspunkte:
-    * Setup
+    * Setup inklusiver Skizzen
     * Verwendete Hardware
     * Verwendete Software
     * Inhalte
