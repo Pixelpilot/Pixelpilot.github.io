@@ -4,7 +4,6 @@ description: Programmieren in C - Divers
 layout: default
 _category: SOPK
 topic: Teambildung und Verhandlung
-
 ---
 ![](img/baukloetze.png)
 

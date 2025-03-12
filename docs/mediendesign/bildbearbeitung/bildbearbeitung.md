@@ -2,7 +2,7 @@
 title: Bildbearbeitung
 description: Grundlagen der Bildbearbeitung mit Adobe Photoshop
 layout: default
-category: Mediendesign
+_category: Mediendesign
 topic: Bildbearbeitung mit Adobe Photoshop
 ---
 

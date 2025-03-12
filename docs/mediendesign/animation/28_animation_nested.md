@@ -38,7 +38,6 @@ Erstelle eine Animation, die aus mehreren Teil-Animationen besteht:
 >   * Sie Sonnenstrahlen drehen sich um die Sonne
 >   * Die Sonne zwinkert dir zu
 > * Die Umgebung wird heller, wenn die Sonne aufgeht
-> * 
 >
 >Berücksichtige dabei das Prinzip des **Slow in** und **Slow out** (**Ease** in Adobe Animate).
 >

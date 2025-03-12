@@ -2,5 +2,5 @@
 /docs/_site/
 /docs/Gemfile
 /docs/Gemfile.lock
-/docs/.idea/
+/docs/.jekyll-cache
 .idea

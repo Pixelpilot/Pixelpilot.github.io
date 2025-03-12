@@ -20,16 +20,12 @@ Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Mus
 
 1. **Gruppeneinteilung**<br>Es werden unterschiedlich große Gruppen entsprechend der Seitenanzahl erstellt:
 
-   | # | Thema                                | Seitenanzahl |
-   |--------------------------------------|----|----:|
-   |1| Die Kreativwirtschaft                |14|
-   |2| Das Musikbusiness                    |30|
-   |3| Das Filmbusiness                     |37|
-   |4| Geistiges Eigentum und Urhbeberrecht |19|
-<br>
+   - **#1 – Die Kreativwirtschaft** (14 Seiten)   
+   - **#2 – Das Musikbusiness** (30 Seiten)  
+   - **#3 – Das Filmbusiness** (37 Seiten)       
+   - **#4 – Geistiges Eigentum und Urhbeberrecht** (19 Seiten)<br><br>
 
 2. **Aufteilen der Inhalte**<br>Innerhalb der Gruppe wird der so Inhalt aufgeteilt, dass jede/r in etwa den gleichen Umfang zu bearbeiten hat.
-
 
 3. **Ausarbeiten und Ergänzen der Inhalte**<br>Jede/r arbeitet eine Präsentation zum jeweiligen Inhalt aus. Die unten angeführten .pdf-Dokumente stellen eine Basis dar und **sollen** um folgende Inhalt erweitert werden:<br><br>
     - **Aktuelle Entwicklungen**<br>
@@ -39,8 +35,7 @@ Es sollen in der Gruppe Präsentationen zu den Themen _Geistiges Eigentum_, _Mus
       _Zum Beispiel: Ich mache ein Fest für die Klasse, lasse eine Spotify Playlist laufen und zeige Musikvideos her. Muss ich da Abgaben bezahlen? Kann mich von einem der Interpreten verklagt werden?_<br><br>
     - **Zusätzliche Inhalte**<br>
       Aktuelle, interessante, weiterführende Informationen, etc. sollen ergänzt werden.<br><br>
-    - **Quellenangaben**<br> Alle verwendeten Quellen sind anzugeben.
-
+    - **Quellenangaben**<br> Alle verwendeten Quellen sind anzugeben.<br><br>
 
 4. **Erstellen einer gemeinsamen Präsentation**<br>
    Aus den einzelnen Teilen der Ausarbeitungen wird pro Gruppe eine gemeinsame Präsentation erstellt. <br><br>
