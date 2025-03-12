@@ -14,20 +14,20 @@ topic: Diverse Informationen und Handreichungen
 
 Der Text sollte einen hierarchischen Aufbau verfolgen: Am Anfang so einfach und abstrakt wie möglich und dann immer genauer und konkreter auf die einzelnen Punkte eingehen.
 
-Auf diese Weise wird auch verhindert, dass ein Artikel wie ein Krimi geschrieben wird, wo erst am Schluss klar wird, worauf die Autoren:innen hinaus wollten, und was das eigentliche Ergebnis der Arbeit war.
+Auf diese Weise wird auch verhindert, dass ein Artikel wie ein Krimi geschrieben wird, bei dem erst am Schluss klar wird, worauf die Autor:innen hinauswollten und was das eigentliche Ergebnis der Arbeit war.
 
 ### Wo gehören welche Inhalte rein?
 
 > **Konzept**
 >
-> Theoretischen Überlegungen, wie ich das Problem lösen möchte
+> Theoretische Überlegungen, wie das Problem gelöst werden soll
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇
 
 
 > **Implementierung**
 >
-> Konkrete Beschreibung, wie die theoretischen Überlegungen konkret umgesetzt wurden
+> Beschreibung, wie die theoretischen Überlegungen konkret umgesetzt wurden
 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⬇
@@ -35,7 +35,7 @@ Auf diese Weise wird auch verhindert, dass ein Artikel wie ein Krimi geschrieben
 
 > **Ergebnis**
 >
-> Beschreibung des Ergebnisses, was dabei herausgekommen ist. Das Kapitel kann auch den Namen des Prototyps/der App/des Produkts haben.
+> Beschreibung des Ergebnisses. Dieses Kapitel kann auch den Namen des Prototyps, der App oder des Produkts tragen.
 
 _Aufbau der Diplomarbeit_
 
@@ -78,15 +78,15 @@ Folgende Punkte sind beim Verfassen einer Arbeit zu beachten:
 
 #### Allgemein
 - Sie sollten **so einfach wie möglich** schreiben. Kurze Sätze verwenden.
-- Wissenschaftlich Schreiben heißt **präzise und nachvollziehbar Schreiben**.
-- Eine Vermeidung der Überprüfbarkeit von Aussagen durch Unverständlichkeit oder Abschwächung von Aussagen ist nicht wissenschaftlich.
+- Wissenschaftlich schreiben heißt **präzise und nachvollziehbar schreiben**.
+- Die Vermeidung der Überprüfbarkeit von Aussagen durch Unverständlichkeit oder Abschwächung ist nicht wissenschaftlich
 
 #### Begriffe definieren
 
-Begriffe, die zentral für den eigenen Forschungsansatz sind, müssen vor ihrer Verwendung **definiert** werden, wenn man nicht sicher sein kann, ob sie allen geläufig sind. Synonyme sind zu vermeiden.
+Begriffe, die zentral für den eigenen Forschungsansatz sind, müssen vor ihrer Verwendung **definiert** werden, wenn nicht sicher ist, ob sie allen geläufig sind. Synonyme sind zu vermeiden.
  
 #### Bilder statt Text
-Eine Abbildung sagt oft viel mehr aus, als ein reiner Text.
+Eine Abbildung sagt oft mehr aus als reiner Text.
 
 #### Konkrete Formulierungen
 Konkrete Formulierungen statt abstrakter verwenden:
@@ -95,7 +95,7 @@ Konkrete Formulierungen statt abstrakter verwenden:
 
 
 #### Beispiele bringen
-Konzepte sollten immer durch Beispiele verdeutlicht werden.
+Konzepte sollten stets durch Beispiele verdeutlicht werden.
 
 [Zur Übersicht ↑](#content)
 
@@ -103,22 +103,22 @@ Konzepte sollten immer durch Beispiele verdeutlicht werden.
 ## Aufbau der Diplomarbeit
 
 ### i. Deckblatt
-Das Deckblatt ist vorgegeben und es müssen lediglich die Autor:innen und der Titel angepasst werden.
+Das Deckblatt ist vorgegeben; es müssen lediglich die Autor:innen und der Titel angepasst werden.
 
 ### ii. Eidesstattliche Erklärung
-Die eidesstattliche Erklärung ist vorgegeben. Bei der ausgedruckten Arbeit müssen die Autor:innen unterschreiben.
+Die eidesstattliche Erklärung ist vorgegeben. In der ausgedruckten Arbeit müssen die Autor:innen unterschreiben.
 
 ### iii. Abstract
 
-Das **Abstract** und die **Zusammenfassung** gehören zu den meistgelesenen Abschnitten einer wissenschaftlichen Arbeit und sollten daher mit besonderer Sorgfalt geschrieben werden, wobei Abstract die englische Version der Zusammenfassung darstellt.
+Das **Abstract** und die **Zusammenfassung** gehören zu den meistgelesenen Abschnitten einer wissenschaftlichen Arbeit und sollten daher mit besonderer Sorgfalt verfasst werden, wobei das Abstract die englische Version der Zusammenfassung darstellt.
 
 **Beachte:**
-- Die Zusammenfassung sollte für sich alleine stehen können
-- Die Zusammenfassung sollte als letztes Kapitel geschrieben werden
+- Die Zusammenfassung sollte für sich allein stehen können.
+- Die Zusammenfassung sollte als letztes Kapitel verfasst werden.
 
 **Idealerweise sollten folgende Punkte enthalten sein:**
 1. Eingrenzung des Forschungsbereichs <br>_In welchem Themengebiet ist die Arbeit angesiedelt?_
-2. Beschreibung des Problems, das in dieser Arbeit gelöst werden soll <br>_Was ist das Problem, und warum ist es wichtig, es zu lösen?_
+2. Beschreibung des Problems, das in dieser Arbeit gelöst werden soll <br>_Was ist das Problem und warum ist es wichtig, es zu lösen?_
 3. Mängel an existierenden Arbeiten bzgl. des Problems <br>_Warum ist es ein Problem, obwohl sich schon andere mit dem gleichen Thema beschäftigt haben?_
 4. Eigener Lösungsansatz <br>_Welcher Ansatz wurde in dieser Arbeit verwendet, um das Problem zu lösen? Was ist der Beitrag dieses Artikels?_
 
@@ -131,7 +131,7 @@ Die Kurzfassung ist die deutsche Version des [Abstract](#iii-abstract).
 ---
 ### 1. Einleitung
 
-Die Einleitung gibt einen Überblick über das Thema der Arbeit, die Motivation dahinter und die Zielsetzung. Außerdem wird die Struktur der Arbeit beschrieben.
+Hier wird erläutert, warum das Thema gewählt wurde, welches Problem gelöst werden soll und welche Ziele erreicht werden sollen. Gegebenenfalls kann auch auf die Schwächen bestehender Arbeiten eingegangen werden.
 
 
 #### 1.1 Motivation/Problemstellung und Zielsetzung
@@ -161,7 +161,7 @@ In diesem Kapitel werden die theoretischen und technischen Grundlagen erläutert
 
 #### Begriffsdefinitionen
 
-Dieses Unterkapitel liefert Definitionen zentraler Begriffe, die für das Thema relevant sind. Dadurch wird sichergestellt, dass alle verwendeten Begriffe einheitlich verstanden werden.
+Hier werden zentrale Begriffe definiert und erläutert, um eine einheitliche Begrifflichkeit sicherzustellen. Ab diesem Zeitpunkt wird **immer** nur dieser Begriff verwenden.
 
 **Beispiel:**
 
@@ -169,7 +169,7 @@ _„Biometrie bezeichnet die automatische Identifikation oder Verifikation von I
 
 #### State of the art
 
-Hier wird der aktuelle Stand der Technik bzw. Wissenschaft zu den relevanten Themen beschrieben. Dies kann vorhandene Lösungen, aktuelle Forschungsergebnisse oder etablierte Technologien umfassen.
+Hier wird der aktuelle Stand der Technik bzw. der Forschung zu den relevanten Themen beschrieben. Dazu gehören bestehende Lösungen, aktuelle wissenschaftliche Erkenntnisse oder etablierte Technologien.
 
 **Beispiel:**
 
