@@ -62,7 +62,7 @@ echo json_encode($data);
 *Die Daten werden im JSON-Format an den Client geschickt.*
 
 
-### Client: AJAX-Anfrage und Verarbeitung
+### Client: AJAX-Anfrage und Verarbeitung mit HTTP-Request
 
 Der Client stellt eine Anfrage (*HTTP Request*) an der Server und gibt eine *Callback*-Funktion an, die automatisch aufgerufen werden soll, wenn die Daten da sind. 
 
@@ -79,39 +79,43 @@ Sobald der Server die Antwort geliefert hat, wird die *Callback*-Funktion aufger
 </head>
 <body>
     <ul id="users-list"></ul>
-    <script>
-    // XMLHttpRequest-Objekt erstellen
-    var xhr = new XMLHttpRequest();
-
-    // Anfrage senden
-    xhr.open('GET', 'data.php', true);
-    xhr.send();
-
-    // Antwort verarbeiten
-    xhr.onreadystatechange = function() {
-        
-        // alles OK?
-        if (xhr.readyState == 4 && xhr.status == 200) {
-        
-            // Daten speichern
-            var data = JSON.parse(xhr.responseText);
-            
-            var usersList = document.getElementById('users-list');
-
-            // Über die Daten iterieren
-            for (var i = 0; i < data.length; i++) {
-                var user = data[i];
-                
-                // Listenelement erzeugen und anzeigen
-                var listItem = document.createElement('li');
-                listItem.innerHTML = user.name + ' (' + user.phone + ')';
-                usersList.appendChild(listItem);
-            }
-        }
-    };
-    </script>
+    <script src="script-request.js"></script>
 </body>
 </html>
+```
+
+```javascript
+/* script-request.js */
+
+// XMLHttpRequest-Objekt erstellen
+var xhr = new XMLHttpRequest();
+
+// Anfrage senden
+xhr.open('GET', 'data.php', true);
+xhr.send();
+
+// Antwort verarbeiten
+xhr.onreadystatechange = function() {
+    
+    // alles OK?
+    if (xhr.readyState == 4 && xhr.status == 200) {
+    
+        // Daten speichern
+        var data = JSON.parse(xhr.responseText);
+        
+        var usersList = document.getElementById('users-list');
+
+        // Über die Daten iterieren
+        for (var i = 0; i < data.length; i++) {
+            var user = data[i];
+            
+            // Listenelement erzeugen und anzeigen
+            var listItem = document.createElement('li');
+            listItem.innerHTML = user.name + ' (' + user.phone + ')';
+            usersList.appendChild(listItem);
+        }
+    }
+};
 ```
 *Verändern des DOM, sobald die Daten vom Server geladen wurden.*
 
@@ -143,6 +147,138 @@ Die möglichen HTTP-Statuscodes sind in verschiedene Kategorien unterteilt, z. B
 * `5xx` (Server-Fehler).
 
 Ein Statuscode von 200 bedeutet, dass die Anfrage erfolgreich war, während ein Statuscode von 404 darauf hinweist, dass die angeforderte Ressource nicht gefunden wurde.
+
+### Client: AJAX-Anfrage und Verarbeitung mit `fetch()` und Promises
+
+Ein **Promise** ist ein Objekt, das einen Wert repräsentiert, der jetzt, in der Zukunft oder niemals verfügbar sein kann. Es dient dazu, asynchrone Operationen wie HTTP-Anfragen übersichtlicher zu machen, indem es das **Callback Hell**-Problem vermeidet.
+
+Ein Promise kann sich in drei Zuständen befinden:
+1. **Pending** (ausstehend): Die Operation läuft noch.
+2. **Fulfilled** (erfüllt): Die Operation war erfolgreich und liefert einen Wert.
+3. **Rejected** (abgelehnt): Die Operation ist fehlgeschlagen und liefert einen Fehler.
+
+Man kann Promises mit `.then()` verketten, um asynchrone Abläufe besser zu strukturieren, und mit `.catch()`, um Fehler zu behandeln.
+
+```html
+<!-- ajax.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>AJAX JSON Beispiel</title>
+</head>
+<body>
+    <ul id="users-list"></ul>
+    <script src="script-promises.js"></script>
+</body>
+</html>
+```
+
+```javascript
+/* script-promises.js */
+
+function loadContacts() {
+  // Daten abrufen (Die Standardmethode von fetch ist GET)
+  fetch('data.php')
+    .then(response => {
+        
+      // Überprüfen, ob die Antwort erfolgreich war (Status 200-299)
+      if (!response.ok) {
+        throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+      }
+      
+      // Antwort als JSON-Daten zurückgeben
+      return response.json();
+    })
+    .then(data => {
+        
+      // DOM aktuelisieren
+      const usersList = document.getElementById('users-list');
+      usersList.innerHTML = "";
+
+      data.forEach(user => {
+        const listItem = document.createElement('li');
+          listItem.innerHTML = `${user.name} (${user.phone})`;
+          usersList.appendChild(listItem);
+      });
+    })
+    .catch(error => {
+      console.error('Fehler beim Laden der Kontakte:', error);
+    });
+}
+
+// Die Funktion aufrufen
+loadContacts();
+```
+
+> **Callback Hell – Das Problem verschachtelter Callbacks**
+> 
+> Das Callback Hell-Problem (auch Pyramid of Doom genannt) tritt auf, wenn mehrere asynchrone Funktionen mit Callbacks ineinander verschachtelt werden. Dadurch wird der Code schwer lesbar, fehleranfällig und schwer zu debuggen.
+
+
+### Client: AJAX-Anfrage und Verarbeitung mit `async` und `await`
+
+
+```html
+<!-- ajax.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>AJAX JSON Beispiel</title>
+</head>
+<body>
+    <ul id="users-list"></ul>
+    <script src="script-async.js"></script>
+</body>
+</html>
+```
+
+```javascript
+/* script-async.js */
+async function loadContacts() {
+  try {
+    // Daten von "data.php" abrufen und auf die Antwort warten
+    const response = await fetch('data.php');
+
+    // Überprüfen, ob die Antwort erfolgreich war (Status 200-299)
+    if (!response.ok) {
+      throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+    }
+
+    // Antwort in JSON umwandeln
+    const data = await response.json();
+
+    // Referenz auf die Liste im HTML-Dokument holen
+    const usersList = document.getElementById('users-list');
+
+    // Vorhandene Einträge in der Liste entfernen, um Duplikate zu vermeiden
+    usersList.innerHTML = "";
+
+    // Benutzer-Daten in die Liste einfügen
+    for (const user of data) {
+      // Neues Listenelement für jeden Benutzer erstellen
+      const listItem = document.createElement('li');
+
+      // Benutzername und Telefonnummer in das Listenelement einfügen
+      listItem.innerHTML = `${user.name} (${user.phone})`;
+
+      // Das Listenelement zur HTML-Liste hinzufügen
+      usersList.appendChild(listItem);
+    }
+
+  } catch (error) {
+    // Fehler ausgeben, falls etwas schiefgeht (z. B. Netzwerkfehler oder Serverproblem)
+    console.error('Fehler beim Laden der Kontakte:', error);
+  }
+}
+
+// Die Funktion aufrufen, um die Kontakte zu laden
+loadContacts();
+```
+
 
 ## Aufgabe 1: Erweiterung der Kontaktdatenverwaltung
 {: .assignment }
@@ -252,4 +388,6 @@ Erstelle einen Button `Alle Jobs des Unternehmens`, das wieder die Liste aus Auf
 
 
 ## Ressourcen
+* [Ajax Battle: XMLHttpRequest vs the Fetch API](https://blog.openreplay.com/ajax-battle-xmlhttprequest-vs-fetch/){:target="_blank"}
+* [Mozilla - The fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API){:target="_blank"}
 * [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}

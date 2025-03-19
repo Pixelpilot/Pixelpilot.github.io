@@ -230,7 +230,6 @@ context.restore();
 ## Weitere Ressourcen
 
 * [.zip des leeren Projekts](./assets/canvas_draw_empty.zip){:target="_blank"}
-* 
 * [MDN Web Docs - CanvasRenderingContext2D](https://developer.mozilla.
   org/de/docs/Web/API/CanvasRenderingContext2D){:target="_blank"}
 * [Wikimedia Commons - File:2D affine transformation matrix.svg](https://commons.wikimedia.org/wiki/File:2D_affine_transformation_matrix.svg){:target="_blank"}
