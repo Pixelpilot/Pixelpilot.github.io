@@ -3,7 +3,7 @@ title: Live-Show Produktion
 description: Durchführen einer Live-Show mit Greenscreen und Broadcasting
 
 category: Mediendesign
-topic: Live-Show Produktion mit Streaming und Greenscreen
+topic: Video-Produktion
 
 type: assignment
 layout: default
