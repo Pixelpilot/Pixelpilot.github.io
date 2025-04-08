@@ -1,12 +1,12 @@
 ---
-title: Handreiche zur Diplomarbeit
-description: Verfassen der Vorwissenschaftlichen Arbeit
+title: Verfassen der schriftlichen Arbeit (Diplomarbeit)
+description: Verfassen der schriftlichen vorwissenschaftlichen Arbeit
 layout: default
 category: Divers
-topic: Diverse Informationen und Handreichungen
+topic: Diplomarbeit
 ---
 
-# Diplomarbeit
+# {{ page.title }}
 
 ## Verfassen der Diplomarbeit
 
@@ -312,6 +312,7 @@ Hier werden die Autor:innen der Arbeit genannt. Das Format ist vorgegeben und es
 
 
 ## Weiterführende Informationen
-
-* [LaTeX Vorlage der Arbeit – GitHub](https://github.com/matejkaf/latex-da-vorlage/)
-* [Wissenschaftliches Schreiben – Karlsruher Institut für wissenschaftliches Schreiben](https://sdq.kastel.kit.edu/wiki/Wissenschaftliches_Schreiben)
+* [Informationen zur Diplomarbeit – Bundesministerium für Bildung](https://www.diplomarbeiten-bbs.at/erstellung/erstellung-allgemeine-infos){:target="_blank"}
+* [Zitation und Plagiate – Bundesministerium für Bildung](https://www.diplomarbeiten-bbs.at/hinweise-zum-wissenschaftlichen-arbeiten/zitation-plagiate)
+* [LaTeX Vorlage der Arbeit – GitHub](https://github.com/matejkaf/latex-da-vorlage/){:target="_blank"}
+* [Wissenschaftliches Schreiben – Karlsruher Institut für wissenschaftliches Schreiben](https://sdq.kastel.kit.edu/wiki/Wissenschaftliches_Schreiben){:target="_blank"}
