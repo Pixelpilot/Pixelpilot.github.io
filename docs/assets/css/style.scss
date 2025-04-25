@@ -4,10 +4,27 @@ sitemap_exclude: y
 
 @import "{{ site.theme }}";
 
+
 body {
   // background-color: yellowgreen;
 }
+/*
+div.toc li,
+div.toc li{
+  margin-top: 5px !important;
+}
 
+ul > li, ol > li {
+  margin-top: 30px;
+}
+
+ul ul > li,
+ul ol > li,
+ol ul > li,
+ol ol > li {
+  margin-top: 10px !important;
+}
+*/
 ul.task-list {
   list-style: none;
   padding-left: 0;

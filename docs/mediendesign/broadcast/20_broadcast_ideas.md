@@ -37,6 +37,12 @@ sitemap_exclude: n
 > 2. Szene ausdenken, drehen
 > 3. Export in Davinci Resolve
 > 4. ...
+> 
+> Stelle den Vergleich mit dem Freisteller des ATEM Mini her
+> 
+> - [Youtube - Getting Started with Ultimatte 12](https://www.youtube.com/watch?v=g8Fzf6rG4Kc)
+> - [Youtube - Best Green Screen Lighting](https://www.youtube.com/watch?v=BODMqqDuLmA)
+> - [Youtube - Chroma Keying with Blackmagic Ultimatte 12](https://www.youtube.com/watch?v=CStZ01zP4bQ)
 
 
 ## Diverse Übungen
@@ -63,8 +69,6 @@ sitemap_exclude: n
 > - ...
 
 ### Color-Grading mit Black Magic Design Monitor 3G
-
-### Upstreamkeys und Downstream Keys
 
 ### Erklärvideo zu einer Software erstellen
 

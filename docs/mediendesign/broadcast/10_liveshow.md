@@ -223,7 +223,7 @@ Es muss das gesamte Setup auf Basis des Protokoll, auch von Personen, die nicht 
 
 | **Kriterium** | **Bewertungsschlüssel** | **Max. Punkte** |
 |---|---|---|
-| **Engagement** | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                          | 10 Punkte |
-| **Qualität der Arbeit**     | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 10 Punkte |
+| gagement** | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                          | 10 Punkte |
+| **Qualität der Arbeit** | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 10 Punkte |
 
 **Gesamt: 50 Punkte**

@@ -8,7 +8,7 @@ subtopic: AJAX - Asynchrone Kommunikation mit dem Server
 
 layout: default
 
-sitemap_exclude: n
+sitemap_exclude: y
 ---
 
 # AJAX – Asynchrone Kommunikation mit dem Server
@@ -41,14 +41,17 @@ $conn = mysqli_connect($host, $username, $password, $dbname);
 $sql = "SELECT * FROM users";
 $result = mysqli_query($conn, $sql);
 
-// Daten in eine Array speichern
-$data = mysqli_fetch_all(MYSQLI_ASSOC);
+// Array mit Daten erstellen
+$data = array();
+while ($row = mysqli_fetch_assoc($result)) {
+  $data[] = $row;
+}
 
 // Array als JSON-String zurückgeben
 echo json_encode($data);
 ```
 
-```json
+```text
 [{"id":"6","name":"Max","email":"max@max.its","phone":"0664 786 57 23"},
 {"id":"8","name":"Eva","email":"e@hotmail.com","phone":"0650 234 56 89"},
 {"id":"9","name":"Hubert","email":"h@ubert.at","phone":"07722 123 45"},
@@ -59,7 +62,7 @@ echo json_encode($data);
 *Die Daten werden im JSON-Format an den Client geschickt.*
 
 
-### Client: (deprecated) AJAX-Anfrage und Verarbeitung mit HTTP-Request
+### Client: AJAX-Anfrage und Verarbeitung mit HTTP-Request
 
 Der Client stellt eine Anfrage (*HTTP Request*) an der Server und gibt eine *Callback*-Funktion an, die automatisch aufgerufen werden soll, wenn die Daten da sind. 
 
@@ -190,7 +193,7 @@ function loadContacts() {
     })
     .then(data => {
         
-      // DOM aktualisieren
+      // DOM aktuelisieren
       const usersList = document.getElementById('users-list');
       usersList.innerHTML = "";
 
@@ -280,81 +283,17 @@ loadContacts();
 ## Aufgabe 1: Erweiterung der Kontaktdatenverwaltung
 {: .assignment }
 
-Es soll die Aufgabe [PHP und MySQL](40_mysql.html) mittels AJAX und der fetchAPI umgesetzt werden. Verwende dazu die Datenbank, die bereits erstellt wurde und Daten enthält.
+Verwende dazu die Datenbank, die in der Aufgabe [PHP und MySQL](40_mysql.html), erstellt wurde.
 
-Die Aufgabe besteht aus 2 Teilen:
+### 1.1 Darstellung der Inhalte
 
-- In der Datei `api.php` wird eine einfache API erstellt, die Anfragen per GET bekommt und die entsprechenden Inhalte zurückgibt
-- In der Datei `index.html` werden die Anfragen zusammengebaut und an die API geschickt. Aus den Antworten wird dann mit JavaScript das entsprechende DOM generiert.
+Erstelle eine neues Verzeichnis mit den Dateien `ajax.html` und `data.php`, um die oben angegebenen Beispiele zu implementieren und zu testen.
 
-### 1.1 Darstellen der Inhalte aus einer statischen Datei
-
-- Erstelle eine neues Verzeichnis mit den Dateien `index.html`, `data-static.json` und `script.js`, um die oben angegebenen Beispiele zu implementieren und zu testen.<br>
-[Download`data-static.json`](./assets/data-static.json)
-
-
-- Lagere den JavaScript-Quelltext in die Datei `script.js` aus.
-
-```json
-[
-  {
-    "id": "6",
-    "name": "Max",
-    "email": "max@example.com",
-    "phone": "+43 664 1234567"
-  },
-  {
-    "id": "76",
-    "name": "Moritz",
-    "email": "moritz@example.com",
-    "phone": "+43 664 7654321"
-  },
-  {
-    "id": "688",
-    "name": "Helga",
-    "email": "helga@example.com",
-    "phone": "+43 664 9876543"
-  },
-  {
-    "id": "623",
-    "name": "Miriam",
-    "email": "miriam@example.com",
-    "phone": "+43 664 11223344"
-  }
-]
-```
-<sup>Beispielhafter Aufbau der data-static.json</sup>
-
-### 1.3 Erstellen einer einfachen API
-
-Erstelle die Datei `api.php`. Diese Datei ist dafür zuständig, um auf die Datenbank zuzugreifen, Abfragen zu erstellen und diese Abfragen in Form eines JSON-Strings zu liefern.
-
-> **Parameter**
->
-> * `cmd=getlist`
-> * `count=3` schränkt die Anzahl der Kontakte auf eine bestimmte Zahl ein
-> * `offset=3` Offset der Kontakte
-> * `orderby=name` gibt an, welche Spalte für die Sortierung herangezogen wird
-> * `sort=asc` aufsteigend oder absteigend sortieren
->
->
-> **Aufruf**
->
-> Beispielhafter Aufruf: Einträge von 20 bis 29, sortiert nach id, absteigend sortiert:
-> 
->`api.php?count=10&offset=20&orderby=id&sort=desc`
-
-
-
-
-
-### 1.3 Erweitern der Darstellung
+### 1.2 Sortierung und Paginierung
 
 Erweitere die Applikation, um Sortierung und Paginierung von Einträgen durchzuführen, ohne dass die Seite neu geladen werden muss.
 
 Hänge dazu die Informationen per `GET`-Parameter an den Request an, um in `data.php` darauf reagieren zu können.
-
-
 
 ## Aufgabe 2. Jobbörse
 {: .assignment }

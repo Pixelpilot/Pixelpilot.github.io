@@ -162,12 +162,12 @@ lContext.clearRect( 0, 0, context.canvas.width, context.canvas.height );
 
 Das Koordinatensystem für das `<canvas>`-Objekt kann man sich als Gitternetz vorstellen. Dieses Gitternetz liegt unsichtbar über dem Bitmap und wird durch die _Transformationsmatrix_ abgebildet.
 
-Zu Beginn entspricht die _Transformationsmatrix_ der _Einheitsmatrix und weist folgende Eigenschaften auf:
+Zu Beginn entspricht die _Transformationsmatrix_ der _Einheitsmatrix_ und weist folgende Eigenschaften auf:
 * Der Nullpunkte `(x=0, y=0)` liegt in der linken oberen Ecke des`<canvas>`-Objekts.
 * Die Breite und die Höhe des Koordinatensystems stimmen mit der Breite und der Höhe des `<canvas>`-Objekts überein.
 
 
-__Transformationen__
+#### Transformationen
 
 Die _Transformationsmatrix_ und somit das Gitternetz können durch __Skalieren__, __Translieren__ und __Rotieren__ verändert werden. Werden danach Objekte gezeichnet, so werden diese Transformationen auf die Objekte angewendet.
 
@@ -189,13 +189,13 @@ context.translate(150, -50);
 context.strokeStyle = "blue";
 context.strokeRect(100, 50, 100, 100);
 ```
-__Zusammenspiel mehrerer Transformationen__
+#### Zusammenspiel mehrerer Transformationen
 
 Das Koordinatensystem kann mehrfach transformiert werden. Soll zum Beispiel ein Objekt gedreht und verschoben werden, so müssen die Transformationen `rotate` und `translate` angewendet werden. Diese Transformationen sind dann für alle Objekte gültig, die danach gezeichnet werden. So macht auch die Reihenfolge der Transformationen einen Unterschied.
 
 Soll danach das Koordinatensystem wieder zurückgesetzt werden, so müssen die angewandten Transformationen wieder rückgängig gemacht werden. Das passiert, indem die Transformationen in umgekehrter Reihenfolge angewendet werden:
 
-__Zurücksetzen der Tranformationsmatrix__
+#### Zurücksetzen der Tranformationsmatrix
 
 Soll danach das Koordinatensystem wieder zurückgesetzt werden, so müssen die angewandten Transformationen wieder rückgängig gemacht werden. Das passiert, indem die Transformationen in umgekehrter Reihenfolge angewendet werden:
 ```javascript

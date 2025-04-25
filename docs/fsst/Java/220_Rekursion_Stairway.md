@@ -71,7 +71,8 @@ Mit jedem Schritt den du nach oben gehst kannst du entweder 1 oder 2 Stufen auf 
 > 
 > 
 > 
-> **Hinweis:** Speichere die unterschiedlichen Scheine, die der Automat ausgeben kann in einem Array.
+> **Hinweis:** Speichere die unterschiedlichen Scheine, die der Automat ausgeben kann, in einem Array.
+> 
 > `int [] stepSizeList = {5,10,20,50,100,200};`
 
 

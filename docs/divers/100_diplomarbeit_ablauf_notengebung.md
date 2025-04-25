@@ -85,7 +85,7 @@ Der Abschluss der vorbereitenden Arbeiten findet im Rahmen einer kurzen Präsent
 
 Nach der Einarbeitung findet die Durchführungsphase statt. Hier wird an den Projekten gearbeitet und die Dokumentation erstellt.
 
-> Jede Woche erstellt jedes Teammitglied einen Bericht über die geleiseten Tätigkeitn und den **Ergebnissen**. Diese Dokumentation wird in die Notengebung miteinbezogen.
+> Jede Woche erstellt jedes Teammitglied einen Bericht über die geleisteten Tätigkeiten und den **Ergebnissen**. Diese Dokumentation wird in die Notengebung miteinbezogen.
 
 ---
 ### 4. Dokumentation - Erstellung der schriftlichen Arbeit

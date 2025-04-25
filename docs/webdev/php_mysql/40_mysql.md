@@ -272,7 +272,7 @@ Klickt man auf den `Löschen` -Button neben einem Eintrag, soll der Eintrag gel�
 
 ### 5. Aktualisieren von Daten
 {: .assignment }
-Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu, um die Aktualisierung. Verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern. Implementiere das Formular zum Ändern der Daten in der Datei `edit.php`.
+Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu. Verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern. Implementiere das Formular zum Ändern der Daten in der Datei `edit.php`.
 
 ```php
 // Erweiterung der Tabelle in der index.php
