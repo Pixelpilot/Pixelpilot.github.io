@@ -10,15 +10,12 @@ sitemap_exclude: n
 
 # {{ page.title }}
 
-Hier ist eine **komplexe, aber lösbare Aufgabenstellung** für eine Doppelstunde (\~90 Minuten effektive Arbeitszeit), die alle genannten Themengebiete sinnvoll integriert. Sie fordert sowohl **Strukturverständnis (OOP)** als auch **algorithmisches Denken (Rekursion, Listen, Sortieren, Stacks)**.
-
----
 
 ## **Aufgabenstellung: "Das Held\:innen-Archiv"**
 
-Du sollst ein einfaches Verwaltungssystem für eine Fantasy-Welt programmieren, in der Held\:innen mit besonderen Fähigkeiten gespeichert und verwaltet werden können.
+Erstelle ein einfaches Verwaltungssystem für eine Fantasy-Welt, in der Held\:innen mit besonderen Fähigkeiten gespeichert und verwaltet werden können.
 
-### Teil 1: Klassenstruktur (OOP)
+## Teil 1: Klassenstruktur (OOP)
 
 Erstelle folgende Klassenhierarchie:
 
@@ -47,9 +44,8 @@ Erstelle folgende Klassenhierarchie:
   * Überschreibt `heilen()`: gibt „Heilung gewirkt!“ aus.
   * Eigene `berechneKraft()`: `level + mana + 10`
 
----
 
-### Teil 2: Datenstruktur
+## Teil 2: Datenstruktur
 
 Verwalte die Held\:innen in einer **verketteten Liste** (eigen implementierte Klassen `HeldKnoten`, `HeldListe`).
 
