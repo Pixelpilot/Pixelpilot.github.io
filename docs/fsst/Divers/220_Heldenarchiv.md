@@ -53,14 +53,9 @@ Erstelle folgende Klassenhierarchie:
 
 Verwalte die Held\:innen in einer **verketteten Liste** (eigen implementierte Klassen `HeldKnoten`, `HeldListe`).
 
-* Die Liste soll Methoden haben:
+Die Liste soll Methoden haben:
 
   * `void einfuegen(Held h)` – fügt Held ans Ende hinzu
   * `void anzeigenAlle()` – ruft `anzeigen()` für alle Held\:innen auf
   * `Held suchenStärkster()` – gibt den Held mit größter `berechneKraft()` zurück
-
----
-
-### 🧪 Zusatz (optional, wenn Zeit):
-
-Implementiere eine Methode `int anzahlHeilbarer()`, die **rekursiv** zählt, wie viele `Held`-Objekte in der Liste das Interface `Heilbar` implementieren.
+  * `int anzahlHeilbarer()`, die **rekursiv** zählt, wie viele `Held`-Objekte in der Liste das Interface `Heilbar` implementieren.
