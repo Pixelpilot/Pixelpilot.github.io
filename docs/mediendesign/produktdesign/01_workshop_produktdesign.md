@@ -113,13 +113,17 @@ sitemap_exclude: n
 >
 > #### Ian Spalter - Productdesigner
 >
-> <video width="960" height="280" controls>
+> <video controls>
 >  <source src="./assets/ian_spalter_nikefuelband.mp4" type="video/mp4">
 > </video>
 > <sup>Netflix: Abstrakt - Ian Spalter, Digitales Produktdesign</sup>
->
 
+
+![Nike Fuelband ](./assets/ian_spalter_nikefuelband.mp4)
 ## Ablauf des Workshops
+
+
+
 
 ### 1. Montag
 - Einführung
@@ -135,7 +139,9 @@ sitemap_exclude: n
     - Konzept
 - **Crashkurs Blender Allgemein**
 
-> ### Beispiele Produktdesign
+
+> **Ideen Produktdesign**
+>
 > ![Batteriespender](assets/Batteriespender.png)
 > <sup>https://at.pinterest.com/pin/60798663711345782/</sup>
 >
