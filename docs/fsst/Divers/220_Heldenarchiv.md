@@ -11,8 +11,6 @@ sitemap_exclude: n
 # {{ page.title }}
 
 
-## **Aufgabenstellung: "Das Held\:innen-Archiv"**
-
 Erstelle ein einfaches Verwaltungssystem für eine Fantasy-Welt, in der Held\:innen mit besonderen Fähigkeiten gespeichert und verwaltet werden können.
 
 ## Teil 1: Klassenstruktur (OOP)
