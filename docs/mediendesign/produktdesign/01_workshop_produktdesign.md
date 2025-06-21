@@ -113,13 +113,11 @@ sitemap_exclude: n
 >
 > #### Ian Spalter - Productdesigner
 >
-> <video controls>
+> <video width="800px" style="max-width:100%;" controls>
 >  <source src="./assets/ian_spalter_nikefuelband.mp4" type="video/mp4">
 > </video>
 > <sup>Netflix: Abstrakt - Ian Spalter, Digitales Produktdesign</sup>
 
-
-![Nike Fuelband ](./assets/ian_spalter_nikefuelband.mp4)
 ## Ablauf des Workshops
 
 
