@@ -9,11 +9,6 @@ sitemap_exclude: n
 
 # {{ page.title }}
 
-1. Einführung (Theorie) - 15 min <br>https://www.ideenwerkstatt.co.at/was-ist-produktdesign/
-
-3. Ideenfindung (7-3-5er), Utopisieren
-4.
-
 ## Was ist Produktdesign?
 <sup>https://www.ideenwerkstatt.co.at/was-ist-produktdesign/</sup>
 
@@ -129,7 +124,7 @@ sitemap_exclude: n
 ### 1. Montag
 - Einführung
 - **Ideenfindung**
-
+    - 6,3,5 er
 - **Konzeptentwicklung**:
     - Ideen
         - Sonnenbrille
