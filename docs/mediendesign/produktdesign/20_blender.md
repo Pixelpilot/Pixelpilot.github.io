@@ -1,9 +1,10 @@
 ---
-title: Blender 3D
+title: Modellieren in Blender 3D
 description: Erstellen von 3D-Modellen
 layout: default
 category: Mediendesign
-topic: 3D-Modellierung und Animation mit Blender
+topic: Produktdesign und 3D-Modellierung
+sitemap_exclude: n
 
 type: assignment
 ---
