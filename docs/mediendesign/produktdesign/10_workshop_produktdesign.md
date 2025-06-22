@@ -236,6 +236,13 @@ Einprägsame Form + technische Innovation
 
 ## Ressourcen
 
+
+### Blender Product Design Tutorial
+
+- [Product Design in Blender, Part 1: Modeling – youtube.com](https://www.youtube.com/watch?v=BXt4rOlLn8A){:target="_blank"}
+- [Product Design in Blender, Part 2: Texturing – youtube.com](https://www.youtube.com/watch?v=Q1skxTYQMTU){:target="_blank"}
+- [Product Design in Blender, Part 3: Animation and Lighting Tutorial – youtube.com](https://www.youtube.com/watch?v=esmZgsJS_Tg){:target="_blank"}
+
 ### Wireless Mouse Kit Collection
 - [Wireless Mouse Kit Collection, store.bambulab.com, 22.06.2025](https://eu.store.bambulab.com/de/products/wireless-mouse-components-kit-002){:target="_blank"}
 - [Wireless Mouse Kit Collection, Assembly Guide, .pdf](./assets/Wireless Mouse Components Kit-002 Assembly Guide.pdf){:target="_blank"}
