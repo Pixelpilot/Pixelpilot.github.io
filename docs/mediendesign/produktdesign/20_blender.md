@@ -12,15 +12,18 @@ type: assignment
 # 3D-Modellierung mit Blender
 ## Shortcuts
 
-### Viewport
+### Viewport 
 
-| Shortcut                          | Operation                     |
-|-----------------------------------|-------------------------------|
-| `MMB` + `Move`                    | Rotate Scene                  |
-| `Scroll` _or_  `Cmd`+`MMB`+`Move` | Zoom In/Out Scene             |
-| `Shift`+`MMB`+`Move`              | Pan Scene                     |
-| `Numpad`                          | ![img_10.png](img/img_10.png) |
-
+| Shortcut                                             | Operation                     |
+|------------------------------------------------------|-------------------------------|
+| `MMB` + `Move`                                       | Rotate Scene                  |
+| `Scroll` _or_  `Cmd` + `MMB` + `Move`                | Zoom In/Out Scene             |
+| `Shift` + `MMB` + `Move`                             | Pan Scene                     |
+| `Numpad` + `...` oder <br> `Numpad` + `Ctrl` + `...` | ![img_10.png](img/img_10.png) |
+| `.`                                                  | Pivot Point Menü             |
+| `Shift` + `S`                                        | 3D-Cursor Menü                |
+| `Shift` + `c`                 | Viewport Center on Object                            |
+| `Numpad` + `...` oder <br> `Numpad` + `Ctrl` + `...` | Zoom to Selected              |
 
 
 ### Objekte verändern
@@ -29,8 +32,9 @@ type: assignment
 |---------------------|------------------------------|
 | `LMB`               | Select Object                |
 | `s`                 | Scale Object                 |
+| `s` + `x`, `y`, `z` | Scale Object + Snap to Axis |
 | `r`                 | Rotate Object                |
-| `r` + `x`, `y`, `z` | Rotate Object + Snap to Axis |5
+| `r` + `x`, `y`, `z` | Rotate Object + Snap to Axis |
 | `g`                 | Move Object (Grab - Mode)    |
 | `g` + `x`, `y`, `z` | Move Object + Snap to Axis   |
 | `g` + `MMB`         | Move Object + Snap to Axis   |
@@ -42,7 +46,6 @@ type: assignment
 
 | Shortcut                      | Operation                                                                              |
 |-------------------------------|----------------------------------------------------------------------------------------|
-| `Shift` + `c`                 | Viewport Center on Object                                                              |
 | `Shift` + `a`                 | Add Object                                                                             |
 |                               | ![img_2.png](img/img_2.png) <br>Eigenschaften direkt nach dem Erstellen anpassen       |
 |                               |                                                                                        |
@@ -71,38 +74,40 @@ type: assignment
 
 ## Modes
 
-|                         | Shortcut                                                      | Operation                                                          |
-|-------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
+|                             | Shortcut                                                      | Operation                                                          |
+|-----------------------------|---------------------------------------------------------------|--------------------------------------------------------------------|
 | ![img_7.png](img/img_7.png) | `tab`                                                         | Toggle Object / Edit Mode                                          |
-|                         | `Cmd` + `2`                                                   | Add Subsurface Divider Modifier                                    |
-|                         | `Cmd` + `j`                                                   | Join                                                               |
-|                         | `Cmd` + `d`                                                   | Duplicate (Create Instance)                                        |
-|                         | `Shift` + `d`                                                 | Duplicate (Create Copy)                                            |
-|                         | `Shift` + `l`                                                 | Select Linked                                                      |
-|                         | `m`                                                   | Move &rarr; New Selection                                          |
-|                         |                                                               |                                                                    |
+|                             | `Cmd` + `2`                                                   | Add Subsurface Divider Modifier                                    |
+|                             | `Cmd` + `j`                                                   | Join                                                               |
+|                             | `Cmd` + `d`                                                   | Duplicate (Create Instance)                                        |
+|                             | `Shift` + `d`                                                 | Duplicate (Create Copy)                                            |
+|                             | `Shift` + `l`                                                 | Select Linked                                                      |
+|| `Cmd` + `j`                                                   | Join                                                               |
+|                             | `m`                                                           | Move &rarr; New Selection                                          |
+|                             |                                                               |                                                                    |
 | ![img_8.png](img/img_8.png) | `tab`                                                         | Toggle Object / Edit Mode                                          |
-|                         | `1`                                                           | Select Mode Vertex                                                 |
-|                         | `2`                                                           | Select Mode Edge                                                   |
-|                         | `3`                                                           | Select Mode Face                                                   |
-|                         | ![img_11.png](img/img_11.png) ![img_12.png](img/img_12.png)   | Enable Proportional Editing (Benachbarte Elemente mit einbeziehen) |
-|                         | `Option` + `LMB`                                              | Edge Select                                                        |
-|                         | `Cmd` + `Numpad+`                                             | Edge Select More                                                   |
-|                         | `Cmd` + `Numpad-`                                             | Edge Select Less                                                   |
-|                         |                                                               |                                                                    |
-|                         | `e`                                                           | Extrude                                                            |
-|                         | `i`                                                           | Inset                                                              |
-|                         | `h`                                                           | Hide                                                               |
-|                         | `Option` + `h`                                                | Unhide                                                             |
-|                         | `Cmd` + `b`                                                   | Bevel                                                              |
-|                         | `Cmd` + `r`                                                   | Loop cut                                                           |
-|                         | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
-|                         | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
-|                         |                                                               |                                                                    |
+|                             | `1`                                                           | Select Mode Vertex                                                 |
+|                             | `2`                                                           | Select Mode Edge                                                   |
+|                             | `3`                                                           | Select Mode Face                                                   |
+|                             | ![img_11.png](img/img_11.png) ![img_12.png](img/img_12.png)   | Enable Proportional Editing (Benachbarte Elemente mit einbeziehen) |
+|                             | `Option` + `LMB`                                              | Edge Select                                                        |
+|                             | `Cmd` + `Numpad+`                                             | Edge Select More                                                   |
+|                             | `Cmd` + `Numpad-`                                             | Edge Select Less                                                   |
+|                             |                                                               |                                                                    |
+|                             | `e`                                                           | Extrude                                                            |                         
+|| `p`                                                           | Seperate                                                           |
+|                             | `i`                                                           | Inset                                                              |
+|                             | `h`                                                           | Hide                                                               |
+|                             | `Option` + `h`                                                | Unhide                                                             |
+|                             | `Cmd` + `b`                                                   | Bevel                                                              |
+|                             | `Cmd` + `r`                                                   | Loop cut                                                           |
+|                             | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
+|                             | `Cmd` + `r` + `Scroll`                                        | Loop cut - Anzahl der Unterteilungen                               |
+|                             |                                                               |                                                                    |
 | ![img_9.png](img/img_9.png) |                                                               | Sculpt Mode                                                        |
-|                         | `m`                                                           | Mask Tool                                                          |
-|                         | `Cmd` + `i`                                                   | Invert Mask                                                        |
-|                         | ![img_15.png](img/img_15.png) + ![img_14.png](img/img_14.png) | Mesh Filter                                                        |
+|                             | `m`                                                           | Mask Tool                                                          |
+|                             | `Cmd` + `i`                                                   | Invert Mask                                                        |
+|                             | ![img_15.png](img/img_15.png) + ![img_14.png](img/img_14.png) | Mesh Filter                                                        |
 
 ## Ressoures
 
