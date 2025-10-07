@@ -17,18 +17,24 @@ sitemap_exclude: n
 ## Aufgabe 1: Ernährungstabelle
 {: .assignment }
 
-Erstelle eine Datenbank-Tabelle für Nahrungsmittelinformationen. Erzeuge dazu die folgende Tabelle.
 
 | Bezeichnung | Menge | Art | kcal |
 |---|---|---|---|
-|Leberkässemmel| Stück |Essen |500|
-|Spaghetti Bolognese |Teller| Essen| 595|
-|Weißbier |Halbe |Trinken |225|
-|Avocado |Stück| Essen| 543|
-|Laugenbrezel |Stück |Essen |192|
-|Cola |kleine Flasche| Trinken |220|
+| Leberkässemmel        | Stück |Essen |500|
+| Spaghetti Bolognese   |Teller| Essen| 595|
+| Weißbier              |Halbe |Trinken |225|
+| Avocado               |Stück| Essen| 543|
+| Laugenbrezel          |Stück |Essen |192|
+| Cola                  |kleine Flasche| Trinken |220|
 
-Lege ein zusätzliches Feld `Id`an und verwende es als Primärschlüssel (verwende `AUTO_INCREMENT`).
+
+
+
+> #### Tabelle erstellen und mit Werten befüllen
+> Erzeuge die Tabelle und die angegebenen Einträge mittels SQL-Befehl:
+> 
+> 1. Erstelle einen SQL-Befehl zum Erstellen der Tabelle (`CREATE TABLE`...). <br>Lege ein zusätzliches Feld `Id`an und verwende es als Primärschlüssel (`AUTO_INCREMENT`).
+> 2. Erstelle einen SQL-Befehl zum Einfügen der oben angegebenen Inhalte (`INSERT INTO ...`)
 
 > #### Übungsabfragen Einstieg
 > Erstelle folgende Abfragen:
@@ -50,7 +56,7 @@ Lege ein zusätzliches Feld `Id`an und verwende es als Primärschlüssel (verwen
 
 ### Erstellen der Struktur und Anlegen der Inhalte
 
-Erstelle eine Tabelle `todo` für eine Aufgabenliste und füge mittels `INSERT` mindestens 10 Datensätze ein.
+Gegeben ist eine Tabelle `todo` für eine Aufgabenliste:
 
 | Id | Beschr           | Prio | Erl |
 |----|------------------|----|----|
@@ -62,6 +68,55 @@ Erstelle eine Tabelle `todo` für eine Aufgabenliste und füge mittels `INSERT
 
 **`Erl` – Erledigt**<br>
 0 ... nein, 1 ... ja
+
+```sql
+-- Tabelle erzeugen
+CREATE TABLE kns_02_todo (
+    id NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY (id),
+    beschr VARCHAR(255) NOT NULL,
+    prio INT NOT NULL CHECK (prio BETWEEN 1 AND 5),
+    erl INT NOT NULL CHECK (erl IN (0,1))
+);
+```
+
+```sql
+-- Beispieldatensätze
+INSERT INTO kns_02_todo 
+    (beschr, prio, erl) 
+    VALUES
+    ('Mathe Hausübung', 4, 0),
+    ('FSST lernen', 5, 0),
+    ('Einkaufen gehen', 3, 0),
+    ('Zimmer aufräumen', 2, 0),
+    ('Englisch Vokabeln lernen', 4, 0),
+    ('Deutsch Hausübung', 5, 1),
+    ('Freund anrufen', 2, 1),
+    ('Müll rausbringen', 3, 1),
+    ('Sport machen', 3, 0),
+    ('Hausaufgaben Physik', 4, 0),
+    ('Biologie Referat vorbereiten', 5, 0),
+    ('Geschichte lesen', 2, 0),
+    ('IT Projekt bearbeiten', 5, 0),
+    ('Buch aus Bibliothek zurückbringen', 2, 1),
+    ('Staubsaugen', 1, 1),
+    ('Mathe Wiederholung', 4, 0),
+    ('FSST Übungsbeispiele', 5, 0),
+    ('Chemie Hausübung', 4, 0),
+    ('Gitarrenübung', 2, 0),
+    ('Freizeit planen', 1, 0),
+    ('Fenster putzen', 1, 0),
+    ('Gartenarbeit erledigen', 2, 0),
+    ('Wäsche waschen', 3, 1),
+    ('Auto waschen', 2, 0),
+    ('Projektarbeit schreiben', 5, 0),
+    ('Präsentation vorbereiten', 4, 0),
+    ('Schularbeit üben', 5, 0),
+    ('Email beantworten', 2, 1),
+    ('Arzttermin vereinbaren', 3, 0),
+    ('Geburtstagsgeschenk kaufen', 4, 0);
+
+```
 
 ### Übungsabfragen
 
@@ -82,12 +137,17 @@ Erstelle eine Tabelle `todo` für eine Aufgabenliste und füge mittels `INSERT
 > 2. Gib alle Aufgaben aus bis auf jene mit Priorität 1 oder 5
 > 3. Prioritäten in der Form `-2`, `-1`, `0`, `1`, `2` (statt 1 ... 5) ausgeben
 > 4. Prioritäten als Text ausgeben
+>   - `1` ... niedrigst
+>   - `2` ... niedrig
+>   - `3` ... mittel
+>   - `4` ... hoch
+>   - `5` ... höchst
 
 
 > #### Übung 3: Nested Select
 > {: .assignment }
 > Erstelle folgende Abfragen:
-> 1. Alle Aufgaben die die gleiche Priorität haben wie die Aufgabe mit der `id` 31.
+> 1. Alle Aufgaben die die gleiche Priorität haben wie die Aufgabe `Staubsaugen`.
 > 2. Bilde die Tabelle mit den Prioritäten in der Form `-2,-1,0,1,2` und gib nur die positiven aus.
 
 > #### Übung 4: Aggregate functions
@@ -103,7 +163,7 @@ Erstelle eine Tabelle `todo` für eine Aufgabenliste und füge mittels `INSERT
 
 > #### Übung 6: Fälligkeitsdatum
 > {: .assignment }
->Füge mit Hilfe von `ALTER TABLE` eine zusätzliche Spalte für ein Fälligkeitsdatum hinzu ohne die bestehende Tabelle zu löschen. Führe folgende Abfragen durch:
+>Füge mit Hilfe von `ALTER TABLE` eine zusätzliche Spalte für ein Fälligkeitsdatum hinzu, ohne die bestehende Tabelle zu löschen. Befülle die Spalte mit Werten, die zum Teil in der Zukunft liegen und zum Teil in der Vergangenheit. Führe folgende Abfragen durch:
 > 
 > 1. Alle Aufgaben in der Zukunft anzeigen (`CURDATE`)
 > 2. Alle Aufgaben eines Monats anzeigen
