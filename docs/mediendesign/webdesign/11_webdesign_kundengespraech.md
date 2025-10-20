@@ -32,21 +32,71 @@ layout: default
 >
 >Führe das Gespräch anhand der vorbereiteten Fragen durch und halte die Ergebnisse in einem [Besprechungsprotokoll](#beispielhafte-struktur-eines-besprechungsprotokolls) schriftlich fest.
 
-#### E-Mail-Anfrage durch den Kunden
+---
 
-**Betreff: Neugestaltung unseres Webauftritts**
+#### E-Mailanfrage Variante – Fitness & Gesundheit
 
-*Sehr geehrte Damen und Herren,*<br>
-*mein Name ist Max Mustermann, und ich bin der Projektmanager bei ElectroMove, einem führenden Unternehmen im Bereich E-Mobilität. Wir sind auf der Suche nach einer Agentur, die uns hilft, unseren Webauftritt zu überarbeiten, um besser mit unseren diversen Zielgruppen zu kommunizieren und zu interagieren.<br><br>Unsere Website sollte so gestaltet sein, dass sie die Bedürfnisse und Interessen verschiedener Zielgruppen erfüllt - von Endkunden, die nach praktikablen und nachhaltigen Mobilitätslösungen suchen, bis hin zu Geschäftskunden und Partnern, die sich für Investitionen und Partnerschaften im Bereich der E-Mobilität interessieren. Die Webseite sollte eine Plattform sein, die alle erforderlichen Informationen bereitstellt und es den Benutzern ermöglicht, leicht mit uns in Kontakt zu treten, unabhängig davon, ob es sich um potenzielle Kunden, Partner oder Investoren handelt.<br><br>Könnten wir ein Meeting arrangieren, um detailliert zu besprechen, wie wir die Webseite strategisch und kreativ gestalten könnten, um die verschiedenen Zielgruppen effektiv anzusprechen und zu bedienen?<br><br>Vielen Dank für Ihre Zeit, und wir freuen uns darauf, bald von Ihnen zu hören und unsere Ideen und Visionen mit Ihnen zu teilen.*
+**Betreff:** Neuer Internetauftritt für Fitnessstudio
 
-*Mit freundlichen Grüßen,*
+Hallo,
+mein Name ist **Michael Brandstätter** vom **FitZone Gym**. Wir möchten unsere Website erneuern – sie soll moderner wirken und unsere Mitglieder besser ansprechen.
+Könnten Sie uns dazu beraten?
 
-*Max Mustermann  
-Projektmanager  
-ElectroMove   
-[max.mustermann@electromove.com ](mailto:max.mustermann@electromove.com) <br>
-+43 123 4567890*
+Mit freundlichen Grüßen
+Michael Brandstätter
+FitZone Gym
+[m.brandstaetter@fitzone.at](mailto:m.brandstaetter@fitzone.at)
++43 699 1234567
 
+---
+
+#### E-Mailanfrage Variante – Gastronomie
+
+**Betreff:** Anfrage zur Erstellung einer neuen Website
+
+Sehr geehrte Damen und Herren,
+ich bin **Laura Ebner**, Inhaberin des **Café Sonnendeck**. Unsere aktuelle Seite ist etwas in die Jahre gekommen, und wir überlegen, sie komplett neu zu gestalten.
+Ich freue mich über einen Terminvorschlag zur Besprechung.
+
+Viele Grüße
+Laura Ebner
+Café Sonnendeck
+[laura.ebner@sonnendeck.at](mailto:laura.ebner@sonnendeck.at)
++43 512 556677
+
+---
+
+#### E-Mailanfrage Variante – Kreativwirtschaft / Mode
+
+**Betreff:** Unterstützung für Mode-Label-Website gesucht
+
+Guten Tag,
+mein Name ist **Nina Kovacs** von **Urban Threads**, einem kleinen Modelabel aus Wien. Wir möchten unseren Online-Auftritt überarbeiten, wissen aber noch nicht genau, in welche Richtung es gehen soll.
+Könnten Sie uns bei der Planung unterstützen?
+
+Beste Grüße
+Nina Kovacs
+Urban Threads
+[nina@urbanthreads.at](mailto:nina@urbanthreads.at)
++43 1 2223344
+
+---
+
+#### E-Mailanfrage Variante – Hotellerie/Tourismus
+
+**Betreff:** Website-Überarbeitung für Boutiquehotel
+
+Sehr geehrte Damen und Herren,
+mein Name ist **Anna Leitner** vom **Hotel Alpenhof**. Wir möchten unseren Webauftritt modernisieren und besser für unsere Gäste nutzbar machen.
+Könnten wir einen Termin vereinbaren, um Vorgehen und Möglichkeiten zu besprechen?
+
+Mit freundlichen Grüßen
+Anna Leitner
+Hotel Alpenhof
+[anna.leitner@alpenhof.at](anna.leitner@alpenhof.at)
++43 512 123456
+
+----
 
 #### Beispielhafte Struktur eines Besprechungsprotokolls
 - Allgemeine Informationen
@@ -63,6 +113,8 @@ ElectroMove
     - Zeitplan
 - Weitere Vorgehensweise: Konkrete Schritte
     - **Wer** macht **was** bis **wann**?
+
+
 
 
 ### 2. Inhaltliches Konzept - Sitemap

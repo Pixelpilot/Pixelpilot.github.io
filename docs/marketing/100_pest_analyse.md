@@ -1,12 +1,11 @@
 ---
 title: Aufgabe 1 - PEST Analyse
-description: Operatives Marketing
+description: Marketinganalyse und -Strategie
 
 category: Marketing
-topic: Operatives Marketing
+topic: Marketinganalyse und -Strategie
 
 type: assignment
-previewimage: img/ui_design_xd.png
 layout: default
 
 sitemap_exclude: n
