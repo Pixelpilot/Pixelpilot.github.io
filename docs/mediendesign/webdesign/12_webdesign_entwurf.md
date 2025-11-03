@@ -39,6 +39,10 @@ Für Adobe XD gibt es eine Reihe [sehr guter Tutorials](https://helpx.adobe.com/
 * [Mit Wiederholungsrastern wiederkehrende Elemente erstellen - helpx.adobe.com](https://helpx.adobe.com/at/xd/how-to/repeating-elements.html){:target="_blank"}
 * [Mit Komponenten arbeiten - helpx.adobe.com](https://helpx.adobe.com/at/xd/how-to/consistent-design-components.html){:target="_blank"}
 
+## Assets
+
+Hier die notwendigen Dateien für den XD-Crashkurs: 
+[Download Assets](./assets/Webdesign_Assets.zip){:target="_blank"}
 
 ## Abgabe
 Erweitere das Webdesign-Portfolio mit folgenden Inhalten:
