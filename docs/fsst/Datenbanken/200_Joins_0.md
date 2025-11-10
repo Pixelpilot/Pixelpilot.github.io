@@ -85,6 +85,14 @@ INSERT INTO Sprachkenntnisse (PersonID, FremdspracheID, Niveau) VALUES
 ---
 ### Übungsabfragen - Einstieg
 
+> #### Aufgabe Befüllen mit Daten mit Hilfe von KI
+> Erstelle die oben angegebenen Tabellen, verwende für jede Tabelle das Prefix `KSN_JoinSimple_` (z.B.: `KSN_JoinSimple_Sprachkenntnisse`).
+> 
+> Erweitere Insert-Statements um 10 zusätzliche Personen und entsprechenden Sprachkenntnissen. 
+> Lass dir die Insert mit Hilfe einer KI generieren und dokumentiere den entsprechenden Prompt.
+
+
+
 > #### Aufgabe 1
 > Finde alle Personen, die Englisch sprechen.
 > ```
