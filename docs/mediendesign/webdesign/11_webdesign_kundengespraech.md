@@ -117,14 +117,52 @@ Hotel Alpenhof<br>
 
 
 
+### 2. User Stories
+User Stories helfen dabei, eine Website aus der Sicht der Nutzer:innen zu planen und sicherzustellen, dass Funktionen einen echten Mehrwert bieten. Sie machen Anforderungen verständlich, klar und überprüfbar und bilden damit eine wichtige Grundlage für gutes Design und sinnvolle Umsetzung.
 
-### 2. Inhaltliches Konzept - Sitemap
+> #### Aufgabe: User Stories
+> Überlege, welche Zielgruppen die Website besuchen (z.B. Gäste, Tourist:innen, ...) und welche Bedürfnisse diese haben.
+>
+> Formuliere für die wichtigsten Zielgruppen passende User Stories nach dem bekannten Schema
+>„Als … möchte ich … damit …“.
+>
+>Jede User Story soll klar machen, wer etwas nutzt, was diese Person tun möchte und warum das wichtig ist. Die User Stories dienen anschließend als Grundlage für Struktur, Design und Funktionsumfang eures Prototyps.
+> 
+> **Beispielhafte User Story für ein Cafe:**<br>
+> *Als **berufstätige Person**, die spontan ein Café besuchen möchte, möchte ich auf der Website schnell **Öffnungszeiten, Standort und Reservierungsmöglichkeit finden**, damit ich ohne lange Suche entscheiden kann, ob das Café **für mich gerade geeignet** ist.*
+
+
+### 3. Funktionelles Konzept - Featurelist
+
+> #### Aufgabe: Featurelist
+> Fasse die wichtigsten Features in einer Featurelist zusammen. Konzentriere dich dabei auf folgende Kategorien:
+> - **Inhalte** (Texte, Bilder, Videos, ...)
+> - **Interaktive Elemente** (Kontaktformulare, Bildergalerie, ...)
+
+#### Allgemeine Informationen zur Featurelist
+Die **Featurelist** bezieht sich auf eine detaillierte Liste von Funktionen und Eigenschaften, die eine Website oder Webanwendung haben soll. 
+
+Beispielhafte Kateogorien können sein:
+
+1. Design-Features
+2. Navigation und Benutzererfahrung (UX), Mobiles Design
+3. Interaktive Elemente
+4. SEO (Suchmaschinenoptimierung)
+5. Technische Aspekte
+6. Integration Dritter (Social Media, ...)
+7. Analytik und Reporting
+
+
+Jede dieser Kategorien kann spezifischere Features und Details enthalten, je nach den individuellen Bedürfnissen und Zielen des Projekts. Eine gut ausgearbeitete **Featurelist** hilft nicht nur bei der Planung, sondern auch bei der Kommunikation zwischen dem Webdesigner oder der Agentur und dem Kunden, um sicherzustellen, dass alle Parteien die Anforderungen und Erwartungen klar verstehen.
+
+
+### 4. Inhaltliches Konzept - Sitemap
 > #### Aufgabe: Sitemap
 > Erstelle eine Sitemap des Webauftritts und stelle ihn in grafisch ansprechender Form dar.
 
 #### Allgemeine Informationen zur Sitemap
 
-Eine Sitemap ist eine strukturierte Darstellung aller Seiten und Unterseiten einer Website, die die Hierarchie und die Verbindungen zwischen den Seiten visualisiert. 
+Eine Sitemap ist eine strukturierte Darstellung aller Seiten und Unterseiten einer Website, die die Hierarchie und die Verbindungen zwischen den Seiten visualisiert.
 
 Sie dient als Navigationshilfe für Benutzer und Suchmaschinen, um den Aufbau der Website besser zu verstehen und effizient durch sie zu navigieren und ist auch ein wichtiger Anhaltspunkt für die Angebotserstellung.
 
@@ -142,35 +180,9 @@ Eine Sitemap kann in Form einer Grafik, Tabelle aber auch als einfache hierarchi
 ![img.png](img/sitemap-example.png)
 <sup>Beispielhafte Sitemap, [milanote.com](https://milanote.com/templates/marketing/site-map)</sup>
 
-### 3. Funktionelles Konzept - Featurelist
-
-> #### Aufgabe: Featurelist
-> Fasse die wichtigsten Features in einer Featurelist zusammen. Konzentriere dich dabei auf folgende Kategorien:
-> - **Inhalte** (Texte, Bilder, Videos, ...)
-> - **Interaktive Elemente** (Kontaktformulare, Bildergalerie, ...)
-
-#### Allgemeine Informationen zur Featurelist
-Die **Featurelist** bezieht sich auf eine detaillierte Liste von Funktionen und Eigenschaften, die eine Website oder Webanwendung haben soll. 
-
-Beispielhafte Kateogorien können sein:
-
-1. Design-Features
-2. Navigation und Benutzererfahrung (UX)
-3. Inhalte
-4. Interaktive Elemente
-5. SEO (Suchmaschinenoptimierung)
-6. Technische Aspekte
-7. Integration Dritter
-8. Zugänglichkeit
-9. Analytik und Reporting
-10. Wartung und Support
-
-Jede dieser Kategorien kann spezifischere Features und Details enthalten, je nach den individuellen Bedürfnissen und Zielen des Projekts. Eine gut ausgearbeitete **Featurelist** hilft nicht nur bei der Planung, sondern auch bei der Kommunikation zwischen dem Webdesigner oder der Agentur und dem Kunden, um sicherzustellen, dass alle Parteien die Anforderungen und Erwartungen klar verstehen.
 
 
-
-
-### 4. Erstes grafisches Konzept - Scribbles
+### 5. Erstes grafisches Konzept - Scribbles
 
 
 > #### Aufgabe: Scribbles

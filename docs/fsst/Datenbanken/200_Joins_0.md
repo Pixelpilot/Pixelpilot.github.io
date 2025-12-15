@@ -25,6 +25,10 @@ Die Datenbank enthält 3 Tabellen:
 
 ### Erstellen der Datenbank und befüllen der Tabellen
 
+> Ein erweitertes DB-Seed mit zusätzlichen Datensätzen kann hier heruntergeladen werden:
+> [KSN_JoinSimple_DB-Seed](./assets/KSN_JoinSimple_DB-Seed.sql)
+> Achtung - die Tabellen heißen hier `KSN_JoinSimple_Personen`, `KSN_JoinSimple_Fremdsprachen`,`KSN_JoinSimple_Sprachkenntnisse`
+
 ```sql
 -- Tabelle Personen
 CREATE TABLE Personen (
