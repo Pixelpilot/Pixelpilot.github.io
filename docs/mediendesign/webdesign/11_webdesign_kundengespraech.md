@@ -132,6 +132,70 @@ User Stories helfen dabei, eine Website aus der Sicht der Nutzer:innen zu planen
 > *Als **berufstätige Person**, die spontan ein Café besuchen möchte, möchte ich auf der Website schnell **Öffnungszeiten, Standort und Reservierungsmöglichkeit finden**, damit ich ohne lange Suche entscheiden kann, ob das Café **für mich gerade geeignet** ist.*
 
 
+> #### Ausführliche Vorlage einer User Story
+> 
+> #### User Story Nr.: ________________________
+> 
+> **Als**
+> *(Wer ist der Nutzer? z. B. Gast, Tourist:in, Café-Betreiber:in, Student:in …)*<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> 
+> **möchte ich**
+> *(Was möchte die Person tun? möglichst konkret)*<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> 
+> **damit**<br>
+> *(Warum ist das wichtig? Welcher Nutzen entsteht?)*<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> 
+> ---
+> 
+> #### Kontext / Situation (optional, aber empfohlen)<
+> 
+> In welcher Situation befindet sich der Nutzer?<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> 
+> ---
+> 
+> #### Akzeptanzkriterien (Was muss erfüllt sein?)
+> 
+> 1. __________________________________________________<br>
+> 2. __________________________________________________<br>
+> 3. __________________________________________________<br>
+> 4. __________________________________________________<br>
+> 
+> ---
+> 
+> #### Priorität
+> 
+> ☐ Hoch ☐ Mittel ☐ Niedrig
+> 
+> ---
+> 
+> #### Zugehörige Seite / Funktion
+> 
+> *(z. B. Startseite, Speisekarte, Kontakt …)*<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> 
+> ---
+> #### Notizen / Ideen
+> 
+> *(Skizzen, Hinweise fürs Design, technische Ideen …)*<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+> → __________________________________________________<br>
+
+
 ### 3. Funktionelles Konzept - Featurelist
 
 > #### Aufgabe: Featurelist
