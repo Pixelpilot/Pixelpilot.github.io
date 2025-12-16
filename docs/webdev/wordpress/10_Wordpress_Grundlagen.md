@@ -415,17 +415,16 @@ Damit die Website von aussen erreicht werden kann soll sie auf einen externen An
 > - Anpassen der relevanten Einträge in der Datenbank
 
 
-> ## Abgabe
 > 
+> ## Abgabe - Projekt: Dokumentation der Diplomarbeit mit WordPress
+>
 > Die Abgabe erfolgt über eine URL der fertigen Website:
-> 
+>
 > * URL zur Website
 > * URL zum Administrations-Interface von Wordpress
 > * Benutzername und Passwort eines Administratorzugangs
-
-> ## Checkliste für die Abgabe
-> 
-> **Projekt: Dokumentation der Diplomarbeit mit WordPress**
+>
+> ---
 > 
 > ### Grundsetup & Struktur
 > 
@@ -506,18 +505,18 @@ Damit die Website von aussen erreicht werden kann soll sie auf einen externen An
 
 > ## Bewertungsraster für die Abgabe
 >
-| Bereich           | Detail            | Kriterien                                                                                 | Punkte        |
-|-------------------|-------------------|-------------------------------------------------------------------------------------------|---------------|
-| **Design**        | Child-Theme       | Child-Theme korrekt erstellt & aktiv, Designanpassungen vorgenommen                       | **3 Punkte**  |
-| **Design**        | Qualität          | Stimmiges Layout, Farben, Typografie                                                      | **3 Punkte**  |
-| **Design**        | Responsive Design | Funktioniert auf Desktop & Mobil, Bilder und Inhalte werden korrekt dargestellt           | **2 Punkte**  |
-| **Inhalte**       | Navigation        | Navigation & Seitenstruktur logisch und sinnvoll                                          | **2 Punkte**  |
-| **Inhalte**       | Umfang            | Seiten, Posts, Kommentare und Medien vollständig                                          | **3 Punkte**  |
-| **Inhalte**       | Qualität          | Klare, nachvollziehbare Beschreibung der Diplomarbeit                                     | **3 Punkte**  |
-| **Erweiterungen** | Plugins           | Plugins (z. B. Formular, Quelltext) sinnvoll eingesetzt                                   | **6 Punkte**  |
-| **SEO/Usability** | Suchmaschinenopt. | Meta-Texte, saubere URLs, sinnvolle Struktur                                              | **2 Punkte**  |
-| **Gesamt**        |                   |                                                                                           | **24 Punkte** |
-
+> | Bereich           | Detail            | Kriterien                                                                                 | Punkte        |
+> |-------------------|-------------------|-------------------------------------------------------------------------------------------|---------------|
+> | **Design**        | Child-Theme       | Child-Theme korrekt erstellt & aktiv, Designanpassungen vorgenommen                       | **3 Punkte**  |
+> | **Design**        | Qualität          | Stimmiges Layout, Farben, Typografie                                                      | **3 Punkte**  |
+> | **Design**        | Responsive Design | Funktioniert auf Desktop & Mobil, Bilder und Inhalte werden korrekt dargestellt           | **2 Punkte**  |
+> | **Inhalte**       | Navigation        | Navigation & Seitenstruktur logisch und sinnvoll                                          | **2 Punkte**  |
+> | **Inhalte**       | Umfang            | Seiten, Posts, Kommentare und Medien vollständig                                          | **3 Punkte**  |
+> | **Inhalte**       | Qualität          | Klare, nachvollziehbare Beschreibung der Diplomarbeit                                     | **3 Punkte**  |
+> | **Erweiterungen** | Plugins           | Plugins (z. B. Formular, Quelltext) sinnvoll eingesetzt                                   | **6 Punkte**  |
+> | **SEO/Usability** | Suchmaschinenopt. | Meta-Texte, saubere URLs, sinnvolle Struktur                                              | **2 Punkte**  |
+> | **Gesamt**        |                   |                                                                                           | **24 Punkte** |
+> 
 
 
 
