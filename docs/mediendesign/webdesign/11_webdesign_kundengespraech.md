@@ -138,9 +138,7 @@ User Stories helfen dabei, eine Website aus der Sicht der Nutzer:innen zu planen
 > 
 > **Als**
 > *(Wer ist der Nutzer? z. B. Gast, Tourist:in, Café-Betreiber:in, Student:in …)*<br>
-> → __________________________________________________<br>
-> → __________________________________________________<br>
-> → __________________________________________________<br>
+> → __________________________________________________
 > 
 > **möchte ich**
 > *(Was möchte die Person tun? möglichst konkret)*<br>
