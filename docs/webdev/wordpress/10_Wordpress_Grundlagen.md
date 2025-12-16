@@ -429,96 +429,95 @@ Damit die Website von aussen erreicht werden kann soll sie auf einen externen An
 > 
 > ### Grundsetup & Struktur
 > 
-> ☐ WordPress ist korrekt eingerichtet (Titel, Untertitel, Sprache)
-> ☐ Sinnvolle Seitenstruktur vorhanden (z. B. Start, Projekt, Team, Dokumentation, Kontakt)
-> ☐ Navigationsmenü logisch aufgebaut
-> ☐ Startseite ist bewusst gestaltet (kein „leerer Blog“)
+> -[ ] WordPress ist korrekt eingerichtet (Titel, Untertitel, Sprache)
+> -[ ] Sinnvolle Seitenstruktur vorhanden
+> -[ ] Navigationsmenü logisch aufgebaut
+> -[ ] Startseite ist bewusst gestaltet
 > 
 > ---
 > 
 > ### Theme & Child-Theme
 > 
-> ☐ Geeignetes Parent-Theme ausgewählt (z. B. GeneratePress, Astra, Twenty Twenty-Four)
-> ☐ **Child-Theme erstellt und aktiviert**
-> ☐ Mindestens eine Anpassung im Child-Theme (CSS oder functions.php)
-> ☐ Theme passt zum Inhalt (kein „Zufallsdesign“)
+> -[ ] Geeignetes Parent-Theme ausgewählt (z. B. GeneratePress, Astra, Twenty Twenty-Four)
+> -[ ] **Child-Theme erstellt und aktiviert**
+> -[ ] Mindestens eine Anpassung im Child-Theme (CSS oder functions.php)
+> -[ ] Theme passt zum Inhalt (kein „Zufallsdesign“)
 > 
 > 
 > ---
 > 
 > ### Benutzerverwaltung & Rollen
 > 
-> ☐ Mindestens zwei Benutzerkonten vorhanden
-> ☐ Ein zusätzlicher Benutzer mit Rolle „Redakteur“ angelegt
-> ☐ Redakteur kann Beiträge erstellen/bearbeiten, aber keine Plugins/Themes ändern
-> ☐ Redakteur hat mindestens einen Beitrag erstellt
+> -[ ] Mindestens zwei Benutzerkonten vorhanden
+> -[ ] Ein zusätzlicher Benutzer mit Rolle „Redakteur“ angelegt
+> -[ ] Redakteur kann Beiträge erstellen/bearbeiten, aber keine Plugins/Themes ändern
+> -[ ] Redakteur hat mindestens einen Beitrag erstellt
 > 
 > ---
 > 
 > ### Inhalte
 > 
-> ☐ **Mindestens 5 Seiten (+Impressum, +Datenschutz)**
-> ☐ **Mindestens 5 Beiträge (Posts)** zur Dokumentation der Diplomarbeit
-> ☐ Beiträge sind sinnvoll kategorisiert oder verschlagwortet
-> ☐ **Mindestens 3 Kommentare** (z. B. Feedback, Diskussion)
-> ☐ **Medien sinnvoll eingebunden** (Bilder, Grafiken, ggf. Videos, PDFs)
-> ☐ Texte sind verständlich, strukturiert und nicht nur Stichwörter
+> -[ ] **Mindestens 5 Seiten (+Impressum, +Datenschutz)**
+> -[ ] **Mindestens 5 Beiträge (Posts)** zur Dokumentation der Diplomarbeit
+> -[ ] Beiträge sind sinnvoll kategorisiert oder verschlagwortet
+> -[ ] **Mindestens 3 Kommentare** (z. B. Feedback, Diskussion)
+> -[ ] **Medien sinnvoll eingebunden** (Bilder, Grafiken, ggf. Videos, PDFs)
+> -[ ] Texte sind verständlich, strukturiert und nicht nur Stichwörter
 > 
 > ---
 > 
 > ### Darstellung & Responsive Design
 > 
-> ☐ Website ist **auf Desktop gut lesbar**
-> ☐ Website ist **auf Smartphone gut nutzbar**
-> ☐ Keine abgeschnittenen Texte oder Bilder
-> ☐ Schriftgrößen und Abstände sinnvoll gewählt
-> 
-> (Tipp: Browser-DevTools oder echtes Smartphone verwenden)
-> 
+> -[ ] Website ist **auf Desktop gut lesbar**
+> -[ ] Website ist **auf Smartphone gut nutzbar**
+> -[ ] Keine abgeschnittenen Texte oder Bilder
+> -[ ] Schriftgrößen und Abstände sinnvoll gewählt
+>
 > ---
 > 
 > ### Plugins (praktischer Einsatz)
 > 
-> ☐ **SEO-Plugin** (z. B. Yoast, RankMath) eingerichtet
-> ☐ **Sicherheits-Plugin** (z. B. Wordfence, iThemes Security)
-> ☐ **Cache/Performance-Plugin** (z. B. WP Super Cache, W3 Total Cache)
-> ☐ **Medienverwaltung** (z. B. Happy Files)
-> ☐ **Formular-Plugin** (z. B. Contact Form 7, WPForms)
-> ☐ **Quelltext** zur Darstellung von JS oder PHP oder ähnliches
-> ☐ Plugins sind **konfiguriert** und mit Inhalten befüllt, nicht nur installiert
+> -[ ] **SEO-Plugin** (z. B. Yoast, RankMath) eingerichtet
+> -[ ] **Sicherheits-Plugin** (z. B. Wordfence, iThemes Security)
+> -[ ] **Cache/Performance-Plugin** (z. B. WP Super Cache, W3 Total Cache)
+> -[ ] **Medienverwaltung** (z. B. Happy Files)
+> -[ ] **Formular-Plugin** (z. B. Contact Form 7, WPForms)
+> -[ ] **Quelltext** zur Darstellung von JS oder PHP oder ähnliches
+> -[ ] Plugins sind **konfiguriert** und mit Inhalten befüllt, nicht nur installiert
 > 
 > ---
 > 
 > ### Design & Usability
 > 
-> ☐ Einheitliches Farbkonzept
-> ☐ Einheitliche Schriftarten
-> ☐ Überschriften sinnvoll eingesetzt (H1–H3)
-> ☐ Gute Lesbarkeit (Kontrast!)
-> ☐ Seiten wirken aufgeräumt und professionell
+> -[ ] Einheitliches Farbkonzept
+> -[ ] Einheitliche Schriftarten
+> -[ ] Überschriften sinnvoll eingesetzt (H1–H3)
+> -[ ] Gute Lesbarkeit (Kontrast!)
+> -[ ] Seiten wirken aufgeräumt und professionell
 > 
 > ---
 > 
 > ### Recht & Technik (Basis)
 > 
-> ☐ Impressum vorhanden
-> ☐ Datenschutzerklärung vorhanden
-> ☐ Medien sind lizenzfrei oder korrekt gekennzeichnet
+> -[ ] Impressum vorhanden
+> -[ ] Datenschutzerklärung vorhanden
+> -[ ] Medien sind lizenzfrei oder korrekt gekennzeichnet
 
 
 > ## Bewertungsraster für die Abgabe
-> 
-> | Bereich           | Detail                                               | Kriterien                                                                               | Punkte        |
-> |-------------------|------------------------------------------------------|-----------------------------------------------------------------------------------------|---------------|
-> | **Design**        | Child-Theme                                          | Child-Theme korrekt erstellt & aktiv, Designanpassungen vorgenommen                     | **3 Punkte**         |
-> | **Design**        | Qualität                                             | Stimmiges Layout, Farben, Typografie                                                    | **3 Punkte**         |
-> | **Design**        | Responsive Design                                    | Funktioniert auf Desktop & Mobil, Bilder und Inhalte werden überall richtig dargestellt | **2 Punkte**         |
-> | **Inhalte**       | Navigation                                           | Navigation & Seitenstruktur logisch und sinnvoll                                        | **2 Punkte**         |
-> | **Inhalte**       | Umfang                                               | Seiten, Posts, Kommentare, Medien vollständig                                           | **3 Punkte**         |
-> | **Inhalte**       | Qualität                                             | Klare, nachvollziehbare Beschreibung der Diplomarbeit                                   | **3 Punkte**         |
-> | **Erweiterungen** | Plugins | Formular, Quelltext, ... sinnvoll eingesetzt                                            | **6 Punkte**         |
-> | **SEO/Usability** | Suchmaschinenoptimierung                             | Meta-Texte, saubere URLs, ...                                                           | **2 Punkte**  |
-> | **Gesamt**        |                              |                                                            | **24 Punkte** |
+>
+| Bereich           | Detail            | Kriterien                                                                                 | Punkte        |
+|-------------------|-------------------|-------------------------------------------------------------------------------------------|---------------|
+| **Design**        | Child-Theme       | Child-Theme korrekt erstellt & aktiv, Designanpassungen vorgenommen                       | **3 Punkte**  |
+| **Design**        | Qualität          | Stimmiges Layout, Farben, Typografie                                                      | **3 Punkte**  |
+| **Design**        | Responsive Design | Funktioniert auf Desktop & Mobil, Bilder und Inhalte werden korrekt dargestellt           | **2 Punkte**  |
+| **Inhalte**       | Navigation        | Navigation & Seitenstruktur logisch und sinnvoll                                          | **2 Punkte**  |
+| **Inhalte**       | Umfang            | Seiten, Posts, Kommentare und Medien vollständig                                          | **3 Punkte**  |
+| **Inhalte**       | Qualität          | Klare, nachvollziehbare Beschreibung der Diplomarbeit                                     | **3 Punkte**  |
+| **Erweiterungen** | Plugins           | Plugins (z. B. Formular, Quelltext) sinnvoll eingesetzt                                   | **6 Punkte**  |
+| **SEO/Usability** | Suchmaschinenopt. | Meta-Texte, saubere URLs, sinnvolle Struktur                                              | **2 Punkte**  |
+| **Gesamt**        |                   |                                                                                           | **24 Punkte** |
+
 
 
 
