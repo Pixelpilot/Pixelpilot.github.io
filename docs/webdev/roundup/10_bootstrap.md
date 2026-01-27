@@ -9,7 +9,7 @@ subtopic:  Views
 layout: default
 ---
 
-## 📚 Theorie: Bootstrap Framework
+## Das Bootstrap Framework
 
 ### Was ist Bootstrap?
 
@@ -51,6 +51,27 @@ Bootstrap nutzt ein 12-Spalten-Grid:
 - `col-lg-` : Groß (≥992px)
 - `col-xl-` : Sehr groß (≥1200px)
 
+
+### Komponenten verstehen (am Beispiel Button)
+
+Bootstrap-Komponenten bestehen aus einfachem HTML plus vordefinierten Klassen. Manche Komponenten brauchen nur CSS (z.B. Buttons, Badges), andere zusätzlich JavaScript (z.B. Modals, Dropdowns) – deshalb das `bootstrap.bundle.min.js` am Ende einbinden.
+
+Buttons zeigen das Prinzip gut: Du nutzt die Basis-Klasse `btn` und kombinierst sie mit Varianten wie `btn-primary`, `btn-secondary`, `btn-outline-*`, Größen (`btn-sm`, `btn-lg`) oder Utility-Klassen (`w-100`, `d-block`) für das Layout.
+
+![](assets/bootstrap_component_buttons.png)
+
+```html
+<button class="btn btn-outline-primary">Outline Primary</button>
+<button class="btn btn-btn-primary" disabled>Disabled Primary</button>
+<button class="btn btn-success btn-sm">Erstellen</button>
+<button class="btn btn-secondary btn-sm">Speichern</button>
+<button class="btn btn-warning btn-sm">Ändern</button>
+<button class="btn btn-danger btn-sm">Löschen</button>
+```
+
+
+Interaktive Komponenten werden über `data-bs-*` Attribute aktiviert, z.B. `data-bs-toggle="modal"` und `data-bs-target="#myModal"` beim Öffnen eines Modals.
+
 ### Cards
 
 Cards sind Behälter für gruppierte Inhalte:
@@ -67,6 +88,8 @@ Cards sind Behälter für gruppierte Inhalte:
 ### Modals
 
 Modals sind Dialogfenster, die über dem Hauptinhalt angezeigt werden:
+
+![](assets/bootstrap_component_modal.png)
 
 ```html
 <div class="modal fade" id="myModal" tabindex="-1">
@@ -120,7 +143,7 @@ Bootstrap bietet viele Utility Classes:
 
 ---
 
-## 🎯 Lernziele
+## Lernziele
 
 Nach diesem Assignment kannst du:
 - Das Bootstrap Grid-System verstehen und verwenden
@@ -128,11 +151,10 @@ Nach diesem Assignment kannst du:
 - Responsive Layouts bauen
 - Bootstrap Komponenten kombinieren
 
----
 
-## ✍️ Aufgaben
+## Aufgaben
 
-### Aufgabe 1: Bootstrap Seite (Leicht)
+### Aufgabe 1: Bootstrap Seite
 
 Erstelle eine einfache HTML-Seite mit Bootstrap:
 
@@ -141,9 +163,12 @@ Erstelle eine einfache HTML-Seite mit Bootstrap:
 3. Erstelle 3 Spalten mit Cards (12-Spalten Grid)
 4. Jede Card soll ein Titel und Beschreibung haben
 
-**Datei:** `01_aufgabe1_bootstrap.html`
 
-### Aufgabe 2: Kanban Board Hardcoded (Mittel)
+![](assets/01_aufgabe1_cards.png)
+<sup>Beispielhafte Umsetzung `01_aufgabe1_bootstrap.html`</sup>
+
+
+### Aufgabe 2: Kanban Board Hardcoded
 
 Erstelle das Kanban Board Frontend statisch:
 
@@ -162,9 +187,10 @@ Erstelle das Kanban Board Frontend statisch:
   - `.priority-high / -medium / -low` - Farbige Borders
   - `.kanban-col` - Spalten-Styling
 
-**Datei:** `01_aufgabe2_kanban_static.html`
+![](assets/01_aufgabe2_kanban_static.png)
+<sup>Beispielhafte Umsetzung `01_aufgabe2_kanban_static.html`</sup>
 
-### Aufgabe 3: Modal Funktionalität (Mittel)
+### Aufgabe 3: Modal Funktionalität
 
 Erweitere dein Kanban Board:
 
@@ -179,9 +205,12 @@ Erweitere dein Kanban Board:
 
 3. Erstelle ein Modal zur Bestätigung beim Löschen
 
-**Datei:** `01_aufgabe3_kanban_modal.html`
 
-### Aufgabe 4: Styling & Details (Schwer)
+![](assets/01_aufgabe3_kanban_mobile.png)
+<sup>Beispielhafte Umsetzung `01_aufgabe3_kanban_modal.html`</sup>
+
+
+### Aufgabe 4: Styling & Details
 
 Verfeinere dein Kanban Board:
 
@@ -191,10 +220,14 @@ Verfeinere dein Kanban Board:
 4. Hover-Effekte auf Cards
 5. Responsive Design überprüfen
 
-**Datei:** `01_aufgabe4_kanban_complete.html`
+
+![](assets/01_aufgabe4_kanban_extras.png)
+<sup>Beispielhafte Umsetzung `01_aufgabe4_kanban_complete.html`</sup>
 
 ## Ressourcen
 - [Bootstrap Dokumentation](https://getbootstrap.com/docs/5.3/){:target="_blank"}
-- [Grid System](https://getbootstrap.com/docs/5.3/layout/grid/){:target="_blank"}
-- [Cards](https://getbootstrap.com/docs/5.3/components/card/){:target="_blank"}
-- [Modals](https://getbootstrap.com/docs/5.3/components/modal/){:target="_blank"}
+- [Bootstrap – Grid System](https://getbootstrap.com/docs/5.3/layout/grid/){:target="_blank"}
+- [Bootstrap – Compontents](https://getbootstrap.com/docs/5.3/components/){:target="_blank"}
+- [Bootstrap - Cards](https://getbootstrap.com/docs/5.3/components/card/){:target="_blank"}
+- [Bootstrap - Modals](https://getbootstrap.com/docs/5.3/components/modal/){:target="_blank"}
+- [Bootstrap - Formulare](https://getbootstrap.com/docs/5.3/forms/overview/){:target="_blank"}
