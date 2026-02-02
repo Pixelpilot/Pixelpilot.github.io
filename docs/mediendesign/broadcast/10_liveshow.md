@@ -214,16 +214,16 @@ Es muss das gesamte Setup auf Basis des Protokoll, auch von Personen, die nicht 
 **Protokoll (30%)**
 
 | **Kriterium**        | **Bewertungsschlüssel** | **Max. Punkte** |
-|---|---|---|
-| **Vollständigkeit**  | Umfasst das Protokoll alle Tätigkeiten und das Setup (z. B. genutzte Technik, Einstellungen, Probleme)?   | 10 Punkte |
-| **Reflexion**  | Bewertung der eigenen Arbeit: Welche Herausforderungen gab es und wie wurden diese gelöst?| 10 Punkte       |
-| **Präsentation** | Ist das Protokoll übersichtlich, klar strukturiert und verständlich formuliert? | 10 Punkte |
+|---|---|-----------------|
+| **Vollständigkeit**  | Umfasst das Protokoll alle Tätigkeiten und das Setup (z. B. genutzte Technik, Einstellungen, Probleme)?   | 20 Punkte       |
+| **Reflexion**  | Bewertung der eigenen Arbeit: Welche Herausforderungen gab es und wie wurden diese gelöst?| 5 Punkte        |
+| **Präsentation** | Ist das Protokoll übersichtlich, klar strukturiert und verständlich formuliert? | 5 Punkte        |
 
 **Praktische Leistung (20%)**
 
-| **Kriterium** | **Bewertungsschlüssel** | **Max. Punkte** |
-|---|---|---|
-| gagement** | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                          | 10 Punkte |
+| **Kriterium**           | **Bewertungsschlüssel** | **Max. Punkte** |
+|-------------------------|---|---|
+| **Engagement**           | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                          | 10 Punkte |
 | **Qualität der Arbeit** | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 10 Punkte |
 
 **Gesamt: 50 Punkte**
