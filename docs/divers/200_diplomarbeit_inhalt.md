@@ -310,9 +310,8 @@ Hier werden die Autor:innen der Arbeit genannt. Das Format ist vorgegeben und es
 [Zur Übersicht ↑](#content)
 
 
-
 ## Weiterführende Informationen
 * [Informationen zur Diplomarbeit – Bundesministerium für Bildung](https://www.diplomarbeiten-bbs.at/erstellung/erstellung-allgemeine-infos){:target="_blank"}
 * [Zitation und Plagiate – Bundesministerium für Bildung](https://www.diplomarbeiten-bbs.at/hinweise-zum-wissenschaftlichen-arbeiten/zitation-plagiate)
-* [LaTeX Vorlage der Arbeit – GitHub](https://github.com/matejkaf/latex-da-vorlage/){:target="_blank"}
+* [LaTeX Vorlage der Arbeit – GitHub](https://github.com/Pixelpilot/HTL-Braunau-DA-LaTeX-Template.git){:target="_blank"}
 * [Wissenschaftliches Schreiben – Karlsruher Institut für wissenschaftliches Schreiben](https://sdq.kastel.kit.edu/wiki/Wissenschaftliches_Schreiben){:target="_blank"}
