@@ -1,5 +1,5 @@
 ---
-title: Laborübungen Live-Produktion
+title: Live-Produktion Laborübungen
 description: Verschiedene Übungen zu Live-Produktion von Videos
 
 category: Mediendesign

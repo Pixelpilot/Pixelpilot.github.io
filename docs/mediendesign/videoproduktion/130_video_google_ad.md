@@ -1,5 +1,5 @@
 ---
-title: Google Ads Werbeclip
+title: Video-Produktion: Google Ads Werbeclip
 description: Von der Idee bis zum finalen Export eines 15-20 Sekunden Werbespots
 
 category: Mediendesign
