@@ -2,8 +2,8 @@
 title: Google Ads Werbeclip
 description: Von der Idee bis zum finalen Export eines 15-20 Sekunden Werbespots
 
-category: Filmproduktion
-topic: Videoproduktion
+category: Mediendesign
+topic: Video-Produktion
 subtopic: Projektworkflow von Pre-Production bis Export
 
 layout: default
@@ -125,7 +125,6 @@ Am Set ist klare Rollenverteilung entscheidend:
 
 Technische Basisparameter (je nach Projektstandard) sind z. B. 4K-Aufnahme für Crop-Reserven, 25 fps, Shutter 1/50 und fixierter Weißabgleich. Nach dem Dreh müssen Rohdaten sofort strukturiert abgelegt und gesichert werden.
 
----
 
 ## Post-Production
 
@@ -212,169 +211,171 @@ Vor Abgabe wird jede Datei per Quick-QC geprüft:
 - Keine Artefakte, Clicks oder Schwarzbilder
 - Richtige Länge und richtiges Seitenverhältnis
 
----
 
 ## Aufgaben
 
 Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 
-### 1. Drehbuch erstellen
-{: .assignment }
-Erstellt zu zweit ein `2-Spalten-Skript` für ein frei gewähltes oder fiktives Produkt (15-20 Sek.).
+> ### 1. Drehbuch erstellen
+> {: .assignment }
+> Erstellt zu zweit ein `2-Spalten-Skript` für ein frei gewähltes oder fiktives Produkt (15-20 Sek.).
+> 
+> Anforderungen:
+> 
+> - Produkt klar definieren.
+> - Hook für die ersten 3 Sekunden festlegen.
+> - Voiceover-Text mit maximal 40 Wörtern verfassen.
+> - Klare CTA integrieren.
+> 
+> Output:
+> 
+> - PDF mit Tabelle `Visual | Audio`
+> - Protokolleintrag als Markdown-Dokument
 
-Anforderungen:
+> ### 2. Storyboard erstellen
+> {: .assignment }
+> Entwickelt die sechs wichtigsten Keyframes für euren Spot.
+> 
+> Anforderungen:
+> 
+> - Frames für 16:9, 1:1 und 9:16 mitdenken.
+> - Inhalt pro Frame klar skizzieren.
+> - Einstellungsgröße, Perspektive und Bewegung notieren.
+> 
+> Output:
+> 
+> - Storyboard als PDF
+> - Protokolleintrag als Markdown-Dokument
 
-- Produkt klar definieren.
-- Hook für die ersten 3 Sekunden festlegen.
-- Voiceover-Text mit maximal 40 Wörtern verfassen.
-- Klare CTA integrieren.
+> ### 3. Prototyp (Animatic) erstellen
+> {: .assignment }
+> Erstellt aus den Storyboard-Zeichnungen einen testbaren Video-Prototyp.
+> 
+> Anforderungen:
+> 
+> - Storyboard fotografieren und in die Schnittsoftware importieren.
+> - Provisorisches Voiceover einsprechen.
+> - Testmusik unterlegen.
+> - Timing auf 15-20 Sekunden überprüfen.
+> 
+> Output:
+> 
+> - Grobe `.mp4`-Datei als Funktionsnachweis
+> - Protokolleintrag als Markdown-Dokument
 
-Output:
+> ### 4. Drehplanung vorbereiten
+> {: .assignment }
+> Plant den Drehtag mit maximaler Effizienz.
+> 
+> Anforderungen:
+> 
+> - Shotlist nach Location/Blickrichtung strukturieren.
+> - Callsheet mit Zeitplan, Rollen, Technik und Requisiten erstellen.
+> 
+> Output:
+> 
+> - Shotlist als PDF
+> - Callsheet als PDF
+> - Portfolio-/Protokolleintrag als Markdown-Dokument
 
-- PDF mit Tabelle `Visual | Audio`
-- Protokolleintrag als Markdown-Dokument
+> ### 5. Dreh durchführen
+> {: .assignment }
+> Setzt die Planung am Set technisch sauber um.
+> 
+> Anforderungen:
+> 
+> - Technische Parameter kontrollieren (Auflösung, fps, Shutter, WB).
+> - Jede Einstellung mindestens zweimal aufnehmen.
+> - Hook in Varianten drehen.
+> - Continuity konsequent prüfen.
+> 
+> Output:
+> 
+> - Rohmaterial strukturiert in `01_Assets`
+> - Backup auf Server oder Datenträger
+> - Portfolioeintrag mit Set-Fotos und kurzem Fazit
 
-### 2. Storyboard erstellen
-{: .assignment }
-Entwickelt die sechs wichtigsten Keyframes für euren Spot.
+> ### 6. Rough Cut erstellen
+> {: .assignment }
+> Montiert das Material zu einer stimmigen Rohfassung.
+> 
+> Anforderungen:
+> 
+> - Material sauber organisieren.
+> - Animatic durch echtes Material ersetzen.
+> - Storylogik prüfen, Überlängen zulassen.
+> 
+> Output:
+> 
+> - Rohschnitt als `.mp4`
+> - Protokolleintrag als Markdown-Dokument
 
-Anforderungen:
+ 
+> ### 7. Sounddesign erstellen
+> {: .assignment }
+> Legt Score, Voiceover, SFX und Atmos als eigene Ebenen an.
+> 
+> Anforderungen:
+> 
+> - Voiceover aufnehmen.
+> - Instrumentale Musik auswählen.
+> - Mindestens 3-5 gezielte SFX einsetzen.
+> - Durchgehende Atmosphäre gestalten.
+> 
+> Output:
+> 
+> - Vier getrennte Audioebenen in der Timeline
+> - Erster Rough-Mix als `.mp4`
 
-- Frames für 16:9, 1:1 und 9:16 mitdenken.
-- Inhalt pro Frame klar skizzieren.
-- Einstellungsgröße, Perspektive und Bewegung notieren.
+ 
+> ### 8. Fine Cut erstellen
+> {: .assignment }
+> Finalisiert Timing, Rhythmus und Übergänge.
+> 
+> Anforderungen:
+> 
+> - Bildschnitt framegenau auf Wirkung und Musik abstimmen.
+> - J-Cuts und L-Cuts gezielt einsetzen.
+> - Unnötige Inhalte konsequent entfernen.
+> - Logo/Text-Overlays final einbauen.
+> 
+> Output:
+> 
+> - Feinschnitt als `.mp4` in finaler Länge (15-20 Sek.)
 
-Output:
+  
+> ### 9. Color Grading durchführen
+> {: .assignment }
+> Gebt dem Spot einen einheitlichen und produktgerechten Look.
+> 
+> Anforderungen:
+> 
+> - Farbkorrektur über alle Szenen konsistent herstellen.
+> - Warmen oder kalten Stil begründet wählen.
+> - Kontrast/Sättigung zielgerichtet einsetzen.
+> - Optional LUT nutzen oder eigenen Look entwickeln.
+> 
+> Output:
+> 
+> - Final gegradete Version als `.mp4`
+> - Ausgabe in den benötigten Formaten oder im Hauptformat
+> - Protokolleintrag als Markdown-Dokument
 
-- Storyboard als PDF
-- Protokolleintrag als Markdown-Dokument
-
-### 3. Prototyp (Animatic) erstellen
-{: .assignment }
-Erstellt aus den Storyboard-Zeichnungen einen testbaren Video-Prototyp.
-
-Anforderungen:
-
-- Storyboard fotografieren und in die Schnittsoftware importieren.
-- Provisorisches Voiceover einsprechen.
-- Testmusik unterlegen.
-- Timing auf 15-20 Sekunden überprüfen.
-
-Output:
-
-- Grobe `.mp4`-Datei als Funktionsnachweis
-- Protokolleintrag als Markdown-Dokument
-
-### 4. Drehplanung vorbereiten
-{: .assignment }
-Plant den Drehtag mit maximaler Effizienz.
-
-Anforderungen:
-
-- Shotlist nach Location/Blickrichtung strukturieren.
-- Callsheet mit Zeitplan, Rollen, Technik und Requisiten erstellen.
-
-Output:
-
-- Shotlist als PDF
-- Callsheet als PDF
-- Portfolio-/Protokolleintrag als Markdown-Dokument
-
-### 5. Dreh durchführen
-{: .assignment }
-Setzt die Planung am Set technisch sauber um.
-
-Anforderungen:
-
-- Technische Parameter kontrollieren (Auflösung, fps, Shutter, WB).
-- Jede Einstellung mindestens zweimal aufnehmen.
-- Hook in Varianten drehen.
-- Continuity konsequent prüfen.
-
-Output:
-
-- Rohmaterial strukturiert in `01_Assets`
-- Backup auf Server oder Datenträger
-- Portfolioeintrag mit Set-Fotos und kurzem Fazit
-
-### 6. Rough Cut erstellen
-{: .assignment }
-Montiert das Material zu einer stimmigen Rohfassung.
-
-Anforderungen:
-
-- Material sauber organisieren.
-- Animatic durch echtes Material ersetzen.
-- Storylogik prüfen, Überlängen zulassen.
-
-Output:
-
-- Rohschnitt als `.mp4`
-- Protokolleintrag als Markdown-Dokument
-
-### 7. Sounddesign erstellen
-{: .assignment }
-Legt Score, Voiceover, SFX und Atmos als eigene Ebenen an.
-
-Anforderungen:
-
-- Voiceover aufnehmen.
-- Instrumentale Musik auswählen.
-- Mindestens 3-5 gezielte SFX einsetzen.
-- Durchgehende Atmosphäre gestalten.
-
-Output:
-
-- Vier getrennte Audioebenen in der Timeline
-- Erster Rough-Mix als `.mp4`
-
-### 8. Fine Cut erstellen
-{: .assignment }
-Finalisiert Timing, Rhythmus und Übergänge.
-
-Anforderungen:
-
-- Bildschnitt framegenau auf Wirkung und Musik abstimmen.
-- J-Cuts und L-Cuts gezielt einsetzen.
-- Unnötige Inhalte konsequent entfernen.
-- Logo/Text-Overlays final einbauen.
-
-Output:
-
-- Feinschnitt als `.mp4` in finaler Länge (15-20 Sek.)
-
-### 9. Color Grading durchführen
-{: .assignment }
-Gebt dem Spot einen einheitlichen und produktgerechten Look.
-
-Anforderungen:
-
-- Farbkorrektur über alle Szenen konsistent herstellen.
-- Warmen oder kalten Stil begründet wählen.
-- Kontrast/Sättigung zielgerichtet einsetzen.
-- Optional LUT nutzen oder eigenen Look entwickeln.
-
-Output:
-
-- Final gegradete Version als `.mp4`
-- Ausgabe in den benötigten Formaten oder im Hauptformat
-- Protokolleintrag als Markdown-Dokument
-
-### 10. Export finalisieren
-{: .assignment }
-Erstellt die Master-Dateien für alle Zielplattformen.
-
-Anforderungen:
-
-- Export in `16:9`, `1:1` und `9:16`.
-- `MP4 (H.264)` mit sinnvoller Bitrate verwenden.
-- Saubere Versionierung im Dateinamen (`V01`, `V02`, ...).
-- QC-Check vor der Abgabe durchführen.
-
-Output:
-
-- Finale Exportdateien in `04_Exports`
-- Protokolleintrag mit Export-Settings und Begründung
+> ### 10. Export finalisieren
+> {: .assignment }
+> Erstellt die Master-Dateien für alle Zielplattformen.
+> 
+> Anforderungen:
+> 
+> - Export in `16:9`, `1:1` und `9:16`.
+> - `MP4 (H.264)` mit sinnvoller Bitrate verwenden.
+> - Saubere Versionierung im Dateinamen (`V01`, `V02`, ...).
+> - QC-Check vor der Abgabe durchführen.
+> 
+> Output:
+> 
+> - Finale Exportdateien in `04_Exports`
+> - Protokolleintrag mit Export-Settings und Begründung
 
 ## Ressourcen
 

@@ -4,3 +4,19 @@
 /docs/Gemfile.lock
 /docs/.jekyll-cache
 .idea
+
+# Bestimmte Verzeichnissen (rekursiv) ausschliessen
+**/tmp/**
+**/backup/**
+**/solution/**
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# macOS directories
+.Spotlight-V100
+.Trashes
+.fseventsd
