@@ -1,5 +1,5 @@
 ---
-title: Live-Produktion – Live-Stream
+title: Live-Produktion - Live-Stream
 description: Durchführen einer Live-Show mit Greenscreen und Broadcasting
 
 category: Mediendesign
