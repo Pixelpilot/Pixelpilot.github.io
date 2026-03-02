@@ -1,4 +1,4 @@
-
+---
 title: Generische Datentypen in Java
 description: Theorie und Übungen zu Generics mit Beispielen wie ArrayList
 
@@ -9,7 +9,7 @@ subtopic: Divers
 layout: default
 
 sitemap_exclude: n
-
+---
 
 # {{ page.title }}
 
