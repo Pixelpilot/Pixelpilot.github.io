@@ -403,7 +403,7 @@ Die Bewertung erfolgt auf `100 Punkten` und kombiniert Teamleistung mit individu
 |---|---|---:|
 | Konzept & Dramaturgie | Klarer Aufbau (Hook, Produktnutzen, CTA), logische Story, Zielgruppenbezug | 15 |
 | Bildgestaltung & Kamera | Einstellungsgrößen, Perspektiven, Licht, technische Sauberkeit, Continuity | 15 |
-| Schnitt & Rhythmus | Wirkung des Timings, Stringenz, sinnvolle Übergänge (u. a. J-/L-Cuts) | 15 |
+| Schnitt & Rhythmus | Wirkung des Timings, sinnvolle Übergänge (u. a. J-/L-Cuts) | 15 |
 | Sounddesign & Mischung | Voiceover-Verständlichkeit, Musikeinsatz, SFX/Atmos, Pegelbalance | 10 |
 | Color Grading & Look | Konsistenz, stilistische Passung zum Produkt, technische Qualität | 5 |
 | Export & Formate | Korrekte Ausgaben (16:9, 1:1, 9:16), Dateibenennung, QC | 5 |
