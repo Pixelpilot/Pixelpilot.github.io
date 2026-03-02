@@ -3,7 +3,7 @@ title: Generische Datentypen in Java
 description: Theorie und Übungen zu Generics mit Beispielen wie ArrayList
 
 category: Fachspezifische Softwaretechnik
-topic: Programmieren Java
+topic: Algorithmen und Datenstrukturen
 subtopic: Divers
 
 layout: default
@@ -72,6 +72,26 @@ Mehrere Typ-Parameter sind möglich, z. B. `Map<K, V>`.
 
 - Generics funktionieren nur mit Referenztypen (bei primitiven Typen Auto-Boxing, z. B. `int` → `Integer`).
 - Zur Laufzeit sind Typinformationen nur eingeschränkt verfügbar (Type Erasure).
+
+**Beispiel zu Type Erasure**
+
+Quellcode mit Generics:
+
+```java
+List<String> names = new ArrayList<>();
+names.add("Anna");
+String first = names.get(0);
+```
+
+Vereinfacht gesagt behandelt der Compiler das intern nach der Typauslöschung so:
+
+```java
+List names = new ArrayList();
+names.add("Anna");
+String first = (String) names.get(0);
+```
+
+Das heißt: Der Generic-Typ `String` ist zur Laufzeit nicht mehr als eigener Typ in der Liste vorhanden; die Typsicherheit wurde bereits beim Kompilieren geprüft.
 
 
 

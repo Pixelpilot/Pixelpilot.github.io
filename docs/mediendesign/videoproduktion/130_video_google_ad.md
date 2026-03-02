@@ -51,6 +51,12 @@ Das Projekt umfasst folgende zehn Arbeitsschritte:
 9. Color Grading
 10. Export
 
+## Rahmenbedingungen
+
+- Das Projekt wird in 2er- bis 3er-Gruppen umgesetzt.
+- Die Rollenverteilung (z. B. Regie, Kamera, Schnitt, Ton) wird im Protokoll transparent dokumentiert.
+- Alle Teammitglieder müssen in Planung, Umsetzung und Reflexion nachweisbar mitarbeiten.
+
 
 ## Pre-Production
 
@@ -138,15 +144,14 @@ Technische Basisparameter (je nach Projektstandard) sind z. B. 4K-Aufnahme für 
 
 Saubere Ordnerstruktur verhindert „Media Offline“-Probleme und Versionschaos. Eine bewährte Struktur ist:
 
-- `00_Planning`
-- `01_Assets`
-- `02_Audio`
-- `03_Project`
-- `04_Exports`
+- `01_Dokumentation`
+- `02_Projektdateien`
+- `03 Preview`
+- `04_Export`
 
 Ebenso wichtig sind konsistente Dateinamen, z. B.:
 
-`DATUM_PROJEKT_FORMAT_VERSION_STATUS.mp4`
+`Projekt_Format_Version.ext` (z. B. `GoogleAd_16x9_V01.mp4`)
 
 ### 6. Rough Cut
 
@@ -297,7 +302,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > 
 > Output:
 > 
-> - Rohmaterial strukturiert in `01_Assets`
+> - Rohmaterial strukturiert in `02_Projektdateien/footage`
 > - Backup auf Server oder Datenträger
 > - Portfolioeintrag mit Set-Fotos und kurzem Fazit
 
@@ -380,8 +385,92 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > 
 > Output:
 > 
-> - Finale Exportdateien in `04_Exports`
+> - Finale Exportdateien in `04_Export`
 > - Protokolleintrag mit Export-Settings und Begründung
+
+## Beurteilungsschema
+
+Die Bewertung erfolgt auf `100 Punkten` und kombiniert Teamleistung mit individueller Leistung.
+
+**Gewichtung:**
+
+- Teamleistung (Produkt + Prozessdokumentation): `70 Punkte`
+- Individuelle Leistung (Beitrag + Reflexion): `30 Punkte`
+
+### A) Teamleistung (`70 Punkte`)
+
+| Kriterium | Beschreibung | Punkte |
+|---|---|---:|
+| Konzept & Dramaturgie | Klarer Aufbau (Hook, Produktnutzen, CTA), logische Story, Zielgruppenbezug | 15 |
+| Bildgestaltung & Kamera | Einstellungsgrößen, Perspektiven, Licht, technische Sauberkeit, Continuity | 15 |
+| Schnitt & Rhythmus | Wirkung des Timings, Stringenz, sinnvolle Übergänge (u. a. J-/L-Cuts) | 15 |
+| Sounddesign & Mischung | Voiceover-Verständlichkeit, Musikeinsatz, SFX/Atmos, Pegelbalance | 10 |
+| Color Grading & Look | Konsistenz, stilistische Passung zum Produkt, technische Qualität | 5 |
+| Export & Formate | Korrekte Ausgaben (16:9, 1:1, 9:16), Dateibenennung, QC | 5 |
+| Dokumentation (Shotlist, Callsheet, Protokoll) | Vollständigkeit, Struktur, Nachvollziehbarkeit des Workflows | 5 |
+
+### B) Individuelle Leistung (`30 Punkte`)
+
+| Kriterium | Beschreibung | Punkte |
+|---|---|---:|
+| Fachlicher Beitrag | Qualität und Verlässlichkeit des eigenen Beitrags im Team | 15 |
+| Prozesskompetenz | Selbstorganisation, Einhalten von Deadlines, konstruktive Zusammenarbeit | 10 |
+| Reflexion | Kurze, konkrete Selbsteinschätzung (Lernfortschritte, Probleme, Lösungen) | 5 |
+
+
+**Mindestanforderung für positive Beurteilung:**
+
+- Alle Pflichtformate (`16:9`, `1:1`, `9:16`) sind vorhanden.
+- Exportdateien sind technisch abspielbar und korrekt benannt.
+- Dokumentation ist vollständig und Rollenbeiträge sind pro Person nachvollziehbar.
+
+### Zusammenfassung & Ordnerstruktur für die Abgabe
+
+Für die finale Abgabe sollten alle Zwischenstände nachvollziehbar und die Endversionen sofort auffindbar sein.
+
+**Empfohlene Struktur:**
+
+```text
+GoogleAd_Projektname_TeamXY/
+├── 01_Dokumentation/
+│   ├── projektauftrag.md
+│   ├── storyboard.pdf
+│   ├── shotlist.pdf
+│   └── exportprotokoll.md
+├── 02_Projektdateien/
+│   ├── davinci_resolve/
+│	│	├── animatic_V01.drp
+│	│	├── roughcut_V01.drp
+│	│	├── finecut_V01.drp
+│	│	├── graded_V01.drp
+│   └── footage/
+│   │   ├── video/
+│   │   ├── audio/
+│   │   └── graphics/
+├── 03 Preview/
+│   ├── animatic_V01.mp4
+│   ├── roughcut_V01.mp4
+│   ├── finecut_V01.mp4
+│   └── graded_V01.mp4
+└── 04_Export/
+	├── GoogleAd_16x9_V01.mp4
+	├── GoogleAd_1x1_V01.mp4
+	├── GoogleAd_9x16_V01.mp4
+	└── GoogleAd_16x9_V02.mp4
+```
+
+**Dateibenennung (einheitlich):**
+
+- Format: `Projekt_Format_Version.ext`
+- Beispiel: `GoogleAd_16x9_V01.mp4`
+- Versionen immer zweistellig hochzählen: `V01`, `V02`, `V03` ...
+
+**Abgabe-Check (kurz):**
+
+- Alle drei Formate vorhanden (`16:9`, `1:1`, `9:16`)
+- Exportdateien laufen fehlerfrei (Bild, Ton, Länge, Rechtschreibung)
+- Protokoll mit Settings (Codec, Auflösung, Framerate, Bitrate) ist enthalten
+- Nur finale Dateien in `04_Export`, keine Dubletten ohne Versionsnummer
 
 ## Ressourcen
 

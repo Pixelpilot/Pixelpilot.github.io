@@ -65,7 +65,7 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 
 ### Erstellung der Datenbank
 
-> #### Aufgabe 1.0: Datenbank erstellen und befüllen
+> #### Aufgabe 1: Datenbank erstellen und befüllen
 > {: .assignment }
 > 
 > Erstelle die vier Tabellen mit den korrekten Schlüsseln und befülle sie mit den angegebenen Daten.
@@ -88,7 +88,7 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 
 ### Abfragen
 
-> #### Aufgabe 1.
+> #### Aufgabe 2.a
 > {: .assignment }
 > Ermittle die Anzahl der Mitarbeiter gruppiert nach Abteilung.
 >
@@ -174,7 +174,7 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 > Verwende je eine Teilabfrage mit `INNER JOIN` (`Mitarbeiter` → `Arbeitszeit` → `Projekt` → `Kunde`) und kombiniere sie mit `UNION ALL`.
 > Doppelte Mitarbeitende sollen erhalten bleiben.
 >
-> **Erwartete Ausgabe (Spaltennamen):**
+> **Erwartete Ausgabe:**
 >
 > | MID | Name |
 > |-----|------|
@@ -188,7 +188,7 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 > Ermittle alle Mitarbeitenden, die sowohl an Projekten für **"Tech Solutions"** als auch für **"ABC GmbH"** gearbeitet haben.
 > Erstelle dazu zwei Teilabfragen mit `INNER JOIN` und verknüpfe sie mit `INTERSECT`.
 >
-> **Erwartete Ausgabe (Spaltennamen):**
+> **Erwartete Ausgabe:**
 >
 > | MID | Name |
 > |-----|------|
@@ -201,7 +201,7 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 > aber **an keinem** Projekt des Kunden **"XYZ AG"** beteiligt waren.
 > Verwende zwei Teilabfragen mit `INNER JOIN` und bilde die Differenz mit `EXCEPT`.
 >
-> **Erwartete Ausgabe (Spaltennamen):**
+> **Erwartete Ausgabe:**
 >
 > | MID | Name |
 > |---|---|
@@ -218,7 +218,7 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 > - Ausschluss der HR-Menge mit `EXCEPT`
 > - Alle Teilabfragen müssen über `INNER JOIN` formuliert werden
 >
-> **Erwartete Ausgabe (Spaltennamen):**
+> **Erwartete Ausgabe:**
 >
 > | MID | Name |
 > |-----|------|
