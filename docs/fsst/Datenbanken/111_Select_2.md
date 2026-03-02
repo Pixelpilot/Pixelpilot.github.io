@@ -153,3 +153,62 @@ Löse folgende Aufgaben für die gegebenen Datenbank-Tabellen. Beachte dabei:
 > | Unternehmung | Stunden |
 > |--------------|---------|
 > | Tech Solutions | 40 |
+
+### Mengenoperatoren (UNION, UNION ALL, INTERSECT, EXCEPT)
+
+> #### Aufgabe 2.a (UNION)
+> {: .assignment }
+> Ermittle alle Kunden, die entweder ein Projekt mit einer Deadline im März 2024 **oder** ein Projekt mit einer Deadline im April 2024 haben. 
+> Verwende zwei Teilabfragen mit `INNER JOIN` zwischen `Projekt` und `Kunde` und kombiniere sie mit `UNION`.
+>
+> **Erwartete Ausgabe (Spaltenname):**
+>
+> | Unternehmung |
+> |--------------|
+
+> #### Aufgabe 2.b (UNION ALL)
+> {: .assignment }
+> Gib alle Mitarbeitereinträge aus, die in den Projekten der Kunden **"Tech Solutions"** und **"ABC GmbH"** gearbeitet haben.
+> Verwende je eine Teilabfrage mit `INNER JOIN` (`Mitarbeiter` → `Arbeitszeit` → `Projekt` → `Kunde`) und kombiniere sie mit `UNION ALL`.
+> Doppelte Mitarbeitende sollen erhalten bleiben.
+>
+> **Erwartete Ausgabe (Spaltennamen):**
+>
+> | MID | Name |
+> |-----|------|
+
+> #### Aufgabe 2.c (INTERSECT)
+> {: .assignment }
+> Ermittle alle Mitarbeitenden, die sowohl an Projekten für **"Tech Solutions"** als auch für **"ABC GmbH"** gearbeitet haben.
+> Erstelle dazu zwei Teilabfragen mit `INNER JOIN` und verknüpfe sie mit `INTERSECT`.
+>
+> **Erwartete Ausgabe (Spaltennamen):**
+>
+> | MID | Name |
+> |-----|------|
+
+> #### Aufgabe 2.d (EXCEPT)
+> {: .assignment }
+> Ermittle alle Mitarbeitenden aus der Abteilung **IT**, die an mindestens einem Projekt gearbeitet haben, 
+> aber **an keinem** Projekt des Kunden **"XYZ AG"** beteiligt waren.
+> Verwende zwei Teilabfragen mit `INNER JOIN` und bilde die Differenz mit `EXCEPT`.
+>
+> **Erwartete Ausgabe (Spaltennamen):**
+>
+> | MID | Name |
+> |-----|------|
+
+> #### Aufgabe 2.e (Kombinationsaufgabe)
+> {: .assignment }
+> Ermittle alle Mitarbeitenden, die an Projekten von **"Tech Solutions"** oder **"ABC GmbH"** gearbeitet haben,
+> aber nicht in der Abteilung **HR** sind.
+>
+> Bedingungen:
+> - Vereinigung der beiden Projektmengen mit `UNION`
+> - Ausschluss der HR-Menge mit `EXCEPT`
+> - Alle Teilabfragen müssen über `INNER JOIN` formuliert werden
+>
+> **Erwartete Ausgabe (Spaltennamen):**
+>
+> | MID | Name |
+> |-----|------|
