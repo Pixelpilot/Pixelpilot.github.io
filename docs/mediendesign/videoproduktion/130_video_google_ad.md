@@ -30,20 +30,27 @@ Deshalb ist die klare Trennung der Aufgaben in Pre-Production, Production und Po
 
 ## Projektablauf im Überblick
 
-Das Projekt umfasst ungefähr zehn Unterrichtseinheiten und folgt zehn Arbeitsschritten:
+Das Projekt umfasst folgende zehn Arbeitsschritte:
+
+**Pre-Production**
 
 1. Drehbuch
 2. Storyboard
 3. Prototyp (Animatic)
+
+**Production**
+
 4. Drehplanung
 5. Dreh
+
+**Post-Production**
+
 6. Rohschnitt
 7. Sounddesign
 8. Feinschnitt
 9. Color Grading
 10. Export
 
----
 
 ## Pre-Production
 
@@ -94,7 +101,7 @@ Vorteile:
 
 Das Prinzip lautet: `Fail fast, fail cheap` – lieber früh günstig korrigieren als spät teuer retten.
 
----
+
 
 ## Production
 
