@@ -14,9 +14,18 @@ sitemap_exclude: n
 
 # Live-Show Produktion mit Streaming und Greenscreen
 
-Es soll eine 15-minütige Live-Show produziert werden, die per Livestream gesendet wird. Dabei soll einen Greenscreen verwendet werden, um kreative Hintergründe einzubinden. Ton und Bild sollten professionell integriert werden. 
+Es soll eine 15-minütige Live-Show produziert werden, die per Livestream gesendet wird. Dabei soll ein Greenscreen verwendet werden, um kreative Hintergründe einzubinden. Ton und Bild sollten professionell integriert werden.
 
 Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes Team-Mitglied eine andere Funktion einnimmt.
+
+
+**Vorproduzierte Inhalte**<br>
+Zusätzlich können einzelne Inhalte vorproduziert und während der Liveshow gezielt eingespielt werden, z. B. wie bei Nachrichtensendungen mit Beiträgen oder bei Talkshows mit Einspielungen. Diese Clips müssen dramaturgisch und technisch so vorbereitet sein, dass sie in der Regie schnell und sauber abrufbar sind.
+
+
+**Grafische Elemente**<br>
+Zur professionellen Sendungsoptik sollen ausserdem grafische Elemente eingeplant werden, etwa Inserts/Bauchbinden (Name, Funktion, Thema), Trenner, Titelkarten oder kurze Opener/Closer.
+
 
 ## Vorschläge für Inhalte der Live-Show
 
@@ -41,36 +50,46 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
        - Interviews mit Künstler*innen oder Designer*innen der Gruppe.
 
 
-## Zeitplan und Ablauf
+## Vorschlag für Zeitplan und Ablauf
 
-5 Termine à 4 Unterrichtseinheiten
+4 Termine à 4 Unterrichtseinheiten
+
+> ### Termin 1: Konzept und Planung
+> {: .assignment }
+>  - Brainstorming: Thema und Inhalte der Show festlegen
+>  - Festlegen, welche Inhalte vorproduziert werden (z. B. Beitraege, Einspielungen, >Interviews)
+>  - Grafikkonzept definieren (Inserts/Bauchbinden, Trenner, Titelkarten, Opener/Closer)
+>  - Aufgabenverteilung und erste technische Tests
+>  - Erstellung eines Drehplans
+
+> ### Termin 2: Setup und Prototyping
+> {: .assignment }
+>  - Einrichtung des Greenscreens und Kamera-Setups
+>  - Tests von Ton- und Lichttechnik
+>  - Erste Proben mit der Moderation
+>  - Vorproduktion der geplanten Video-Inhalte (Dreh, Schnitt, Export in passendem Format)
+>  - Erstellung eines ersten Grafikpakets für die Liveshow
+
+> ### Termin 3: Probeaufnahme
+> {: .assignment }
+>  - Durchführung einer Testaufnahme der Live-Show
+>  - Überprüfung der technischen Qualität (Bild, Ton, Streaming)
+>  - Einbindung der vorproduzierten Clips in den Showablauf (Regie-Cues, Timing Übergänge)
+>  - Test der Grafiken in der Livesituation (Lesbarkeit von Bauchbinden/Inserts, Timing)
+>  - Korrekturen und Verbesserungen
+
+> ### Termin 4: Generalprobe + Liveshow
+> {: .assignment }
+> - Komplette Generalprobe der Show
+>	- Letzte Anpassungen am Ablauf und an der Technik
+>	- Sicherstellen, dass alle Inhalte bereit sind
+>	- Finale Prüfung aller Einspieler und Grafiken (Dateinamen, Reihenfolge, Trigger)
+> - Durchführung und Livestream der Show
+> - Nachbereitung: Feedback-Runde und Reflektion
 
 
-- **Termin 1: Konzept und Planung**
-    - Brainstorming: Thema und Inhalte der Show festlegen
-    - Aufgabenverteilung und erste technische Tests
-    - Erstellung eines Drehplans
-
-- **Termin 2: Setup und Prototyping**
-    - Einrichtung des Greenscreens und Kamera-Setups
-    - Tests von Ton- und Lichttechnik
-    - Erste Proben mit der Moderation
-
-- **Termin 3: Probeaufnahmen**
-    - Durchführung einer Testaufnahme der Live-Show
-    - Überprüfung der technischen Qualität (Bild, Ton, Streaming)
-    - Korrekturen und Verbesserungen
-
-- **Termin 4: Generalprobe**
-    - Komplette Generalprobe der Show
-    - Letzte Anpassungen am Ablauf und an der Technik
-    - Sicherstellen, dass alle Inhalte bereit sind
-
-- **Termin 5: Live-Show**
-    - Durchführung und Livestream der Show
-    - Nachbereitung: Feedback-Runde und Reflektion
-
-## Aufgabenverteilung
+## Beispielhafte Aufgabenverteilung
+Die angebenen Aufgaben und die Anzahl der Personen sind stark von der Art der Live-Show Produktion ab und können stark variieren.
 
 ### 1. Projektleitung und Redaktion
 *1-2 Personen*
@@ -141,39 +160,39 @@ Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes
 - Einrichtung der Beleuchtung für die Greenscreen-Nutzung (z. B. gleichmäßige Ausleuchtung)
 - Gestaltung und Aufbau eines ansprechenden Sets (z. B. Möbel, Dekoration)
 
+## Abgabe
 
-## Protokoll und Benotung
-
-### Abgabe
-
-#### 1. Videodatei
+### 1. Videodatei
 Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abzugeben.
 
-#### 2. Protokoll
+> **Technische Vorgaben für die Abgabe:**
+> - Auflösung: mindestens **HD (1280 x 720)**, empfohlen **Full HD (1920 x 1080)**
+> - Dateiformat: **MP4**
+> - Video-Codec: **H.264 (AVC)**
+> - Audio: **AAC**, 48 kHz, Stereo
+> - Maximale Dateigroesse: **512 MB**
+
+### 2. Protokoll
 
 Es ist ein gemeinsames Protokoll für das ganze Projektteam zu erstellen. Jedes Projektmitglied erstellt dazu ein Teilprotokoll für die individuelle Aufgabenstellung. Die Projektleiterin oder der Projektleiter fasst alle Teilprotokolle zusammen.
 
-**Zum Beispiel:**
-- Wie wird der Ton aufgezeichnet?
-    - Welche Mikrofone werden verwendet?
-    - Wie werden die Mikrofone verkabelt?
-    - Warum werden die Mikrofone verwendet, und nicht irgendwelche anderen?
-    - Mit Pre-amp? Noise-Gate?
-    - Wie wird auf den Versatz von Ton und Bild reagiert?
-- Wie sind die ATEMs verkabelt?
-- Wie werden die Lichter angesteuert?
-- Wie funktioniert das Keying?
-- ...
+> **Vorgaben**
+> - Abgabeformat: **PDF**
+> - Alle Inhalte muessen klar gekennzeichnet sein (z. B. Abschnittstitel mit **Autorin/Autor**)
+> - Mindestumfang: **mindestens 6 Seiten pro Person**
 
 **Inhalte des Teilprotokolls:**
 
-Es muss das gesamte Setup auf Basis des Protokoll, auch von Personen, die nicht mit der Hard- und Software vertraut sind, lückenlos umgesetzt werden können. Dazu sind alle Schritte, technischen Details festzuhalten:
+Es muss das gesamte Setup auf Basis des Protokoll, auch von Personen, die nicht mit der Hard- und Software vertraut sind, lückenlos umgesetzt werden können. 
 
+Dazu ist eine anschauliche Dokumentation mit **Fotos**, **Skizzen**, **Flowcharts** und bei Bedarf Tabellen/Diagrammen zu erstellen. Technische Entscheidungen und Einstellungen sollen nachvollziehbar beschrieben und mit visuellen Belegen dokumentiert sein.
 
+Dazu sind alle Schritte, technischen Details festzuhalten:
 
   * **Titel, Name**<br> z.B.: *Tontechnik, Max Muster: Mikrofonsetup und Mischpultbedienung Überlegungen, Konzept*
   * **Beschreibung der tatsächliche Umsetzung**<br>Je nach Aufgabenstellung kann dies sehr unterschiedlich aussehen. Hier ein paar Anhaltspunkte:
-    * Setup inklusiver Skizzen
+    * Grundlegende Informationen zum Teilbereich (Greenscreen, Live-Regie, Ton, ...)
+	* Setup inklusiver Skizzen
     * Verwendete Hardware
     * Verwendete Software
     * Inhalte
@@ -184,46 +203,43 @@ Es muss das gesamte Setup auf Basis des Protokoll, auch von Personen, die nicht 
   * **Reflexion**<br>Was lief gut, was war schwierig?
 
 
-### Benotungsschema für das Projekt "Live-Show Produktion"
+## Benotungsschema für das Projekt "Live-Show Produktion"
 
-#### Gesamtnote: Zusammensetzung
+**Maximal erreichbare Punkte: 24**
+
 - **Projektgesamtleistung (50%)**  
   Bewertet wird die Qualität und das Ergebnis der Live-Show, sowie die Zusammenarbeit im Team.
 - **Einzelleistung (50%)**  
   Bewertet wird die individuelle Leistung basierend auf der dokumentierten Tätigkeit im Protokoll und der beobachteten Mitarbeit während des Projekts.
 
----
 
-### Bewertungskriterien
-
-#### 1. Projektgesamtleistung (50%)
+### 1. Projektgesamtleistung (50%)
 
 | **Kriterium**               | **Bewertungsschlüssel**                                                                                       | **Max. Punkte** |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------|-----------------|
-| **Technische Qualität**     | Qualität von Video, Ton, Licht und Greenscreen-Effekten (z. B. klare Tonausgabe, fehlerfreie Bildqualität).  | 20 Punkte       |
-| **Kreativität und Inhalte** | Originalität der Show, Themenwahl, Nutzung des Greenscreens und dramaturgischer Aufbau.                     | 10 Punkte       |
-| **Zusammenarbeit im Team**  | Beobachtete Teamarbeit: Kommunikation, Unterstützung untereinander, Einhaltung von Zeitplänen.              | 10 Punkte       |
-| **Livestream/Umsetzung**    | Fehlerfreier Ablauf der Show und Reaktion auf spontane Herausforderungen.                                   | 10 Punkte       |
+| **Technische Qualität**     | Qualität von Video, Ton, Licht und Greenscreen-Effekten (z. B. klare Tonausgabe, fehlerfreie Bildqualität).  | 4 Punkte        |
+| **Kreativität und Inhalte** | Originalität der Show, Themenwahl, Nutzung des Greenscreens und dramaturgischer Aufbau.                     | 4 Punkte        |
+| **Zusammenarbeit im Team**  | Beobachtete Teamarbeit: Kommunikation, Unterstützung untereinander, Einhaltung von Zeitplänen.              | 2 Punkte        |
+| **Livestream/Umsetzung**    | Fehlerfreier Ablauf der Show und Reaktion auf spontane Herausforderungen.                                   | 2 Punkte        |
 
-**Gesamt: 50 Punkte**
+**Gesamt: 12 Punkte**
 
 ---
 
-#### 2. Einzelleistung (50%)
+### 2. Einzelleistung mit Protokoll (50%)
 
-**Protokoll (30%)**
+**Protokoll (6 Punkte)**
 
 | **Kriterium**        | **Bewertungsschlüssel** | **Max. Punkte** |
 |---|---|-----------------|
-| **Vollständigkeit**  | Umfasst das Protokoll alle Tätigkeiten und das Setup (z. B. genutzte Technik, Einstellungen, Probleme)?   | 20 Punkte       |
-| **Reflexion**  | Bewertung der eigenen Arbeit: Welche Herausforderungen gab es und wie wurden diese gelöst?| 5 Punkte        |
-| **Präsentation** | Ist das Protokoll übersichtlich, klar strukturiert und verständlich formuliert? | 5 Punkte        |
+| **Qualität und Umfang der Inhalte**  | Umfasst das Protokoll alle Tätigkeiten und das Setup (z. B. genutzte Technik, Einstellungen, Probleme)?   | 4 Punkte        |
+| **Reflexion**  | Bewertung der eigenen Arbeit: Welche Herausforderungen gab es und wie wurden diese gelöst?| 2 Punkte        |
 
-**Praktische Leistung (20%)**
+**Praktische Leistung (6 Punkte)**
 
 | **Kriterium**           | **Bewertungsschlüssel** | **Max. Punkte** |
 |-------------------------|---|---|
-| **Engagement**           | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                          | 10 Punkte |
-| **Qualität der Arbeit** | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 10 Punkte |
+| **Engagement**           | Hat das Teammitglied seine Aufgabe zuverlässig und mit vollem Einsatz erfüllt?                          | 3 Punkte |
+| **Qualität der Arbeit** | Wurde die Aufgabe erfolgreich und mit einem guten Ergebnis umgesetzt (z. B. Technik, Moderation, Design)? | 3 Punkte |
 
-**Gesamt: 50 Punkte**
+**Gesamt: 12 Punkte**

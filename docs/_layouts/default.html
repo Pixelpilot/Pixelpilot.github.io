@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
 
     {% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -73,9 +71,78 @@
 
 
 </main>
-<script type="module">
-  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-  mermaid.initialize({ startOnLoad: true });
+<script src="{{ '/assets/js/vendor/mermaid-10.min.js' | relative_url }}"></script>
+<script>
+    mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        themeVariables: {
+            fontFamily: '"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+            fontSize: '14px',
+            background: '#f3f6fb',
+            primaryColor: '#ffffff',
+            primaryTextColor: '#182433',
+            primaryBorderColor: '#bfc9d9',
+            lineColor: '#4a5d7a',
+            secondaryColor: '#e5ecf5',
+            secondaryTextColor: '#223248',
+            secondaryBorderColor: '#bcc8da',
+            tertiaryColor: '#dbeafe',
+            tertiaryTextColor: '#173b67',
+            tertiaryBorderColor: '#9fc3f6',
+            mainBkg: '#ffffff',
+            secondBkg: '#e5ecf5',
+            tertiaryBkg: '#dbeafe',
+            clusterBkg: '#e9eff7',
+            clusterBorder: '#b9c6d8',
+            edgeLabelBackground: '#f8fbff',
+            nodeTextColor: '#182433',
+            defaultLinkColor: '#206bc4',
+            titleColor: '#182433',
+            actorBorder: '#bcc8da',
+            actorBkg: '#ffffff',
+            actorTextColor: '#182433',
+            labelBoxBkgColor: '#ffffff',
+            labelBoxBorderColor: '#bfc9d9',
+            labelTextColor: '#182433',
+            noteBkgColor: '#fff7db',
+            noteBorderColor: '#e5cd80',
+            noteTextColor: '#4f3f14',
+            activationBorderColor: '#9fc3f6',
+            activationBkgColor: '#dbeafe',
+            sequenceNumberColor: '#ffffff'
+        }
+    });
+</script>
+<script src="{{ '/assets/js/vendor/plotly-3.4.0.min.js' | relative_url }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const configs = document.querySelectorAll('script[type="application/json"][data-plotly], script[type="application/json"][data-plotly-target]');
+
+        configs.forEach((configScript, index) => {
+            const targetId = configScript.dataset.plotlyTarget;
+            let targetElement = targetId ? document.getElementById(targetId) : null;
+
+            if (!targetElement) {
+                targetElement = document.createElement('div');
+                targetElement.id = targetId || `plotly-auto-${index + 1}`;
+                targetElement.style.width = '100%';
+                targetElement.style.maxWidth = configScript.dataset.plotlyMaxWidth || '820px';
+                targetElement.style.height = configScript.dataset.plotlyHeight || '420px';
+                configScript.parentNode.insertBefore(targetElement, configScript);
+            }
+
+            try {
+                const chart = JSON.parse(configScript.textContent);
+                const data = chart.data || [];
+                const layout = chart.layout || {};
+                const config = chart.config || { responsive: true };
+                Plotly.newPlot(targetElement, data, layout, config);
+            } catch (error) {
+                console.error('Ungültige Plotly-JSON-Konfiguration für', targetElement.id, error);
+            }
+        });
+    });
 </script>
 </body>
 </html>
