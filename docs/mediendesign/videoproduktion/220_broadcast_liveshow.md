@@ -14,7 +14,11 @@ sitemap_exclude: n
 
 # Live-Show Produktion mit Streaming und Greenscreen
 
+## Aufgabenstellung
+
 Es soll eine 15-minütige Live-Show produziert werden, die per Livestream gesendet wird. Dabei soll ein Greenscreen verwendet werden, um kreative Hintergründe einzubinden. Ton und Bild sollten professionell integriert werden.
+
+Ein Teil der Aufgabenstellung ist die **Live-Übertragung auf YouTube** (z. B. als "nicht gelistet").
 
 Ziel ist es, eine spannende und unterhaltsame Show zu produzieren, bei der jedes Team-Mitglied eine andere Funktion einnimmt.
 
@@ -61,6 +65,7 @@ Zur professionellen Sendungsoptik sollen ausserdem grafische Elemente eingeplant
 >  - Grafikkonzept definieren (Inserts/Bauchbinden, Trenner, Titelkarten, Opener/Closer)
 >  - Aufgabenverteilung und erste technische Tests
 >  - Erstellung eines Drehplans
+>  - YouTube-Setup planen (Kanal, Titel/Beschreibung, Thumbnail, Sichtbarkeit, Stream-Key)
 
 > ### Termin 2: Setup und Prototyping
 > {: .assignment }
@@ -69,6 +74,7 @@ Zur professionellen Sendungsoptik sollen ausserdem grafische Elemente eingeplant
 >  - Erste Proben mit der Moderation
 >  - Vorproduktion der geplanten Video-Inhalte (Dreh, Schnitt, Export in passendem Format)
 >  - Erstellung eines ersten Grafikpakets für die Liveshow
+>  - Encoder-Setup fuer YouTube testen (z. B. OBS/ATEM, Aufloesung, Bitrate, Audio)
 
 > ### Termin 3: Probeaufnahme
 > {: .assignment }
@@ -77,6 +83,7 @@ Zur professionellen Sendungsoptik sollen ausserdem grafische Elemente eingeplant
 >  - Einbindung der vorproduzierten Clips in den Showablauf (Regie-Cues, Timing Übergänge)
 >  - Test der Grafiken in der Livesituation (Lesbarkeit von Bauchbinden/Inserts, Timing)
 >  - Korrekturen und Verbesserungen
+>  - YouTube-Probestream durchführen (Ton-/Bild-Sync, Stabilitaet, Chat-Moderation)
 
 > ### Termin 4: Generalprobe + Liveshow
 > {: .assignment }
@@ -84,6 +91,7 @@ Zur professionellen Sendungsoptik sollen ausserdem grafische Elemente eingeplant
 >	- Letzte Anpassungen am Ablauf und an der Technik
 >	- Sicherstellen, dass alle Inhalte bereit sind
 >	- Finale Prüfung aller Einspieler und Grafiken (Dateinamen, Reihenfolge, Trigger)
+> 	- Finale Prüfung der YouTube-Liveeinstellungen (Stream-Status, Latenz, Backup-Plan)
 > - Durchführung und Livestream der Show
 > - Nachbereitung: Feedback-Runde und Reflektion
 
@@ -99,10 +107,12 @@ Die angebenen Aufgaben und die Anzahl der Personen sind stark von der Art der Li
 - Erstellung eines Drehplans und Zeitplans
 - Überwachung der Einhaltung des Projektziels
 - Kommunikation mit allen Teammitgliedern
+- Abstimmung von YouTube-Release, Titel, Beschreibung und Verantwortlichkeiten waehrend des Streams
 
 **Aufgaben Redaktion**
 - Recherche und Vorbereitung der Inhalte der Show (z. B. Themen, Interviews, Videos)
 - Erstellung eines redaktionellen Skripts für den Ablauf der Show
+- Vorbereitung von YouTube-Metadaten (Titel, Beschreibung, Kapitel, Quellen/Credits)
 
 ### 2. Moderation
 *1-2 Personen*
@@ -120,6 +130,7 @@ Die angebenen Aufgaben und die Anzahl der Personen sind stark von der Art der Li
 - Steuerung der Kameras und Szenen während des Livestreams
 - Abstimmung mit der Projektleitung und anderen technischen Verantwortlichen
 - Überwachung Live-Stream
+- Überwachung des YouTube-Stream-Health (Drop Frames, Audiopegel, Verbindungsstatus)
 
 ### 4. Kamerapersonen
 *2-3 Personen*
@@ -151,6 +162,7 @@ Die angebenen Aufgaben und die Anzahl der Personen sind stark von der Art der Li
 - Einrichtung der Mikrofone und des Audio-Equipments
 - Sicherstellung einer guten Tonqualität während der Show
 - Live-Mischung der Tonspuren (z. B. Hintergrundmusik, Moderationen)
+- Kontrolle der YouTube-Audioausgabe (Pegel, Verständlichkeit, kein Clipping)
 
 ### 7. Licht- und Set-Design
 *1 Person*
@@ -162,8 +174,10 @@ Die angebenen Aufgaben und die Anzahl der Personen sind stark von der Art der Li
 
 ## Abgabe
 
-### 1. Videodatei
+### 1. Videodatei und YouTube Link
 Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abzugeben.
+
+Zusaetzlich ist der **YouTube-Livestream** verpflichtend durchzufuehren.
 
 > **Technische Vorgaben für die Abgabe:**
 > - Auflösung: mindestens **HD (1280 x 720)**, empfohlen **Full HD (1920 x 1080)**
@@ -171,6 +185,7 @@ Die Live-Show ist in Form einer Videodatei aufzuzeichnen und abzugeben.
 > - Video-Codec: **H.264 (AVC)**
 > - Audio: **AAC**, 48 kHz, Stereo
 > - Maximale Dateigroesse: **512 MB**
+> - YouTube-Link: Sichtbarkeit "nicht gelistet"
 
 ### 2. Protokoll
 
