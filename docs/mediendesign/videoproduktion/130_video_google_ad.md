@@ -428,21 +428,23 @@ Die Bewertung erfolgt auf `100 Punkten` und kombiniert Teamleistung mit individu
 
 Für die finale Abgabe sollten alle Zwischenstände nachvollziehbar und die Endversionen sofort auffindbar sein.
 
-**Empfohlene Struktur:**
+**Vorgegebene Struktur:**
 
 ```text
-GoogleAd_Projektname_TeamXY/
+GoogleAd_Projektname_Nachname_Nachname/
 ├── 01_Dokumentation/
-│   ├── projektauftrag.md
-│   ├── storyboard.pdf
-│   ├── shotlist.pdf
-│   └── exportprotokoll.md
+│   ├── 00-protokoll.pdf (Allgemeine Informationen zum Aublauf, Ideem Aufgabenverteilung, Zeiterfassung, Conclusion)
+│   ├── 01-drehbuch.pdf 
+│   ├── 02-storyboard.pdf
+│   ├── 03-shotlist.pdf
+│   └── 04-exportprotokoll.pdf (Einstellungen wie Bitrate, Framerate, Abmessungen, Komprimierung, ...)
 ├── 02_Projektdateien/
 │   ├── davinci_resolve/
-│	│	├── animatic_V01.drp
-│	│	├── roughcut_V01.drp
-│	│	├── finecut_V01.drp
-│	│	├── graded_V01.drp
+│	│	├── 01-animatic_V01.drp
+│	│	├── 02-roughcut_V01.drp
+│	│	├── 03-finecut_V01.drp
+│	│	├── 04-graded_V01.drp
+│	│	└── 05-final.drp
 │   └── footage/
 │   │   ├── video/
 │   │   ├── audio/
@@ -458,6 +460,14 @@ GoogleAd_Projektname_TeamXY/
 	├── GoogleAd_9x16_V01.mp4
 	└── GoogleAd_16x9_V02.mp4
 ```
+
+### Anmerkungen
+**01_Dokumentation**<br>
+Es können auch alle Dokumente in einer großen PDF Datei zusammengefasst werden.
+
+**02_Projektdateien**<br>
+In der Projektdateien kann auch alles in einem Davinci Resolve Projektfile sein, wenn alle Schritte über eigene Timelines abgebildet werden.
+
 
 **Dateibenennung (einheitlich):**
 
