@@ -153,6 +153,12 @@ Ebenso wichtig sind konsistente Dateinamen, z. B.:
 
 `Projekt_Format_Version.ext` (z. B. `GoogleAd_16x9_V01.mp4`)
 
+Empfohlene Benennung je Bereich:
+
+- Dokumentation: `NN-bezeichnung.pdf` (z. B. `01-drehbuch.pdf`, `03-shotlist.pdf`)
+- Resolve-Projektdateien: `NN-schritt_Version.drp` (z. B. `02-roughcut_V01.drp`)
+- Exporte: `Projekt_Format_Version.ext` (z. B. `GoogleAd_16x9_V01.mp4`)
+
 ### 6. Rough Cut
 
 Im Rohschnitt geht es ausschließlich um Story und Struktur:
@@ -241,7 +247,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > Output:
 > 
 > - PDF mit Tabelle `Visual | Audio`
-> - Protokolleintrag als Markdown-Dokument
+> - Eintrag im `00-protokoll.pdf` (Idee, Rollen, zentrale Entscheidungen)
 
 > ### 2. Storyboard erstellen
 > {: .assignment }
@@ -256,7 +262,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > Output:
 > 
 > - Storyboard als PDF
-> - Protokolleintrag als Markdown-Dokument
+> - Eintrag im `00-protokoll.pdf` (Keyframes, Perspektiven, Begründungen)
 
 > ### 3. Prototyp (Animatic) erstellen
 > {: .assignment }
@@ -272,7 +278,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > Output:
 > 
 > - Grobe `.mp4`-Datei als Funktionsnachweis
-> - Protokolleintrag als Markdown-Dokument
+> - Eintrag im `00-protokoll.pdf` (Timing-Check, Learnings, Anpassungen)
 
 > ### 4. Drehplanung vorbereiten
 > {: .assignment }
@@ -286,8 +292,8 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > Output:
 > 
 > - Shotlist als PDF
-> - Callsheet als PDF
-> - Portfolio-/Protokolleintrag als Markdown-Dokument
+> - Callsheet als Abschnitt im `00-protokoll.pdf` (kein separates PDF notwendig)
+> - Eintrag im `00-protokoll.pdf` zur Drehplanung
 
 > ### 5. Dreh durchführen
 > {: .assignment }
@@ -304,7 +310,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > 
 > - Rohmaterial strukturiert in `02_Projektdateien/footage`
 > - Backup auf Server oder Datenträger
-> - Portfolioeintrag mit Set-Fotos und kurzem Fazit
+> - Eintrag im `00-protokoll.pdf` mit Set-Fotos und kurzem Fazit
 
 > ### 6. Rough Cut erstellen
 > {: .assignment }
@@ -319,7 +325,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > Output:
 > 
 > - Rohschnitt als `.mp4`
-> - Protokolleintrag als Markdown-Dokument
+> - Eintrag im `00-protokoll.pdf` (Storylogik, Überlängen, nächste Schritte)
 
  
 > ### 7. Sounddesign erstellen
@@ -370,7 +376,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > 
 > - Final gegradete Version als `.mp4`
 > - Ausgabe in den benötigten Formaten oder im Hauptformat
-> - Protokolleintrag als Markdown-Dokument
+> - Eintrag im `00-protokoll.pdf` (Look-Entscheidung und Grading-Ansatz)
 
 > ### 10. Export finalisieren
 > {: .assignment }
@@ -386,7 +392,7 @@ Bearbeite die folgenden Aufgaben in der Reihenfolge des Projektworkflows.
 > Output:
 > 
 > - Finale Exportdateien in `04_Export`
-> - Protokolleintrag mit Export-Settings und Begründung
+> - `04-exportprotokoll.pdf` mit Export-Settings und Begründung
 
 ## Beurteilungsschema
 
@@ -433,54 +439,43 @@ Für die finale Abgabe sollten alle Zwischenstände nachvollziehbar und die Endv
 ```text
 GoogleAd_Projektname_Nachname_Nachname/
 ├── 01_Dokumentation/
-│   ├── 00-protokoll.pdf (Allgemeine Informationen zum Aublauf, Ideem Aufgabenverteilung, Zeiterfassung, Conclusion)
+│   ├── 00-protokoll.pdf (Allgemeine Informationen zum Ablauf, Idee, Aufgabenverteilung, Zeiterfassung, Reflexion)
 │   ├── 01-drehbuch.pdf 
 │   ├── 02-storyboard.pdf
 │   ├── 03-shotlist.pdf
 │   └── 04-exportprotokoll.pdf (Einstellungen wie Bitrate, Framerate, Abmessungen, Komprimierung, ...)
 ├── 02_Projektdateien/
 │   ├── davinci_resolve/
-│	│	├── 01-animatic_V01.drp
-│	│	├── 02-roughcut_V01.drp
-│	│	├── 03-finecut_V01.drp
-│	│	├── 04-graded_V01.drp
-│	│	└── 05-final.drp
+│   │   ├── 01-animatic_V01.drp
+│   │   ├── 02-roughcut_V01.drp
+│   │   ├── 03-finecut_V01.drp
+│   │   ├── 04-graded_V01.drp
+│   │   └── 05-final.drp
 │   └── footage/
-│   │   ├── video/
-│   │   ├── audio/
-│   │   └── graphics/
+│       ├── video/
+│       ├── audio/
+│       └── graphics/
 ├── 03 Preview/
 │   ├── animatic_V01.mp4
 │   ├── roughcut_V01.mp4
+│   ├── roughmix_V01.mp4
 │   ├── finecut_V01.mp4
 │   └── graded_V01.mp4
 └── 04_Export/
-	├── GoogleAd_16x9_V01.mp4
-	├── GoogleAd_1x1_V01.mp4
-	├── GoogleAd_9x16_V01.mp4
-	└── GoogleAd_16x9_V02.mp4
+    ├── GoogleAd_16x9_V01.mp4
+    ├── GoogleAd_1x1_V01.mp4
+    ├── GoogleAd_9x16_V01.mp4
+    └── GoogleAd_16x9_V02.mp4
 ```
 
 ### Anmerkungen
 **01_Dokumentation**<br>
-Es können auch alle Dokumente in einer großen PDF Datei zusammengefasst werden.
+Es können auch alle Dokumente in einer großen PDF-Datei zusammengefasst werden.
+Das Callsheet wird dabei als eigener Abschnitt im `00-protokoll.pdf` geführt.
 
 **02_Projektdateien**<br>
-In der Projektdateien kann auch alles in einem Davinci Resolve Projektfile sein, wenn alle Schritte über eigene Timelines abgebildet werden.
+In den Projektdateien kann auch alles in einem Davinci-Resolve-Projektfile sein, wenn alle Schritte über eigene Timelines abgebildet werden.
 
-
-**Dateibenennung (einheitlich):**
-
-- Format: `Projekt_Format_Version.ext`
-- Beispiel: `GoogleAd_16x9_V01.mp4`
-- Versionen immer zweistellig hochzählen: `V01`, `V02`, `V03` ...
-
-**Abgabe-Check (kurz):**
-
-- Alle drei Formate vorhanden (`16:9`, `1:1`, `9:16`)
-- Exportdateien laufen fehlerfrei (Bild, Ton, Länge, Rechtschreibung)
-- Protokoll mit Settings (Codec, Auflösung, Framerate, Bitrate) ist enthalten
-- Nur finale Dateien in `04_Export`, keine Dubletten ohne Versionsnummer
 
 ## Ressourcen
 
