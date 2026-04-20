@@ -13,9 +13,6 @@ sitemap_exclude: n
 
 # {{ page.title }}
 
-
-
-
 ## Aufgabenstellung
 
 In dieser Aufgabe geht es darum, ein einfaches Hierarchiesystem für ein Unternehmen zu erstellen. In einem Unternehmen gibt es verschiedene Arten von Angestellten: Manager, Entwickler und Praktikanten. Jeder Angestellte hat einen Namen, eine Personalnummer und ein Gehalt. Zudem haben Manager eine Bonuszahlung, und Entwickler haben eine Programmiersprache, in der sie spezialisiert sind.
