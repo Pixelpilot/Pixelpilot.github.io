@@ -3,7 +3,7 @@ title: Strings und Arrays
 description: Übungsaufgaben zur Vorbereitung auf die sRDP
 
 category: Fachspezifische Softwaretechnik
-topic: Algorithmen und Datenstrukturen
+topic: Vorbereitung sRDP
 subtopic: Divers
 
 layout: default
