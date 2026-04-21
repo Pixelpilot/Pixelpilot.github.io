@@ -45,12 +45,7 @@ Beim Mischen von Schriften gilt oft die Regel „Harmonie durch Kontrast“.
 > {: .assignment }
 > 
 > Analysiere die folgenden Schriften unter Verwendung der gelernten Fachbegriffe (Strichstärke, Serifenform, Schattenachse, Linienverhältnisse):
-> * **1.** Bodoni Std Book (Klassizistische Antiqua)
-> * **2.** ITC Garamond Std (Französische Renaissance-Antiqua)
-> * **3.** Optima LT Std Medium (Serifenlose Antiqua / Semi-Serif)
-> * **4.** Helvetica LT Std Roman (Grotesk)
-> * **5.** Futura Medium (Geometrische Grotesk)
-> * **6.** Courier (Monospace / Dicktengleich)
+> ![Schriftanalyse](img/schriftanalyse.jpg)
 
 > ### Aufgabe 2: Differenzierung der Schriftlinien
 > {: .assignment }

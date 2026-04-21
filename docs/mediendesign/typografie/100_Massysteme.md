@@ -78,14 +78,12 @@ Moderne Browser erlauben mathematische Berechnungen direkt im Stylesheet, um "fl
 > 
 > Ein HD-Monitor wird mit einer Diagonale von 21 Zoll angegeben. 
 > * **a)** Berechne die Diagonale in cm.
-> * **b)** Berechne die Breite und die Höhe des Bildschirms, wenn die Seitenverhältnisse 16:9 betragen
+> * **b)** Berechne die Breite und die Höhe des Bildschirms, wenn das Seitenverhältnis 16:9 beträgt.
 > * **a)** Berechne die Auflösung des Geräts.
-
-> Gib auf die Breite und
 
 > ### Aufgabe 3: Satzspiegel-Konvertierung
 > {: .assignment }
-> Ein historisches Dokument hat einen Satzspiegel von 20c x 30c (Cicero). Berechne diese Maße in modernen DTP-Punkten > (pt).
+> Ein historisches Dokument hat einen Satzspiegel von 20c x 30c (Cicero). Berechne diese Maße in modernen DTP-Punkten (`pt`).
 
 
 
