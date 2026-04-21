@@ -76,7 +76,12 @@ Moderne Browser erlauben mathematische Berechnungen direkt im Stylesheet, um "fl
 > ### Aufgabe 2: Bildschirmdiagonale
 > {: .assignment }
 > 
-> Ein Monitor wird mit einer Diagonale von 21 Zoll angegeben. Berechne die Diagonale in cm.
+> Ein HD-Monitor wird mit einer Diagonale von 21 Zoll angegeben. 
+> * **a)** Berechne die Diagonale in cm.
+> * **b)** Berechne die Breite und die Höhe des Bildschirms, wenn die Seitenverhältnisse 16:9 betragen
+> * **a)** Berechne die Auflösung des Geräts.
+
+> Gib auf die Breite und
 
 > ### Aufgabe 3: Satzspiegel-Konvertierung
 > {: .assignment }
