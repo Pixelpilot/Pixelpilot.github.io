@@ -39,50 +39,45 @@ Beim Mischen von Schriften gilt oft die Regel „Harmonie durch Kontrast“.
 * **Größenkontrast:** Klare Differenzierung zwischen Überschriften und Fließtext.
 
 
-## Teil 1: Analyse & Beschreibung
+## Aufgabenstellungen
 
 > ### Aufgabe 1: Systematische Schriftanalyse
 > {: .assignment }
 > 
-> Analysiere die folgenden Schriften unter Verwendung der gelernten Fachbegriffe (Strichstärke, Serifenform, Schattenachse, Linienverhältnisse):
+> Wähle aus den untenstehenden Schriften drei aus und sie unter Verwendung der gelernten Fachbegriffe (Strichstärke, Serifenform, Schattenachse, Linienverhältnisse):
 > ![Schriftanalyse](img/schriftanalyse.jpg)
 
-> ### Aufgabe 2: Differenzierung der Schriftlinien
-> {: .assignment }
-> 
-> Erkläre anhand der oben genannten Schriften den Unterschied zwischen **Versallinie** und **Oberlänge**. Suche bei Schriften wie *Garamond* oder *Futura* nach Buchstaben wie „b“ oder „h“ und vergleiche sie optisch mit den Großbuchstaben.
-
-## Teil 2: Konstruktion & Mischung
-
-> ### Aufgabe 3: Konstruktions-Skizze
-> {: .assignment }
-> 
-> Skizziere deinen Vor- und Nachnamen zweizeilig in einer simulierten **48pt Futura** mit **120% Zeilenabstand**.
-> Trage folgende Größen in die Skizze ein:
-> * Versalhöhe, x-Höhe, Grundlinie
-> * Oberlänge, Unterlänge
-> * Zeilenabstand, Durchschuss, Schriftgröße (Kegelhöhe)
-
-> ### Aufgabe 4: Schriftenmischung (Kontrast-Prinzip)
-> {: .assignment }
-> 
-> Wähle aus den Schriften der Aufgabe 1 zwei Paare aus, die gut harmonieren. Begründe deine Wahl anhand der Kontrast-Prinzipien (z. B. Serife vs. Grotesk). Warum funktioniert diese Kombination gestalterisch?
-
-
-## Teil 3: Anwendung & Digitale Tools
-
-> ### Aufgabe 5: Funktion und Lesetypografie
-> {: .assignment }
-> 
-> Schriften erfüllen unterschiedliche Funktionen. Welche der analysierten Schriften würdest du für folgende Projekte wählen und warum?
-> * **Projekt A:** Über 300 Seiten Fließtext für ein gedrucktes Fachbuch.
-> * **Projekt B:** Ein digitales Leitsystem (Signaletik) auf Flughafen-Monitoren.
-> * **Projekt C:** Eine markante Headline in einem Luxus-Modemagazin.
-
-> ### Aufgabe 6: Digitale Analyse
+> ### Aufgabe 2: Digitale Analyse
 > {: .assignment }
 > 
 > Untersuche eine moderne Website (z. B. Apple oder Airbnb) mit Browser-Tools (Inspect Element / WhatFont):
 > * Welche Schriftfamilien werden verwendet?
 > * Wie ist das Verhältnis von `font-size` zu `line-height` im Fließtext?
 > * Handelt es sich um einen **Variable Font** (Suche nach `font-variation-settings`)?
+
+> ### Aufgabe 3: Konstruktions-Skizze
+> {: .assignment }
+> ![alt text](img/futura_skizze.png)
+> Skizziere deinen Vor- und Nachnamen zweizeilig in einer simulierten **48pt Futura** mit **120% Zeilenabstand**.
+> Trage folgende Größen in die Skizze ein:
+> * Versalhöhe, x-Höhe, Grundlinie
+> * Oberlänge, Unterlänge
+> * Zeilenabstand, Durchschuss, Schriftgröße (Kegelhöhe)
+>
+> Beantworte die Fragen und halte die Recherche mit Screenshots und Interpretation schriftlich fest.
+
+> ### Aufgabe 4: Schriftenmischung (Kontrast-Prinzip)
+> {: .assignment }
+> 
+> Die Wahl der richtigen Schrift will wohl überlegt sein. Viele Faktoren wie die Zielgruppe oder die Anforderungen, die sich aus der Art des Mediums ergeben, müssen berücksichtigt werden.
+>
+> Folgende Anforderungen an eine Schrift sind gegeben:
+>
+> 1. Um jeden Preis auffallen
+> 2. Seriosität vermitteln
+> 3. Wenig Platz brauchen
+> 4. In einem Kinderbuch verwenden
+> 5. Auch unter schlechten Bedingungen lesbar
+>
+> Erstelle ein Indesign Dokument. Lege für jede der Anforderungen einen Blindtext in der Schriftgröße 12 Punkt an, der über mindestens 5 Zeilen geht. Finde eine jeweils passende Schrift, und schreibe am Ende den Name der verwendeten Schrift dazu. Diskutiere die Schriftwahl mit einem Partner oder einer Partnerin.
+
