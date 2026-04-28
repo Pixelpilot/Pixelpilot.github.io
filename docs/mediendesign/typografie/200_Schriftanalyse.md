@@ -69,9 +69,9 @@ Beim Mischen von Schriften gilt oft die Regel „Harmonie durch Kontrast“.
 > ### Aufgabe 4: Schriftenmischung (Kontrast-Prinzip)
 > {: .assignment }
 > 
-> Die Wahl der richtigen Schrift will wohl überlegt sein. Viele Faktoren wie die Zielgruppe oder die Anforderungen, die sich aus der Art des Mediums ergeben, müssen berücksichtigt werden.
+> Die Wahl der richtigen Schrift will wohl überlegt sein. Viele Faktoren wie die Zielgruppe oder die Anforderungen, die sich aus der Art des Mediums ergeben, müssen berücksichtigt werden. Unabhängig davon muss eine Schrift vor allem funktionieren.
 >
-> Folgende Anforderungen an eine Schrift sind gegeben:
+> Folgende Anforderungen zur Funktionialität an eine Schrift sind gegeben:
 >
 > 1. Um jeden Preis auffallen
 > 2. Seriosität vermitteln
