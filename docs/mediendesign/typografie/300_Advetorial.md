@@ -1,6 +1,6 @@
 ---
 title: Aufgabe 3 – Advertorial & Rastergestaltung
-description: Gestaltung eines Advertorials unter Anwendung komplexer Rastersysteme
+description: Gestaltung eines Advertorials unter Anwendung eines Rastersysteme
 layout: default
 category: Mediendesign
 topic: Typografie
@@ -15,12 +15,10 @@ sitemap_exclude: n
 In dieser Aufgabe verlassen wir die Ebene der reinen Zeichensetzung und widmen uns dem Layout (Makrotypografie). Ziel ist die Erstellung eines **Advertorials** – einer Werbeanzeige, die optisch wie ein redaktioneller Beitrag gestaltet ist.
 
 ### 1. Das Rastersystem (Grid System)
-Ein Rastersystem ist das unsichtbare Gerüst einer Seite. Es hilft, Texte, Bilder und Grafiken geordnet und professionell zu positionieren. 
+Ein Rastersystem ist das unsichtbare Gerüst einer Seite. Es hilft, Texte, Bilder und Grafiken geordnet und professionell zu positionieren.
 
 * **Spaltenraster:** Teilt die Seite vertikal auf. Gängig sind 3-Spalten-Raster für Zeitschriften oder 12-Spalten-Raster für flexibles Webdesign.
 * **Modulares Raster:** Fügt horizontale Linien hinzu, um „Zellen“ zu erstellen, was eine noch präzisere Anordnung von Bildern und Infoboxen ermöglicht.
-
-
 
 ### 2. Gestaltungselemente im Advertorial
 Ein Advertorial nutzt typische redaktionelle Elemente, um Glaubwürdigkeit und Lesefluss zu erzeugen:
@@ -33,8 +31,7 @@ Ein Advertorial nutzt typische redaktionelle Elemente, um Glaubwürdigkeit und L
 ### 3. Mikrotypografische Präzision
 Auch in komplexen Layouts müssen die Satzregeln für Zahlen, Einheiten, Datumsangaben und Zeichensetzung (Anführungszeichen, Gedankenstriche) zwingend eingehalten werden, um die professionelle Anmutung zu wahren.
 
-
-## Die Aufgabe: „Tauchparadies Malta“
+## Aufgabe: „Tauchparadies Malta“
 
 Basierend auf dem bereitgestellten Text über Tauchurlaube auf Malta soll ein professionelles, einseitiges Advertorial (DIN A4) erstellt werden.
 
@@ -55,25 +52,44 @@ Basierend auf dem bereitgestellten Text über Tauchurlaube auf Malta soll ein pr
 > * Wähle ein **Key-Visual** (Hauptbild) und mindestens zwei unterstützende Detailbilder aus.
 > * Achte auf die Bildrechte und eine ausreichende Auflösung (300 dpi) für den Druck.
 
-> ### Aufgabe 3: Layout Version A (Klassisch Redaktionell)
+> ### Aufgabe 3: Advertorial (Klassisch Redaktionell)
 > {: .assignment }
 > 
-> Erstelle ein Layout basierend auf einem **3-Spalten-Raster**.
+> Erstelle ein Layout für eine Zeitung basierend auf einem **3-Spalten-Raster**.
 > * Setze den Fließtext in einen klassischen **Blocksatz** mit aktivierter Silbentrennung.
 > * Integriere die Informationen der „Professional Dive Schools Association“ als separate **Infobox**.
 > * Platziere die Kontakt- und Kontodaten in einem dezenten **Serviceblock** am Ende der Seite.
 
-> ### Aufgabe 4: Layout Version B (Modern & Dynamisch)
+> ### Aufgabe 4: Advertorial (Klassisch Redaktionell)
 > {: .assignment }
 > 
-> Erstelle eine zweite Version basierend auf einem **12-Spalten-Raster** oder einem **modularen Raster**.
+> Erstelle eine zweite Version basierend auf einem 12-Spalten-Raster oder einem modularen Raster.
+> 
 > * Experimentiere mit asymmetrischen Anordnungen: Bilder können über mehrere Spalten ragen oder den Rand anschnittgefährdet berühren.
-> * Verwende für den Lead-Text einen **Flattersatz**.
-> * Hebe die Kontaktbox optisch stärker hervor (z. B. durch eine Hintergrundfarbe, Linien oder eine andere Typografie).
+> * Verwende für den Lead-Text einen Flattersatz.
+> * Hebe die Kontaktbox optisch stärker hervor (z. B. durch eine Hintergrundfarbe, Linien oder eine > andere Typografie).
 
-> ### Aufgabe 5: Export & Reflexion
+
+
+> ### Aufgabe 5: Falzflyer  (Modern & Dynamisch)
 > {: .assignment }
 > 
-> Exportiere beide Versionen als druckfähige PDFs (inkl. Beschnittzugabe).
-> * Vergleiche beide Entwürfe: Welches Rastersystem unterstützt die Leserführung im konkreten Fall besser?
-> * Prüfe in der Endkontrolle: Sind unerwünschte Umbruchfehler wie Hurenkinder oder Schusterjungen entstanden?
+> Erstelle ein Layout für einen Flyer im DIN Lang Format. Hier sind der Kreativität keine Grenzen gesetzt. Erweitere den Text gegebenfalls und überlege, welche Inhalt auf welcher Seite am meisten Sinn machen.
+>
+> Vorgaben:
+> |Falzflyer| Hochformat, DIN lang| 
+> |---|---|
+> |Datenformat (inkl. 2 mm Beschnitt)| 30,1 x 21,4 cm|
+> |Endformat (geschlossen)| 10 x 21 cm|
+> |Endformat| 29,7 x 21 cm|
+> |Seitenanzahl|6-seitig|
+> |Falzung|2-Bruch Wickelfalz|
+> |Auflösung| 300dpi |
+> |Farbmodus| CMYK, FOGRA51 (PSO Coated v3) für gestrichene Papiere | 
+
+
+![](img/falzflyer_rueckseite.png)
+<sup>Falzflyer Vorderseite, onlineprinters.at</sup>
+
+![](img/falzflyer_vorderseite.png)
+<sup>Falzflyer Rückseite, onlineprinters.at</sup>
