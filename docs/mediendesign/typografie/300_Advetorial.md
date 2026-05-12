@@ -77,16 +77,15 @@ Basierend auf dem bereitgestellten Text über Tauchurlaube auf Malta soll ein pr
 > Erstelle ein Layout für einen Flyer im DIN Lang Format. Hier sind der Kreativität keine Grenzen gesetzt. Erweitere den Text gegebenfalls und überlege, welche Inhalt auf welcher Seite am meisten Sinn machen.
 >
 > Vorgaben:
-> |Falzflyer| Hochformat, DIN lang| 
-> |---|---|
-> |Datenformat (inkl. 2 mm Beschnitt)| 30,1 x 21,4 cm|
-> |Endformat (geschlossen)| 10 x 21 cm|
-> |Endformat| 29,7 x 21 cm|
-> |Seitenanzahl|6-seitig|
-> |Falzung|2-Bruch Wickelfalz|
-> |Auflösung| 300dpi |
-> |Farbmodus| CMYK, FOGRA51 (PSO Coated v3) für gestrichene Papiere | 
-
+> | Falzflyer | Hochformat, DIN lang |
+> | --- | --- |
+> | Datenformat (inkl. 2 mm Beschnitt) | 30,1 x 21,4 cm |
+> | Endformat (geschlossen) | 10 x 21 cm |
+> | Endformat | 29,7 x 21 cm |
+> | Seitenanzahl | 6-seitig |
+> | Falzung | 2-Bruch Wickelfalz |
+> | Auflösung | 300dpi |
+> | Farbmodus | CMYK, FOGRA51 (PSO Coated v3) für gestrichene Papiere |
 
 ![](img/falzflyer_rueckseite.png)
 <sup>Falzflyer Vorderseite, onlineprinters.at</sup>
