@@ -52,6 +52,7 @@ Basierend auf dem bereitgestellten Text über Tauchurlaube auf Malta soll ein pr
 > * Wähle ein **Key-Visual** (Hauptbild) und mindestens zwei unterstützende Detailbilder aus.
 > * Achte auf die Bildrechte und eine ausreichende Auflösung (300 dpi) für den Druck.
 
+
 > ### Aufgabe 3: Advertorial (Klassisch Redaktionell für Zeitung)
 > {: .assignment }
 > 
