@@ -52,33 +52,37 @@ Basierend auf dem bereitgestellten Text über Tauchurlaube auf Malta soll ein pr
 > * Wähle ein **Key-Visual** (Hauptbild) und mindestens zwei unterstützende Detailbilder aus.
 > * Achte auf die Bildrechte und eine ausreichende Auflösung (300 dpi) für den Druck.
 
-> ### Aufgabe 3: Advertorial (Klassisch Redaktionell)
+> ### Aufgabe 3: Advertorial (Klassisch Redaktionell für Zeitung)
 > {: .assignment }
 > 
 > Erstelle ein Layout für eine Zeitung basierend auf einem **3-Spalten-Raster**.
 > * Setze den Fließtext in einen klassischen **Blocksatz** mit aktivierter Silbentrennung.
 > * Integriere die Informationen der „Professional Dive Schools Association“ als separate **Infobox**.
-> * Platziere die Kontakt- und Kontodaten in einem dezenten **Serviceblock** am Ende der Seite.
+> * Platziere die Kontakt- und Kontodaten in einem dezenten **Serviceblock** am Ende der Seite / in der dritten Spalte.
+>
+>![alt text](./img/advertorial_3.png)<br>
+><sup>*Beispielhaftes 3-spaltiges Advertorial, https://www.pronline.de/advertorials*</sup>
 
-> ### Aufgabe 4: Advertorial (Klassisch Redaktionell)
+> ### Aufgabe 4: Advertorial (Klassisch Redaktionell für Zeitschrift)
 > {: .assignment }
 > 
-> Erstelle eine zweite Version basierend auf einem 12-Spalten-Raster oder einem modularen Raster.
+> Erstelle eine zweite Version basierend auf einem 12-Spalten-Raster für ein Magazin. Für die Gestaltung steht eine gesamte Doppelseite zur Verfügung. 
 > 
 > * Experimentiere mit asymmetrischen Anordnungen: Bilder können über mehrere Spalten ragen oder den Rand anschnittgefährdet berühren.
 > * Verwende für den Lead-Text einen Flattersatz.
-> * Hebe die Kontaktbox optisch stärker hervor (z. B. durch eine Hintergrundfarbe, Linien oder eine > andere Typografie).
-
-
+> * Hebe die Kontaktbox optisch stärker hervor (z. B. durch eine Hintergrundfarbe, Linien oder eine andere Typografie).
+>
+>![alt text](./img/advertorial_magazine.png)<br>
+><sup>*Beispielhaftes Advertorial in einem Magazin, https://coalcoastmagazine.com/store/coal-coast-magazine/coal-coast-magazine-double-page-print-advertorial/*</sup>
 
 > ### Aufgabe 5: Falzflyer  (Modern & Dynamisch)
 > {: .assignment }
-> 
 > Erstelle ein Layout für einen Flyer im DIN Lang Format. Hier sind der Kreativität keine Grenzen gesetzt. Erweitere den Text gegebenfalls und überlege, welche Inhalt auf welcher Seite am meisten Sinn machen.
 >
 > Vorgaben:
+>
 > | Falzflyer | Hochformat, DIN lang |
-> | --- | --- |
+> | :--- | :--- |
 > | Datenformat (inkl. 2 mm Beschnitt) | 30,1 x 21,4 cm |
 > | Endformat (geschlossen) | 10 x 21 cm |
 > | Endformat | 29,7 x 21 cm |
