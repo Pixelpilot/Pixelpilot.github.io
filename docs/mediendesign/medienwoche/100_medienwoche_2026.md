@@ -48,6 +48,10 @@ Der genaue Zeitplan wird dann von den Betreuer:innen vorgegeben.
 ### Hinweis Kameras
 An alle, die selber eine Kamera haben: Bitte unbedingt mitnehmen - Wir haben sonst nicht genug Equipment und müssen abwechseln!
 
+### Unkostenbeitrag
+
+Für externe Vortragende und eventuelles Verbrauchsmaterial sowie für die Beschaffung von Aufrüstung ist pro Teilnehmer:in ein Unkostenbeitrag von €20,- zu entrichten.
+
 
 ## Kursangebot
 
