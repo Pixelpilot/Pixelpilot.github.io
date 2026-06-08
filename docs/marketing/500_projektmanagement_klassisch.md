@@ -55,7 +55,7 @@ sitemap_exclude: n
 > - Baumhaus im Dschungel
 > - Space Shuttle
 
-`&darr;`
+&darr;
 
 > Für dieses Bauvorhaben muss ein Pflichtenheft erstellt werden
 > 
