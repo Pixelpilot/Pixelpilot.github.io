@@ -9,6 +9,7 @@ layout: default
 ---
 
 # Stop Motion
+
 ## Techniken, Geschichte & Beispiele
 
 ---
