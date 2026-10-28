@@ -15,135 +15,152 @@ sitemap_exclude: n
 
 ## Das MySQL Datenbank-Management-System
 
-MySQL ist ein relationales Datenbank-Management-Systeme (RDBMS), d.h. es verwenden SQL (Structured Query Language), um Daten in tabellarischer Form zu speichern und zu verwalten.
+MySQL ist ein relationales Datenbank-Management-System (RDBMS), d. h. es verwendet SQL (Structured Query Language), um Daten in tabellarischer Form zu speichern und zu verwalten.
 
-Es gibt eine Vielzahl an unterschiedlichen Datenbanken. MySQL ist eine Open-Source-Datenbank, die häufig mit PHP verwendet wird, um Daten auf Websites zu speichern und abzurufen. MySQL bietet eine Vielzahl von Funktionen zum Erstellen, Anzeigen und Verändern von Datenbanken und Tabellen.
+Es gibt eine Vielzahl an unterschiedlichen Datenbanken. MySQL (bzw. der Ableger MariaDB) ist eine Open-Source-Datenbank, die häufig mit PHP verwendet wird, um Daten auf Websites zu speichern und abzurufen.
 
-Um mit MySQL zu arbeiten, benötigen man zunächst eine Verbindung zu einer MySQL-Datenbank:
+### Verbindung mit PDO
 
-```php
-<?php
-  $host = "localhost";
-  $username = "username";
-  $password = "password";
-  $dbname = "database_name";
+PHP bietet mit **PDO** (*PHP Data Objects*) eine einheitliche Schnittstelle für Datenbanken. Der Zugriff funktioniert für MySQL, SQLite, PostgreSQL usw. gleich, nur die Verbindungszeichenkette (*DSN*) unterscheidet sich.
 
-  // Verbindung herstellen
-  $conn = mysqli_connect($host, $username, $password, $dbname);
-
-  // Verbindung überprüfen
-  if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-  }
-  echo "Connection established successfully";
-?>
-```
-*Aufbauen der Verbindung in einer PHP Version < 8.1*
+Um mit MySQL zu arbeiten, benötigt man zunächst eine Verbindung zur Datenbank:
 
 ```php
 <?php
   $host = "localhost";
+  $dbname = "database_name";
   $username = "username";
   $password = "password";
-  $dbname = "database_name";
+
+  // DSN (Data Source Name): Datenbanktyp, Host, Datenbankname und Zeichensatz
+  $dsn = "mysql:host=$host;dbname=$dbname;charset=utf8mb4";
 
   try {
     // Verbindung herstellen
-    $conn = mysqli_connect($host, $username, $password, $dbname);
-    echo "Connection established successfully";
-  } catch ( Exception $e ) {
-    echo "Connection Failed: ", $e->getMessage(), "<br>";
+    $pdo = new PDO($dsn, $username, $password, [
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,        // Fehler als Exceptions melden
+      PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,   // Ergebnisse als assoziative Arrays
+    ]);
+    echo "Verbindung hergestellt";
+  } catch (PDOException $e) {
+    echo "Verbindung fehlgeschlagen: " . $e->getMessage();
   }
 ?>
 ```
-*Aufbauen der Verbindung in einer PHP Version >= 8.1*
+*Aufbauen der Verbindung mit PDO*
+
+Die Verbindung wird üblicherweise in eine eigene Datei `db.php` ausgelagert und in jeder Seite mit `require "db.php";` eingebunden. So stehen die Zugangsdaten nur an einer Stelle.
+
+> **Zugangsdaten auf coding-space.at**
+>
+> Wir arbeiten auf [coding-space.at](https://coding-space.at){:target="_blank"}. Dort stehen PHP und eine MySQL-Datenbank bereit. Host, Datenbankname, Benutzer und Passwort werden im Unterricht bekanntgegeben.
 
 
 ### Aufbau einer Datenbank-Tabelle
 
 Eine Datenbank liegt auf einem Datenbank-Server. Auf einem solchen Server können mehrere Datenbanken gehostet werden.
-Eine Datenbank besteht aus einer oder mehrerer Tabellen.
+Eine Datenbank besteht aus einer oder mehreren Tabellen.
 
 Eine Tabelle in einer MySQL-Datenbank ist eine Struktur, die bestimmte Daten speichert. Eine Tabelle besteht aus Zeilen und Spalten, wobei jede Spalte einen bestimmten Datentyp aufweist und jede Zeile einen Eintrag enthält.
 
-Um eine Tabellenstruktur in MySQL anzuzeigen, können Sie die `DESCRIBE`-Anweisung verwenden. Hier ist ein Beispiel für die Verwendung von `DESCRIBE`, um die Struktur der `users`-Tabelle anzuzeigen:
+Um eine Tabellenstruktur in MySQL anzuzeigen, kann die `DESCRIBE`-Anweisung verwendet werden. Hier ist ein Beispiel, um die Struktur der `users`-Tabelle anzuzeigen:
 
 ```sql
 DESCRIBE users;
 ```
 Die Ausgabe könnte wie folgt aussehen:
 ```text
-+---------+-------------+------+-----+---------+----------------+
-| Field   | Type        | Null | Key | Default | Extra          |
-+---------+-------------+------+-----+---------+----------------+
-| id      | int(11)     | NO   | PRI | NULL    | auto_increment |
-| name    | varchar(50) | NO   |     | NULL    |                |
-| email   | varchar(50) | NO   |     | NULL    |                |
-| password| varchar(50) | NO   |     | NULL    |                |
-+---------+-------------+------+-----+---------+----------------+
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| id       | int          | NO   | PRI | NULL    | auto_increment |
+| name     | varchar(50)  | NO   |     | NULL    |                |
+| email    | varchar(50)  | NO   |     | NULL    |                |
+| password | varchar(255) | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
 ```
-Diese Ausgabe zeigt die Namen der Spalten, ihre Datentypen und weitere Informationen wie NULL-Werte, Schlüssel und Standardwerte an.
-
-Die Ausgabe von `DESCRIBE users;` gibt Informationen über die Struktur der `users`-Tabelle in einer MySQL-Datenbank an. Jede Zeile in der Ausgabe stellt eine Spalte in der Tabelle dar und enthält folgende Informationen:
+Diese Ausgabe zeigt die Namen der Spalten, ihre Datentypen und weitere Informationen wie NULL-Werte, Schlüssel und Standardwerte an. Jede Zeile in der Ausgabe stellt eine Spalte der Tabelle dar und enthält folgende Informationen:
 
 * **Field:** Der Name der Spalte.
-* **Type:** Der Datentyp der Spalte. Zum Beispiel int für ganze Zahlen oder varchar für Zeichenketten. Manche Datentypen haben auch eine Längenangabe, wie zum Beispiel varchar(50), was bedeutet, dass die Zeichenkette bis zu 50 Zeichen lang sein kann.
+* **Type:** Der Datentyp der Spalte. Zum Beispiel `int` für ganze Zahlen oder `varchar` für Zeichenketten. Manche Datentypen haben auch eine Längenangabe, wie zum Beispiel `varchar(50)`, was bedeutet, dass die Zeichenkette bis zu 50 Zeichen lang sein kann. Passwort-Hashes brauchen Platz für mindestens 60 Zeichen, daher `varchar(255)`.
 * **Null:** Gibt an, ob NULL-Werte in dieser Spalte erlaubt sind. `YES` bedeutet, dass NULL-Werte erlaubt sind, `NO` bedeutet, dass sie nicht erlaubt sind.
-* **Key:** Gibt an, ob diese Spalte ein Schlüssel ist. Ein Schlüssel ist ein Wert, der eindeutig in der Tabelle ist und häufig zum Verknüpfen von Tabellen verwendet wird. Mögliche Werte sind `PRI` für einen Primärschlüssel, `UNI` für einen Einzigartigkeitsschlüssel und `MUL` für einen Indexschlüssel.
+* **Key:** Gibt an, ob diese Spalte ein Schlüssel ist. Ein Schlüssel ist ein Wert, der eindeutig in der Tabelle ist und häufig zum Verknüpfen von Tabellen verwendet wird. Mögliche Werte sind `PRI` für einen Primärschlüssel, `UNI` für einen eindeutigen Schlüssel und `MUL` für einen Index, der mehrfach vorkommen darf.
 * **Default:** Der Standardwert für diese Spalte. Wenn ein neuer Eintrag in der Tabelle erstellt wird und kein Wert für diese Spalte angegeben wird, wird der Standardwert verwendet.
-* **Extra:** Weitere Informationen über die Spalte. Zum Beispiel auto_increment, wenn der Wert für diese Spalte automatisch inkrementiert wird.
+* **Extra:** Weitere Informationen über die Spalte. Zum Beispiel `auto_increment`, wenn der Wert für diese Spalte automatisch hochgezählt wird.
 
 
 ### SQL-Statements
 
-SQL-Statements sind Anweisungen, die an eine MySQL-Datenbank gesendet werden, um bestimmte Operationen auszuführen. Es gibt verschiedene Arten von MySQL-Statements, die zur Erstellung, Anzeige, Aktualisierung und Löschung von Daten in einer Datenbank verwendet werden können.
+SQL-Statements sind Anweisungen, die an eine MySQL-Datenbank gesendet werden, um bestimmte Operationen auszuführen. Mit der `SELECT`-Anweisung werden Einträge aus einer Tabelle abgerufen, mit `INSERT` neue Einträge hinzugefügt, mit `UPDATE` bestehende Einträge aktualisiert und mit `DELETE` Einträge gelöscht.
 
-MySQL-Statements werden häufig verwendet, um Daten in einer Tabelle einer MySQL-Datenbank zu verarbeiten. Zum Beispiel können Sie mit der `SELECT`-Anweisung Einträge aus einer Tabelle abrufen, mit der `INSERT`-Anweisung neue Einträge hinzufügen, mit der `UPDATE`-Anweisung bestehende Einträge aktualisieren und mit der `DELETE`-Anweisung Einträge löschen.
+### Prepared Statements
 
-Hier ist ein Beispiel für die Verwendung von MySQL-Statements, um Daten in einer Tabelle zu verarbeiten:
+Werte, die von Benutzern kommen, dürfen **nie** direkt in ein SQL-Statement eingebaut werden. Sonst kann über ein Formularfeld eigener SQL-Code eingeschleust werden (*SQL-Injection*):
 
 ```php
-// Verbindung zur Datenbank herstellen
-$conn = mysqli_connect($host, $username, $password, $dbname);
+// GEFÄHRLICH: Eingabe  ' OR 1=1 --  liefert alle Benutzer
+$sql = "SELECT * FROM users WHERE name = '" . $_GET["name"] . "'";
+```
 
+Mit *Prepared Statements* werden SQL-Befehl und Daten getrennt an die Datenbank geschickt. Im Statement stehen Platzhalter (`:name` oder `?`), die Werte werden erst beim Ausführen eingesetzt und können den Befehl nicht mehr verändern:
+
+```php
+// Statement mit Platzhaltern vorbereiten
+$stmt = $pdo->prepare("SELECT * FROM users WHERE name = :name");
+
+// Statement mit den tatsächlichen Werten ausführen
+$stmt->execute(["name" => $_GET["name"]]);
+
+// Ergebnis abholen
+$users = $stmt->fetchAll();
+```
+
+Hier ist ein Beispiel für die vier Grundoperationen:
+
+```php
 // Neuen Benutzer hinzufügen
-$sql = "INSERT INTO users (name, email, password) VALUES ('John', 'john@example.com', 'password')";
-mysqli_query($conn, $sql);
+$stmt = $pdo->prepare("INSERT INTO users (name, email, password) VALUES (?, ?, ?)");
+$stmt->execute(["John", "john@example.com", password_hash("geheim", PASSWORD_DEFAULT)]);
 
 // Benutzer abrufen
-$sql = "SELECT * FROM users WHERE name='John'";
-$result = mysqli_query($conn, $sql);
+$stmt = $pdo->prepare("SELECT * FROM users WHERE name = ?");
+$stmt->execute(["John"]);
+$user = $stmt->fetch();
 
 // Benutzer aktualisieren
-$sql = "UPDATE users SET name='John Doe' WHERE name='John'";
-mysqli_query($conn, $sql);
+$stmt = $pdo->prepare("UPDATE users SET name = ? WHERE name = ?");
+$stmt->execute(["John Doe", "John"]);
 
 // Benutzer löschen
-$sql = "DELETE FROM users WHERE name='John Doe'";
-mysqli_query($conn, $sql);
+$stmt = $pdo->prepare("DELETE FROM users WHERE name = ?");
+$stmt->execute(["John Doe"]);
 ```
 In diesem Beispiel wird ein neuer Benutzer in der `users`-Tabelle hinzugefügt, anschließend wird der Benutzer abgerufen, aktualisiert und schließlich gelöscht.
+
+Statements ohne Benutzereingaben können direkt mit `$pdo->query()` ausgeführt werden:
+```php
+$users = $pdo->query("SELECT * FROM users ORDER BY name")->fetchAll();
+```
 
 ## Das CRUD-Prinzip
 
 **CRUD** steht für **Create**, **Read**, **Update** und **Delete** und ist ein Akronym für die vier Grundoperationen, die auf Datenbanken ausgeführt werden können. Diese Operationen sind:
 
 * Create: Einträge in einer Datenbank hinzufügen
-* Read: Einträge in einer Datenbank abrufen
+* Read: Einträge aus einer Datenbank abrufen
 * Update: Einträge in einer Datenbank aktualisieren
-* Delete: Einträge in einer Datenbank löschen
+* Delete: Einträge aus einer Datenbank löschen
 
-Das CRUD-Prinzip ist ein grundlegender Ansatz zum Verwalten von Daten in einer Datenbank. Hier sind einige Beispiele dafür, wie das CRUD-Prinzip mit PHP und MySQL umgesetzt werden kann:
+Das CRUD-Prinzip ist ein grundlegender Ansatz zum Verwalten von Daten in einer Datenbank. Hier sind einige Beispiele dafür, wie das CRUD-Prinzip mit PHP und MySQL umgesetzt werden kann. In allen Beispielen wird die Verbindung aus `db.php` eingebunden.
 
 
 ### CREATE
 
-Um einen neuen Eintrag in einer MySQL-Datenbank hinzuzufügen, können wir die `INSERT`-Anweisung verwenden. Hier ist ein Beispiel für die Verwendung von PHP und MySQL, um einen neuen Benutzer in einer Benutzerdatenbank hinzuzufügen:
+Um einen neuen Eintrag in einer MySQL-Datenbank hinzuzufügen, verwenden wir die `INSERT`-Anweisung. Hier ist ein Beispiel, um einen neuen Benutzer aus einem Formular in die Datenbank einzutragen:
 
 ```php
 <?php
-  // Verbindung zur Datenbank herstellen
-  $conn = mysqli_connect($host, $username, $password, $dbname);
+  require "db.php";
 
   // Formulardaten abrufen
   $name = $_POST["name"];
@@ -151,89 +168,108 @@ Um einen neuen Eintrag in einer MySQL-Datenbank hinzuzufügen, können wir die `
   $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
   // Benutzer in Datenbank hinzufügen
-  $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";
-  mysqli_query($conn, $sql);
+  $stmt = $pdo->prepare("INSERT INTO users (name, email, password) VALUES (:name, :email, :password)");
+  $stmt->execute([
+    "name" => $name,
+    "email" => $email,
+    "password" => $password,
+  ]);
+
+  echo "Neuer Benutzer mit der ID " . $pdo->lastInsertId() . " angelegt.";
 ?>
 ```
 
 ### READ
-Um Einträge aus einer MySQL-Datenbank abzurufen, können wir die `SELECT`-Anweisung verwenden. Hier ist ein Beispiel für die Verwendung von PHP und MySQL, um alle Benutzer aus einer Benutzerdatenbank abzurufen:
+Um Einträge aus einer MySQL-Datenbank abzurufen, verwenden wir die `SELECT`-Anweisung. Hier ist ein Beispiel, um alle Benutzer aus der Datenbank abzurufen:
 
 ```php
 <?php
-  // Verbindung zur Datenbank herstellen
-  $conn = mysqli_connect($host, $username, $password, $dbname);
+  require "db.php";
 
   // Benutzer abrufen
-  $sql = "SELECT * FROM users";
-  $result = mysqli_query($conn, $sql);
+  $stmt = $pdo->query("SELECT * FROM users");
 
   // Benutzer durchlaufen
-  while ($row = mysqli_fetch_assoc($result)) {
-    echo "Name: " . $row["name"] . "<br>";
-    echo "Email: " . $row["email"] . "<br>";
+  foreach ($stmt as $row) {
+    echo "Name: " . htmlspecialchars($row["name"]) . "<br>";
+    echo "E-Mail: " . htmlspecialchars($row["email"]) . "<br>";
   }
 ?>
 ```
 
+Mit `fetch()` wird eine einzelne Zeile geholt, mit `fetchAll()` alle Zeilen als Array:
+```php
+  $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+  $stmt->execute([$_GET["id"]]);
+  $user = $stmt->fetch();   // eine Zeile als assoziatives Array oder false
+
+  $users = $pdo->query("SELECT * FROM users")->fetchAll();   // Array aller Zeilen
+```
+
 ### UPDATE
-Um Einträge in einer MySQL-Datenbank zu aktualisieren, können wir die `UPDATE`-Anweisung verwenden. Hier ist ein Beispiel für die Verwendung von PHP und MySQL, um den Namen eines Benutzers in einer Benutzerdatenbank zu aktualisieren:
+Um Einträge in einer MySQL-Datenbank zu aktualisieren, verwenden wir die `UPDATE`-Anweisung. Hier ist ein Beispiel, um den Namen eines Benutzers zu aktualisieren:
 
 ```php
 <?php
-  // Verbindung zur Datenbank herstellen
-  $conn = mysqli_connect($host, $username, $password, $dbname);
+  require "db.php";
 
   // Formulardaten abrufen
   $id = $_POST["id"];
   $name = $_POST["name"];
 
   // Benutzer in Datenbank aktualisieren
-  $sql = "UPDATE users SET name='$name' WHERE id=$id";
-  mysqli_query($conn, $sql);
+  $stmt = $pdo->prepare("UPDATE users SET name = :name WHERE id = :id");
+  $stmt->execute(["name" => $name, "id" => $id]);
+
+  echo $stmt->rowCount() . " Eintrag geändert.";
 ?>
 ```
 
 ### DELETE
 
-Um Einträge aus einer MySQL-Datenbank zu löschen, können wir die `DELETE`-Anweisung verwenden. Hier ist ein Beispiel für die Verwendung von PHP und MySQL, um einen Benutzer aus einer Benutzerdatenbank zu löschen:
+Um Einträge aus einer MySQL-Datenbank zu löschen, verwenden wir die `DELETE`-Anweisung. Hier ist ein Beispiel, um einen Benutzer aus der Datenbank zu löschen:
 
 ```php
 <?php
-  // Verbindung zur Datenbank herstellen
-  $conn = mysqli_connect($host, $username, $password, $dbname);
+  require "db.php";
 
   // Formulardaten abrufen
   $id = $_POST["id"];
 
-  // Benutzer in Datenbank löschen
-  $sql = "DELETE FROM users WHERE id=$id";
-  mysqli_query($conn, $sql);
+  // Benutzer aus Datenbank löschen
+  $stmt = $pdo->prepare("DELETE FROM users WHERE id = ?");
+  $stmt->execute([$id]);
 ?>
-
 ```
 
 ## Aufgaben
 
-Erstellen eine Web-Applikation zur Verwaltung von Kontaktdaten.
+Erstelle eine Web-Applikation zur Verwaltung von Kontaktdaten.
 
 ### 1. Anlegen der Tabelle
 {: .assignment }
 
-Installiere ein `XAMPP` oder `MAMP`, um den Rechner als lokalen Webserver verwenden zu können.
+Lege in deiner Datenbank auf [coding-space.at](https://coding-space.at){:target="_blank"} eine Tabelle mit dem Namen `user` und folgenden Feldern an (mit phpMyAdmin oder direkt per SQL):
 
-Erstelle mittels `phpMyAdmin` einen Tabelle mit dem Namen `user` und folgenden Feldern:
-
-* `id` – autoincrement, primary, not null
+* `id` – auto_increment, primary key, not null
 * `name` – varchar(40)
 * `email` – varchar(40)
 * `phone` – varchar(40)
 
-Legen einige Einträge manuell an.
+```sql
+CREATE TABLE user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(40) NOT NULL,
+  email VARCHAR(40) NOT NULL,
+  phone VARCHAR(40)
+);
+```
 
-### 2. Ausgeben aller Einträgen
+Lege einige Einträge manuell an. Erstelle danach die Datei `db.php` mit der Verbindung.
+
+### 2. Ausgeben aller Einträge
 {: .assignment }
-Erstelle eine Datei `index.php`, die eine Liste aller Einträge in einer MySQL-Datenbank anzeigt. Verwende das `SELECT`-Statement, um die Einträge aus der Datenbank abzurufen und sie in einer HTML-Tabelle anzuzeigen.
+Erstelle eine Datei `index.php`, die eine Liste aller Einträge der Tabelle anzeigt. Verwende das `SELECT`-Statement, um die Einträge aus der Datenbank abzurufen und sie in einer HTML-Tabelle anzuzeigen.
 
 > ![](img/php_mysql_1_list.png)
 > <sup>*Beispielhafte Liste als HTML-Tabelle*</sup>
@@ -241,9 +277,9 @@ Erstelle eine Datei `index.php`, die eine Liste aller Einträge in einer MySQL-D
 ### 3. Hinzufügen von Einträgen
 {: .assignment }
 
-Erstellen die Datei `insert.php`, die ein Formular enthält, das es dem Benutzer ermöglicht, einen neuen Eintrag in einer MySQL-Datenbank hinzuzufügen. Verwende das `INSERT`-Statement, um den neuen Eintrag in der Datenbank zu speichern.
+Erstelle die Datei `insert.php`, die ein Formular enthält, mit dem ein neuer Eintrag in der Datenbank angelegt werden kann. Verwende ein Prepared Statement mit `INSERT`, um den neuen Eintrag in der Datenbank zu speichern.
 
-Die Übermittlung der Daten soll mit `POST`erfolgen.
+Die Übermittlung der Daten soll mit `POST` erfolgen. Leite nach dem Speichern mit `header("Location: index.php")` zurück auf die Liste.
 
 > ![](img/php_mysql_2_list.png)
 > <sup>*Erweiterung um einen Link*</sup><br><br>
@@ -254,7 +290,7 @@ Die Übermittlung der Daten soll mit `POST`erfolgen.
 ### 4. Löschen von Einträgen
 {: .assignment }
 
-Erweitere die PHP-Seite von Aufgabe 2 (Hinzufügen von Einträgen), um dem Benutzer das Löschen von Einträgen zu ermöglichen. Verwende das `DELETE`- Statement, um die Löschungen in der Datenbank durchzuführen.
+Erweitere die `index.php` aus Aufgabe 2 (Ausgeben aller Einträge), um dem Benutzer das Löschen von Einträgen zu ermöglichen. Verwende das `DELETE`-Statement, um die Löschung in der Datenbank durchzuführen.
 
 Füge einen Button `Löschen` neben den einzelnen Einträgen hinzu.
 
@@ -265,14 +301,14 @@ echo "<input type='submit' name='delete' value='Löschen'>";
 echo "</form>";
 ```
 
-Klickt man auf den `Löschen` -Button neben einem Eintrag, soll der Eintrag gelöscht werden und die Einträge neu ausgegeben werden. 
+Klickt man auf den `Löschen`-Button neben einem Eintrag, soll der Eintrag gelöscht und die Liste neu ausgegeben werden.
 
 > ![](img/php_mysql_3_list.png)
 > <sup>*Löschen-Button in einem Formular*</sup>
 
 ### 5. Aktualisieren von Daten
 {: .assignment }
-Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu. Verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern. Implementiere das Formular zum Ändern der Daten in der Datei `edit.php`.
+Füge einen Button `Ändern` neben den einzelnen Einträgen hinzu. Implementiere das Formular zum Ändern der Daten in der Datei `edit.php` und verwende das `UPDATE`-Statement, um die Änderungen in der Datenbank zu speichern.
 
 ```php
 // Erweiterung der Tabelle in der index.php
@@ -288,18 +324,22 @@ echo "<input type='submit' name='update' value='Ändern'>";
 
 ### 6. Zusatz: Sortierung und Paginierung
 {: .assignment }
-Erweitere die PHP-Seite, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende das `ORDER BY`- und `LIMIT`- Statement, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
+Erweitere die `index.php`, um Sortierung und Paginierung von Einträgen zu unterstützen. Verwende `ORDER BY` und `LIMIT`, um Einträge in einer bestimmten Reihenfolge anzuzeigen und nur einen Teil der Einträge auf einer Seite anzuzeigen.
+
+Achtung: Spaltennamen für `ORDER BY` können nicht als Platzhalter übergeben werden. Prüfe daher den Parameter gegen eine Liste erlaubter Spalten (`in_array()`), bevor er ins Statement eingebaut wird.
 
 > ![](img/php_mysql_5_list.png)
 > <sup>*Beispielhafte Umsetzung der Sortierung*</sup>
 
 ### 7. Zusatz: Suchfunktionalität
 {: .assignment }
-Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in einer MySQL-Datenbank zu suchen. Verwende das `SELECT`- Statement und die `LIKE`- Klausel, um Einträge abzurufen, die bestimmte Suchkriterien erfüllen.
+Erstelle eine PHP-Seite, die es dem Benutzer ermöglicht, nach Einträgen in der Datenbank zu suchen. Verwende das `SELECT`-Statement und die `LIKE`-Klausel, um Einträge abzurufen, die bestimmte Suchkriterien erfüllen. Die Platzhalterzeichen `%` gehören dabei in den Wert, nicht ins Statement: `$stmt->execute(["%" . $suche . "%"])`.
 
 
 
 ## Ressourcen
-* [https://remotemysql.com/ - Free MySQL Hosting Site](https://remotemysql.com/){:target="_blank"}
+* [https://www.php.net/manual/de/ - php.net Manual: PDO](https://www.php.net/manual/de/book.pdo.php){:target="_blank"}
+* [https://www.php.net/manual/de/ - php.net Manual: Prepared Statements mit PDO](https://www.php.net/manual/de/pdo.prepared-statements.php){:target="_blank"}
 * [https://www.php.net/manual/de/ - php.net Manual: SQL Injection](https://www.php.net/manual/de/security.database.sql-injection.php){:target="_blank"}
-* [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}
+* [https://phpdelusions.net/pdo - (The only proper) PDO tutorial](https://phpdelusions.net/pdo){:target="_blank"}
+* [https://phptherightway.com/ - PHP The Right Way: Datenbanken](https://phptherightway.com/#databases){:target="_blank"}

@@ -14,7 +14,9 @@ sitemap_exclude: n
 # AJAX – Asynchrone Kommunikation mit dem Server
 
 
-**AJAX** steht für **"Asynchronous JavaScript and XML"** und bezieht sich auf die Verwendung von JavaScript, um asynchrone HTTP-Anfragen an einen Webserver zu senden und darauf basierende Aktionen auszuführen, **ohne** dabei die gesamte Webseite **neu laden** zu müssen.
+**AJAX** steht für **"Asynchronous JavaScript and XML"** und bezeichnet die Verwendung von JavaScript, um asynchrone HTTP-Anfragen an einen Webserver zu senden und darauf basierende Aktionen auszuführen, **ohne** dabei die gesamte Webseite **neu laden** zu müssen.
+
+Der Name stammt aus einer Zeit, in der die Daten als XML übertragen wurden. Heute wird fast immer **JSON** verwendet, der Begriff AJAX ist aber geblieben.
 
 Mit PHP und AJAX können so dynamische Webseiten erstellt werden, die Benutzererfahrung verbessert und die Ladezeiten verringert werden.
 
@@ -25,136 +27,56 @@ Mit PHP und AJAX können so dynamische Webseiten erstellt werden, die Benutzerer
 
 *Ablauf eines AJAX-Requests, [https://netbeans.apache.org/](https://netbeans.apache.org/){:target="_blank"}*
 
-### Webserver: Erstellen der Antwort auf die AJAX Anfrage
+### Webserver: Erstellen der Antwort auf die AJAX-Anfrage
 
-Der Webserver stellt die Anbindung an die Daten zur Verfügung (*Data Store*). 
+Der Webserver stellt die Anbindung an die Daten zur Verfügung (*Data Store*).
 
-Als Format für den Datenaustausch bietet sich das JSON-Format an, da das Encodieren und das Decodieren sowohl in PHP als auch in JavaScript implementiert sind.
+Als Format für den Datenaustausch bietet sich JSON an, da das Encodieren und das Decodieren sowohl in PHP (`json_encode()`, `json_decode()`) als auch in JavaScript (`JSON.stringify()`, `JSON.parse()`) eingebaut sind.
 
 ```php
+<?php
 // data.php
 
-// Verbindung zur Datenbank herstellen
-$conn = mysqli_connect($host, $username, $password, $dbname);
+require "db.php";
 
 // Benutzer abrufen
-$sql = "SELECT * FROM users";
-$result = mysqli_query($conn, $sql);
+$data = $pdo->query("SELECT * FROM users")->fetchAll();
 
-// Daten in eine Array speichern
-$data = mysqli_fetch_all(MYSQLI_ASSOC);
+// Dem Browser mitteilen, dass JSON kommt
+header("Content-Type: application/json");
 
 // Array als JSON-String zurückgeben
 echo json_encode($data);
 ```
 
 ```json
-[{"id":"6","name":"Max","email":"max@max.its","phone":"0664 786 57 23"},
-{"id":"8","name":"Eva","email":"e@hotmail.com","phone":"0650 234 56 89"},
-{"id":"9","name":"Hubert","email":"h@ubert.at","phone":"07722 123 45"},
-{"id":"11","name":"Sabine","email":"sab@ine.de","phone":"07514 22 22 22"},
-{"id":"14","name":"Christian","email":"ch@htl.at","phone":"0610 123 45 67"},
-{"id":"16","name":"Hubert","email":"h@ubert.at","phone":"0650 99 88 77"}]
+[{"id":6,"name":"Max","email":"max@max.its","phone":"0664 786 57 23"},
+{"id":8,"name":"Eva","email":"e@hotmail.com","phone":"0650 234 56 89"},
+{"id":9,"name":"Hubert","email":"h@ubert.at","phone":"07722 123 45"},
+{"id":11,"name":"Sabine","email":"sab@ine.de","phone":"07514 22 22 22"},
+{"id":14,"name":"Christian","email":"ch@htl.at","phone":"0610 123 45 67"},
+{"id":16,"name":"Hubert","email":"h@ubert.at","phone":"0650 99 88 77"}]
 ```
-*Die Daten werden im JSON-Format an den Client geschickt.*
+*Die Daten werden im JSON-Format an den Client geschickt. Die Datei `data.php` kann zum Testen direkt im Browser aufgerufen werden.*
 
+Die Datei liefert kein HTML, sondern nur Daten. Sie darf daher außer dem JSON-String nichts ausgeben, auch keine Leerzeilen vor `<?php`.
 
-### Client: (deprecated) AJAX-Anfrage und Verarbeitung mit HTTP-Request
+### Client: AJAX-Anfrage mit der Fetch API
 
-Der Client stellt eine Anfrage (*HTTP Request*) an der Server und gibt eine *Callback*-Funktion an, die automatisch aufgerufen werden soll, wenn die Daten da sind. 
+Der Client stellt mit `fetch()` eine Anfrage (*HTTP Request*) an den Server. Die Anfrage läuft im Hintergrund, der Rest der Seite bleibt bedienbar. Sobald der Server die Antwort geliefert hat, kann der Client basierend auf den Daten zum Beispiel das DOM verändern.
 
-Sobald der Server die Antwort geliefert hat, wird die *Callback*-Funktion aufgerufen. Der Client kann dann basierend auf den Informationen, die der Server geliefert hat, zum Beispiel das DOM verändern:
+> Früher wurde dafür das `XMLHttpRequest`-Objekt verwendet. Es funktioniert in allen Browsern nach wie vor, taucht aber nur noch in älterem Code auf. Neue Projekte verwenden ausschließlich `fetch()`.
 
-```html
-<!-- ajax.html -->
+#### Promises
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-    <title>AJAX JSON Beispiel</title>
-</head>
-<body>
-    <ul id="users-list"></ul>
-    <script src="script-request.js"></script>
-</body>
-</html>
-```
-
-```javascript
-/* script-request.js */
-
-// XMLHttpRequest-Objekt erstellen
-var xhr = new XMLHttpRequest();
-
-// Anfrage senden
-xhr.open('GET', 'data.php', true);
-xhr.send();
-
-// Antwort verarbeiten
-xhr.onreadystatechange = function() {
-    
-    // alles OK?
-    if (xhr.readyState == 4 && xhr.status == 200) {
-    
-        // Daten speichern
-        var data = JSON.parse(xhr.responseText);
-        
-        var usersList = document.getElementById('users-list');
-
-        // Über die Daten iterieren
-        for (var i = 0; i < data.length; i++) {
-            var user = data[i];
-            
-            // Listenelement erzeugen und anzeigen
-            var listItem = document.createElement('li');
-            listItem.innerHTML = user.name + ' (' + user.phone + ')';
-            usersList.appendChild(listItem);
-        }
-    }
-};
-```
-*Verändern des DOM, sobald die Daten vom Server geladen wurden.*
-
-#### Der `XMLHttpRequest-readyState`
-
-Das XMLHttpRequest-Objekt hat verschiedene Werte für die Eigenschaft "readyState", die den Status der Anfrage darstellen. Jeder Zustand stellt einen bestimmten Zeitpunkt im Lebenszyklus einer AJAX-Anfrage dar. Die möglichen readyState-Werte sind:
-
-* `0 (UNSENT)`: Das XMLHttpRequest-Objekt wurde erstellt, aber die `open()`-Methode wurde noch nicht aufgerufen.
-
-* `1 (OPENED)`: Die `open()`-Methode wurde aufgerufen, aber die send()-Methode wurde noch nicht aufgerufen.
-
-* `2 (HEADERS_RECEIVED)`: Die `send()`-Methode wurde aufgerufen und die Anfrage wurde vom Server empfangen. Die Antwort-Header sind verfügbar, aber der Inhalt der Antwort ist noch nicht geladen.
-
-* `3 (LOADING)`: Die Antwort wird geladen, es sind jedoch noch nicht alle Daten verfügbar.
-
-* `4 (DONE)`: Man kann sicher sein, dass die gesamte Antwort empfangen wurde und die Antwort nun verarbeitet werden kann.
-
-Man kann den `readyState`-Wert in der Funktion `onreadystatechange()` des XMLHttpRequest-Objekts überprüfen, um auf bestimmte Ereignisse während des Lebenszyklus der Anfrage zu reagieren. Wenn der `readyState 4` erreicht ist, kann man sicher sein, dass die gesamte Antwort empfangen wurde und man die Antwort verarbeiten kann.
-
-#### Der `XMLHttpRequest-status`
-
-Die Eigenschaft `status` des XMLHttpRequest-Objekts enthält den HTTP-Statuscode, der von dem Server als Teil der Antwort auf die Anfrage zurückgegeben wurde. Der HTTP-Statuscode ist eine dreistellige Zahl, die den Status der Anfrage darstellt.
-
-Die möglichen HTTP-Statuscodes sind in verschiedene Kategorien unterteilt, z. B.:
-* `1xx` (Informational), 
-* `2xx` (Erfolgreich), 
-* `3xx` (Umleitung), 
-* `4xx` (Client-Fehler) und 
-* `5xx` (Server-Fehler).
-
-Ein Statuscode von 200 bedeutet, dass die Anfrage erfolgreich war, während ein Statuscode von 404 darauf hinweist, dass die angeforderte Ressource nicht gefunden wurde.
-
-### Client: AJAX-Anfrage und Verarbeitung mit `fetch()` und Promises
-
-Ein **Promise** ist ein Objekt, das einen Wert repräsentiert, der jetzt, in der Zukunft oder niemals verfügbar sein kann. Es dient dazu, asynchrone Operationen wie HTTP-Anfragen übersichtlicher zu machen, indem es das **Callback Hell**-Problem vermeidet.
+`fetch()` liefert sofort ein **Promise** zurück. Ein Promise ist ein Objekt, das einen Wert repräsentiert, der jetzt, in der Zukunft oder niemals verfügbar sein kann. Es dient dazu, asynchrone Operationen wie HTTP-Anfragen übersichtlich zu machen, ohne Callbacks ineinander verschachteln zu müssen.
 
 Ein Promise kann sich in drei Zuständen befinden:
 1. **Pending** (ausstehend): Die Operation läuft noch.
 2. **Fulfilled** (erfüllt): Die Operation war erfolgreich und liefert einen Wert.
 3. **Rejected** (abgelehnt): Die Operation ist fehlgeschlagen und liefert einen Fehler.
 
-Man kann Promises mit `.then()` verketten, um asynchrone Abläufe besser zu strukturieren, und mit `.catch()`, um Fehler zu behandeln.
+Promises werden mit `.then()` verkettet, um asynchrone Abläufe zu strukturieren, und mit `.catch()`, um Fehler zu behandeln.
 
 ```html
 <!-- ajax.html -->
@@ -176,28 +98,28 @@ Man kann Promises mit `.then()` verketten, um asynchrone Abläufe besser zu stru
 /* script-promises.js */
 
 function loadContacts() {
-  // Daten abrufen (Die Standardmethode von fetch ist GET)
+  // Daten abrufen (die Standardmethode von fetch ist GET)
   fetch('data.php')
     .then(response => {
-        
+
       // Überprüfen, ob die Antwort erfolgreich war (Status 200-299)
       if (!response.ok) {
         throw new Error(`HTTP-Fehler! Status: ${response.status}`);
       }
-      
-      // Antwort als JSON-Daten zurückgeben
+
+      // Antwort als JSON-Daten zurückgeben (liefert wieder ein Promise)
       return response.json();
     })
     .then(data => {
-        
+
       // DOM aktualisieren
       const usersList = document.getElementById('users-list');
       usersList.innerHTML = "";
 
       data.forEach(user => {
         const listItem = document.createElement('li');
-          listItem.innerHTML = `${user.name} (${user.phone})`;
-          usersList.appendChild(listItem);
+        listItem.textContent = `${user.name} (${user.phone})`;
+        usersList.appendChild(listItem);
       });
     })
     .catch(error => {
@@ -208,14 +130,30 @@ function loadContacts() {
 // Die Funktion aufrufen
 loadContacts();
 ```
+*Verändern des DOM, sobald die Daten vom Server geladen wurden.*
 
 > **Callback Hell – Das Problem verschachtelter Callbacks**
-> 
-> Das Callback Hell-Problem (auch Pyramid of Doom genannt) tritt auf, wenn mehrere asynchrone Funktionen mit Callbacks ineinander verschachtelt werden. Dadurch wird der Code schwer lesbar, fehleranfällig und schwer zu debuggen.
+>
+> Das Callback-Hell-Problem (auch *Pyramid of Doom* genannt) tritt auf, wenn mehrere asynchrone Funktionen mit Callbacks ineinander verschachtelt werden. Dadurch wird der Code schwer lesbar, fehleranfällig und schwer zu debuggen. Promises und `async`/`await` lösen dieses Problem.
 
+#### Der HTTP-Status
+
+Die Eigenschaft `response.status` enthält den HTTP-Statuscode, den der Server als Teil der Antwort zurückgegeben hat. Der HTTP-Statuscode ist eine dreistellige Zahl, die den Status der Anfrage darstellt.
+
+Die möglichen HTTP-Statuscodes sind in verschiedene Kategorien unterteilt:
+* `1xx` (Informational),
+* `2xx` (Erfolgreich),
+* `3xx` (Umleitung),
+* `4xx` (Client-Fehler) und
+* `5xx` (Server-Fehler).
+
+Ein Statuscode von `200` bedeutet, dass die Anfrage erfolgreich war, während `404` darauf hinweist, dass die angeforderte Ressource nicht gefunden wurde. `500` bedeutet, dass das PHP-Skript auf dem Server abgestürzt ist.
+
+`response.ok` ist genau dann `true`, wenn der Status zwischen 200 und 299 liegt. Wichtig: `fetch()` lehnt das Promise nur bei Netzwerkfehlern ab. Ein `404` oder `500` ist aus Sicht von `fetch()` eine gültige Antwort, deshalb muss `response.ok` selbst geprüft werden.
 
 ### Client: AJAX-Anfrage und Verarbeitung mit `async` und `await`
 
+Mit `async` und `await` lässt sich derselbe Ablauf wie eine normale, sequenzielle Funktion schreiben. `await` wartet, bis das Promise erfüllt ist, und liefert den Wert. Fehler werden mit `try`/`catch` abgefangen. Das ist die heute übliche Schreibweise.
 
 ```html
 <!-- ajax.html -->
@@ -260,7 +198,7 @@ async function loadContacts() {
       const listItem = document.createElement('li');
 
       // Benutzername und Telefonnummer in das Listenelement einfügen
-      listItem.innerHTML = `${user.name} (${user.phone})`;
+      listItem.textContent = `${user.name} (${user.phone})`;
 
       // Das Listenelement zur HTML-Liste hinzufügen
       usersList.appendChild(listItem);
@@ -276,21 +214,30 @@ async function loadContacts() {
 loadContacts();
 ```
 
+#### Parameter mitschicken
+
+Parameter werden bei GET-Anfragen einfach an die URL angehängt. `URLSearchParams` kümmert sich um das richtige Kodieren von Sonderzeichen:
+
+```javascript
+const params = new URLSearchParams({ cmd: 'getlist', count: 10, offset: 20 });
+const response = await fetch(`api.php?${params}`);   // api.php?cmd=getlist&count=10&offset=20
+```
+
 
 ## Aufgabe 1: Erweiterung der Kontaktdatenverwaltung
 {: .assignment }
 
-Es soll die Aufgabe [PHP und MySQL](40_mysql.html) mittels AJAX und der fetchAPI umgesetzt werden. Verwende dazu die Datenbank, die bereits erstellt wurde und Daten enthält.
+Es soll die Aufgabe [PHP und MySQL](40_mysql.html) mittels AJAX und der Fetch API umgesetzt werden. Verwende dazu die Datenbank, die bereits erstellt wurde und Daten enthält.
 
 Die Aufgabe besteht aus 2 Teilen:
 
-- In der Datei `api.php` wird eine einfache API erstellt, die Anfragen per GET bekommt und die entsprechenden Inhalte zurückgibt
+- In der Datei `api.php` wird eine einfache API erstellt, die Anfragen per GET bekommt und die entsprechenden Inhalte als JSON zurückgibt.
 - In der Datei `index.html` werden die Anfragen zusammengebaut und an die API geschickt. Aus den Antworten wird dann mit JavaScript das entsprechende DOM generiert.
 
 ### 1.1 Darstellen der Inhalte aus einer statischen Datei
 
-- Erstelle eine neues Verzeichnis mit den Dateien `index.html`, `data-static.json` und `script.js`, um die oben angegebenen Beispiele zu implementieren und zu testen.<br>
-[Download`data-static.json`](./assets/data-static.json)
+- Erstelle ein neues Verzeichnis mit den Dateien `index.html`, `data-static.json` und `script.js`, um die oben angegebenen Beispiele zu implementieren und zu testen.<br>
+[Download `data-static.json`](./assets/data-static.json)
 
 
 - Lagere den JavaScript-Quelltext in die Datei `script.js` aus.
@@ -298,25 +245,25 @@ Die Aufgabe besteht aus 2 Teilen:
 ```json
 [
   {
-    "id": "6",
+    "id": 6,
     "name": "Max",
     "email": "max@example.com",
     "phone": "+43 664 1234567"
   },
   {
-    "id": "76",
+    "id": 76,
     "name": "Moritz",
     "email": "moritz@example.com",
     "phone": "+43 664 7654321"
   },
   {
-    "id": "688",
+    "id": 688,
     "name": "Helga",
     "email": "helga@example.com",
     "phone": "+43 664 9876543"
   },
   {
-    "id": "623",
+    "id": 623,
     "name": "Miriam",
     "email": "miriam@example.com",
     "phone": "+43 664 11223344"
@@ -325,13 +272,13 @@ Die Aufgabe besteht aus 2 Teilen:
 ```
 <sup>Beispielhafter Aufbau der data-static.json</sup>
 
-### 1.3 Erstellen einer einfachen API
+### 1.2 Erstellen einer einfachen API
 
-Erstelle die Datei `api.php`. Diese Datei ist dafür zuständig, um auf die Datenbank zuzugreifen, Abfragen zu erstellen und diese Abfragen in Form eines JSON-Strings zu liefern.
+Erstelle die Datei `api.php`. Diese Datei ist dafür zuständig, auf die Datenbank zuzugreifen, Abfragen zu erstellen und das Ergebnis in Form eines JSON-Strings zu liefern.
 
 > **Parameter**
 >
-> * `cmd=getlist`
+> * `cmd=getlist` liefert die Liste der Kontakte
 > * `count=3` schränkt die Anzahl der Kontakte auf eine bestimmte Zahl ein
 > * `offset=3` Offset der Kontakte
 > * `orderby=name` gibt an, welche Spalte für die Sortierung herangezogen wird
@@ -340,11 +287,11 @@ Erstelle die Datei `api.php`. Diese Datei ist dafür zuständig, um auf die Date
 >
 > **Aufruf**
 >
-> Beispielhafter Aufruf: Einträge von 20 bis 29, sortiert nach id, absteigend sortiert:
-> 
->`api.php?count=10&offset=20&orderby=id&sort=desc`
+> Beispielhafter Aufruf: Einträge von 20 bis 29, nach `id` absteigend sortiert:
+>
+>`api.php?cmd=getlist&count=10&offset=20&orderby=id&sort=desc`
 
-
+Verwende für `count` und `offset` Prepared Statements. Spaltennamen und Sortierrichtung können nicht als Platzhalter übergeben werden, prüfe sie daher gegen eine Liste erlaubter Werte, bevor sie ins Statement eingebaut werden.
 
 
 
@@ -352,7 +299,7 @@ Erstelle die Datei `api.php`. Diese Datei ist dafür zuständig, um auf die Date
 
 Erweitere die Applikation, um Sortierung und Paginierung von Einträgen durchzuführen, ohne dass die Seite neu geladen werden muss.
 
-Hänge dazu die Informationen per `GET`-Parameter an den Request an, um in `data.php` darauf reagieren zu können.
+Hänge dazu die Informationen per `GET`-Parameter an den Request an, um in `api.php` darauf reagieren zu können.
 
 
 
@@ -363,7 +310,7 @@ Erstelle eine Webapplikation mit HTML, JavaScript und CSS, die die Jobs der Part
 
 ### API der HTL Jobbörse
 
-Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit dem Backend zur Verwaltung der Firmen und deren Jobs. Die Daten werden im JSON Format zur Verfügung gestellt:
+Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit dem Backend zur Verwaltung der Firmen und deren Jobs. Die Daten werden im JSON-Format zur Verfügung gestellt:
 [https://jobboerse.htl-braunau.at/htl_job_api.php](https://jobboerse.htl-braunau.at/htl_job_api.php){:target="_blank"}
 
 Über den GET-Parameter `cmd` können verschiedene Anfragen gestellt werden.
@@ -377,7 +324,7 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
         "size":"771"
     }
     ```
-  
+
 **Auflistung von Unternehmen**
 
 * `?cmd=getcpylist` liefert die Liste von Unternehmen (alphabetisch nach Firmenname)
@@ -389,7 +336,7 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
 
 * `?cmd=getcpysingle&company_id=292` liefert die Details eines Unternehmens einer bestimmten `company_id` (inklusive Bildpfad für das Logo)
 
-**Auslistung der Jobs**
+**Auflistung der Jobs**
 
 * `?cmd=getlist` liefert eine Liste von Jobs (neuere Jobs zuerst)
   * `&maxage=300` schränkt die Liste der Jobs so ein, dass sie maximal 300 Tage alt sein dürfen
@@ -406,13 +353,13 @@ Die Jobbörse auf der Website der HTL Braunau kommuniziert über eine API mit de
 > #### Alle Aufgaben sollen so umgesetzt werden, dass die Seite nicht neu geladen werden muss!
 
 > #### Achtung: Nur in einer Testumgebung!
-> Sollte es zu einer Fehlermeldung wie `Access to XMLHttpRequest at 'https://jobboerse.htl-braunau.at/htl_job_api.php?cmd=getcpylist' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource` kommen, muss die Chrome-Extension **Moesif Origin & CORS Changer** installiert und aktiviert werden.
+> Sollte es zu einer Fehlermeldung wie `Access to fetch at 'https://jobboerse.htl-braunau.at/htl_job_api.php?cmd=getcpylist' from origin 'null' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource` kommen, muss eine Browser-Erweiterung wie **Moesif Origin & CORS Changer** installiert und aktiviert werden. Nach dem Arbeiten wieder deaktivieren.
 
 
-### 2.1. Unternehmensliste 
+### 2.1. Unternehmensliste
 {: .assignment }
 
-Erstelle eine Datei `index.html`, die eine Liste der ersten 10 Unternehmen und deren wichtigsten Daten anzeigt:
+Erstelle eine Datei `index.html`, die eine Liste der ersten 10 Unternehmen und deren wichtigste Daten anzeigt:
 
 * Firmenname
 * Anschrift
@@ -423,7 +370,7 @@ Zeige nur Firmen an, die Jobs haben, die nicht älter als 300 Tage sind.
 ### 2.2. Unternehmensliste mit Paginierung
 {: .assignment }
 
-Erweitere Beispiel 2.1 so, dass es einen Button `Weiter` und `Zurück` gibt, mit denen die Unternehmen um jeweils 10 Einträge weiter- und zurück geschalten werden können.
+Erweitere Beispiel 2.1 so, dass es einen Button `Weiter` und `Zurück` gibt, mit denen die Unternehmen um jeweils 10 Einträge weiter- und zurückgeschaltet werden können.
 
 Erweitere die Navigation um eine Anzeige der Seiten:
 
@@ -437,18 +384,20 @@ Erweitere das Beispiel so, dass bei Klick auf ein Unternehmen die Firmendetails 
 ### 2.4. Anzeigen der Jobs eines bestimmten Unternehmens
 {: .assignment }
 
-Erweitere das Beispiel 2.3. so, dass unterhalb der Firmeninformationen alle Jobs des Unternehmens in Form einer Liste angezeigt werden, die nicht älter als 300 Tage sind.
+Erweitere das Beispiel 2.3 so, dass unterhalb der Firmeninformationen alle Jobs des Unternehmens in Form einer Liste angezeigt werden, die nicht älter als 300 Tage sind.
 
-Erstellen einen Button `Zur Unternehmensliste`, das auf die Darstellung von Beispiel 2.2 (Unternehmensliste) umschaltet.
+Erstelle einen Button `Zur Unternehmensliste`, der auf die Darstellung von Beispiel 2.2 (Unternehmensliste) umschaltet.
 
 ### 2.5. Detailansicht eines Jobs
 {: .assignment }
-Erweitere das Beispiel 2.4. so, dass bei Klick auf einen Job alle Details inklusive Link zum Job-PDF angezeigt werden.
+Erweitere das Beispiel 2.4 so, dass bei Klick auf einen Job alle Details inklusive Link zum Job-PDF angezeigt werden.
 
-Erstelle einen Button `Alle Jobs des Unternehmens`, das wieder die Liste aus Aufgabe 2.4 des jeweiligen Unternehmens anzeigt.
+Erstelle einen Button `Alle Jobs des Unternehmens`, der wieder die Liste aus Aufgabe 2.4 des jeweiligen Unternehmens anzeigt.
 
 
 ## Ressourcen
+* [Mozilla - Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch){:target="_blank"}
+* [Mozilla - Promise](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Promise){:target="_blank"}
+* [Mozilla - async function](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Statements/async_function){:target="_blank"}
+* [https://www.php.net/manual/de/ - php.net Manual: json_encode](https://www.php.net/manual/de/function.json-encode.php){:target="_blank"}
 * [Ajax Battle: XMLHttpRequest vs the Fetch API](https://blog.openreplay.com/ajax-battle-xmlhttprequest-vs-fetch/){:target="_blank"}
-* [Mozilla - The fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API){:target="_blank"}
-* [w3schools.com - PHP - AJAX and PHP](https://www.w3schools.com/php/php_ajax_php.asp){:target="_blank"}

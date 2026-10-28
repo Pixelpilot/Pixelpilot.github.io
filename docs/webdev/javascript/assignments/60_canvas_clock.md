@@ -76,8 +76,8 @@ Die Plattform der Abgabe wird im Unterricht besprochen.
 #### Abgabe über Teams
 Eine `.zip`-Datei mit allen Dateien und Verzeichnissen. Entpacke die Datei vorher testweise auf deinem Rechner. Der entpackte Inhalt muss vom Browser geöffnet und fehlerfrei dargestellt werden können.
 
-#### Abgabe über Repl.it
-Alternativ kann die Abgabe über [replit.com](https://replit.com){:target="_blank"} erfolgen.
+#### Abgabe über coding-space.at
+Alternativ kann die Abgabe über [coding-space.at](https://coding-space.at){:target="_blank"} erfolgen.
 
 ### Bewertungskriterien
 * Umfang und Komplexität
