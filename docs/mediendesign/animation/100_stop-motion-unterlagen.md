@@ -1,11 +1,16 @@
 ---
-title: "Stop Motion – Techniken, Geschichte & Beispiele"
-subject: Mediendesign
-level: HTL
-workshop: "Stop-Motion Workshop (5 Tage)"
-author: ""
-date: 2026
+
+title: Stop Motion – Techniken, Geschichte & Beispiele
+description: Grundlagen der Stop Motion Animation
+
+category: Mediendesign
+topic: Stop Motion
+
+type: assignment
+previewimage: img/ui_design_xd.png
 layout: default
+
+sitemap_exclude: n
 ---
 
 # Stop Motion
@@ -24,8 +29,8 @@ Der Effekt der Stop-Motion wurde erstmals Ende des 19. Jahrhunderts eingesetzt. 
 
 **Georges Méliès** (Frankreich) perfektionierte ab 1899 den sogenannten *Substitution Splice* – die Kamera wurde angehalten, eine Veränderung vorgenommen, und dann weitergedreht.
 
-![Le Voyage dans la Lune (1902) – Georges Méliès](./assets/melies_voyage_lune.jpg)
-*Le Voyage dans la Lune (1902) – Georges Méliès | Public Domain ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Le_Voyage_dans_la_lune_2.jpg))*
+![Le Voyage dans la Lune (1902) – Georges Méliès](./img/stopmotion/Le_Voyage_dans_la_lune.jpg)
+*Le Voyage dans la Lune (1902) – Georges Méliès | Public Domain ([Wikimedia Commons](https://commons.wikimedia.org/wiki/File:A_Trip_to_the_Moon_(Le_Voyage_dans_la_Lune).jpg))*
 
 Sein Film *Le Voyage dans la Lune* (1902) ist ein früher Klassiker und zeigt erste Stop-Motion-Effekte im Spielfilm.
 
